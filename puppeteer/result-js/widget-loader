@@ -1,0 +1,78 @@
+
+;(function(w, d, n, an, arc, links) {
+    if (!w[n]) {
+        w[n] = {};
+    }
+    w[n].loadedBundles = {};
+    w[n].baseUrl = 'https://zen.yandex.ru/';
+    w[n].countryCode = 'ru';
+    w[n].isWidgetLogsEnabled = false;
+    w[n].apiLoggerUrl = 'https://zen.yandex.ru/api/v3/launcher/client_error?is_prestable=0&clid=&device_id=&uuid=&uid=&yandexuid=6131842931586157500';
+    
+
+    function renderWidget(cfg) {
+        var cfgVer = cfg.version 
+ : undefined;
+        var expVer = -1;
+        var supportedSize = !cfg.size 
+;
+        var supportedOrient = !cfg.orientation 
+;
+        var verNotSet = !Boolean(cfgVer);
+        var needSwitch = verNotSet && supportedSize && supportedOrient
+        var targetVer = '';
+        var targetC
+        if (needSwitch) {
+            targetVer = 'version1';
+            targetCb = 'renderWidgetV1';
+        }
+
+            if (w[n].loadedBundles[targetVer] 
+) 
+ else {
+                if (!window[arc]) {
+                    window[arc] = [];
+            }
+
+            var cbInfo = {};
+            cbInfo.version = cfgVer 
+ : targetVer === 'version1' ? 1 
+;
+            cbInfo.callback = function () {window[n][targetCb](cfg);};
+            window[arc].push(cbInfo);
+
+            var script = d.createElement('script');
+            script.async = true;
+            script.type = 'text/javascript';
+            script.charset = 'UTF-8';
+            script.src = links[targetVer];
+            d.head.appendChild(script);
+        }
+    }
+
+    if (typeof d !== 'undefined') {
+        if (!window[n]) 
+
+
+        if (!window[n].renderWidget) {
+            window[n].renderWidget = renderWidget;
+        }
+
+        const callbacks = window[an];
+        if (callbacks && Array.isArray(callbacks)) {
+            var maxCalls = callbacks.length;
+            callbacks.forEach(function (callback, idx) {
+                if (idx < maxCalls) {
+                    callback.call(window[n]);
+                }
+            });
+            callbacks.splice(0, maxCalls);
+        }
+    }})(
+window,
+document,
+"YandexZen",
+"yandexZenAsyncCallbacks",
+"yandexZenAsyncWidgetRenderCallbacks",
+{version1:'//yastatic.net/s3/zen-lib/2.297.0/widget/widget.chromium.en.bundle.js',version2:'//yastatic.net/s3/zen-lib/2.229.0/widget-2/widget-2.chromium.en.bundle.js',version3:'//yastatic.net/s3/zen-lib/2.274.1/widget-3/widget-3.chromium.en.bundle.js'},
+);
