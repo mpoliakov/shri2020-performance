@@ -24893,14 +24893,6 @@
 
 const output = document.querySelector('.modal__value');
 
-$('.card').each(function (e) {
-    if ($(this).hasClass('card_size_s')) {
-        $(this).css({'border-radius': '22px'})
-    } else {
-        $(this).css({'border-radius': '54px'})
-    }
-});
-
 document.querySelectorAll('.modal_close').forEach(b => {
     b.onclick = function () {
         document.querySelectorAll('.modal').forEach(m => {
@@ -24939,30 +24931,6 @@ document.querySelectorAll('.panel_floor').forEach(p => {
     p.onclick = function () {
         showModal('.modal_knob');
     }
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-    $('.card').each(function (e) {
-        if ($(this).hasClass('card_size_s')) {
-            $(this).css({'border-radius': '22px'})
-        } else {
-            $(this).css({'border-radius': '23px'})
-        }
-    });
-    var waterContainer = document.querySelector('.card.card_size_s:last-child');
-
-    waterContainer.innerHTML =
-        '<div class="card-heading">' +
-        '<div class="card-icon-wrap">' +
-        '<img class="card-icon" src="img/kettle.svg">' +
-        '</div>' +
-        '<h3 class="card-title">Вода вскипела</h3>' +
-        ' </div>' +
-        '<div class="card-specs">' +
-        '<p class="card-source">Чайник</p>' +
-        '<p class="card-time card-time_block">16:20, Сегодня</p>' +
-        '</div>'
-
 });
 
 const selectButtonText = document.querySelector('.filter__select-button .button__text');
