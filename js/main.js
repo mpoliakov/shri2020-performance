@@ -1,22 +1,22 @@
 "use strict";
 
-!function(t) {
+!function (t) {
     var e = window["pcodeJsonp6187"];
-    window["pcodeJsonp6187"] = function(i, o, r) {
+    window["pcodeJsonp6187"] = function (i, o, r) {
         for (var a, s, l = 0, p = []; l < i.length; l++)
             s = i[l],
             n[s] && p.push(n[s][0]),
                 n[s] = 0;
         for (a in o)
             Object.prototype.hasOwnProperty.call(o, a) && (t[a] = o[a]);
-        for (e && e(i, o, r); p.length; )
+        for (e && e(i, o, r); p.length;)
             p.shift()()
-    }
-    ;
+    };
     var i = {}
         , n = {
         2: 0
     };
+
     function o(e) {
         if (i[e])
             return i[e].exports;
@@ -29,16 +29,17 @@
             n.l = !0,
             n.exports
     }
-    o.e = function(t) {
+
+    o.e = function (t) {
         var e = n[t];
         if (0 === e)
-            return new Promise(function(t) {
+            return new Promise(function (t) {
                     t()
                 }
             );
         if (e)
             return e[2];
-        var i = new Promise(function(i, o) {
+        var i = new Promise(function (i, o) {
                 e = n[t] = [i, o]
             }
         );
@@ -55,6 +56,7 @@
                 1: "7641180249a9d7be3cfa"
             }[t] + ".js";
         var s = setTimeout(l, 12e4);
+
         function l() {
             a.onerror = a.onload = null,
                 clearTimeout(s);
@@ -62,6 +64,7 @@
             0 !== e && (e && e[1](new Error("Loading chunk " + t + " failed.")),
                 n[t] = void 0)
         }
+
         return a.onerror = a.onload = l,
             r.appendChild(a),
             i
@@ -69,7 +72,7 @@
         ,
         o.m = t,
         o.c = i,
-        o.d = function(t, e, i) {
+        o.d = function (t, e, i) {
             o.o(t, e) || Object.defineProperty(t, e, {
                 configurable: !1,
                 enumerable: !0,
@@ -77,11 +80,11 @@
             })
         }
         ,
-        o.n = function(t) {
-            var e = t && t.__esModule ? function() {
+        o.n = function (t) {
+            var e = t && t.__esModule ? function () {
                     return t["default"]
                 }
-                : function() {
+                : function () {
                     return t
                 }
             ;
@@ -89,22 +92,22 @@
                 e
         }
         ,
-        o.o = function(t, e) {
+        o.o = function (t, e) {
             return Object.prototype.hasOwnProperty.call(t, e)
         }
         ,
         o.p = "//an.yandex.ru/partner-code-bundles/6187/",
-        o.oe = function(t) {
+        o.oe = function (t) {
             throw console.error(t),
                 t
         }
         ,
         o(o.s = 271)
-}([function(t, e, i) {
+}([function (t, e, i) {
     "use strict";
     t.exports = i(351)
 }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n = i(55)
             , o = i(2)
@@ -115,31 +118,31 @@
             , p = i(108)
             , c = r.createComponent([a, l], {
             encodeStyles: null,
-            onInit: function() {
+            onInit: function () {
                 this.b_ = s(this.name),
                     this.mod = this.props.mod || this.mod;
                 var t = this.getContextComponent();
                 this.encodeStyles = Boolean(t && t.encodeStyles || this.props.encodeStyles)
             },
-            unmount: function() {
+            unmount: function () {
                 this.unbindAll(),
                     this.__base()
             },
-            pushStyles: function(t, e, i) {
+            pushStyles: function (t, e, i) {
                 p.push(t, e, i)
             },
-            render: function() {
+            render: function () {
                 var t = this._render(this.b_, this.props, this.__self);
                 return this.rootComponent = t,
                     t
             },
-            _render: function() {
+            _render: function () {
                 return this.getChildren()
             },
-            getElement: function() {
+            getElement: function () {
                 return this.rootComponent.getElement()
             },
-            bind: function(t, e, i, n) {
+            bind: function (t, e, i, n) {
                 this._domListeners || (this._domListeners = []);
                 var r = o.domEvent.on(t, e, i, this, n);
                 return this._domListeners.push({
@@ -149,22 +152,22 @@
                 }),
                     r
             },
-            unbindAll: function() {
-                this._domListeners && (o.each(this._domListeners, function(t) {
+            unbindAll: function () {
+                this._domListeners && (o.each(this._domListeners, function (t) {
                     o.domEvent.un(t.descriptor)
                 }),
                     delete this._domListeners)
             },
-            setMod: function(t) {
+            setMod: function (t) {
                 this.rootComponent.addClass(this.b_(t))
             },
-            delMod: function(t) {
+            delMod: function (t) {
                 this.rootComponent.removeClass(this.b_(t))
             },
-            addClass: function(t) {
+            addClass: function (t) {
                 this.rootComponent.addClass(t)
             },
-            removeClass: function(t) {
+            removeClass: function (t) {
                 this.rootComponent.removeClass(t)
             }
         }, {
@@ -175,10 +178,10 @@
         });
         t.exports = c
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n = i(31)
-            , o = function(t) {
+            , o = function (t) {
             if (t && t.__esModule)
                 return t;
             var e = {};
@@ -203,14 +206,18 @@
         });
         t.exports = a
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n = i(8)
             , o = i(79);
-        function r() {}
+
+        function r() {
+        }
+
         function a(t) {
             return r
         }
+
         o.log = n.logger.warn;
         var s = {
             log: a(),
@@ -218,8 +225,8 @@
             error: a(),
             remoteLog: n.logger.info,
             remoteLogString: n.logger.info,
-            isolate: function(t) {
-                return o("isolate", t || r, this, function(t) {
+            isolate: function (t) {
+                return o("isolate", t || r, this, function (t) {
                     t.preventProtect = !0
                 })
             },
@@ -228,7 +235,7 @@
         };
         t.exports = s
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(297)
@@ -277,7 +284,7 @@
             e.isHDPIScreen = p.isHDPIScreen(w),
             e.flashVer = [0, 0, 0];
         var C = i(180);
-        e.testProperty = function(t, e) {
+        e.testProperty = function (t, e) {
             void 0 === e && (e = C.cssPrefixes);
             var i = new Image;
             t.split(":")[1] || (t += ":none");
@@ -288,11 +295,11 @@
             return null
         }
             ,
-            e.getBrowserName = function() {
+            e.getBrowserName = function () {
                 return (e.isIE ? "msie" : e.isFirefox && "firefox") || e.isSafari && "safari" || e.isOpera && "opera" || e.isYaBrowser && "yabrowser" || e.isChrome && "chrome" || e.isUCBrowser && "ucbrowser" || "unknown"
             }
             ,
-            e.getDeviceName = function() {
+            e.getDeviceName = function () {
                 return (e.isPhone ? "phone" : e.isMobile && "tablet") || "desktop"
             }
             ,
@@ -307,16 +314,16 @@
                 longUrls: !(e.isIE || e.isIE11 || e.isOperaMini)
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0,
-            e.map = function(t, e, i) {
+            e.map = function (t, e, i) {
                 for (var n = new Array(t.length), o = 0; o < t.length; o++)
                     n[o] = e.call(i, t[o], o, t);
                 return n
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n = i(78)
             , o = n.BorderTypes
@@ -368,25 +375,25 @@
             l.longWarningLength = 40,
             t.exports = l
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(365)
             , o = i(366);
-        e["default"] = function(t, e, i) {
+        e["default"] = function (t, e, i) {
             return n["default"](o["default"], t, e, i)
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(272);
         e.logger = n.logger
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0,
-            e.filter = function(t, e, i) {
+            e.filter = function (t, e, i) {
                 for (var n = [], o = 0; o < t.length; o++) {
                     var r = t[o];
                     e.call(i, r, o, t) && n.push(r)
@@ -394,7 +401,7 @@
                 return n
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         t.exports = {
             objectCreate: i(186),
@@ -419,42 +426,43 @@
             bind: i(157)
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0,
-            e.forEach = function(t, e, i) {
+            e.forEach = function (t, e, i) {
                 for (var n = 0; n < t.length; n++)
                     e.call(i, t[n], n, t)
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n = i(93)
             , o = i(0)
             , r = i(200)
             , a = i(15)
             , s = o.createComponent([o.components.element, r], {
-            initProps: function(t) {
+            initProps: function (t) {
                 return t.tag = t.tag || "a",
                     this.disabled = t.disabled || "a" !== t.tag,
                     this.__base(t)
             },
-            beforeRender: function(t) {
+            beforeRender: function (t) {
                 this.parentLink = this.findParentLink(),
                     this.tag = this.disabled || this.parentLink ? "yatag" : "a",
                     this.originProps = this.props,
                     this.props = this.extractAttributes(),
                     this.__base(t)
             },
-            findParentLink: function() {
+            findParentLink: function () {
                 var t = this.getParentComponent()
                     , e = null;
                 do {
                     t instanceof s && (e = t),
                     t && (t = t.getParentComponent())
-                } while (null === e && t);return null !== e && e.disabled ? null : e
+                } while (null === e && t);
+                return null !== e && e.disabled ? null : e
             },
-            extractAttributes: function() {
+            extractAttributes: function () {
                 var t = this.originProps
                     , e = (0,
                     n.classNamesFactory)(t.classNames)
@@ -469,18 +477,18 @@
                     delete i.href),
                     i
             },
-            onMount: function() {
+            onMount: function () {
                 this.disabled || (this.bind("click", this.onClick, this),
                     this.bind("mouseenter", this.onMouseEnter, this),
                     this.bind("mouseleave", this.onMouseLeave, this))
             },
-            onMouseEnter: function() {
+            onMouseEnter: function () {
                 this.setHref(this.getLink())
             },
-            onMouseLeave: function() {
+            onMouseLeave: function () {
                 this.setHref(null)
             },
-            setHref: function(t) {
+            setHref: function (t) {
                 if (this.parentLink)
                     this.parentLink.setHref(t);
                 else {
@@ -488,28 +496,28 @@
                     this.setAttr("href", e)
                 }
             },
-            onClick: function(t) {
+            onClick: function (t) {
                 this.parentLink || this.props.href || t.preventDefault(),
                     t.targetComponent = this,
                     this.fireEvent("click:link", t, this.props.type),
                 this.props.href && !t.defaultPrevented && this.fireEvent("open:link", t)
             },
-            getLink: function() {
+            getLink: function () {
                 return this.originProps.href || ""
             }
         });
         t.exports = s
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0,
-            e.isFunction = function(t) {
+            e.isFunction = function (t) {
                 return "[object Function]" === {}.toString.call(t)
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
-        var n = Object.assign || function(t) {
+        var n = Object.assign || function (t) {
                 for (var e, i = 1, n = arguments.length; i < n; i++)
                     for (var o in e = arguments[i])
                         Object.prototype.hasOwnProperty.call(e, o) && (t[o] = e[o]);
@@ -518,13 +526,13 @@
         ;
         e.__esModule = !0;
         var o, r, a = i(26), s = {};
-        !function(t) {
+        !function (t) {
             t["RTB"] = "R",
                 t["ComponentDirectSync"] = "DNS",
                 t["ComponentDirectAsync"] = "DNA",
                 t["OldDirect"] = "DO"
         }(o = e.BlockRenderProducts || (e.BlockRenderProducts = {})),
-            function(t) {
+            function (t) {
                 t["AdvManagerInit"] = "010",
                     t["RtbRender"] = "020",
                     t["RtbQueueTime"] = "030",
@@ -576,7 +584,7 @@
             c[r.ComponentBlockRenderComplete] = 1,
             c[r.DirectManagerBlockRendered] = 1,
             c);
-        e.logRenderLabel = function(t, e) {
+        e.logRenderLabel = function (t, e) {
             s[t] || (s[t] = {
                 timing: {},
                 data: {},
@@ -585,11 +593,11 @@
                 s[t].timing[e] = Date.now()
         }
             ,
-            e.stopLoggingTime = function(t) {
+            e.stopLoggingTime = function (t) {
                 s[t] && (s[t].canLog = !1)
             }
             ,
-            e.setBlockData = function(t, e) {
+            e.setBlockData = function (t, e) {
                 s[t] || (s[t] = {
                     timing: {},
                     data: {
@@ -600,10 +608,10 @@
                     s[t].data = n({}, s[t].data, e)
             }
             ,
-            e.getJsTracerObject = function(t) {
+            e.getJsTracerObject = function (t) {
                 var e;
-                return t in s && "110"in (e = s[t]).timing && e.canLog ? {
-                    tags: function(t) {
+                return t in s && "110" in (e = s[t]).timing && e.canLog ? {
+                    tags: function (t) {
                         var e, i = {
                             totalInit: 0,
                             totalData: 0,
@@ -615,7 +623,7 @@
                             t.timing["100"] = t.timing["110"],
                                 t.timing["110"] = n
                         }
-                        for (var r = a.getObjectKeys(t.timing).sort(function(t, e) {
+                        for (var r = a.getObjectKeys(t.timing).sort(function (t, e) {
                             return t - e
                         }), s = 0; s < r.length; s++) {
                             var l = t.timing[r[s]] || 0;
@@ -623,7 +631,7 @@
                                 var p = l - e;
                                 e = l,
                                     i[r[s]] = p,
-                                    r[s]in d ? i.totalInit += p : r[s]in u ? i.totalData += p : r[s]in m && (i.totalRender += p),
+                                    r[s] in d ? i.totalInit += p : r[s] in u ? i.totalData += p : r[s] in m && (i.totalRender += p),
                                     i.total += p
                             } else
                                 e = l
@@ -634,9 +642,9 @@
                 } : null
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
-        t.exports = function(t) {
+        t.exports = function (t) {
             for (var e, i = 1, n = arguments.length; i < n; i++)
                 if (e = arguments[i])
                     for (var o in e)
@@ -644,44 +652,44 @@
             return t
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0,
-            e.some = function(t, e) {
+            e.some = function (t, e) {
                 for (var i = 0; i < t.length; i++)
                     if (e(t[i], i, t))
                         return !0;
                 return !1
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(9);
-        e.getLinearFunction = function(t, e, i, n) {
+        e.getLinearFunction = function (t, e, i, n) {
             var o = (e - n) / (t - i)
                 , r = e - o * t;
-            return function(t) {
+            return function (t) {
                 return o * t + r
             }
         }
             ,
-            e.getLimitFunction = function(t, e) {
-                return function(i) {
+            e.getLimitFunction = function (t, e) {
+                return function (i) {
                     return Math.max(t, Math.min(i, e))
                 }
             }
             ,
-            e.getLimitedLinearFunction = function(t, i, n, o) {
+            e.getLimitedLinearFunction = function (t, i, n, o) {
                 var r = e.getLinearFunction(t, i, n, o)
                     , a = e.getLimitFunction(i, o);
-                return function(t) {
+                return function (t) {
                     var e = r(t);
                     return a(e)
                 }
             }
             ,
-            e.getItemWithMaxWeight = function(t, e) {
+            e.getItemWithMaxWeight = function (t, e) {
                 for (var i, n = -1 / 0, o = 0, r = t; o < r.length; o++) {
                     var a = r[o]
                         , s = e(a);
@@ -691,26 +699,26 @@
                 return i
             }
             ,
-            e.getBestCoverElement = function(t, i) {
-                var o = n.filter(i, function(e) {
+            e.getBestCoverElement = function (t, i) {
+                var o = n.filter(i, function (e) {
                     return e.height >= t.height && e.width >= t.width
                 })
                     , r = t.width / t.height
-                    , a = e.getItemWithMaxWeight(o, function(t) {
+                    , a = e.getItemWithMaxWeight(o, function (t) {
                     var e = t.width * t.height
                         , i = t.width / t.height;
                     return -e * Math.max(r / i, i / r)
                 });
-                return a || (a || e.getItemWithMaxWeight(i, function(e) {
+                return a || (a || e.getItemWithMaxWeight(i, function (e) {
                     return Math.min(e.width, t.width) * Math.min(e.height, t.height)
                 }))
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         t.exports = i(13).isFunction
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0,
             e.experimentIds = {
@@ -775,7 +783,7 @@
                 }
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(9)
@@ -819,12 +827,12 @@
         var d, u, m = Object.keys(e.hostsMap);
         e.hosts = (d = m,
             u = {},
-            a.forEach(d, function(t) {
+            a.forEach(d, function (t) {
                 u[t] = t
             }),
             u),
             e.HOSTS_ALL = "ALL",
-            e.isHostIgnored = function(t) {
+            e.isHostIgnored = function (t) {
                 var i = void 0 === t ? {} : t
                     , a = i.host
                     , c = void 0 === a ? document.location.hostname : a
@@ -840,17 +848,17 @@
                 }
                 var b, v, x = u === e.HOSTS_ALL ? m : u, w = (b = x,
                     v = h,
-                    n.filter(b, function(t) {
+                    n.filter(b, function (t) {
                         return -1 === o.indexOf(v, t)
-                    })), k = r.map(w, function(t) {
+                    })), k = r.map(w, function (t) {
                     return _[t]
                 });
-                return l.some(k, function(t) {
+                return l.some(k, function (t) {
                     return !0 === t.test(c)
                 })
             }
             ,
-            e.isPageIgnored = function(t) {
+            e.isPageIgnored = function (t) {
                 var i = void 0 === t ? {} : t
                     , n = i.pageId
                     , o = i.list
@@ -862,7 +870,7 @@
                 return (c.includes(r, n) || c.includes(s, n)) && !c.includes(p, n)
             }
             ,
-            e.isBlockIgnored = function(t) {
+            e.isBlockIgnored = function (t) {
                 var i = void 0 === t ? {} : t
                     , n = i.blockId
                     , o = i.list
@@ -874,10 +882,10 @@
                 return (c.includes(r, n) || c.includes(s, n)) && !c.includes(p, n)
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0,
-            e.indexOf = function(t, e, i) {
+            e.indexOf = function (t, e, i) {
                 void 0 === i && (i = 0);
                 for (var n = i; n < t.length; n++)
                     if (t[n] === e)
@@ -885,7 +893,7 @@
                 return -1
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(51)
@@ -894,8 +902,8 @@
         e.MIN_IMAGE_RATIO = 1,
             e.MAX_IMAGE_RATIO = 16 / 9,
             e.coerceImageRatio = o.getLimitFunction(e.MIN_IMAGE_RATIO, e.MAX_IMAGE_RATIO),
-            e.createSizeCoercer = function(t) {
-                return function(e) {
+            e.createSizeCoercer = function (t) {
+                return function (e) {
                     var i = e.width
                         , n = e.height;
                     return i = o.getLimitFunction(t.width.min, t.width.max)(i),
@@ -907,23 +915,23 @@
                 }
             }
             ,
-            e.calcAspectRatio = function(t) {
+            e.calcAspectRatio = function (t) {
                 return t.width / t.height
             }
             ,
-            e.calcRatio = function(t, e) {
+            e.calcRatio = function (t, e) {
                 var i = t / e;
                 return i < 1 ? 1 / i : i
             }
             ,
-            e.selectMostFit = function(t, i) {
+            e.selectMostFit = function (t, i) {
                 var a = o.getLimitFunction(1, 1 / 0);
                 t = {
                     width: a(t.width),
                     height: a(t.height)
                 };
                 var s = e.calcAspectRatio(t)
-                    , l = r.reduce(i, function(i, o) {
+                    , l = r.reduce(i, function (i, o) {
                     var r = o.coerceSize(t)
                         , a = e.calcAspectRatio(r)
                         , l = e.calcRatio(a, s)
@@ -939,10 +947,10 @@
                 return l && l.item
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0,
-            e.getBoundingClientRect = function(t) {
+            e.getBoundingClientRect = function (t) {
                 try {
                     var e = t.getBoundingClientRect()
                         , i = e.left
@@ -969,15 +977,15 @@
                 }
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
-        var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(t) {
+        var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (t) {
                 return typeof t
             }
-            : function(t) {
+            : function (t) {
                 return t && "function" == typeof Symbol && t.constructor === Symbol && t !== Symbol.prototype ? "symbol" : typeof t
             }
-            , o = function(t) {
+            , o = function (t) {
             if (t && t.__esModule)
                 return t;
             var e = {};
@@ -990,22 +998,26 @@
         var r = i(323)
             , a = i(6)
             , s = o.support.longUrls ? 3e3 : 2040;
+
         function l(t) {
             var e = [];
             for (var i in t)
                 t.hasOwnProperty(i) && "" !== t[i] && void 0 !== t[i] && null !== t[i] && e.push(encodeURIComponent(i) + "=" + encodeURIComponent(t[i]));
             return e.join("&")
         }
+
         function p(t, e, i) {
             return "string" != typeof t ? t : (e && 0 !== t.indexOf(e) && (t = e + t),
             i && t.slice(-i.length) !== i && (t += i),
                 t)
         }
+
         function c(t, e, i) {
             return "string" != typeof t ? t : (e && 0 === t.indexOf(e) && (t = t.replace(e, "")),
             i && t.slice(-i.length) === i && (t = t.slice(0, -i.length)),
                 t)
         }
+
         function d(t) {
             t = t || {},
                 this._host = t.host || "",
@@ -1013,35 +1025,36 @@
                 this._params = "",
             t.params && this.appendParams(t.params)
         }
+
         d.prototype = {
-            clone: function() {
+            clone: function () {
                 return new d({
                     host: this._host,
                     path: this._path,
                     params: this._params
                 })
             },
-            appendGrab: function(t, e) {
+            appendGrab: function (t, e) {
                 var i = Math.min(2048, s - this._getCurrentLength())
                     , n = this;
-                r(i, t, function(t) {
+                r(i, t, function (t) {
                     var i = "grab=" + t;
                     n.appendParams(i),
                         e()
                 })
             },
-            appendEmptyGrab: function() {
+            appendEmptyGrab: function () {
                 this.appendParams("grab=")
             },
-            _getCurrentLength: function() {
+            _getCurrentLength: function () {
                 return this._getUrl().length + 3
             },
-            appendParams: function(t) {
+            appendParams: function (t) {
                 return "" !== this._params && (this._params = p(this._params, "", "&")),
                     "string" == typeof t ? this._params += c(c(t, "?", ""), "&", "") : "object" === (void 0 === t ? "undefined" : n(t)) && (this._params += l(t)),
                     this
             },
-            _getUrl: function() {
+            _getUrl: function () {
                 var t = this._host;
                 if (this._path && (t = p(t, "", "/"),
                     t += c(this._path, "/")),
@@ -1051,7 +1064,7 @@
                 }
                 return t
             },
-            getUrl: function() {
+            getUrl: function () {
                 var t = this._getUrl();
                 return a.IS_REL_HOSTNAME ? t.replace(a.urls.anOriginHostname, a.urls.anHostname) : t
             }
@@ -1059,7 +1072,7 @@
             d.toQueryParams = l,
             t.exports = d
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(381)
@@ -1069,7 +1082,7 @@
             , s = "__longExperiment"
             , l = i(9)
             , p = document.location.host
-            , c = l.filter(a.ignoreHosts, function(t) {
+            , c = l.filter(a.ignoreHosts, function (t) {
             return t.test(p)
         }).length > 0
             , d = /:\/\/[^?\/]*(avito|brozen[-\w+]*\.yandex\.ru|netbynet\.wi-fi\.ru)/.test(location.href)
@@ -1167,22 +1180,22 @@
             id: o.experimentIds.hitFeatures.ENABLED,
             percent: 3
         }]];
-        e.initLongExperiment = function() {
+        e.initLongExperiment = function () {
             var t = new n.LongExperiment(u);
             r.setGlobalVariable(s, t)
         }
             ,
-            e.isLongExperiment = function(t) {
+            e.isLongExperiment = function (t) {
                 if (c)
                     return !1;
                 var e = r.getGlobalVariable(s);
                 return !!e && e.isCurrentVersion(t)
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0,
-            e.getObjectKeys = function(t) {
+            e.getObjectKeys = function (t) {
                 if ("function" == typeof Object.keys)
                     return Object.keys(t);
                 var e = [];
@@ -1191,15 +1204,15 @@
                 return e
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         t.exports = i(58).isObject
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n, o = i(315), r = i(317), a = i(121);
-        e.getNativeJSON = function(t) {
+        e.getNativeJSON = function (t) {
             if (void 0 === t && (t = window),
             void 0 !== n)
                 return n;
@@ -1211,12 +1224,13 @@
                 n
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(252)
             , o = i(7)
             , r = "RUB";
+
         function a(t) {
             return '<span class="price_font-' + t + '">' + {
                 RUB: "\u0440\u0443\u0431",
@@ -1229,7 +1243,8 @@
                 EUR: "\u20ac"
             }[t] + "</span>"
         }
-        e.preparePrices = function(t) {
+
+        e.preparePrices = function (t) {
             var e = t.price
                 , i = e.current ? parseInt(e.current, 10) : void 0
                 , n = e.old ? parseInt(e.old, 10) : void 0
@@ -1244,39 +1259,39 @@
                 }
         }
             ,
-            e.preparePriceText = function(t) {
+            e.preparePriceText = function (t) {
                 return void 0 !== t.current ? n["default"](Math.round(t.current)) + "&nbsp;" + a(t.currencyCode) : ""
             }
             ,
-            e.prepareDiscountText = function(t, e) {
+            e.prepareDiscountText = function (t, e) {
                 return Number(t.discount) > 5 ? o["default"]("SMART_DISCOUNT", e) + " " + t.discount + "%!" : ""
             }
             ,
-            e.prepareMarketDiscountText = function(t, e) {
+            e.prepareMarketDiscountText = function (t, e) {
                 return Number(t.discount) > 5 ? o["default"]("SMART_DISCOUNT_MARKET", e) + " " + t.discount + "%!" : ""
             }
             ,
             e.PRICE_TAG_LENGTH = a(r).length - 1
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(37)
             , o = {}
             , r = i(529)
-            , a = n.once(function() {
+            , a = n.once(function () {
             return r.keys().forEach(r)
         });
-        e.getAdvRenderer = function(t, e) {
+        e.getAdvRenderer = function (t, e) {
             return a(),
                 o[t](e)
         }
             ,
-            e.registerAdvRenderer = function(t, e) {
+            e.registerAdvRenderer = function (t, e) {
                 o[t] = e
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(185)
@@ -1286,24 +1301,25 @@
             , s = i(73)
             , l = i(106)
             , p = i(144);
-        e.createColor = function(t) {
+        e.createColor = function (t) {
             return new c(t)
         }
         ;
-        var c = function() {
+        var c = function () {
             function t(t) {
                 this.rgba = [0, 0, 0, 1],
                     this.set(t)
             }
-            return t.prototype.set = function(e) {
-                s(e) ? e = function(t) {
+
+            return t.prototype.set = function (e) {
+                s(e) ? e = function (t) {
                     var e = d(t);
                     if (e)
                         return [parseInt(e.substr(1, 2), 16), parseInt(e.substr(3, 2), 16), parseInt(e.substr(5, 2), 16), parseInt(e.substr(7, 2), 16) / 255];
                     return null
                 }(e) : e instanceof t && (e = e.rgbaArray());
                 var i = e;
-                if (function(t) {
+                if (function (t) {
                     if (!t || !l(t))
                         return !1;
                     if (!p(t.length, 3, 4))
@@ -1318,46 +1334,46 @@
                 return this
             }
                 ,
-                t.prototype.setChannel = function(t, e) {
+                t.prototype.setChannel = function (t, e) {
                     m(t, e) && (t === a.RGBA_MODEL.ALPHA ? this.rgba[t] = Number(e.toPrecision(2)) : this.rgba[t] = e >> 0)
                 }
                 ,
-                t.prototype.setAlpha = function(t) {
+                t.prototype.setAlpha = function (t) {
                     return this.setChannel(a.RGBA_MODEL.ALPHA, t),
                         this
                 }
                 ,
-                t.prototype.toString = function() {
+                t.prototype.toString = function () {
                     return 1 !== this.rgba[a.RGBA_MODEL.ALPHA] ? this.rgbaString() : this.toHexString()
                 }
                 ,
-                t.prototype.toHexString = function() {
+                t.prototype.toHexString = function () {
                     return "#" + this.toHexArray().join("")
                 }
                 ,
-                t.prototype.rgbString = function() {
+                t.prototype.rgbString = function () {
                     return "rgb(" + this.rgbArray().join(",") + ")"
                 }
                 ,
-                t.prototype.rgbaString = function() {
+                t.prototype.rgbaString = function () {
                     return "rgba(" + this.rgba.join(",") + ")"
                 }
                 ,
-                t.prototype.toHexArray = function() {
+                t.prototype.toHexArray = function () {
                     var t = this.rgba;
                     return [u(t[a.RGBA_MODEL.RED]), u(t[a.RGBA_MODEL.GREEN]), u(t[a.RGBA_MODEL.BLUE])]
                 }
                 ,
-                t.prototype.rgbArray = function() {
+                t.prototype.rgbArray = function () {
                     var t = this.rgba;
                     return [t[a.RGBA_MODEL.RED], t[a.RGBA_MODEL.GREEN], t[a.RGBA_MODEL.BLUE]]
                 }
                 ,
-                t.prototype.rgbaArray = function() {
+                t.prototype.rgbaArray = function () {
                     return this.rgba.concat()
                 }
                 ,
-                t.prototype.luminosity = function() {
+                t.prototype.luminosity = function () {
                     for (var t = this.rgba, e = [], i = 0; i < 3; i++) {
                         var n = t[i] / 255;
                         e[i] = n <= .03928 ? n / 12.92 : Math.pow((n + .055) / 1.055, 2.4)
@@ -1365,26 +1381,26 @@
                     return .2126 * e[0] + .7152 * e[1] + .0722 * e[2]
                 }
                 ,
-                t.prototype.contrast = function(e) {
+                t.prototype.contrast = function (e) {
                     var i = this.luminosity()
                         , n = new t(e).luminosity();
                     return i > n ? (i + .05) / (n + .05) : (n + .05) / (i + .05)
                 }
                 ,
-                t.prototype.brightness = function() {
+                t.prototype.brightness = function () {
                     var t = this.rgba;
                     return (299 * t[a.RGBA_MODEL.RED] + 587 * t[a.RGBA_MODEL.GREEN] + 114 * t[a.RGBA_MODEL.BLUE]) / 1e3
                 }
                 ,
-                t.prototype.isLight = function(t) {
+                t.prototype.isLight = function (t) {
                     return this.brightness() > (t || 127)
                 }
                 ,
-                t.prototype.readable = function(e) {
+                t.prototype.readable = function (e) {
                     return new t(this.isLight(e) ? "#000" : "#fff")
                 }
                 ,
-                t.prototype.mix = function(e, i) {
+                t.prototype.mix = function (e, i) {
                     void 0 === i && (i = .5),
                         i = 1 - i;
                     var n = new t(e)
@@ -1399,37 +1415,37 @@
                     return new t([d * o[a.RGBA_MODEL.RED] + u * r[a.RGBA_MODEL.RED], d * o[a.RGBA_MODEL.GREEN] + u * r[a.RGBA_MODEL.GREEN], d * o[a.RGBA_MODEL.BLUE] + u * r[a.RGBA_MODEL.BLUE], s * i + l * (1 - i)])
                 }
                 ,
-                t.prototype.greyscale = function() {
+                t.prototype.greyscale = function () {
                     var e = this.rgba
                         , i = .3 * e[a.RGBA_MODEL.RED] + .59 * e[a.RGBA_MODEL.GREEN] + .11 * e[a.RGBA_MODEL.BLUE];
                     return new t([i, i, i, e[a.RGBA_MODEL.ALPHA]])
                 }
                 ,
-                t.prototype.lighten = function(t) {
+                t.prototype.lighten = function (t) {
                     var e = this.getHSL();
                     return e[2] += 100 * t,
                         this.clone().setHSL(e)
                 }
                 ,
-                t.prototype.darken = function(t) {
+                t.prototype.darken = function (t) {
                     var e = this.getHSL();
                     return e[2] -= 100 * t,
                         this.clone().setHSL(e)
                 }
                 ,
-                t.prototype.saturate = function(t) {
+                t.prototype.saturate = function (t) {
                     var e = this.getHSL();
                     return e[1] += e[1] * t,
                         this.clone().setHSL(e)
                 }
                 ,
-                t.prototype.desaturate = function(t) {
+                t.prototype.desaturate = function (t) {
                     var e = this.getHSL();
                     return e[1] -= e[1] * t,
                         this.clone().setHSL(e)
                 }
                 ,
-                t.prototype.getHSL = function() {
+                t.prototype.getHSL = function () {
                     var t = this.rgba
                         , e = t[0]
                         , i = t[1]
@@ -1437,14 +1453,14 @@
                     return r.rgbToHsl(e, i, n)
                 }
                 ,
-                t.prototype.setHSL = function(t) {
+                t.prototype.setHSL = function (t) {
                     var e = t[0]
                         , i = t[1]
                         , o = t[2];
                     return this.set(n.hslToRgb(e, i, o))
                 }
                 ,
-                t.prototype.getHSV = function() {
+                t.prototype.getHSV = function () {
                     var t = this.rgba
                         , e = t[0]
                         , i = t[1]
@@ -1452,38 +1468,42 @@
                     return r.rgbToHsv(e, i, n)
                 }
                 ,
-                t.prototype.setHSV = function(t) {
+                t.prototype.setHSV = function (t) {
                     var e = t[0]
                         , i = t[1]
                         , n = t[2];
                     return this.set(o.hsvToRgb(e, i, n))
                 }
                 ,
-                t.prototype.clone = function() {
+                t.prototype.clone = function () {
                     return new t(this.rgba)
                 }
                 ,
-                t.prototype.average = function() {
+                t.prototype.average = function () {
                     return (this.rgba[a.RGBA_MODEL.RED] + this.rgba[a.RGBA_MODEL.GREEN] + this.rgba[a.RGBA_MODEL.BLUE]) / 3
                 }
                 ,
                 t
         }();
+
         function d(t) {
             return t = (t + "").toUpperCase().replace(/^#?/, "#"),
                 /^#[0-9A-F]{8}$/.test(t) ? t : /^#[0-9A-F]{6}$/.test(t) ? t + "FF" : /^#[0-9A-F]{3}$/.test(t) ? t.replace(/([0-9A-F])([0-9A-F])([0-9A-F])/i, "$1$1$2$2$3$3FF") : /^#[0-9A-F]{4}$/.test(t) ? t.replace(/([0-9A-F])([0-9A-F])([0-9A-F])([0-9A-F])/i, "$1$1$2$2$3$3$4$4") : null
         }
+
         function u(t) {
             var e = "0123456789ABCDEF";
             return e.charAt(t / 16 << 0) + e.charAt(t % 16)
         }
+
         function m(t, e) {
             return t === a.RGBA_MODEL.ALPHA ? p(e, 0, 1) : p(e, 0, 255)
         }
+
         e.Color = c,
             e.normalizeColorHash = d
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n, o = i(4), r = i(189), a = i(342), s = (n = a) && n.__esModule ? n : {
             default: n
@@ -1492,10 +1512,13 @@
             , c = i(61)
             , d = i(184)
             , u = i(193);
-        function m() {}
+
+        function m() {
+        }
+
         m.addScript = d,
             p.extend(m, c),
-            m.querySelector = function(t, e) {
+            m.querySelector = function (t, e) {
                 if ("string" != typeof t)
                     return t;
                 var i = t.slice(0, 1)
@@ -1507,36 +1530,36 @@
                     case ".":
                         return m.getElementsByClassName(n, e);
                     default:
-                        return p.map((e || document).getElementsByTagName(t), function(t) {
+                        return p.map((e || document).getElementsByTagName(t), function (t) {
                             return t
                         })
                 }
             }
             ,
-            m.getElementsByClassName = function(t, e) {
+            m.getElementsByClassName = function (t, e) {
                 if (e = e || document,
                     p.checkNativeCode(e.getElementsByClassName))
                     return Array.prototype.slice.call((0,
                         s["default"])(t, e));
                 var i = e.getElementsByTagName("*");
-                return p.filter(i, function(e) {
+                return p.filter(i, function (e) {
                     return m.hasClass(e, t)
                 })
             }
         ;
         var f = c.setStyle;
-        m.setImportantCssProperty = c.setStyle = function(t, e, i) {
+        m.setImportantCssProperty = c.setStyle = function (t, e, i) {
             p.isObject(e) ? f(t, e, !0) : f(t, e, i, !0)
         }
             ,
             m.getWindowSize = u,
-            m.remove = function(t) {
+            m.remove = function (t) {
                 var e = t.parentNode;
                 e && e.removeChild(t)
             }
             ,
             m.appendStyle = l.appendStyle,
-            m.isOverlaid = function(t) {
+            m.isOverlaid = function (t) {
                 var e = m.getBoundingClientRect(t);
                 if (!e || !document.elementFromPoint || o.isOperaMini || !t.contains)
                     return !1;
@@ -1548,16 +1571,16 @@
                 return !!s && (t != s && !t.contains(s))
             }
             ,
-            m.hasParent = function(t, e) {
+            m.hasParent = function (t, e) {
                 t.parentNode;
                 return e = e.toUpperCase(),
-                    Boolean(m.findParent(t, function(t) {
+                    Boolean(m.findParent(t, function (t) {
                         return t.tagName === e
                     }))
             }
             ,
-            m.findParent = function(t, e, i) {
-                for (var n = i ? t : t.parentNode; n && 1 === n.nodeType; ) {
+            m.findParent = function (t, e, i) {
+                for (var n = i ? t : t.parentNode; n && 1 === n.nodeType;) {
                     if (e(n))
                         return n;
                     n = n.parentNode
@@ -1565,7 +1588,7 @@
                 return null
             }
             ,
-            m.isInViewport = function(t, e) {
+            m.isInViewport = function (t, e) {
                 var i = m.getBoundingClientRect(t);
                 if (!i || o.isOperaMini)
                     return t.offsetWidth > 0 && t.offsetHeight > 0;
@@ -1573,7 +1596,7 @@
                     , r = i.bottom - i.top
                     , a = 0;
                 if (n > 0 && r > 0) {
-                    var s = function(t, e, i) {
+                    var s = function (t, e, i) {
                         return Math.max(Math.min(e, i) - Math.max(t, 0), 0)
                     }
                         , l = m.getWindowSize();
@@ -1582,18 +1605,18 @@
                 return a >= (e || Number.MIN_VALUE)
             }
             ,
-            m.setIframeHTML = function(t, e) {
+            m.setIframeHTML = function (t, e) {
                 t.contentWindow.document.write(e)
             }
             ,
-            m.getWindowScroll = function() {
+            m.getWindowScroll = function () {
                 return {
                     left: void 0 === window.pageXOffset ? document.documentElement.scrollLeft : window.pageXOffset,
                     top: void 0 === window.pageYOffset ? document.documentElement.scrollTop : window.pageYOffset
                 }
             }
             ,
-            m.getOffset = function(t) {
+            m.getOffset = function (t) {
                 var e = document.documentElement
                     , i = m.getBoundingClientRect(t)
                     , n = m.getWindowScroll();
@@ -1603,7 +1626,7 @@
                 }
             }
             ,
-            m.getComputedFontSize = function(t) {
+            m.getComputedFontSize = function (t) {
                 try {
                     var e = window.getComputedStyle(t, null).getPropertyValue("font-size");
                     return Math.round(parseFloat(e))
@@ -1612,7 +1635,7 @@
                 }
             }
             ,
-            m.getBoundingClientRect = function(t) {
+            m.getBoundingClientRect = function (t) {
                 try {
                     var e = t.getBoundingClientRect();
                     return {
@@ -1628,22 +1651,22 @@
             ,
             t.exports = m
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         t.exports = i(11).forEach
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
-        var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(t) {
+        var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (t) {
                 return typeof t
             }
-            : function(t) {
+            : function (t) {
                 return t && "function" == typeof Symbol && t.constructor === Symbol && t !== Symbol.prototype ? "symbol" : typeof t
             }
             , o = i(10)
             , r = i(341)
             , a = o.extend({}, o);
-        a.inArray = function(t, e, i) {
+        a.inArray = function (t, e, i) {
             void 0 !== e && null !== e || (e = "");
             for (var n = 0; n < t.length; n++)
                 if (i && i(e, t[n]) || e === t[n])
@@ -1651,7 +1674,7 @@
             return -1
         }
             ,
-            a.deepCopy = function(t, e) {
+            a.deepCopy = function (t, e) {
                 if (e && "object" == (void 0 === e ? "undefined" : n(e)))
                     for (var i in e)
                         e.hasOwnProperty(i) && ("object" != n(e[i]) || a.isArray(e[i]) ? t[i] = e[i] : ("object" != n(t[i]) && (t[i] = {}),
@@ -1659,14 +1682,14 @@
                 return t
             }
             ,
-            a.format = function(t, e) {
+            a.format = function (t, e) {
                 var i = Array.prototype.slice.call(arguments, 1);
-                return t.toString().replace(/(^|.|\r|\n)(\$\{(.*?)\})/g, function(t, n, o, r) {
+                return t.toString().replace(/(^|.|\r|\n)(\$\{(.*?)\})/g, function (t, n, o, r) {
                     return "\\" == n ? o : /^[0-9]+$/.test(r) ? n + [i[+r]].join("") : n + [e && e[r]].join("")
                 })
             }
             ,
-            a.downscale = function(t, e) {
+            a.downscale = function (t, e) {
                 var i = Math.min(e.width / t.width, e.height / t.height, 1);
                 return {
                     width: Math.round(t.width *= i),
@@ -1674,48 +1697,48 @@
                 }
             }
             ,
-            a.capitalize = function(t) {
+            a.capitalize = function (t) {
                 return t.charAt(0).toUpperCase() + t.substring(1, t.length)
             }
             ,
-            a.toQueryParams = function(t) {
+            a.toQueryParams = function (t) {
                 var e = [];
-                return a.each(a.keys(t), function(i) {
+                return a.each(a.keys(t), function (i) {
                     void 0 != t[i] && "" !== t[i] && e.push(i + "=" + encodeURIComponent(t[i]))
                 }),
                     e.join("&")
             }
             ,
-            a.addQueryParams = function(t, e) {
+            a.addQueryParams = function (t, e) {
                 if (!t)
                     throw new Error("util.addQueryParams: \u043f\u0435\u0440\u0435\u0434\u0430\u043d \u043f\u0443\u0441\u0442\u043e\u0439 url");
                 var i = -1 !== (t = t.split("#"))[0].indexOf("?") ? "&" : "?";
                 return [t[0], i, a.toQueryParams(e), t[1] ? "#" + t[1] : ""].join("")
             }
             ,
-            a.camelizeKeys = function(t) {
+            a.camelizeKeys = function (t) {
                 var e = {};
-                return a.forOwn(t, function(t, i) {
+                return a.forOwn(t, function (t, i) {
                     e[a.camelize(i)] = t
                 }),
                     e
             }
             ,
-            a.addProtocol = function(t) {
+            a.addProtocol = function (t) {
                 return 0 == t.indexOf("//") && (t = window.location.protocol + t),
                     t
             }
             ,
-            a.bemFormatter = function(t) {
+            a.bemFormatter = function (t) {
                 var e = /^([_-]\w+)/;
-                return function() {
+                return function () {
                     if (!arguments.length)
                         return t;
                     var i = [];
-                    return a.each(arguments, function(n) {
+                    return a.each(arguments, function (n) {
                         var o = n.split(/\s+/);
-                        i.push(a.map(o, function(i) {
-                            return i.replace(e, function() {
+                        i.push(a.map(o, function (i) {
+                            return i.replace(e, function () {
                                 return t + arguments[1]
                             })
                         }).join(" "))
@@ -1724,12 +1747,12 @@
                 }
             }
             ,
-            a.mixin = function(t, e) {
-                o.forOwn(e, function(e, i) {
+            a.mixin = function (t, e) {
+                o.forOwn(e, function (e, i) {
                     var n, r, a = t[i];
                     t[i] = o.isFunction(a) ? (n = a,
                             r = e,
-                            function() {
+                            function () {
                                 var t = this.__base;
                                 this.__base = n;
                                 var e = r.apply(this, arguments);
@@ -1741,7 +1764,7 @@
             }
             ,
             a.unique = r,
-            a.loop = function(t, e, i) {
+            a.loop = function (t, e, i) {
                 var n = [];
                 i = i || this;
                 for (var o = 0; o < t; o++) {
@@ -1755,19 +1778,21 @@
             ,
             t.exports = a
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(46);
+
         function o() {
             return n.getYa().codeVer || 0
         }
+
         e.getCodeVersion = o,
-            e.getRevisionNo = function() {
+            e.getRevisionNo = function () {
                 return o() % 1024
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n, o = i(372), r = (n = o) && n.__esModule ? n : {
             default: n
@@ -1778,6 +1803,7 @@
             , u = i(131)
             , m = i(159)
             , f = i(18);
+
         function h(t) {
             var e = /^(\w{1,2})-(?:\w+-)?(\d+)-(\d+|\w+)$/.exec(t);
             return {
@@ -1786,6 +1812,7 @@
                 impId: e ? e[3] : null
             }
         }
+
         function g(t) {
             var e = h(t.blockId)
                 , i = p({}, t);
@@ -1812,13 +1839,15 @@
             }
             return x(i)
         }
+
         var _ = (Ya && Ya.Context || {}).isAllowedRepeatAds
-            , y = void 0 === _ ? function(t, e) {
+            , y = void 0 === _ ? function (t, e) {
                 return e
             }
             : _
             , b = /tv\.yandex\.ru/.test(location.hostname)
             , v = /avito/.test(location.hostname);
+
         function x(t) {
             var e = t.allowRepeatAds;
             return e = e ? (0,
@@ -1837,16 +1866,18 @@
                 t.allowRepeatAds = e,
                 t
         }
+
         t.exports = {
-            getRenderId: function(t) {
+            getRenderId: function (t) {
                 return (t.blockId || t.renderTo) + "#" + (t.pageNumber || "")
             },
             parseBlockId: h,
-            prepareCallback: function(t) {
-                return c.isolate(t || function() {}
+            prepareCallback: function (t) {
+                return c.isolate(t || function () {
+                }
                 )
             },
-            prepareDirectConfig: function(t) {
+            prepareDirectConfig: function (t) {
                 var e, i = h(t.blockId), n = g(t);
                 return n.product = (e = i.product,
                     {
@@ -1856,7 +1887,7 @@
                     }[e]),
                     n
             },
-            prepareFullscreenConfig: function(t) {
+            prepareFullscreenConfig: function (t) {
                 var e = h(t.blockId)
                     , i = p({}, t);
                 return {
@@ -1868,7 +1899,7 @@
                     userConfig: i
                 }
             },
-            prepareInpageConfig: function(t) {
+            prepareInpageConfig: function (t) {
                 var e = h(t.blockId)
                     , i = p({}, t);
                 return {
@@ -1880,7 +1911,7 @@
                     inpage: i.inpage || {}
                 }
             },
-            prepareInternalConfig: function(t) {
+            prepareInternalConfig: function (t) {
                 var e = h(t.blockId)
                     , i = p({}, t);
                 return i.onRender = c.isolate(i.onRender),
@@ -1890,7 +1921,7 @@
                     i.product = d.Products.INTERNAL,
                     i
             },
-            prepareOldDirectConfig: function(t, e, i) {
+            prepareOldDirectConfig: function (t, e, i) {
                 var n = void 0;
                 i.ad_format === d.Products.DIRECT && (n = i.geo_lat || i.geo_long ? {
                     lat: i.geo_lat,
@@ -1927,26 +1958,26 @@
             prepareRtbConfig: g
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0,
-            e.once = function(t) {
-                var e = function() {
+            e.once = function (t) {
+                var e = function () {
                     var i = t.apply(this, arguments);
-                    return e = function() {
+                    return e = function () {
                         return i
                     }
                         ,
                         i
                 };
-                return function() {
+                return function () {
                     return e.apply(this, arguments)
                 }
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
-        var n = Object.assign || function(t) {
+        var n = Object.assign || function (t) {
                 for (var e, i = 1, n = arguments.length; i < n; i++)
                     for (var o in e = arguments[i])
                         Object.prototype.hasOwnProperty.call(e, o) && (t[o] = e[o]);
@@ -1955,7 +1986,7 @@
         ;
         e.__esModule = !0;
         var o, r = i(326), a = i(14), s = i(327), l = !0;
-        e.sendLabel = function(t) {
+        e.sendLabel = function (t) {
             var e = a.getJsTracerObject(t);
             e && (l && (l = !1,
                 e.tags = n({}, e.tags, {
@@ -1969,38 +2000,39 @@
                 }, e)))
         }
             ,
-            e.sendResourceInfo = function() {
+            e.sendResourceInfo = function () {
                 var t = s.getJsTracerObject();
                 t && r.sendToSolomon(n({
                     event: "performance"
                 }, t))
             }
             ,
-            e.setContextStaticExecutionTime = function(t, e) {
+            e.setContextStaticExecutionTime = function (t, e) {
                 o = e - t
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n, o = (n = Object.setPrototypeOf || {
                     __proto__: []
-                }instanceof Array && function(t, e) {
+                } instanceof Array && function (t, e) {
                     t.__proto__ = e
                 }
-                || function(t, e) {
+                || function (t, e) {
                     for (var i in e)
                         e.hasOwnProperty(i) && (t[i] = e[i])
                 }
                     ,
-                    function(t, e) {
+                    function (t, e) {
                         function i() {
                             this.constructor = t
                         }
+
                         n(t, e),
                             t.prototype = null === e ? Object.create(e) : (i.prototype = e.prototype,
                                 new i)
                     }
-            ), r = Object.assign || function(t) {
+            ), r = Object.assign || function (t) {
                 for (var e, i = 1, n = arguments.length; i < n; i++)
                     for (var o in e = arguments[i])
                         Object.prototype.hasOwnProperty.call(e, o) && (t[o] = e[o]);
@@ -2024,12 +2056,13 @@
             , y = i(56)
             , b = i(539)
             , v = i(540)
-            , x = function(t) {
+            , x = function (t) {
             function e(e) {
                 return t.call(this, e) || this
             }
+
             return o(e, t),
-                e.prototype.isAvailable = function(t) {
+                e.prototype.isAvailable = function (t) {
                     var e = this.context.fontSize
                         , i = this.getSize(t).height;
                     return !("button-medium" === t && i > 3.4 * e + 2 + 1)
@@ -2038,17 +2071,18 @@
                 e
         }(h.ResourceHeightTreeContext);
         e.AdvResourceTreeContext = x;
-        var w = function(t) {
+        var w = function (t) {
             function e() {
                 return null !== t && t.apply(this, arguments) || this
             }
+
             return o(e, t),
-                e.prototype.onInit = function() {
+                e.prototype.onInit = function () {
                     t.prototype.onInit.call(this),
                         this.prepareData()
                 }
                 ,
-                e.prototype.prepareData = function() {
+                e.prototype.prepareData = function () {
                     var t = this.props
                         , e = t.adv
                         , i = t.getSize
@@ -2082,7 +2116,7 @@
                     this.warningWidth = p
                 }
                 ,
-                e.prototype.beforeRender = function(e) {
+                e.prototype.beforeRender = function (e) {
                     t.prototype.beforeRender.call(this, e);
                     var i = this.props
                         , n = i.adv
@@ -2107,7 +2141,7 @@
                     this.prepareImage()
                 }
                 ,
-                e.prototype.prepareImage = function() {
+                e.prototype.prepareImage = function () {
                     var t = this.getPicture();
                     if (t) {
                         var e = this.props.context.getTheme().getImageSize({
@@ -2115,7 +2149,7 @@
                             height: this.minHeight
                         })
                             , i = p.calcRatio(e.maxWidth / e.maxHeight, p.calcAspectRatio(t));
-                        this.getImageSize = function() {
+                        this.getImageSize = function () {
                             return {
                                 width: e.maxWidth * i,
                                 height: e.maxHeight * i
@@ -2128,7 +2162,7 @@
                     }
                 }
                 ,
-                e.prototype.getWarningMinHeight = function() {
+                e.prototype.getWarningMinHeight = function () {
                     var t = this.warning;
                     if (!t)
                         return 0;
@@ -2137,7 +2171,7 @@
                     return Math.max(15, i * e / this.warningWidth)
                 }
                 ,
-                e.prototype.pushCss = function() {
+                e.prototype.pushCss = function () {
                     t.prototype.pushCss.call(this);
                     for (var e = this.props.context.getTheme(), i = 0, n = [b].concat(this.getStyles(), [v]); i < n.length; i++) {
                         var o = n[i];
@@ -2145,24 +2179,24 @@
                     }
                 }
                 ,
-                e.prototype.afterRender = function() {
+                e.prototype.afterRender = function () {
                     var e = this;
                     t.prototype.afterRender.call(this),
-                        this.props.context.doOnReady(function() {
+                        this.props.context.doOnReady(function () {
                             return e.onReady()
                         })
                 }
                 ,
-                e.prototype.onReady = function() {
+                e.prototype.onReady = function () {
                     var t = h.memoizeResourceTreeContext(new x(this))
-                        , e = this.createResourceTree(function(e, i, n) {
+                        , e = this.createResourceTree(function (e, i, n) {
                         return void 0 === n && (n = []),
                             t.createNode(e, i, n)
                     });
                     this.removeExcessResources(t, e)
                 }
                 ,
-                e.prototype.removeExcessResources = function(t, e) {
+                e.prototype.removeExcessResources = function (t, e) {
                     for (var i = this.minHeight, n = this.coerceSize(this.props.getSize()).height, o = 0, r = t.getExcessResources("content", i, n, e); o < r.length; o++) {
                         var a = r[o]
                             , s = this.getResourceById(a);
@@ -2170,7 +2204,7 @@
                     }
                 }
                 ,
-                e.prototype._render = function() {
+                e.prototype._render = function () {
                     var t = this.b_
                         , e = this.width
                         , i = this.minHeight
@@ -2194,7 +2228,7 @@
                     }, this.renderContent("content"), this.renderFeedback({}), this.renderAdtune({}))
                 }
                 ,
-                e.prototype.renderTitle = function(t) {
+                e.prototype.renderTitle = function (t) {
                     void 0 === t && (t = {});
                     var e = this.b_
                         , i = this.props.adv
@@ -2212,7 +2246,7 @@
                     }))) : null
                 }
                 ,
-                e.prototype.renderTitleBig = function() {
+                e.prototype.renderTitleBig = function () {
                     var t = this.b_;
                     return this.renderTitle({
                         resourceId: "title-big",
@@ -2220,7 +2254,7 @@
                     })
                 }
                 ,
-                e.prototype.renderBody = function() {
+                e.prototype.renderBody = function () {
                     var t = this.b_
                         , e = this.props.adv
                         , i = e.body
@@ -2238,12 +2272,12 @@
                     }))) : null
                 }
                 ,
-                e.prototype.renderSiteLinks = function() {
+                e.prototype.renderSiteLinks = function () {
                     var t = this.b_
                         , e = this.props.adv.sitelinks || [];
                     if (!e.length)
                         return null;
-                    var i = e.map(function(e) {
+                    var i = e.map(function (e) {
                         var i = e.url
                             , n = e.title;
                         return a.create("yatag", {
@@ -2261,12 +2295,12 @@
                     }, i)
                 }
                 ,
-                e.prototype.renderCallouts = function() {
+                e.prototype.renderCallouts = function () {
                     var t = this.b_
                         , e = this.props.adv.callouts || [];
                     if (!e.length)
                         return null;
-                    var i = e.map(function(e) {
+                    var i = e.map(function (e) {
                         return a.create("yatag", {
                             class: t("__callouts-item")
                         }, a.create(l.Text, {
@@ -2279,7 +2313,7 @@
                     }, i)
                 }
                 ,
-                e.prototype.renderButtonBigImpl = function(t) {
+                e.prototype.renderButtonBigImpl = function (t) {
                     if (!this.getDataSource().hitFeatures.callToActionButton)
                         return null;
                     var e = this.b_
@@ -2320,15 +2354,15 @@
                         }, "\xa0\u2014 " + n.price, " ", a.create(f.Ruble, null)) : null)), r)
                 }
                 ,
-                e.prototype.renderButtonBig = function() {
+                e.prototype.renderButtonBig = function () {
                     return this.renderButtonBigImpl("big")
                 }
                 ,
-                e.prototype.renderButtonMedium = function() {
+                e.prototype.renderButtonMedium = function () {
                     return this.renderButtonBigImpl("medium")
                 }
                 ,
-                e.prototype.renderButtonSmall = function() {
+                e.prototype.renderButtonSmall = function () {
                     if (!this.getDataSource().hitFeatures.callToActionButton)
                         return null;
                     var t = this.b_
@@ -2353,7 +2387,7 @@
                     })) : null))
                 }
                 ,
-                e.prototype.renderWarning = function() {
+                e.prototype.renderWarning = function () {
                     var t = this.b_
                         , e = this.warning
                         , i = this.props.context
@@ -2366,7 +2400,7 @@
                         class: t("__warning", "__warning_" + (e.important ? "important" : "normal")),
                         style: o
                     }, a.create(d.Scroll, {
-                        calculateScroll: function(t) {
+                        calculateScroll: function (t) {
                             return i.doOnReady(t)
                         }
                     }, a.create("yatag", {
@@ -2379,7 +2413,7 @@
                     }) : null
                 }
                 ,
-                e.prototype.renderLogo = function(t) {
+                e.prototype.renderLogo = function (t) {
                     void 0 === t && (t = "default");
                     var e = this.b_
                         , i = this.props.logo;
@@ -2391,7 +2425,7 @@
                     })) : null
                 }
                 ,
-                e.prototype.renderLogoStub = function() {
+                e.prototype.renderLogoStub = function () {
                     var t = this.b_;
                     return this.props.logo ? a.create("yatag", {
                         resourceId: "logo-stub",
@@ -2399,7 +2433,7 @@
                     }) : null
                 }
                 ,
-                e.prototype.renderAge = function(t) {
+                e.prototype.renderAge = function (t) {
                     void 0 === t && (t = "default");
                     var e = this.b_
                         , i = this.props.adv.age;
@@ -2408,7 +2442,7 @@
                     }, i) : null
                 }
                 ,
-                e.prototype.renderAppIcon = function() {
+                e.prototype.renderAppIcon = function () {
                     var t = this.b_
                         , e = this.app;
                     if (!e || !e.icon)
@@ -2427,11 +2461,11 @@
                     })
                 }
                 ,
-                e.prototype.registerImageViewport = function(t) {
+                e.prototype.registerImageViewport = function (t) {
                     var e = this
                         , i = this.props.context;
-                    i.doOnReady(function() {
-                        return i.doOnReady(function() {
+                    i.doOnReady(function () {
+                        return i.doOnReady(function () {
                             var i = e.getResourceById(t);
                             if (i) {
                                 var n = i.getElement();
@@ -2461,9 +2495,9 @@
         }(s);
         e.AdvAdaptive = w
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
-        var n = Object.assign || function(t) {
+        var n = Object.assign || function (t) {
                 for (var e, i = 1, n = arguments.length; i < n; i++)
                     for (var o in e = arguments[i])
                         Object.prototype.hasOwnProperty.call(e, o) && (t[o] = e[o]);
@@ -2472,32 +2506,32 @@
         ;
         e.__esModule = !0;
         var o = i(412);
-        e.prettify = function(t, e) {
+        e.prettify = function (t, e) {
             var i = n({
                 gluePrepositions: !0,
                 maxGluedLength: 1 / 0,
                 softBreakPunct: !1
             }, e);
-            if (function(t) {
+            if (function (t) {
                 return /[\u0404\u0406\u0407\u0454\u0456\u0457\u0490\u0491]/.test(t)
             }(t))
                 return t;
             var r = (t = o.htmlToUtf(t)).match(/"/g)
-                , a = new RegExp('(^|\\s)"([.\\-\\s\\da-zA-Z\u0430-\u044f\u0410-\u042f\u0451\u0401]{3,})"',"g")
+                , a = new RegExp('(^|\\s)"([.\\-\\s\\da-zA-Z\u0430-\u044f\u0410-\u042f\u0451\u0401]{3,})"', "g")
                 , s = t.match(a);
-            return r && s && r.length % 2 == 0 && r.length / 2 === s.length && (t = t.replace(a, function(t, e, i) {
+            return r && s && r.length % 2 == 0 && r.length / 2 === s.length && (t = t.replace(a, function (t, e, i) {
                 return /^[\-\s]|[\-\s]$|^[\-\s\d]+$/.test(i) ? t : e + "\xab" + i + "\xbb"
             })),
-            i.gluePrepositions && (t = t.replace(new RegExp('(^|\\(|\\s)([\u0410\u0430]|[\u0411\u0431]\u0435\u0437|[\u0412\u0432](?:|\u044b|\u0430\u0441|\u0430\u043c|\u0441\u0435|\u0441\u0451)|[\u0413\u0433]\u0434\u0435|[\u0414\u0434](?:\u043e|\u043b\u044f)|[\u0417\u0437]\u0430|[\u0418\u0438](?:|\u0437)|[\u041a\u043a](?:|\u043e|\u0430\u043a)|[\u041c\u043c]\u044b|[\u041d\u043d](?:\u0430|\u0430\u043c|\u0430\u0441|\u0435|\u0438|\u043e)|[\u041e\u043e](?:|\u0431|\u0442)|[\u041f\u043f](?:\u043e|\u0440\u043e)|[\u0421\u0441](?:|\u043e)|[\u0422\u0442](?:\u043e|\u0443\u0442|\u044b)|[\u0423\u0443]|[\u0427\u0447]\u0442\u043e|[\u042d\u044d]\u0442\u043e)\\s([\xab"$\\da-zA-Z\u0430-\u044f\u0410-\u042f\u0451\u0401]+)',"g"), function(t, e, n, o) {
+            i.gluePrepositions && (t = t.replace(new RegExp('(^|\\(|\\s)([\u0410\u0430]|[\u0411\u0431]\u0435\u0437|[\u0412\u0432](?:|\u044b|\u0430\u0441|\u0430\u043c|\u0441\u0435|\u0441\u0451)|[\u0413\u0433]\u0434\u0435|[\u0414\u0434](?:\u043e|\u043b\u044f)|[\u0417\u0437]\u0430|[\u0418\u0438](?:|\u0437)|[\u041a\u043a](?:|\u043e|\u0430\u043a)|[\u041c\u043c]\u044b|[\u041d\u043d](?:\u0430|\u0430\u043c|\u0430\u0441|\u0435|\u0438|\u043e)|[\u041e\u043e](?:|\u0431|\u0442)|[\u041f\u043f](?:\u043e|\u0440\u043e)|[\u0421\u0441](?:|\u043e)|[\u0422\u0442](?:\u043e|\u0443\u0442|\u044b)|[\u0423\u0443]|[\u0427\u0447]\u0442\u043e|[\u042d\u044d]\u0442\u043e)\\s([\xab"$\\da-zA-Z\u0430-\u044f\u0410-\u042f\u0451\u0401]+)', "g"), function (t, e, n, o) {
                 return (n + o).length + 1 <= i.maxGluedLength ? e + n + "\xa0" + o : t
             })),
             i.softBreakPunct && (t = t.replace(/([.,!?:;)+]+|[^<]\/|=(?!"))([^ -])(?!$|[.,!?:;)+=\/ ])/g, "$1<wbr />$2")),
-                t = t.replace(/([0-9]+) (?=[0-9]{3})/g, "$1\xa0").replace(/([0-9\u00A0]+) (\u0440|\u0440\u0443\u0431|\u0442\u044b\u0441|\u043c\u043b\u043d|\u043a\u043c|\u043c|\u0441\u043c|\u043c\u043c)(?=[.,?!:;\s]|$)/g, function(t, e, n) {
+                t = t.replace(/([0-9]+) (?=[0-9]{3})/g, "$1\xa0").replace(/([0-9\u00A0]+) (\u0440|\u0440\u0443\u0431|\u0442\u044b\u0441|\u043c\u043b\u043d|\u043a\u043c|\u043c|\u0441\u043c|\u043c\u043c)(?=[.,?!:;\s]|$)/g, function (t, e, n) {
                     return t.length <= i.maxGluedLength ? e + "\xa0" + n : t
                 }).replace(/ \-(\d\d?)%/g, " \u2212$1%").replace(/ !/, "\xa0!")
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n = i(77);
         t.exports = {
@@ -2505,15 +2539,15 @@
             un: n.un
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         t.exports = i(21).indexOf
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(13);
-        e.callSafe = function(t) {
+        e.callSafe = function (t) {
             try {
                 return t()
             } catch (t) {
@@ -2521,8 +2555,8 @@
             }
         }
             ,
-            e.protect = function(t, i, o, r) {
-                return function() {
+            e.protect = function (t, i, o, r) {
+                return function () {
                     try {
                         return i.apply(o || this, arguments)
                     } catch (i) {
@@ -2534,71 +2568,74 @@
                 }
             }
             ,
-            e.protect.log = function(t, e) {
+            e.protect.log = function (t, e) {
                 console.log("LOG:" + e + ":" + t)
             }
             ,
-            e.protect.setTimeout = function(t, i, n, o) {
+            e.protect.setTimeout = function (t, i, n, o) {
                 return window.setTimeout(e.protect("timeout", t, n, o), i)
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0,
-            e.forOwn = function(t, e, i) {
+            e.forOwn = function (t, e, i) {
                 for (var n in t)
                     t.hasOwnProperty(n) && e.call(i, t[n], n, t)
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0,
-            e.isString = function(t) {
+            e.isString = function (t) {
                 return "string" == typeof t
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
+
         function n() {
             return window.Ya || (window.Ya = {})
         }
+
         function o() {
             var t = n();
             return t.Context || (t.Context = {})
         }
+
         e.__esModule = !0,
-            e.setGlobalVariable = function(t, e) {
+            e.setGlobalVariable = function (t, e) {
                 o()[t] = e
             }
             ,
-            e.getGlobalVariable = function(t) {
+            e.getGlobalVariable = function (t) {
                 return o()[t]
             }
             ,
             e.getYa = n,
             e.getYaContext = o
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0,
-            e.noop = function() {
+            e.noop = function () {
                 for (var t = [], e = 0; e < arguments.length; e++)
                     t[e] = arguments[e]
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(177).getNativeMethod(Array, "isArray")
             , o = {};
-        e.isArray = Boolean(n) ? function(t) {
+        e.isArray = Boolean(n) ? function (t) {
                 return n.call(Array, t)
             }
-            : function(t) {
+            : function (t) {
                 return "[object Array]" === o.toString.call(o, t)
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n = i(195)
             , o = i(128)
@@ -2606,12 +2643,14 @@
             , a = i(10)
             , s = i(127)
             , l = i(356);
+
         function p(t, e) {
             if (e) {
                 var i = a.indexOf(e, t);
                 -1 !== i && (e[i] = null)
             }
         }
+
         var c = a.augment(n, {
             __embeddedResources: null,
             __children: null,
@@ -2620,7 +2659,7 @@
             __resourceId: null,
             __state: null,
             props: null,
-            constructor: function(t, e, i) {
+            constructor: function (t, e, i) {
                 this.__state = l.INITIAL,
                 (t = t || {}).hasOwnProperty("resourceId") && (this.__resourceId = t.resourceId,
                     delete t.resourceId),
@@ -2631,27 +2670,27 @@
                     this.props = this.initProps(t),
                     this.onInit()
             },
-            addToEmbeddedResources: function(t) {
+            addToEmbeddedResources: function (t) {
                 this.__embeddedResources.push(t)
             },
-            initProps: function(t) {
+            initProps: function (t) {
                 return t
             },
-            destroy: function() {
+            destroy: function () {
                 this.unmount();
                 var t = this.getContextComponent();
                 t && t._removeFromEmbeddedResources(this);
                 var e = this.__parentComponent;
                 e && e._removeFromExternalResources(this),
-                    a.each(this.__children, function(t) {
+                    a.each(this.__children, function (t) {
                         t instanceof n && t.destroy()
                     }, this),
                     this.onDestroy(),
                     this.__state = l.DESTROYED
             },
-            unmount: function() {
+            unmount: function () {
                 this._clearEmbeddedResources(),
-                    a.each(this.__children, function(t) {
+                    a.each(this.__children, function (t) {
                         t instanceof n && t.unmount()
                     }, this),
                     this.onUnmount(),
@@ -2661,32 +2700,32 @@
             onDestroy: s,
             onUnmount: s,
             onMount: s,
-            _clearEmbeddedResources: function() {
-                a.each(this.__embeddedResources, function(t) {
+            _clearEmbeddedResources: function () {
+                a.each(this.__embeddedResources, function (t) {
                     t instanceof n && t.destroy()
                 }),
                     this.__embeddedResources = []
             },
-            _removeFromExternalResources: function(t) {
+            _removeFromExternalResources: function (t) {
                 p(t, this.__children)
             },
-            _removeFromEmbeddedResources: function(t) {
+            _removeFromEmbeddedResources: function (t) {
                 p(t, this.__embeddedResources)
             },
-            findEmbeddedResources: function(t) {
+            findEmbeddedResources: function (t) {
                 var e = [];
                 if (!a.isFunction(t)) {
                     var i = t;
-                    t = function(t) {
+                    t = function (t) {
                         return t.__resourceId === i
                     }
                 }
-                return a.each(this.__embeddedResources, function(i) {
+                return a.each(this.__embeddedResources, function (i) {
                     i && t(i) && e.push(i)
                 }),
                     e
             },
-            getResourceById: function(t) {
+            getResourceById: function (t) {
                 for (var e = this.__embeddedResources, i = e.length, n = 0; n < i; n++) {
                     var o = e[n];
                     if (o && o.__resourceId === t)
@@ -2694,46 +2733,48 @@
                 }
                 return null
             },
-            getParentComponent: function() {
+            getParentComponent: function () {
                 return this.__parentComponent
             },
-            getContextComponent: function() {
+            getContextComponent: function () {
                 return this.__contextComponent
             },
-            getChildren: function() {
+            getChildren: function () {
                 return this.__children
             },
-            pushCallback: function(t) {
+            pushCallback: function (t) {
                 r.push(t, this)
             },
-            shouldRender: function() {
+            shouldRender: function () {
                 return !0
             },
-            render: function() {
+            render: function () {
                 return this.getChildren()
             },
-            callRendering: function(t) {
+            callRendering: function (t) {
                 this.__state === l.MOUNTED ? this.unmount() : this.__parentComponent = o.getCurrentComponent();
                 var e, i = t(this);
                 return this.__lastElement = (e = i.childNodes).length ? e[e.length - 1] : null,
                     this.__state = l.MOUNTED,
                     i
             },
-            update: function() {
+            update: function () {
                 return o.updateComponentInNode(this.__lastElement, this)
             }
         });
         t.exports = c
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = [];
+
         function o(t) {
             return 0 === t.indexOf(e.FAKE_IMP_ID)
         }
+
         e.FAKE_IMP_ID = "100500",
-            e.generateImpId = function(t) {
+            e.generateImpId = function (t) {
                 var i = n.indexOf(t);
                 return -1 === i && (i = n.length,
                     n.push(t)),
@@ -2741,16 +2782,16 @@
             }
             ,
             e.isFakeImpId = o,
-            e.getRealImpId = function(t) {
+            e.getRealImpId = function (t) {
                 return o(t) ? e.FAKE_IMP_ID : t
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(192)
             , o = i(81);
-        e.compareArrays = function(t, e) {
+        e.compareArrays = function (t, e) {
             for (var i = t.length, n = e.length, o = Math.min(i, n), r = 0; r < o; r++) {
                 if (t[r] < e[r])
                     return -1;
@@ -2760,12 +2801,12 @@
             return i - n
         }
             ,
-            e.flushQueue = function(t, e) {
-                for (; t.length; )
+            e.flushQueue = function (t, e) {
+                for (; t.length;)
                     e(t.shift())
             }
             ,
-            e.getSectionLimit = function(t, e, i) {
+            e.getSectionLimit = function (t, e, i) {
                 for (var n = 0, o = 1 / 0, r = 0, a = 0, s = t; a < s.length; a++) {
                     var l = s[a];
                     if (n += l,
@@ -2776,7 +2817,7 @@
                 return r
             }
             ,
-            e.createExpander = function() {
+            e.createExpander = function () {
                 var t = document.createElement("div");
                 return n.setStyle(t, {
                     display: "table",
@@ -2789,23 +2830,23 @@
                     t
             }
             ,
-            e.calcAvg = function() {
+            e.calcAvg = function () {
                 for (var t = [], e = 0; e < arguments.length; e++)
                     t[e] = arguments[e];
-                return o.reduce(t, function(t, e) {
+                return o.reduce(t, function (t, e) {
                     return t + e
                 }) / t.length
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n = i(96)
             , o = i(2);
-        t.exports = function(t, e, i) {
+        t.exports = function (t, e, i) {
             return i || (i = t),
                 i.addClass(e.join(" ")),
-                o.each(e, function(e) {
-                    !function(t, e, i) {
+                o.each(e, function (e) {
+                    !function (t, e, i) {
                         var o = t.getElement();
                         (0,
                             n.hasScrollInElement)(o) || (i.removeClass(e),
@@ -2817,38 +2858,39 @@
                     n.hasScrollInElement)(t.getElement())
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n;
         n = i(204),
             t.exports = n
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0,
-            e.removeNodeFromParent = function(t) {
+            e.removeNodeFromParent = function (t) {
                 if (t) {
                     var e = t.parentElement;
                     e && e.removeChild(t)
                 }
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n, o = (n = Object.setPrototypeOf || {
                     __proto__: []
-                }instanceof Array && function(t, e) {
+                } instanceof Array && function (t, e) {
                     t.__proto__ = e
                 }
-                || function(t, e) {
+                || function (t, e) {
                     for (var i in e)
                         e.hasOwnProperty(i) && (t[i] = e[i])
                 }
                 ,
-                function(t, e) {
+                function (t, e) {
                     function i() {
                         this.constructor = t
                     }
+
                     n(t, e),
                         t.prototype = null === e ? Object.create(e) : (i.prototype = e.prototype,
                             new i)
@@ -2856,18 +2898,19 @@
         );
         e.__esModule = !0;
         var r = i(97)
-            , a = function(t) {
+            , a = function (t) {
             function e(e) {
                 return t.apply(this, arguments) || this
             }
+
             return o(e, t),
-                e.prototype.onInit = function() {
+                e.prototype.onInit = function () {
                     var t = this.props;
                     this.encodeStyles = this.getContextComponent().encodeStyles,
                     this.encodeStyles && (t.text = r.encodeTemplate(t.text))
                 }
                 ,
-                e.prototype.beforeRender = function(t) {
+                e.prototype.beforeRender = function (t) {
                     var e = this.props.text.toString() || "";
                     return t.getCurrentElement().insertAdjacentHTML("beforeend", e),
                         !1
@@ -2877,34 +2920,39 @@
         }(i(145));
         e.Html = a
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(387);
+
         function o(t, e) {
-            var i = function(t, e) {
+            var i = function (t, e) {
                 return e in t.style && n.getStyle(t).getPropertyValue(e) || "0"
             }(t, "padding-" + e);
             return parseFloat(i)
         }
-        e.getElementInnerSize = function(t) {
+
+        e.getElementInnerSize = function (t) {
             return {
                 width: Math.max(0, t.clientWidth - o(t, "left") - o(t, "right")),
                 height: Math.max(0, t.clientHeight - o(t, "top") - o(t, "bottom"))
             }
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = 2;
+
         function o(t) {
             return r(t / 100)
         }
+
         function r(t) {
             return Number(t.toFixed(n))
         }
-        e.prepare = function(t) {
+
+        e.prepare = function (t) {
             for (var e, i = [], n = 0, a = 0; a < t.length; a++)
                 n = e = r(o(t[a].percent) + n),
                     i.push({
@@ -2917,37 +2965,38 @@
             ,
             e.toFraction = o,
             e.fixPrecision = r,
-            e.findDefault = function(t) {
+            e.findDefault = function (t) {
                 for (var e = null, i = 0; i < t.length; i++)
                     (!e || e.percent < t[i].percent) && (e = t[i]);
                 return e
             }
             ,
-            e.isPercent = function(t) {
+            e.isPercent = function (t) {
                 return Math.random() < o(t)
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
-        var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(t) {
+        var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (t) {
                 return typeof t
             }
-            : function(t) {
+            : function (t) {
                 return t && "function" == typeof Symbol && t.constructor === Symbol && t !== Symbol.prototype ? "symbol" : typeof t
             }
         ;
         e.__esModule = !0,
-            e.isObject = function(t) {
+            e.isObject = function (t) {
                 var e = void 0 === t ? "undefined" : n(t);
                 return Boolean(t) && ("object" === e || "function" === e)
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_=";
+
         function o(t) {
-            for (var e = "", i = 0; i < t.length; ) {
+            for (var e = "", i = 0; i < t.length;) {
                 var o = t.charCodeAt(i++)
                     , r = t.charCodeAt(i++)
                     , a = t.charCodeAt(i++)
@@ -2960,10 +3009,11 @@
             }
             return e
         }
+
         function r(t) {
             var e = []
                 , i = 0;
-            for (t = t.replace(/[^A-Za-z0-9\-_=]/g, ""); i < t.length; ) {
+            for (t = t.replace(/[^A-Za-z0-9\-_=]/g, ""); i < t.length;) {
                 var o = n.indexOf(t.charAt(i++))
                     , r = n.indexOf(t.charAt(i++))
                     , a = n.indexOf(t.charAt(i++))
@@ -2977,9 +3027,10 @@
             }
             return e.join("")
         }
-        e.encode = function(t, e) {
+
+        e.encode = function (t, e) {
             return void 0 === e && (e = 1e6),
-                o(function(t, e) {
+                o(function (t, e) {
                     t = t.replace(/\r\n/g, "\n");
                     for (var i = "", n = 0; n < t.length; n++) {
                         var o = t.charCodeAt(n)
@@ -2997,9 +3048,9 @@
         }
             ,
             e.encodeUInt8String = o,
-            e.decode = function(t) {
-                return function(t) {
-                    for (var e = [], i = 0; i < t.length; ) {
+            e.decode = function (t) {
+                return function (t) {
+                    for (var e = [], i = 0; i < t.length;) {
                         var n = t.charCodeAt(i);
                         if (n < 128)
                             e.push(String.fromCharCode(n)),
@@ -3020,24 +3071,24 @@
             }
             ,
             e.decodeUInt8String = r,
-            e.cropEquals = function(t) {
+            e.cropEquals = function (t) {
                 return t.replace(/=+$/, "")
             }
             ,
-            e.addEquals = function(t) {
-                for (; t.length % 4 != 0; )
+            e.addEquals = function (t) {
+                for (; t.length % 4 != 0;)
                     t += "=";
                 return t
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0,
             e.AD_TITLE_LENGTH = 33,
             e.AD_BODY_LENGTH = 75,
             e.PARAMS_DELIMITER = "/;/"
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n = i(345)
             , o = i(192).setStyle
@@ -3052,11 +3103,11 @@
             innerHTML: r
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(182);
-        e.sendPixel = function(t, e, i) {
+        e.sendPixel = function (t, e, i) {
             n.loadImage({
                 src: t,
                 onLoad: e,
@@ -3064,30 +3115,30 @@
             })
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n = i(49)
             , o = i(10).augment(n, {
-            constructor: function() {
+            constructor: function () {
                 n.apply(this, arguments)
             }
         });
         t.exports = o
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(194)
             , o = i(32)
             , r = i(98).PREVENTS_BROWSING
             , a = r[0] + "-" + r[1];
-        e.slideUp = function(t, e) {
+        e.slideUp = function (t, e) {
             o.setImportantCssProperty(t, "overflow", "hidden");
-            var i = function(e) {
+            var i = function (e) {
                 var i = Math.round(100 * e) / 100;
                 o.setImportantCssProperty(t, "height", i + "px")
             };
-            setTimeout(function() {
+            setTimeout(function () {
                 n({
                     duration: 500,
                     start: t.offsetHeight,
@@ -3098,7 +3149,7 @@
             }, 1e3)
         }
             ,
-            e.shouldSlideUp = function(t, e) {
+            e.shouldSlideUp = function (t, e) {
                 var i = window.top !== window.self
                     , n = t.pageId;
                 if (i && !/^(?:106712)|(?:106713)$/.test(n))
@@ -3106,7 +3157,7 @@
                 return e === a
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(389)
@@ -3119,62 +3170,68 @@
             , c = window;
         c.yaSafeFrameCallbacksStorage = c.yaSafeFrameCallbacksStorage || {};
         var d = n.isEncoded("https://yastatic.net/safeframe/1-1-0/");
+
         function u() {
             var t = d ? p : l
                 , e = "" + ["https://yastatic", ".net/safeframe-bundles/0.40/"].join("") + t;
             return d ? n.encode(e) : e
         }
+
         function m(t) {
             t.isLoadingSafeframeStarted || (t.isLoadingSafeframeStarted = !0,
                 o.loadCustomScript(t, u(), r.noop, !d))
         }
+
         function f(t) {
             var e = t[s] || [];
             return t[s] = e,
                 e
         }
+
         function h(t, e) {
             delete t.yaSafeFrameCallbacksStorage[e]
         }
+
         function g(t) {
             return Boolean(t.$sf && t.$sf.ext)
         }
+
         e.getSafeframeLoaderURL = u,
-            e.initSafeframe = function(t, e, i, n, o, s) {
+            e.initSafeframe = function (t, e, i, n, o, s) {
                 void 0 === n && (n = r.noop),
                 void 0 === o && (o = r.noop),
                 void 0 === s && (s = r.noop),
                     m(t);
                 var l = f(t)
                     , p = i.id instanceof Element ? "" : i.id
-                    , c = function(t, e) {
+                    , c = function (t, e) {
                     return e || t.id || "sf-" + (Math.floor(Math.random() * a) + 1)
                 }(e, p);
-                l.push(function() {
+                l.push(function () {
                     t.yaSafeFrameCallbacksStorage = t.yaSafeFrameCallbacksStorage || {},
                         t.yaSafeFrameCallbacksStorage[c] = {
                             onError: n,
                             onRender: o,
                             onAction: s
                         },
-                        function(t) {
+                        function (t) {
                             t.yaSafeFrameCallbacksStorage = t.yaSafeFrameCallbacksStorage || {};
                             var e = t.yaSafeFrameCallbacksStorage;
                             new t.$sf.host.Config({
                                 auto: !1,
-                                onFailure: function(t, i, n) {
+                                onFailure: function (t, i, n) {
                                     e[t] && e[t].onError(t, n)
                                 },
-                                onEndPosRender: function(t, i, n) {
+                                onEndPosRender: function (t, i, n) {
                                     e[t] && e[t].onRender(t, n)
                                 },
-                                onPosMsg: function(i, n, o) {
+                                onPosMsg: function (i, n, o) {
                                     e[i] && e[i].onAction(n, o),
                                     "nuke" === n && h(t, i)
                                 }
                             })
                         }(t),
-                        function(t, e, i, n) {
+                        function (t, e, i, n) {
                             e.id = n;
                             var o = i.html
                                 , r = i.width
@@ -3197,16 +3254,16 @@
                 })
             }
             ,
-            e.nukeSafeframe = function(t, e) {
+            e.nukeSafeframe = function (t, e) {
                 m(t),
-                    f(t).push(function() {
+                    f(t).push(function () {
                         h(t, e),
                             t.$sf.host.nuke(e)
                     })
             }
             ,
             e.isInSafeframe = g,
-            e.updateSafeframeSize = function(t, e) {
+            e.updateSafeframeSize = function (t, e) {
                 if (g(t)) {
                     var i = t.$sf.ext.geom()
                         , n = i.self.w + i.exp.r
@@ -3222,7 +3279,7 @@
                 }
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n = i(11)
             , o = i(67)
@@ -3232,7 +3289,7 @@
             , l = i(15)
             , p = {};
         (0,
-            n.forEach)(a, function(t) {
+            n.forEach)(a, function (t) {
             t.index = t.id,
                 t.className = t.className || t.name;
             var e = "240x400" === t.className;
@@ -3241,29 +3298,30 @@
                 p[t.name] = t
         }),
             t.exports = {
-                getFormatByName: function(t) {
+                getFormatByName: function (t) {
                     var e = p[t];
                     return e ? l({}, e) : null
                 }
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(84)
             , o = i(9)
             , r = window.location.host
-            , a = !(o.filter([/youla\.io/i, /avito\.ru/i, /ok\.ru/i, /vk\.com/i, /rambler\.ru/i, /mail\.ru/i, /lenta\.ru/i, /gazeta\.ru/i, /devmail\.ru/i, /eda\.ru/i, /nightparty\.ru/i, /afisha\.ru/i, /mir\.afisha\.ru/i, /daily\.afisha\.ru/i, /m\.gazeta\.ru/i, /gazeta\.ru/i, /lenta\.ru/i, /motor\.ru/i, /m\.lenta\.ru/i, /moslenta\.ru/i, /secretmag\.ru/i, /championat\.com/i, /letidor\.ru/i, /quto\.ru/i, /wmj\.ru/i, /indicator\.ru/i, /ferra\.ru/i, /rns\.online/i, /m\.passion\.ru/i, /passion\.ru/i, /m\.moslenta\.ru/i, /autorambler\.ru/i, /livejournal\.com/i, /rg\.ru/i], function(t) {
-            return t.test(r)
-        }).length > 0) && !0;
+            ,
+            a = !(o.filter([/youla\.io/i, /avito\.ru/i, /ok\.ru/i, /vk\.com/i, /rambler\.ru/i, /mail\.ru/i, /lenta\.ru/i, /gazeta\.ru/i, /devmail\.ru/i, /eda\.ru/i, /nightparty\.ru/i, /afisha\.ru/i, /mir\.afisha\.ru/i, /daily\.afisha\.ru/i, /m\.gazeta\.ru/i, /gazeta\.ru/i, /lenta\.ru/i, /motor\.ru/i, /m\.lenta\.ru/i, /moslenta\.ru/i, /secretmag\.ru/i, /championat\.com/i, /letidor\.ru/i, /quto\.ru/i, /wmj\.ru/i, /indicator\.ru/i, /ferra\.ru/i, /rns\.online/i, /m\.passion\.ru/i, /passion\.ru/i, /m\.moslenta\.ru/i, /autorambler\.ru/i, /livejournal\.com/i, /rg\.ru/i], function (t) {
+                return t.test(r)
+            }).length > 0) && !0;
         e.MEDIA_240x400_IS_CAN_TO_SHOW = a;
         e.MEDIA_240x400_IS_OLD_ALL_CLICKABLE = !1;
         var s = a;
         e.MEDIA_240x400_IS_NEW_240x400 = s;
-        var l = !("240x400"in n.adaptive0418Blocks);
+        var l = !("240x400" in n.adaptive0418Blocks);
         e.MEDIA_240x400_IS_IGNORE_SETTINGS = l
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(37)
@@ -3272,33 +3330,33 @@
             , a = i(281)
             , s = i(282)
             , l = i(283);
-        e.getSessionId = n.once(function() {
+        e.getSessionId = n.once(function () {
             return l.getSession(s.generateSessionId, r.getWindowStorage("common"), o.getCrossFrameStorage("common"), a.configureMetrika)
         })
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0,
-            e.generateHexString = function(t) {
+            e.generateHexString = function (t) {
                 for (var e = "", i = 0; i < t; i++)
                     e += (16 * Math.random() | 0).toString(16);
                 return e
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(59);
-        Object.keys(n).forEach(function(t) {
+        Object.keys(n).forEach(function (t) {
             "default" !== t && "__esModule" !== t && Object.defineProperty(e, t, {
                 enumerable: !0,
-                get: function() {
+                get: function () {
                     return n[t]
                 }
             })
         })
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n = i(72)
             , o = (i(46),
@@ -3307,9 +3365,10 @@
             , a = 1
             , s = window.Ya && window.Ya.Metrika
             , l = !1;
+
         function p(t) {
             var e = "yaCounter" + t.id;
-            return window[e] || (window[e] = function(t) {
+            return window[e] || (window[e] = function (t) {
                 try {
                     return new window.Ya.Metrika({
                         id: t.id,
@@ -3323,22 +3382,25 @@
             }(t)),
                 window[e]
         }
+
         function c() {
             s = !0
         }
+
         t.exports = {
-            getCounter: function(t, e) {
-                s ? e(p(t)) : (function() {
+            getCounter: function (t, e) {
+                s ? e(p(t)) : (function () {
                     if (!(l || (0,
                         n.checkBundleType)(n.bundleTypes.SSP) || (0,
                         n.checkBundleType)(n.bundleTypes.mobileSdk))) {
                         var t = Ya ? Ya.relHostname : ""
-                            , e = t ? "https://d93ih7uy3azjp.cloudfront.net/metrika/watch.js" : "https://mc.yandex.ru/metrika/watch.js";
+                            ,
+                            e = t ? "https://d93ih7uy3azjp.cloudfront.net/metrika/watch.js" : "https://mc.yandex.ru/metrika/watch.js";
                         o(e, !1, c),
                             l = !0
                     }
                 }(),
-                    i = function() {
+                    i = function () {
                         e(p(t))
                     }
                     ,
@@ -3348,18 +3410,18 @@
             }
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n, o = i(46), r = i(58), a = i(45);
-        !function(t) {
+        !function (t) {
             t["SSP"] = "ssp",
                 t["mobileSdk"] = "msdk"
         }(n = e.bundleTypes || (e.bundleTypes = {}));
         var s, l = "bundleType";
-        e.saveBundleType = function(t) {
+        e.saveBundleType = function (t) {
             var e;
-            s || o.getGlobalVariable(l) || (r.isObject(t) ? (e = t) && e.common && e.common.sspId && Boolean(Number(e.common.sspId)) ? s = n.SSP : e && e.common && 1 === Number(e.common.isMobileSdk) && (s = n.mobileSdk) : a.isString(t) && function(t) {
+            s || o.getGlobalVariable(l) || (r.isObject(t) ? (e = t) && e.common && e.common.sspId && Boolean(Number(e.common.sspId)) ? s = n.SSP : e && e.common && 1 === Number(e.common.isMobileSdk) && (s = n.mobileSdk) : a.isString(t) && function (t) {
                 switch (t) {
                     case "ssp":
                         s = n.SSP;
@@ -3371,86 +3433,89 @@
             s && o.setGlobalVariable(l, s))
         }
             ,
-            e.checkBundleType = function(t) {
+            e.checkBundleType = function (t) {
                 return s === t
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         t.exports = i(45).isString
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(2)
             , o = i(20)
             , r = o.isHostIgnored({
-            exclude: [o.hosts.yandex, o.hosts.vk, o.hosts.ok, o.hosts.avito, o.hosts.gismeteo, o.hosts.rbc, o.hosts.rg]
-        })
-            , a = [93830, 93511, 49688, 92550, 104220, 113011, 129744, 137740, 141769, 143156, 144204, 84375, 87940, 97693, 101833, 126291]
+                exclude: [o.hosts.yandex, o.hosts.vk, o.hosts.ok, o.hosts.avito, o.hosts.gismeteo, o.hosts.rbc, o.hosts.rg]
+            })
+            ,
+            a = [93830, 93511, 49688, 92550, 104220, 113011, 129744, 137740, 141769, 143156, 144204, 84375, 87940, 97693, 101833, 126291]
             , s = !1;
-        e.disableRtbInOldDirectExperiment = function() {
+        e.disableRtbInOldDirectExperiment = function () {
             s = !0
         }
             ,
-            e.isRtbInOldDirectExperiment = function(t, e) {
+            e.isRtbInOldDirectExperiment = function (t, e) {
                 return !e && !s && !r
             }
             ,
-            e.isRtbInDirectExperiment = function(t) {
+            e.isRtbInDirectExperiment = function (t) {
                 t.pageId;
                 var e = t.product;
-                return !t.hasSearchText && function(t) {
+                return !t.hasSearchText && function (t) {
                     return "D" === t || "direct" === t
                 }(e)
             }
             ,
-            e.needRtbShadow = function(t) {
-                return !function(t, e) {
+            e.needRtbShadow = function (t) {
+                return !function (t, e) {
                     var i;
                     return i = "string" == typeof e ? parseInt(e) : e,
                     -1 !== n.inArray(t, i)
                 }(a, t)
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(76);
-        e.getIsIOS = function(t) {
+        e.getIsIOS = function (t) {
             void 0 === t && (t = window);
             var e = t.navigator.userAgent.toLowerCase();
             return /ipad|iphone|ipod/.test(e) && !t.MSStream && !n.isUCBrowser(t)
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0,
-            e.isUCBrowser = function(t) {
+            e.isUCBrowser = function (t) {
                 return void 0 === t && (t = window),
                 t.navigator.userAgent.indexOf("UCBrowser") > -1
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(43)
             , o = i(318)
             , r = i(183)
             , a = i(319);
+
         function s(t) {
             t && t.un()
         }
-        e.on = function(t, e, i, l, p) {
+
+        e.on = function (t, e, i, l, p) {
             if (!t || !i)
                 return null;
             var c, d = n.protect("handler:" + e, i, l), u = o.fixEvent(d), m = {
-                un: function() {
+                un: function () {
                     r.removeEventListenerFunction(t, e, u)
                 }
             };
             return p && p.once && !a.isSupportsOnceOption && (c = u,
-                    u = function(t) {
+                    u = function (t) {
                         c.call(this, t),
                             s(m)
                     }
@@ -3461,7 +3526,7 @@
             ,
             e.un = s
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         t.exports = {
             BlockTypes: {
@@ -3481,22 +3546,22 @@
             }
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         t.exports = i(43).protect
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0,
-            e.isTurboPage = function(t) {
+            e.isTurboPage = function (t) {
                 return void 0 === t && (t = window),
                     Boolean(t.YA_TURBO_PAGES)
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0,
-            e.reduce = function(t, e, i) {
+            e.reduce = function (t, e, i) {
                 var n = 0;
                 for (arguments.length < 3 && (n = 1,
                     i = t[0]); n < t.length; n++)
@@ -3504,24 +3569,24 @@
                 return i
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0,
-            e.isInIframe = function(t) {
+            e.isInIframe = function (t) {
                 return t.top !== t.self
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0,
-            e.getRandomInt = function(t, e) {
+            e.getRandomInt = function (t, e) {
                 var i = t + Math.random() * (e + 1 - t);
                 return i = Math.floor(i)
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
-        var n = Object.assign || function(t) {
+        var n = Object.assign || function (t) {
                 for (var e = 1; e < arguments.length; e++) {
                     var i = arguments[e];
                     for (var n in i)
@@ -3656,7 +3721,7 @@
             }]
         })
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         t.exports = {
             BLOCK_320x67: {
@@ -4014,13 +4079,13 @@
             }
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(411)
             , o = i(29)
             , r = i(60);
-        e.appendDescription = function(t, e) {
+        e.appendDescription = function (t, e) {
             if (!e)
                 return t;
             if (t.length + e.length > r.AD_BODY_LENGTH && t.length + "...".length < r.AD_BODY_LENGTH) {
@@ -4030,7 +4095,7 @@
             return t
         }
             ,
-            e.addToBody = function(t, e, i) {
+            e.addToBody = function (t, e, i) {
                 for (var a = [], s = t, l = 0; l < e.length; l++) {
                     var p = n["default"](e[l]);
                     p && (/\.$/.test(p) || (p += "."),
@@ -4042,7 +4107,7 @@
                 }
             }
             ,
-            e.addStringToBody = function(t, e, i) {
+            e.addStringToBody = function (t, e, i) {
                 void 0 === t && (t = ""),
                 void 0 === e && (e = "");
                 var n = t;
@@ -4050,9 +4115,9 @@
                     n
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
-        var n = Object.assign || function(t) {
+        var n = Object.assign || function (t) {
                 for (var e, i = 1, n = arguments.length; i < n; i++)
                     for (var o in e = arguments[i])
                         Object.prototype.hasOwnProperty.call(e, o) && (t[o] = e[o]);
@@ -4061,38 +4126,39 @@
         ;
         e.__esModule = !0;
         var o, r = i(21), a = i(11);
-        !function(t) {
+        !function (t) {
             t[t["Inited"] = 0] = "Inited",
                 t[t["Mounting"] = 1] = "Mounting",
                 t[t["Displayed"] = 2] = "Displayed",
                 t[t["Ready"] = 3] = "Ready"
         }(o = e.BlockStatus || (e.BlockStatus = {}));
-        var s = function() {
+        var s = function () {
             function t(t) {
                 this.callbacks = [],
                     this.state = n({
                         status: o.Inited
                     }, t)
             }
-            return t.prototype.setState = function(t) {
+
+            return t.prototype.setState = function (t) {
                 var e = this
                     , i = this.state;
                 this.state = n({}, i, t),
-                    a.forEach(this.callbacks.concat(), function(t) {
+                    a.forEach(this.callbacks.concat(), function (t) {
                         t(e.state, i)
                     })
             }
                 ,
-                t.prototype.getState = function() {
+                t.prototype.getState = function () {
                     return this.state
                 }
                 ,
-                t.prototype.onChangeState = function(t) {
+                t.prototype.onChangeState = function (t) {
                     t(this.state, null),
                         this.callbacks.push(t)
                 }
                 ,
-                t.prototype.unChangeState = function(t) {
+                t.prototype.unChangeState = function (t) {
                     var e = r.indexOf(this.callbacks, t);
                     e > -1 && this.callbacks.splice(e, 1)
                 }
@@ -4101,39 +4167,40 @@
         }();
         e.BlockState = s
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n = i(139)
             , o = i(87);
         t.exports = {
-            onInit: function() {
+            onInit: function () {
                 var t = this;
-                this.onChangeBlockState = function(e, i) {
+                this.onChangeBlockState = function (e, i) {
                     (null === i || i.status !== e.status) && e.status >= o.BlockStatus.Displayed && (t.onDisplayed(),
                         t.context.unChangeState(t.onChangeBlockState))
                 }
                     ,
                     this.__base()
             },
-            onMount: function() {
+            onMount: function () {
                 this.context = n.BlockContext.getClosestProvider(this),
                     this.context.onChangeState(this.onChangeBlockState),
                     this.__base()
             },
-            onDisplayed: function() {}
+            onDisplayed: function () {
+            }
         }
     }
-    , function(t, e, i) {
-        t.exports = function(t, e) {
-            i.e(0).then(function() {
+    , function (t, e, i) {
+        t.exports = function (t, e) {
+            i.e(0).then(function () {
                 t(i(648))
             }
-                .bind(null, i)).catch(function() {
+                .bind(null, i)).catch(function () {
                 e && e.apply(this, arguments)
             })
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n = i(0)
             , o = i(1)
@@ -4145,7 +4212,7 @@
             , c = n.createComponent([o, r, a], {
             name: "yap-adv",
             HOVER_CONFIRM_DELAY: 300,
-            onInit: function() {
+            onInit: function () {
                 this.__base();
                 var t = this.props
                     , e = this.getDataSource()
@@ -4156,66 +4223,66 @@
                         language: e.getLanguage()
                     })
             },
-            onDestroy: function() {
+            onDestroy: function () {
                 this.getDataSource().releaseAd(this.props.adv.adId)
             },
-            getAdvBlock: function() {
+            getAdvBlock: function () {
                 return this.getContextComponent()
             },
-            getDataSource: function() {
+            getDataSource: function () {
                 return this.getAdvBlock().getDataSource()
             },
-            afterRender: function() {
+            afterRender: function () {
                 this.pushCss(),
                     this.initHoverChecker(),
                     this.__base()
             },
-            getContentElement: function() {
+            getContentElement: function () {
                 return this.getResourceById("content").getElement()
             },
-            onClickLink: function() {
+            onClickLink: function () {
                 this.getDataSource().trackClick(this.props.adv)
             },
-            pushCss: function() {
+            pushCss: function () {
                 this.__base(),
                     this.pushStyles(p)
             },
-            initHoverChecker: function() {
+            initHoverChecker: function () {
                 var t = void 0;
-                this.rootComponent.bind("mouseover", function() {
-                    t || (t = s.setProtectedTimeout(function() {
+                this.rootComponent.bind("mouseover", function () {
+                    t || (t = s.setProtectedTimeout(function () {
                         this._confirmedHover || (this._confirmedHover = !0,
                             this.confirmHover())
                     }, this.HOVER_CONFIRM_DELAY, this))
                 }, this),
-                    this.rootComponent.bind("mouseleave", function() {
+                    this.rootComponent.bind("mouseleave", function () {
                         clearTimeout(t),
                             t = null
                     }, this)
             },
-            confirmHover: function() {
+            confirmHover: function () {
                 var t = this.getAdvBlock()
                     , e = this.props.adv;
                 t.confirmVisibilityByHover(e)
             },
-            getPicture: function() {
+            getPicture: function () {
                 var t = this.props.adv.image;
                 if (!t)
                     return null;
                 var e = this.getImageSize();
                 return t.getFitting(e.width, e.height, e.wLoss)
             },
-            getImageSize: function() {
+            getImageSize: function () {
                 return {
                     width: 120,
                     height: 90
                 }
             },
-            onReceivedFeedback: function() {
+            onReceivedFeedback: function () {
                 this.__base.apply(this, arguments),
                     this.rootComponent.addClass(this.b_("_abused_true"))
             },
-            _sendTwoTitleStatistic: function(t) {
+            _sendTwoTitleStatistic: function (t) {
                 if (this.props.adv.secondTitle)
                     if (t)
                         l(t);
@@ -4244,7 +4311,7 @@
         });
         t.exports = c
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         i(444);
         var n = i(0)
@@ -4253,16 +4320,16 @@
             , a = i(445)
             , s = n.createComponent(o, {
             name: "yap-logo",
-            initProps: function(t) {
+            initProps: function (t) {
                 var e = t.title;
                 return this.url = e.url,
                     this.text = e.title,
                     t
             },
-            afterRender: function() {
+            afterRender: function () {
                 this.pushStyles(a)
             },
-            _render: function(t, e, i) {
+            _render: function (t, e, i) {
                 var o = e.containerStyle
                     , a = {
                     color: e.color
@@ -4282,22 +4349,23 @@
         });
         t.exports = s
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n, o = (n = Object.setPrototypeOf || {
                     __proto__: []
-                }instanceof Array && function(t, e) {
+                } instanceof Array && function (t, e) {
                     t.__proto__ = e
                 }
-                || function(t, e) {
+                || function (t, e) {
                     for (var i in e)
                         e.hasOwnProperty(i) && (t[i] = e[i])
                 }
                 ,
-                function(t, e) {
+                function (t, e) {
                     function i() {
                         this.constructor = t
                     }
+
                     n(t, e),
                         t.prototype = null === e ? Object.create(e) : (i.prototype = e.prototype,
                             new i)
@@ -4309,17 +4377,18 @@
             , s = i(40)
             , l = i(55)
             , p = i(452)
-            , c = function(t) {
+            , c = function (t) {
             function e() {
                 return null !== t && t.apply(this, arguments) || this
             }
+
             return o(e, t),
-                e.prototype.onInit = function() {
+                e.prototype.onInit = function () {
                     this.name = "publishers-text",
                         t.prototype.onInit.call(this)
                 }
                 ,
-                e.prototype.render = function() {
+                e.prototype.render = function () {
                     var t = this.b_
                         , e = this.props
                         , i = [t()]
@@ -4337,7 +4406,7 @@
                         }))
                 }
                 ,
-                e.prototype.afterRender = function() {
+                e.prototype.afterRender = function () {
                     this.pushStyles(p)
                 }
                 ,
@@ -4345,7 +4414,7 @@
         }(a);
         e.Text = c
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(33)
@@ -4353,14 +4422,15 @@
             , r = i(73)
             , a = i(199)
             , s = ":";
+
         function l(t) {
             return void 0 === t && (t = {}),
-                function() {
+                function () {
                     for (var e = [], i = 0; i < arguments.length; i++)
                         e[i] = arguments[i];
                     var o = [];
-                    return n(e, function(e) {
-                        r(e) && "" !== e && n(e.split(" "), function(e) {
+                    return n(e, function (e) {
+                        r(e) && "" !== e && n(e.split(" "), function (e) {
                             if (e) {
                                 var i = t[e];
                                 (i || 0 !== e.indexOf(s)) && o.push(i || e)
@@ -4370,19 +4440,20 @@
                         o.join(" ")
                 }
         }
+
         e.classNamesFactory = l,
-            e.bemClassNamesFactory = function(t, e) {
+            e.bemClassNamesFactory = function (t, e) {
                 var i = a(t);
                 if (o(e))
                     return i;
                 var n = l(e);
-                return function() {
+                return function () {
                     var t = i.apply(i, arguments);
                     return n(t)
                 }
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n = i(158);
         t.exports = {
@@ -4391,12 +4462,12 @@
             cancelAnimationFrame: n.cancelAnimationFrame
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(42)
             , o = ["medicine", "dietarysuppl"];
-        e.hasImportantFlag = function(t) {
+        e.hasImportantFlag = function (t) {
             for (var e = 0, i = (t || "").split(","); e < i.length; e++) {
                 var r = i[e].trim();
                 if (-1 !== n(o, r))
@@ -4405,10 +4476,11 @@
             return !1
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n, o = 1;
+
         function r(t, e, i) {
             switch (i) {
                 case n.X:
@@ -4418,56 +4490,62 @@
             }
             return t || e
         }
-        !function(t) {
+
+        !function (t) {
             t[t["X"] = 0] = "X",
                 t[t["Y"] = 1] = "Y"
         }(n = e.AXIS || (e.AXIS = {})),
-            e.hasScrollInElement = function(t, e) {
+            e.hasScrollInElement = function (t, e) {
                 return r(t.scrollWidth - t.clientWidth > o, t.scrollHeight - t.clientHeight > o, e)
             }
             ,
-            e.hasScrollInParentElement = function(t, e) {
+            e.hasScrollInParentElement = function (t, e) {
                 var i = t.parentNode;
                 return !!i && r(t.clientWidth - i.clientWidth > o, t.clientHeight - i.clientHeight > o, e)
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n = 97;
         var o = "S1bIEfKfzt"
             , r = {};
+
         function a(t) {
             if (!t)
                 return "";
-            var e = function(t, e) {
-                for (var i = 5381, o = t.length + e.length, r = "" + e + t; o; )
+            var e = function (t, e) {
+                for (var i = 5381, o = t.length + e.length, r = "" + e + t; o;)
                     i = 33 * i ^ r.charCodeAt(--o);
                 return i >>>= 0,
                 "" + String.fromCharCode(i % 25 + n) + i.toString(16)
             }(t, o);
             return e
         }
+
         function s(t) {
             return t.replace(/yatag/gi, "div")
         }
+
         function l(t) {
             var e = !(arguments.length > 1 && void 0 !== arguments[1]) || arguments[1];
-            return arguments.length > 2 && void 0 !== arguments[2] && arguments[2] ? (t = t.replace(/(?:^|})(.*?){/g, function(t) {
-                return t.replace(/[#.][a-z\d\-_]+[^:,.\s{]/gi, function(t) {
+            return arguments.length > 2 && void 0 !== arguments[2] && arguments[2] ? (t = t.replace(/(?:^|})(.*?){/g, function (t) {
+                return t.replace(/[#.][a-z\d\-_]+[^:,.\s{]/gi, function (t) {
                     return "" + t[0] + p(t.slice(1))
                 })
             }),
             e && (t = s(t)),
                 t) : t
         }
+
         function p(t) {
             return r.hasOwnProperty(t) ? r[t] : r[t] = a(t)
         }
+
         t.exports = {
-            encodeTemplate: function(t) {
-                return s(t = t.replace(/(?:"|\s)+(?:id|class)=["'](.*?)["']/g, function(t, e) {
+            encodeTemplate: function (t) {
+                return s(t = t.replace(/(?:"|\s)+(?:id|class)=["'](.*?)["']/g, function (t, e) {
                     for (var i = e.split(" "), n = 0; n < i.length; n++)
-                        t = t.replace(new RegExp(i[n] + "(?![-\\w])","g"), p(i[n]));
+                        t = t.replace(new RegExp(i[n] + "(?![-\\w])", "g"), p(i[n]));
                     return t
                 }))
             },
@@ -4475,14 +4553,14 @@
             replaceYatag: s,
             getAlias: p,
             generateAlias: a,
-            encodeSelectors: function(t) {
-                return t.replace(/[#.][a-z\d\-_]+[^:,.\s{]/gi, function(t) {
+            encodeSelectors: function (t) {
+                return t.replace(/[#.][a-z\d\-_]+[^:,.\s{]/gi, function (t) {
                     return /__([0-9]+?)__/g.test(t) ? t : "" + t[0] + p(t.slice(1))
                 })
             }
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n, o = i(7), r = (n = o) && n.__esModule ? n : {
             default: n
@@ -4495,7 +4573,7 @@
         }
             , c = {
             types: p,
-            titles: function(t) {
+            titles: function (t) {
                 return {
                     small: (0,
                         r["default"])("ADTUNE_TITLE_SMALL", t),
@@ -4503,12 +4581,12 @@
                         r["default"])("ADTUNE_TITLE_LARGE", t)
                 }
             },
-            options: function(t) {
+            options: function (t) {
                 var e = {};
                 return (0,
-                    s.forEach)(["small", "large"], function(i) {
+                    s.forEach)(["small", "large"], function (i) {
                     e[i] = (0,
-                        a.map)(l, function(e) {
+                        a.map)(l, function (e) {
                         return {
                             id: e["reason-id"] + "-" + e["action-id"],
                             text: e.description[i][t]
@@ -4531,27 +4609,28 @@
                 type: p.SMALL
             }]
         };
-        l.forEach(function(t) {
+        l.forEach(function (t) {
             c[t["tanker-key"]] = [t["reason-id"], t["action-id"]]
         }),
             c["PREVENTS_BROWSING_OPTION_ID"] = c.PREVENTS_BROWSING[0] + "-" + c.PREVENTS_BROWSING[1],
             t.exports = c
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0,
-            e.getElementRectSize = function(t) {
+            e.getElementRectSize = function (t) {
                 return {
                     width: t.clientWidth,
                     height: t.clientHeight
                 }
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
-        t.exports = function() {}
+        t.exports = function () {
+        }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(35)
@@ -4566,17 +4645,17 @@
             , u = n.getCodeVersion()
             , m = p.support.touch
             , f = i(62);
-        e.chooseOption = function(t, e, i, n, p) {
-            var h = function(t) {
+        e.chooseOption = function (t, e, i, n, p) {
+            var h = function (t) {
                 var e = t.split("-");
                 return {
                     "reason-id": e[0],
                     "action-id": e[1]
                 }
             }(t);
-            f.sendPixel(function(t, e) {
+            f.sendPixel(function (t, e) {
                 var i = {};
-                return o(["reason-id", "action-id"], function(t) {
+                return o(["reason-id", "action-id"], function (t) {
                     i[t] = e[t]
                 }),
                     new l({
@@ -4584,8 +4663,8 @@
                         params: i
                     }).getUrl()
             }(e, h)),
-                function(t, e, i) {
-                    var n = c.protect("metrika_adtune", function(n) {
+                function (t, e, i) {
+                    var n = c.protect("metrika_adtune", function (n) {
                         var o = {
                             type: "inline",
                             blockType: i,
@@ -4593,7 +4672,7 @@
                             version: u,
                             isTouch: m
                         };
-                        o.optionText = a.filter(e(), function(e) {
+                        o.optionText = a.filter(e(), function (e) {
                             return e.id === t
                         })[0].text,
                             n.reachGoal("send", o)
@@ -4605,7 +4684,7 @@
             r(p) && p()
         }
         ;
-        var h = function(t) {
+        var h = function (t) {
             t.hit(window.location.href, {
                 params: {
                     type: "inline",
@@ -4614,34 +4693,35 @@
                 }
             })
         };
-        e.onAdtuneClick = function() {
+        e.onAdtuneClick = function () {
             var t = c.protect("metrika_adtune", h);
             d.getCounter({
                 id: s.METRIKA_COUNTER
             }, t)
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n = i(364);
         t.exports = n.Adtune
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n, o = (n = Object.setPrototypeOf || {
                     __proto__: []
-                }instanceof Array && function(t, e) {
+                } instanceof Array && function (t, e) {
                     t.__proto__ = e
                 }
-                || function(t, e) {
+                || function (t, e) {
                     for (var i in e)
                         e.hasOwnProperty(i) && (t[i] = e[i])
                 }
                 ,
-                function(t, e) {
+                function (t, e) {
                     function i() {
                         this.constructor = t
                     }
+
                     n(t, e),
                         t.prototype = null === e ? Object.create(e) : (i.prototype = e.prototype,
                             new i)
@@ -4656,16 +4736,17 @@
             , c = i(205)
             , d = i(82)
             , u = i(19)
-            , m = function(t) {
+            , m = function (t) {
             function e() {
                 return null !== t && t.apply(this, arguments) || this
             }
+
             return o(e, t),
-                e.prototype.getTemplate = function() {
+                e.prototype.getTemplate = function () {
                     return [[4, "marker"], [5, null], [1, "advancedFormat"], [6, "format"], [1, "isIframe"], [1, "isHover"], [1, "scrollSliderSlice"], [1, "scrollSliderCoin"], [2, "layout"], [7, "userGroup"], [1, "isApp"], [1, "hitFeatures"], [2, "phoneButtonExp"], [1, "targetExp"], [2, null], [1, "targetSlice"], [1, null], [1, "amp"], [10, "codeVer"], [1, "adblock"], [3, "adfoxexp"]]
                 }
                 ,
-                e.prototype.defaults = function() {
+                e.prototype.defaults = function () {
                     return {
                         marker: c.getMarkerIsValidStat(a.PRODUCT_MARKERS.DIRECT),
                         codeVer: s.getRevisionNo(),
@@ -4681,49 +4762,50 @@
         }(r.AbstractTesttag);
         e.DirectTesttag = m
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         i(434),
             i(190),
             i(56);
-        e.getContainer = function(t) {
+        e.getContainer = function (t) {
             return t
         }
             ,
-            e.getVisibilityContainer = function(t) {
+            e.getVisibilityContainer = function (t) {
                 return t
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
-        var n = function() {
+        var n = function () {
             function t(t) {
                 this.cache = t
             }
-            return t.prototype.get = function(t) {
+
+            return t.prototype.get = function (t) {
                 return this.cache[t]
             }
                 ,
-                t.prototype.has = function(t) {
+                t.prototype.has = function (t) {
                     return t in this.cache
                 }
                 ,
-                t.prototype.set = function(t, e) {
+                t.prototype.set = function (t, e) {
                     this.cache[t] = e
                 }
                 ,
                 t
         }();
         e.ObjectCache = n,
-            e.memoize = function(t, e, i) {
-                return void 0 === e && (e = function(t) {
+            e.memoize = function (t, e, i) {
+                return void 0 === e && (e = function (t) {
                         return t
                     }
                 ),
                 void 0 === i && (i = new n({})),
-                    function() {
+                    function () {
                         var n = e.apply(this, arguments);
                         if (i.has(n))
                             return i.get(n);
@@ -4733,17 +4815,17 @@
                     }
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         t.exports = i(48).isArray
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n = i(186)
             , o = i(15);
-        t.exports = function(t, e) {
+        t.exports = function (t, e) {
             var i = e.constructor;
-            e.hasOwnProperty("constructor") || (i = function() {
+            e.hasOwnProperty("constructor") || (i = function () {
                     i.__parent.apply(this, arguments)
                 }
             );
@@ -4756,47 +4838,51 @@
                 i
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n = i(97)
             , o = i(2)
             , r = [];
+
         function a(t) {
-            return o.inArray(r, t, function(t, e) {
+            return o.inArray(r, t, function (t, e) {
                 return e[0] === t
             }) > -1
         }
+
         function s(t) {
-            return o.map(r, function(e) {
+            return o.map(r, function (e) {
                 var i = o.extend({}, t, e[1]);
                 return i && i.id && (i.id = (0,
                     n.getAlias)(i.id)),
                     e[0].call(e[2], i)
             }).join("")
         }
+
         function l() {
             r = []
         }
+
         var p = {
-            insertCSS: function(t, e, i) {
+            insertCSS: function (t, e, i) {
                 var n = s(t);
                 return l(),
                     o.dom.appendStyle(n, e, i)
             },
             contain: a,
             clear: l,
-            push: function(t, e, i) {
+            push: function (t, e, i) {
                 o.isFunction(t) && !a(t) && r.push([t, e, i])
             },
             getCSS: s
         };
         t.exports = p
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = new RegExp("experiment-id=(\\d+)");
-        e["default"] = function(t) {
+        e["default"] = function (t) {
             void 0 === t && (t = window.location);
             for (var e = [t.search, t.hash], i = "", o = 0; o < e.length; o++) {
                 var r = e[o].match(n);
@@ -4808,29 +4894,31 @@
             return i
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
-        var n, o, r = i(19), a = i(25), s = i(16), l = i(26), p = i(109), c = i(81), d = r.experimentIds.ssSkipToken, u = d.ENABLED, m = d.WIDE_LOG, f = d.CLIENT, h = d.SERVER_MANUAL, g = d.SERVER_AUTO, _ = ((n = {})[m] = 5415,
-            n[f] = 5456,
-            n[h] = 5457,
-            n[g] = 5458,
-            n), y = c.reduce(l.getObjectKeys(_), function(t, e) {
-            return t[_[e]] = e,
-                t
-        }, {});
-        e.getName = function(t, e) {
-            var i = c.reduce(l.getObjectKeys(d), function(e, i) {
+        var n, o, r = i(19), a = i(25), s = i(16), l = i(26), p = i(109), c = i(81), d = r.experimentIds.ssSkipToken,
+            u = d.ENABLED, m = d.WIDE_LOG, f = d.CLIENT, h = d.SERVER_MANUAL, g = d.SERVER_AUTO,
+            _ = ((n = {})[m] = 5415,
+                n[f] = 5456,
+                n[h] = 5457,
+                n[g] = 5458,
+                n), y = c.reduce(l.getObjectKeys(_), function (t, e) {
+                return t[_[e]] = e,
+                    t
+            }, {});
+        e.getName = function (t, e) {
+            var i = c.reduce(l.getObjectKeys(d), function (e, i) {
                 var n = d[i];
                 return t(n) ? n : e
             }, void 0);
             return y[String(e)] || i
         }
             ,
-            e.init = function(t) {
+            e.init = function (t) {
                 return {
                     ssSkipTokenExpId: _[String(t)],
-                    isSsSkipToken: s.some([u, m, h, g], function(e) {
+                    isSsSkipToken: s.some([u, m, h, g], function (e) {
                         return e === t
                     }),
                     isSsSkipTokenServerAuto: t === g
@@ -4841,9 +4929,9 @@
             e.isSsSkipToken = o.isSsSkipToken,
             e.isSsSkipTokenServerAuto = o.isSsSkipTokenServerAuto
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
-        var n = Object.assign || function(t) {
+        var n = Object.assign || function (t) {
                 for (var e, i = 1, n = arguments.length; i < n; i++)
                     for (var o in e = arguments[i])
                         Object.prototype.hasOwnProperty.call(e, o) && (t[o] = e[o]);
@@ -4855,46 +4943,47 @@
             , r = i(5)
             , a = i(384)
             , s = i(27)
-            , l = function() {
+            , l = function () {
             function t(t) {
                 void 0 === t && (t = {}),
                     this.props = {},
                     this.setProps(n({}, this.defaults(), t))
             }
-            return t.sliceBits = function(t, e, i) {
+
+            return t.sliceBits = function (t, e, i) {
                 return a.sliceBits(t, e, i)
             }
                 ,
-                t.prototype.defaults = function() {
+                t.prototype.defaults = function () {
                     return {}
                 }
                 ,
-                t.prototype.toString = function() {
+                t.prototype.toString = function () {
                     return this.serialize().toString()
                 }
                 ,
-                t.prototype.setProps = function(t) {
+                t.prototype.setProps = function (t) {
                     var e = this;
-                    return s(t) && o.forEach(this.getTemplate(), function(i) {
+                    return s(t) && o.forEach(this.getTemplate(), function (i) {
                         var n = i[1];
                         n && t.hasOwnProperty(n) && (e.props[n] = t[n])
                     }, this),
                         this
                 }
                 ,
-                t.prototype.getProps = function() {
+                t.prototype.getProps = function () {
                     return n({}, this.props)
                 }
                 ,
-                t.prototype.clone = function() {
+                t.prototype.clone = function () {
                     return new (0,
                         this.constructor)(this.props)
                 }
                 ,
-                t.prototype.serialize = function() {
+                t.prototype.serialize = function () {
                     var t, e, i = (t = this.getTemplate(),
                         e = this.props,
-                        r.map(t, function(t) {
+                        r.map(t, function (t) {
                             var i = t[0]
                                 , n = t[1];
                             return [i, n && e[n] || null]
@@ -4902,7 +4991,7 @@
                     return a.joinBits(i)
                 }
                 ,
-                t.prototype.slice = function(e, i) {
+                t.prototype.slice = function (e, i) {
                     return t.sliceBits(this.serialize(), e, i)
                 }
                 ,
@@ -4910,7 +4999,7 @@
         }();
         e.AbstractTesttag = l
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0,
             e.PRODUCT_MARKERS = {
@@ -4922,22 +5011,23 @@
                 LONG_SESSION: 15
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n, o = (n = Object.setPrototypeOf || {
                     __proto__: []
-                }instanceof Array && function(t, e) {
+                } instanceof Array && function (t, e) {
                     t.__proto__ = e
                 }
-                || function(t, e) {
+                || function (t, e) {
                     for (var i in e)
                         e.hasOwnProperty(i) && (t[i] = e[i])
                 }
                 ,
-                function(t, e) {
+                function (t, e) {
                     function i() {
                         this.constructor = t
                     }
+
                     n(t, e),
                         t.prototype = null === e ? Object.create(e) : (i.prototype = e.prototype,
                             new i)
@@ -4949,16 +5039,17 @@
             , s = i(35)
             , l = i(205)
             , p = i(82)
-            , c = function(t) {
+            , c = function (t) {
             function e() {
                 return null !== t && t.apply(this, arguments) || this
             }
+
             return o(e, t),
-                e.prototype.getTemplate = function() {
+                e.prototype.getTemplate = function () {
                     return [[4, "marker"], [6, null], [1, "isIframe"], [1, "isApp"], [19, null], [2, null], [4, null], [1, null], [1, "amp"], [10, "codeVer"], [1, "adblock"], [3, "adfoxexp"]]
                 }
                 ,
-                e.prototype.defaults = function() {
+                e.prototype.defaults = function () {
                     return {
                         marker: l.getMarkerIsValidStat(a.PRODUCT_MARKERS.RTB),
                         codeVer: s.getRevisionNo(),
@@ -4972,28 +5063,28 @@
         }(r.AbstractTesttag);
         e.RtbTesttag = c
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(402)
             , o = i(136);
         var r = n.createStrategyFactory({
-            isIntersectionObserverSupported: "undefined" != typeof IntersectionObserver && "thresholds"in IntersectionObserver.prototype
+            isIntersectionObserverSupported: "undefined" != typeof IntersectionObserver && "thresholds" in IntersectionObserver.prototype
         });
         e.VisibilityChecker = o.createVCClass(r);
         var a = i(136);
         e.DEFAULT_INTERVAL = a.DEFAULT_INTERVAL
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(43)
             , o = i(37)
             , r = i(8)
-            , a = o.once(function() {
+            , a = o.once(function () {
             try {
                 var t = window.mraid || window.top.mraid;
-                return Boolean(t && t.getState && t.addEventListener) ? (t.addEventListener("error", function(t, e) {
+                return Boolean(t && t.getState && t.addEventListener) ? (t.addEventListener("error", function (t, e) {
                     r.logger.error(new Error(t), "MRAID_error_" + e)
                 }),
                     t) : null
@@ -5001,32 +5092,34 @@
                 return null
             }
         });
+
         function s() {
             return a()
         }
+
         e.getMraid = s,
-            e.isAvailable = function() {
+            e.isAvailable = function () {
                 return null !== s()
             }
             ,
-            e.isReady = function() {
+            e.isReady = function () {
                 return "loading" !== s().getState()
             }
             ,
-            e.open = function(t) {
+            e.open = function (t) {
                 s().open(t)
             }
             ,
-            e.on = function(t, e, i) {
+            e.on = function (t, e, i) {
                 var o = s()
                     , r = n.protect("MRAID_Listener_" + t, e, i);
                 return o.addEventListener(t, r),
-                    function() {
+                    function () {
                         o.removeEventListener(t, r)
                     }
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n = i(0)
             , o = i(1)
@@ -5034,24 +5127,24 @@
             , a = i(458)
             , s = n.createComponent(o, {
             name: "yap-favicon",
-            shouldRender: function() {
+            shouldRender: function () {
                 return this.props.src
             },
-            afterRender: function() {
+            afterRender: function () {
                 this.pushStyles(a),
                     this.checkBrokenFavicon()
             },
-            checkBrokenFavicon: function() {
+            checkBrokenFavicon: function () {
                 var t = new Image;
-                r.domEvent.on(t, "error", function() {
+                r.domEvent.on(t, "error", function () {
                     this.destroy()
                 }, this),
-                    r.domEvent.on(t, "load", function() {
+                    r.domEvent.on(t, "load", function () {
                         16 !== t.width && 32 !== t.width && this.destroy()
                     }, this),
                     t.src = this.props.src
             },
-            _render: function(t, e) {
+            _render: function (t, e) {
                 return n.create("img", {
                     class: t(e["class"], t(), this.mod),
                     src: e.src,
@@ -5061,28 +5154,29 @@
         });
         t.exports = s
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
-        var n, o = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(t) {
+        var n, o = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (t) {
                 return typeof t
             }
-            : function(t) {
+            : function (t) {
                 return t && "function" == typeof Symbol && t.constructor === Symbol && t !== Symbol.prototype ? "symbol" : typeof t
             }
             , r = (n = Object.setPrototypeOf || {
                     __proto__: []
-                }instanceof Array && function(t, e) {
+                } instanceof Array && function (t, e) {
                     t.__proto__ = e
                 }
-                || function(t, e) {
+                || function (t, e) {
                     for (var i in e)
                         e.hasOwnProperty(i) && (t[i] = e[i])
                 }
                 ,
-                function(t, e) {
+                function (t, e) {
                     function i() {
                         this.constructor = t
                     }
+
                     n(t, e),
                         t.prototype = null === e ? Object.create(e) : (i.prototype = e.prototype,
                             new i)
@@ -5093,13 +5187,13 @@
             , s = i(26)
             , l = i(274)
             , p = i(275);
-        var c = function(t) {
+        var c = function (t) {
             function e(i, n) {
                 var r = this
                     , c = "object" === (void 0 === i ? "undefined" : o(i)) ? i : {
                     message: String(i || l.DEFAULT_ERROR.message)
                 };
-                n && s.getObjectKeys(n).forEach(function(t) {
+                n && s.getObjectKeys(n).forEach(function (t) {
                     c[t] = n[t]
                 }),
                     r = t.call(this, String(c.message)) || this,
@@ -5109,7 +5203,7 @@
                     r.details = c.details || l.DEFAULT_ERROR.details,
                     r.isFatal = void 0 === c.isFatal ? l.DEFAULT_ERROR.isFatal : c.isFatal;
                 var d = c.stack ? c.stack : r.stack;
-                return r.stack = d || function(t) {
+                return r.stack = d || function (t) {
                     var e = t.url
                         , i = t.line
                         , n = t.col
@@ -5118,11 +5212,11 @@
                         , a = t.lineNumber;
                     return (e || o || "?") + ":" + (i || a || "?") + ":" + (n || r || "?")
                 }(c),
-                    r.toString = function() {
+                    r.toString = function () {
                         return a(r.toJSON())
                     }
                     ,
-                    r.toJSON = function() {
+                    r.toJSON = function () {
                         return {
                             message: r.message,
                             code: r.code,
@@ -5134,16 +5228,17 @@
                     ,
                     r
             }
+
             return r(e, t),
                 e
         }(Error);
         e.CustomError = c
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0,
-            e.traverseBreadth = function(t, e) {
-                for (var i = t.slice(); i.length; ) {
+            e.traverseBreadth = function (t, e) {
+                for (var i = t.slice(); i.length;) {
                     var n = e(i.shift());
                     if (!n)
                         return;
@@ -5151,11 +5246,11 @@
                 }
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(27);
-        e.get = function(t, e) {
+        e.get = function (t, e) {
             for (var i = 0, o = e.split("."); i < o.length; i++) {
                 var r = o[i];
                 if (!n(t)) {
@@ -5167,11 +5262,11 @@
             return t
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(27);
-        e.set = function(t, e, i) {
+        e.set = function (t, e, i) {
             if (!n(t))
                 return t;
             for (var o = t, r = e.split("."), a = r.pop(), s = 0, l = r; s < l.length; s++) {
@@ -5183,31 +5278,31 @@
                 o
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0,
-            e.checkNativeCode = function(t) {
+            e.checkNativeCode = function (t) {
                 if (!t || !t.toString)
                     return !1;
                 var e = t.toString();
                 return /\[native code\]/.test(e) || /\/\* source code not available \*\//.test(e)
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(76);
-        e.getIfIsAndroid = function(t) {
+        e.getIfIsAndroid = function (t) {
             void 0 === t && (t = window);
             var e = t.navigator.userAgent
                 , i = void 0 === e ? "" : e;
             return /Linux.*?Android/.test(i) && !n.isUCBrowser(t) || /com\.yandex\.mobile\.metrica\.ads\.sdk.*?Android/.test(i)
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0,
-            e.getHead = function(t) {
+            e.getHead = function (t) {
                 var e = t.document
                     , i = e.getElementsByTagName("head")[0];
                 return i || (i = e.createElement("head"),
@@ -5215,11 +5310,11 @@
                     i
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         t.exports = i(9).filter
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n = {
             xml: "http://www.w3.org/XML/1998/namespace",
@@ -5237,7 +5332,7 @@
             xlinkType: "xlink:type"
         }
             , r = {};
-        i(10).forOwn(o, function(t, e) {
+        i(10).forOwn(o, function (t, e) {
             var i = t.split(":")
                 , o = n[i[0]];
             o && (r[e] = o)
@@ -5248,10 +5343,10 @@
                 AttributeNamespace: r
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0,
-            e.getWindowSize = function() {
+            e.getWindowSize = function () {
                 var t = window
                     , e = t.innerWidth
                     , i = t.innerHeight;
@@ -5266,73 +5361,75 @@
                 }
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         t.exports = i(47).noop
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
-        var n, o, r, a = i(160), s = i(195), l = i(196), p = i(10), c = i(127), d = i(125).NS.xhtml, u = p.isFunction(document.createElementNS), m = !1, f = null, h = {
-            write: function(t, e) {
-                e = e || n.namespaceURI || d;
-                var i = u && e !== d ? document.createElementNS(e, t) : document.createElement(t);
-                return n.insertBefore(i, null),
-                    n = i,
-                    i
-            },
-            end: function() {
-                n = n.parentNode
-            },
-            writeText: function(t) {
-                if (t.length > 0) {
-                    var e = document.createTextNode(t);
-                    return n.insertBefore(e, null),
+        var n, o, r, a = i(160), s = i(195), l = i(196), p = i(10), c = i(127), d = i(125).NS.xhtml,
+            u = p.isFunction(document.createElementNS), m = !1, f = null, h = {
+                write: function (t, e) {
+                    e = e || n.namespaceURI || d;
+                    var i = u && e !== d ? document.createElementNS(e, t) : document.createElement(t);
+                    return n.insertBefore(i, null),
+                        n = i,
+                        i
+                },
+                end: function () {
+                    n = n.parentNode
+                },
+                writeText: function (t) {
+                    if (t.length > 0) {
+                        var e = document.createTextNode(t);
+                        return n.insertBefore(e, null),
+                            e
+                    }
+                    return n
+                },
+                getCurrentElement: function () {
+                    return n
+                },
+                getCurrentContextComponent: function () {
+                    return o
+                },
+                getCurrentComponent: function () {
+                    return r
+                },
+                renderComponent: function (t) {
+                    var e = t.callRendering(g);
+                    return y(),
                         e
+                },
+                renderComponentToNode: function (t, e) {
+                    var i = e.callRendering(g);
+                    return (0,
+                        a.clearHTML)(t),
+                        t.appendChild(i),
+                        y(),
+                        i
+                },
+                updateComponentInNode: function (t, e) {
+                    var i = t.parentNode;
+                    if (!i)
+                        return h.renderComponentToNode(t, e);
+                    var n = document.createElement("div");
+                    i.insertBefore(n, t.nextSibling);
+                    var o = e.callRendering(g);
+                    return i.insertBefore(o, n),
+                        i.removeChild(n),
+                        y(),
+                        o
                 }
-                return n
-            },
-            getCurrentElement: function() {
-                return n
-            },
-            getCurrentContextComponent: function() {
-                return o
-            },
-            getCurrentComponent: function() {
-                return r
-            },
-            renderComponent: function(t) {
-                var e = t.callRendering(g);
-                return y(),
-                    e
-            },
-            renderComponentToNode: function(t, e) {
-                var i = e.callRendering(g);
-                return (0,
-                    a.clearHTML)(t),
-                    t.appendChild(i),
-                    y(),
-                    i
-            },
-            updateComponentInNode: function(t, e) {
-                var i = t.parentNode;
-                if (!i)
-                    return h.renderComponentToNode(t, e);
-                var n = document.createElement("div");
-                i.insertBefore(n, t.nextSibling);
-                var o = e.callRendering(g);
-                return i.insertBefore(o, n),
-                    i.removeChild(n),
-                    y(),
-                    o
-            }
-        };
+            };
+
         function g(t) {
             var e = !1;
             return !1 === m && (e = !0,
                 m = !0,
                 f = document.createDocumentFragment(),
                 n = f),
-                function(t) {
+                function (t) {
                     var e = r
                         , i = o;
                     if (r = t,
@@ -5340,7 +5437,7 @@
                         t.shouldRender()) {
                         t.beforeRender(h);
                         var a = t.render(h);
-                        !function(t) {
+                        !function (t) {
                             var e = n;
                             if (p.isArray(t))
                                 for (var i = 0, o = t.length; i < o; i++)
@@ -5360,15 +5457,18 @@
                 f = null),
                 n
         }
+
         function _(t) {
             null != t && (t instanceof s ? h.renderComponent(t) : h.writeText(t.toString()))
         }
+
         function y() {
             m || l.executeAll()
         }
+
         t.exports = h
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = "hidden";
@@ -5383,13 +5483,13 @@
                     break
                 }
             }
-        e.isHidden = function() {
+        e.isHidden = function () {
             return Boolean(document[n])
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
-        var n = Object.assign || function(t) {
+        var n = Object.assign || function (t) {
                 for (var e, i = 1, n = arguments.length; i < n; i++)
                     for (var o in e = arguments[i])
                         Object.prototype.hasOwnProperty.call(e, o) && (t[o] = e[o]);
@@ -5397,7 +5497,7 @@
             }
         ;
         e.__esModule = !0,
-            e.setCookie = function(t, e, i, n) {
+            e.setCookie = function (t, e, i, n) {
                 void 0 === n && (n = {}),
                 n.expires instanceof Date && (n.expires = n.expires.toUTCString()),
                 void 0 === n.path && (n.path = "/");
@@ -5413,11 +5513,12 @@
                 }
             }
             ,
-            e.getCookie = function(t, e) {
+            e.getCookie = function (t, e) {
                 var i = [];
                 try {
                     i = t.cookie ? t.cookie.split("; ") : []
-                } catch (t) {}
+                } catch (t) {
+                }
                 for (var n, o = /(%[0-9A-Z]{2})+/g, r = 0; r < i.length; r++) {
                     var a = i[r].split("=")
                         , s = a.slice(1).join("=");
@@ -5435,16 +5536,16 @@
                 return n
             }
             ,
-            e.deleteCookie = function(t, i, o) {
+            e.deleteCookie = function (t, i, o) {
                 e.setCookie(t, i, "", n({}, o, {
                     expires: new Date(0)
                 }))
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n = {
-            getValidGeo: function(t) {
+            getValidGeo: function (t) {
                 var e = {};
                 return t && (t.lat = parseFloat(t.lat),
                     t.long = parseFloat(t.long),
@@ -5454,7 +5555,7 @@
             },
             _GEO_FLOAT_PRECISION: 6,
             INVALID_NUMBER: -1 / 0,
-            getValidNumber: function(t) {
+            getValidNumber: function (t) {
                 var e = parseInt(t, 10);
                 return (isNaN(e) || !isFinite(e)) && (e = this.INVALID_NUMBER),
                     e
@@ -5462,11 +5563,11 @@
         };
         t.exports = n
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
-        var n = function(t) {
-            for (var e = t.paramReg, i = t.location, n = void 0 === i ? window.location : i, o = t.valueTransform, r = void 0 === o ? function(t) {
+        var n = function (t) {
+            for (var e = t.paramReg, i = t.location, n = void 0 === i ? window.location : i, o = t.valueTransform, r = void 0 === o ? function (t) {
                     return t
                 }
                 : o, a = [n.search, n.hash], s = 0; s < a.length; s++) {
@@ -5480,17 +5581,17 @@
             }
             return ""
         }
-            , o = function(t, e) {
+            , o = function (t, e) {
             var i = new RegExp(t + "=(\\d+)");
             return n({
                 paramReg: i,
                 location: e,
-                valueTransform: function(t) {
+                valueTransform: function (t) {
                     return parseInt(t, 10) || void 0
                 }
             })
         };
-        e.getAdditionalBanners = function(t) {
+        e.getAdditionalBanners = function (t) {
             return void 0 === t && (t = window.location),
                 n({
                     paramReg: /additional-banners=(\d+(?:,\d+)*)/,
@@ -5499,7 +5600,7 @@
         }
             ,
             e.additionalBanners = e.getAdditionalBanners(),
-            e.getUrlCodeVersions = function(t) {
+            e.getUrlCodeVersions = function (t) {
                 return void 0 === t && (t = window.location),
                     {
                         pcode: o("pcodever", t) || void 0,
@@ -5509,7 +5610,7 @@
             ,
             e.urlCodeVersions = e.getUrlCodeVersions()
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(392)
@@ -5548,11 +5649,11 @@
         };
         e.config = "string" == typeof o ? r : o
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(20)
-            , o = function(t) {
+            , o = function (t) {
             return n.isHostIgnored({
                 host: t
             })
@@ -5560,40 +5661,42 @@
         e.isHostIgnored = o,
             e["default"] = o(document.location.href)
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(79);
+
         function o(t) {
             return n("VisibilityChecker", t)
         }
+
         e.protect = o,
-            e.protectStrategy = function(t) {
+            e.protectStrategy = function (t) {
                 return {
-                    init: o(function() {
+                    init: o(function () {
                         return t.init()
                     }),
-                    start: o(function() {
+                    start: o(function () {
                         return t.start()
                     }),
-                    stop: o(function() {
+                    stop: o(function () {
                         return t.stop()
                     })
                 }
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(135);
         e.DEFAULT_INTERVAL = 300,
-            e.createVCClass = function(t) {
-                return function() {
+            e.createVCClass = function (t) {
+                return function () {
                     function i(i, o, r) {
                         void 0 === r && (r = {});
                         var a = this;
                         this.onChange = o,
-                            this.callback = function(t) {
+                            this.callback = function (t) {
                                 a.isVisible !== t && (a.isVisible = t,
                                     a.onChange(t))
                             }
@@ -5618,13 +5721,14 @@
                             this.strategy.init(),
                         m || this.start()
                     }
-                    return i.prototype.start = function() {
+
+                    return i.prototype.start = function () {
                         this.stop(),
                             this.isRunning = !0,
                             this.strategy.start()
                     }
                         ,
-                        i.prototype.stop = function() {
+                        i.prototype.stop = function () {
                             this.isRunning && (this.isRunning = !1,
                                 this.strategy.stop(),
                                 this.isVisible = void 0)
@@ -5634,22 +5738,23 @@
                 }()
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n, o = (n = Object.setPrototypeOf || {
                     __proto__: []
-                }instanceof Array && function(t, e) {
+                } instanceof Array && function (t, e) {
                     t.__proto__ = e
                 }
-                || function(t, e) {
+                || function (t, e) {
                     for (var i in e)
                         e.hasOwnProperty(i) && (t[i] = e[i])
                 }
                 ,
-                function(t, e) {
+                function (t, e) {
                     function i() {
                         this.constructor = t
                     }
+
                     n(t, e),
                         t.prototype = null === e ? Object.create(e) : (i.prototype = e.prototype,
                             new i)
@@ -5658,20 +5763,21 @@
         e.__esModule = !0;
         var r = i(111)
             , a = i(35);
-        !function(t) {
+        !function (t) {
             t[t["TRANSITION"] = 1] = "TRANSITION",
                 t[t["RETURN"] = 2] = "RETURN"
         }(e.ClickPixel || (e.ClickPixel = {}));
-        var s = function(t) {
+        var s = function (t) {
             function e() {
                 return null !== t && t.apply(this, arguments) || this
             }
+
             return o(e, t),
-                e.prototype.getTemplate = function() {
+                e.prototype.getTemplate = function () {
                     return [[4, "marker"], [6, "format"], [1, "isIframe"], [2, "clickPixel"], [1, "isGeo"], [1, "isGeoRegular"], [1, "hasImage"], [1, "hasCallouts"], [1, "hasPhone"], [1, "isNewRmpAbilities"], [1, "isAbilityForRmp"], [18, null], [1, "amp"], [10, "codeVer"], [1, "adblock"], [3, "adfoxexp"]]
                 }
                 ,
-                e.prototype.defaults = function() {
+                e.prototype.defaults = function () {
                     return {
                         codeVer: a.getRevisionNo(),
                         adblock: !1,
@@ -5683,7 +5789,7 @@
         }(r.AbstractTesttag);
         e.BannerTesttag = s
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n = {
             BLOCK_320x67: {
@@ -6045,12 +6151,12 @@
             }
         };
         t.exports = {
-            getBlock: function(t) {
+            getBlock: function (t) {
                 return n[t.name] || o[t.name]
             }
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(440)
@@ -6060,21 +6166,21 @@
         });
         e.BlockContext = n.createContext(r)
     }
-    , function(t, e) {
-        t.exports = function(t) {
+    , function (t, e) {
+        t.exports = function (t) {
             var e = [];
             return e.push(".", t.id, " .p291e1855{stroke:#fff !important;background:rgba(0,0,0,.25) !important;border-radius:3px !important;top:3px !important;right:3px !important}.", t.id, " .p291e1855.a6b4a3b2d{stroke:#000 !important;background:transparent !important}"),
                 e.join("")
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n = i(64)
             , o = i(99)
             , r = i(9)
             , a = i(5)
             , s = i(23)
-            , l = function(t) {
+            , l = function (t) {
             if (t && t.__esModule)
                 return t;
             var e = {};
@@ -6109,7 +6215,7 @@
             layout: S.Layouts.WIDE,
             visibilityPortion: 0,
             _visibilityConfirmed: !1,
-            onInit: function() {
+            onInit: function () {
                 (0,
                     v.logRenderLabel)(this.props.dataSource.getUniqueId(), v.BlockRenderSteps.ComponentBlockInit),
                     this.__base();
@@ -6125,50 +6231,51 @@
                     this._confirmAtOnce = t.renderParams.confirmAtOnce,
                     this.initBlock()
             },
-            initBlock: function() {
+            initBlock: function () {
                 var t = this.dataSource.getFreeAds();
                 this.rawAdvList = this.filterRawAds(t),
                     this.initLayout(),
                     this.dataSource.setTesttagProps(this.getTesttagProps()),
                     this.advList = this.createAdvList()
             },
-            filterRawAds: function(t) {
+            filterRawAds: function (t) {
                 return t.slice(0, this.settings.limit)
             },
-            initLayout: function() {},
-            getTesttagProps: function() {
+            initLayout: function () {
+            },
+            getTesttagProps: function () {
                 return {
                     layout: this.layout
                 }
             },
-            createAdvList: function() {
+            createAdvList: function () {
                 var t = this
                     , e = this.rawAdvList
                     , i = (0,
-                    a.map)(e, function(e) {
+                    a.map)(e, function (e) {
                     return t.prepareRawAdv(e, {})
                 });
                 return (0,
-                    r.filter)(i, function(t) {
+                    r.filter)(i, function (t) {
                     return Boolean(t)
                 })
             },
-            prepareRawAdv: function(t, e) {
+            prepareRawAdv: function (t, e) {
                 return this.dataSource.prepareAd(t, e)
             },
-            onDestroy: function() {
+            onDestroy: function () {
                 this.__base(),
                 this.unMraidReady && this.unMraidReady(),
-                    C.each(this.advList, function(t) {
+                    C.each(this.advList, function (t) {
                         this.dataSource.releaseAd(t.adId)
                     }, this)
             },
-            onMount: function() {
+            onMount: function () {
                 (0,
                     v.logRenderLabel)(this.dataSource.getUniqueId(), v.BlockRenderSteps.ComponentBlockMounted),
                     this.__base()
             },
-            onDomReady: function() {
+            onDomReady: function () {
                 var t = this;
                 this.isReady = !0,
                     this.context.setState({
@@ -6177,15 +6284,16 @@
                     (0,
                         v.logRenderLabel)(this.dataSource.getUniqueId(), v.BlockRenderSteps.ComponentBlockDisplayed),
                     this.onDisplayed(),
-                    this.needUpdateAfterRemoveOverflow() ? this.update() : l.isAvailable() && !l.isReady() ? this.unMraidReady = l.on("ready", function() {
+                    this.needUpdateAfterRemoveOverflow() ? this.update() : l.isAvailable() && !l.isReady() ? this.unMraidReady = l.on("ready", function () {
                         return t.onReady()
                     }) : this.onReady()
             },
-            onDisplayed: function() {},
-            needUpdateAfterRemoveOverflow: function() {
+            onDisplayed: function () {
+            },
+            needUpdateAfterRemoveOverflow: function () {
                 return !1
             },
-            onReady: function() {
+            onReady: function () {
                 this.context.setState({
                     status: b.BlockStatus.Ready
                 }),
@@ -6195,31 +6303,31 @@
                         f.preventMissClicks)(this._renderToNode),
                 this.props.renderParams.confirmByHandler || this.initVisibilityChecker()
             },
-            onUnmount: function() {
+            onUnmount: function () {
                 this._visibilityConfirmer && this._visibilityConfirmer.stop(),
                 this._visibilityConfirmerInRtb && this._visibilityConfirmerInRtb.stop(),
                 this._styleElement && (C.dom.remove(this._styleElement),
                     this._styleElement = null)
             },
-            _getFormatName: function() {
+            _getFormatName: function () {
                 return this.settings.format.name
             },
-            getCssClassName: function() {
+            getCssClassName: function () {
                 var t = this.props.pageNumber;
                 return "yap-" + this.blockId + (t ? "-" + t : "")
             },
-            getUsedAdvs: function() {
+            getUsedAdvs: function () {
                 return this.advList
             },
-            shouldRender: function() {
+            shouldRender: function () {
                 return this.advList.length
             },
-            beforeRender: function() {
+            beforeRender: function () {
                 (0,
                     v.logRenderLabel)(this.dataSource.getUniqueId(), v.BlockRenderSteps.ComponentBlockBeforeRender),
                     k.clear()
             },
-            afterRender: function() {
+            afterRender: function () {
                 (0,
                     v.logRenderLabel)(this.dataSource.getUniqueId(), v.BlockRenderSteps.ComponentBlockRenderComplete),
                     this.pushCss();
@@ -6229,15 +6337,16 @@
                 });
                 this._styleElement = k.insertCSS(t, this.props.nonce, this._renderToNode.parentNode)
             },
-            pushCss: function() {},
-            getCSSProps: function() {
+            pushCss: function () {
+            },
+            getCSSProps: function () {
                 return {
                     id: this.id,
                     block: this,
                     settings: this.settings
                 }
             },
-            initVisibilityChecker: function() {
+            initVisibilityChecker: function () {
                 var t = (0,
                     u.getVisibilityContainer)(this.getMainCont())
                     , e = this.getDataSource()
@@ -6251,7 +6360,7 @@
                     , o = null;
                 l.isAvailable() && (o = (0,
                     p.createMraidVCClass)(l.getMraid())),
-                e.isOldDirect() || !e.isDirectInRtb() && !n || (this._visibilityConfirmerInRtb = new A(t,I.protect("AdvBlock: onDirectInRtbConfirmed", this.confirmVisibilityInRtb, this),{
+                e.isOldDirect() || !e.isDirectInRtb() && !n || (this._visibilityConfirmerInRtb = new A(t, I.protect("AdvBlock: onDirectInRtbConfirmed", this.confirmVisibilityInRtb, this), {
                     VisibilityChecker: o,
                     allowIntersectionObserver: i,
                     portion: this.getVisiblePortion(t),
@@ -6259,7 +6368,7 @@
                 }),
                 this._confirmAtOnce && (this._visibilityConfirmed = !0,
                     this._visibilityConfirmerInRtb.confirm())),
-                    this._visibilityConfirmer = new A(t,I.protect("AdvBlock: onConfirmed", this.confirmVisibility, this),{
+                    this._visibilityConfirmer = new A(t, I.protect("AdvBlock: onConfirmed", this.confirmVisibility, this), {
                         VisibilityChecker: o,
                         allowIntersectionObserver: i,
                         portion: this.visibilityPortion,
@@ -6268,20 +6377,20 @@
                 this._confirmAtOnce && (this._visibilityConfirmed = !0,
                     this._visibilityConfirmer.confirm())
             },
-            confirmVisibilityInRtb: function() {
+            confirmVisibilityInRtb: function () {
                 this._visibilityConfirmed = !0,
                     this.dataSource.confirmVisibilityInRtb({
                         renderSize: this.getBlockSize()
                     })
             },
-            confirmVisibility: function() {
+            confirmVisibility: function () {
                 var t = this.getUsedAdvs();
                 this.dataSource.onConfirmVisibility(t, {
                     renderSize: this.getBlockSize()
                 }),
                     this._visibilityConfirmed = !0
             },
-            confirmVisibilityByHover: function(t) {
+            confirmVisibilityByHover: function (t) {
                 var e = [t];
                 this.dataSource.sendVisibilityConfirmation(e, {
                     testtagProps: {
@@ -6291,44 +6400,44 @@
                 }),
                     this._visibilityConfirmed = !0
             },
-            isVisibilityConfirmed: function() {
+            isVisibilityConfirmed: function () {
                 return this._visibilityConfirmed
             },
-            getRoot: function() {
+            getRoot: function () {
                 return this.getResourceById("layout").getRoot()
             },
-            getBlockSize: function() {
+            getBlockSize: function () {
                 return (0,
                     o.getElementRectSize)(this._renderToNode)
             },
-            getMainCont: function() {
+            getMainCont: function () {
                 return this.getMainContainer().getElement()
             },
-            getMainContainer: function() {
+            getMainContainer: function () {
                 return this.getResourceById("layout").getLayoutContainer()
             },
-            getVisiblePortion: function(t) {
+            getVisiblePortion: function (t) {
                 return (0,
                     d.getVisiblePortion)(t, this.getDataSource().hasCommonRtbVisibility())
             },
-            hasBorder: function() {
+            hasBorder: function () {
                 var t = this.props.settings.borderType;
                 return t === S.BorderTypes.BLOCK || t === S.BorderTypes.COLLAPSE
             },
-            getBody: function(t, e, i) {
+            getBody: function (t, e, i) {
                 return null
             },
-            isInViewport: function() {
+            isInViewport: function () {
                 return C.dom.isInViewport(this.getElement(), S.REFRESH_VIEWPORT_VISIBLE_PART)
             },
-            getDataSource: function() {
+            getDataSource: function () {
                 return this.dataSource
             },
-            onReceivedFeedback: function(t) {
+            onReceivedFeedback: function (t) {
                 this.__base(),
                     this.getDataSource().abuseAd(t)
             },
-            slideUp: function(t) {
+            slideUp: function (t) {
                 var e = this.getRoot().getElement()
                     , i = this.getMainContainer().getElement()
                     , o = (0,
@@ -6342,13 +6451,13 @@
                     (0,
                         n.slideUp)(e, t)
             },
-            renderLogo: function(t) {
+            renderLogo: function (t) {
                 return x.create(t.Logo, {
                     class: this.b_("__logo"),
                     title: this.dataSource.getTitle()
                 })
             },
-            _render: function(t, e, i) {
+            _render: function (t, e, i) {
                 var n = this;
                 (0,
                     v.logRenderLabel)(this.dataSource.getUniqueId(), v.BlockRenderSteps.ComponentBlockReadyToRender);
@@ -6369,19 +6478,19 @@
                     x.create(i.Layout, c, x.create(y.BlockContext.Provider, {
                         value: this.context
                     }, this.getBody(t, e, i), this.renderLogo(i)), x.create(_.CompositeDetector, {
-                        onReady: function() {
+                        onReady: function () {
                             return n.onDomReady()
                         }
                     }, this.isReady ? null : x.create(g.DisplayDetector, null)))
             },
-            onOpenLink: function(t) {
+            onOpenLink: function (t) {
                 (0,
                     h.open)(t)
             },
-            setMod: function(t) {
+            setMod: function (t) {
                 this.getMainContainer().addClass(this.b_(t))
             },
-            delMod: function(t) {
+            delMod: function (t) {
                 this.getMainContainer().removeClass(this.b_(t))
             }
         }, {
@@ -6390,17 +6499,17 @@
         });
         t.exports = O
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n = i(0)
             , o = i(1)
             , r = i(454)
             , a = n.createComponent(o, {
             name: "yap-button",
-            afterRender: function() {
+            afterRender: function () {
                 this.pushStyles(r)
             },
-            getIconSize: function() {
+            getIconSize: function () {
                 var t = {
                     XS: [16, 16],
                     "20x20": [20, 20],
@@ -6415,11 +6524,11 @@
                     height: e[1]
                 }
             },
-            getModTheme: function() {
+            getModTheme: function () {
                 var t = this.props.theme;
                 return t && "_theme_" + t
             },
-            updateLink: function() {
+            updateLink: function () {
                 var t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : ""
                     , e = this.getResourceById("button")
                     , i = e.getElement();
@@ -6427,7 +6536,7 @@
                     e.addClass(this.b_("_active-link"))),
                     t
             },
-            _render: function(t, e, i) {
+            _render: function (t, e, i) {
                 var o = e.href
                     , r = e.theme
                     , a = "android-x" !== r && "ios-x" !== r || e.icon ? null : {
@@ -6454,7 +6563,7 @@
         });
         t.exports = a
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n = i(0)
             , o = i(1)
@@ -6463,20 +6572,20 @@
             , s = i(457)
             , l = n.createComponent([o, r], {
             name: "yap-domain",
-            onDisplayed: function() {
+            onDisplayed: function () {
                 this.removeOverflow()
             },
-            removeOverflow: function() {
+            removeOverflow: function () {
                 var t = this.b_;
                 a(this.rootComponent, [t("_scale_3"), t("_scale_2"), t("_scale_1")])
             },
-            shouldRender: function() {
+            shouldRender: function () {
                 return this.props.adv.domain
             },
-            afterRender: function() {
+            afterRender: function () {
                 this.pushStyles(s)
             },
-            _render: function(t, e, i) {
+            _render: function (t, e, i) {
                 var o = e.adv
                     , r = e.nofavicon
                     , a = {
@@ -6502,31 +6611,31 @@
         });
         t.exports = l
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
-        t.exports = function(t, e, i) {
+        t.exports = function (t, e, i) {
             if ("number" != typeof t)
                 throw new Error("util.isInRange: Number value is expected");
             return t >= e && t <= i
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n = i(49)
             , o = i(10)
             , r = i(61)
             , a = o.augment(n, {
-            constructor: function() {
+            constructor: function () {
                 n.apply(this, arguments)
             },
-            beforeRender: function(t) {
+            beforeRender: function (t) {
                 var e = document.createElement("div");
                 r.innerHTML(e, this.props.text.toString() || "");
                 var i = t.getCurrentElement()
-                    , n = o.map(e.childNodes, function(t) {
+                    , n = o.map(e.childNodes, function (t) {
                     return t
                 });
-                return o.each(n, function(t) {
+                return o.each(n, function (t) {
                     i.appendChild(t)
                 }),
                     !1
@@ -6534,7 +6643,7 @@
         });
         t.exports = a
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = {
@@ -6546,30 +6655,30 @@
             6: "tr",
             7: "tt"
         };
-        e.getLangCode = function(t) {
+        e.getLangCode = function (t) {
             return n[t]
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n = i(8)
             , o = i(441)
             , r = i(257)
             , a = i(2)
             , s = a.augment(o, {
-            constructor: function(t, e, i) {
+            constructor: function (t, e, i) {
                 this._events = [],
                     (i = i || {}).VisibilityChecker = i.VisibilityChecker || r,
                     o.apply(this, arguments)
             },
-            start: function() {
+            start: function () {
                 this._element ? (this._events.push(a.domEvent.on(this._element, "mouseover", this.confirm, this, {
                     once: !0
                 })),
                     s.__super.start.apply(this)) : n.logger.warn("Warning::VisibilityConfirmation#start: no element")
             },
-            stop: function() {
-                a.each(this._events, function(t) {
+            stop: function () {
+                a.each(this._events, function (t) {
                     t.un()
                 }),
                     this._events = [],
@@ -6578,10 +6687,10 @@
         });
         t.exports = s
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n = i(69)
-            , o = function(t) {
+            , o = function (t) {
             if (t && t.__esModule)
                 return t;
             var e = {};
@@ -6596,15 +6705,15 @@
             , s = i(474)
             , l = r.createComponent(a, {
             name: "yap-bg",
-            _getBlurSize: function() {
+            _getBlurSize: function () {
                 return this.props.blurSize || 10
             },
-            afterRender: function() {
+            afterRender: function () {
                 this.pushStyles(s, {
                     blurSize: this._getBlurSize()
                 })
             },
-            _renderMethodModern: function(t, e) {
+            _renderMethodModern: function (t, e) {
                 return r.create("yatag", {
                     class: t("__bg"),
                     style: {
@@ -6612,7 +6721,7 @@
                     }
                 })
             },
-            _renderMethodSvg: function(t, e) {
+            _renderMethodSvg: function (t, e) {
                 var i = "blur" + (0,
                     n.generateHexString)(5);
                 return r.create("yatag", {
@@ -6630,7 +6739,7 @@
                     filter: "url(#" + i + ")"
                 })))
             },
-            _render: function(t, e, i) {
+            _render: function (t, e, i) {
                 var n = e.picture
                     , a = void 0;
                 return a = o.support.cssFilterBlur && o.support.cssTransform && !o.isEdge ? this._renderMethodModern.bind(this) : this._renderMethodSvg.bind(this),
@@ -6641,22 +6750,23 @@
         });
         t.exports = l
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n, o = (n = Object.setPrototypeOf || {
                     __proto__: []
-                }instanceof Array && function(t, e) {
+                } instanceof Array && function (t, e) {
                     t.__proto__ = e
                 }
-                || function(t, e) {
+                || function (t, e) {
                     for (var i in e)
                         e.hasOwnProperty(i) && (t[i] = e[i])
                 }
                 ,
-                function(t, e) {
+                function (t, e) {
                     function i() {
                         this.constructor = t
                     }
+
                     n(t, e),
                         t.prototype = null === e ? Object.create(e) : (i.prototype = e.prototype,
                             new i)
@@ -6665,12 +6775,13 @@
         e.__esModule = !0;
         var r = i(0)
             , a = 0
-            , s = function(t) {
+            , s = function (t) {
             function e() {
                 return null !== t && t.apply(this, arguments) || this
             }
+
             return o(e, t),
-                e.prototype.render = function() {
+                e.prototype.render = function () {
                     var t = this.props.text
                         , e = void 0 === t ? "" : t;
                     if ("" === e)
@@ -6721,44 +6832,44 @@
         }(i(1));
         e.ImageStub = s
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n, o = i(435), r = 100;
-        e.getPreventMissClicksScript = function() {
+        e.getPreventMissClicksScript = function () {
             return n || (n = ["<scr", 'ipt>"use strict";(', o.preventClicks, ")(document,", r, ")</scr", "ipt>"].join(""))
         }
             ,
-            e.preventMissClicks = function(t) {
+            e.preventMissClicks = function (t) {
                 t && o.preventClicks(t, r)
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(446);
         t.exports = n.FeedbackMenu
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n = i(0)
             , o = i(1)
             , r = i(451)
             , a = n.createComponent(o, {
             name: "yap-app-icon",
-            afterRender: function() {
+            afterRender: function () {
                 this.pushStyles(r)
             },
-            getPicture: function() {
+            getPicture: function () {
                 var t = this.props.image
                     , e = this.props.size;
                 return t.getFitting(e.width, e.height, e.wLoss)
             },
-            getModTheme: function() {
+            getModTheme: function () {
                 var t = this.props.theme;
                 return t && "_theme_" + t
             },
-            _render: function(t, e) {
+            _render: function (t, e) {
                 var i = this.getPicture()
                     , o = i.width
                     , r = i.height;
@@ -6776,17 +6887,19 @@
         });
         t.exports = a
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0,
-            e.hasWarning = function(t) {
+            e.hasWarning = function (t) {
                 return Boolean(t.warning && t.warning.trim(" "))
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
+
         function n(t, e) {
-            var i, n = e.isCover, r = "auto" === e.width, a = "auto" === e.height, s = e.width, l = e.height, p = t[0], c = t[1], d = t[2], u = Number((c / d).toFixed(2));
+            var i, n = e.isCover, r = "auto" === e.width, a = "auto" === e.height, s = e.width, l = e.height, p = t[0],
+                c = t[1], d = t[2], u = Number((c / d).toFixed(2));
             if (r && a)
                 i = o(c, d, u, !0);
             else if (a && !r)
@@ -6811,6 +6924,7 @@
                 originArea: c * d
             }
         }
+
         function o(t, e, i, n) {
             return void 0 === n && (n = !0),
                 n ? e = t / i : t = e * i,
@@ -6819,8 +6933,9 @@
                     height: e
                 }
         }
+
         e.__esModule = !0,
-            e.fitImage = function(t, e) {
+            e.fitImage = function (t, e) {
                 for (var i, o, r = null, a = 0, s = t; a < s.length; a++) {
                     var l = s[a]
                         , p = l[0]
@@ -6837,7 +6952,7 @@
             ,
             e.scale = o
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n = i(269)
             , o = i(270)
@@ -6855,6 +6970,7 @@
             , h = 9
             , g = "106253"
             , _ = 0;
+
         function y(t, e, i, n) {
             var o = new m({
                 host: t,
@@ -6862,8 +6978,8 @@
                 params: e
             });
             o.appendParams(i.extParams || "");
-            var r = function() {
-                o.appendParams(function(t) {
+            var r = function () {
+                o.appendParams(function (t) {
                     if (t.layoutConfig && d.browser.support.longUrls) {
                         t.layoutConfig.set("req_no", _++);
                         var e = t.layoutConfig.toString();
@@ -6879,6 +6995,7 @@
             i.pageId === g ? (o.appendEmptyGrab(),
                 r()) : o.appendGrab(i.grab, r)
         }
+
         function b(t) {
             var e = (0,
                 n.getPageRef)()
@@ -6913,9 +7030,10 @@
                 r.getSessionId)(),
                 i
         }
+
         t.exports = {
-            loadRtb: function(t, e) {
-                var i = function(t, e) {
+            loadRtb: function (t, e) {
+                var i = function (t, e) {
                     t["pcode-version"] = Ya.codeVer,
                         t["flash-ver"] = d.browser.flashVer[0],
                     e.availableWidth >= 1 && e.availableWidth <= 1e4 && (t["available-width"] = e.availableWidth),
@@ -6942,14 +7060,14 @@
                     e.blockImpId && (t["partner-stat-id"] = e.blockImpId)),
                         t
                 }(b(t), t);
-                y(u.urls.rtb, i, t, function(n) {
+                y(u.urls.rtb, i, t, function (n) {
                     (0,
                         o.loadAd)({
                         url: n,
                         pageId: t.pageId,
                         isRefresh: t.refresh,
-                        callback: function(n) {
-                            if (function(t, e) {
+                        callback: function (n) {
+                            if (function (t, e) {
                                 try {
                                     var i = e.blockImpId
                                         , n = t.settings
@@ -6969,7 +7087,7 @@
                                     "enable-page-options": f,
                                     "direct-limit-override": h
                                 });
-                                y(u.urls.rtb, r, t, function(i) {
+                                y(u.urls.rtb, r, t, function (i) {
                                     return (0,
                                         o.loadAd)({
                                         url: i,
@@ -6984,15 +7102,15 @@
                     })
                 })
             },
-            loadDirect: function(t, e) {
-                var i = function(t, e) {
+            loadDirect: function (t, e) {
+                var i = function (t, e) {
                     return e.statId && (t["stat-id"] = e.statId),
                     e.skipBanner && (t["skip-banner"] = e.skipBanner),
                     e.searchText && (t["text"] = e.searchText,
                         t["page-no"] = e.searchPageNumber),
                         t
                 }(b(t), t);
-                y(u.urls.direct, i, t, function(i) {
+                y(u.urls.direct, i, t, function (i) {
                     (0,
                         o.loadAd)({
                         url: i,
@@ -7002,7 +7120,7 @@
                     })
                 })
             },
-            loadDirectSettings: function(t, e) {
+            loadDirectSettings: function (t, e) {
                 var i = new m({
                     host: u.urls.directSettings,
                     path: t.pageId,
@@ -7018,9 +7136,9 @@
             }
         }
     }
-    , function(t, e) {
+    , function (t, e) {
         var i;
-        i = function() {
+        i = function () {
             return this
         }();
         try {
@@ -7031,40 +7149,43 @@
         }
         t.exports = i
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
-        t.exports = function(t, e) {
+        t.exports = function (t, e) {
             var i = Array.prototype.slice.call(arguments, 2);
-            return function() {
+            return function () {
                 for (var n = [], o = 0, r = arguments.length; o < r; o++)
                     n[o] = i[o] || arguments[o];
                 return t.apply(e, n)
             }
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(347).getAnimationFrameFunctions(window);
         e.requestAnimationFrame = n.requestAnimationFrame,
             e.cancelAnimationFrame = n.cancelAnimationFrame
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
+
         function n(t) {
             return {
                 height: t.clientHeight,
                 width: t.clientWidth
             }
         }
+
         function o(t) {
             return {
                 height: t.scrollHeight || t.offsetHeight,
                 width: t.scrollWidth || t.offsetWidth
             }
         }
+
         t.exports = {
-            elementFits: function(t, e) {
+            elementFits: function (t, e) {
                 var i = n(t)
                     , r = o(e)
                     , a = i.width - r.width
@@ -7075,22 +7196,22 @@
             getElementInnerSize: n
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0,
-            e.clearHTML = function(t) {
-                for (; t.firstChild; )
+            e.clearHTML = function (t) {
+                for (; t.firstChild;)
                     t.removeChild(t.firstChild)
             }
     }
-    , function(t, e) {
-        t.exports = function(t) {
+    , function (t, e) {
+        t.exports = function (t) {
             var e = [];
             return e.push(".", t.id, " .ed2407846{position:relative !important;cursor:pointer !important}.", t.id, " .w93d625e{z-index:-1 !important;transition:z-index 0s linear .4s !important;cursor:default !important}.", t.id, " .w93d625e,.", t.id, " .l9d203649{position:absolute !important;top:0 !important;left:0 !important;width:100% !important;height:100% !important;overflow:hidden !important}.", t.id, " .l9d203649{margin-left:100% !important;transition:margin-left .4s ease-out !important}.", t.id, " .b8d43abe8{position:absolute !important;display:-webkit-flex !important;display:-ms-flexbox !important;display:flex !important;margin-left:0 !important;width:100% !important;height:100% !important;background:#fff !important;background:hsla(0,0%,100%,.98) !important;transition:margin-left .4s ease-out !important}.", t.id, " .k2a4e0f0f{z-index:10 !important;transition:z-index 0s !important}.", t.id, " .k2a4e0f0f .l9d203649{margin-left:0 !important}.", t.id, " .n706e0c27{padding:4px !important;position:relative !important}.", t.id, " .n69c80ec7 svg{display:block !important}.", t.id, " .n69c80ec7 polygon{fill:", t.settings.textColor || "#000", " !important}.", t.id, " .mf92f7266{margin:-3px !important;width:1em !important;height:1em !important;line-height:1em !important;text-align:center !important;font-size:18px !important}.", t.id, " .gc3364e95{position:absolute !important;top:50% !important;right:100% !important;margin-top:-9px !important;margin-right:6px !important;padding:0 4px !important;max-width:120px !important;height:18px !important;line-height:18px !important;color:#fff !important;background:#333 !important;background-color:rgba(0,0,0,.8) !important;border-radius:1px !important;visibility:hidden !important;font-size:11px !important;white-space:nowrap !important}.", t.id, " .f93cbb81{position:absolute !important;top:3px !important;right:-6px !important;display:block !important;overflow:hidden !important;width:0 !important;height:0 !important;border-style:solid !important;border-width:6px 0 6px 6px !important;border-color:transparent transparent transparent #333 !important;border-color:transparent transparent transparent rgba(0,0,0,.8) !important}.", t.id, " .d97642285{position:relative !important;color:#fff !important;letter-spacing:.04em !important}.", t.id, " .ua6d4d7c0:hover .gc3364e95{visibility:visible !important}.", t.id, " .ke414844b:hover .gc3364e95{display:none !important}.", t.id, " .j543a9873{visibility:visible !important}.", t.id, " .j543a9873 .gc3364e95{display:none !important}.", t.id, " .t7a79d19d .gc3364e95{height:19px !important;line-height:19px !important}.", t.id, " .t7a79d19d .f93cbb81{top:2px !important}.", t.id, " .e934cf3e9 .n706e0c27{padding:5px !important}.", t.id, " .e934cf3e9 .mf92f7266{margin:-5px !important;font-size:25px !important}.", t.id, " .e934cf3e9 .gc3364e95{margin-right:9px !important;margin-top:-12px !important;max-width:160px !important;height:22px !important;line-height:22px !important;font-size:13px !important}.", t.id, " .e934cf3e9 .f93cbb81{right:-7px !important;top:4px !important;border-width:7px 0 7px 7px !important}.", t.id, " .kcfcb737d .e934cf3e9 .f93cbb81{right:-6px !important}.", t.id, " .n3651da7d{padding:5px !important}.", t.id, " .n3651da7d .n706e0c27{border-radius:50% !important;background:", t.settings.bgColor && t.settings.borderType != t.Const.BorderTypes.AD ? t.settings.bgColor : "#fff", " !important;box-shadow:0 1px 0 0 rgba(0,0,0,.2) !important}.", t.id, " .n3651da7d.e934cf3e9{padding:5px !important}.", t.id, " .h3acbd58f .n706e0c27{border-radius:50% !important;background:", new t.util.Color(t.settings.bgColor && t.settings.borderType != t.Const.BorderTypes.AD ? t.settings.bgColor : "#fff").setAlpha(.8), " !important}.", t.id, " .n487a84b1{padding:4px !important}.", t.id, " .n487a84b1 .gc3364e95{margin-right:8px !important}.", t.id, " .n487a84b1 .n706e0c27{border-radius:20% !important}.", t.id, " .f8f7dded2 .n706e0c27{background-color:rgba(0,0,0,.25) !important}.", t.id, " .f8f7dded2 .n69c80ec7 polygon{fill:#fff !important}.", t.id, " .ua6d4d7c0.ke414844b .gc3364e95{display:none !important}.", t.id, " .hf3172a40{position:absolute !important;top:0 !important;right:0 !important;left:0 !important;bottom:0 !important;width:100% !important;height:100% !important;-webkit-justify-content:center !important;-ms-flex-pack:center !important;justify-content:center !important;color:#000 !important;font-size:13px !important;z-index:-1 !important;opacity:0 !important;transition:opacity .3s !important}.", t.id, " .hf3172a40,.", t.id, " .i27778647{display:-webkit-flex !important;display:-ms-flexbox !important;display:flex !important;-webkit-align-items:center !important;-ms-flex-align:center !important;align-items:center !important}.", t.id, " .pcb675c9d{margin-left:10px !important}.", t.id, " .b5aa085cb svg{fill:#000 !important}.", t.id, " .a84bc0893{font-size:15px !important}.", t.id, " .sa3309f4e .hf3172a40{opacity:1 !important;z-index:10 !important}.", t.id, " .eb950d56f{-webkit-align-items:center !important;-ms-flex-align:center !important;align-items:center !important;-webkit-justify-content:center !important;-ms-flex-pack:center !important;justify-content:center !important;min-width:100% !important;min-height:100% !important;font-size:13px !important}.", t.id, " .eb950d56f,.", t.id, " .x9af46b08{display:-webkit-flex !important;display:-ms-flexbox !important;display:flex !important;box-sizing:border-box !important}.", t.id, " .x9af46b08{width:100% !important;-webkit-flex-direction:column !important;-ms-flex-direction:column !important;flex-direction:column !important;padding:10px !important}.", t.id, " .l468d6d24{font-weight:700 !important}.", t.id, " .qe0679d84{display:none !important;font-weight:700 !important}.", t.id, " .bb90005ba,.", t.id, " .qe0679d84{-webkit-align-items:center !important;-ms-flex-align:center !important;align-items:center !important}.", t.id, " .bb90005ba{overflow:hidden !important}.", t.id, " .i2ba05e60,.", t.id, " .bb90005ba{display:-webkit-flex !important;display:-ms-flexbox !important;display:flex !important;-webkit-justify-content:center !important;-ms-flex-pack:center !important;justify-content:center !important;-webkit-flex-shrink:0 !important;-ms-flex-negative:0 !important;flex-shrink:0 !important;box-sizing:border-box !important}.", t.id, " .i2ba05e60{-webkit-align-content:center !important;-ms-flex-line-pack:center !important;align-content:center !important;-webkit-align-items:center !important;-ms-flex-align:center !important;align-items:center !important;padding:0 !important;margin:0 !important;position:relative !important}.", t.id, " .se58cae78{display:-webkit-flex !important;display:-ms-flexbox !important;display:flex !important;-webkit-justify-content:center !important;-ms-flex-pack:center !important;justify-content:center !important;box-sizing:border-box !important;margin:5px 0 !important}.", t.id, " .o64cb8058{display:none !important}.", t.id, " .se58cae78 .t933fbe6d{width:100% !important;max-width:250px !important}.", t.id, " .o64cb8058 .t933fbe6d{width:100% !important;max-width:180px !important}.", t.id, " .t933fbe6d{display:block !important;padding:5px !important;background-color:#fff !important;border:1px solid #c8c8c8 !important;border-radius:4px !important;text-align:center !important;color:#555 !important;white-space:nowrap !important;transition-property:border,color !important;transition-duration:.2s !important;cursor:pointer !important;box-sizing:border-box !important}.", t.id, " .t933fbe6d:hover{color:#333 !important;border-color:#333 !important}.", t.id, " .eb950d56f.jb8c5f4ea .bb90005ba{padding-bottom:15px !important}.", t.id, " .eb950d56f.jb8c5f4ea .i2ba05e60,.", t.id, " .eb950d56f.jb8c5f4ea .x9af46b08{-webkit-flex-direction:column !important;-ms-flex-direction:column !important;flex-direction:column !important}.", t.id, " .eb950d56f.jb8c5f4ea .i2ba05e60{display:-webkit-flex !important;display:-ms-flexbox !important;display:flex !important;-webkit-align-items:stretch !important;-ms-flex-align:stretch !important;align-items:stretch !important}.", t.id, " .eb950d56f.ka660bcaa .bb90005ba{padding-bottom:5px !important}.", t.id, " .eb950d56f.ka660bcaa .x9af46b08{-webkit-flex-direction:column !important;-ms-flex-direction:column !important;flex-direction:column !important}.", t.id, " .eb950d56f.ka660bcaa .i2ba05e60{display:-webkit-flex !important;display:-ms-flexbox !important;display:flex !important;-webkit-flex-direction:column !important;-ms-flex-direction:column !important;flex-direction:column !important;-webkit-align-items:stretch !important;-ms-flex-align:stretch !important;align-items:stretch !important}.", t.id, " .eb950d56f.ka660bcaa .se58cae78{margin:2px 0 !important}.", t.id, " .eb950d56f.ka660bcaa .t933fbe6d{padding:3px !important}.", t.id, " .eb950d56f.f3035d38a .bb90005ba{padding-bottom:15px !important}.", t.id, " .eb950d56f.f3035d38a .i2ba05e60,.", t.id, " .eb950d56f.f3035d38a .x9af46b08{-webkit-flex-direction:column !important;-ms-flex-direction:column !important;flex-direction:column !important}.", t.id, " .eb950d56f.f3035d38a .i2ba05e60{display:-webkit-flex !important;display:-ms-flexbox !important;display:flex !important;-webkit-align-items:stretch !important;-ms-flex-align:stretch !important;align-items:stretch !important}.", t.id, " .eb950d56f.f3035d38a .o64cb8058{display:-webkit-flex !important;display:-ms-flexbox !important;display:flex !important}.", t.id, " .eb950d56f.f3035d38a .je54e0f7a{display:none !important}.", t.id, " .eb950d56f.q775ec178 .bb90005ba{padding-bottom:5px !important}.", t.id, " .eb950d56f.q775ec178 .x9af46b08{-webkit-flex-direction:column !important;-ms-flex-direction:column !important;flex-direction:column !important}.", t.id, " .eb950d56f.q775ec178 .i2ba05e60{display:-webkit-flex !important;display:-ms-flexbox !important;display:flex !important;-webkit-flex-direction:column !important;-ms-flex-direction:column !important;flex-direction:column !important;-webkit-align-items:stretch !important;-ms-flex-align:stretch !important;align-items:stretch !important}.", t.id, " .eb950d56f.q775ec178 .se58cae78{margin:2px 0 !important}.", t.id, " .eb950d56f.q775ec178 .o64cb8058{display:-webkit-flex !important;display:-ms-flexbox !important;display:flex !important}.", t.id, " .eb950d56f.q775ec178 .je54e0f7a{display:none !important}.", t.id, " .eb950d56f.q775ec178 .t933fbe6d{padding:3px !important}.", t.id, " .eb950d56f.d27b350ff .bb90005ba{padding-bottom:10px !important}.", t.id, " .eb950d56f.d27b350ff .x9af46b08{-webkit-flex-direction:column !important;-ms-flex-direction:column !important;flex-direction:column !important;-webkit-align-items:center !important;-ms-flex-align:center !important;align-items:center !important}.", t.id, " .eb950d56f.d27b350ff .i2ba05e60{display:-webkit-flex !important;display:-ms-flexbox !important;display:flex !important;-webkit-flex-wrap:wrap !important;-ms-flex-wrap:wrap !important;flex-wrap:wrap !important;max-width:540px !important}.", t.id, " .eb950d56f.d27b350ff .se58cae78{width:50% !important;margin:0 !important;padding:5px !important}.", t.id, " .eb950d56f.e3b1a0f9f .bb90005ba{padding-bottom:10px !important}.", t.id, " .eb950d56f.e3b1a0f9f .x9af46b08{-webkit-flex-direction:column !important;-ms-flex-direction:column !important;flex-direction:column !important;-webkit-align-items:center !important;-ms-flex-align:center !important;align-items:center !important}.", t.id, " .eb950d56f.e3b1a0f9f .i2ba05e60{display:-webkit-flex !important;display:-ms-flexbox !important;display:flex !important;-webkit-flex-wrap:wrap !important;-ms-flex-wrap:wrap !important;flex-wrap:wrap !important;max-width:340px !important}.", t.id, " .eb950d56f.e3b1a0f9f .se58cae78{width:50% !important;margin:0 !important;padding:5px !important}.", t.id, " .eb950d56f.e3b1a0f9f .o64cb8058{display:-webkit-flex !important;display:-ms-flexbox !important;display:flex !important}.", t.id, " .eb950d56f.e3b1a0f9f .je54e0f7a{display:none !important}.", t.id, " .eb950d56f.ufdf17752 .x9af46b08{-webkit-flex-direction:row !important;-ms-flex-direction:row !important;flex-direction:row !important;-webkit-justify-content:center !important;-ms-flex-pack:center !important;justify-content:center !important}.", t.id, " .eb950d56f.ufdf17752 .i2ba05e60{display:-webkit-flex !important;display:-ms-flexbox !important;display:flex !important;-webkit-flex-shrink:1 !important;-ms-flex-negative:1 !important;flex-shrink:1 !important;padding-left:20px !important}.", t.id, " .eb950d56f.ufdf17752 .se58cae78{-webkit-flex-grow:1 !important;-ms-flex-positive:1 !important;flex-grow:1 !important;margin:0 5px !important}.", t.id, " .eb950d56f.ufdf17752 .t933fbe6d{display:-webkit-flex !important;display:-ms-flexbox !important;display:flex !important;-webkit-align-items:center !important;-ms-flex-align:center !important;align-items:center !important;-webkit-justify-content:center !important;-ms-flex-pack:center !important;justify-content:center !important}.", t.id, " .eb950d56f.kf6e25bc0 .x9af46b08{-webkit-flex-direction:row !important;-ms-flex-direction:row !important;flex-direction:row !important;-webkit-justify-content:center !important;-ms-flex-pack:center !important;justify-content:center !important}.", t.id, " .eb950d56f.kf6e25bc0 .i2ba05e60{display:-webkit-flex !important;display:-ms-flexbox !important;display:flex !important;-webkit-flex-shrink:1 !important;-ms-flex-negative:1 !important;flex-shrink:1 !important;padding-left:15px !important}.", t.id, " .eb950d56f.kf6e25bc0 .se58cae78{-webkit-flex-grow:1 !important;-ms-flex-positive:1 !important;flex-grow:1 !important;margin:0 5px !important}.", t.id, " .eb950d56f.kf6e25bc0 .o64cb8058{display:-webkit-flex !important;display:-ms-flexbox !important;display:flex !important}.", t.id, " .eb950d56f.kf6e25bc0 .je54e0f7a{display:none !important}.", t.id, " .eb950d56f.kf6e25bc0 .t933fbe6d{display:-webkit-flex !important;display:-ms-flexbox !important;display:flex !important;-webkit-align-items:center !important;-ms-flex-align:center !important;align-items:center !important;-webkit-justify-content:center !important;-ms-flex-pack:center !important;justify-content:center !important}.", t.id, " .eb950d56f.gc5e868b2 .x9af46b08{-webkit-flex-direction:row !important;-ms-flex-direction:row !important;flex-direction:row !important;-webkit-justify-content:center !important;-ms-flex-pack:center !important;justify-content:center !important}.", t.id, " .eb950d56f.gc5e868b2 .l468d6d24{display:none !important}.", t.id, " .eb950d56f.gc5e868b2 .qe0679d84{display:-webkit-flex !important;display:-ms-flexbox !important;display:flex !important}.", t.id, " .eb950d56f.gc5e868b2 .i2ba05e60{display:-webkit-flex !important;display:-ms-flexbox !important;display:flex !important;-webkit-flex-shrink:1 !important;-ms-flex-negative:1 !important;flex-shrink:1 !important;padding-left:15px !important}.", t.id, " .eb950d56f.gc5e868b2 .se58cae78{-webkit-flex-grow:1 !important;-ms-flex-positive:1 !important;flex-grow:1 !important;margin:0 5px !important}.", t.id, " .eb950d56f.gc5e868b2 .o64cb8058{display:-webkit-flex !important;display:-ms-flexbox !important;display:flex !important}.", t.id, " .eb950d56f.gc5e868b2 .je54e0f7a{display:none !important}.", t.id, " .eb950d56f.gc5e868b2 .t933fbe6d{display:-webkit-flex !important;display:-ms-flexbox !important;display:flex !important;-webkit-align-items:center !important;-ms-flex-align:center !important;align-items:center !important;-webkit-justify-content:center !important;-ms-flex-pack:center !important;justify-content:center !important}.", t.id, " .eb950d56f.t3e2849c7{font-size:11px !important}.", t.id, " .eb950d56f.t3e2849c7 .x9af46b08{-webkit-flex-direction:row !important;-ms-flex-direction:row !important;flex-direction:row !important;-webkit-justify-content:center !important;-ms-flex-pack:center !important;justify-content:center !important;padding:4px !important}.", t.id, " .eb950d56f.t3e2849c7 .l468d6d24{display:none !important}.", t.id, " .eb950d56f.t3e2849c7 .qe0679d84{display:-webkit-flex !important;display:-ms-flexbox !important;display:flex !important}.", t.id, " .eb950d56f.t3e2849c7 .i2ba05e60{display:-webkit-flex !important;display:-ms-flexbox !important;display:flex !important;-webkit-flex-shrink:1 !important;-ms-flex-negative:1 !important;flex-shrink:1 !important;padding-left:10px !important}.", t.id, " .eb950d56f.t3e2849c7 .se58cae78{-webkit-flex-grow:1 !important;-ms-flex-positive:1 !important;flex-grow:1 !important;margin:0 1px !important}.", t.id, " .eb950d56f.t3e2849c7 .o64cb8058{display:-webkit-flex !important;display:-ms-flexbox !important;display:flex !important}.", t.id, " .eb950d56f.t3e2849c7 .je54e0f7a{display:none !important}.", t.id, " .eb950d56f.t3e2849c7 .t933fbe6d{display:-webkit-flex !important;display:-ms-flexbox !important;display:flex !important;-webkit-align-items:center !important;-ms-flex-align:center !important;align-items:center !important;-webkit-justify-content:center !important;-ms-flex-pack:center !important;justify-content:center !important}.", t.id, " .eb950d56f.if41a57c4{font-size:11px !important}.", t.id, " .eb950d56f.if41a57c4 .x9af46b08{-webkit-flex-direction:row !important;-ms-flex-direction:row !important;flex-direction:row !important;-webkit-justify-content:center !important;-ms-flex-pack:center !important;justify-content:center !important;padding:0 !important}.", t.id, " .eb950d56f.if41a57c4 .l468d6d24{display:none !important}.", t.id, " .eb950d56f.if41a57c4 .qe0679d84{display:-webkit-flex !important;display:-ms-flexbox !important;display:flex !important}.", t.id, " .eb950d56f.if41a57c4 .i2ba05e60{display:-webkit-flex !important;display:-ms-flexbox !important;display:flex !important;-webkit-flex-shrink:1 !important;-ms-flex-negative:1 !important;flex-shrink:1 !important;padding-left:10px !important}.", t.id, " .eb950d56f.if41a57c4 .se58cae78{-webkit-flex-grow:1 !important;-ms-flex-positive:1 !important;flex-grow:1 !important;margin:0 2px !important}.", t.id, " .eb950d56f.if41a57c4 .o64cb8058{display:-webkit-flex !important;display:-ms-flexbox !important;display:flex !important}.", t.id, " .eb950d56f.if41a57c4 .je54e0f7a{display:none !important}.", t.id, " .eb950d56f.if41a57c4 .t933fbe6d{padding:0 5px !important;display:-webkit-flex !important;display:-ms-flexbox !important;display:flex !important;-webkit-align-items:center !important;-ms-flex-align:center !important;align-items:center !important;-webkit-justify-content:center !important;-ms-flex-pack:center !important;justify-content:center !important}.", t.id, " .eb950d56f.b9a52761b{font-size:12px !important}.", t.id, " .eb950d56f.b9a52761b .x9af46b08{-webkit-flex-direction:column !important;-ms-flex-direction:column !important;flex-direction:column !important;padding:4px !important}.", t.id, " .eb950d56f.b9a52761b .l468d6d24{padding:2px 5px !important}.", t.id, " .eb950d56f.b9a52761b .qe0679d84{display:none !important}.", t.id, " .eb950d56f.b9a52761b .bb90005ba{display:-webkit-flex !important;display:-ms-flexbox !important;display:flex !important;-webkit-align-items:center !important;-ms-flex-align:center !important;align-items:center !important}.", t.id, " .eb950d56f.b9a52761b .i2ba05e60{display:-webkit-flex !important;display:-ms-flexbox !important;display:flex !important;-webkit-flex-wrap:wrap !important;-ms-flex-wrap:wrap !important;flex-wrap:wrap !important;-webkit-flex-shrink:1 !important;-ms-flex-negative:1 !important;flex-shrink:1 !important}.", t.id, " .eb950d56f.b9a52761b .se58cae78{-webkit-flex-grow:1 !important;-ms-flex-positive:1 !important;flex-grow:1 !important;margin:1px !important}.", t.id, " .eb950d56f.b9a52761b .o64cb8058{display:-webkit-flex !important;display:-ms-flexbox !important;display:flex !important}.", t.id, " .eb950d56f.b9a52761b .je54e0f7a{display:none !important}.", t.id, " .eb950d56f.b9a52761b .t933fbe6d{display:-webkit-flex !important;display:-ms-flexbox !important;display:flex !important;-webkit-align-items:center !important;-ms-flex-align:center !important;align-items:center !important;-webkit-justify-content:center !important;-ms-flex-pack:center !important;justify-content:center !important;padding:2px !important}.", t.id, " .sa3309f4e .se58cae78{opacity:0 !important}"),
                 e.join("")
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(34)
@@ -7104,46 +7225,48 @@
             withCredentials: !0,
             retryLimit: 3
         };
+
         function a(t, e, i, o) {
             var r = {};
-            n.each(["then", "catch"], function(t) {
-                r[t] = function(e) {
+            n.each(["then", "catch"], function (t) {
+                r[t] = function (e) {
                     return r[t] = e,
                         r
                 }
             });
-            var a = !("onload"in new XMLHttpRequest)
+            var a = !("onload" in new XMLHttpRequest)
                 , p = new (a ? window.XDomainRequest : XMLHttpRequest);
-            return p.open(t, a ? function(t) {
+            return p.open(t, a ? function (t) {
                 return window.location.protocol + "//" + t.replace(/^https?:\/\//, "")
             }(e) : e, !0),
                 p.withCredentials = Boolean(o.withCredentials),
-                function(t, e) {
+                function (t, e) {
                     e = e || {},
-                        n.each(n.keys(e), function(i) {
+                        n.each(n.keys(e), function (i) {
                             e[i] && t.setRequestHeader && t.setRequestHeader(i, e[i])
                         })
                 }(p, o.headers),
-                a ? (p.onerror = function() {
+                a ? (p.onerror = function () {
                     r["catch"].apply(r, s(p))
                 }
                     ,
-                    p.onload = function(t, e) {
-                        return function() {
+                    p.onload = function (t, e) {
+                        return function () {
                             t.then.apply(t, s(e))
                         }
-                    }(r, p)) : p.onreadystatechange = function(t, e) {
-                    return function() {
+                    }(r, p)) : p.onreadystatechange = function (t, e) {
+                    return function () {
                         4 === e.readyState && (e.status >= 200 && e.status < 300 ? t.then.apply(t, s(e)) : t["catch"].apply(t, s(e)))
                     }
                 }(r, p),
                 p.send(l(i)),
-                r.abort = function() {
+                r.abort = function () {
                     return p.abort()
                 }
                 ,
                 r
         }
+
         function s(t) {
             var e;
             try {
@@ -7153,28 +7276,30 @@
             }
             return [e, t]
         }
+
         function l(t) {
             return n.isObject(t) ? o.toQueryParams(t) : t
         }
-        e["default"] = function(t, e, i) {
+
+        e["default"] = function (t, e, i) {
             var o = n.extend(r, t);
             !function t(n) {
-                return function(t) {
+                return function (t) {
                     var e = t.baseUrl
                         , i = t.url;
                     return a(t.method, e + i, t.data, arguments[0])
-                }(o).then(e)["catch"](function(e) {
+                }(o).then(e)["catch"](function (e) {
                     0 === n ? i(e) : t(n - 1)
                 })
             }(o.retryLimit)
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(114);
-        e.calcVisibilityTime = function(t) {
-            if (t && "exposureTimeout"in t) {
+        e.calcVisibilityTime = function (t) {
+            if (t && "exposureTimeout" in t) {
                 var e = parseInt(t.exposureTimeout, 10);
                 if (!isNaN(e))
                     return e
@@ -7182,18 +7307,18 @@
             return 7 * n.DEFAULT_INTERVAL
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(23);
-        e.hasDimensions = function(t) {
+        e.hasDimensions = function (t) {
             var e = n.getBoundingClientRect(t)
                 , i = e.width
                 , o = e.height;
             return i > 0 && o > 0
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n, o = i(7), r = (n = o) && n.__esModule ? n : {
             default: n
@@ -7202,10 +7327,10 @@
             , s = i(1)
             , l = a.createComponent(s, {
             name: "yap-address",
-            shouldRender: function() {
+            shouldRender: function () {
                 return this.props.adv.vcardUrl
             },
-            _render: function(t, e, i) {
+            _render: function (t, e, i) {
                 return a.create("yatag", {
                     class: t(e["class"], t(), this.mod)
                 }, a.create(i.Link, {
@@ -7220,7 +7345,7 @@
         });
         t.exports = l
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n, o = i(7), r = (n = o) && n.__esModule ? n : {
             default: n
@@ -7230,14 +7355,14 @@
             , l = i(459)
             , p = a.createComponent(s, {
             name: "yap-region",
-            shouldRender: function() {
+            shouldRender: function () {
                 var t = this.props.adv;
                 return t.region || !this.props.noMetro && t.metro || !this.props.noGeo && t.geoDistance
             },
-            afterRender: function() {
+            afterRender: function () {
                 this.pushStyles(l)
             },
-            _render: function(t, e, i) {
+            _render: function (t, e, i) {
                 var n = e.adv
                     , o = [];
                 return !this.props.noMetro && n.metro ? o.push(a.create(i.Container, null, a.create(i.HTML, {
@@ -7260,16 +7385,16 @@
         });
         t.exports = p
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n = i(71)
             , o = i(79)
             , r = {}
             , a = !0;
         t.exports = {
-            hitOnce: function(t, e) {
+            hitOnce: function (t, e) {
                 if (!r[t]) {
-                    var i = o("metrika_yan", function(t) {
+                    var i = o("metrika_yan", function (t) {
                         t.hit(window.location.href, {
                             referer: document.referrer
                         })
@@ -7284,15 +7409,15 @@
             }
         }
     }
-    , function(t, e) {
+    , function (t, e) {
         function i(t, e) {
             var i = []
                 , n = [];
-            return null == e && (e = function(t, e) {
+            return null == e && (e = function (t, e) {
                     return i[0] === e ? "[Circular ~]" : "[Circular ~." + n.slice(0, i.indexOf(e)).join(".") + "]"
                 }
             ),
-                function(o, r) {
+                function (o, r) {
                     if (i.length > 0) {
                         var a = i.indexOf(this);
                         ~a ? i.splice(a + 1) : i.push(this),
@@ -7303,33 +7428,35 @@
                     return null == t ? r : t.call(this, o, r)
                 }
         }
-        (t.exports = function(t, e, n, o) {
+
+        (t.exports = function (t, e, n, o) {
                 return JSON.stringify(t, i(e, o), n)
             }
         ).getSerialize = i
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0,
-            e.getOrCreateItem = function(t, e, i) {
+            e.getOrCreateItem = function (t, e, i) {
                 var n = t.getItem(e);
                 return n || (n = i(e),
                     t.setItem(e, n)),
                     n
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
-        var n = function() {
+        var n = function () {
             function t(t) {
                 this.obj = t
             }
-            return t.prototype.getItem = function(t) {
+
+            return t.prototype.getItem = function (t) {
                 return this.obj[t]
             }
                 ,
-                t.prototype.setItem = function(t, e) {
+                t.prototype.setItem = function (t, e) {
                     this.obj[t] = e
                 }
                 ,
@@ -7337,9 +7464,9 @@
         }();
         e.ObjectStorage = n
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
-        var n = Object.assign || function(t) {
+        var n = Object.assign || function (t) {
                 for (var e, i = 1, n = arguments.length; i < n; i++)
                     for (var o in e = arguments[i])
                         Object.prototype.hasOwnProperty.call(e, o) && (t[o] = e[o]);
@@ -7362,20 +7489,20 @@
             , g = i(295)
             , _ = i(296);
         e.SEPARATE_SIGN = "_",
-            e.CREATE_TAGS_FOR_STATS_DEFAULT = function(t) {
+            e.CREATE_TAGS_FOR_STATS_DEFAULT = function (t) {
                 var i, o = t.eventType, r = t.eventName, a = t.value, s = t.values, l = {};
-                return u.forOwn(s, function(t, i) {
+                return u.forOwn(s, function (t, i) {
                     l["" + o + e.SEPARATE_SIGN + r + e.SEPARATE_SIGN + i] = t
                 }),
                     n(((i = {})["" + o + e.SEPARATE_SIGN + r] = a,
                         i), l)
             }
         ;
-        var y = function() {
+        var y = function () {
             function t(t) {
                 var e = this;
                 this.rootFields = {},
-                    this.event = function(t) {
+                    this.event = function (t) {
                         var i = t.name
                             , n = t.data
                             , o = t.labels
@@ -7389,7 +7516,7 @@
                         })
                     }
                     ,
-                    this.error = function(t) {
+                    this.error = function (t) {
                         var i = t.error
                             , n = t.labels
                             , o = t.probability
@@ -7403,7 +7530,7 @@
                         })
                     }
                     ,
-                    this.value = function(t) {
+                    this.value = function (t) {
                         var i = t.name
                             , n = t.value
                             , o = t.data
@@ -7419,7 +7546,7 @@
                         })
                     }
                     ,
-                    this.values = function(t) {
+                    this.values = function (t) {
                         var i = t.name
                             , n = t.values
                             , o = t.data
@@ -7435,7 +7562,7 @@
                         })
                     }
                     ,
-                    this.warning = function(t) {
+                    this.warning = function (t) {
                         var i = t.name
                             , n = t.message
                             , o = t.probability;
@@ -7450,15 +7577,15 @@
                             })
                     }
                     ,
-                    this.getParams = function() {
+                    this.getParams = function () {
                         return n({}, e.params)
                     }
                     ,
-                    this.setRootField = function(t, i) {
+                    this.setRootField = function (t, i) {
                         void 0 === i ? delete e.rootFields[t] : e.rootFields[t] = i
                     }
                     ,
-                    this.eventToStats = function(t, i, n) {
+                    this.eventToStats = function (t, i, n) {
                         e.push({
                             eventType: _.StatsEventType.event,
                             eventName: t,
@@ -7467,7 +7594,7 @@
                         })
                     }
                     ,
-                    this.errorToStats = function(t, i) {
+                    this.errorToStats = function (t, i) {
                         var n = new r.CustomError(t);
                         e.push({
                             eventName: String(n.code),
@@ -7477,7 +7604,7 @@
                         })
                     }
                     ,
-                    this.deprecated = function(t, i) {
+                    this.deprecated = function (t, i) {
                         "undefined" != typeof console && "function" == typeof console.warn && console.warn(i),
                             e.push({
                                 eventName: t,
@@ -7488,7 +7615,7 @@
                             })
                     }
                     ,
-                    this.valueToStats = function(t, i, n, o) {
+                    this.valueToStats = function (t, i, n, o) {
                         e.push({
                             eventName: t,
                             value: i,
@@ -7502,7 +7629,8 @@
                         sid: t.sid || p.generateHexString(h.DEFAULT_SID_LENGTH)
                     })
             }
-            return t.prototype.push = function(t) {
+
+            return t.prototype.push = function (t) {
                 var e = t.eventName
                     , i = t.eventType
                     , n = t.data
@@ -7538,7 +7666,7 @@
                 }
             }
                 ,
-                t.prototype.createFullStatsObject = function(t) {
+                t.prototype.createFullStatsObject = function (t) {
                     var i = t.service
                         , o = t.version
                         , r = t.eventName
@@ -7577,10 +7705,10 @@
         }();
         e.Stats = y
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0,
-            e.getWindowLocation = function(t) {
+            e.getWindowLocation = function (t) {
                 if (t && t.location) {
                     var e = t.location;
                     return "function" == typeof e.toString ? e.toString() : e.href || ""
@@ -7588,15 +7716,15 @@
                 return ""
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(174);
-        e.getParentFriendlyIFrames = function(t, e) {
+        e.getParentFriendlyIFrames = function (t, e) {
             if (void 0 === e && (e = !0),
             n.isSafari && e)
                 return [];
-            for (var i = [], o = t; ; )
+            for (var i = [], o = t; ;)
                 try {
                     if (!(o = o.ownerDocument.defaultView.frameElement))
                         return i;
@@ -7606,24 +7734,24 @@
                 }
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(175);
         e.isSafari = n.isSafari()
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0,
-            e.isSafari = function(t) {
+            e.isSafari = function (t) {
                 void 0 === t && (t = window);
                 var e = t.navigator.userAgent.toLowerCase();
                 return -1 !== e.indexOf("safari") && -1 === e.indexOf("chrome") && -1 === e.indexOf("android") && -1 === e.indexOf("phantomjs")
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
-        var n = Object.assign || function(t) {
+        var n = Object.assign || function (t) {
                 for (var e, i = 1, n = arguments.length; i < n; i++)
                     for (var o in e = arguments[i])
                         Object.prototype.hasOwnProperty.call(e, o) && (t[o] = e[o]);
@@ -7635,6 +7763,7 @@
             , r = i(105)
             , a = i(44)
             , s = document.createElement("a");
+
         function l(t) {
             s.href = t;
             var e = s.pathname || "";
@@ -7650,22 +7779,25 @@
                     hash: s.hash
                 }
         }
+
         function p(t) {
             var e = "443" === t.port ? t.hostname : t.host;
             return t.protocol + "//" + e + t.pathname + t.search + t.hash
         }
-        e.parseUrlUsingCache = r.memoize(function(t) {
+
+        e.parseUrlUsingCache = r.memoize(function (t) {
             var e = l(t);
             return n({}, e)
         }),
             e.parseUrl = l;
-        var c = function(t) {
+        var c = function (t) {
             try {
                 return decodeURIComponent(t)
             } catch (e) {
                 return t
             }
         };
+
         function d(t) {
             for (var e = {}, i = t.replace(/^\?+/, "").split("&"), n = 0; n < i.length; n++) {
                 var o = i[n].indexOf("=")
@@ -7682,16 +7814,18 @@
             }
             return e
         }
+
         e.parseQueryString = d,
-            e.getParamsFromUrl = function(t) {
+            e.getParamsFromUrl = function (t) {
                 return d(l(t).search)
             }
         ;
-        var u = function(t, e) {
-            return e.map(function(e) {
+        var u = function (t, e) {
+            return e.map(function (e) {
                 return t + "[]=" + encodeURIComponent(e)
             }).join("&")
         };
+
         function m(t) {
             var e = [];
             for (var i in t)
@@ -7701,11 +7835,13 @@
                 }
             return "?" + e.join("&")
         }
+
         function f(t) {
             return l(t).pathname.split("/").pop() || ""
         }
+
         e.formatQueryString = m,
-            e.addParamToUrl = function(t, e, i) {
+            e.addParamToUrl = function (t, e, i) {
                 if (void 0 === i)
                     return t;
                 var o = l(t)
@@ -7716,12 +7852,12 @@
                     }))
             }
             ,
-            e.addParamsToUrl = function(t, e, i) {
+            e.addParamsToUrl = function (t, e, i) {
                 var o = (void 0 === i ? {} : i).override
                     , r = void 0 === o || o
                     , s = l(t)
                     , c = d(s.search);
-                a.forOwn(e, function(t, e) {
+                a.forOwn(e, function (t, e) {
                     (void 0 === c[e] || r) && (c[e] = t)
                 });
                 var u = m(c);
@@ -7731,16 +7867,16 @@
             }
             ,
             e.getFileName = f,
-            e.getFileExt = function(t) {
+            e.getFileExt = function (t) {
                 var e = f(t).split(".");
                 return e.length > 1 ? e.pop() : ""
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(121);
-        e.getNativeMethod = function(t, e) {
+        e.getNativeMethod = function (t, e) {
             var i = t[e];
             if (!n.checkNativeCode(i)) {
                 var o = i;
@@ -7749,79 +7885,80 @@
                     var r = t[e];
                     "function" == typeof r && (i = r),
                         t[e] = o
-                } catch (t) {}
+                } catch (t) {
+                }
             }
             return i
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(302);
-        e.getIsYaBrowser = function(t) {
+        e.getIsYaBrowser = function (t) {
             return void 0 === t && (t = window),
                 /YaBrowser/.test(n.getUserAgent(t))
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0,
-            e.isWindowsPhone = function(t) {
+            e.isWindowsPhone = function (t) {
                 return void 0 === t && (t = window),
                     /Windows Phone/i.test(t.navigator.userAgent)
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0,
             e.prefixes = ["", "webkit", "moz", "o", "ms"],
             e.cssPrefixes = ["", "-webkit-", "-ms-", "-moz-", "-o-"]
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0,
-            e.onBeforeSend = function(t, e) {
+            e.onBeforeSend = function (t, e) {
                 t.setRequestHeader("x-aab-jstracer", e.url.length.toString()),
                     t.setRequestHeader("x-aab-http-check", "1")
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(13)
             , o = i(77);
-        e.loadImage = function(t) {
+        e.loadImage = function (t) {
             var e = new Image;
             n.isFunction(t.onLoad) && o.on(e, "load", t.onLoad, t.ctx),
             n.isFunction(t.onError) && o.on(e, "error", t.onError, t.ctx),
                 e.src = t.src
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(177);
-        e.addEventListenerFunction = function(t, e, i) {
+        e.addEventListenerFunction = function (t, e, i) {
             t.attachEvent("on" + e, i)
         }
             ,
-            e.removeEventListenerFunction = function(t, e, i) {
+            e.removeEventListenerFunction = function (t, e, i) {
                 t.detachEvent("on" + e, i)
             }
             ,
-        n.getNativeMethod(document, "addEventListener") && (e.addEventListenerFunction = function(t, e, i, o) {
+        n.getNativeMethod(document, "addEventListener") && (e.addEventListenerFunction = function (t, e, i, o) {
                 n.getNativeMethod(t, "addEventListener").call(t, e, i, o)
             }
                 ,
-                e.removeEventListenerFunction = function(t, e, i, o) {
+                e.removeEventListenerFunction = function (t, e, i, o) {
                     n.getNativeMethod(t, "removeEventListener").call(t, e, i, o)
                 }
         )
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n = i(123);
-        t.exports = function(t, e, i) {
+        t.exports = function (t, e, i) {
             if (!e) {
                 var o = document.createElement("script");
                 return o.charset = "utf-8",
@@ -7834,10 +7971,10 @@
             document.write('<script type="text/javascript" charset="utf-8" src="{SRC}"><\/script>'.replace("{SRC}", t))
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0,
-            e.hslToRgb = function(t, e, i) {
+            e.hslToRgb = function (t, e, i) {
                 var n, o;
                 if (t /= 360,
                     i /= 100,
@@ -7851,12 +7988,14 @@
                 return s
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n = i(187)
             , o = i(27);
-        t.exports = n(Object, "create") ? Object.create : function(t, e) {
-            function i() {}
+        t.exports = n(Object, "create") ? Object.create : function (t, e) {
+            function i() {
+            }
+
             if (i.prototype = t,
                 o(e))
                 for (var n in e)
@@ -7864,10 +8003,10 @@
             return new i
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n = i(188);
-        t.exports = function(t, e) {
+        t.exports = function (t, e) {
             var i = t[e];
             if (!n(i)) {
                 var o = i;
@@ -7875,45 +8014,48 @@
                     delete t[e],
                         i = t[e],
                         t[e] = o
-                } catch (t) {}
+                } catch (t) {
+                }
             }
             return i
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         t.exports = i(121).checkNativeCode
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0,
-            e.getElementById = function(t) {
+            e.getElementById = function (t) {
                 return document.getElementById(t)
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0,
-            e.hasShadowDomSupport = function() {
+            e.hasShadowDomSupport = function () {
                 return Boolean(document.head.attachShadow)
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(26);
-        e.unique = function(t) {
+        e.unique = function (t) {
             for (var e = {}, i = 0; i < t.length; i++)
                 e[t[i]] = i;
             return n.getObjectKeys(e)
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(44)
             , o = i(58)
-            , r = new RegExp(["box-flex", "box-flex-group", "column-count", "fill-opacity", "flex", "flex-grow", "flex-positive", "flex-shrink", "flex-negative", "font-weight", "line-height", "opacity", "order", "z-index", "zoom"].join("|"),"i");
+            ,
+            r = new RegExp(["box-flex", "box-flex-group", "column-count", "fill-opacity", "flex", "flex-grow", "flex-positive", "flex-shrink", "flex-negative", "font-weight", "line-height", "opacity", "order", "z-index", "zoom"].join("|"), "i");
+
         function a(t, e, i, n) {
             if (void 0 !== i && void 0 !== e) {
                 var o = n ? "important" : "";
@@ -7921,28 +8063,29 @@
                     t.style.setProperty ? t.style.setProperty(e, i, o) : t.style.cssText += ";" + e + ":" + i + (o ? "!" + o : "")
             }
         }
-        e.setStyle = function(t, e, i, r) {
+
+        e.setStyle = function (t, e, i, r) {
             o.isObject(e) ? (r = Boolean(i),
-                n.forOwn(e, function(e, i) {
+                n.forOwn(e, function (e, i) {
                     a(t, i, e, r)
                 })) : a(t, e, i, r)
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         t.exports = i(126).getWindowSize
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n = i(94).requestAnimationFrame
             , o = {
-            linear: function(t, e, i, n) {
+            linear: function (t, e, i, n) {
                 return i * t / n + e
             }
         };
-        t.exports = function(t) {
+        t.exports = function (t) {
             var e, i, r, a = !0;
-            return e = function(e) {
+            return e = function (e) {
                 var i = (0,
                     o[t.easing || "linear"])(e, t.start, t.end - t.start, t.duration)
                     , n = e < t.duration;
@@ -7956,16 +8099,19 @@
                     e(new Date - r) ? n(t) : i && i()
                 }(),
                 {
-                    stop: function() {
+                    stop: function () {
                         a = !1
                     }
                 }
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n = i(127);
-        function o() {}
+
+        function o() {
+        }
+
         o.prototype = {
             callRendering: n,
             shouldRender: n,
@@ -7975,19 +8121,19 @@
         },
             t.exports = o
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n = new (i(355));
         t.exports = {
-            push: function(t, e) {
+            push: function (t, e) {
                 n.push(t, e)
             },
-            executeAll: function() {
+            executeAll: function () {
                 n.executeAll()
             }
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n = {
             element: i(198),
@@ -7996,7 +8142,7 @@
         };
         t.exports = n
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n = i(49)
             , o = i(10)
@@ -8008,20 +8154,20 @@
             , c = s.AttributeNamespace
             , d = /^on(.+)/
             , u = o.augment(n, {
-            constructor: function() {
+            constructor: function () {
                 this.__handlers = {},
                     n.apply(this, arguments)
             },
-            unmount: function() {
+            unmount: function () {
                 this.unbindAll();
                 var t = this._element;
                 t.parentNode && t.parentNode.removeChild(t),
                     n.prototype.unmount.apply(this)
             },
-            initProps: function(t) {
+            initProps: function (t) {
                 return this.tag = t.tag || "div",
                     delete t.tag,
-                    o.forOwn(t, function(e, i) {
+                    o.forOwn(t, function (e, i) {
                         if (d.test(i)) {
                             var n = i.match(d)[1].toLowerCase();
                             this.__handlers[n] = e,
@@ -8030,47 +8176,47 @@
                     }, this),
                     t
             },
-            beforeRender: function(t) {
+            beforeRender: function (t) {
                 var e = this.tag;
                 this._element = t.write(e, "svg" === e ? l.svg : null),
                     this._namespaceURI = this._element.namespaceURI,
                     this._applyProps()
             },
-            afterRender: function(t) {
+            afterRender: function (t) {
                 t.end(),
                     this._initHandlers()
             },
-            _applyProps: function() {
-                o.forOwn(this.props, function(t, e) {
+            _applyProps: function () {
+                o.forOwn(this.props, function (t, e) {
                     "style" === e && o.isObject(t) ? this.setStyle(t) : null != t && this.setAttr(e, t)
                 }, this)
             },
-            _initHandlers: function() {
+            _initHandlers: function () {
                 var t = this.getContextComponent()
                     , e = this.__handlers;
-                o.forOwn(e, function(e, i) {
+                o.forOwn(e, function (e, i) {
                     this.bind(i, e, t)
                 }, this)
             },
-            getElement: function() {
+            getElement: function () {
                 return this._element
             },
-            hasClass: function(t) {
+            hasClass: function (t) {
                 return a.hasClass(this._element, t)
             },
-            addClass: function(t) {
+            addClass: function (t) {
                 a.addClass(this._element, t)
             },
-            removeClass: function(t) {
+            removeClass: function (t) {
                 a.removeClass(this._element, t)
             },
-            toggleClass: function(t, e) {
+            toggleClass: function (t, e) {
                 a.toggleClass(this._element, t, e)
             },
-            setStyle: function(t, e) {
+            setStyle: function (t, e) {
                 a.setStyle(this._element, t, e)
             },
-            setAttr: function(t, e) {
+            setAttr: function (t, e) {
                 if ("class" === t)
                     a.clearClasses(this._element),
                         this.addClass(e);
@@ -8083,17 +8229,17 @@
                     this._element.setAttribute(t, e)
                 }
             },
-            getAttr: function(t) {
+            getAttr: function (t) {
                 return this._element.getAttribute(t)
             },
-            bind: function(t, e, i) {
+            bind: function (t, e, i) {
                 var n = this.getElement();
                 return this._domEvents || (this._domEvents = []),
                     this._domEvents.push(r.on(n, t, e, i || this)),
                     this
             },
-            unbindAll: function() {
-                this._domEvents && (o.each(this._domEvents, function(t) {
+            unbindAll: function () {
+                this._domEvents && (o.each(this._domEvents, function (t) {
                     r.un(t)
                 }),
                     this._domEvents = [])
@@ -8101,20 +8247,20 @@
         });
         t.exports = u
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n = i(10)
             , o = /^([_-]\w+)/;
-        t.exports = function(t) {
-            return function() {
+        t.exports = function (t) {
+            return function () {
                 if (!arguments.length)
                     return t;
                 var e = [];
-                return n.each(arguments, function(i) {
+                return n.each(arguments, function (i) {
                     if (n.isString(i)) {
                         var r = i.split(/\s+/);
-                        e.push(n.map(r, function(e) {
-                            return e.replace(o, function() {
+                        e.push(n.map(r, function (e) {
+                            return e.replace(o, function () {
                                 return t + arguments[1]
                             })
                         }).join(" "))
@@ -8124,33 +8270,34 @@
             }
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n = i(363)
             , o = i(10)
             , r = Array.prototype.slice
             , a = {
-            destroy: function() {
+            destroy: function () {
                 this.stopListening(),
                     this.__base()
             },
-            fireEvent: function(t) {
+            fireEvent: function (t) {
                 var e, i = r.call(arguments, 1), n = o.camelize("on:" + t), a = this;
                 do {
                     var s = a[n];
                     o.isFunction(s) && (e = s.apply(a, i)),
                         a = a.getContextComponent()
-                } while (!1 !== e && a);!1 !== e && this.trigger.apply(this, arguments)
+                } while (!1 !== e && a);
+                !1 !== e && this.trigger.apply(this, arguments)
             }
         };
         o.extend(a, n),
             t.exports = a
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(0);
-        e.renderAdtuneCrossIcon = function(t, e) {
+        e.renderAdtuneCrossIcon = function (t, e) {
             return n.create("svg", {
                 width: t.width + "px",
                 height: t.height + "px",
@@ -8163,7 +8310,7 @@
             }))
         }
             ,
-            e.renderDoneIcon = function() {
+            e.renderDoneIcon = function () {
                 return n.create("svg", {
                     width: "18",
                     height: "18"
@@ -8173,14 +8320,14 @@
             }
             ,
             e.YANDEX_LOGO = {
-                render: function() {
+                render: function () {
                     return n.create("svg", {
                         viewBox: "0 0 171 35"
                     }, n.create("path", {
                         d: "M8.4 17.258L3.55 28H0l5.324-11.48c-2.524-1.24-4.18-3.528-4.18-7.717C1.144 2.947 4.93 0 9.425 0H14v28h-3.076V17.258H8.4zM10.963 2.56H9.346c-2.484 0-4.85 1.59-4.85 6.282 0 4.499 2.208 5.972 4.85 5.972h1.617V2.56zM28.526 8.311v19.8H25.53v-8.87h-4.495v8.87H18V8.31h3.035v8.402h4.495V8.311h2.996zM41.357 32v-3.89h-8.375V32h-2.727v-6.418h1.19c1.768-4.201 1.998-10.347 1.998-15.598V8.31h9.066v17.27h1.537V32h-2.689zm-1.806-21.2h-3.38v.35c0 4.163-.192 10.27-1.806 14.47h5.186V10.8zM52.46 28.383c-4.033 0-6.53-3.267-6.53-9.335 0-6.38 1.728-11.008 5.916-11.008 3.265 0 5.378 2.49 5.378 9.18v1.672h-8.144c0 4.474 1.229 6.846 3.65 6.846 1.69 0 3.072-.778 3.84-1.322l.692 2.373c-1.268.972-2.881 1.594-4.802 1.594zm-3.342-11.98h4.994c0-3.384-.538-5.835-2.305-5.835-1.844 0-2.497 2.295-2.689 5.835zm14.214 1.828v9.88h-3.035V8.311h3.035v9.141l4.687-9.14h3.073l-4.84 9.296 5.532 10.502h-3.304l-5.148-9.88zm8.874-.039C72.205 11.968 74.587 8 79.158 8c1.73 0 2.766.467 3.612 1.011l-.423 2.918c-.807-.7-1.998-1.362-3.227-1.362-2.19 0-3.726 2.49-3.726 7.469 0 4.94 1.152 7.78 3.61 7.78 1.46 0 2.613-.584 3.305-1.207L83 26.904c-1.037.895-2.305 1.478-4.072 1.478-4.226 0-6.723-3.423-6.723-10.19zM99.28 28.302H87.72L87.46 33H86v-6.342h.786c1.309-1.135 1.982-4.306 2.356-8.338.374-4.188.486-10.452.599-18.32h9.426v26.658H101V33h-1.459l-.262-4.698zM97.26 1.644h-5.873c-.113 7.164-.3 12.605-.599 16.676-.337 4.228-.935 7.047-1.983 8.338h8.417V1.644h.037zM113.213 14.078c0-1.02.08-1.882.159-2.745h-.12c-.277.863-.635 1.687-1.071 2.589L105.588 28H104V8.04h1.747v13.842c0 1.06-.08 1.922-.159 2.824h.12c.278-.902.675-1.765 1.072-2.667L113.372 8H115v20h-1.787V14.078zM120.753 27.303V35H119V8.399h1.529l.149 3.35c.82-1.914 2.237-3.749 4.325-3.749 3.17 0 4.997 4.068 4.997 9.93 0 7.458-2.35 11.128-5.892 11.128-1.38 0-2.61-.758-3.355-1.755zm7.494-9.213c0-5.304-1.342-8.455-3.542-8.455-1.678 0-3.132 1.914-3.952 4.108v11.366c.745 1.635 1.79 2.473 3.505 2.473 2.423 0 3.99-3.07 3.99-9.492zM139.275 27.375c2.684 0 4.065-2.179 4.065-2.179l.592 1.506S142.432 29 139.236 29C134.973 29 133 25.117 133 18.5S135.486 8 138.84 8c3.474 0 5.684 3.645 5.052 10.817h-9.077c.119 5.547 1.54 8.558 4.46 8.558zm-4.38-10.024h7.3c.316-5.35-1.262-7.766-3.315-7.766-2.13 0-3.828 2.734-3.986 7.766zM149.873 28H148V8h1.873v9.391L156.688 8h1.834l-6.696 9.273L159 28h-2.112l-7.055-10.373V28zM166.452 9.532V28h-1.827V9.532H160V8h11v1.532z"
                     }))
                 },
-                renderSmall: function() {
+                renderSmall: function () {
                     return n.create("svg", {
                         viewBox: "0 0 14 28"
                     }, n.create("path", {
@@ -8189,15 +8336,15 @@
                 }
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
-        var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(t) {
+        var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (t) {
                 return typeof t
             }
-            : function(t) {
+            : function (t) {
                 return t && "function" == typeof Symbol && t.constructor === Symbol && t !== Symbol.prototype ? "symbol" : typeof t
             }
-            , o = Object.assign || function(t) {
+            , o = Object.assign || function (t) {
                 for (var e, i = 1, n = arguments.length; i < n; i++)
                     for (var o in e = arguments[i])
                         Object.prototype.hasOwnProperty.call(e, o) && (t[o] = e[o]);
@@ -8206,7 +8353,7 @@
         ;
         e.__esModule = !0;
         var r = i(4);
-        e.parseAllowRepeatAds = function(t) {
+        e.parseAllowRepeatAds = function (t) {
             var e;
             if ("object" === (void 0 === t ? "undefined" : n(t))) {
                 e = o({}, t);
@@ -8220,22 +8367,23 @@
                 e
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n, o = (n = Object.setPrototypeOf || {
                     __proto__: []
-                }instanceof Array && function(t, e) {
+                } instanceof Array && function (t, e) {
                     t.__proto__ = e
                 }
-                || function(t, e) {
+                || function (t, e) {
                     for (var i in e)
                         e.hasOwnProperty(i) && (t[i] = e[i])
                 }
                 ,
-                function(t, e) {
+                function (t, e) {
                     function i() {
                         this.constructor = t
                     }
+
                     n(t, e),
                         t.prototype = null === e ? Object.create(e) : (i.prototype = e.prototype,
                             new i)
@@ -8244,16 +8392,17 @@
         e.__esModule = !0;
         var r = i(34)
             , a = i(28)
-            , s = function(t) {
+            , s = function (t) {
             function e() {
                 return null !== t && t.apply(this, arguments) || this
             }
+
             return o(e, t),
-                e.prototype.toString = function() {
+                e.prototype.toString = function () {
                     return a.getNativeJSON(window).stringify(this.config)
                 }
                 ,
-                e.prototype.setTitle = function(t) {
+                e.prototype.setTitle = function (t) {
                     var e = t.font
                         , i = t.titlePercent
                         , n = t.titleBold
@@ -8265,7 +8414,7 @@
                     }
                 }
                 ,
-                e.prototype.getIsFirstScreen = function() {
+                e.prototype.getIsFirstScreen = function () {
                     return this.isFirstScreen
                 }
                 ,
@@ -8273,7 +8422,7 @@
         }(i(376).LayoutConfig);
         e["default"] = s
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(378)
@@ -8294,7 +8443,7 @@
             , h = null
             , g = new n.AdList
             , _ = new n.AdList;
-        var y, b = function() {
+        var y, b = function () {
             function t(t) {
                 var e = t.maxSkipSize
                     , i = void 0 === e ? 9 : e
@@ -8305,57 +8454,58 @@
                         value: i,
                         custom: r
                     } : void 0,
-                    this.getNearbyAds = n ? function(t, e) {
-                            return o.getSurroundingAds(t, n, e, function() {
+                    this.getNearbyAds = n ? function (t, e) {
+                            return o.getSurroundingAds(t, n, e, function () {
                                 return !0
                             })
                         }
-                        : function(t) {
-                            return s.map(t.slice(t.length - i), function(t) {
+                        : function (t) {
+                            return s.map(t.slice(t.length - i), function (t) {
                                 return t.adId
                             })
                         }
             }
-            return t.prototype.capture = function(t) {
+
+            return t.prototype.capture = function (t) {
                 g.add(t)
             }
                 ,
-                t.prototype.release = function(t) {
+                t.prototype.release = function (t) {
                     g.remove(t)
                 }
                 ,
-                t.prototype.getCapturedCount = function() {
+                t.prototype.getCapturedCount = function () {
                     return g.items().length
                 }
                 ,
-                t.prototype.captureDirect = function(t) {
+                t.prototype.captureDirect = function (t) {
                     var e = l.difference(t, _.items());
-                    a.forEach(e, function(t) {
+                    a.forEach(e, function (t) {
                         _.add(t)
                     })
                 }
                 ,
-                t.prototype.getUnusableAds = function(t, e) {
+                t.prototype.getUnusableAds = function (t, e) {
                     void 0 === e && (e = []);
                     var i = {};
-                    a.forEach(e, function(t) {
+                    a.forEach(e, function (t) {
                         return i[t] = !0
                     });
-                    var n = r.filter(g.items(), function(t) {
+                    var n = r.filter(g.items(), function (t) {
                         var e = t.adId;
                         return !i[e]
                     });
                     return this.getNearbyAds(n, t)
                 }
                 ,
-                t.prototype.saveAdFilter = function(t, e) {
-                    var i = function(t) {
+                t.prototype.saveAdFilter = function (t, e) {
+                    var i = function (t) {
                         var e = t ? t.split(":") : []
                             , i = {
                             awaps: "",
                             yabs: []
                         };
-                        return a.forEach(e, function(t) {
+                        return a.forEach(e, function (t) {
                             if (-1 !== t.indexOf(u))
                                 i.awaps = t.split(".")[1];
                             else if (-1 !== t.indexOf(d)) {
@@ -8369,55 +8519,56 @@
                     e && (f.yabs = i.yabs)
                 }
                 ,
-                t.limitYabs = function(t, e) {
+                t.limitYabs = function (t, e) {
                     var i = t.length - e;
                     return i > 0 ? t.slice(i) : t
                 }
                 ,
-                t.prototype.getSkipToken = function(e, i) {
+                t.prototype.getSkipToken = function (e, i) {
                     h !== window.location.href && (f = {
                         awaps: "",
                         yabs: []
                     },
                         h = window.location.href);
-                    var n, o, r = this.getUnusableAds(e, i), a = l.difference(f.yabs, _.items()), s = t.limitYabs(a.concat(r), 50), p = {
-                        awaps: f.awaps,
-                        yabs: s
-                    };
+                    var n, o, r = this.getUnusableAds(e, i), a = l.difference(f.yabs, _.items()),
+                        s = t.limitYabs(a.concat(r), 50), p = {
+                            awaps: f.awaps,
+                            yabs: s
+                        };
                     return o = [],
                     (n = p).awaps && o.push(u + n.awaps),
                     n.yabs.length && o.push(d + c.encode(n.yabs.join(m))),
                         o.join(":")
                 }
                 ,
-                t.prototype.getSkipBanner = function(t, e) {
+                t.prototype.getSkipBanner = function (t, e) {
                     return this.getUnusableAds(t, e).join("\n")
                 }
                 ,
                 t
         }();
-        e.setAllowRepeatAds = function(t) {
+        e.setAllowRepeatAds = function (t) {
             p.isSsSkipTokenServerAuto || (y = t)
         }
             ,
-            e.getAdUsageStorage = function(t) {
+            e.getAdUsageStorage = function (t) {
                 var e = y || t && t.allowRepeatAds || {};
                 return new b(e)
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(46)
             , o = i(112)
             , r = 36e5;
-        e.getMarkerIsValidStat = function(t) {
+        e.getMarkerIsValidStat = function (t) {
             return e = n.getYaContext().initTime,
                 Number(new Date) - e < r ? t : o.PRODUCT_MARKERS.LONG_SESSION;
             var e
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(207)
@@ -8430,9 +8581,9 @@
             host: window.location.host,
             getRtbConfig: n.getRtbConfig
         });
-        e.startCookieMatching = function(t) {
-            var e = r("cookie-matching", function() {
-                return function(t) {
+        e.startCookieMatching = function (t) {
+            var e = r("cookie-matching", function () {
+                return function (t) {
                     var e = n.parseCookieMatchingData(t)
                         , i = s(e);
                     i && (a.push(e),
@@ -8445,9 +8596,9 @@
         var l = i(207);
         e.COOKIE_MATCHING_FOR = l.COOKIE_MATCHING_FOR
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
-        var n = Object.assign || function(t) {
+        var n = Object.assign || function (t) {
                 for (var e, i = 1, n = arguments.length; i < n; i++)
                     for (var o in e = arguments[i])
                         Object.prototype.hasOwnProperty.call(e, o) && (t[o] = e[o]);
@@ -8462,18 +8613,21 @@
             , l = i(45)
             , p = i(396)
             , c = i(397);
+
         function d(t) {
             return Boolean(t && "1" === t)
         }
+
         function u(t) {
             return ["<scr", "ipt>", "var config=" + s.getNativeJSON(window).stringify(t), "</scr", "ipt>", "<scr", "ipt>", c, "</scr", "ipt>"].join("")
         }
+
         e.COOKIE_MATCHING_FOR = {
             RTB_DSP: "rtb-dsp",
             DIRECT: "dir-direct",
             DIRECT_IN_RTB: "rtb-direct"
         },
-            e.parseCookieMatchingData = function(t) {
+            e.parseCookieMatchingData = function (t) {
                 var e = t.bundle
                     , i = t.serviceName
                     , n = t.commonData
@@ -8488,13 +8642,13 @@
                 }
             }
             ,
-            e.getRtbConfig = function(t) {
+            e.getRtbConfig = function (t) {
                 var i = t.host
                     , n = t.appliedDataList
                     , o = t.serviceName
                     , a = t.bundle
                     , s = t.matchUrls;
-                if ("adblock" !== a && o !== e.COOKIE_MATCHING_FOR.DIRECT && !p.isCookieHostIgnored(i) && !r.some(n, function(t) {
+                if ("adblock" !== a && o !== e.COOKIE_MATCHING_FOR.DIRECT && !p.isCookieHostIgnored(i) && !r.some(n, function (t) {
                     return t.serviceName !== e.COOKIE_MATCHING_FOR.DIRECT
                 }))
                     return {
@@ -8502,13 +8656,13 @@
                     }
             }
             ,
-            e.getOpenedFor = function(t) {
+            e.getOpenedFor = function (t) {
                 var e = t.serviceName;
                 return t.isYandexPage ? "oo-" + e : "net-" + e
             }
             ,
-            e.getScriptConfigFactory = function(t) {
-                return function(e) {
+            e.getScriptConfigFactory = function (t) {
+                return function (e) {
                     var i = n({}, t, e)
                         , o = i.isGoodBrowser
                         , r = i.getRtbConfig
@@ -8527,7 +8681,7 @@
             }
             ,
             e.getScriptHtml = u,
-            e.injectScript = function(t) {
+            e.injectScript = function (t) {
                 var e = document.createElement("div");
                 document.body.appendChild(e),
                     e.style.position = "fixed",
@@ -8540,7 +8694,7 @@
                     html: u(t)
                 }
                     , r = window;
-                o.initSafeframe(r, i, n, void 0, void 0, function(t, e) {
+                o.initSafeframe(r, i, n, void 0, void 0, function (t, e) {
                     "error" === t && l.isString(e.type) && -1 === e.type.indexOf("SafeframeResourceError") && a.logger.error({
                         name: t,
                         message: e
@@ -8548,7 +8702,7 @@
                 })
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n = i(14)
             , o = i(38)
@@ -8562,6 +8716,7 @@
             , u = i(53)
             , m = i(204)
             , f = i(399);
+
         function h(t) {
             if (t && t.__esModule)
                 return t;
@@ -8572,6 +8727,7 @@
             return e["default"] = t,
                 e
         }
+
         var g = i(3)
             , _ = i(131)
             , y = i(6)
@@ -8586,51 +8742,54 @@
             , A = i(32)
             , O = i(25).isLongExperiment
             , E = i(19).experimentIds;
+
         function T(t, e) {
             this._isPlainDirect = t,
                 this._blocks = {},
                 this._onAdAbused = e.onAdAbused
         }
+
         function R(t) {
             var e = t.getUsedAdvs()
                 , i = [];
-            return e && b.each(e, function(t) {
+            return e && b.each(e, function (t) {
                 i.push(t.adId)
             }),
                 i
         }
-        T.prototype.setData = function(t) {
+
+        T.prototype.setData = function (t) {
             this._data = t,
                 this._visibilityManager = new x,
                 this._timestamp = new Date,
                 this._reloadTimeout = this._data.common && this._data.common.reloadTimeout ? Number(this._data.common.reloadTimeout) : y.defaultReloadTimeout
         }
             ,
-            T.prototype.dataCanReload = function() {
+            T.prototype.dataCanReload = function () {
                 return !this._timestamp || new Date - this._timestamp > 1e3 * this._reloadTimeout
             }
             ,
-            T.prototype.resetTimeout = function() {
+            T.prototype.resetTimeout = function () {
                 this._timestamp = null
             }
             ,
-            T.prototype.getBlocksToRerender = function() {
+            T.prototype.getBlocksToRerender = function () {
                 var t = [];
-                return b.forOwn(this._blocks, function(e, i) {
+                return b.forOwn(this._blocks, function (e, i) {
                     e && e.isInViewport && e.isVisibilityConfirmed && e.isVisibilityConfirmed() && e.isInViewport() && t.push(i)
                 }),
                     t
             }
             ,
-            T.prototype.getBlocks = function() {
+            T.prototype.getBlocks = function () {
                 var t = [];
-                return b.forOwn(this._blocks, function(e) {
+                return b.forOwn(this._blocks, function (e) {
                     t.push(e)
                 }),
                     t
             }
             ,
-            T.prototype.render = function(t, e, i) {
+            T.prototype.render = function (t, e, i) {
                 var o = this
                     , r = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : {};
                 if ((0,
@@ -8655,7 +8814,7 @@
                                 , h = this._data.direct.ads;
                             if (!t.blockId) {
                                 var g = m.getUnusableAds(t);
-                                h = b.filter(h, function(t) {
+                                h = b.filter(h, function (t) {
                                     return -1 === b.inArray(g, t.adId)
                                 })
                             }
@@ -8670,7 +8829,7 @@
                                     };
                                     return m.capture(v),
                                         void (0,
-                                            f.checkCspForVideo)("https://an.yandex.ru/get-video-an/69130/15d111aaa89/82bb6c153e3b9529/240p.mp4", function(n) {
+                                            f.checkCspForVideo)("https://an.yandex.ru/get-video-an/69130/15d111aaa89/82bb6c153e3b9529/240p.mp4", function (n) {
                                             m.release(v),
                                                 !1 === n ? (_.isAbilityForRmp = !0,
                                                     O(E.rmp.RMP_ABILITIES) ? (_.isNewRmpAbilities = !0,
@@ -8691,7 +8850,7 @@
                     c.logger.warn(new Error("Render to node is null (" + t.pageId + ")(" + (t.blockId ? t.blockId : "") + ")"), "DirectManager::render")
             }
             ,
-            T.prototype._createBlockWrapper = function(t, e, i, r) {
+            T.prototype._createBlockWrapper = function (t, e, i, r) {
                 var a = this
                     , s = I.getRenderId(t);
                 (0,
@@ -8700,11 +8859,11 @@
                         cfg: t,
                         rawSettings: e,
                         renderParams: r,
-                        callback: function(c) {
+                        callback: function (c) {
                             (0,
                                 n.logRenderLabel)(t.uniqueId, n.BlockRenderSteps.DirectManagerChooseBlockType),
                             c && (a._blocks[s] = c,
-                                c.render(function() {
+                                c.render(function () {
                                     if ((0,
                                         n.logRenderLabel)(t.uniqueId, n.BlockRenderSteps.DirectManagerBlockRendered),
                                         (0,
@@ -8728,7 +8887,7 @@
                     })
             }
             ,
-            T.prototype._createBlockRmp = function(t, e, i, n, o, r) {
+            T.prototype._createBlockRmp = function (t, e, i, n, o, r) {
                 var a = this
                     , s = {
                     adId: o.adId,
@@ -8738,7 +8897,7 @@
                     , l = (0,
                     u.getAdUsageStorage)(t);
                 l.capture(s),
-                    d.getData(g.protect("DirectManager:RMP:getData", function(p) {
+                    d.getData(g.protect("DirectManager:RMP:getData", function (p) {
                         var u = d.getCompanyByOId(r);
                         c.logger.rmp("RMP_DREW"),
                             d.addExperimentalRmpProperties(o, p[u]),
@@ -8747,7 +8906,7 @@
                     }))
             }
             ,
-            T.prototype._renderModernAdaptive = function(t, e, i, n) {
+            T.prototype._renderModernAdaptive = function (t, e, i, n) {
                 var o = this
                     , r = document.getElementById(t.renderTo)
                     , s = r ? r.clientWidth : 0
@@ -8769,9 +8928,9 @@
                         cfg: t,
                         rawSettings: e,
                         renderParams: n,
-                        callback: function(e) {
+                        callback: function (e) {
                             e && (o._blocks[l] = e,
-                                e.render(function() {
+                                e.render(function () {
                                     o._runOnRenderCallback(e, t.onRender, n.confirmByHandler),
                                         o._logToMetrika(e, t.bundle)
                                 }))
@@ -8779,17 +8938,17 @@
                     }))
             }
             ,
-            T.prototype._removeOldBlock = function(t) {
+            T.prototype._removeOldBlock = function (t) {
                 this._blocks[t] && (this._blocks[t].destructor(),
                     this._blocks[t] = null)
             }
             ,
-            T.prototype._runOnRenderCallback = function(t, e, i) {
+            T.prototype._runOnRenderCallback = function (t, e, i) {
                 if (e) {
                     var n = {
                         lang: t.dataSource.getLanguage(),
                         product: y.Products.DIRECT,
-                        confirmVisibility: function() {
+                        confirmVisibility: function () {
                             i && t.createVisibilityConfirmer()
                         }
                     };
@@ -8798,7 +8957,7 @@
                 }
             }
             ,
-            T.prototype._logToMetrika = function(t) {
+            T.prototype._logToMetrika = function (t) {
                 if (Ya.Context.LOG_DIRECT && this._isPlainDirect) {
                     var e = {
                         error: "Maybe not rendered"
@@ -8814,7 +8973,7 @@
                     } catch (t) {
                         e.error = t.message
                     }
-                    var n = g.protect("metrika_direct", function(t) {
+                    var n = g.protect("metrika_direct", function (t) {
                         t.hit(window.location.href, {
                             params: e
                         })
@@ -8825,15 +8984,15 @@
                 }
             }
             ,
-            T.prototype.getUsedIds = function(t) {
+            T.prototype.getUsedIds = function (t) {
                 var e = [];
-                return t && this._blocks[t] ? e = e.concat(R(this._blocks[t])) : b.forOwn(this._blocks, function(t) {
+                return t && this._blocks[t] ? e = e.concat(R(this._blocks[t])) : b.forOwn(this._blocks, function (t) {
                     t && (e = e.concat(R(t)))
                 }),
                     e
             }
             ,
-            T.prototype._createBlock = function(t) {
+            T.prototype._createBlock = function (t) {
                 var e = this
                     , i = t.cfg
                     , n = t.rawSettings
@@ -8842,7 +9001,7 @@
                 this._getFormatObject({
                     rawSettings: n,
                     cfg: i,
-                    callback: function() {
+                    callback: function () {
                         var t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
                         return e._createBlockByFormat({
                             formatObject: t,
@@ -8855,7 +9014,7 @@
                 })
             }
             ,
-            T.prototype._createBlockByFormat = function(t) {
+            T.prototype._createBlockByFormat = function (t) {
                 var e = this
                     , i = t.formatObject
                     , o = t.createBlockCallback
@@ -8884,7 +9043,7 @@
                     allowRepeatAds: a.allowRepeatAds,
                     isInOverlay: a.isInOverlay,
                     designId: l.designId,
-                    onAdAbused: function() {
+                    onAdAbused: function () {
                         for (var t = arguments.length, i = Array(t), n = 0; n < t; n++)
                             i[n] = arguments[n];
                         e._handleAdAbuse.apply(e, [a].concat(i))
@@ -8899,17 +9058,17 @@
                 d && (u = (0,
                     r.isFakeImpId)(I.parseBlockId(d).impId)),
                 d && !u || (d = (a.renderTo + "-" + p.format.className).replace(/[^-\w]/g, "-")),
-                    o(new i.constructor(c,p,a.renderTo,d,a.cspNonce,a.pageNumber,s))
+                    o(new i.constructor(c, p, a.renderTo, d, a.cspNonce, a.pageNumber, s))
             }
             ,
-            T.prototype.destructor = function() {
-                b.forOwn(this._blocks, function(t) {
+            T.prototype.destructor = function () {
+                b.forOwn(this._blocks, function (t) {
                     t.destructor()
                 }),
                     this._blocks = {}
             }
             ,
-            T.prototype._handleAdAbuse = function() {
+            T.prototype._handleAdAbuse = function () {
                 if (this._onAdAbused && S(this._onAdAbused)) {
                     for (var t = arguments.length, e = Array(t), i = 0; i < t; i++)
                         e[i] = arguments[i];
@@ -8917,35 +9076,35 @@
                 }
             }
             ,
-            T.prototype.slideUp = function(t, e) {
+            T.prototype.slideUp = function (t, e) {
                 var i = this
                     , n = this._blocks[t];
-                n.slideUp && n.slideUp(function() {
+                n.slideUp && n.slideUp(function () {
                     i._blocks[t].destructor(),
                         delete i._blocks[t],
                         e()
                 })
             }
             ,
-            T.prototype._getFormatObject = function(t) {
+            T.prototype._getFormatObject = function (t) {
                 var e = t.rawSettings
                     , i = t.callback
                     , n = e.name;
                 k.build(n, {
                     width: _.getValidNumber(e.width),
                     height: _.getValidNumber(e.height)
-                }, function(t) {
+                }, function (t) {
                     e.isRmp ? k.build("rmpVideo", {
                         width: _.getValidNumber(e.width),
                         height: _.getValidNumber(e.height)
-                    }, function(e) {
+                    }, function (e) {
                         e.format.index = t.format.index,
                             i(t = e)
                     }) : i(t)
                 })
             }
             ,
-            T.prototype._getSettings = function(t, e, i) {
+            T.prototype._getSettings = function (t, e, i) {
                 var n = t.format;
                 n.blockId = i.blockId;
                 var o = w(n, e, i.directSettings);
@@ -8956,19 +9115,19 @@
             ,
             t.exports = T
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(42)
             , o = ["demo-auth.wi-fi.ru", "dev-auth.wi-fi.ru", "auth.wi-fi.ru", "wi-fi.ru"];
-        e["default"] = function(t) {
+        e["default"] = function (t) {
             var e = t.location.hostname;
             return n(o, e) > -1
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
-        var n = Object.assign || function(t) {
+        var n = Object.assign || function (t) {
                 for (var e, i = 1, n = arguments.length; i < n; i++)
                     for (var o in e = arguments[i])
                         Object.prototype.hasOwnProperty.call(e, o) && (t[o] = e[o]);
@@ -8978,48 +9137,49 @@
         e.__esModule = !0;
         var o = i(5)
             , r = i(135);
-        e.combineStrategies = function() {
+        e.combineStrategies = function () {
             for (var t = [], e = 0; e < arguments.length; e++)
                 t[e] = arguments[e];
-            return function() {
+            return function () {
                 function e(e) {
                     var i = this;
                     this.args = e,
                         this.runningCount = 0,
-                        this.callback = function(t, e) {
+                        this.callback = function (t, e) {
                             var n = t + 1;
                             e ? n === i.strategies.length ? i.args.callback(e) : n === i.runningCount && i.startNext() : (i.stopUntil(n),
                                 i.args.callback(e))
                         }
                         ,
-                        this.strategies = o.map(t, function(t, o) {
+                        this.strategies = o.map(t, function (t, o) {
                             return r.protectStrategy(new t(n({}, e, {
-                                callback: function(t) {
+                                callback: function (t) {
                                     return i.callback(o, t)
                                 }
                             })))
                         })
                 }
-                return e.prototype.init = function() {
+
+                return e.prototype.init = function () {
                     for (var t = 0, e = this.strategies; t < e.length; t++) {
                         e[t].init()
                     }
                 }
                     ,
-                    e.prototype.start = function() {
+                    e.prototype.start = function () {
                         !this.runningCount && this.strategies.length && this.startNext()
                     }
                     ,
-                    e.prototype.stop = function() {
+                    e.prototype.stop = function () {
                         this.stopUntil(0)
                     }
                     ,
-                    e.prototype.startNext = function() {
+                    e.prototype.startNext = function () {
                         this.strategies[this.runningCount++].start()
                     }
                     ,
-                    e.prototype.stopUntil = function(t) {
-                        for (; this.runningCount > t; )
+                    e.prototype.stopUntil = function (t) {
+                        for (; this.runningCount > t;)
                             this.strategies[--this.runningCount].stop()
                     }
                     ,
@@ -9027,25 +9187,27 @@
             }()
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(135);
-        e.defineIntervalStrategy = function(t) {
-            return function() {
+        e.defineIntervalStrategy = function (t) {
+            return function () {
                 function e(t) {
                     this.args = t
                 }
-                return e.prototype.init = function() {}
+
+                return e.prototype.init = function () {
+                }
                     ,
-                    e.prototype.start = function() {
+                    e.prototype.start = function () {
                         var e = this;
-                        this.timer = setInterval(n.protect(function() {
+                        this.timer = setInterval(n.protect(function () {
                             e.args.callback(t(e.args))
                         }), this.args.interval)
                     }
                     ,
-                    e.prototype.stop = function() {
+                    e.prototype.stop = function () {
                         clearInterval(this.timer)
                     }
                     ,
@@ -9053,13 +9215,14 @@
             }()
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(16)
             , o = i(4)
             , r = i(23)
             , a = i(211);
+
         function s(t, e) {
             if (o.isOperaMini)
                 return !1;
@@ -9070,7 +9233,7 @@
                 , p = i.bottom
                 , c = s - a
                 , d = p - l;
-            return !n.some(e, function(e) {
+            return !n.some(e, function (e) {
                 var i = e[0]
                     , n = e[1]
                     , o = a + (c - 1) * (1 + i) / 2
@@ -9079,37 +9242,40 @@
                 return !s || t === s || t.contains(s)
             })
         }
-        e.OverlayStrategy = a.defineIntervalStrategy(function(t) {
+
+        e.OverlayStrategy = a.defineIntervalStrategy(function (t) {
             return !s(t.element, t.overlappedPoints)
         }),
             e.isOverlapped = s
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(129)
             , o = i(41)
             , r = o.on
             , a = o.un
-            , s = function() {
+            , s = function () {
             function t(t) {
                 var e = this;
                 this.args = t,
-                    this.callback = function() {
+                    this.callback = function () {
                         e.args.callback(!(e.args.allowIntersectionObserver && n.isHidden()))
                     }
             }
-            return t.prototype.init = function() {}
+
+            return t.prototype.init = function () {
+            }
                 ,
-                t.prototype.start = function() {
+                t.prototype.start = function () {
                     var t = this;
-                    this.timer = setTimeout(function() {
+                    this.timer = setTimeout(function () {
                         t.callback(),
                             t.subscription = r(document, n.changeEventName, t.callback)
                     })
                 }
                 ,
-                t.prototype.stop = function() {
+                t.prototype.stop = function () {
                     clearTimeout(this.timer),
                         a(this.subscription)
                 }
@@ -9118,21 +9284,23 @@
         }();
         e.DocumentVisibilityStrategy = s
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n = i(113)
             , o = i(62)
             , r = i(425)
             , a = i(2)
             , s = i(24);
+
         function l(t) {
             this._pageId = t.pageId,
                 this._viewNotices = t.viewNotices,
                 this._winNotice = t.winNotice,
                 this._linkTail = t.linkTail
         }
+
         l.prototype = {
-            confirm: function() {
+            confirm: function () {
                 var t = this
                     , e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
                 if (this._linkTail && !this._isConfirmSent) {
@@ -9153,24 +9321,24 @@
                         params: c
                     });
                     (0,
-                        o.sendPixel)(d.getUrl(), function() {
+                        o.sendPixel)(d.getUrl(), function () {
                         t._viewNotices && t._viewNotices.length && t._getExternalUrlManager().confirm(t._viewNotices)
                     }),
                         this._isConfirmSent = !0
                 }
             },
-            sendWinNotice: function() {
+            sendWinNotice: function () {
                 !this._isWinNoticeSent && this._winNotice && (this._getExternalUrlManager().confirm(this._winNotice),
                     this._isWinNoticeSent = !0)
             },
-            _getExternalUrlManager: function() {
+            _getExternalUrlManager: function () {
                 return this._externalUrlManager || (this._externalUrlManager = new r.RtbExternalUrlManager),
                     this._externalUrlManager
             }
         },
             t.exports = l
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(202)
@@ -9184,10 +9352,10 @@
             , d = i(2)
             , u = i(131)
             , m = i(6);
-        e.parse = function(t, e, i) {
-            return i && d.extend(e, function(t) {
+        e.parse = function (t, e, i) {
+            return i && d.extend(e, function (t) {
                 var e = {};
-                return l.forOwn(t, function(t, i) {
+                return l.forOwn(t, function (t, i) {
                     s.isArray(f) && (e[i] = t)
                 }),
                     e
@@ -9196,6 +9364,7 @@
         }
         ;
         var f = ["siteBgColor", "bgColor", "borderColor", "headerBgColor", "titleColor", "textColor", "urlColor", "urlBackgroundColor", "sitelinksColor", "hoverColor", "backColor", "highlightColor", "smallImage", "buttonTextColor", "buttonBgColor"];
+
         function h(t, e) {
             var i = t.limit;
             if (t.fixed && "adaptive" !== t.name)
@@ -9203,8 +9372,12 @@
             var n = parseInt(e.limit, 10);
             return d.isInRange(n, 1, i) ? n : i
         }
+
         function g(t, e) {
-            var i, s = Number(t.domainFontSize) || 0, l = t.domainBgOpacity, f = t.titleFontSizeAbs, g = t.bodyFontSize, _ = t || {}, y = _.name, b = _.type, v = {}, x = v.width, w = v.height, k = v.format, C = void 0 === k ? {} : k, I = C.name, S = C.type, A = ("240x400" === y || "240x400" === b || "240x400" === I || "240x400" === S || 240 === x && 400 === w) && o.MEDIA_240x400_IS_IGNORE_SETTINGS;
+            var i, s = Number(t.domainFontSize) || 0, l = t.domainBgOpacity, f = t.titleFontSizeAbs, g = t.bodyFontSize,
+                _ = t || {}, y = _.name, b = _.type, v = {}, x = v.width, w = v.height, k = v.format,
+                C = void 0 === k ? {} : k, I = C.name, S = C.type,
+                A = ("240x400" === y || "240x400" === b || "240x400" === I || "240x400" === S || 240 === x && 400 === w) && o.MEDIA_240x400_IS_IGNORE_SETTINGS;
             "pictureSearch" === e.name && (i = Boolean(t.fixedBgColors));
             var O = t.linkTail
                 , E = Boolean(t.favicon)
@@ -9221,7 +9394,7 @@
                 , F = Boolean(t.horizontalAlign)
                 , H = Boolean(Number(t.callouts || 0))
                 , V = Boolean(Number(t.skipCyclicAnimation || 0))
-                , j = function(t, e) {
+                , j = function (t, e) {
                 var i = t.fontSize
                     , n = t.titleFontSize
                     , o = t.fontFamily;
@@ -9257,15 +9430,18 @@
             }(t, e);
             -1 !== e.name.toLowerCase().indexOf("poster") && (t.headerBgColor = null,
                 M = !0);
+
             function U(e) {
                 if (t[e]) {
                     var i = r.normalizeColorHash(t[e]);
                     return null !== i ? r.createColor(i).toString() : void 0
                 }
             }
+
             function W(e) {
                 return u.getValidNumber(t[e])
             }
+
             "horizontal" === e.name.toLowerCase() && a.isNewHorizontal(e.blockId) && p.isHorizontal0318(window.location.host) && (N = m.BorderTypes.AD),
             0 === e.name.indexOf("320x50") && (P = !1);
             var G = window.location.hostname + window.location.pathname;
@@ -9342,60 +9518,64 @@
                 piSettings: t.piSettings
             }
         }
+
         e.getLimit = h,
             e.parseSettings = g
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(9)
-            , o = new RegExp(["175142", "54061"].join("|"),"i")
-            , r = new RegExp(["49688-20"].join("|"),"i")
-            , a = ["mail\\.ru", "devmail\\.ru(\\:\\d+)?", "avito\\.ru", "avito\\.dev", "ok\\.ru", "lenta\\.ru", "gazeta\\.ru", "gismeteo\\.ru", "(tv|news)\\.yandex(\\.\\w+)+", "rbc(\\.\\w+)"];
-        e.isNewHorizontal = function(t) {
+            , o = new RegExp(["175142", "54061"].join("|"), "i")
+            , r = new RegExp(["49688-20"].join("|"), "i")
+            ,
+            a = ["mail\\.ru", "devmail\\.ru(\\:\\d+)?", "avito\\.ru", "avito\\.dev", "ok\\.ru", "lenta\\.ru", "gazeta\\.ru", "gismeteo\\.ru", "(tv|news)\\.yandex(\\.\\w+)+", "rbc(\\.\\w+)"];
+        e.isNewHorizontal = function (t) {
             var e = document.location.href;
-            return !!o.test(t) || !r.test(t) && !(n.filter(a, function(t) {
+            return !!o.test(t) || !r.test(t) && !(n.filter(a, function (t) {
                 return new RegExp("^https?:\\/\\/(([a-z0-9-]+\\.)?)+" + t + "\\/").test(e)
             }).length > 0)
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(16)
-            , o = [/(?:avito\.dev)|(?:avito\.ru)/i, /ok\.ru/i, /vk\.com/i, /rambler\.ru/i, /(?:devmail\.ru)|(?:mail\.ru)/i, /lenta\.ru/i, /gazeta\.ru/i, /gismeteo\.ru/i, /rbc(\.\w+)/i, /eda\.ru/i, /nightparty\.ru/i, /afisha\.ru/i, /motor\.ru/i, /moslenta\.ru/i, /secretmag\.ru/i, /championat\.com/i, /letidor\.ru/i, /quto\.ru/i, /wmj\.ru/i, /indicator\.ru/i, /ferra\.ru/i, /rns\.online/i, /passion\.ru/i, /livejournal\.com/i, /rg\.ru/i, /youla\.io/i];
-        e.isHorizontal0318 = function(t) {
-            return !n.some(o, function(e) {
+            ,
+            o = [/(?:avito\.dev)|(?:avito\.ru)/i, /ok\.ru/i, /vk\.com/i, /rambler\.ru/i, /(?:devmail\.ru)|(?:mail\.ru)/i, /lenta\.ru/i, /gazeta\.ru/i, /gismeteo\.ru/i, /rbc(\.\w+)/i, /eda\.ru/i, /nightparty\.ru/i, /afisha\.ru/i, /motor\.ru/i, /moslenta\.ru/i, /secretmag\.ru/i, /championat\.com/i, /letidor\.ru/i, /quto\.ru/i, /wmj\.ru/i, /indicator\.ru/i, /ferra\.ru/i, /rns\.online/i, /passion\.ru/i, /livejournal\.com/i, /rg\.ru/i, /youla\.io/i];
+        e.isHorizontal0318 = function (t) {
+            return !n.some(o, function (e) {
                 return e.test(t)
             })
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(20);
-        e.isVertical0318 = function(t, e) {
+        e.isVertical0318 = function (t, e) {
             return "vertical" === t && !n.isHostIgnored({
                 host: e
             })
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n, o = (n = Object.setPrototypeOf || {
                     __proto__: []
-                }instanceof Array && function(t, e) {
+                } instanceof Array && function (t, e) {
                     t.__proto__ = e
                 }
-                || function(t, e) {
+                || function (t, e) {
                     for (var i in e)
                         e.hasOwnProperty(i) && (t[i] = e[i])
                 }
                 ,
-                function(t, e) {
+                function (t, e) {
                     function i() {
                         this.constructor = t
                     }
+
                     n(t, e),
                         t.prototype = null === e ? Object.create(e) : (i.prototype = e.prototype,
                             new i)
@@ -9406,63 +9586,65 @@
             , a = i(16)
             , s = i(21)
             , l = i(13)
-            , p = function(t) {
+            , p = function (t) {
             function e() {
                 return null !== t && t.apply(this, arguments) || this
             }
+
             return o(e, t),
-                e.prototype.onInit = function() {
+                e.prototype.onInit = function () {
                     this.selfReady = !1,
                         this.childDetectors = [],
                         t.prototype.onInit.call(this)
                 }
                 ,
-                e.prototype.onUnmount = function() {
+                e.prototype.onUnmount = function () {
                     this.parentDetector && this.parentDetector.remove(this)
                 }
                 ,
-                e.prototype.afterRender = function() {
+                e.prototype.afterRender = function () {
                     this.parentDetector = this.closestDetector(),
                     this.parentDetector && this.parentDetector.add(this)
                 }
                 ,
-                e.prototype.closestDetector = function() {
+                e.prototype.closestDetector = function () {
                     var t = this.getParentComponent()
                         , i = null;
                     do {
                         t instanceof e && (i = t),
                         t && (t = t.getParentComponent())
-                    } while (null === i && t);return i
+                    } while (null === i && t);
+                    return i
                 }
                 ,
-                e.prototype.ready = function() {
+                e.prototype.ready = function () {
                     this.selfReady = !0,
                         this.triggerReady()
                 }
                 ,
-                e.prototype.isChildReady = function() {
-                    return !a.some(this.childDetectors, function(t) {
+                e.prototype.isChildReady = function () {
+                    return !a.some(this.childDetectors, function (t) {
                         return !t.isReady()
                     })
                 }
                 ,
-                e.prototype.add = function(t) {
+                e.prototype.add = function (t) {
                     this.childDetectors.push(t)
                 }
                 ,
-                e.prototype.remove = function(t) {
+                e.prototype.remove = function (t) {
                     if (this.childDetectors.length) {
                         var e = s.indexOf(this.childDetectors, t);
                         this.childDetectors.splice(e, 1)
                     }
                 }
                 ,
-                e.prototype.triggerReady = function() {
+                e.prototype.triggerReady = function () {
                     this.isReady() && (l.isFunction(this.props.onReady) && this.props.onReady(),
                     this.parentDetector && this.parentDetector.triggerReady())
                 }
                 ,
-                e.prototype.isReady = function() {
+                e.prototype.isReady = function () {
                     return this.selfReady && (0 === this.childDetectors.length || this.isChildReady())
                 }
                 ,
@@ -9470,9 +9652,9 @@
         }(r);
         e.Detector = p
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
-        var n, o = Object.assign || function(t) {
+        var n, o = Object.assign || function (t) {
             for (var e = 1; e < arguments.length; e++) {
                 var i = arguments[e];
                 for (var n in i)
@@ -9480,7 +9662,7 @@
             }
             return t
         }
-            , r = function(t) {
+            , r = function (t) {
             if (t && t.__esModule)
                 return t;
             var e = {};
@@ -9498,10 +9680,10 @@
             , u = i(465)
             , m = p.createComponent(c, {
             name: "yap-picture",
-            shouldRender: function() {
+            shouldRender: function () {
                 return Boolean(this.props.picture)
             },
-            _render: function(t, e, i) {
+            _render: function (t, e, i) {
                 var n = this.props
                     , a = n.picture
                     , s = n.fitSize
@@ -9532,7 +9714,7 @@
                     target: "_blank"
                 }, m), f) : p.create("yatag", m, f))
             },
-            _getImageStyle: function() {
+            _getImageStyle: function () {
                 var t = this.props
                     , e = t.picture
                     , i = e.width
@@ -9552,7 +9734,7 @@
                     "max-width": i
                 }
             },
-            _calcContainerStyles: function(t) {
+            _calcContainerStyles: function (t) {
                 var e = this.props
                     , i = e.size
                     , n = e.fitSize;
@@ -9561,16 +9743,16 @@
                     height: n ? i.height : Math.min(i.height, t.height)
                 }
             },
-            fullWidth: function() {
+            fullWidth: function () {
                 return this.props.picture.width >= this.props.size.width
             },
-            afterRender: function() {
+            afterRender: function () {
                 this.pushStyles(u),
                     this._image = this.getResourceById("image"),
                     (0,
                         l.sendResourceInfo)()
             },
-            scrollTo: function(t, e) {
+            scrollTo: function (t, e) {
                 this._image.setStyle({
                     transform: "translate(" + t + "px, " + e + "px)"
                 })
@@ -9578,12 +9760,12 @@
         });
         t.exports = m
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(31)
             , o = "#FAF7F3";
-        e.getCssVariables = function(t) {
+        e.getCssVariables = function (t) {
             var e = n.createColor(t.bgColor || o)
                 , i = e.readable()
                 , r = i.mix(e, .2)
@@ -9607,42 +9789,43 @@
             }
         }
             ,
-            e.fitSizeTitle = function(t, e, i) {
-                for (var n = t.getElement(), o = e; Math.floor(n.clientHeight / o) > (o >= 18 ? 1 : 2) && o > i; )
+            e.fitSizeTitle = function (t, e, i) {
+                for (var n = t.getElement(), o = e; Math.floor(n.clientHeight / o) > (o >= 18 ? 1 : 2) && o > i;)
                     o--,
                         t.setStyle({
                             "font-size": o
                         })
             }
     }
-    , function(t, e) {
-        t.exports = function(t) {
+    , function (t, e) {
+        t.exports = function (t) {
             var e = [];
             return e.push(".", t.id, " .w7be6531a{position:relative !important;z-index:1 !important;overflow:hidden !important;fill:", t.bodyTextColor, " !important;color:", t.bodyTextColor, " !important;background-color:", t.bgColor, " !important;border-radius:3px !important;font-size:14px !important;transition:background-color .3s ease !important;cursor:pointer !important}.", t.id, " .a6e70116a{color:", t.bodyTextColor, " !important}.", t.id, " .f98321b56{transition:opacity .3s ease !important}.", t.id, " .f98321b56 .e80e7f7e9{opacity:.47 !important}.", t.id, " .vc9c5f1f2{overflow:hidden !important;fill:", t.bgColor, " !important;transition:fill .3s ease !important}.", t.id, " .b3368d652{z-index:1 !important;right:0 !important;bottom:0 !important;left:0 !important}.", t.id, " .b3368d652,.", t.id, " .b9dbb7f91{position:absolute !important;top:0 !important}.", t.id, " .b9dbb7f91{z-index:2 !important;left:25px !important;height:20px !important;padding:0 !important;display:block !important;border-radius:0 0 3px 3px !important;opacity:1 !important;background-color:", t.adtuneBgColor, " !important}.", t.id, " .b9dbb7f91 .caab3995f{line-height:20px !important;padding-left:8px !important;padding-right:6px !important;text-decoration:none !important;font-size:11px !important;color:", t.bodyTextColor, " !important}.", t.id, " .b9dbb7f91 .caab3995f:hover{text-decoration:underline !important}.", t.id, " .p291e1855{padding:10px 10px 2px 2px !important;visibility:hidden !important}.", t.id, " .p291e1855 .n706e0c27{fill:", t.titleTextColor, " !important;background-color:", t.adtuneBgColor, " !important}.", t.id, " .p291e1855 polygon{fill:", t.titleTextColor, " !important}.", t.id, " .p291e1855.a6b4a3b2d,.", t.id, " .n881f14e2 .p291e1855{visibility:visible !important}.", t.id, " .c33575590 .n518a0d79{font-size:.75em !important}.", t.id, " .p1240f99a{line-height:1.23em !important}.", t.id, " .p1240f99a .ga679cbc9,.", t.id, " .p1240f99a .ga679cbc9 b{color:", t.titleTextColor, " !important;font-weight:700 !important;border-bottom-width:0 !important;letter-spacing:.3px !important}.", t.id, " .n518a0d79{font-weight:400 !important;color:", t.bodyTextColor, " !important;text-transform:uppercase !important;letter-spacing:2px !important}.", t.id, " .a23e7493d{margin-top:10px !important;font-size:12px !important;overflow:hidden !important}.", t.id, " .a23e7493d .ga679cbc9,.", t.id, " .a23e7493d .ga679cbc9 b{color:", t.bodyTextColor, " !important;border-bottom-width:0 !important;letter-spacing:2px !important;text-transform:uppercase !important}.", t.id, " .a23e7493d .n518a0d79{padding-left:15px !important;float:right !important}.", t.id, " .aac8235fa{overflow:hidden !important;text-overflow:ellipsis !important}.", t.id, " .a6e70116a{margin-top:10px !important;overflow:hidden !important}.", t.id, " .k560dfa10{font-size:.9em !important;color:", t.warningTextColor, " !important}.", t.id, " .k560dfa10.f6e8bd17{border-radius:2px !important;background-color:", t.warningBgColor, " !important;border-width:0 !important}"),
                 e.join("")
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n, o = (n = Object.setPrototypeOf || {
                     __proto__: []
-                }instanceof Array && function(t, e) {
+                } instanceof Array && function (t, e) {
                     t.__proto__ = e
                 }
-                || function(t, e) {
+                || function (t, e) {
                     for (var i in e)
                         e.hasOwnProperty(i) && (t[i] = e[i])
                 }
                     ,
-                    function(t, e) {
+                    function (t, e) {
                         function i() {
                             this.constructor = t
                         }
+
                         n(t, e),
                             t.prototype = null === e ? Object.create(e) : (i.prototype = e.prototype,
                                 new i)
                     }
-            ), r = Object.assign || function(t) {
+            ), r = Object.assign || function (t) {
                 for (var e, i = 1, n = arguments.length; i < n; i++)
                     for (var o in e = arguments[i])
                         Object.prototype.hasOwnProperty.call(e, o) && (t[o] = e[o]);
@@ -9660,12 +9843,13 @@
             , m = i(30)
             , f = i(546)
             , h = i(140)
-            , g = function(t) {
+            , g = function (t) {
             function e() {
                 return null !== t && t.apply(this, arguments) || this
             }
+
             return o(e, t),
-                e.prototype.onInit = function() {
+                e.prototype.onInit = function () {
                     this.mod = "tower",
                     this.coerceSize || (this.coerceSize = e.coerceSize),
                         t.prototype.onInit.call(this),
@@ -9675,14 +9859,14 @@
                         })
                 }
                 ,
-                e.prototype.getStyles = function() {
+                e.prototype.getStyles = function () {
                     return [f].concat(this.image ? [h] : [])
                 }
                 ,
-                e.prototype.initImage = function() {
+                e.prototype.initImage = function () {
                     var t = this.width
                         , e = this.minHeight;
-                    this.getImageSize = function() {
+                    this.getImageSize = function () {
                         return {
                             width: t,
                             height: t / p.MIN_IMAGE_RATIO
@@ -9701,18 +9885,18 @@
                     }
                 }
                 ,
-                e.prototype.calcFontSize = function(t) {
+                e.prototype.calcFontSize = function (t) {
                     var e = t.width
                         , i = t.height;
                     return s.getLimitedLinearFunction(2e4, 11, 24e4, 18)(e * i)
                 }
                 ,
-                e.prototype.createResourceTree = function(t) {
+                e.prototype.createResourceTree = function (t) {
                     var e = this.props.context.getTheme().multiple
                         , i = this.getDataSource().isApp()
                         , n = [t(["site-links"], 1, [t(["callouts"], 1)])]
-                        , o = function(n) {
-                        return c.map([[["button-big"], 1], [["button-medium"], 1], [["button-small"], e && !i ? 2 : 1]], function(e) {
+                        , o = function (n) {
+                        return c.map([[["button-big"], 1], [["button-medium"], 1], [["button-small"], e && !i ? 2 : 1]], function (e) {
                             var i = e[0]
                                 , o = e[1];
                             return t(i, o, n)
@@ -9724,7 +9908,7 @@
                     return [t(["warning"], 1, [t(["image"], 2, e ? a : s), t(["logo-stub"], 1, a)])]
                 }
                 ,
-                e.prototype.renderContent = function(t) {
+                e.prototype.renderContent = function (t) {
                     var e = this.b_;
                     return this.registerImageViewport("image"),
                         a.create("yatag", {
@@ -9737,7 +9921,7 @@
                         }) : null, this.renderBody(), this.renderSiteLinks(), this.renderCallouts(), this.renderButtons(), this.warning ? this.renderAge() : null), this.renderWarning(), this.warning ? null : this.renderAge())
                 }
                 ,
-                e.prototype.renderImage = function() {
+                e.prototype.renderImage = function () {
                     var t = this.b_
                         , e = this.image;
                     if (!e)
@@ -9755,7 +9939,7 @@
                     }, this.renderAppIcon())
                 }
                 ,
-                e.prototype.renderButtons = function() {
+                e.prototype.renderButtons = function () {
                     return this.getDataSource().hitFeatures.callToActionButton ? a.create(d, null, this.renderButtonBig(), this.renderButtonMedium(), this.renderButtonSmall()) : null
                 }
                 ,
@@ -9776,49 +9960,49 @@
                 e
         }(l.AdvAdaptive);
         e.AdvTower = g,
-            m.registerAdvRenderer("tower", function(t) {
+            m.registerAdvRenderer("tower", function (t) {
                 return {
-                    coerceSize: t.adv.image ? g.coerceSize : function() {
+                    coerceSize: t.adv.image ? g.coerceSize : function () {
                         return {
                             width: 0,
                             height: 0
                         }
                     }
                     ,
-                    render: function() {
+                    render: function () {
                         return a.create(g, r({}, t))
                     }
                 }
             })
     }
-    , function(t, e, i) {
-        t.exports = function(t, e) {
-            i.e(0).then(function() {
+    , function (t, e, i) {
+        t.exports = function (t, e) {
+            i.e(0).then(function () {
                 t(i(603))
             }
-                .bind(null, i)).catch(function() {
+                .bind(null, i)).catch(function () {
                 e && e.apply(this, arguments)
             })
         }
     }
-    , function(t, e, i) {
-        t.exports = function(t, e) {
-            i.e(0).then(function() {
+    , function (t, e, i) {
+        t.exports = function (t, e) {
+            i.e(0).then(function () {
                 t(i(600))
             }
-                .bind(null, i)).catch(function() {
+                .bind(null, i)).catch(function () {
                 e && e.apply(this, arguments)
             })
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0,
-            e.doubleTitleAppendStyle = function(t) {
+            e.doubleTitleAppendStyle = function (t) {
                 return t
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n = i(0)
             , o = i(1)
@@ -9827,13 +10011,13 @@
             , s = i(473)
             , l = n.createComponent(o, {
             name: "yap-picture-bg",
-            onInit: function() {
+            onInit: function () {
                 this._initSize(),
                     this._isRerendered = !1,
                     this._sizeContainer = {},
                     this.__base()
             },
-            _initSize: function() {
+            _initSize: function () {
                 var t = this.props
                     , e = t.picture
                     , i = t.size
@@ -9846,10 +10030,10 @@
                         height: n ? 1 : e.height + o
                     }
             },
-            onMount: function() {
+            onMount: function () {
                 var t = this
                     , e = this.props.fitContainer;
-                r(function() {
+                r(function () {
                     if (!t._isRerendered && e && t.__parentComponent) {
                         var i = t.__parentComponent.getElement()
                             , n = i.parentNode;
@@ -9862,7 +10046,7 @@
                     }
                 })
             },
-            _getStylesAndSize: function() {
+            _getStylesAndSize: function () {
                 var t = this.props
                     , e = t.picture
                     , i = t.fitContainer
@@ -9896,7 +10080,7 @@
                     size: n
                 }
             },
-            _render: function(t, e, i) {
+            _render: function (t, e, i) {
                 var o = e.picture
                     , r = e.fitContainer
                     , a = this._isRerendered
@@ -9926,17 +10110,17 @@
                     size: d
                 }, u))
             },
-            getSize: function() {
+            getSize: function () {
                 return this._size
             },
-            fullWidth: function() {
+            fullWidth: function () {
                 return this.props.picture.width >= this.props.size.width
             },
-            afterRender: function() {
+            afterRender: function () {
                 this.pushStyles(s),
                     this._pictureComponent = this.getResourceById("picture")
             },
-            scrollTo: function(t, e) {
+            scrollTo: function (t, e) {
                 this._pictureComponent && this._pictureComponent.scrollTo(t, e)
             }
         }, {
@@ -9945,7 +10129,7 @@
         });
         t.exports = l
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n = i(0)
             , o = i(1)
@@ -9953,18 +10137,18 @@
             , a = n.createComponent(o, {
             name: "yap-age",
             mod: "_sticker",
-            afterRender: function() {
+            afterRender: function () {
                 this.pushStyles(r),
                     this._text = this.getResourceById("text").getElement()
             },
-            setAge: function(t) {
+            setAge: function (t) {
                 t ? (this._text.innerText = t,
                     this.rootComponent.removeClass(this.b_("_hidden"))) : this.rootComponent.addClass(this.b_("_hidden"))
             },
-            shouldRender: function() {
+            shouldRender: function () {
                 return this.props.age
             },
-            _render: function(t, e) {
+            _render: function (t, e) {
                 var i = e.theme;
                 return n.create("yatag", {
                     class: t(e["class"], t(), i ? "_theme_" + i : "", this.mod)
@@ -9976,7 +10160,7 @@
         });
         t.exports = a
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n = i(40)
             , o = i(0)
@@ -9988,10 +10172,10 @@
             , c = i(470)
             , d = o.createComponent([r, s], {
             name: "yap-warning",
-            shouldRender: function() {
+            shouldRender: function () {
                 return d.willRender(this.props.adv)
             },
-            afterRender: function() {
+            afterRender: function () {
                 this.pushStyles(c),
                     this._styleComponent = this.getResourceById("style"),
                     this._rootComponent = this.getResourceById("root"),
@@ -10000,31 +10184,31 @@
                     this._dotsComponent = this.getResourceById("dots"),
                     this.textWarning = this.props.adv.warning
             },
-            isImportantWarning: function() {
+            isImportantWarning: function () {
                 return this.props.adv.warning && this._hasImportantFlag()
             },
-            _hasImportantFlag: function() {
+            _hasImportantFlag: function () {
                 return l.warning.hasImportantFlag(this.props.adv.bannerFlags)
             },
-            onDisplayed: function() {
+            onDisplayed: function () {
                 this.removeOverflow(),
                     this.isImportantWarning() ? (this._rootComponent.addClass(this.b_("_medical")),
                         this._setWarningSize()) : this._addAnimate()
             },
-            recalcSize: function() {
+            recalcSize: function () {
                 this.shouldRender() && this.isImportantWarning() && this._setWarningSize()
             },
-            removeOverflow: function() {
+            removeOverflow: function () {
                 var t = this.props.removeOverflowMods;
                 if (t && t.length) {
                     var e = this.b_
-                        , i = l.map(t, function(t) {
+                        , i = l.map(t, function (t) {
                         return e(t)
                     });
                     a(this.getResourceById("container"), i)
                 }
             },
-            _addAnimate: function() {
+            _addAnimate: function () {
                 this._pos = 0,
                     this._rootComponent.addClass(this.b_("_long"));
                 var t = this._textComponent.getElement().offsetWidth
@@ -10037,52 +10221,52 @@
                         this._styleComponent.addClass(this.b_("_ellipsis")),
                         this._rootComponent.addClass(this.b_("_gradient__right"))) : this._dotsComponent.addClass(this.b_("_mouse-on"))
             },
-            _dotsClick: function(t) {
+            _dotsClick: function (t) {
                 t.preventDefault(),
                     this._animateStart(!0),
                     this._dotsComponent.addClass(this.b_("_mouse-on"))
             },
-            _onTouchStart: function(t) {
+            _onTouchStart: function (t) {
                 t.preventDefault(),
                     this._animateStart(!0),
                     this._dotsComponent.addClass(this.b_("_mouse-on"))
             },
-            _onMouseEnter: function() {
+            _onMouseEnter: function () {
                 this._animateStart(!1),
                     this._dotsComponent.addClass(this.b_("_mouse-on"))
             },
-            _onMouseLeave: function() {
+            _onMouseLeave: function () {
                 this._animateStop(),
                     this._resetPos(),
                     this._dotsComponent.removeClass(this.b_("_mouse-on"))
             },
-            _onClick: function(t) {
+            _onClick: function (t) {
                 t.preventDefault(),
                 this.props.stopPropagation && t.stopPropagation(),
                     this._animateStart(!1)
             },
-            _animateStart: function(t) {
+            _animateStart: function (t) {
                 var e = this._rootComponent.getElement().offsetWidth
                     , i = this._textComponent.getElement().offsetWidth - e;
                 this._animateWarning(this._pos, i, t),
                     this._dotsComponent.addClass(this.b_("_mouse-on")),
-                    p.setProtectedTimeout(function() {
+                    p.setProtectedTimeout(function () {
                         this._isAnimateRunning = !0
                     }, 300, this)
             },
-            _animateStop: function() {
+            _animateStop: function () {
                 this._animate.stop(),
                     this._isAnimateRunning = !1
             },
-            _resetPos: function() {
+            _resetPos: function () {
                 var t = this.props.slimWarning ? 100 : 700;
-                p.setProtectedTimeout(function() {
+                p.setProtectedTimeout(function () {
                     this._move(0),
                         this._rootComponent.removeClass(this.b_(" _gradient__left")),
                         this._rootComponent.addClass(this.b_(" _gradient__right"))
                 }, t, this)
             },
-            _animateWarning: function(t, e, i) {
+            _animateWarning: function (t, e, i) {
                 var n = 0
                     , o = this
                     , r = this._textComponent.getElement().offsetWidth
@@ -10092,24 +10276,24 @@
                         duration: 20 * (r - a + n),
                         start: t,
                         end: e + n,
-                        onFrame: function(t) {
+                        onFrame: function (t) {
                             o._move(t - n),
                                 o._rootComponent.addClass(o.b_(" _gradient__left"))
                         },
-                        onEnd: function() {
+                        onEnd: function () {
                             o._pos === e && (o._rootComponent.removeClass(o.b_(" _gradient__right")),
                             o.props.slimWarning || o._resetPos(),
                             i && o._dotsComponent.removeClass(o.b_("_mouse-on")))
                         }
                     })
             },
-            _move: function(t) {
+            _move: function (t) {
                 this._textComponent.setStyle({
                     left: -t + "px"
                 }),
                     this._pos = t
             },
-            _getAdvArea: function() {
+            _getAdvArea: function () {
                 var t, e, i = this.getContextComponent();
                 i ? (t = i.getElement(),
                     e = i.getContentElement()) : (t = this.props.adElement,
@@ -10119,14 +10303,14 @@
                 return this.contentElementWidth = e.clientWidth,
                 n * o
             },
-            _renderDots: function(t) {
+            _renderDots: function (t) {
                 if (!this.isImportantWarning())
                     return o.create("yatag", {
                         class: t("_dots"),
                         resourceId: "dots"
                     }, "\u2026")
             },
-            _setWarningSize: function() {
+            _setWarningSize: function () {
                 if (!this.props.slimWarning) {
                     var t = this._rootComponent.getElement().clientHeight
                         , e = this._getAdvArea()
@@ -10150,13 +10334,13 @@
                     }
                 }
             },
-            renderWarning: function(t, e, i) {
+            renderWarning: function (t, e, i) {
                 return o.create(i.HTML, {
                     text: (0,
                         n.prettify)(e.adv.warning)
                 })
             },
-            _render: function(t, e, i) {
+            _render: function (t, e, i) {
                 var n = {
                     color: e.color,
                     width: this.props.width
@@ -10182,28 +10366,29 @@
                 }, this.renderWarning(t, e, i)))), this._renderDots(t))
             }
         });
-        d.willRender = function(t) {
+        d.willRender = function (t) {
             return Boolean(t.warning)
         }
             ,
             t.exports = d
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n, o = (n = Object.setPrototypeOf || {
                     __proto__: []
-                }instanceof Array && function(t, e) {
+                } instanceof Array && function (t, e) {
                     t.__proto__ = e
                 }
-                || function(t, e) {
+                || function (t, e) {
                     for (var i in e)
                         e.hasOwnProperty(i) && (t[i] = e[i])
                 }
                 ,
-                function(t, e) {
+                function (t, e) {
                     function i() {
                         this.constructor = t
                     }
+
                     n(t, e),
                         t.prototype = null === e ? Object.create(e) : (i.prototype = e.prototype,
                             new i)
@@ -10218,12 +10403,13 @@
             , c = i(149)
             , d = i(182)
             , u = i(38)
-            , m = function(t) {
+            , m = function (t) {
             function e() {
                 return null !== t && t.apply(this, arguments) || this
             }
+
             return o(e, t),
-                e.prototype.render = function() {
+                e.prototype.render = function () {
                     var t = this.props
                         , e = t.className
                         , i = t.images
@@ -10259,15 +10445,15 @@
                     }))
                 }
                 ,
-                e.prototype.afterRender = function() {
+                e.prototype.afterRender = function () {
                     this.container = this.getResourceById("container")
                 }
                 ,
-                e.prototype.onMount = function() {
+                e.prototype.onMount = function () {
                     this.props.disableFitOnMount || this.fitImage()
                 }
                 ,
-                e.prototype.fitImage = function() {
+                e.prototype.fitImage = function () {
                     var t = this;
                     if (this.hasImage) {
                         var e = this.container.getElement()
@@ -10283,7 +10469,7 @@
                         });
                         null !== p && d.loadImage({
                             src: p.src,
-                            onLoad: function() {
+                            onLoad: function () {
                                 t.onLoadImage(),
                                     u.sendResourceInfo(),
                                     a ? t.setImageByBackground(p) : t.setImageByElement(p)
@@ -10292,7 +10478,7 @@
                     }
                 }
                 ,
-                e.prototype.setImageByBackground = function(t) {
+                e.prototype.setImageByBackground = function (t) {
                     var e = this.props.size;
                     this.container.setStyle({
                         "background-image": "url(" + t.src + ")",
@@ -10301,7 +10487,7 @@
                     })
                 }
                 ,
-                e.prototype.setImageByElement = function(t) {
+                e.prototype.setImageByElement = function (t) {
                     var e = t.width || t.originWidth
                         , i = t.height || t.originHeight
                         , n = this.getResourceById("image");
@@ -10316,7 +10502,7 @@
                         })
                 }
                 ,
-                e.prototype.onLoadImage = function() {
+                e.prototype.onLoadImage = function () {
                     p.isFunction(this.props.onLoad) && this.props.onLoad(this.currentImage)
                 }
                 ,
@@ -10324,15 +10510,15 @@
         }(a);
         e.Image = m
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         t.exports = i(5).map
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n = i(15);
-        t.exports = function(t) {
-            return function(e) {
+        t.exports = function (t) {
+            return function (e) {
                 return n(e, {
                     util: i(2),
                     utils: i(2),
@@ -10343,12 +10529,13 @@
             }
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(335)
             , o = i(336)
             , r = i(185);
+
         function a(t, e, i) {
             t /= 255,
                 e /= 255,
@@ -10362,6 +10549,7 @@
             var s = (o + n) / 2;
             return [a, 100 * (n === o ? 0 : s <= .5 ? r / (n + o) : r / (2 - n - o)), 100 * s]
         }
+
         function s(t, e, i) {
             t /= 255,
                 e /= 255,
@@ -10387,15 +10575,18 @@
             }
             return [a, s, l]
         }
+
         function l(t) {
             return (299 * t[0] + 587 * t[1] + 114 * t[2]) / 1e3
         }
+
         function p(t) {
             return o.HEX_SYMBOLS.charAt(t / 16 << 0) + o.HEX_SYMBOLS.charAt(t % 16)
         }
+
         e.rgbToHsl = a,
             e.rgbToUnNormalizedHsv = s,
-            e.rgbToHsv = function(t, e, i) {
+            e.rgbToHsv = function (t, e, i) {
                 var n = s(t, e, i)
                     , o = n[0]
                     , r = n[1]
@@ -10403,14 +10594,14 @@
                 return [Math.max(0, Math.min(360, Math.round(360 * o))), Math.max(0, Math.min(100, Math.round(100 * r))), Math.max(0, Math.min(100, Math.round(100 * a)))]
             }
             ,
-            e.setRgbBrightness = function(t, e) {
+            e.setRgbBrightness = function (t, e) {
                 var i = a(t[0], t[1], t[2])
                     , n = i[0]
                     , o = i[1];
                 return r.hslToRgb(n, o, e)
             }
             ,
-            e.changeRgbBrightness = function(t, e) {
+            e.changeRgbBrightness = function (t, e) {
                 var i = a(t[0], t[1], t[2])
                     , o = i[0]
                     , s = i[1]
@@ -10419,23 +10610,23 @@
             }
             ,
             e.getRgbBrightness = l,
-            e.isRgbLight = function(t, e) {
+            e.isRgbLight = function (t, e) {
                 return void 0 === e && (e = 127),
                 l(t) > e
             }
             ,
-            e.rgbFromHexString = function(t) {
+            e.rgbFromHexString = function (t) {
                 return [parseInt(t.substr(1, 2), 16), parseInt(t.substr(3, 2), 16), parseInt(t.substr(5, 2), 16)]
             }
             ,
-            e.rgbToHexString = function(t) {
+            e.rgbToHexString = function (t) {
                 var e = t[0]
                     , i = t[1]
                     , n = t[2];
                 return "#" + p(e) + p(i) + p(n)
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n = i(11)
             , o = i(5)
@@ -10443,9 +10634,10 @@
             , a = i(423)
             , s = i(15)
             , l = i(34).downscale
-            , p = function(t, e) {
+            , p = function (t, e) {
             return t / e >= 1.6
         };
+
         function c(t, e) {
             if (this._downscaleRatio = e ? 2 : 1,
                 !(0,
@@ -10456,8 +10648,9 @@
             this._images = (0,
                 o.map)(t, this._createDownscaled, this)
         }
+
         c.prototype = {
-            getFitting: function(t, e, i, o) {
+            getFitting: function (t, e, i, o) {
                 var r = this
                     , l = void 0
                     , p = (0,
@@ -10465,7 +10658,7 @@
                 return i = i || 0,
                 !o && -1 !== p && p < .4 && (o = 1.5),
                     (0,
-                        n.forEach)(this._images, function(n) {
+                        n.forEach)(this._images, function (n) {
                         var a = s({}, n)
                             , p = t;
                         o && (a.width *= o,
@@ -10478,10 +10671,10 @@
                     delete l.area,
                     l
             },
-            getAll: function() {
+            getAll: function () {
                 return this._images
             },
-            _createDownscaled: function(t) {
+            _createDownscaled: function (t) {
                 var e = Number(t[1])
                     , i = Number(t[2])
                     , n = (t[3] || {})["smart-center"] || {
@@ -10503,10 +10696,10 @@
                     }
                 }
             },
-            _isFittingBetter: function(t, e) {
+            _isFittingBetter: function (t, e) {
                 return t.area.visible > e.area.visible || t.area.visible === e.area.visible && t.area.original < e.area.original
             },
-            _downscale: function(t, e, i, n) {
+            _downscale: function (t, e, i, n) {
                 return t = s({
                     area: {
                         original: t.width * t.height
@@ -10521,7 +10714,7 @@
                     t.area.visible = Math.min(n, t.width) * Math.min(i, t.height),
                     t
             },
-            _upscale: function(t, e, i, n) {
+            _upscale: function (t, e, i, n) {
                 var o = Math.min(e / t.width, i / t.height, n);
                 o > 1 && (t.width = Math.round(t.width * o),
                     t.height = Math.round(t.height * o))
@@ -10530,14 +10723,14 @@
             c.isWide = p,
             t.exports = c
     }
-    , function(t, e) {
-        t.exports = function(t) {
+    , function (t, e) {
+        t.exports = function (t) {
             var e = [];
             return e.push(".", t.id, "{opacity:", t.visibility, " !important}.", t.id, ",.", t.id, " yatag{display:block !important;font-family:inherit !important}.", t.id, ",.", t.id, ",.", t.id, " a,.", t.id, " b,.", t.id, " em,.", t.id, " iframe,.", t.id, " img,.", t.id, " table,.", t.id, " tbody,.", t.id, " td,.", t.id, " tr,.", t.id, " yatag{box-sizing:content-box !important;color:inherit !important;font-size:inherit !important;font-weight:inherit !important;-webkit-hyphens:manual !important;-ms-hyphens:manual !important;hyphens:manual !important}.", t.id, ",.", t.id, " a,.", t.id, " b,.", t.id, " em,.", t.id, " iframe,.", t.id, " img,.", t.id, " table,.", t.id, " tbody,.", t.id, " td,.", t.id, " tr{background:none !important;border:none !important;border-radius:0 !important;border-spacing:0 !important;border-collapse:collapse !important;clear:none !important;float:none !important;font-variant:normal !important;letter-spacing:normal !important;line-height:normal !important;margin:0 !important;max-height:none !important;max-width:none !important;min-height:0 !important;min-width:0 !important;outline:none !important;padding:0 !important;position:static !important;text-align:left !important;text-decoration:none !important;text-indent:0 !important;text-transform:none !important;vertical-align:baseline !important;visibility:visible !important;word-spacing:normal !important}.", t.id, ",.", t.id, " a,.", t.id, " b,.", t.id, " em,.", t.id, " img,.", t.id, " table,.", t.id, " tbody,.", t.id, " td,.", t.id, " tr{height:auto !important}.", t.id, " table{display:table !important;empty-cells:hide !important;table-layout:fixed !important}.", t.id, " table,.", t.id, " td{font-size:100% !important}.", t.id, " td{display:table-cell !important;vertical-align:middle !important}"),
                 e.join("")
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n = i(9)
             , o = i(92)
@@ -10547,7 +10740,7 @@
             , l = i(469)
             , p = r.createComponent(a, {
             name: "yap-title",
-            initProps: function(t) {
+            initProps: function (t) {
                 var e = t.adv;
                 return t.hyphenates = !0 !== t.disableHyphenate,
                     t.highlight = !0 !== t.disableHighlight,
@@ -10556,16 +10749,16 @@
                     this._originalSecondTitle = e.originalSecondTitle || e.originalSecondTitleForCustomBlock,
                     t
             },
-            afterRender: function() {
+            afterRender: function () {
                 this.pushStyles(l)
             },
-            _prepareText: function(t) {
+            _prepareText: function (t) {
                 var e = t.text
                     , i = void 0 === e ? "" : e
                     , o = t.minLines;
                 if ((void 0 === o ? 1 : o) > 1) {
                     var r = (0,
-                        n.filter)(i.split(" "), function(t) {
+                        n.filter)(i.split(" "), function (t) {
                         return t
                     })
                         , a = r.length
@@ -10575,7 +10768,7 @@
                 }
                 return i
             },
-            _render: function(t, e, i) {
+            _render: function (t, e, i) {
                 var n = this._text
                     , a = this._secondTitle
                     , l = this._originalSecondTitle
@@ -10623,27 +10816,28 @@
         });
         t.exports = p
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0,
-            e.debounce = function(t, e, i, n) {
+            e.debounce = function (t, e, i, n) {
                 var o;
                 return 3 === arguments.length && "boolean" != typeof i && (n = i,
                     i = !1),
-                    function() {
+                    function () {
                         var r = arguments;
                         n = n || this,
                         i && !o && t.apply(n, r),
                         o && clearTimeout(o),
-                            o = setTimeout(function() {
+                            o = setTimeout(function () {
                                 i || t.apply(n, r),
                                     o = null
                             }, e)
                     }
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
+
         function n(t, e, i) {
             var n = 0
                 , o = 0
@@ -10686,9 +10880,10 @@
             }
             return [255 * n, 255 * o, 255 * r]
         }
+
         e.__esModule = !0,
             e.unNormalizedHsvToRgb = n,
-            e.hsvToRgb = function(t, e, i) {
+            e.hsvToRgb = function (t, e, i) {
                 var o = n(Math.max(0, Math.min(t, 360)) / 360, Math.max(0, Math.min(e, 100)) / 100, Math.max(0, Math.min(i, 100)) / 100)
                     , r = o[0]
                     , a = o[1]
@@ -10696,14 +10891,16 @@
                 return [Math.max(0, Math.min(Math.round(r), 255)), Math.max(0, Math.min(Math.round(a), 255)), Math.max(0, Math.min(Math.round(s), 255))]
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
-        t.exports = function(t, e, i) {
+        t.exports = function (t, e, i) {
             var n, o = 0;
+
             function r() {
                 t.call(i)
             }
-            return function() {
+
+            return function () {
                 var t = new Date
                     , i = t - o;
                 clearTimeout(n),
@@ -10712,23 +10909,23 @@
             }
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0,
             e.hasImportantFlag = e.getBorderColor = e.getBgColor = void 0;
         var n = i(95);
         Object.defineProperty(e, "hasImportantFlag", {
             enumerable: !0,
-            get: function() {
+            get: function () {
                 return n.hasImportantFlag
             }
         });
         var o = i(31)
             , r = [255, 247, 240, 231, 221, 210, 194, 174, 144, 112, 80, 35, 0]
             , a = [255, 222, 190, 165, 139, 118, 102, 86, 75, 70, 68, 66, 64];
-        e.getBgColor = function(t) {
+        e.getBgColor = function (t) {
             for (var e = (0,
-                o.createColor)(t), i = e.average(), n = e.rgbArray(), s = 1; i < r[s]; )
+                o.createColor)(t), i = e.average(), n = e.rgbArray(), s = 1; i < r[s];)
                 s++;
             var l = r[s]
                 , p = a[s]
@@ -10739,7 +10936,7 @@
                 o.createColor)([Math.round(n[0] * d + u), Math.round(n[1] * d + u), Math.round(n[2] * d + u)]).toString()
         }
             ,
-            e.getBorderColor = function(t, e, i) {
+            e.getBorderColor = function (t, e, i) {
                 var n = (0,
                     o.createColor)(t).rgbArray()
                     , r = (0,
@@ -10749,21 +10946,21 @@
                         o.createColor)([Math.round(n[0] * i + r[0] * (1 - i)), Math.round(n[1] * i + r[1] * (1 - i)), Math.round(n[2] * i + r[2] * (1 - i))]).toString()
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(395)
             , o = i(117)
             , r = i(123);
         e.CHARSET_UTF_8 = "utf-8",
-            e.loadScript = function(t) {
+            e.loadScript = function (t) {
                 var i = t.src
                     , a = t.onBeforeLoad
                     , s = t.win
                     , l = t.charset
                     , p = void 0 === l ? e.CHARSET_UTF_8 : l
                     , c = s || window;
-                return new Promise(function(t, e) {
+                return new Promise(function (t, e) {
                         var s = c.document.createElement("script");
                         s.type = "text/javascript",
                             s.async = !0,
@@ -10777,7 +10974,7 @@
                                 onBeforeLoad: Boolean(a)
                             }
                         });
-                        s.onerror = function() {
+                        s.onerror = function () {
                             return e(l)
                         }
                             ,
@@ -10789,13 +10986,14 @@
                 )
             }
             ,
-            e.loadCustomScript = function(t, e, i, n) {
+            e.loadCustomScript = function (t, e, i, n) {
                 void 0 === n && (n = !0);
                 var o = t.document.createElement("script");
                 o.type = "text/javascript",
                     o.async = !0,
-                i && (o.onload = function() {
-                        o.onload = function() {}
+                i && (o.onload = function () {
+                        o.onload = function () {
+                        }
                             ,
                             i()
                     }
@@ -10805,29 +11003,30 @@
                     r.getHead(t).appendChild(o)
             }
             ,
-            e.executeScript = function(t, e, i) {
+            e.executeScript = function (t, e, i) {
                 var n = t.document.createElement("script");
                 n.text = e,
                     r.getHead(t).appendChild(n),
                     i()
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n, o = (n = Object.setPrototypeOf || {
                     __proto__: []
-                }instanceof Array && function(t, e) {
+                } instanceof Array && function (t, e) {
                     t.__proto__ = e
                 }
-                || function(t, e) {
+                || function (t, e) {
                     for (var i in e)
                         e.hasOwnProperty(i) && (t[i] = e[i])
                 }
                 ,
-                function(t, e) {
+                function (t, e) {
                     function i() {
                         this.constructor = t
                     }
+
                     n(t, e),
                         t.prototype = null === e ? Object.create(e) : (i.prototype = e.prototype,
                             new i)
@@ -10840,35 +11039,36 @@
             , l = i(436)
             , p = i(438)
             , c = s.bemClassNamesFactory("display-detector", p)
-            , d = function(t) {
+            , d = function (t) {
             function e() {
                 return null !== t && t.apply(this, arguments) || this
             }
+
             return o(e, t),
-                e.prototype._render = function() {
+                e.prototype._render = function () {
                     return r.create("yatag", {
                         resourceId: "dummy",
                         class: c()
                     })
                 }
                 ,
-                e.prototype.afterRender = function() {
+                e.prototype.afterRender = function () {
                     this.pushStyles(p),
                         t.prototype.afterRender.call(this)
                 }
                 ,
-                e.prototype.onMount = function() {
+                e.prototype.onMount = function () {
                     this.startObserver()
                 }
                 ,
-                e.prototype.onUnmount = function() {
+                e.prototype.onUnmount = function () {
                     this.displayObserver.disconnect()
                 }
                 ,
-                e.prototype.startObserver = function() {
+                e.prototype.startObserver = function () {
                     var t = this
                         , e = this.getResourceById("dummy").getElement();
-                    this.displayObserver = new l(function(e) {
+                    this.displayObserver = new l(function (e) {
                             e && (t.displayObserver.disconnect(),
                                 t.ready())
                         }
@@ -10880,12 +11080,13 @@
         }(a.Detector);
         e.DisplayDetector = d
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0,
-            e.doubleTitleSendStat = function(t) {}
+            e.doubleTitleSendStat = function (t) {
+            }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n = i(92)
             , o = i(0)
@@ -10893,17 +11094,17 @@
             , a = i(453)
             , s = o.createComponent(r, {
             name: "yap-body",
-            initProps: function(t) {
+            initProps: function (t) {
                 var e = t.adv;
                 return t.hyphenates = !0 !== t.disableHyphenate,
                     t.text = e.body,
                     t
             },
-            afterRender: function() {
+            afterRender: function () {
                 this.pushStyles(a),
                     this.__base()
             },
-            _render: function(t, e, i) {
+            _render: function (t, e, i) {
                 return o.create("yatag", {
                     class: t(e["class"], t()),
                     style: e.style
@@ -10916,7 +11117,7 @@
         });
         t.exports = s
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n = i(40)
             , o = i(0)
@@ -10925,15 +11126,15 @@
             , s = i(468)
             , l = o.createComponent(r, {
             name: "yap-sitelinks",
-            shouldRender: function() {
+            shouldRender: function () {
                 var t = this.props.adv.sitelinks;
                 return t && t.length
             },
-            afterRender: function() {
+            afterRender: function () {
                 this.pushStyles(s)
             },
-            renderSitelinks: function(t, e, i) {
-                return a.map(e, function(e, r) {
+            renderSitelinks: function (t, e, i) {
+                return a.map(e, function (e, r) {
                     return o.create("yatag", {
                         class: t("__sitelink", "__sitelink_n" + r)
                     }, o.create(i.Link, {
@@ -10947,7 +11148,7 @@
                     })))
                 })
             },
-            _render: function(t, e, i) {
+            _render: function (t, e, i) {
                 var n = e.adv.sitelinks;
                 return o.create("yatag", {
                     class: t(e["class"], t())
@@ -10956,20 +11157,20 @@
         });
         t.exports = l
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(158);
-        e.rafDebounceFactory = function(t, e) {
-            return function(i) {
-                var n, o, r = function() {
+        e.rafDebounceFactory = function (t, e) {
+            return function (i) {
+                var n, o, r = function () {
                     t(o),
                         o = NaN
-                }, a = function() {
+                }, a = function () {
                     for (var t = this, a = [], s = 0; s < arguments.length; s++)
                         a[s] = arguments[s];
                     return r(),
-                        o = e(function(e) {
+                        o = e(function (e) {
                             o = NaN,
                                 n = i.call.apply(i, [t, e].concat(a))
                         }),
@@ -10982,37 +11183,37 @@
             ,
             e.rafDebounce = e.rafDebounceFactory(n.cancelAnimationFrame, n.requestAnimationFrame)
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
-        t.exports = function() {
+        t.exports = function () {
             return Math.abs(+new Date) + Math.round(1e4 * Math.random())
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n = i(3);
-        t.exports = function() {
+        t.exports = function () {
             var t = []
                 , e = !1
-                , i = function(t) {
+                , i = function (t) {
                 n.protect("queue", t, void 0, o)()
             }
                 , o = function n() {
-                t.length ? i(function() {
+                t.length ? i(function () {
                     t.shift()(n)
                 }) : e = !1
             };
             return {
-                add: function(n) {
+                add: function (n) {
                     e ? t.push(n) : (e = !0,
-                        i(function() {
+                        i(function () {
                             n(o)
                         }))
                 }
             }
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = 250
@@ -11022,30 +11223,34 @@
             , s = 90
             , l = 420
             , p = 728;
+
         function c(t) {
             return t < l
         }
+
         function d(t) {
             return t >= l && t < p
         }
+
         function u(t) {
             return t >= p
         }
+
         e.LARGE = "l",
             e.SMALL = "s",
             e.isNarrowBlock = c,
             e.isMediumBlock = d,
             e.isWideBlock = u,
-            e.isCorrectHeight = function(t, i, l) {
+            e.isCorrectHeight = function (t, i, l) {
                 return l === e.LARGE ? i < a : l === e.SMALL ? i < s : !(c(t) && i > n || d(t) && i > o || u(t) && i > r)
             }
             ,
-            e.getHeight = function(t, i) {
+            e.getHeight = function (t, i) {
                 return i === e.LARGE ? a : i === e.SMALL ? s : c(t) ? n : d(t) ? o : (u(t),
                     r)
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n = E(i(400))
             , o = i(74)
@@ -11056,7 +11261,7 @@
             , p = i(163)
             , c = i(8)
             , d = i(53)
-            , u = function(t) {
+            , u = function (t) {
             if (t && t.__esModule)
                 return t;
             var e = {};
@@ -11082,11 +11287,13 @@
             , S = i(422)
             , A = i(25)
             , O = i(19);
+
         function E(t) {
             return t && t.__esModule ? t : {
                 default: t
             }
         }
+
         i(3);
         var T = i(2)
             , R = i(6)
@@ -11099,7 +11306,7 @@
         (0,
             b.isInIframe)(window) && (P["target_ref"] = document.referrer);
         var z = T.augment(Object, {
-            constructor: function(t) {
+            constructor: function (t) {
                 this._uniqueId = t.uniqueId,
                     this._params = t,
                     this._searchText = t.searchText,
@@ -11125,7 +11332,7 @@
                     this.initTesttag();
                 var e = this._getFromData("ads") || [];
                 this.saveToDirectStorage(e),
-                    T.each(e, function(t) {
+                    T.each(e, function (t) {
                         t.geoDistanceRegular && parseInt(t.geoDistanceRegular, 10) > 2e3 && (t.geoDistanceRegular = ""),
                             t.originalSecondTitleForCustomBlock = t.secondTitle;
                         var e = this._format.name
@@ -11142,7 +11349,7 @@
                     this._visibilityTime = (0,
                         p.calcVisibilityTime)(this.getSettings())
             },
-            initTesttag: function() {
+            initTesttag: function () {
                 var t = this._format.index
                     , e = {
                     advancedFormat: Math.floor(t / 64),
@@ -11155,19 +11362,19 @@
                 };
                 this._testtag.setProps(e)
             },
-            setTesttagProps: function(t) {
+            setTesttagProps: function (t) {
                 this._testtag.setProps(t)
             },
-            getTesttag: function() {
+            getTesttag: function () {
                 return this._testtag.toString()
             },
-            isInOverlay: function() {
+            isInOverlay: function () {
                 return this._isInOverlay
             },
-            getVisibilityTime: function() {
+            getVisibilityTime: function () {
                 return this._visibilityTime
             },
-            _getInterviewData: function() {
+            _getInterviewData: function () {
                 var t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
                     , e = this._settings
                     , i = (e = void 0 === e ? {} : e).format
@@ -11176,14 +11383,14 @@
                     , r = "theveryunusualdomain.com" === t.domain
                     , a = ((t.addInfo || {}).callouts_list || [])[0]
                     , s = (0,
-                    _.filter)(o, function() {
+                    _.filter)(o, function () {
                     var t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
                         , e = t.title
                         , i = t.url;
                     return e && i
                 })
                     , l = (0,
-                    g.map)(s, function() {
+                    g.map)(s, function () {
                     var t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
                         , e = t.title
                         , i = t.url
@@ -11206,10 +11413,10 @@
                     dataSource: this
                 }
             },
-            _getFromData: function(t) {
+            _getFromData: function (t) {
                 return this._data[this._product] && this._data[this._product][t]
             },
-            prepareAd: function(t, e) {
+            prepareAd: function (t, e) {
                 try {
                     var i = T.extend({}, t)
                         , n = i.url;
@@ -11225,7 +11432,7 @@
                         , a = (r = void 0 === r ? {} : r).name
                         , s = r.type
                         , l = ("240x400" === a || "240x400" === s) && h.MEDIA_240x400_IS_IGNORE_SETTINGS;
-                    if (!i.images || i.skipPictures && !l || (i.image = new M(i.images,T.browser.isHDPIScreen)),
+                    if (!i.images || i.skipPictures && !l || (i.image = new M(i.images, T.browser.isHDPIScreen)),
                         i.domain = i.domain ? i.domain.replace(/^www\./, "") : "",
                     this.isSearchPage() || (i.workingTime = null,
                         i.telNum = null,
@@ -11284,7 +11491,7 @@
                         null
                 }
             },
-            createLink: function(t) {
+            createLink: function (t) {
                 var e = t.host
                     , i = t.params
                     , n = new L({
@@ -11299,16 +11506,16 @@
                     a["default"])(window) || this.isSSP();
                 return s && l ? "" + this._clickMacro + encodeURIComponent(o) : o
             },
-            _hasMobileAppAddInfo: function(t) {
+            _hasMobileAppAddInfo: function (t) {
                 return t.addInfo && "mobile-app" === t.addInfo.type
             },
-            _getFormattedAddress: function(t) {
-                return T.each([[/,\s\u043e\u0444\u0438\u0441\s.+$/g, ""], [/\u0434.\s\u0434.\s?/i, "\u0434. "], [/\u043a\u043e\u0440\u043f.\s\u043a\u043e\u0440\u043f.\s?/i, "\u043a\u043e\u0440\u043f. "], [/,{2,}/g, ","], [/\.{2,}/g, "."]], function(e) {
+            _getFormattedAddress: function (t) {
+                return T.each([[/,\s\u043e\u0444\u0438\u0441\s.+$/g, ""], [/\u0434.\s\u0434.\s?/i, "\u0434. "], [/\u043a\u043e\u0440\u043f.\s\u043a\u043e\u0440\u043f.\s?/i, "\u043a\u043e\u0440\u043f. "], [/,{2,}/g, ","], [/\.{2,}/g, "."]], function (e) {
                     t = t.replace(e[0], e[1])
                 }),
                     t
             },
-            _prepareCallouts: function(t) {
+            _prepareCallouts: function (t) {
                 if (this.hitFeatures.callouts)
                     return t.callouts = null,
                         !1;
@@ -11316,13 +11523,13 @@
                 return t.callouts = e ? T.map(t.addInfo["callouts_list"], y.prettify).slice(0, 4) : null,
                     e
             },
-            _canShowCallouts: function() {
+            _canShowCallouts: function () {
                 return this.hitFeatures.callouts && this._settings.callouts
             },
-            _prepareSitelinks: function(t, e) {
+            _prepareSitelinks: function (t, e) {
                 var i = this
                     , n = [];
-                return T.each(t, function(t) {
+                return T.each(t, function (t) {
                     if (t.title && t.url) {
                         var o = i.createLink({
                             host: t.url,
@@ -11336,7 +11543,7 @@
                 }),
                     n.length ? n : null
             },
-            _prepareMobileApp: function(t, e) {
+            _prepareMobileApp: function (t, e) {
                 if (t.addInfo = T.camelizeKeys(t.addInfo),
                     t.addInfo.callToActionUrl = this.hitFeatures.callToActionButton ? this.createLink({
                         host: t.addInfo.callToActionUrl,
@@ -11350,7 +11557,7 @@
                     delete t.addInfo.price;
                 if (t.addInfo.reviewCount = t.addInfo.reviewCount && t.addInfo.reviewCount > 0 ? t.addInfo.reviewCount : void 0,
                 t.addInfo.icon && t.addInfo.icon.length && !t.skipPictures) {
-                    var n = new M(t.addInfo.icon,T.browser.isHDPIScreen);
+                    var n = new M(t.addInfo.icon, T.browser.isHDPIScreen);
                     t.hasIcon = !0,
                         t.icon = n,
                     t.image || (t.image = n,
@@ -11362,34 +11569,34 @@
                     delete t.domain,
                     t.isAppAd = !0
             },
-            _initHitFeatures: function() {
+            _initHitFeatures: function () {
                 var t = Number(this._data.common.designId);
                 var e = isFinite(t);
                 S.isHitFeaturesEnabled && e && !v["default"] ? this._designId = t : this._designId = null,
                     this.hitFeatures = (0,
                         S.getHitFeatures)(this._designId)
             },
-            _getFavicon: function(t) {
+            _getFavicon: function (t) {
                 if (t.isAppAd) {
                     if (t.skipPictures && t.addInfo.icon && t.addInfo.icon.length)
-                        return new M(t.addInfo.icon,T.browser.isHDPIScreen).getFitting(16, 16).src
+                        return new M(t.addInfo.icon, T.browser.isHDPIScreen).getFitting(16, 16).src
                 } else if (t.punyDomain)
                     return new L({
                         host: R.urls.favicon,
                         path: t.punyDomain
                     }).getUrl()
             },
-            isEmpty: function() {
+            isEmpty: function () {
                 return 0 === this._ads.length
             },
-            getUserGroup: function() {
+            getUserGroup: function () {
                 var t = parseInt(this._data.common.userGroup, 10);
                 return isNaN(t) ? 102 : -1 === t ? 101 : t + 1
             },
-            isYandexPage: function() {
+            isYandexPage: function () {
                 return "1" == this._data.common.isYandexPage
             },
-            hasCommonRtbVisibility: function() {
+            hasCommonRtbVisibility: function () {
                 var t = Number(this._data.common.commonRtbVisibility || 0)
                     , e = this.isYandexPage() || n["default"];
                 if (2 === t && !e) {
@@ -11400,46 +11607,46 @@
                 }
                 return Boolean(t)
             },
-            hasIntersectionVisibility: function() {
+            hasIntersectionVisibility: function () {
                 return Boolean(Number(this._data.common.intersectionVisibility || ((0,
                     A.isLongExperiment)(O.experimentIds.intersectionVisibility.FIX) ? (this.getSettings() || {}).intersectionVisibility : 0)))
             },
-            isSearchPage: function() {
+            isSearchPage: function () {
                 return "1" == this._data.common.isSearchPage
             },
-            isPreviewPage: function() {
+            isPreviewPage: function () {
                 return "1" == this._data.common.isPreviewPage
             },
-            isYandex: function() {
+            isYandex: function () {
                 return "1" == this._data.common.isYandex
             },
-            isApp: function() {
+            isApp: function () {
                 return "1" == this._data.common.isMobileSdk
             },
-            isMobileApp: function(t) {
+            isMobileApp: function (t) {
                 return t.addInfo && "mobile-app" === t.addInfo.type
             },
-            isSSP: function() {
+            isSSP: function () {
                 var t = this._data.common.sspId;
                 return null != t && 0 != t
             },
-            doSortByImages: function() {
+            doSortByImages: function () {
                 return this.isYandexPage() && Boolean(this._settings.imagesFirst)
             },
-            getLinkHead: function() {
+            getLinkHead: function () {
                 return this._data.common.linkHead
             },
-            getTitle: function() {
+            getTitle: function () {
                 var t = this._getFromData(this._product + "Title");
                 return t.url = new L({
                     host: t.url
                 }).appendParams(P).getUrl(),
                     t
             },
-            getFreeAds: function() {
+            getFreeAds: function () {
                 var t = this
                     , e = (0,
-                    _.filter)(this._ads, function(e) {
+                    _.filter)(this._ads, function (e) {
                     return !t._visibilityManager.isAbused(e.adId)
                 });
                 if (this.isOldDirect()) {
@@ -11448,56 +11655,56 @@
                         renderTo: this._renderTo
                     });
                     e = (0,
-                        _.filter)(e, function(t) {
+                        _.filter)(e, function (t) {
                         return -1 === T.inArray(i, t.adId)
                     })
                 }
                 return e
             },
-            releaseAd: function(t) {
+            releaseAd: function (t) {
                 this._adUsageStorage.release({
                     adId: t,
                     pageNumber: this._pageNumber,
                     renderTo: this._renderTo
                 })
             },
-            captureAd: function(t) {
+            captureAd: function (t) {
                 this._adUsageStorage.capture({
                     adId: t,
                     pageNumber: this._pageNumber,
                     renderTo: this._renderTo
                 })
             },
-            saveToDirectStorage: function(t) {
+            saveToDirectStorage: function (t) {
                 var e = (0,
-                    g.map)(t, function(t) {
+                    g.map)(t, function (t) {
                     return t.adId
                 });
                 this._adUsageStorage.captureDirect(e)
             },
-            getLanguage: function() {
+            getLanguage: function () {
                 return this._data.common.pageLang || "1"
             },
-            isEnableAnimation: function() {
+            isEnableAnimation: function () {
                 return !0 === this._settings.enableAnimation
             },
-            setAbused: function(t) {
+            setAbused: function (t) {
                 this._visibilityManager.abuse(t.adId)
             },
-            _getKeyFromSettings: function() {
+            _getKeyFromSettings: function () {
                 if (this._data && this._data.settings)
                     for (var t in this._data.settings)
                         if (Object.prototype.hasOwnProperty.call(this._data.settings, t))
                             return t;
                 return null
             },
-            getPageId: function() {
+            getPageId: function () {
                 return this._pageId
             },
-            getProduct: function() {
+            getProduct: function () {
                 return this.isOldDirect() ? B.parseBlockId(this._blockId).product : this._product
             },
-            getSettings: function() {
+            getSettings: function () {
                 var t = void 0
                     , e = (0,
                     o.isRtbInDirectExperiment)({
@@ -11513,10 +11720,10 @@
                     this.isDirectInRtb() && (t = this._settings);
                 return t
             },
-            hasSearchText: function() {
+            hasSearchText: function () {
                 return Boolean(this._searchText)
             },
-            confirmVisibilityInRtb: function() {
+            confirmVisibilityInRtb: function () {
                 var t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
                     , e = this.getSettings();
                 e && e.linkTail && (t.testtagProps = T.extend({
@@ -11525,22 +11732,22 @@
                 }, t.testtagProps),
                     this._visibilityManager.confirmRtb(e, t))
             },
-            onConfirmVisibility: function(t, e) {
+            onConfirmVisibility: function (t, e) {
                 var i = this.getUnconfirmedAds(t);
                 this.sendVisibilityConfirmation(i, e),
                     this.rememberConfirmedAds(i)
             },
-            getUnconfirmedAds: function(t) {
-                return T.filter(t, function(t) {
+            getUnconfirmedAds: function (t) {
+                return T.filter(t, function (t) {
                     return this._visibilityManager.isNotConfirmed(t.linkTail)
                 }, this)
             },
-            rememberConfirmedAds: function(t) {
-                T.each(t, function(t) {
+            rememberConfirmedAds: function (t) {
+                T.each(t, function (t) {
                     this._visibilityManager.confirm(t.linkTail)
                 }, this)
             },
-            sendVisibilityConfirmation: function(t, e) {
+            sendVisibilityConfirmation: function (t, e) {
                 if (t.length) {
                     var i = new L({
                         host: (0,
@@ -11551,11 +11758,11 @@
                         this.sendPixel(i.getUrl())
                 }
             },
-            trackClick: function(t) {
+            trackClick: function (t) {
                 var e = this
                     , i = [t];
                 (0,
-                    I.trackClick)(function(t, n) {
+                    I.trackClick)(function (t, n) {
                     var o, r = (0,
                         k.buildBannerTesttags)(i, {
                         clickPixel: t
@@ -11569,25 +11776,28 @@
                     e.sendPixel(s.getUrl())
                 })
             },
-            sendPixel: function(t) {
+            sendPixel: function (t) {
                 (0,
                     C.sendPixel)(t)
             },
-            getAuxQueryParams: function() {
-                var t, e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : [], i = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}, n = i.testtagProps, o = i.bannerTesttagProps, r = i.renderSize, a = i.extParams, s = this._testtag.clone().setProps(n), p = (0,
-                    k.buildBannerTesttags)(e, o), c = (0,
-                    l.getFormatByName)(this._format.name), d = ((t = {
-                    "stat-id": this._statId,
-                    "test-tag": s.toString(),
-                    "format-type": c.index
-                })[k.BANNER_TEST_TAG_KEY] = p.toString(),
-                    t);
+            getAuxQueryParams: function () {
+                var t, e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : [],
+                    i = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}, n = i.testtagProps,
+                    o = i.bannerTesttagProps, r = i.renderSize, a = i.extParams, s = this._testtag.clone().setProps(n),
+                    p = (0,
+                        k.buildBannerTesttags)(e, o), c = (0,
+                        l.getFormatByName)(this._format.name), d = ((t = {
+                        "stat-id": this._statId,
+                        "test-tag": s.toString(),
+                        "format-type": c.index
+                    })[k.BANNER_TEST_TAG_KEY] = p.toString(),
+                        t);
                 return r && (d["renderWidth"] = r.width,
                     d["renderHeight"] = r.height),
                     T.extend(d, a),
                     d
             },
-            _prepareHighlight: function(t) {
+            _prepareHighlight: function (t) {
                 var e = /<(\/?)hl>/g
                     , i = this._isNeedHighlight() ? "<$1b>" : "";
                 t.title = this._prepareHighlightString(t.title).replace(e, i),
@@ -11596,43 +11806,45 @@
                     t.secondTitle = "&nbsp;&ndash; " + t.originalSecondTitle),
                 t.path && (t.path = this._prepareHighlightString(t.path).replace(e, i))
             },
-            _prepareHighlightString: function(t) {
+            _prepareHighlightString: function (t) {
                 return (t || "").replace(/<hl>(\d+)<\/hl>/g, "$1").replace(/<\/hl>(\s*)<hl>/g, "$1").replace(/<hl>([a-z\u0430-\u044f\u0451]{1,3})<\/hl>/g, "$1")
             },
-            _isNeedHighlight: function() {
+            _isNeedHighlight: function () {
                 return !/newVk|vk|mail/.test(this._settings.format.name)
             },
-            notContainWarnings: function(t) {
+            notContainWarnings: function (t) {
                 return !(t.warning || t.addInfo && "ext-distrib" === t.addInfo.type)
             },
-            isDirectInRtb: function() {
+            isDirectInRtb: function () {
                 return Boolean(this._product === R.Products.DIRECT && this._settings.linkTail)
             },
-            isOldDirect: function() {
+            isOldDirect: function () {
                 return !this._blockId
             },
-            abuseAd: function(t) {
+            abuseAd: function (t) {
                 this._onAdAbused && D(this._onAdAbused) && this._onAdAbused(t)
             },
-            getUniqueId: function() {
+            getUniqueId: function () {
                 return this._uniqueId
             },
-            getBlockOpacity: function() {
+            getBlockOpacity: function () {
                 return 1 === Number(this._visibilitySettings.expShow) ? 0 : 1
             }
         });
         t.exports = z
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n = i(193)
             , o = i(405)
             , r = i(23).getBoundingClientRect;
+
         function a(t, e, i) {
             return Math.max(Math.min(e, i) - Math.max(t, 0), 0)
         }
+
         t.exports = {
-            isInViewport: function(t, e) {
+            isInViewport: function (t, e) {
                 if (o.isOperaMini)
                     return t.offsetWidth > 0 && t.offsetHeight > 0;
                 var i = r(t)
@@ -11645,7 +11857,7 @@
                 }
                 return p >= (e || Number.MIN_VALUE)
             },
-            isOverlaid: function(t) {
+            isOverlaid: function (t) {
                 if (!document.elementFromPoint || !t.contains || o.isOperaMini)
                     return !1;
                 var e = r(t)
@@ -11658,25 +11870,26 @@
             }
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = /([0-9](?=(([0-9]{3})+([^0-9]|$))))/g
             , o = 5 === "1000".replace(n, "$1&nbsp;").length ? "&nbsp;" : " ";
-        e["default"] = function(t) {
+        e["default"] = function (t) {
             return Math.floor(t).toString().replace(n, "$1" + o)
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(124)
             , o = i(19)
             , r = i(25)
             , a = window.location.host
-            , s = !(n([/avito\.ru/i, /ok\.ru/i, /vk\.com/i, /rambler\.ru/i, /mail\.ru/i, /lenta\.ru/i, /gazeta\.ru/i, /devmail\.ru/i, /eda\.ru/i, /nightparty\.ru/i, /afisha\.ru/i, /mir\.afisha\.ru/i, /daily\.afisha\.ru/i, /m\.gazeta\.ru/i, /gazeta\.ru/i, /lenta\.ru/i, /motor\.ru/i, /m\.lenta\.ru/i, /moslenta\.ru/i, /secretmag\.ru/i, /championat\.com/i, /letidor\.ru/i, /quto\.ru/i, /wmj\.ru/i, /indicator\.ru/i, /ferra\.ru/i, /rns\.online/i, /m\.passion\.ru/i, /passion\.ru/i, /m\.moslenta\.ru/i, /autorambler\.ru/i, /livejournal\.com/i, /rg\.ru/i], function(t) {
-            return t.test(a)
-        }).length > 0) && !0;
+            ,
+            s = !(n([/avito\.ru/i, /ok\.ru/i, /vk\.com/i, /rambler\.ru/i, /mail\.ru/i, /lenta\.ru/i, /gazeta\.ru/i, /devmail\.ru/i, /eda\.ru/i, /nightparty\.ru/i, /afisha\.ru/i, /mir\.afisha\.ru/i, /daily\.afisha\.ru/i, /m\.gazeta\.ru/i, /gazeta\.ru/i, /lenta\.ru/i, /motor\.ru/i, /m\.lenta\.ru/i, /moslenta\.ru/i, /secretmag\.ru/i, /championat\.com/i, /letidor\.ru/i, /quto\.ru/i, /wmj\.ru/i, /indicator\.ru/i, /ferra\.ru/i, /rns\.online/i, /m\.passion\.ru/i, /passion\.ru/i, /m\.moslenta\.ru/i, /autorambler\.ru/i, /livejournal\.com/i, /rg\.ru/i], function (t) {
+                return t.test(a)
+            }).length > 0) && !0;
         e.CAN_SHOW_BLOCK = s;
         var l = r.isLongExperiment(o.experimentIds.r320x50.ENABLED) && s;
         e.IS_NEW_BLOCK = l;
@@ -11685,9 +11898,9 @@
         var c = Math.floor(3 * Math.random()) + 1;
         e.VERSION = c
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
-        var n = Object.assign || function(t) {
+        var n = Object.assign || function (t) {
                 for (var e, i = 1, n = arguments.length; i < n; i++)
                     for (var o in e = arguments[i])
                         Object.prototype.hasOwnProperty.call(e, o) && (t[o] = e[o]);
@@ -11697,41 +11910,42 @@
         e.__esModule = !0;
         var o = i(136)
             , r = i(43)
-            , a = function() {
+            , a = function () {
             function t(t) {
                 var e = this;
                 this.args = t,
-                    this.onViewableChange = r.protect("MRAID::viewableChange", function() {
+                    this.onViewableChange = r.protect("MRAID::viewableChange", function () {
                         var t = e.args.mraid;
                         e.check(t.isViewable())
                     }, this),
-                    this.onExposureChange = r.protect("MRAID::exposureChange", function(t) {
+                    this.onExposureChange = r.protect("MRAID::exposureChange", function (t) {
                         var i = e.args.portion
                             , n = t / 100;
                         e.check(n >= i)
                     }, this)
             }
-            return t.prototype.init = function() {
+
+            return t.prototype.init = function () {
                 var t = this.args.mraid
                     , e = t.getVersion();
                 (parseInt(e, 10) >= 3 || t.__PRIV__ && t.__PRIV__.isYaMraid3FeatureSupported && t.__PRIV__.isYaMraid3FeatureSupported("exposureChange")) && (this.isSupportExposureChange = !0)
             }
                 ,
-                t.prototype.start = function() {
+                t.prototype.start = function () {
                     var t = this
                         , e = this.args.mraid;
                     this.isSupportExposureChange ? e.addEventListener("exposureChange", this.onExposureChange) : (e.addEventListener("viewableChange", this.onViewableChange),
-                        setTimeout(function() {
+                        setTimeout(function () {
                             return t.onViewableChange()
                         }))
                 }
                 ,
-                t.prototype.stop = function() {
+                t.prototype.stop = function () {
                     var t = this.args.mraid;
                     this.isSupportExposureChange ? t.removeEventListener("exposureChange", this.onExposureChange) : t.removeEventListener("viewableChange", this.onViewableChange)
                 }
                 ,
-                t.prototype.check = function(t) {
+                t.prototype.check = function (t) {
                     (0,
                         this.args.callback)(t)
                 }
@@ -11739,15 +11953,15 @@
                 t
         }();
         e.MraidStrategy = a,
-            e.createMraidVCClass = function(t) {
-                return o.createVCClass(function(e) {
+            e.createMraidVCClass = function (t) {
+                return o.createVCClass(function (e) {
                     return new a(n({}, e, {
                         mraid: t
                     }))
                 })
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(6)
@@ -11755,24 +11969,24 @@
             , r = n.VISIBLE_PORTION_BLOCK_DIRECT
             , a = n.VISIBLE_PORTION_BLOCK_DIRECT_COMMON
             , s = n.VISIBLE_PORTION_BIG_BLOCK;
-        e.getVisiblePortion = function(t, e) {
+        e.getVisiblePortion = function (t, e) {
             var i = t && t.clientWidth || 0
                 , n = t && t.clientHeight || 0;
             return e ? i * n >= o ? s : a : r
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(115)
             , o = i(32).findParent
             , r = i(3).protect;
-        e.open = r("open", function(t) {
+        e.open = r("open", function (t) {
             var e = n.isAvailable();
             if ("string" == typeof t)
                 e ? n.open(t) : window.open(t, "_blank");
             else if (!t.defaultPrevented && e) {
-                var i = o(t.target, function(t) {
+                var i = o(t.target, function (t) {
                     return "a" === t.tagName.toLowerCase()
                 }, !0);
                 i && (n.open(i.href),
@@ -11780,17 +11994,17 @@
             }
         })
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         t.exports = i(258)
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         t.exports = i(114).VisibilityChecker
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
-        var n = Object.assign || function(t) {
+        var n = Object.assign || function (t) {
             for (var e = 1; e < arguments.length; e++) {
                 var i = arguments[e];
                 for (var n in i)
@@ -11804,13 +12018,13 @@
             , s = i(2)
             , l = i(161)
             , p = {
-            initAdtune: function(t) {
+            initAdtune: function (t) {
                 this._adtuneProps = t
             },
-            _getAbuseUrl: function() {
+            _getAbuseUrl: function () {
                 return this._adtuneProps.abuseUrl
             },
-            renderAdtune: function(t) {
+            renderAdtune: function (t) {
                 if (!this._getAbuseUrl())
                     return null;
                 var e = this._adtuneProps;
@@ -11821,7 +12035,7 @@
                     adId: e.adId
                 }, t))
             },
-            renderFeedback: function(t) {
+            renderFeedback: function (t) {
                 if (!this._getAbuseUrl())
                     return null;
                 var e = this.props
@@ -11839,40 +12053,40 @@
                     language: i.language
                 }, t))
             },
-            afterRender: function() {
+            afterRender: function () {
                 this._adtuneComponent = this.getResourceById("adtune"),
                     this._feedbackComponent = this.getResourceById("feedback"),
                     this.__base()
             },
-            pushCss: function() {
+            pushCss: function () {
                 this.__base(),
                     this.pushStyles(l, {
                         util: s
                     })
             },
-            onClickAdtune: function() {
+            onClickAdtune: function () {
                 this._feedbackComponent.fitSize(),
                     this._feedbackComponent.isVisible() ? (this.closeFeedback(),
                         this.fireEvent("close:feedback")) : (this.fireEvent("open:feedback"),
                         this.openFeedback())
             },
-            onReceivedFeedback: function() {
+            onReceivedFeedback: function () {
                 this._abused = !0,
                     this._adtuneComponent.destroy(),
                     this.__base.apply(this, arguments)
             },
-            closeFeedback: function() {
+            closeFeedback: function () {
                 this._getAbuseUrl() && (this._abused || (this._feedbackComponent.hide(),
                     this._adtuneComponent.enableTooltip()))
             },
-            openFeedback: function() {
+            openFeedback: function () {
                 this._abused || (this._feedbackComponent.show(),
                     this._adtuneComponent.disableTooltip())
             }
         };
         t.exports = p
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n = i(0)
             , o = i(1)
@@ -11880,15 +12094,15 @@
             , a = i(455)
             , s = n.createComponent(o, {
             name: "yap-callouts",
-            shouldRender: function() {
+            shouldRender: function () {
                 var t = this.props.adv.callouts;
                 return t && t.length
             },
-            afterRender: function() {
+            afterRender: function () {
                 this.pushStyles(a)
             },
-            _renderCallouts: function(t, e, i) {
-                return r.map(e, function(e, o) {
+            _renderCallouts: function (t, e, i) {
+                return r.map(e, function (e, o) {
                     return n.create("yatag", {
                         resourceId: "callouts_item_" + o,
                         class: t("__item", "__item_n" + o)
@@ -11899,7 +12113,7 @@
                     })))
                 })
             },
-            _render: function(t, e, i) {
+            _render: function (t, e, i) {
                 var o = e.adv.callouts;
                 return n.create("yatag", {
                     class: t(e["class"], t())
@@ -11910,7 +12124,7 @@
         });
         t.exports = s
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n = i(0)
             , o = i(1)
@@ -11921,24 +12135,25 @@
             , p = i(226).doubleTitleAppendStyle
             , c = n.createComponent([o, a], {
             name: "yap-mobile-apps",
-            afterRender: function() {
+            afterRender: function () {
                 this.pushStyles(l)
             },
-            onDisplayed: function() {
+            onDisplayed: function () {
                 this.removeOverflow()
             },
-            removeOverflow: function() {
+            removeOverflow: function () {
                 var t = this.b_;
                 r(this.rootComponent, p([t("_price_hidden"), t("__icon_hidden"), t("_scale_3"), t("_scale_2"), t("_scale_1")], t("_hidden_second_title")))
             },
-            getTheme: function() {
+            getTheme: function () {
                 return this.props.theme ? this.props.theme : s.browser.isAndroid ? "android" : s.browser.isIOS ? "ios" : null
             },
-            _render: function(t, e, i) {
+            _render: function (t, e, i) {
                 var o = e.adv
                     , r = o.addInfo
                     , a = r.callToAction
-                    , s = !e.noPrice && r.price ? "&nbsp;&ndash; " + r.price + "&nbsp;" + (r.priceCurrencySymbol || "") : null
+                    ,
+                    s = !e.noPrice && r.price ? "&nbsp;&ndash; " + r.price + "&nbsp;" + (r.priceCurrencySymbol || "") : null
                     , l = !e.noIcon && o.icon ? o.icon : null
                     , p = this.getTheme();
                 return n.create("yatag", {
@@ -11972,7 +12187,7 @@
         });
         t.exports = c
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n = i(0)
             , o = i(1)
@@ -11981,23 +12196,23 @@
         var a = n.createComponent(o, {
             name: "yap-raiting",
             htmlTemplate: i(467).mobileApp__rating,
-            shouldRender: function() {
+            shouldRender: function () {
                 var t = this.props.adv;
                 return this.props.forceShow ? t.isAppAd && t.addInfo.rating : t.isAppAd && t.addInfo.rating && t.addInfo.rating >= 3.5
             },
-            afterRender: function() {
+            afterRender: function () {
                 this.pushStyles(r)
             },
-            _getHTML: function() {
+            _getHTML: function () {
                 return this.htmlTemplate(this._getTemplateData())
             },
-            _getTemplateData: function() {
+            _getTemplateData: function () {
                 return {
                     ad: this.props.adv,
                     disableParentheses: !this.props.withParentheses
                 }
             },
-            _render: function(t, e, i) {
+            _render: function (t, e, i) {
                 return n.create("yatag", {
                     class: t(e["class"], t(), this.mod)
                 }, n.create(i.HTML, {
@@ -12007,22 +12222,23 @@
         });
         t.exports = a
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n, o = (n = Object.setPrototypeOf || {
                     __proto__: []
-                }instanceof Array && function(t, e) {
+                } instanceof Array && function (t, e) {
                     t.__proto__ = e
                 }
-                || function(t, e) {
+                || function (t, e) {
                     for (var i in e)
                         e.hasOwnProperty(i) && (t[i] = e[i])
                 }
                 ,
-                function(t, e) {
+                function (t, e) {
                     function i() {
                         this.constructor = t
                     }
+
                     n(t, e),
                         t.prototype = null === e ? Object.create(e) : (i.prototype = e.prototype,
                             new i)
@@ -12039,17 +12255,18 @@
             , u = i(482)
             , m = i(483)
             , f = c.bemClassNamesFactory("scroll", m)
-            , h = function(t) {
+            , h = function (t) {
             function e() {
                 return null !== t && t.apply(this, arguments) || this
             }
+
             return o(e, t),
-                e.prototype.onInit = function() {
+                e.prototype.onInit = function () {
                     this.posX = 0,
                         t.prototype.onInit.call(this)
                 }
                 ,
-                e.prototype._render = function() {
+                e.prototype._render = function () {
                     var t = this
                         , e = this.props
                         , i = e.className
@@ -12064,40 +12281,40 @@
                         onScroll: this.onScroll,
                         class: f("__container")
                     }, this.getChildren()), r.create(u.OnChangeBlockStatus, {
-                        callback: function(e) {
+                        callback: function (e) {
                             return t.onChangeBlockStatus(e)
                         }
                     }))
                 }
                 ,
-                e.prototype.afterRender = function() {
+                e.prototype.afterRender = function () {
                     this.pushStyles(m),
                         this.containerComponent = this.getResourceById("container"),
                         this.containerElement = this.containerComponent.getElement()
                 }
                 ,
-                e.prototype.onDestroy = function() {
+                e.prototype.onDestroy = function () {
                     p(this.rafId),
                         t.prototype.onDestroy.call(this)
                 }
                 ,
-                e.prototype.onChangeBlockStatus = function(t) {
+                e.prototype.onChangeBlockStatus = function (t) {
                     return t >= d.BlockStatus.Ready && (this.calculateScroll(),
                         !0)
                 }
                 ,
-                e.prototype.calculateScroll = function() {
+                e.prototype.calculateScroll = function () {
                     var t = this
                         , e = this.props.calculateScroll;
-                    (void 0 === e ? function(t) {
+                    (void 0 === e ? function (t) {
                             return t()
                         }
-                        : e)(function() {
+                        : e)(function () {
                         return t.calculateScrollImpl()
                     })
                 }
                 ,
-                e.prototype.calculateScrollImpl = function() {
+                e.prototype.calculateScrollImpl = function () {
                     var t = this.containerElement;
                     this.width = t.clientWidth,
                         this.scrollWidth = t.scrollWidth,
@@ -12106,11 +12323,11 @@
                         this.updatePosition()
                 }
                 ,
-                e.prototype.onScroll = function() {
+                e.prototype.onScroll = function () {
                     this.updatePosition()
                 }
                 ,
-                e.prototype.onMouseMove = function(t) {
+                e.prototype.onMouseMove = function (t) {
                     var e = this.scrollWidth
                         , i = this.width
                         , n = this.rangeSize
@@ -12127,11 +12344,11 @@
                     u >= this.startMoveTime + 200 && this.scrollTo(d)
                 }
                 ,
-                e.prototype.onMouseLeave = function() {
+                e.prototype.onMouseLeave = function () {
                     delete this.startMoveTime
                 }
                 ,
-                e.prototype.scrollTo = function(t) {
+                e.prototype.scrollTo = function (t) {
                     var e = this;
                     p(this.rafId);
                     !function i() {
@@ -12143,7 +12360,7 @@
                     }()
                 }
                 ,
-                e.prototype.updatePosition = function() {
+                e.prototype.updatePosition = function () {
                     var t = this.containerElement.scrollLeft
                         , e = this.width
                         , i = this.scrollWidth
@@ -12158,37 +12375,38 @@
         }(a);
         e.Scroll = h
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(95)
             , o = i(153);
-        e.isImportantWarning = function(t) {
+        e.isImportantWarning = function (t) {
             var e = t.bannerFlags;
             return Boolean(o.hasWarning(t) && n.hasImportantFlag(e))
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n, o = (n = Object.setPrototypeOf || {
                     __proto__: []
-                }instanceof Array && function(t, e) {
+                } instanceof Array && function (t, e) {
                     t.__proto__ = e
                 }
-                || function(t, e) {
+                || function (t, e) {
                     for (var i in e)
                         e.hasOwnProperty(i) && (t[i] = e[i])
                 }
                     ,
-                    function(t, e) {
+                    function (t, e) {
                         function i() {
                             this.constructor = t
                         }
+
                         n(t, e),
                             t.prototype = null === e ? Object.create(e) : (i.prototype = e.prototype,
                                 new i)
                     }
-            ), r = Object.assign || function(t) {
+            ), r = Object.assign || function (t) {
                 for (var e, i = 1, n = arguments.length; i < n; i++)
                     for (var o in e = arguments[i])
                         Object.prototype.hasOwnProperty.call(e, o) && (t[o] = e[o]);
@@ -12202,26 +12420,27 @@
             , p = i(487)
             , c = i(37)
             , d = i(54)
-            , u = function(t) {
+            , u = function (t) {
             return Number(t) > 0 ? Number(t) : 0
         }
-            , m = function() {
+            , m = function () {
             function t(t) {
                 this.element = t,
                     this.getExpander = c.once(l.createExpander)
             }
-            return t.prototype.attach = function() {
+
+            return t.prototype.attach = function () {
                 this.element.appendChild(this.getExpander())
             }
                 ,
-                t.prototype.detach = function() {
+                t.prototype.detach = function () {
                     d.removeNodeFromParent(this.getExpander())
                 }
                 ,
                 t
         }();
         e.SizeMeterBase = m;
-        var f = function(t) {
+        var f = function (t) {
             function e(e, i) {
                 var n = t.call(this, e) || this
                     , o = i.width
@@ -12240,14 +12459,15 @@
                     },
                     n
             }
+
             return o(e, t),
-                e.prototype.isFixed = function() {
+                e.prototype.isFixed = function () {
                     var t = this.width
                         , e = this.height;
                     return t.min === t.max && e.min === e.max
                 }
                 ,
-                e.prototype.getSize = function() {
+                e.prototype.getSize = function () {
                     var t = this.width
                         , e = this.height;
                     if (this.isFixed())
@@ -12267,7 +12487,7 @@
                 e
         }(m);
         e.SizeMeasurer = f;
-        var h = function(t) {
+        var h = function (t) {
             function e(e, i) {
                 var n = i.width
                     , o = i.height
@@ -12278,29 +12498,33 @@
                 },
                     r
             }
+
             return o(e, t),
-                e.prototype.getSize = function() {
+                e.prototype.getSize = function () {
                     var t = s.getElementInnerSize(this.element)
                         , e = t.width * t.height == 0 ? this.defaultSize : t;
-                    return (this.getSize = function() {
+                    return (this.getSize = function () {
                             return r({}, e)
                         }
                     )()
                 }
                 ,
-                e.prototype.attach = function() {}
+                e.prototype.attach = function () {
+                }
                 ,
-                e.prototype.detach = function() {}
+                e.prototype.detach = function () {
+                }
                 ,
                 e
         }(m);
         e.AdaptiveSizeMeasurer = h;
-        var g = function(t) {
+        var g = function (t) {
             function e() {
                 return null !== t && t.apply(this, arguments) || this
             }
+
             return o(e, t),
-                e.prototype.getSize = function() {
+                e.prototype.getSize = function () {
                     var t = Math.max(160, s.getElementInnerSize(this.element).width);
                     return {
                         width: t,
@@ -12311,28 +12535,29 @@
                 e
         }(m);
         e.GridMeasurer = g,
-            e.createSizeMeter = function(t, e, i) {
+            e.createSizeMeter = function (t, e, i) {
                 switch (e.measurer) {
                     case "adaptive":
-                        return new h(t,e);
+                        return new h(t, e);
                     case "grid":
                         return new g(t);
                     case "horizontal":
-                        return new _(t,e,i);
+                        return new _(t, e, i);
                     default:
-                        return new f(t,e)
+                        return new f(t, e)
                 }
             }
         ;
-        var _ = function(t) {
+        var _ = function (t) {
             function e(e, i, n) {
                 var o = t.call(this, e, i) || this;
                 return o.noSitelinks = i.noSitelinks,
                     o.cutBlock = n,
                     o
             }
+
             return o(e, t),
-                e.prototype.getSize = function() {
+                e.prototype.getSize = function () {
                     var t = this.width
                         , e = this.height
                         , i = a.getLimitFunction(t.min, t.max)
@@ -12344,12 +12569,12 @@
                         width: r,
                         height: this.noSitelinks ? 290 : 320
                     }
-                        , d = this.cutBlock(!0, function() {
+                        , d = this.cutBlock(!0, function () {
                         return c
                     });
                     if (d) {
                         var u = r / d.length
-                            , m = p.every(d, function(t) {
+                            , m = p.every(d, function (t) {
                             var e = t.adv;
                             return e.skipPictures || !e.image
                         });
@@ -12364,30 +12589,33 @@
         }(f);
         e.HorizontalSizeMeasurer = _
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
+
         function n(t, e, i, n) {
             var o = (e - n) / (t - i)
                 , r = e - o * t;
-            return function(t) {
+            return function (t) {
                 return o * t + r
             }
         }
+
         function o(t, e, i) {
             return Math.max(e, Math.min(t, i))
         }
+
         e.__esModule = !0,
             e.getLinearFunction = n,
-            e.getLimitedLinearFunction = function(t, e, i, r) {
+            e.getLimitedLinearFunction = function (t, e, i, r) {
                 var a = n(t, e, i, r);
-                return function(t) {
+                return function (t) {
                     return o(a(t), e, r)
                 }
             }
             ,
             e.getLimit = o
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n = i(232)
             , o = void 0
@@ -12420,40 +12648,42 @@
                 interview: d
             }
     }
-    , function(t, e) {
-        t.exports = function(t) {
+    , function (t, e) {
+        t.exports = function (t) {
             var e = [];
             return e.push(".", t.id, "{opacity:", t.visibility, " !important}.", t.id, ",.", t.id, " yatag{display:block !important;font-family:inherit !important}.", t.id, ",.", t.id, ",.", t.id, " a,.", t.id, " b,.", t.id, " em,.", t.id, " iframe,.", t.id, " img,.", t.id, " table,.", t.id, " tbody,.", t.id, " td,.", t.id, " tr,.", t.id, " yatag{box-sizing:content-box !important;color:inherit !important;font-size:inherit !important;font-weight:inherit !important;-webkit-hyphens:manual !important;-ms-hyphens:manual !important;hyphens:manual !important}.", t.id, ",.", t.id, " a,.", t.id, " b,.", t.id, " em,.", t.id, " iframe,.", t.id, " img,.", t.id, " table,.", t.id, " tbody,.", t.id, " td,.", t.id, " tr{background:none !important;border:none !important;border-radius:0 !important;border-spacing:0 !important;border-collapse:collapse !important;clear:none !important;float:none !important;font-variant:normal !important;letter-spacing:normal !important;line-height:normal !important;margin:0 !important;max-height:none !important;max-width:none !important;min-height:0 !important;min-width:0 !important;outline:none !important;padding:0 !important;position:static !important;text-align:left !important;text-decoration:none !important;text-indent:0 !important;text-transform:none !important;vertical-align:baseline !important;visibility:visible !important;word-spacing:normal !important}.", t.id, ",.", t.id, " a,.", t.id, " b,.", t.id, " em,.", t.id, " img,.", t.id, " table,.", t.id, " tbody,.", t.id, " td,.", t.id, " tr{height:auto !important}.", t.id, " table{display:table !important;empty-cells:hide !important;table-layout:fixed !important}.", t.id, " table,.", t.id, " td{font-size:100% !important}.", t.id, " td{display:table-cell !important;vertical-align:middle !important}"),
                 e.join("")
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0,
-            e.getSourceUrl = function(t) {
+            e.getSourceUrl = function (t) {
                 return void 0 === t && (t = window),
                     t.location.hostname
             }
             ,
-            e.getTargetRef = function(t) {
+            e.getTargetRef = function (t) {
                 void 0 === t && (t = window);
                 try {
                     return t.top.document.location.href
-                } catch (t) {}
+                } catch (t) {
+                }
                 return t.document.referrer || t.location.href
             }
             ,
-            e.getPageRef = function(t) {
+            e.getPageRef = function (t) {
                 void 0 === t && (t = window);
                 try {
                     return t.top.document.referrer
-                } catch (t) {}
+                } catch (t) {
+                }
                 return ""
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
-        var n = Object.assign || function(t) {
+        var n = Object.assign || function (t) {
                 for (var e, i = 1, n = arguments.length; i < n; i++)
                     for (var o in e = arguments[i])
                         Object.prototype.hasOwnProperty.call(e, o) && (t[o] = e[o]);
@@ -12473,16 +12703,19 @@
             , m = i(591)
             , f = i(3)
             , h = /^{[\s\S]*?}$/;
+
         function g(t) {
-            return (d.isIE || d.isEdge) && /[^\w\.-]/i.test(document.location.host) || function(t) {
+            return (d.isIE || d.isEdge) && /[^\w\.-]/i.test(document.location.host) || function (t) {
                 var e = parseInt(t, 10);
                 return c.indexOf(_, e) > -1
             }(t)
         }
-        e.loadAd = function(t) {
-            g(t.pageId) ? m(t.url, t.pageId, t.callback) : (Ya.Context._asyncModeOn || (setTimeout(function() {}, 1e4),
+
+        e.loadAd = function (t) {
+            g(t.pageId) ? m(t.url, t.pageId, t.callback) : (Ya.Context._asyncModeOn || (setTimeout(function () {
+            }, 1e4),
                 Ya.Context._asyncModeOn = !0),
-                function(t) {
+                function (t) {
                     var e = t.url.clone()
                         , i = r.getRandomInt(1e12, 1e13);
                     e.appendParams({
@@ -12494,13 +12727,13 @@
                             url: c,
                             method: "get",
                             retryLimit: 0
-                        }, function(e) {
+                        }, function (e) {
                             e.length < 200 ? y(new Error(e), t.isRefresh ? "EmptyRefreshResponse" : "EmptyResponse") : u.logger.log({}, "SuccessfulRequest");
                             var r = {
                                 common: {}
                             };
-                            s.isObject(e) ? r = n({}, r, e) : a.isString(e) && (r = function(t, e) {
-                                return h.test(t) ? function(t) {
+                            s.isObject(e) ? r = n({}, r, e) : a.isString(e) && (r = function (t, e) {
+                                return h.test(t) ? function (t) {
                                     try {
                                         var e = l.getNativeJSON(window)
                                             , i = e.parse(t);
@@ -12513,12 +12746,12 @@
                                                 common: {}
                                             }
                                     }
-                                }(t) : function(t, e) {
+                                }(t) : function (t, e) {
                                     var i = {
                                         common: {}
                                     };
                                     try {
-                                        Ya[e] = function(t) {
+                                        Ya[e] = function (t) {
                                             delete Ya[e];
                                             var o = new Function("return " + t)();
                                             i = n({}, i, o)
@@ -12534,11 +12767,11 @@
                                     }
                                 }(t, e)
                             }(e, i)),
-                                f.protect("JSONP callback", function() {
+                                f.protect("JSONP callback", function () {
                                     t.callback(r)
                                 })(),
                                 o.sendResourceInfo()
-                        }, function(e) {
+                        }, function (e) {
                             y(new Error("Failed to load data:[" + t.pageId + "][" + e + "]"), t.isRefresh ? "AjaxRefreshError" : "AjaxLoadError"),
                                 t.callback({})
                         })
@@ -12546,12 +12779,13 @@
         }
         ;
         var _ = [188382, 189903, 148383, 258844, 158872, 158916, 158917, 158918, 158919];
+
         function y(t, e) {
             u.logger.log(t, e),
                 u.logger.error(t, e)
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n = i(8)
             , o = i(77)
@@ -12559,7 +12793,7 @@
             , a = Number(new Date)
             , s = void 0;
         (0,
-            o.on)(window, "error", function(t) {
+            o.on)(window, "error", function (t) {
             /\/context_static_[\d\w]+\.js$|\/partner-code-bundles\/\d+\/\w+\.js$/i.test(t.filename) && n.logger.error(t, "UncaughtError")
         }),
         window.Promise || (window.Promise = i(328)),
@@ -12571,17 +12805,18 @@
             var l = i(2)
                 , p = i(3)
                 , c = i(358);
-            !function(t, e, i) {
+            !function (t, e, i) {
                 if (!Ya.Context.AdvManager) {
                     var n = new c
-                        , o = ["render", "renderDirect", "renderOverlay", "getBid", "releaseBid", "getSkipToken", "getAdSessionId"];
+                        ,
+                        o = ["render", "renderDirect", "renderOverlay", "getBid", "releaseBid", "getSkipToken", "getAdSessionId"];
                     Ya.Context.AdvManager = {},
-                        l.each(o, function(t) {
-                            Ya.Context.AdvManager[t] = p.protect("AdvManager." + t, function() {
+                        l.each(o, function (t) {
+                            Ya.Context.AdvManager[t] = p.protect("AdvManager." + t, function () {
                                 return n[t].apply(n, arguments)
                             })
                         }, this),
-                        Ya.Context._init = p.protect("Ya.context._callbacks", function() {
+                        Ya.Context._init = p.protect("Ya.context._callbacks", function () {
                             s = Number(new Date);
                             for (var t = 0; t < Ya.Context._callbacks.length; t++)
                                 p.protect("Ya.context._callbacks_call", Ya.Context._callbacks[t])();
@@ -12598,7 +12833,7 @@
             n.logger.error(t, "InitializationFailed")
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(35)
@@ -12606,13 +12841,14 @@
             , r = i(11)
             , a = i(311)
             , s = i(325);
-        !function(t) {
+        !function (t) {
             var e = new a.JSErrLogger
                 , i = new o.JSTracerLogger
                 , l = new s;
+
             function p(t, e) {
-                return function(i, o) {
-                    var a = function(t, e, i) {
+                return function (i, o) {
+                    var a = function (t, e, i) {
                         return "string" == typeof e && (i = "remoteLogString",
                             e = {
                                 message: e
@@ -12628,13 +12864,14 @@
                                 }
                             }
                     }(t, i, o);
-                    r.forEach(e, function(t) {
+                    r.forEach(e, function (t) {
                         return t.log(a)
                     })
                 }
             }
+
             function c(t) {
-                return function(e, o) {
+                return function (e, o) {
                     "string" == typeof e && (e = {
                         msg: e
                     }),
@@ -12646,24 +12883,25 @@
                         })
                 }
             }
+
             t.error = p("ERROR", [i, e, l]),
                 t.warn = p("WARNING", [i, e, l]),
                 t.log = c("IMPORTANT"),
                 t.info = c("INFO"),
-                t.rmp = function(t) {
+                t.rmp = function (t) {
                     i.logRmp(t)
                 }
                 ,
-                t.configure = function(t) {
+                t.configure = function (t) {
                     i.config({
                         labels: t
                     })
                 }
         }(e.logger || (e.logger = {}))
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
-        var n = Object.assign || function(t) {
+        var n = Object.assign || function (t) {
                 for (var e, i = 1, n = arguments.length; i < n; i++)
                     for (var o in e = arguments[i])
                         Object.prototype.hasOwnProperty.call(e, o) && (t[o] = e[o]);
@@ -12687,15 +12925,17 @@
             sid: s.getSessionId(),
             onBeforeSend: void 0
         })
-            , u = function() {
-            function t() {}
-            return t.prototype.config = function(t) {
+            , u = function () {
+            function t() {
+            }
+
+            return t.prototype.config = function (t) {
                 c = n({}, c, t.labels)
             }
                 ,
-                t.prototype.log = function(t) {
+                t.prototype.log = function (t) {
                     r.isPercent(25) && d.error({
-                        error: new a.CustomError(t.error,{
+                        error: new a.CustomError(t.error, {
                             code: t.namespace,
                             type: t.type,
                             href: document.location.href
@@ -12704,7 +12944,7 @@
                     })
                 }
                 ,
-                t.prototype.logRmp = function(t) {
+                t.prototype.logRmp = function (t) {
                     var e, i;
                     d.event({
                         name: "NEW_RMP_ABILITIES",
@@ -12719,7 +12959,7 @@
                     })
                 }
                 ,
-                t.prototype.logData = function(t) {
+                t.prototype.logData = function (t) {
                     r.isPercent(1) && d.event({
                         name: Boolean(t.name) ? t.type + "_" + t.name : t.type,
                         data: t.data,
@@ -12731,7 +12971,7 @@
         }();
         e.JSTracerLogger = u
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0,
             e.DEFAULT_ERROR = {
@@ -12742,39 +12982,39 @@
                 isFatal: !0
             }
     }
-    , function(t, e) {
+    , function (t, e) {
         t.exports = Object.setPrototypeOf || ({
                 __proto__: []
-            }instanceof Array ? function(t, e) {
+            } instanceof Array ? function (t, e) {
                     return t.__proto__ = e,
                         t
                 }
-                : function(t, e) {
+                : function (t, e) {
                     for (var i in e)
                         t.hasOwnProperty(i) || (t[i] = e[i]);
                     return t
                 }
         )
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(37)
             , o = i(169)
             , r = i(277)
             , a = i(170)
-            , s = n.once(function() {
-            return r.getCrossFrameDataSource(self, "Ya.pcodeCrossFrameData", function() {
+            , s = n.once(function () {
+            return r.getCrossFrameDataSource(self, "Ya.pcodeCrossFrameData", function () {
                 return new a.ObjectStorage({})
             })
         });
-        e.getCrossFrameStorage = function(t) {
-            return o.getOrCreateItem(s(), t, function() {
+        e.getCrossFrameStorage = function (t) {
+            return o.getOrCreateItem(s(), t, function () {
                 return new a.ObjectStorage({})
             })
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(118)
@@ -12782,13 +13022,13 @@
             , r = i(119)
             , a = i(120)
             , s = i(43);
-        e.getCrossFrameDataSource = function(t, e, i) {
+        e.getCrossFrameDataSource = function (t, e, i) {
             var l;
-            return n.traverseBreadth([t.top], function(t) {
-                if (!(l = s.callSafe(function() {
+            return n.traverseBreadth([t.top], function (t) {
+                if (!(l = s.callSafe(function () {
                     return r.get(t, e)
                 })))
-                    return s.callSafe(function() {
+                    return s.callSafe(function () {
                         return o.listToArray(t.frames)
                     }) || []
             }),
@@ -12797,50 +13037,50 @@
                 l
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0,
-            e.listToArray = function(t) {
+            e.listToArray = function (t) {
                 return t ? [].slice.call(t) : []
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(37)
             , o = i(169)
             , r = i(170)
             , a = i(280)
-            , s = n.once(function() {
-            return a.getWindowDataSource(self, "Ya.pcodeWindowData", function() {
+            , s = n.once(function () {
+            return a.getWindowDataSource(self, "Ya.pcodeWindowData", function () {
                 return new r.ObjectStorage({})
             })
         });
-        e.getWindowStorage = function(t) {
-            return o.getOrCreateItem(s(), t, function() {
+        e.getWindowStorage = function (t) {
+            return o.getOrCreateItem(s(), t, function () {
                 return new r.ObjectStorage({})
             })
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(119)
             , o = i(120);
-        e.getWindowDataSource = function(t, e, i) {
+        e.getWindowDataSource = function (t, e, i) {
             var r = n.get(t, e);
             return r || (r = i(),
                 o.set(t, e, r)),
                 r
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(119)
             , o = i(120)
             , r = i(43);
-        e.configureMetrika = r.protect("sessionId::configureMetrika", function(t, e) {
+        e.configureMetrika = r.protect("sessionId::configureMetrika", function (t, e) {
             var i = n.get(t, "Ya._metrika.dataLayer") || [];
             o.set(t, "Ya._metrika.dataLayer", i),
                 i.push({
@@ -12856,17 +13096,17 @@
                 })
         })
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0,
-            e.generateSessionId = function() {
+            e.generateSessionId = function () {
                 return (1e6 * Math.random()).toFixed(0) + (new Date).valueOf().toString()
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
-        e.getSession = function(t, e, i, n) {
+        e.getSession = function (t, e, i, n) {
             var o = e.getItem("sessionId");
             return o || (o = i.getItem("sessionId") || t(),
                 n(window, o)),
@@ -12875,16 +13115,16 @@
                 o
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(285).getCurrentScript();
         e.CURRENT_SCRIPT_SRC = n ? n.src : ""
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0,
-            e.getCurrentScript = function(t, e) {
+            e.getCurrentScript = function (t, e) {
                 void 0 === t && (t = document);
                 var i = t.currentScript;
                 if (i)
@@ -12897,14 +13137,14 @@
                 return n[n.length - 1]
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(287);
-        e.getTopLocationData = function(t) {
+        e.getTopLocationData = function (t) {
             var e = ""
                 , i = "";
-            return t && n.getParentLocationsData(t).reverse().forEach(function(t) {
+            return t && n.getParentLocationsData(t).reverse().forEach(function (t) {
                 var n = t.location
                     , o = t.referrer;
                 e = e || n,
@@ -12916,17 +13156,17 @@
                 }
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(172)
             , o = i(173);
-        e.getParentLocationsData = function(t) {
-            var e = o.getParentFriendlyIFrames(t.documentElement).map(function(t) {
+        e.getParentLocationsData = function (t) {
+            var e = o.getParentFriendlyIFrames(t.documentElement).map(function (t) {
                 return t.ownerDocument
             });
             return e.unshift(t),
-                e.map(function(t) {
+                e.map(function (t) {
                     return {
                         location: n.getWindowLocation(t.defaultView),
                         referrer: t.referrer
@@ -12934,18 +13174,18 @@
                 })
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(289);
         e.isInSecureIFrame = n.isInSecureIFrame()
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(290);
-        e.isInSecureIFrame = function() {
-            var t = n.parentFriendlyIFrames.map(function(t) {
+        e.isInSecureIFrame = function () {
+            var t = n.parentFriendlyIFrames.map(function (t) {
                 return t.ownerDocument
             })
                 , e = t.length
@@ -12953,15 +13193,15 @@
             return i.self !== i.parent
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(173);
         e.parentFriendlyIFrames = n.getParentFriendlyIFrames(document.documentElement)
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
-        var n = Object.assign || function(t) {
+        var n = Object.assign || function (t) {
                 for (var e, i = 1, n = arguments.length; i < n; i++)
                     for (var o in e = arguments[i])
                         Object.prototype.hasOwnProperty.call(e, o) && (t[o] = e[o]);
@@ -12973,34 +13213,41 @@
             , r = i(44)
             , a = 200;
         e.request = function t(e) {
-            var i, s = e.method, l = e.url, p = e.async, c = void 0 === p || p, d = e.data, u = e.responseType, m = void 0 === u ? "text" : u, f = e.onBeforeSend, h = void 0 === f ? o.noop : f, g = e.onError, _ = void 0 === g ? o.noop : g, y = e.onSuccess, b = void 0 === y ? o.noop : y, v = e.onRetry, x = void 0 === v ? o.noop : v, w = e.checkStatus, k = void 0 === w ? function(t) {
+            var i, s = e.method, l = e.url, p = e.async, c = void 0 === p || p, d = e.data, u = e.responseType,
+                m = void 0 === u ? "text" : u, f = e.onBeforeSend, h = void 0 === f ? o.noop : f, g = e.onError,
+                _ = void 0 === g ? o.noop : g, y = e.onSuccess, b = void 0 === y ? o.noop : y, v = e.onRetry,
+                x = void 0 === v ? o.noop : v, w = e.checkStatus, k = void 0 === w ? function (t) {
                     return a === t
                 }
-                : w, C = e.headers, I = void 0 === C ? {} : C, S = e.xhrConstructor, A = void 0 === S ? XMLHttpRequest : S, O = e.retries, E = void 0 === O ? 0 : O, T = e.timeout, R = void 0 === T ? 0 : T, L = new A;
+                : w, C = e.headers, I = void 0 === C ? {} : C, S = e.xhrConstructor,
+                A = void 0 === S ? XMLHttpRequest : S, O = e.retries, E = void 0 === O ? 0 : O, T = e.timeout,
+                R = void 0 === T ? 0 : T, L = new A;
             L.open(s, l, c),
                 L.responseType = m,
-                r.forOwn(I, function(t, e) {
+                r.forOwn(I, function (t, e) {
                     try {
                         L.setRequestHeader(e, t)
-                    } catch (t) {}
+                    } catch (t) {
+                    }
                 }),
-            R > 0 && isFinite(R) && (i = window.setTimeout(function() {
+            R > 0 && isFinite(R) && (i = window.setTimeout(function () {
                 M(new Error("Request timeout, " + l))
             }, R));
-            var M = function(o) {
+            var M = function (o) {
                 L.onerror = null,
                     L.onreadystatechange = null,
                     clearTimeout(i);
                 try {
                     L.abort()
-                } catch (o) {}
+                } catch (o) {
+                }
                 E > 0 ? (x(o),
                     t(n({}, e, {
                         retries: E - 1
                     }))) : _(o)
             };
             L.onerror = M,
-                L.onreadystatechange = function() {
+                L.onreadystatechange = function () {
                     if (4 === L.readyState) {
                         var t = L.status;
                         k(t) ? (clearTimeout(i),
@@ -13016,11 +13263,11 @@
             }
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(293);
-        e.portion = function(t, e, i, o) {
+        e.portion = function (t, e, i, o) {
             void 0 === o && (o = !1);
             var r = t > (o ? Math.random() : n.RANDOM)
                 , a = r ? e : i;
@@ -13028,25 +13275,25 @@
                 r
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0,
             e.RANDOM = Math.random()
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0,
             e.DEFAULT_SID_LENGTH = 64
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0,
             e.PCODE_LOGS_URL = "https://an.yandex.ru/jstracer"
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0,
-            function(t) {
+            function (t) {
                 t["event"] = "event",
                     t["error"] = "error",
                     t["deprecated"] = "deprecated",
@@ -13055,28 +13302,28 @@
                     t["values"] = "values"
             }(e.StatsEventType || (e.StatsEventType = {}))
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0,
-            e.getAndroidVersion = function(t) {
+            e.getAndroidVersion = function (t) {
                 void 0 === t && (t = window);
                 var e = t.navigator.userAgent
                     , i = e.indexOf("Android");
                 return -1 === i ? -1 : parseFloat(e.slice(i + 8))
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(299);
-        e.getInternetExplorerVersion = function(t) {
+        e.getInternetExplorerVersion = function (t) {
             void 0 === t && (t = window);
             var e = n(t);
             return "boolean" == typeof e ? -1 : e
         }
     }
-    , function(t, e) {
-        t.exports = function(t) {
+    , function (t, e) {
+        t.exports = function (t) {
             t || (t = window);
             var e = t.navigator.userAgent
                 , i = e.indexOf("MSIE ");
@@ -13090,11 +13337,11 @@
             return o > 0 && parseInt(e.substring(o + 5, e.indexOf(".", o)), 10)
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(75);
-        e.getIOSVersion = function(t) {
+        e.getIOSVersion = function (t) {
             if (void 0 === t && (t = window),
             n.getIsIOS(t) && t.navigator) {
                 var e = t.navigator.platform;
@@ -13107,19 +13354,19 @@
             return -1
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(178);
-        e.getIsChrome = function(t) {
+        e.getIsChrome = function (t) {
             return void 0 === t && (t = window),
             /Chrome/.test(t.navigator.userAgent) && /Google Inc/.test(t.navigator.vendor) && !n.getIsYaBrowser(t)
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0,
-            e.getUserAgent = function(t) {
+            e.getUserAgent = function (t) {
                 void 0 === t && (t = window);
                 try {
                     return (t.navigator || {}).userAgent || ""
@@ -13128,78 +13375,78 @@
                 }
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0,
-            e.isFirefox = function(t) {
+            e.isFirefox = function (t) {
                 return void 0 === t && (t = window),
                     /firefox/.test(t.navigator.userAgent.toLowerCase())
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0,
-            e.isHDPIScreen = function(t) {
+            e.isHDPIScreen = function (t) {
                 return void 0 === t && (t = window),
                 (t.devicePixelRatio || t.screen.deviceXDPI && t.screen.deviceXDPI / t.screen.logicalXDPI || 1) > 1
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(122)
             , o = i(75)
             , r = i(76)
             , a = i(179);
-        e.isMobile = function(t) {
+        e.isMobile = function (t) {
             return void 0 === t && (t = window),
             o.getIsIOS(t) || n.getIfIsAndroid(t) || a.isWindowsPhone(t) || r.isUCBrowser(t)
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0,
-            e.isOpera = function(t) {
+            e.isOpera = function (t) {
                 return void 0 === t && (t = window),
                 t.navigator.userAgent.indexOf("Opera") > -1 || t.navigator.userAgent.indexOf("OPR") > -1
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0,
-            e.isOperaMini = function(t) {
+            e.isOperaMini = function (t) {
                 return void 0 === t && (t = window),
                 t.navigator.userAgent.indexOf("Opera Mini") > -1
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(122)
             , o = i(75);
-        e.isPhone = function(t) {
+        e.isPhone = function (t) {
             void 0 === t && (t = window);
             var e = t.navigator.userAgent.toLowerCase();
             return o.getIsIOS(t) && e.indexOf("iphone") > -1 || n.getIfIsAndroid(t) && e.indexOf("mobile") > -1
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0,
-            e.isTouchDevice = function(t) {
+            e.isTouchDevice = function (t) {
                 void 0 === t && (t = window);
                 var e = t
                     , i = e.DocumentTouch
                     , n = e.navigator
                     , o = e.document;
-                return "ontouchstart"in t || i && o instanceof i || n.maxTouchPoints > 0 || n.msMaxTouchPoints > 0
+                return "ontouchstart" in t || i && o instanceof i || n.maxTouchPoints > 0 || n.msMaxTouchPoints > 0
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(174);
-        e.getSafariVersion = function(t) {
+        e.getSafariVersion = function (t) {
             if (void 0 === t && (t = window),
             n.isSafari && t.navigator && t.navigator.userAgent) {
                 var e = t.navigator.userAgent.match(/version\/(\d+)/i);
@@ -13212,7 +13459,7 @@
             return -1
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(312)
@@ -13223,10 +13470,12 @@
             , l = new r({
             host: o.urls.jserrlog
         }).getUrl()
-            , p = function() {
-            function t() {}
-            return t.prototype.log = function(t) {
-                var e = function(t) {
+            , p = function () {
+            function t() {
+            }
+
+            return t.prototype.log = function (t) {
+                var e = function (t) {
                     for (var e = [], i = 0, n = t; i < n.length; i++) {
                         var o = n[i]
                             , r = o[0]
@@ -13243,7 +13492,7 @@
         }();
         e.JSErrLogger = p
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(313)
@@ -13251,7 +13500,7 @@
             , r = i(42)
             , a = o.getNativeJSON(window)
             , s = [];
-        e.sendReport = function(t, e) {
+        e.sendReport = function (t, e) {
             var i = {
                 url: t,
                 encode: !1,
@@ -13262,7 +13511,7 @@
                 n.post(i))
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(314)
@@ -13270,7 +13519,7 @@
             , r = i(28)
             , a = i(62)
             , s = r.getNativeJSON(window);
-        e.post = function(t) {
+        e.post = function (t) {
             var e = t.url
                 , i = t.data
                 , r = t.encode
@@ -13298,21 +13547,21 @@
             }
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0,
-            e["default"] = function(t) {
+            e["default"] = function (t) {
                 var e = [];
                 for (var i in t)
                     t.hasOwnProperty(i) && "" !== t[i] && void 0 !== t[i] && null !== t[i] && e.push(encodeURIComponent(i) + "=" + encodeURIComponent(t[i]));
                 return e.join("&")
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(316);
-        e.createHiddenFriendlyIFrame = function(t) {
+        e.createHiddenFriendlyIFrame = function (t) {
             var e = n.createFriendlyIFrame(t);
             return e.width = "0",
                 e.height = "0",
@@ -13320,10 +13569,10 @@
                 e
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0,
-            e.createFriendlyIFrame = function(t) {
+            e.createFriendlyIFrame = function (t) {
                 var e = t.ownerDocument.createElement("iframe");
                 e.scrolling = "no",
                     e.setAttribute("allowfullscreen", ""),
@@ -13337,27 +13586,30 @@
                     e
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(54);
-        e.removeIframe = function(t) {
+        e.removeIframe = function (t) {
             t.src = "",
                 n.removeNodeFromParent(t)
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
+
         function n() {
             this.returnValue = !1
         }
+
         function o() {
             this.cancelBubble = !0
         }
+
         e.__esModule = !0,
-            e.fixEvent = function(t) {
-                return function(e) {
-                    var i = function(t) {
+            e.fixEvent = function (t) {
+                return function (e) {
+                    var i = function (t) {
                         return t.stopPropagation || (t.stopPropagation = o),
                         t.preventDefault || (t.preventDefault = n),
                         t.target || (t.target = t.srcElement),
@@ -13367,7 +13619,7 @@
                 }
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(320)
@@ -13381,83 +13633,84 @@
                 var a = document.createElement("div")
                     , s = {};
                 Object.defineProperty(s, "once", {
-                    get: function() {
+                    get: function () {
                         return e.isSupportsOnceOption = !0
                     }
                 }),
                     Object.defineProperty(s, "passive", {
-                        get: function() {
+                        get: function () {
                             return e.isSupportsPassiveOption = !0
                         }
                     }),
                     Object.defineProperty(s, "capture", {
-                        get: function() {
+                        get: function () {
                             return e.isSupportsCaptureOption = !0
                         }
                     }),
                     r.addEventListenerFunction(a, "click", o.noop, s)
             }
-        } catch (t) {}
+        } catch (t) {
+        }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(321)
             , o = i(180);
-        e.hasObjectDefineProperty = function(t) {
+        e.hasObjectDefineProperty = function (t) {
             void 0 === t && (t = window);
             var e = t.Object;
             try {
                 var i = {};
                 return e.defineProperty(i, "sentinel", {}),
-                "sentinel"in i
+                "sentinel" in i
             } catch (t) {
                 return !1
             }
         }
             ,
-            e.hasObjectCreate = function(t) {
+            e.hasObjectCreate = function (t) {
                 void 0 === t && (t = window);
                 var e = t.Object;
                 return Boolean(e.create)
             }
             ,
-            e.hasAtoB = function(t) {
+            e.hasAtoB = function (t) {
                 return void 0 === t && (t = window),
                     Boolean(t.atob)
             }
             ,
-            e.hasES5ArrayMethods = function(t) {
+            e.hasES5ArrayMethods = function (t) {
                 void 0 === t && (t = window);
                 var e = t.Array
                     , i = e.prototype;
                 return Boolean(i && i.every && i.filter && i.forEach && i.indexOf && i.lastIndexOf && i.map && i.some && i.reduce && i.reduceRight && e.isArray)
             }
             ,
-            e.hasES5FunctionMethods = function(t) {
+            e.hasES5FunctionMethods = function (t) {
                 void 0 === t && (t = window);
                 var e = t.Function.prototype;
                 return Boolean(e && e.bind)
             }
             ,
-            e.hasES5ObjectMethods = function(t) {
+            e.hasES5ObjectMethods = function (t) {
                 void 0 === t && (t = window);
                 var e = t.Object;
                 return Boolean(e.keys && e.create && e.getPrototypeOf && e.getOwnPropertyNames && e.isSealed && e.isFrozen && e.isExtensible && e.getOwnPropertyDescriptor && e.defineProperty && e.defineProperties && e.seal && e.freeze && e.preventExtensions)
             }
             ,
-            e.hasES5StringMethods = function(t) {
+            e.hasES5StringMethods = function (t) {
                 void 0 === t && (t = window);
                 var e = t.String;
                 return Boolean(e.prototype && e.prototype.trim)
             }
             ,
-            e.isES5Supported = function(t) {
+            e.isES5Supported = function (t) {
                 return void 0 === t && (t = window),
                     Boolean(e.hasObjectDefineProperty(t) && e.hasObjectCreate(t) && e.hasAtoB(t) && e.hasES5ArrayMethods(t) && e.hasES5FunctionMethods(t) && e.hasES5ObjectMethods(t) && e.hasES5StringMethods(t))
             }
         ;
-        var r = function(t, e) {
+        var r = function (t, e) {
             void 0 === e && (e = window);
             for (var i = n.getTestDiv(e), r = 0, a = o.cssPrefixes; r < a.length; r++) {
                 var s = a[r];
@@ -13467,62 +13720,63 @@
             }
             return !1
         };
-        e.isFlexboxCurrentSupported = function(t) {
+        e.isFlexboxCurrentSupported = function (t) {
             return void 0 === t && (t = window),
                 r("flex", t)
         }
             ,
-            e.isFlexbox2011Supported = function(t) {
+            e.isFlexbox2011Supported = function (t) {
                 return void 0 === t && (t = window),
                     r("flexbox", t)
             }
             ,
-            e.isFlexbox2009Supported = function(t) {
+            e.isFlexbox2009Supported = function (t) {
                 return void 0 === t && (t = window),
                     r("box", t)
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n;
         e.__esModule = !0,
-            e.getTestDiv = function(t) {
+            e.getTestDiv = function (t) {
                 return void 0 === t && (t = window),
                 n || (n = t.document.createElement("div")),
                     n
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(46);
         e.global = window,
             e.Ya = n.getYa(),
-            e.getVersion = function() {
+            e.getVersion = function () {
                 return e.Ya.version
             }
             ,
-            e.getExp = function() {
+            e.getExp = function () {
                 return e.Ya.exp
             }
             ,
-            e.getConfirmUrl = function() {
+            e.getConfirmUrl = function () {
                 return e.Ya.confirmUrl
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n, o = i(324);
-        n = function(t, e, i) {
+        n = function (t, e, i) {
             i(o(t, e))
         }
             ,
             t.exports = n
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n = i(70);
         var o = "yandex.ru yandex.com yandex.ua yandex.by yandex.kz yandex.com.tr";
+
         function r(t, e) {
             var i, n, o, r = [], s = 0;
             r.push("t" + (e.title || "")),
@@ -13535,12 +13789,13 @@
             }
             return r.join("\n") + "\n"
         }
+
         function a(t) {
             var e = ""
                 , i = [];
             if (!t)
                 return e;
-            for (i.push(t); i.length > 0; ) {
+            for (i.push(t); i.length > 0;) {
                 if (3 !== (t = i.pop()).nodeType) {
                     if (t.childNodes && t.childNodes.length > 0)
                         for (var n = t.childNodes, o = n.length - 1; o >= 0; o--) {
@@ -13552,11 +13807,12 @@
             }
             return e.replace(/\s+/g, " ")
         }
-        t.exports = function(t, e) {
+
+        t.exports = function (t, e) {
             var i = window
                 , a = i.document;
             if (e) {
-                var s = function(t) {
+                var s = function (t) {
                     return t.location.host
                 }(a);
                 if ((" " + o + " ").indexOf(" " + s + " ") > -1)
@@ -13566,19 +13822,22 @@
             if ("t\n" === l && i.top !== i.self)
                 try {
                     l = r(t, i.parent.document)
-                } catch (t) {}
+                } catch (t) {
+                }
             return n.encode(l, t)
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n = i(57).isPercent
             , o = i(71)
             , r = 1;
+
         function a(t) {
             this._threshold = t || r
         }
-        a.prototype.log = function(t) {
+
+        a.prototype.log = function (t) {
             var e = {};
             if (e[t.version] = {},
                 e[t.version][t.namespace] = {},
@@ -13587,7 +13846,7 @@
                 o.getCounter({
                     id: 42093449,
                     disableCookies: !0
-                }, function(t) {
+                }, function (t) {
                     t.hit(window.location.href, {
                         params: e
                     })
@@ -13597,9 +13856,9 @@
             ,
             t.exports = a
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
-        var n = Object.assign || function(t) {
+        var n = Object.assign || function (t) {
                 for (var e, i = 1, n = arguments.length; i < n; i++)
                     for (var o in e = arguments[i])
                         Object.prototype.hasOwnProperty.call(e, o) && (t[o] = e[o]);
@@ -13618,12 +13877,12 @@
             version: r.getCodeVersion().toString(),
             sid: l.getSessionId(),
             onBeforeSend: void 0,
-            createTagsFunction: function(t) {
+            createTagsFunction: function (t) {
                 return t.values
             }
         })
             , c = o.isPercent(1);
-        e.sendToSolomon = function(t, e) {
+        e.sendToSolomon = function (t, e) {
             void 0 === e && (e = !1);
             try {
                 (c || e) && p.values({
@@ -13636,12 +13895,13 @@
                         browser: a.getBrowserName()
                     }, t.labels)
                 })
-            } catch (t) {}
+            } catch (t) {
+            }
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
-        var n = Object.assign || function(t) {
+        var n = Object.assign || function (t) {
                 for (var e, i = 1, n = arguments.length; i < n; i++)
                     for (var o in e = arguments[i])
                         Object.prototype.hasOwnProperty.call(e, o) && (t[o] = e[o]);
@@ -13665,7 +13925,7 @@
             prefix: "I",
             re: /\/avatars\.mds\.yandex\.net\//i
         }];
-        !function(t) {
+        !function (t) {
             t["Wait"] = "010",
                 t["DNS"] = "020",
                 t["TCP"] = "030",
@@ -13673,22 +13933,23 @@
                 t["TTFB"] = "050",
                 t["Response"] = "060"
         }(o = e.NetworkPerformanceTiming || (e.NetworkPerformanceTiming = {})),
-            e.getJsTracerObject = function() {
+            e.getJsTracerObject = function () {
                 var t = u();
                 return t ? {
                     tags: t
                 } : null
             }
         ;
-        var d = function(t, e) {
+        var d = function (t, e) {
             return e > 0 && t > 0 ? Math.round(t - e) : 0
         };
+
         function u() {
-            var t = function() {
+            var t = function () {
                 try {
                     var t = window.performance.getEntries();
-                    return l.filter(t, function(t) {
-                        return a.some(c, function(e) {
+                    return l.filter(t, function (t) {
+                        return a.some(c, function (e) {
                             return e.re.test(t.name)
                         })
                     })
@@ -13697,16 +13958,16 @@
                 }
             }()
                 , e = {};
-            return s.forEach(t, function(t) {
+            return s.forEach(t, function (t) {
                 if (t && -1 === r.indexOf(p, t)) {
                     p.push(t);
                     var i = (a = t.name,
                         l = "",
-                        s.forEach(c, function(t) {
+                        s.forEach(c, function (t) {
                             t.re.test(a) && (l = t.prefix)
                         }),
                         l);
-                    e = n({}, e, function(t, e) {
+                    e = n({}, e, function (t, e) {
                         var i = {}
                             , n = d(t["domainLookupStart"], t["startTime"]);
                         n && (i[e + "_" + o.Wait] = n);
@@ -13727,19 +13988,21 @@
             }),
                 Object.keys(e).length ? e : null
         }
+
         e.getNewEntries = u
     }
-    , function(t, e, i) {
-        (function(e) {
-                !function(i, n) {
+    , function (t, e, i) {
+        (function (e) {
+                !function (i, n) {
                     function o(t, e) {
                         return (typeof e)[0] == t
                     }
+
                     function r(t, e) {
                         return (e = function s(l, p, c, d, u, m) {
                                 if (d = s.q,
                                 l != o)
-                                    return r(function(t, e) {
+                                    return r(function (t, e) {
                                         d.push({
                                             p: this,
                                             r: t,
@@ -13762,17 +14025,18 @@
                                         p(t)
                                     }
                                 else
-                                    for (e = function(e, n) {
-                                        return o(i, e = p ? e : n) ? r(function(t, i) {
+                                    for (e = function (e, n) {
+                                        return o(i, e = p ? e : n) ? r(function (t, i) {
                                             a(this, t, i, c, e)
                                         }) : t
                                     }
                                              ,
-                                             m = 0; m < d.length; )
+                                             m = 0; m < d.length;)
                                         u = d[m++],
                                             o(i, l = u[p]) ? a(u.p, u.r, u.j, c, l) : (p ? u.r : u.j)(c);
+
                                 function f(t) {
-                                    return function(e) {
+                                    return function (e) {
                                         u && (u = 0,
                                             s(o, t, e))
                                     }
@@ -13780,21 +14044,22 @@
                             }
                         ).q = [],
                             t.call(t = {
-                                then: function(t, i) {
+                                then: function (t, i) {
                                     return e(t, i)
                                 },
-                                catch: function(t) {
+                                catch: function (t) {
                                     return e(0, t)
                                 }
-                            }, function(t) {
+                            }, function (t) {
                                 e(o, 1, t)
-                            }, function(t) {
+                            }, function (t) {
                                 e(o, 0, t)
                             }),
                             t
                     }
+
                     function a(t, r, a, s, l) {
-                        e(function() {
+                        e(function () {
                             try {
                                 s = l(s),
                                     l = s && o(n, s) | o(i, s) && s.then,
@@ -13804,25 +14069,27 @@
                             }
                         })
                     }
+
                     function s(t) {
-                        return r(function(e) {
+                        return r(function (e) {
                             e(t)
                         })
                     }
+
                     t.exports = r,
                         r.resolve = s,
-                        r.reject = function(t) {
-                            return r(function(e, i) {
+                        r.reject = function (t) {
+                            return r(function (e, i) {
                                 i(t)
                             })
                         }
                         ,
-                        r.all = function(t) {
-                            return r(function(e, i, n, o) {
+                        r.all = function (t) {
+                            return r(function (e, i, n, o) {
                                 o = [],
                                     n = t.length || e(o),
-                                    t.map(function(t, r) {
-                                        s(t).then(function(t) {
+                                    t.map(function (t, r) {
+                                        s(t).then(function (t) {
                                             o[r] = t,
                                             --n || e(o)
                                         }, i)
@@ -13830,9 +14097,9 @@
                             })
                         }
                         ,
-                        r.race = function(t) {
-                            return r(function(e, i) {
-                                t.map(function(t) {
+                        r.race = function (t) {
+                            return r(function (e, i) {
+                                t.map(function (t) {
                                     s(t).then(e, i)
                                 })
                             })
@@ -13841,45 +14108,48 @@
             }
         ).call(e, i(329).setImmediate)
     }
-    , function(t, e, i) {
-        (function(t) {
+    , function (t, e, i) {
+        (function (t) {
                 var n = Function.prototype.apply;
+
                 function o(t, e) {
                     this._id = t,
                         this._clearFn = e
                 }
-                e.setTimeout = function() {
-                    return new o(n.call(setTimeout, window, arguments),clearTimeout)
+
+                e.setTimeout = function () {
+                    return new o(n.call(setTimeout, window, arguments), clearTimeout)
                 }
                     ,
-                    e.setInterval = function() {
-                        return new o(n.call(setInterval, window, arguments),clearInterval)
+                    e.setInterval = function () {
+                        return new o(n.call(setInterval, window, arguments), clearInterval)
                     }
                     ,
-                    e.clearTimeout = e.clearInterval = function(t) {
+                    e.clearTimeout = e.clearInterval = function (t) {
                         t && t.close()
                     }
                     ,
-                    o.prototype.unref = o.prototype.ref = function() {}
+                    o.prototype.unref = o.prototype.ref = function () {
+                    }
                     ,
-                    o.prototype.close = function() {
+                    o.prototype.close = function () {
                         this._clearFn.call(window, this._id)
                     }
                     ,
-                    e.enroll = function(t, e) {
+                    e.enroll = function (t, e) {
                         clearTimeout(t._idleTimeoutId),
                             t._idleTimeout = e
                     }
                     ,
-                    e.unenroll = function(t) {
+                    e.unenroll = function (t) {
                         clearTimeout(t._idleTimeoutId),
                             t._idleTimeout = -1
                     }
                     ,
-                    e._unrefActive = e.active = function(t) {
+                    e._unrefActive = e.active = function (t) {
                         clearTimeout(t._idleTimeoutId);
                         var e = t._idleTimeout;
-                        e >= 0 && (t._idleTimeoutId = setTimeout(function() {
+                        e >= 0 && (t._idleTimeoutId = setTimeout(function () {
                             t._onTimeout && t._onTimeout()
                         }, e))
                     }
@@ -13890,23 +14160,24 @@
             }
         ).call(e, i(156))
     }
-    , function(t, e, i) {
-        (function(t, e) {
-                !function(t, i) {
+    , function (t, e, i) {
+        (function (t, e) {
+                !function (t, i) {
                     "use strict";
                     if (!t.setImmediate) {
-                        var n, o, r, a, s, l = 1, p = {}, c = !1, d = t.document, u = Object.getPrototypeOf && Object.getPrototypeOf(t);
+                        var n, o, r, a, s, l = 1, p = {}, c = !1, d = t.document,
+                            u = Object.getPrototypeOf && Object.getPrototypeOf(t);
                         u = u && u.setTimeout ? u : t,
-                            "[object process]" === {}.toString.call(t.process) ? n = function(t) {
-                                    e.nextTick(function() {
+                            "[object process]" === {}.toString.call(t.process) ? n = function (t) {
+                                    e.nextTick(function () {
                                         f(t)
                                     })
                                 }
-                                : !function() {
+                                : !function () {
                                     if (t.postMessage && !t.importScripts) {
                                         var e = !0
                                             , i = t.onmessage;
-                                        return t.onmessage = function() {
+                                        return t.onmessage = function () {
                                             e = !1
                                         }
                                             ,
@@ -13914,17 +14185,17 @@
                                             t.onmessage = i,
                                             e
                                     }
-                                }() ? t.MessageChannel ? ((r = new MessageChannel).port1.onmessage = function(t) {
+                                }() ? t.MessageChannel ? ((r = new MessageChannel).port1.onmessage = function (t) {
                                         f(t.data)
                                     }
                                         ,
-                                        n = function(t) {
+                                        n = function (t) {
                                             r.port2.postMessage(t)
                                         }
-                                ) : d && "onreadystatechange"in d.createElement("script") ? (o = d.documentElement,
-                                        n = function(t) {
+                                ) : d && "onreadystatechange" in d.createElement("script") ? (o = d.documentElement,
+                                        n = function (t) {
                                             var e = d.createElement("script");
-                                            e.onreadystatechange = function() {
+                                            e.onreadystatechange = function () {
                                                 f(t),
                                                     e.onreadystatechange = null,
                                                     o.removeChild(e),
@@ -13933,20 +14204,20 @@
                                                 ,
                                                 o.appendChild(e)
                                         }
-                                ) : n = function(t) {
+                                ) : n = function (t) {
                                     setTimeout(f, 0, t)
                                 }
                                 : (a = "setImmediate$" + Math.random() + "$",
-                                        s = function(e) {
+                                        s = function (e) {
                                             e.source === t && "string" == typeof e.data && 0 === e.data.indexOf(a) && f(+e.data.slice(a.length))
                                         }
                                         ,
                                         t.addEventListener ? t.addEventListener("message", s, !1) : t.attachEvent("onmessage", s),
-                                        n = function(e) {
+                                        n = function (e) {
                                             t.postMessage(a + e, "*")
                                         }
                                 ),
-                            u.setImmediate = function(t) {
+                            u.setImmediate = function (t) {
                                 "function" != typeof t && (t = new Function("" + t));
                                 for (var e = new Array(arguments.length - 1), i = 0; i < e.length; i++)
                                     e[i] = arguments[i + 1];
@@ -13961,9 +14232,11 @@
                             ,
                             u.clearImmediate = m
                     }
+
                     function m(t) {
                         delete p[t]
                     }
+
                     function f(t) {
                         if (c)
                             setTimeout(f, 0, t);
@@ -13972,7 +14245,7 @@
                             if (e) {
                                 c = !0;
                                 try {
-                                    !function(t) {
+                                    !function (t) {
                                         var e = t.callback
                                             , n = t.args;
                                         switch (n.length) {
@@ -14003,14 +14276,17 @@
             }
         ).call(e, i(156), i(331))
     }
-    , function(t, e) {
+    , function (t, e) {
         var i, n, o = t.exports = {};
+
         function r() {
             throw new Error("setTimeout has not been defined")
         }
+
         function a() {
             throw new Error("clearTimeout has not been defined")
         }
+
         function s(t) {
             if (i === setTimeout)
                 return setTimeout(t, 0);
@@ -14027,7 +14303,8 @@
                 }
             }
         }
-        !function() {
+
+        !function () {
             try {
                 i = "function" == typeof setTimeout ? setTimeout : r
             } catch (t) {
@@ -14040,25 +14317,27 @@
             }
         }();
         var l, p = [], c = !1, d = -1;
+
         function u() {
             c && l && (c = !1,
                 l.length ? p = l.concat(p) : d = -1,
             p.length && m())
         }
+
         function m() {
             if (!c) {
                 var t = s(u);
                 c = !0;
-                for (var e = p.length; e; ) {
+                for (var e = p.length; e;) {
                     for (l = p,
-                             p = []; ++d < e; )
+                             p = []; ++d < e;)
                         l && l[d].run();
                     d = -1,
                         e = p.length
                 }
                 l = null,
                     c = !1,
-                    function(t) {
+                    function (t) {
                         if (n === clearTimeout)
                             return clearTimeout(t);
                         if ((n === a || !n) && clearTimeout)
@@ -14076,21 +14355,25 @@
                     }(t)
             }
         }
+
         function f(t, e) {
             this.fun = t,
                 this.array = e
         }
-        function h() {}
-        o.nextTick = function(t) {
+
+        function h() {
+        }
+
+        o.nextTick = function (t) {
             var e = new Array(arguments.length - 1);
             if (arguments.length > 1)
                 for (var i = 1; i < arguments.length; i++)
                     e[i - 1] = arguments[i];
-            p.push(new f(t,e)),
+            p.push(new f(t, e)),
             1 !== p.length || c || s(m)
         }
             ,
-            f.prototype.run = function() {
+            f.prototype.run = function () {
                 this.fun.apply(null, this.array)
             }
             ,
@@ -14109,34 +14392,35 @@
             o.emit = h,
             o.prependListener = h,
             o.prependOnceListener = h,
-            o.listeners = function(t) {
+            o.listeners = function (t) {
                 return []
             }
             ,
-            o.binding = function(t) {
+            o.binding = function (t) {
                 throw new Error("process.binding is not supported")
             }
             ,
-            o.cwd = function() {
+            o.cwd = function () {
                 return "/"
             }
             ,
-            o.chdir = function(t) {
+            o.chdir = function (t) {
                 throw new Error("process.chdir is not supported")
             }
             ,
-            o.umask = function() {
+            o.umask = function () {
                 return 0
             }
     }
-    , function(t, e) {
-        Function.prototype.bind || (Function.prototype.bind = function(t) {
+    , function (t, e) {
+        Function.prototype.bind || (Function.prototype.bind = function (t) {
                 if ("function" != typeof this)
                     throw new TypeError("Function.prototype.bind - what is trying to be bound is not callable");
                 var e = Array.prototype.slice.call(arguments, 1)
                     , i = this
-                    , n = function() {}
-                    , o = function() {
+                    , n = function () {
+                }
+                    , o = function () {
                     return i.apply(this instanceof n && t ? this : t, e.concat(Array.prototype.slice.call(arguments)))
                 };
                 return n.prototype = this.prototype,
@@ -14145,9 +14429,9 @@
             }
         )
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
-        Array.prototype.filter || (Array.prototype.filter = function(t) {
+        Array.prototype.filter || (Array.prototype.filter = function (t) {
                 if (void 0 === this || null === this)
                     throw new TypeError;
                 var e = Object(this)
@@ -14163,114 +14447,117 @@
             }
         )
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n = i(2)
             , o = i(97)
             , r = i(0)
             , a = i(198);
+
         function s(t, e) {
             if (!e || !n.isString(t))
                 return t;
             var i = [];
-            return n.each(t.split(" "), function(t) {
+            return n.each(t.split(" "), function (t) {
                 t && i.push(o.getAlias(t))
             }),
                 i.join(" ")
         }
+
         r.components.element = r.createComponent(a, {
-            onInit: function() {
+            onInit: function () {
                 return this.encodeStyles = this.getContextComponent().encodeStyles,
                     this.__base()
             },
-            setAttr: function(t, e) {
-                this.encodeStyles && ("id" === t ? e = o.getAlias(e) : "style" !== t && n.isString(e) && e.indexOf("#") > -1 && (e = e.replace(/#((\w|[-_])+)/, function(t, e) {
+            setAttr: function (t, e) {
+                this.encodeStyles && ("id" === t ? e = o.getAlias(e) : "style" !== t && n.isString(e) && e.indexOf("#") > -1 && (e = e.replace(/#((\w|[-_])+)/, function (t, e) {
                     return "#" + o.getAlias(e)
                 }))),
                     this.__base(t, e)
             },
-            hasClass: function(t) {
+            hasClass: function (t) {
                 return this.__base(s(t, this.encodeStyles))
             },
-            addClass: function(t) {
+            addClass: function (t) {
                 this.__base(s(t, this.encodeStyles))
             },
-            removeClass: function(t) {
+            removeClass: function (t) {
                 this.__base(s(t, this.encodeStyles))
             }
         })
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0,
-            e.clamp = function(t, e, i) {
+            e.clamp = function (t, e, i) {
                 return t > i ? i : t < e ? e : t
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0,
             e.HEX_SYMBOLS = "0123456789abcdef"
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0,
-            function(t) {
+            function (t) {
                 t[t["RED"] = 0] = "RED",
                     t[t["GREEN"] = 1] = "GREEN",
                     t[t["BLUE"] = 2] = "BLUE",
                     t[t["ALPHA"] = 3] = "ALPHA"
             }(e.RGBA_MODEL || (e.RGBA_MODEL = {})),
-            function(t) {
+            function (t) {
                 t[t["HUE"] = 0] = "HUE",
                     t[t["SATURATION"] = 1] = "SATURATION",
                     t[t["LIGHTNESS"] = 2] = "LIGHTNESS"
             }(e.HSL_MODEL || (e.HSL_MODEL = {})),
-            function(t) {
+            function (t) {
                 t[t["HUE"] = 0] = "HUE",
                     t[t["SATURATION"] = 1] = "SATURATION",
                     t[t["VALUE"] = 2] = "VALUE"
             }(e.HSV_MODEL || (e.HSV_MODEL = {}))
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         t.exports = i(44).forOwn
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         t.exports = i(26).getObjectKeys
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
-        t.exports = function(t) {
-            return t.replace(/[-|_\:]([a-z])/g, function() {
+        t.exports = function (t) {
+            return t.replace(/[-|_\:]([a-z])/g, function () {
                 return arguments[1].toUpperCase()
             })
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n = i(10);
-        t.exports = function(t) {
+        t.exports = function (t) {
             for (var e = {}, i = 0; i < t.length; i++)
                 e[t[i]] = i;
             return n.keys(e)
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n;
         e.__esModule = !0,
-            n = function(t, e) {
+            n = function (t, e) {
                 return e.getElementsByClassName(t)
             }
             ,
             e["default"] = n
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n, o = i(123), r = i(344);
+
         function a(t, e, i) {
             i = i && r.isInShadowDom(i) ? i : o.getHead(window);
             var n = document.createElement("style");
@@ -14280,17 +14567,18 @@
                 n.appendChild(document.createTextNode(t)),
                 n
         }
+
         e.appendStyle = n,
             e.appendStyle = n = a
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(190).hasShadowDomSupport();
-        e.isInShadowDom = function(t) {
+        e.isInShadowDom = function (t) {
             if (!n)
                 return !1;
-            for (var e = t; e; ) {
+            for (var e = t; e;) {
                 if (e instanceof window.ShadowRoot)
                     return !0;
                 e = e.parentNode
@@ -14298,54 +14586,61 @@
             return !1
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
-        var n, o = i(9), r = i(21), a = i(191), s = i(45), l = i(125).NS, p = "classList"in document.documentElement, c = (n = document.createElement("p"),
-        !!p && (n.classList.add("c1", "c2"),
-        !!n.classList.contains("c2") && (n.classList.toggle("c3", !1),
-            !n.classList.contains("c3")))), d = function() {
-            var t = document.createElement("p");
-            return !!p && (t.classList.toggle("a", !1),
-                !t.classList.contains("a"))
-        }(), u = function(t) {
-            return t.split(" ").filter(function(t) {
-                return Boolean(t)
-            })
-        };
+        var n, o = i(9), r = i(21), a = i(191), s = i(45), l = i(125).NS, p = "classList" in document.documentElement,
+            c = (n = document.createElement("p"),
+            !!p && (n.classList.add("c1", "c2"),
+            !!n.classList.contains("c2") && (n.classList.toggle("c3", !1),
+                !n.classList.contains("c3")))), d = function () {
+                var t = document.createElement("p");
+                return !!p && (t.classList.toggle("a", !1),
+                    !t.classList.contains("a"))
+            }(), u = function (t) {
+                return t.split(" ").filter(function (t) {
+                    return Boolean(t)
+                })
+            };
+
         function m(t) {
             return s.isString(t.className) ? t.className : t.namespaceURI === l.svg && t.getAttribute("class") || ""
         }
+
         function f(t, e) {
             s.isString(t.className) ? t.className = e : t.namespaceURI === l.svg && t.setAttributeNS("", "class", e)
         }
+
         function h(t, e) {
             for (var i = u(e), n = 0; n < i.length; n++)
                 if (!t.classList.contains(i[n]))
                     return !1;
             return !0
         }
+
         function g(t, e) {
             for (var i = " " + m(t) + " ", n = e.split(" "), o = 0; o < n.length; o++)
                 if (n[o] && -1 === i.indexOf(" " + n[o] + " "))
                     return !1;
             return !0
         }
+
         function _(t, e) {
             void 0 === e && (e = ""),
-                0 !== t.className.length ? t.classList ? y(t, e) : function(t, e) {
+                0 !== t.className.length ? t.classList ? y(t, e) : function (t, e) {
                     var i = m(t).split(" ").concat(e.split(" "));
-                    i = a.unique(o.filter(i, function(t) {
+                    i = a.unique(o.filter(i, function (t) {
                         return "" !== t
                     })),
                         f(t, i.join(" "))
                 }(t, e) : t.className = e
         }
-        e.clearClasses = function(t) {
+
+        e.clearClasses = function (t) {
             s.isString(t.className) ? t.className = "" : t.namespaceURI === l.svg && t.setAttributeNS("", "class", "")
         }
             ,
-            e.hasClass = function(t, e) {
+            e.hasClass = function (t, e) {
                 return void 0 === e && (e = ""),
                     t.classList ? h(t, e) : g(t, e)
             }
@@ -14353,39 +14648,39 @@
             e._hasClass = h,
             e._fallbackHasClass = g,
             e.addClass = _;
-        var y = c ? function(t, e) {
+        var y = c ? function (t, e) {
                 var i, n = u(e);
                 (i = t.classList).add.apply(i, n)
             }
-            : function(t, e) {
+            : function (t, e) {
                 for (var i = u(e), n = 0; n < i.length; n++)
                     t.classList.add(i[n])
             }
         ;
-        e.removeClass = function(t, e) {
+        e.removeClass = function (t, e) {
             return void 0 === e && (e = ""),
-                t.classList ? b(t, e) : function(t, e) {
+                t.classList ? b(t, e) : function (t, e) {
                     for (var i = m(t).split(" "), n = e.split(" "), o = [], a = 0; a < i.length; a++)
                         i[a] && -1 === r.indexOf(n, i[a]) && o.push(i[a]);
                     f(t, o.join(" "))
                 }(t, e)
         }
         ;
-        var b = c ? function(t, e) {
+        var b = c ? function (t, e) {
                 var i, n = u(e);
                 (i = t.classList).remove.apply(i, n)
             }
-            : function(t, e) {
+            : function (t, e) {
                 for (var i = u(e), n = 0; n < i.length; n++)
                     t.classList.remove(i[n])
             }
         ;
-        var v = function(t, i, n) {
+        var v = function (t, i, n) {
             void 0 === i && (i = ""),
             void 0 === n && (n = !e.hasClass(t, i)),
                 n ? _(t, i) : e.removeClass(t, i)
         };
-        e.toggleClass = d ? function(t, e, i) {
+        e.toggleClass = d ? function (t, e, i) {
                 if (void 0 === e && (e = ""),
                     t.classList)
                     for (var n = u(e), o = 0; o < n.length; o++)
@@ -14395,22 +14690,23 @@
             }
             : v
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0,
-            e.innerHtml = function(t, e) {
+            e.innerHtml = function (t, e) {
                 t.innerHTML = e
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(348);
-        e.getAnimationFrameFunctions = function(t) {
-            var e = t.requestAnimationFrame || t.mozRequestAnimationFrame || t.webkitRequestAnimationFrame || t.msRequestAnimationFrame || function(e) {
+        e.getAnimationFrameFunctions = function (t) {
+            var e = t.requestAnimationFrame || t.mozRequestAnimationFrame || t.webkitRequestAnimationFrame || t.msRequestAnimationFrame || function (e) {
                     return t.setTimeout(e, n.DEFAULT_ANIMATION_TIMEOUT)
                 }
-                , i = t.cancelAnimationFrame || t.mozCancelAnimationFrame || t.webkitCancelAnimationFrame || t.msCancelAnimationFrame || function(e) {
+                ,
+                i = t.cancelAnimationFrame || t.mozCancelAnimationFrame || t.webkitCancelAnimationFrame || t.msCancelAnimationFrame || function (e) {
                     return t.clearTimeout(e)
                 }
             ;
@@ -14420,33 +14716,33 @@
             }
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0,
             e.DEFAULT_ANIMATION_TIMEOUT = 1e3 / 60
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n = i(34)
             , o = i(350)
             , r = i(3);
         t.exports = n.augment(Object, {
-            constructor: function(t) {
+            constructor: function (t) {
                 this.delay = t || 0
             },
-            onConfirmed: function(t) {
+            onConfirmed: function (t) {
                 return this._onConfirmed = t,
                     this
             },
-            listen: function(t) {
-                return n.each(t, function(t) {
-                    var e, i = o.on(t, "mouseover", function() {
-                        e || (e = r.setProtectedTimeout(function() {
+            listen: function (t) {
+                return n.each(t, function (t) {
+                    var e, i = o.on(t, "mouseover", function () {
+                        e || (e = r.setProtectedTimeout(function () {
                             this._onConfirmed(t.getAttribute("data-id")),
                                 o.un(i),
                                 o.un(n)
                         }, this.delay, this))
-                    }, this), n = o.on(t, "mouseleave", function() {
+                    }, this), n = o.on(t, "mouseleave", function () {
                         clearTimeout(e),
                             e = null
                     })
@@ -14455,11 +14751,11 @@
             }
         })
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         t.exports = i(41)
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n = i(352)
             , o = i(357)
@@ -14476,53 +14772,56 @@
         };
         t.exports = l
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n = i(353)
             , o = i(10)
             , r = i(49);
-        t.exports = function() {
+        t.exports = function () {
             var t = arguments;
             return o.isArray(t[0]) || o.isFunction(t[0]) || (t = [r, t[0], t[1]]),
                 n.apply(this, t)
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         t.exports = i(354)
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         var n;
-        !function(o) {
-            var r = function() {
+        !function (o) {
+            var r = function () {
                 return "_"
             }
                 .toString().indexOf("_") > -1
-                , a = function() {}
+                , a = function () {
+            }
                 , s = Object.prototype.hasOwnProperty
-                , l = Object.create || function(t) {
-                var e = function() {};
+                , l = Object.create || function (t) {
+                var e = function () {
+                };
                 return e.prototype = t,
                     new e
             }
-                , p = Object.keys || function(t) {
+                , p = Object.keys || function (t) {
                 var e = [];
                 for (var i in t)
                     s.call(t, i) && e.push(i);
                 return e
             }
-                , c = function(t, e) {
+                , c = function (t, e) {
                 for (var i in e)
                     s.call(e, i) && (t[i] = e[i]);
                 return t
             }
                 , d = Object.prototype.toString
-                , u = Array.isArray || function(t) {
+                , u = Array.isArray || function (t) {
                 return "[object Array]" === d.call(t)
             }
-                , m = function(t) {
+                , m = function (t) {
                 return "[object Function]" === d.call(t)
             }
-                , f = function() {}
+                , f = function () {
+            }
                 , h = !0
                 , g = {
                 toString: ""
@@ -14530,18 +14829,19 @@
             for (var _ in g)
                 g.hasOwnProperty(_) && (h = !1);
             var y = h ? ["toString", "valueOf"] : null;
+
             function b(t, e, i) {
-                for (var n, o, a = function(t) {
+                for (var n, o, a = function (t) {
                     var e = p(t);
                     if (h)
-                        for (var i, n = 0; i = y[n++]; )
+                        for (var i, n = 0; i = y[n++];)
                             t.hasOwnProperty(i) && e.push(i);
                     return e
-                }(i), s = 0, l = a.length; s < l; )
+                }(i), s = 0, l = a.length; s < l;)
                     "__self" !== (n = a[s++]) && (o = i[n],
-                        !m(o) || o.prototype && o.prototype.__self || r && !(o.toString().indexOf(".__base") > -1) ? e[n] = o : e[n] = function(i, n) {
+                        !m(o) || o.prototype && o.prototype.__self || r && !(o.toString().indexOf(".__base") > -1) ? e[n] = o : e[n] = function (i, n) {
                             var o = t[i] ? t[i] : "__constructor" === i ? e.__self.__parent : f
-                                , r = function() {
+                                , r = function () {
                                 var t = this.__base;
                                 this.__base = r.__base;
                                 var e = n.apply(this, arguments);
@@ -14552,11 +14852,13 @@
                                 r
                         }(n, o))
             }
+
             function v(t, e) {
-                for (var i, n = 1; i = t[n++]; )
+                for (var i, n = 1; i = t[n++];)
                     e ? m(i) ? x.self(e, i.prototype, i) : x.self(e, i) : e = m(i) ? x(t[0], i.prototype, i) : x(t[0], i);
                 return e || t[0]
             }
+
             function x() {
                 var t = arguments
                     , e = u(t[0])
@@ -14564,13 +14866,14 @@
                     , n = i ? e ? v(t[0]) : t[0] : a
                     , o = t[i ? 1 : 0] || {}
                     , r = t[i ? 2 : 1]
-                    , s = o.__constructor || i && n.prototype && n.prototype.__constructor ? function() {
+                    , s = o.__constructor || i && n.prototype && n.prototype.__constructor ? function () {
                         return this.__constructor.apply(this, arguments)
                     }
-                    : i ? function() {
+                    : i ? function () {
                             return n.apply(this, arguments)
                         }
-                        : function() {}
+                        : function () {
+                        }
                 ;
                 if (!i)
                     return s.prototype = o,
@@ -14585,7 +14888,8 @@
                 r && b(n, s, r),
                     s
             }
-            x.self = function() {
+
+            x.self = function () {
                 var t = arguments
                     , e = u(t[0]) ? v(t[0], t[0][0]) : t[0]
                     , i = t[1]
@@ -14597,34 +14901,34 @@
             }
             ;
             t.exports = x,
-            "object" == typeof modules && "function" == typeof modules.define && modules.define("inherit", function(t) {
+            "object" == typeof modules && "function" == typeof modules.define && modules.define("inherit", function (t) {
                 t(x)
             }),
-            void 0 === (n = function(t, e, i) {
+            void 0 === (n = function (t, e, i) {
                 i.exports = x
             }
                 .call(e, i, e, t)) || (t.exports = n),
             !1 && (o.inherit = x)
         }(this)
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n = i(10)
             , o = n.augment(Object, {
-            constructor: function() {
+            constructor: function () {
                 this._reset()
             },
-            _reset: function() {
+            _reset: function () {
                 this._dequeueRunning = !1,
                     this._queue = []
             },
-            push: function(t, e) {
+            push: function (t, e) {
                 n.isFunction(t) && this._queue.push(n.bind(t, e))
             },
-            executeAll: function() {
+            executeAll: function () {
                 if (!this._dequeueRunning) {
                     this._dequeueRunning = !0;
-                    for (var t = 0; this._queue[t]; )
+                    for (var t = 0; this._queue[t];)
                         this._queue[t](),
                             t++;
                     this._reset()
@@ -14633,7 +14937,7 @@
         });
         t.exports = o
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         t.exports = {
             INITIAL: "INITIAL",
@@ -14642,11 +14946,12 @@
             DESTROYED: "DESTROYED"
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n = i(197)
             , o = i(128)
             , r = i(10);
+
         function a(t, e) {
             if (r.isArray(t))
                 for (var i = 0, n = t.length; i < n; i++)
@@ -14654,20 +14959,21 @@
             else
                 e.push(t)
         }
-        t.exports = function(t, e) {
+
+        t.exports = function (t, e) {
             return "string" == typeof t && (e || (e = {}),
                 e.tag = t,
                 t = n.element),
-                new t(e,function(t, e) {
+                new t(e, function (t, e) {
                     for (var i = [], n = e || 0, o = t.length; n < o; n++) {
                         var r = t[n];
                         a(r, i)
                     }
                     return i
-                }(arguments, 2),o.getCurrentContextComponent())
+                }(arguments, 2), o.getCurrentContextComponent())
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n = i(14)
             , o = i(68)
@@ -14675,7 +14981,7 @@
             , a = i(50)
             , s = i(72)
             , l = i(77)
-            , p = function(t) {
+            , p = function (t) {
             if (t && t.__esModule)
                 return t;
             var e = {};
@@ -14703,6 +15009,7 @@
             , I = i(15)
             , S = i(36)
             , A = d.OverlayManager.METHOD_RENDER_OVERLAY;
+
         function O() {
             this.queue = new h.Queue,
                 this._isSecondBundleLoading = !1,
@@ -14717,8 +15024,9 @@
                 this._refreshFlag = !1,
                 this._initAdRefreshment()
         }
+
         O.prototype = {
-            render: function(t, e) {
+            render: function (t, e) {
                 (0,
                     s.saveBundleType)(t.bundle),
                     (0,
@@ -14774,9 +15082,9 @@
                                 this._renderDirect(t, e);
                             break;
                         case "Y":
-                            i(598)(function(i) {
+                            i(598)(function (i) {
                                 i.render(t, e)
-                            }, function(t) {
+                            }, function (t) {
                                 return u.logger.error(t, "Distribution bundle loading error")
                             });
                             break;
@@ -14787,12 +15095,12 @@
                 } else
                     this._sendNoElementMessage("advmanager.render", o.pageId, t.blockId)
             },
-            _shouldReloadAds: function() {
+            _shouldReloadAds: function () {
                 return !(0,
                     s.checkBundleType)(s.bundleTypes.SSP) && !(0,
                     s.checkBundleType)(s.bundleTypes.mobileSdk)
             },
-            getBid: function(t, e, i) {
+            getBid: function (t, e, i) {
                 (0,
                     s.saveBundleType)(t.bundle),
                     t.uniqueId = (0,
@@ -14815,7 +15123,7 @@
                         i(new Error("advmanager.getBid: release previous bid with releaseBid method first"));
                     else {
                         var a = this._getBidCallback(e, i)
-                            , p = g.protect("advmanager.getBid: reload error", function() {
+                            , p = g.protect("advmanager.getBid: reload error", function () {
                             this._resetBid(),
                                 i(new Error("advmanager.getBid: data cannot reload yet, wait until reloadTimeout counts down"))
                         }, this);
@@ -14834,17 +15142,17 @@
                 } else
                     this._sendNoElementMessage("advmanager.getBid", n.pageId, t.blockId)
             },
-            _loadSecondBundle: function() {
+            _loadSecondBundle: function () {
                 var t = this;
                 this._isSecondBundleLoading || (this._isSecondBundleLoading = !0,
-                    k(function() {
+                    k(function () {
                         t._isSecondBundleLoaded = !0
-                    }, function(t) {
+                    }, function (t) {
                         return u.logger.error(t, "Second bundle loading error")
                     }))
             },
-            _getBidCallback: function(t, e) {
-                return g.protect("advmanager.bidCallback", function(i) {
+            _getBidCallback: function (t, e) {
+                return g.protect("advmanager.bidCallback", function (i) {
                     if (this._bidPending = !1,
                         this._bidRenderParams = i,
                         i.dataFromParams)
@@ -14863,13 +15171,13 @@
                             e(new Error("No data in the host's answer"))
                 }, this)
             },
-            _sendNoElementMessage: function(t, e, i) {
+            _sendNoElementMessage: function (t, e, i) {
                 u.logger.warn(new Error("No element with renderTo id (" + e + ")(" + i + ")"), t)
             },
-            _sendExternalResourceError: function(t) {
+            _sendExternalResourceError: function (t) {
                 u.logger.error(new Error(t.srcElement.tagName + ": " + t.target.src), "ExternalResourceError")
             },
-            releaseBid: function(t, e, i) {
+            releaseBid: function (t, e, i) {
                 if (e = g.isolate(e),
                     i = g.isolate(i),
                     this._bidRenderParams)
@@ -14900,22 +15208,23 @@
                 else
                     i(new Error("advmanager.releaseBid: no bid to release, call advmanager.getBid first"))
             },
-            _wrapOnRenderInStorage: function(t, e) {
-                this._settingsStorage[S.getRenderId(t)].args[0].onRender = function() {
+            _wrapOnRenderInStorage: function (t, e) {
+                this._settingsStorage[S.getRenderId(t)].args[0].onRender = function () {
                     var t = Array.prototype.slice.call(arguments);
-                    t[0] && (t[0].confirmVisibility = function() {}
+                    t[0] && (t[0].confirmVisibility = function () {
+                    }
                         ,
                         t[0].refresh = !0),
                         e.apply(null, t)
                 }
             },
-            _wrapOnRenderMethod: function(t, e) {
+            _wrapOnRenderMethod: function (t, e) {
                 var i = this;
-                t.onRender = function() {
+                t.onRender = function () {
                     var n = Array.prototype.slice.call(arguments);
                     if (n[0] && n[0].confirmVisibility) {
                         var o = n[0].confirmVisibility;
-                        n[0].confirmVisibility = function() {
+                        n[0].confirmVisibility = function () {
                             i._changeSaved(S.getRenderId(t), "canRerender", !0),
                                 o()
                         }
@@ -14923,67 +15232,67 @@
                     e.apply(null, n)
                 }
             },
-            _resetBid: function() {
+            _resetBid: function () {
                 this._bidPending = !1,
                     this._bidRenderParams = null
             },
-            _renderInternal: function(t, e) {
+            _renderInternal: function (t, e) {
                 var i = this
                     , n = S.prepareInternalConfig(t);
-                v === C ? this._renderRealInternal(v, n, e) : v(function(t) {
+                v === C ? this._renderRealInternal(v, n, e) : v(function (t) {
                     return i._renderRealInternal(t, n, e)
-                }, function(t) {
+                }, function (t) {
                     return u.logger.error(t, "Internal bundle loading error")
                 })
             },
-            _renderRealInternal: function(t, e, i) {
+            _renderRealInternal: function (t, e, i) {
                 this._internal || (this._internal = new t(this.queue)),
                     this._internal.render(e, i)
             },
-            _renderInpage: function(t, e) {
+            _renderInpage: function (t, e) {
                 var i = this
                     , n = S.prepareInpageConfig(t);
                 (0,
                     s.saveBundleType)(n.bundle),
-                    x === C ? this._renderRealInPage(x, n, e) : x(function(t) {
+                    x === C ? this._renderRealInPage(x, n, e) : x(function (t) {
                         return i._renderRealInPage(t, n, e)
-                    }, function(t) {
+                    }, function (t) {
                         return u.logger.error(t, "InPage bundle loading error")
                     })
             },
-            _renderRealInPage: function(t, e, i) {
+            _renderRealInPage: function (t, e, i) {
                 this._inpage || (this._inpage = new t),
                     this._inpage.render(e.params, e.inpage, i)
             },
-            _renderFullscreen: function(t, e) {
+            _renderFullscreen: function (t, e) {
                 var i = this
                     , n = S.prepareFullscreenConfig(t);
-                w === C ? this._renderRealFullscreen(w, n, t, e) : w(function(o) {
+                w === C ? this._renderRealFullscreen(w, n, t, e) : w(function (o) {
                     return i._renderRealFullscreen(o, n, t, e)
-                }, function(t) {
+                }, function (t) {
                     return u.logger.error(t, "Fullscreen bundle loading error")
                 })
             },
-            _renderRealFullscreen: function(t, e, i, n) {
+            _renderRealFullscreen: function (t, e, i, n) {
                 this._fullscreen || (this._fullscreen = new t),
                     this._fullscreen.render(e, i, n)
             },
-            _renderRtb: function(t, e) {
+            _renderRtb: function (t, e) {
                 var i = S.prepareRtbConfig(t);
                 t.oldDirectSettings && (i.oldDirectSettings = t.oldDirectSettings),
                     this._rtb.render(i, e, this._refreshFlag)
             },
-            getRtb: function() {
+            getRtb: function () {
                 return this._rtb
             },
-            _renderDirect: function(t, e) {
+            _renderDirect: function (t, e) {
                 var i = S.prepareDirectConfig(t);
                 this._direct.render(i, null, e, this._refreshFlag)
             },
-            _logUnknown: function(t) {
+            _logUnknown: function (t) {
                 u.logger.warn(new Error("Unknown block type. blockId: " + t), "advmanager.UnknownBlockType")
             },
-            _renderOldDirect: function(t, e, i, n, o) {
+            _renderOldDirect: function (t, e, i, n, o) {
                 if (h.dom.querySelector("#" + e)) {
                     n = g.isolate(n);
                     var r = S.prepareOldDirectConfig(t, e, i);
@@ -15004,17 +15313,17 @@
                 } else
                     this._sendNoElementMessage("advmanager.renderDirect", t, "")
             },
-            renderOverlay: function(t, e) {
+            renderOverlay: function (t, e) {
                 this._overlay || (this._overlay = new d.OverlayManager(this)),
                     this._overlay.render(t, e)
             },
-            renderDirect: function(t, e, i, n) {
+            renderDirect: function (t, e, i, n) {
                 var o = this;
                 (0,
                     s.saveBundleType)(i.bundle),
                     (0,
                         s.saveBundleType)(i.data);
-                var l = function(r) {
+                var l = function (r) {
                     o._renderOldDirect(t, e, i, n, r)
                 };
                 (0,
@@ -15023,7 +15332,7 @@
                         a.generateImpId)(e),
                     renderTo: e,
                     oldDirectSettings: i,
-                    oldDirectCallback: function(t) {
+                    oldDirectCallback: function (t) {
                         i.data = t,
                             (0,
                                 r.disableRtbInOldDirectExperiment)(),
@@ -15032,40 +15341,40 @@
                 }), n) : l(!1),
                     this._loadSecondBundle()
             },
-            save: function(t, e, i, n) {
+            save: function (t, e, i, n) {
                 this.addToSaved(t, {
                     args: e,
                     method: i,
                     canRerender: n
                 })
             },
-            addToSaved: function(t, e) {
+            addToSaved: function (t, e) {
                 var i = this._settingsStorage[t] || {};
                 this._settingsStorage[t] = I({}, i, e)
             },
-            getSaved: function(t) {
+            getSaved: function (t) {
                 return I({}, this._settingsStorage[t])
             },
-            _changeSaved: function(t, e, i) {
+            _changeSaved: function (t, e, i) {
                 this._settingsStorage[t][e] = i
             },
-            _isMobileSdk: function(t) {
+            _isMobileSdk: function (t) {
                 return t.data && t.data.common && 1 === Number(t.data.common.isMobileSdk)
             },
-            _prepareArgs: function(t, e) {
+            _prepareArgs: function (t, e) {
                 var i = t[e];
                 return this._shouldReloadAds() && (0,
                     c.isObject)(i) && i.isDataRefreshed && delete i.data,
                     t
             },
-            _renderAgain: function() {
+            _renderAgain: function () {
                 if (!(0,
                     s.checkBundleType)(s.bundleTypes.SSP)) {
                     Ya.Context._asyncModeOn = !0;
                     var t = this._getBlocksToRerender();
                     this._lastTimeOfRefresh = +new Date,
                         this._refreshFlag = !0,
-                        h.each(t, function(t) {
+                        h.each(t, function (t) {
                             var e = this.getSaved(t);
                             if (e.canRerender)
                                 switch (e.method) {
@@ -15082,45 +15391,45 @@
                         this._refreshFlag = !1
                 }
             },
-            _initAdRefreshment: function() {
+            _initAdRefreshment: function () {
                 var t = this
                     , e = Date.now();
                 (0,
-                    l.on)(document, p.changeEventName, function() {
+                    l.on)(document, p.changeEventName, function () {
                     p.isHidden() ? (e = Date.now(),
                     t._refreshTime && clearTimeout(t._refreshId)) : (Date.now() - e > t._hiddenTime && t._renderAgain(),
                         t._autoRerender())
                 }),
                     this._autoRerender()
             },
-            _autoRerender: function() {
-                this._refreshTime && (this._refreshId = g.setProtectedTimeout(function() {
+            _autoRerender: function () {
+                this._refreshTime && (this._refreshId = g.setProtectedTimeout(function () {
                     this._renderAgain(),
                         this._autoRerender()
                 }, this._refreshTime, this))
             },
-            _getBlocksToRerender: function() {
+            _getBlocksToRerender: function () {
                 return this._direct.getBlocksToRerender().concat(this._rtb.getBlocksToRerender())
             },
-            getSkipToken: function(t) {
+            getSkipToken: function (t) {
                 return this._rtb.getSkipToken(t)
             },
-            getAdSessionId: function() {
+            getAdSessionId: function () {
                 return (0,
                     o.getSessionId)()
             }
         },
             t.exports = O
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(21);
-        e.includes = function(t, e) {
+        e.includes = function (t, e) {
             return -1 !== n.indexOf(t, e)
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(0)
@@ -15138,28 +15447,29 @@
             , h = i(36)
             , g = f[0] + "-" + f[1]
             , _ = u.SMALL
-            , y = function() {
+            , y = function () {
             function t(t) {
                 this.advManager = t
             }
-            return t.hasCookie = function() {
+
+            return t.hasCookie = function () {
                 return "1" === o.getCookie(document, "48df")
             }
                 ,
-                t.setCookie = function() {
+                t.setCookie = function () {
                     var t = new Date(Date.now() + 432e5);
                     o.setCookie(document, "48df", "1", {
                         expires: t
                     })
                 }
                 ,
-                t.prototype.onClickAdtune = function() {
+                t.prototype.onClickAdtune = function () {
                     var e = []
                         , i = this.advManager.getRtb().getBlock(this.blockId);
                     if (i) {
                         var n = i.dataSource.getLanguage();
                         if (i.getUsedAdvs)
-                            s(i.getUsedAdvs(), function(t) {
+                            s(i.getUsedAdvs(), function (t) {
                                 t && t.abuseUrl && e.push({
                                     url: t.abuseUrl,
                                     lang: n
@@ -15175,15 +15485,15 @@
                         t.setCookie(),
                             i.destructor(),
                             this.container.destroy(),
-                            s(e, function(t) {
-                                return r.chooseOption(g, t.url, _, function() {
+                            s(e, function (t) {
+                                return r.chooseOption(g, t.url, _, function () {
                                     return m(t.lang)[_]
                                 })
                             })
                     }
                 }
                 ,
-                t.prototype.render = function(e, i) {
+                t.prototype.render = function (e, i) {
                     var o = this
                         , r = l.querySelector("#" + e.renderTo);
                     if (r && !t.hasCookie() && !this.container && (p.isIOS || p.isAndroid)) {
@@ -15192,7 +15502,7 @@
                                 blockId: e.blockId,
                                 onTop: Boolean(e.onTop),
                                 doubleHeight: Boolean(e.doubleHeight),
-                                onClickAdtune: function() {
+                                onClickAdtune: function () {
                                     return o.onClickAdtune()
                                 }
                             }),
@@ -15201,7 +15511,7 @@
                             , d = s.onRender;
                         s.renderTo = this.container.getBody().id,
                             s.isInOverlay = !0,
-                            s.onRender = function(t) {
+                            s.onRender = function (t) {
                                 for (var e = [], i = 1; i < arguments.length; i++)
                                     e[i - 1] = arguments[i];
                                 return t.product === c.Products.DIRECT && o.container.setWidthModifier("_width_full"),
@@ -15215,7 +15525,7 @@
                     }
                 }
                 ,
-                t.prototype.reRender = function(t, e) {
+                t.prototype.reRender = function (t, e) {
                     this.advManager.getRtb().render(t, e, !1)
                 }
                 ,
@@ -15224,27 +15534,28 @@
         }();
         e.OverlayManager = y
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0,
             e.METRIKA_COUNTER = 22596877
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n, o = (n = Object.setPrototypeOf || {
                     __proto__: []
-                }instanceof Array && function(t, e) {
+                } instanceof Array && function (t, e) {
                     t.__proto__ = e
                 }
-                || function(t, e) {
+                || function (t, e) {
                     for (var i in e)
                         e.hasOwnProperty(i) && (t[i] = e[i])
                 }
                 ,
-                function(t, e) {
+                function (t, e) {
                     function i() {
                         this.constructor = t
                     }
+
                     n(t, e),
                         t.prototype = null === e ? Object.create(e) : (i.prototype = e.prototype,
                             new i)
@@ -15259,21 +15570,22 @@
             , c = i(102)
             , d = i(161)
             , u = i(370)
-            , m = function(t) {
+            , m = function (t) {
             function e() {
                 var e = null !== t && t.apply(this, arguments) || this;
                 return e.encodeStyles = !0,
                     e
             }
+
             return o(e, t),
-                e.prototype.onInit = function() {
+                e.prototype.onInit = function () {
                     this.encodeStyles = !0,
                         this.name = "yap-overlay-container",
                         this.id = "yap-overlay-container-" + this.props.blockId,
                         t.prototype.onInit.call(this)
                 }
                 ,
-                e.prototype.afterRender = function() {
+                e.prototype.afterRender = function () {
                     this.main = this.getResourceById("main"),
                         this.bodyElement = this.getResourceById("body").getElement(),
                         this.adtuneElement = this.getResourceById("adtune").getElement(),
@@ -15289,20 +15601,20 @@
                         }, this.props.nonce)
                 }
                 ,
-                e.prototype.onUnmount = function() {
+                e.prototype.onUnmount = function () {
                     this.styleElement && (l.dom.remove(this.styleElement),
                         this.styleElement = null)
                 }
                 ,
-                e.prototype.setWidthModifier = function(t) {
+                e.prototype.setWidthModifier = function (t) {
                     this.main.addClass(this.b_(t))
                 }
                 ,
-                e.prototype.getBody = function() {
+                e.prototype.getBody = function () {
                     return this.bodyElement
                 }
                 ,
-                e.prototype.reportAdRender = function(t) {
+                e.prototype.reportAdRender = function (t) {
                     var e = r.create(c, {
                         mod: "_round-flat",
                         language: t,
@@ -15313,7 +15625,7 @@
                     r.renderToNode(this.adtuneElement, e)
                 }
                 ,
-                e.prototype._render = function(t, e) {
+                e.prototype._render = function (t, e) {
                     var i = e.onTop ? "_pos_top" : "_pos_bottom"
                         , n = e.doubleHeight ? "_height_double" : "_height_normal";
                     return r.create("yatag", {
@@ -15336,17 +15648,17 @@
         }(a);
         e.OverlayContainer = m
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
-        var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(t) {
+        var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (t) {
                 return typeof t
             }
-            : function(t) {
+            : function (t) {
                 return t && "function" == typeof Symbol && t.constructor === Symbol && t !== Symbol.prototype ? "symbol" : typeof t
             }
             , o = i(10)
             , r = {
-            on: function(t, e, i) {
+            on: function (t, e, i) {
                 return l(this, "on", t, [e, i]) && e ? (this._events || (this._events = {}),
                     (this._events[t] || (this._events[t] = [])).push({
                         callback: e,
@@ -15355,18 +15667,18 @@
                     }),
                     this) : this
             },
-            once: function(t, e, i) {
+            once: function (t, e, i) {
                 if (!l(this, "once", t, [e, i]) || !e)
                     return this;
                 var n = this
-                    , r = o.once(function() {
+                    , r = o.once(function () {
                     n.off(t, r),
                         e.apply(this, arguments)
                 });
                 return r._callback = e,
                     this.on(t, r, i)
             },
-            off: function(t, e, i) {
+            off: function (t, e, i) {
                 var n, r, a, s, p, c, d, u;
                 if (!this._events || !l(this, "off", t, [e, i]))
                     return this;
@@ -15387,7 +15699,7 @@
                     }
                 return this
             },
-            trigger: function(t) {
+            trigger: function (t) {
                 if (!this._events)
                     return this;
                 var e = a.call(arguments, 1);
@@ -15399,7 +15711,7 @@
                 n && p(n, arguments),
                     this
             },
-            stopListening: function(t, e, i) {
+            stopListening: function (t, e, i) {
                 var o = this._listeners;
                 if (!o)
                     return this;
@@ -15414,7 +15726,7 @@
         }
             , a = Array.prototype.slice
             , s = /\s+/
-            , l = function(t, e, i, o) {
+            , l = function (t, e, i, o) {
             if (!i)
                 return !0;
             if ("object" === (void 0 === i ? "undefined" : n(i))) {
@@ -15429,35 +15741,35 @@
             }
             return !0
         }
-            , p = function(t, e) {
+            , p = function (t, e) {
             var i, n = -1, o = t.length, r = e[0], a = e[1], s = e[2];
             switch (e.length) {
                 case 0:
-                    for (; ++n < o; )
+                    for (; ++n < o;)
                         (i = t[n]).callback.call(i.ctx);
                     return;
                 case 1:
-                    for (; ++n < o; )
+                    for (; ++n < o;)
                         (i = t[n]).callback.call(i.ctx, r);
                     return;
                 case 2:
-                    for (; ++n < o; )
+                    for (; ++n < o;)
                         (i = t[n]).callback.call(i.ctx, r, a);
                     return;
                 case 3:
-                    for (; ++n < o; )
+                    for (; ++n < o;)
                         (i = t[n]).callback.call(i.ctx, r, a, s);
                     return;
                 default:
-                    for (; ++n < o; )
+                    for (; ++n < o;)
                         (i = t[n]).callback.apply(i.ctx, e)
             }
         };
         o.forOwn({
             listenTo: "on",
             listenToOnce: "once"
-        }, function(t, e) {
-            r[e] = function(e, i, r) {
+        }, function (t, e) {
+            r[e] = function (e, i, r) {
                 return (this._listeners || (this._listeners = {}))[e._listenerId || (e._listenerId = o.genRnd("l"))] = e,
                 "object" === (void 0 === i ? "undefined" : n(i)) && (r = this),
                     e[t](i, r, this),
@@ -15466,22 +15778,23 @@
         }),
             t.exports = r
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n, o = (n = Object.setPrototypeOf || {
                     __proto__: []
-                }instanceof Array && function(t, e) {
+                } instanceof Array && function (t, e) {
                     t.__proto__ = e
                 }
-                || function(t, e) {
+                || function (t, e) {
                     for (var i in e)
                         e.hasOwnProperty(i) && (t[i] = e[i])
                 }
                 ,
-                function(t, e) {
+                function (t, e) {
                     function i() {
                         this.constructor = t
                     }
+
                     n(t, e),
                         t.prototype = null === e ? Object.create(e) : (i.prototype = e.prototype,
                             new i)
@@ -15495,34 +15808,36 @@
             , p = i(4)
             , c = i(101)
             , d = i(4).support.touch
-            , u = function(t) {
+            , u = function (t) {
             function e() {
                 return null !== t && t.apply(this, arguments) || this
             }
+
             return o(e, t),
-                e.prototype.onInit = function() {
+                e.prototype.onInit = function () {
                     this.name = "yap-adtune",
                         t.prototype.onInit.call(this)
                 }
                 ,
-                e.prototype.onMount = function() {}
+                e.prototype.onMount = function () {
+                }
                 ,
-                e.prototype.shouldRender = function() {
+                e.prototype.shouldRender = function () {
                     return !this.props.hide
                 }
                 ,
-                e.getClasses = function() {
+                e.getClasses = function () {
                     return "_touch_" + d
                 }
                 ,
-                e.prototype.onClick = function(t) {
+                e.prototype.onClick = function (t) {
                     t.stopPropagation(),
                         t.preventDefault(),
                         this.toggleAdtune("click:adtune"),
                         c.onAdtuneClick()
                 }
                 ,
-                e.prototype.toggleAdtune = function(t) {
+                e.prototype.toggleAdtune = function (t) {
                     var e = {
                         advId: this.props.adId
                     };
@@ -15530,7 +15845,7 @@
                     this.props.onClick && this.props.onClick(e)
                 }
                 ,
-                e.prototype.renderButton = function() {
+                e.prototype.renderButton = function () {
                     return this.props.isLabel ? r.create("yatag", {
                         class: this.b_("__label"),
                         onClick: this.onClick
@@ -15546,7 +15861,7 @@
                     }))
                 }
                 ,
-                e.prototype._render = function() {
+                e.prototype._render = function () {
                     var t = p.isIE || p.isEdge ? "__is-ie" : ""
                         , i = this.b_(this.props["class"], this.b_(), this.props.mod, e.getClasses(), t);
                     return r.create("yatag", {
@@ -15554,11 +15869,11 @@
                     }, this.renderButton())
                 }
                 ,
-                e.prototype.enableTooltip = function() {
+                e.prototype.enableTooltip = function () {
                     this.rootComponent.removeClass(this.b_("_open"))
                 }
                 ,
-                e.prototype.disableTooltip = function() {
+                e.prototype.disableTooltip = function () {
                     this.rootComponent.addClass(this.b_("_open"))
                 }
                 ,
@@ -15566,12 +15881,12 @@
         }(a);
         e.Adtune = u
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
-        var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(t) {
+        var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (t) {
                 return typeof t
             }
-            : function(t) {
+            : function (t) {
                 return t && "function" == typeof Symbol && t.constructor === Symbol && t !== Symbol.prototype ? "symbol" : typeof t
             }
         ;
@@ -15580,7 +15895,7 @@
             , r = i(18)
             , a = i(27)
             , s = [1, 2, 6];
-        e["default"] = function(t, e, i, l) {
+        e["default"] = function (t, e, i, l) {
             var p;
             if (!i)
                 throw new Error('I18n: \u043f\u0435\u0440\u0435\u0434\u0430\u043d \u043d\u0435\u043f\u043e\u0434\u0434\u0435\u0440\u0436\u0438\u0432\u0430\u0435\u043c\u044b\u0439 \u043a\u043b\u044e\u0447 \u044f\u0437\u044b\u043a\u0430: "' + i + '"');
@@ -15597,7 +15912,7 @@
             return c
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(367)
@@ -15676,10 +15991,10 @@
                 6: "Kur"
             },
             REVIEW: {
-                1: function(t) {
+                1: function (t) {
                     return t.count + " " + n["default"](t.count, ["\u043e\u0442\u0437\u044b\u0432", "\u043e\u0442\u0437\u044b\u0432\u0430", "\u043e\u0442\u0437\u044b\u0432\u043e\u0432"])
                 },
-                2: function(t) {
+                2: function (t) {
                     return t.count + " " + n["default"](t.count, ["review", "reviews", "reviews"])
                 }
             },
@@ -15694,20 +16009,20 @@
                 6: "Daha fazla bilgi"
             },
             SMART_FLIGHTS_DOMAIN: {
-                1: function(t) {
+                1: function (t) {
                     return "\u0430\u0432\u0438\u0430\u0431\u0438\u043b\u0435\u0442\u044b" + (t.domain ? " \u043d\u0430 " + t.domain : "")
                 },
                 2: "air tickets",
                 6: "u\xe7u\u015flar"
             },
             SMART_FLIGHTS_BODY: {
-                1: function(t) {
+                1: function (t) {
                     return "\u0410\u0432\u0438\u0430\u043f\u0435\u0440\u0435\u043b\u0435\u0442 \u043e\u0442 " + t.price
                 },
-                2: function(t) {
+                2: function (t) {
                     return "Flight from " + t.price
                 },
-                6: function(t) {
+                6: function (t) {
                     return t.price + " ba\u015flayan fiyatlarla u\xe7u\u015flar"
                 }
             },
@@ -15722,46 +16037,46 @@
                 6: "Otel rezervasyonu yap"
             },
             SMART_HOTELS_BODY: {
-                1: function(t) {
+                1: function (t) {
                     return "\u041d\u043e\u043c\u0435\u0440 \u0432 " + t.stars + "-\u0437\u0432\u0435\u0437\u0434\u043e\u0447\u043d\u043e\u043c \u043e\u0442\u0435\u043b\u0435 \u0437\u0430 " + t.price + " \u0432 \u0441\u0443\u0442\u043a\u0438"
                 },
-                2: function(t) {
+                2: function (t) {
                     return "Room in a " + t.stars + "-star hotel for " + t.price + " per night"
                 },
-                6: function(t) {
+                6: function (t) {
                     return "G\xfcnl\xfck " + t.price + " fiyat\u0131na " + t.stars + " y\u0131ld\u0131zl\u0131 otelde oda"
                 }
             },
             SMART_RETAIL_BODY: {
-                1: function(t) {
+                1: function (t) {
                     return "\u041a\u0443\u043f\u0438\u0442\u044c \u0437\u0430 " + t.price
                 },
-                2: function(t) {
+                2: function (t) {
                     return "Buy for " + t.price
                 },
-                6: function(t) {
+                6: function (t) {
                     return t.price + " fiyat\u0131na sat\u0131n al"
                 }
             },
             SMART_MARKET_BODY: {
-                1: function(t) {
+                1: function (t) {
                     return "\u0412\u044b\u0431\u0438\u0440\u0430\u0439\u0442\u0435 \u043e\u0442 " + t.price
                 },
-                2: function(t) {
+                2: function (t) {
                     return "Buy for " + t.price
                 },
-                6: function(t) {
+                6: function (t) {
                     return t.price + " fiyat\u0131na sat\u0131n al"
                 }
             },
             SMART_AUTO_BODY: {
-                1: function(t) {
+                1: function (t) {
                     return t.price + ". \u0423\u0437\u043d\u0430\u0442\u044c \u043f\u043e\u0434\u0440\u043e\u0431\u043d\u0435\u0435"
                 },
-                2: function(t) {
+                2: function (t) {
                     return t.price + ". Find out more"
                 },
-                6: function(t) {
+                6: function (t) {
                     return t.price + ". Daha fazla bilgi"
                 }
             },
@@ -15809,10 +16124,10 @@
         };
         e["default"] = o
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0,
-            e["default"] = function(t, e) {
+            e["default"] = function (t, e) {
                 if ("number" != typeof t)
                     throw new Error("I18n: \u0414\u043b\u044f \u043e\u043f\u0440\u0435\u0434\u0435\u043b\u0435\u043d\u0438\u044f \u0444\u043e\u0440\u043c\u044b \u0441\u0443\u0449\u0435\u0441\u0442\u0432\u0438\u0442\u0435\u043b\u044c\u043d\u043e\u0433\u043e \u043d\u0435 \u043f\u0435\u0440\u0435\u0434\u0430\u043d\u043e \u0447\u0438\u0441\u043b\u043e");
                 var i = t % 100
@@ -15820,22 +16135,23 @@
                 return i > 10 && i < 20 ? e[2] : n > 1 && n < 5 ? e[1] : 1 === n ? e[0] : e[2]
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n, o = (n = Object.setPrototypeOf || {
                     __proto__: []
-                }instanceof Array && function(t, e) {
+                } instanceof Array && function (t, e) {
                     t.__proto__ = e
                 }
-                || function(t, e) {
+                || function (t, e) {
                     for (var i in e)
                         e.hasOwnProperty(i) && (t[i] = e[i])
                 }
                 ,
-                function(t, e) {
+                function (t, e) {
                     function i() {
                         this.constructor = t
                     }
+
                     n(t, e),
                         t.prototype = null === e ? Object.create(e) : (i.prototype = e.prototype,
                             new i)
@@ -15853,28 +16169,29 @@
             L: 9,
             XXL: 14
         }
-            , d = function(t) {
+            , d = function (t) {
             function e() {
                 return null !== t && t.apply(this, arguments) || this
             }
+
             return o(e, t),
-                e.prototype.onInit = function() {
+                e.prototype.onInit = function () {
                     this.name = "yap-adtune-icon",
                         t.prototype.onInit.call(this),
                         this.iconSizes = c,
                         this.iconSize = this.getIconSize()
                 }
                 ,
-                e.prototype.getSizeMod = function() {
+                e.prototype.getSizeMod = function () {
                     var t = this.props.size;
                     return t && t in this.iconSizes ? t : "M"
                 }
                 ,
-                e.prototype.getIconSize = function() {
+                e.prototype.getIconSize = function () {
                     return this.iconSizes[this.getSizeMod()]
                 }
                 ,
-                e.prototype.renderIcon = function() {
+                e.prototype.renderIcon = function () {
                     var t = {
                         width: this.iconSize,
                         height: this.iconSize
@@ -15888,11 +16205,11 @@
                     }, s.renderAdtuneCrossIcon(t, this.props.color))
                 }
                 ,
-                e.prototype.getTooltipText = function() {
+                e.prototype.getTooltipText = function () {
                     return p["default"]("HIDE_AD", this.props.language)
                 }
                 ,
-                e.prototype._render = function() {
+                e.prototype._render = function () {
                     var t = this.b_
                         , e = this.props
                         , i = this.getSizeMod().toLowerCase()
@@ -15912,22 +16229,23 @@
         }(a);
         e.AdtuneIcon = d
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n, o = (n = Object.setPrototypeOf || {
                     __proto__: []
-                }instanceof Array && function(t, e) {
+                } instanceof Array && function (t, e) {
                     t.__proto__ = e
                 }
-                || function(t, e) {
+                || function (t, e) {
                     for (var i in e)
                         e.hasOwnProperty(i) && (t[i] = e[i])
                 }
                 ,
-                function(t, e) {
+                function (t, e) {
                     function i() {
                         this.constructor = t
                     }
+
                     n(t, e),
                         t.prototype = null === e ? Object.create(e) : (i.prototype = e.prototype,
                             new i)
@@ -15937,12 +16255,13 @@
         var r = i(0)
             , a = i(1)
             , s = i(55)
-            , l = function(t) {
+            , l = function (t) {
             function e() {
                 return null !== t && t.apply(this, arguments) || this
             }
+
             return o(e, t),
-                e.prototype._render = function() {
+                e.prototype._render = function () {
                     var t = this.props.bemFormatter;
                     return r.create("yatag", {
                         class: t("__tooltip")
@@ -15959,14 +16278,14 @@
         }(a);
         e.Tooltip = l
     }
-    , function(t, e) {
-        t.exports = function(t) {
+    , function (t, e) {
+        t.exports = function (t) {
             var e = [];
             return e.push(".", t.id, " yatag{display:block !important;box-sizing:content-box !important}.", t.id, " .c120073f9{min-width:320px !important;max-width:414px !important;position:fixed !important;left:50% !important;-webkit-transform:translateX(-50%) !important;transform:translateX(-50%) !important;background-color:hsla(0,0%,90%,.85) !important;box-shadow:0 0 20px rgba(0,0,0,.7) !important;font-family:sans-serif !important;z-index:10 !important}.", t.id, " .f289667ac{width:100% !important}.", t.id, " .wa4392dc9{overflow:hidden !important}.", t.id, " .j39bc76f6{position:absolute !important;right:3px !important;z-index:2 !important;-webkit-filter:drop-shadow(0 0 1px rgba(0,0,0,.3)) !important;filter:drop-shadow(0 0 1px rgba(0,0,0,.3)) !important}.", t.id, " .b7f1cd873{height:100px !important}.", t.id, " .u35edefb5{height:50px !important}.", t.id, " .vacac0f3e{top:0 !important}.", t.id, " .vacac0f3e .j39bc76f6{top:3px !important}.", t.id, " .fea5e471a{bottom:0 !important}.", t.id, " .fea5e471a .j39bc76f6{top:-8px !important}"),
                 e.join("")
         }
     }
-    , function(t, e) {
+    , function (t, e) {
         t.exports = [{
             "reason-id": 3,
             "action-id": 2,
@@ -16033,54 +16352,55 @@
             }
         }]
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(373)
-            , o = ["970x250", "300x600", "300x500", "240x600", "1000x120", "160x600", "240x400", "336x280", "300x300", "970x90", "300x250", "728x90", "320x100", "320x50"]
+            ,
+            o = ["970x250", "300x600", "300x500", "240x600", "1000x120", "160x600", "240x400", "336x280", "300x300", "970x90", "300x250", "728x90", "320x100", "320x50"]
             , r = {
-            vertical: {
-                area: 3e4,
-                layout: [1, 9]
-            },
-            newVertical: {
-                area: 3e4,
-                layout: [1, 9]
-            },
-            flat: {
-                area: 3e4,
-                layout: [1, 9]
-            },
-            newHorizontal: {
-                area: 3e4,
-                layout: [4, 1]
-            },
-            horizontal: {
-                area: 3e4,
-                layout: [4, 1]
-            },
-            grid: {
-                area: 3e4,
-                layout: [2, 2]
-            },
-            newGrid: {
-                area: 3e4,
-                layout: [2, 2]
-            },
-            posterVertical: {
-                area: 7e4,
-                layout: [1, 9]
-            },
-            posterHorizontal: {
-                area: 7e4,
-                layout: [4, 1]
-            }
-        };
-        e["default"] = function(t, e, i, a) {
+                vertical: {
+                    area: 3e4,
+                    layout: [1, 9]
+                },
+                newVertical: {
+                    area: 3e4,
+                    layout: [1, 9]
+                },
+                flat: {
+                    area: 3e4,
+                    layout: [1, 9]
+                },
+                newHorizontal: {
+                    area: 3e4,
+                    layout: [4, 1]
+                },
+                horizontal: {
+                    area: 3e4,
+                    layout: [4, 1]
+                },
+                grid: {
+                    area: 3e4,
+                    layout: [2, 2]
+                },
+                newGrid: {
+                    area: 3e4,
+                    layout: [2, 2]
+                },
+                posterVertical: {
+                    area: 7e4,
+                    layout: [1, 9]
+                },
+                posterHorizontal: {
+                    area: 7e4,
+                    layout: [4, 1]
+                }
+            };
+        e["default"] = function (t, e, i, a) {
             return n["default"](o, r, t, e, i, a)
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(33)
@@ -16090,31 +16410,35 @@
             defaultSize: r,
             allSizes: [r]
         };
+
         function s(t) {
             return {
                 defaultSize: t[0],
                 allSizes: t.slice(0)
             }
         }
+
         function l(t, e) {
             var i = [];
-            return n(t, function(t) {
+            return n(t, function (t) {
                 var n = o["default"](t);
                 null !== n && n.width <= e.width && n.height <= e.height && i.push(t)
             }),
                 i.length ? i : [r]
         }
+
         function p(t, e) {
             var i = o["default"](t)
                 , n = o["default"](e);
             return null !== i && null !== n ? i.width * i.height > n.width * n.height ? -1 : 1 : 0
         }
-        e["default"] = function(t, e, i, n, r, c) {
+
+        e["default"] = function (t, e, i, n, r, c) {
             var d = o["default"](i)
                 , u = t.slice(0).sort(p);
-            return null !== d ? s(l(u, d)) : function(t, e) {
+            return null !== d ? s(l(u, d)) : function (t, e) {
                 return t.hasOwnProperty(e)
-            }(e, i) ? (c || (c = function(t, e, i, n) {
+            }(e, i) ? (c || (c = function (t, e, i, n) {
                 var o = t[e]
                     , r = Math.min(o.layout[0], i)
                     , a = Math.min(i / r, o.layout[1]);
@@ -16126,10 +16450,10 @@
                 }))) : a
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0,
-            e["default"] = function(t) {
+            e["default"] = function (t) {
                 try {
                     var e = t.match(/(\d+)x(\d+)/);
                     return e ? {
@@ -16141,9 +16465,9 @@
                 }
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
-        var n = Object.assign || function(t) {
+        var n = Object.assign || function (t) {
             for (var e = 1; e < arguments.length; e++) {
                 var i = arguments[e];
                 for (var n in i)
@@ -16167,11 +16491,13 @@
             , _ = i(13)
             , y = i(386)
             , b = i(72);
+
         function v(t) {
             return t && t.__esModule ? t : {
                 default: t
             }
         }
+
         var x = i(2)
             , w = i(3)
             , k = i(388)
@@ -16179,17 +16505,19 @@
             , I = i(167)
             , S = i(36)
             , A = i(100);
+
         function O(t) {
             this._advManager = t,
                 this._refresh = !1,
                 this._managers = {}
         }
+
         O.prototype = {
-            render: function(t, e, i) {
+            render: function (t, e, i) {
                 (0,
                     g.logRenderLabel)(t.uniqueId, g.BlockRenderSteps.RtbRender),
                 i && (this._refresh = i);
-                var n = w.protect("Rtb.render", function(e) {
+                var n = w.protect("Rtb.render", function (e) {
                     (0,
                         g.logRenderLabel)(t.uniqueId, g.BlockRenderSteps.RtbDataParsed),
                         this.renderByData(e, {})
@@ -16197,10 +16525,10 @@
                     , o = w.protect("Rtb.render", this._renderWithoutReload, this);
                 this._load(t, e, n, o)
             },
-            getBid: function(t, e, i, n) {
+            getBid: function (t, e, i, n) {
                 this._load(t, i, e, n)
             },
-            renderByData: function(t, e) {
+            renderByData: function (t, e) {
                 var i = t.rtbManager
                     , n = t.data
                     , o = t.cfg;
@@ -16213,13 +16541,13 @@
                 i.setData(n),
                     i.render(o, t.altCallback, e)
             },
-            _renderWithoutReload: function(t, e, i) {
+            _renderWithoutReload: function (t, e, i) {
                 t.render(e, i, {})
             },
-            _getManagerKey: function(t) {
+            _getManagerKey: function (t) {
                 return t.blockId + "#" + (t.pageNumber ? t.pageNumber : "")
             },
-            _getManager: function(t) {
+            _getManager: function (t) {
                 var e = S.parseBlockId(t.blockId)
                     , i = this._getManagerKey(t);
                 return "D" === e.product && (0,
@@ -16229,20 +16557,20 @@
                 })),
                     this._managers[i]
             },
-            _load: function(t, e, i, n) {
+            _load: function (t, e, i, n) {
                 var o = this._getManager(t);
                 if (Ya.Context._asyncModeOn)
                     this._loadData(o, t, e, !1, i, n);
                 else {
                     window.yandex_rtb_is_displayed = !0;
-                    this._loadData(o, t, function() {
+                    this._loadData(o, t, function () {
                         window.yandex_rtb_is_displayed = !1,
                             e(new Error("No data in the host's answer"))
                     }, !0, i, n)
                 }
                 I.hitOnce(t.pageId, t.bundle)
             },
-            _loadData: function(t, e, i, d, u, v) {
+            _loadData: function (t, e, i, d, u, v) {
                 var w = this;
                 if (e.data)
                     return (0,
@@ -16264,7 +16592,7 @@
                     , I = new a["default"](k);
                 I.set("ad_no", (0,
                     s.getAdUsageStorage)(e).getCapturedCount());
-                var O = function(a, d) {
+                var O = function (a, d) {
                     (0,
                         g.logRenderLabel)(e.uniqueId, g.BlockRenderSteps.RtbQueueTime);
                     var v = (0,
@@ -16306,7 +16634,7 @@
                             partnerStatId: e.partnerStatId,
                             refresh: w._refresh,
                             rtbInDirect: e.rtbInDirect
-                        }, function(o) {
+                        }, function (o) {
                             (0,
                                 g.logRenderLabel)(e.uniqueId, g.BlockRenderSteps.RtbLoadDone),
                                 h.logger.log({
@@ -16347,50 +16675,50 @@
                 };
                 d || c.isSsSkipToken ? O(A, {
                     isInQueue: !1
-                }) : this._advManager.queue.add(function(t) {
+                }) : this._advManager.queue.add(function (t) {
                     O(t, {
                         isInQueue: !0
                     })
                 })
             },
-            getBlocksToRerender: function() {
+            getBlocksToRerender: function () {
                 var t = [];
-                return x.forOwn(this._managers, function(e) {
+                return x.forOwn(this._managers, function (e) {
                     var i = e.getBlocksToRerender();
                     i.length > 0 && (t = t.concat(i),
                         e.resetTimeout())
                 }),
                     t
             },
-            getBlocks: function() {
+            getBlocks: function () {
                 var t = [];
-                return x.forOwn(this._managers, function(e) {
+                return x.forOwn(this._managers, function (e) {
                     var i = e.getBlocks();
                     i.length > 0 && (t = t.concat(i))
                 }),
                     t
             },
-            getBlock: function(t) {
+            getBlock: function (t) {
                 var e = this.getBlocks();
-                return x.filter(e, function(e) {
+                return x.filter(e, function (e) {
                     return e.blockId === t
                 })[0]
             },
-            clearBlockTimeout: function(t) {
+            clearBlockTimeout: function (t) {
                 this._getManager(t).resetTimeout()
             },
-            getSkipToken: function(t, e) {
+            getSkipToken: function (t, e) {
                 return (0,
                     s.getAdUsageStorage)(t).getSkipToken(t, e && e.getUsedIds())
             },
-            getSkipBanner: function(t, e) {
+            getSkipBanner: function (t, e) {
                 return t.oldDirectSettings ? (0,
                     s.getAdUsageStorage)(t).getSkipBanner(t, e && e.getUsedIds(t.renderTo)) : ""
             },
-            handleAdAbused: function(t, e, i) {
+            handleAdAbused: function (t, e, i) {
                 var n = this;
                 (0,
-                    d.shouldSlideUp)(e, i) && t.slideUp(function() {
+                    d.shouldSlideUp)(e, i) && t.slideUp(function () {
                     var i = e.renderTo
                         , o = e.onHide
                         , r = n._getManagerKey(e);
@@ -16406,20 +16734,20 @@
         },
             t.exports = O
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(23)
             , o = i(377)
             , r = i(126)
             , a = .5
-            , s = function(t) {
+            , s = function (t) {
             return Math.max(0, Math.round(t))
         }
-            , l = function(t) {
+            , l = function (t) {
             return Math.round(t)
         }
-            , p = function() {
+            , p = function () {
             function t(t) {
                 this.MIN_VISIBLE_AREA = a,
                     this.config = {},
@@ -16431,15 +16759,16 @@
                     this.setLayout(),
                     this.setVisible()
             }
-            return t.prototype.set = function(t, e) {
+
+            return t.prototype.set = function (t, e) {
                 this.config[t] = e
             }
                 ,
-                t.prototype.toString = function() {
+                t.prototype.toString = function () {
                     return JSON.stringify(this.config)
                 }
                 ,
-                t.prototype.setLayout = function() {
+                t.prototype.setLayout = function () {
                     var t = o.getWindowScroll();
                     this.set("width", s(this.size.width)),
                         this.set("height", s(this.size.height)),
@@ -16447,7 +16776,7 @@
                         this.set("top", l(this.size.top + t.top))
                 }
                 ,
-                t.prototype.setVisible = function() {
+                t.prototype.setVisible = function () {
                     var t = this.size
                         , e = t.width
                         , i = t.height
@@ -16468,28 +16797,29 @@
         }();
         e.LayoutConfig = p
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0,
-            e.getWindowScroll = function() {
+            e.getWindowScroll = function () {
                 return {
                     left: void 0 === window.pageXOffset ? document.documentElement.scrollLeft : window.pageXOffset,
                     top: void 0 === window.pageYOffset ? document.documentElement.scrollTop : window.pageYOffset
                 }
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
-        var n = function() {
+        var n = function () {
             function t() {
                 this.list = []
             }
-            return t.prototype.add = function(t) {
+
+            return t.prototype.add = function (t) {
                 this.list.push(t)
             }
                 ,
-                t.prototype.remove = function(t) {
+                t.prototype.remove = function (t) {
                     for (var e = 0; e < this.list.length; e++) {
                         var i = this.list[e];
                         if (i.adId === t.adId && i.pageNumber === t.pageNumber && i.renderTo === t.renderTo)
@@ -16497,7 +16827,7 @@
                     }
                 }
                 ,
-                t.prototype.items = function() {
+                t.prototype.items = function () {
                     return this.list
                 }
                 ,
@@ -16505,12 +16835,13 @@
         }();
         e.AdList = n
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(189)
             , o = i(23)
             , r = i(126);
+
         function a(t, e) {
             for (var i = [], n = {}, o = 0, r = t; o < r.length; o++) {
                 var a = r[o];
@@ -16519,28 +16850,29 @@
             }
             return i
         }
-        var s = function(t) {
+
+        var s = function (t) {
             return 0 != (t.top | t.bottom | t.right | t.left)
         };
-        e.getSurroundingAds = function(t, e, i, l) {
-            void 0 === l && (l = function(t, e) {
+        e.getSurroundingAds = function (t, e, i, l) {
+            void 0 === l && (l = function (t, e) {
                     return t === e
                 }
             );
             var p = r.getWindowSize().height * e;
             if (!i)
-                return a(t, function(t) {
+                return a(t, function (t) {
                     return !0
                 });
             var c = n.getElementById(i.renderTo)
                 , d = c && o.getBoundingClientRect(c);
             if (!d || !s(d))
-                return a(t, function(t) {
+                return a(t, function (t) {
                     return l(i.pageNumber, t.pageNumber)
                 });
             var u = d.top - p
                 , m = d.bottom + p;
-            return a(t, function(t) {
+            return a(t, function (t) {
                 if (!l(i.pageNumber, t.pageNumber))
                     return !1;
                 var e = n.getElementById(t.renderTo);
@@ -16551,30 +16883,31 @@
             })
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(9)
             , o = i(16);
-        e.difference = function(t, e) {
-            return n.filter(t, function(t) {
-                return !o.some(e, function(e) {
+        e.difference = function (t, e) {
+            return n.filter(t, function (t) {
+                return !o.some(e, function (e) {
                     return t === e
                 })
             })
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(382)
-            , o = function() {
+            , o = function () {
             function t(t) {
                 this.experiments = [];
                 for (var e = 0; e < t.length; e++)
                     this.experiments.push(new n.Experiment(t[e]))
             }
-            return t.prototype.isCurrentVersion = function(t) {
+
+            return t.prototype.isCurrentVersion = function (t) {
                 for (var e = 0; e < this.experiments.length; e++)
                     if (this.experiments[e].getId() === t)
                         return !0;
@@ -16585,42 +16918,43 @@
         }();
         e.LongExperiment = o
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(57)
-            , o = function() {
+            , o = function () {
             function t(t) {
                 this.coin = this.flipCoin(),
                     this.versions = n.prepare(t),
                     this.defaultVersion = n.findDefault(t)
             }
-            return t.prototype.flipCoin = function() {
+
+            return t.prototype.flipCoin = function () {
                 return Math.random()
             }
                 ,
-                t.prototype.getId = function() {
+                t.prototype.getId = function () {
                     return this.get("id")
                 }
                 ,
-                t.prototype.getExtra = function() {
+                t.prototype.getExtra = function () {
                     return this.get("extra")
                 }
                 ,
-                t.prototype.getDefaultExtra = function() {
+                t.prototype.getDefaultExtra = function () {
                     return this.defaultVersion && this.defaultVersion.extra ? this.defaultVersion.extra : null
                 }
                 ,
-                t.prototype.getDefaultId = function() {
+                t.prototype.getDefaultId = function () {
                     return this.defaultVersion && this.defaultVersion.id ? this.defaultVersion.id : null
                 }
                 ,
-                t.prototype.get = function(t) {
+                t.prototype.get = function (t) {
                     var e = this.choose();
                     return e && e.hasOwnProperty(t) ? e[t] : null
                 }
                 ,
-                t.prototype.choose = function() {
+                t.prototype.choose = function () {
                     for (var t = null, e = 0; e < this.versions.length; e++)
                         if (this.coin < this.versions[e].threshold) {
                             t = this.versions[e];
@@ -16633,64 +16967,67 @@
         }();
         e.Experiment = o
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0,
             e.ignoreHosts = [/mail\.ru/i, /devmail\.ru/i]
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(385);
+
         function o(t, e) {
-            return r(function(t, e) {
+            return r(function (t, e) {
                 return Number(t) & Math.pow(2, e) - 1
             }(t, e).toString(2), e)
         }
+
         function r(t, e) {
             return n.padLeft(t, e, "0")
         }
-        e.joinBits = function(t) {
+
+        e.joinBits = function (t) {
             for (var e = [], i = 0, n = t; i < n.length; i++) {
                 var r = n[i]
                     , a = r[0]
                     , s = o(r[1], a);
                 e.push(s)
             }
-            return function(t) {
+            return function (t) {
                 if (t.length > 53)
                     throw new Error("bitUtils.toDecimal: \u0431\u043e\u043b\u044c\u0448\u0435 53 \u0431\u0438\u0442 \u043d\u0435 \u043f\u043e\u0434\u0434\u0435\u0440\u0436\u0438\u0432\u0430\u0435\u0442\u0441\u044f \u0438\u0437-\u0437\u0430 \u043e\u0433\u0440\u0430\u043d\u0438\u0447\u0435\u043d\u043d\u043e\u0439 \u0442\u043e\u0447\u043d\u043e\u0441\u0442\u0438, \u043d\u043e \u043f\u0435\u0440\u0435\u0434\u0430\u043d\u0430 \u0441\u0442\u0440\u043e\u043a\u0430 \u0434\u043b\u0438\u043d\u043e\u0439 " + t.length + " \u0431\u0438\u0442.");
                 return parseInt(t, 2)
             }(e.reverse().join(""))
         }
             ,
-            e.sliceBits = function(t, e, i) {
+            e.sliceBits = function (t, e, i) {
                 var n = e + i
                     , o = r(t.toString(2), n).substr(-n, i);
                 return parseInt(o, 2)
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0,
-            e.padLeft = function(t, e, i) {
+            e.padLeft = function (t, e, i) {
                 void 0 === i && (i = " ");
                 var n = e - t.length;
                 if (n > 0) {
-                    for (var o = i; o.length < n; )
+                    for (var o = i; o.length < n;)
                         o += o;
                     return (o.length > n ? o.substr(0, n) : o) + t
                 }
                 return t
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(56)
             , o = i(105)
             , r = i(32).querySelector;
-        e.getContainerSize = o.memoize(function(t) {
+        e.getContainerSize = o.memoize(function (t) {
             var e = r("#" + t);
             return e ? n.getElementInnerSize(e) : {
                 width: 0,
@@ -16698,14 +17035,14 @@
             }
         })
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0,
-            e.getStyle = function(t) {
+            e.getStyle = function (t) {
                 return ("function" == typeof window.getComputedStyle ? window.getComputedStyle(t, null) : t.currentStyle) || {}
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n = i(206)
             , o = i(54)
@@ -16725,14 +17062,15 @@
             , y = (i(3),
             i(18))
             , b = i(100);
-        t.exports = function(t) {
-            var e, i, v, x, w, k, C = this, I = null, S = null, A = new d(!1,{
-                onAdAbused: function(t) {
+        t.exports = function (t) {
+            var e, i, v, x, w, k, C = this, I = null, S = null, A = new d(!1, {
+                onAdAbused: function (t) {
                     for (var e = arguments.length, i = Array(e > 1 ? e - 1 : 0), n = 1; n < e; n++)
                         i[n - 1] = arguments[n];
                     T.apply(void 0, i)
                 }
             }), O = null, E = t.onAdAbused;
+
             function T() {
                 if (E && y(E)) {
                     for (var t = arguments.length, e = Array(t), i = 0; i < t; i++)
@@ -16740,7 +17078,8 @@
                     E.apply(void 0, [C].concat(e))
                 }
             }
-            this.setData = function(t) {
+
+            this.setData = function (t) {
                 e = t,
                     i = new Date,
                     w = null,
@@ -16749,28 +17088,28 @@
                     v = e.common && e.common.reloadTimeout ? Number(e.common.reloadTimeout) : h.defaultReloadTimeout
             }
                 ,
-                this.getBlocksToRerender = function() {
+                this.getBlocksToRerender = function () {
                     return x && x.isInViewport ? x.isVisibilityConfirmed() && x.isInViewport() ? [O] : [] : A.getBlocksToRerender()
                 }
                 ,
-                this.getBlocks = function() {
+                this.getBlocks = function () {
                     return x && x.isInViewport ? [x] : A.getBlocks()
                 }
                 ,
-                this.resetTimeout = function() {
+                this.resetTimeout = function () {
                     A && A.resetTimeout(),
                         i = null
                 }
                 ,
-                this.getUsedIds = function(t) {
+                this.getUsedIds = function (t) {
                     return A.getUsedIds(t)
                 }
                 ,
-                this.dataCanReload = function() {
+                this.dataCanReload = function () {
                     return !i || new Date - i > 1e3 * v
                 }
                 ,
-                this.render = function(t, o) {
+                this.render = function (t, o) {
                     var d = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {};
                     (0,
                         s.logRenderLabel)(t.uniqueId, s.BlockRenderSteps.RtbManagerStart),
@@ -16784,7 +17123,7 @@
                             pageId: t.pageId,
                             impId: t.blockImpId
                         }),
-                            function(t, n) {
+                            function (t, n) {
                                 (0,
                                     s.logRenderLabel)(t.uniqueId, s.BlockRenderSteps.RtbManagerBeforeRenderRtb);
                                 var o = c.dom.querySelector("#" + t.renderTo);
@@ -16805,13 +17144,13 @@
                                         p = e.settings[d]
                                     } else
                                         p = {};
-                                    w = new u(e,p,t),
+                                    w = new u(e, p, t),
                                         k = new m({
                                             linkTail: w.getLinkTail(),
                                             viewNotices: w.getViewNotices(),
                                             winNotice: w.getWinNotice()
                                         }),
-                                        w.setAbuseHandler(function(e) {
+                                        w.setAbuseHandler(function (e) {
                                             T(t, e)
                                         })
                                 }
@@ -16837,7 +17176,7 @@
                                     var g = {
                                         lang: x.dataSource.getLanguage(),
                                         product: h.Products.RTB,
-                                        confirmVisibility: function() {
+                                        confirmVisibility: function () {
                                             "manual" === t.checkVisibility && x.confirmVisibility()
                                         }
                                     };
@@ -16858,7 +17197,7 @@
                             pageId: t.pageId,
                             impId: t.blockImpId
                         }),
-                            function(t, i) {
+                            function (t, i) {
                                 (0,
                                     s.logRenderLabel)(t.uniqueId, s.BlockRenderSteps.RtbManagerBeforeRenderDirect),
                                 x && x.destructor();
@@ -16871,7 +17210,7 @@
                                 t.imagesFirst && (o.imagesFirst = !0);
                                 A.render(n, o, b, i),
                                     x = {
-                                        destructor: function() {
+                                        destructor: function () {
                                             e.direct || A.render(n, o)
                                         }
                                     }
@@ -16880,7 +17219,7 @@
                             (o || b)())
                 }
                 ,
-                this.destructor = function() {
+                this.destructor = function () {
                     x && x.destructor && x.destructor(),
                         A.destructor(),
                         A = null,
@@ -16889,22 +17228,22 @@
                         S = null)
                 }
                 ,
-                this.slideUp = function(t) {
+                this.slideUp = function (t) {
                     var e = null;
                     if (x.slideUp)
                         e = x;
                     else if (A) {
                         var i = A.getBlocks();
-                        i.length > 1 && p.logger.warn(new Error("DirectManager returned block count of " + i,"RtbManager::slideUp")),
+                        i.length > 1 && p.logger.warn(new Error("DirectManager returned block count of " + i, "RtbManager::slideUp")),
                             e = i[0]
                     }
-                    e.slideUp && e.slideUp(function() {
+                    e.slideUp && e.slideUp(function () {
                         t()
                     })
                 }
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(83)
@@ -16915,7 +17254,7 @@
             , l = i(394)
             , p = {}
             , c = a.config.encode;
-        e.decode = function(t) {
+        e.decode = function (t) {
             if (l.serverEncodeEnabled(a.config.fn))
                 return a.config.fn.decodeUrl(t, r.base64);
             var e, i = t.slice(-1);
@@ -16924,17 +17263,17 @@
                 s.decode(e)
         }
             ,
-            e.isEncoded = function(t) {
+            e.isEncoded = function (t) {
                 return l.serverEncodeEnabled(a.config.fn) ? a.config.fn.isEncodedUrl(t) : ("" !== c.urlPrefix || "" !== c.seed) && 0 === t.indexOf(c.urlPrefix) && -1 !== t.indexOf(c.seed)
             }
             ,
-            e.encode = function(t) {
+            e.encode = function (t) {
                 if (l.serverEncodeEnabled(a.config.fn))
                     return a.config.fn.encodeUrl(t, r.base64);
                 if (p[t])
                     return p[t];
-                var e = function(t) {
-                    return function(t) {
+                var e = function (t) {
+                    return function (t) {
                         var e = t.match(/.{1,7}/g);
                         if (null === e)
                             return t;
@@ -16948,8 +17287,8 @@
                     }(s.encode(t))
                 }(t)
                     , i = e.replace(/\//g, "").length
-                    , d = c.urlPrefix + function(t, e) {
-                    for (var i = c.seed.charCodeAt(0), r = c.seed.charCodeAt(c.seed.length - 1), a = (t * i + r).toString().split(""); a.length < e; ) {
+                    , d = c.urlPrefix + function (t, e) {
+                    for (var i = c.seed.charCodeAt(0), r = c.seed.charCodeAt(c.seed.length - 1), a = (t * i + r).toString().split(""); a.length < e;) {
                         var s = n.getRandomInt(0, a.length)
                             , l = o.getRandomChar();
                         a.splice(s, 0, l)
@@ -16961,18 +17300,18 @@
                     d
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(83);
-        e.getRandomChar = function(t, e) {
+        e.getRandomChar = function (t, e) {
             void 0 === t && (t = "a"),
             void 0 === e && (e = "z");
             var i = n.getRandomInt(t.charCodeAt(0), e.charCodeAt(0));
             return String.fromCharCode(i)
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(59);
@@ -16984,15 +17323,15 @@
             encodeUInt8String: n.encodeUInt8String
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0,
-            function(t) {
+            function (t) {
                 t[t["current"] = 0] = "current",
                     t[t["children"] = 1] = "children",
                     t[t["list"] = 2] = "list"
             }(e.AdblockCookieDomainType || (e.AdblockCookieDomainType = {})),
-            function(t) {
+            function (t) {
                 t[t["doNotMatch"] = 0] = "doNotMatch",
                     t[t["image"] = 1] = "image",
                     t[t["refresh"] = 2] = "refresh",
@@ -17000,12 +17339,13 @@
                     t[t["scrumble"] = 4] = "scrumble"
             }(e.AdblockCookieMatchingType || (e.AdblockCookieMatchingType = {}))
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(59)
             , o = i(133)
             , r = null;
+
         function a() {
             if (null === r) {
                 var t = n.addEquals(o.config.encode.key);
@@ -17013,6 +17353,7 @@
             }
             return r
         }
+
         function s(t, e) {
             for (var i = [], n = 0; n < t.length; n++) {
                 var o = t.charCodeAt(n) ^ a().charCodeAt(n % e.length);
@@ -17020,100 +17361,109 @@
             }
             return i.join("")
         }
+
         e.getKey = a,
-            e.encode = function(t) {
+            e.encode = function (t) {
                 var e = s(t, a());
                 return n.cropEquals(n.encodeUInt8String(e))
             }
             ,
-            e.decode = function(t) {
+            e.decode = function (t) {
                 var e = n.addEquals(t);
                 return s(n.decodeUInt8String(e), a())
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(13);
-        e.serverEncodeEnabled = function(t) {
+        e.serverEncodeEnabled = function (t) {
             return !!Boolean(t) && n.isFunction(t.encodeCSS) && n.isFunction(t.encodeUrl) && n.isFunction(t.decodeUrl) && n.isFunction(t.isEncodedUrl)
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0,
-            function(t) {
+            function (t) {
                 t["LOAD_SCRIPT_ERROR"] = "LOAD_SCRIPT_ERROR"
             }(e.CommonError || (e.CommonError = {}))
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(20);
-        e.isCookieHostIgnored = function(t) {
+        e.isCookieHostIgnored = function (t) {
             return n.isHostIgnored({
                 list: ["ok", "vk", "mail", "rambler", "lenta", "gazeta", "secretmag", "eda", "nightparty", "afisha", "motor", "moslenta", "championat", "letidor", "quto", "wmj", "indicator", "ferra", "rns", "passion", "livejournal"],
                 host: t
             })
         }
     }
-    , function(t, e) {
+    , function (t, e) {
         t.exports = '"use strict";function t(t,e,n){var s=t+"=1";if(-1===document.cookie.indexOf(s)){var a=86400*e*1e3,c=new Date,r=new Date(Number(c)+a).toUTCString();document.cookie=s+"; expires="+r,n()}}function e(t){(new Image).src=t}if(config.rtb){var n=config.rtb.matchUrls;t("pcs3",1,function(){var t,e;t="https://yastatic.net/q/set/s/rsya-tag-users/bundle.js",(e=document.createElement("script")).src=t,document.body.appendChild(e)}),s=.2,Math.random()<s&&t("pcssspb",14,function(){for(var t=0;t<n.length;t++)e(n[t])}),e("https://ysa-static.passport.yandex.ru/static/1/d959d7e39d5067fad30d9c06204866e9/d.png?ex=yes")}var s;'
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(2)
             , o = i(4)
             , r = i(162)
             , a = {
-            16121477: "gett",
-            16121368: "gett",
-            16226123: "tvzavr",
-            16127762: "terminator",
-            9893253: "ozon",
-            10072475: "ozon",
-            15479055: "aeroflot",
-            15479018: "aeroflot",
-            14301384: "aeroflot",
-            14494204: "aeroflot",
-            16278245: "fxclub",
-            15143129: "yanavigator",
-            16259829: "kupivip",
-            16259813: "kupivip",
-            16435122: "letual",
-            16517387: "lamoda1",
-            16517388: "lamoda1",
-            16516723: "lamoda2",
-            16516360: "lamoda2",
-            16385690: "lamoda3",
-            16385750: "lamoda3",
-            16533827: "taxi",
-            16533531: "taxi",
-            12808084: "autoru"
-        }
-            , s = ["300x300", "300x250", "320x480", "480x320", "300x600", "300x500", "336x280", "vertical", "horizontal", "grid", "posterVertical", "posterHorizontal", "newVertical", "newHorizontal", "oldVertical", "oldHorizontal", "newMobileHorizontal", "newPosterVertical", "newPosterHorizontal", "posterVerticalYanews", "extensibleMobile", "oldMotion"]
-            , l = ["rambler\\.ru", "mail\\.ru", "ok\\.ru", "vk\\.com", "avito\\.ru", "avito\\.dev", "lenta\\.ru", "gazeta\\.ru", "gismeteo\\.ru", "rbc(\\.\\w+)"]
+                16121477: "gett",
+                16121368: "gett",
+                16226123: "tvzavr",
+                16127762: "terminator",
+                9893253: "ozon",
+                10072475: "ozon",
+                15479055: "aeroflot",
+                15479018: "aeroflot",
+                14301384: "aeroflot",
+                14494204: "aeroflot",
+                16278245: "fxclub",
+                15143129: "yanavigator",
+                16259829: "kupivip",
+                16259813: "kupivip",
+                16435122: "letual",
+                16517387: "lamoda1",
+                16517388: "lamoda1",
+                16516723: "lamoda2",
+                16516360: "lamoda2",
+                16385690: "lamoda3",
+                16385750: "lamoda3",
+                16533827: "taxi",
+                16533531: "taxi",
+                12808084: "autoru"
+            }
+            ,
+            s = ["300x300", "300x250", "320x480", "480x320", "300x600", "300x500", "336x280", "vertical", "horizontal", "grid", "posterVertical", "posterHorizontal", "newVertical", "newHorizontal", "oldVertical", "oldHorizontal", "newMobileHorizontal", "newPosterVertical", "newPosterHorizontal", "posterVerticalYanews", "extensibleMobile", "oldMotion"]
+            ,
+            l = ["rambler\\.ru", "mail\\.ru", "ok\\.ru", "vk\\.com", "avito\\.ru", "avito\\.dev", "lenta\\.ru", "gazeta\\.ru", "gismeteo\\.ru", "rbc(\\.\\w+)"]
             , p = ["yandex(\\.\\w+)+", "kinopoisk\\.ru", "auto\\.ru"]
             , c = ["tv.yandex(\\.\\w+)+"];
+
         function d(t) {
             return -1 !== n.indexOf(s, t)
         }
+
         function u(t) {
             return h(t, l)
         }
+
         function m(t) {
             return h(t, p)
         }
+
         function f(t) {
             return h(t, c)
         }
+
         function h(t, e) {
-            return n.filter(e, function(e) {
+            return n.filter(e, function (e) {
                 return new RegExp("^https?:\\/\\/(([a-z0-9-]+\\.)?)+" + e + "\\/?").test(t)
             }).length > 0
         }
-        e.getData = function(t) {
+
+        e.getData = function (t) {
             var e, i;
             e = t,
                 i = "https://yastatic.net/partner-code-bundles/" + Ya.codeVer + "/rmp.json",
@@ -17122,20 +17472,21 @@
                     url: i,
                     retryLimit: 3,
                     withCredentials: !1
-                }, function(t) {
+                }, function (t) {
                     e(t)
-                }, function() {})
+                }, function () {
+                })
         }
             ,
-            e.isOrderIdInExperiment = function(t) {
+            e.isOrderIdInExperiment = function (t) {
                 return t in a
             }
             ,
-            e.getCompanyByOId = function(t) {
+            e.getCompanyByOId = function (t) {
                 return a[t]
             }
             ,
-            e.addExperimentalRmpProperties = function(t, e) {
+            e.addExperimentalRmpProperties = function (t, e) {
                 t.addInfo || (t.addInfo = {}),
                     t.body = e.body,
                     t.addInfo.callToAction = e.callToAction,
@@ -17145,7 +17496,7 @@
                 t.addInfo.vast = e.vastToClickThrough + i + e.vastAfterClickThrough
             }
             ,
-            e.canReplaceBlock = function(t) {
+            e.canReplaceBlock = function (t) {
                 if (!(o.isPhone || o.isIOS || o.isAndroid))
                     return !1;
                 var e = document.location.href;
@@ -17156,28 +17507,28 @@
             e.isYandexDomain = m,
             e.isTvYandexDomain = f
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0,
-            e.checkCspForVideo = function(t, e, i, n) {
+            e.checkCspForVideo = function (t, e, i, n) {
                 var o;
                 void 0 === i && (i = 2e3),
                 void 0 === n && (n = 100);
                 var r = !0
                     , a = window.document.createElement("video");
-                a.onloadedmetadata = function() {
+                a.onloadedmetadata = function () {
                     o = !1,
                         r = !1
                 }
                 ;
-                var s = function(e) {
+                var s = function (e) {
                     "media-src" === e.violatedDirective && e.blockedURI === t && (o = !0,
                         r = !1)
                 };
                 window.document.addEventListener("securitypolicyviolation", s),
                     a.src = t;
                 var l = 0
-                    , p = setInterval(function() {
+                    , p = setInterval(function () {
                     ((l += n) > i || !r) && (a = null,
                         clearInterval(p),
                         window.document.removeEventListener("securitypolicyviolation", s),
@@ -17185,11 +17536,11 @@
                 }, n)
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(20)
-            , o = function(t) {
+            , o = function (t) {
             return n.isHostIgnored({
                 host: t,
                 exclude: [n.hosts.vk]
@@ -17198,9 +17549,9 @@
         e.isHostIgnored = o,
             e["default"] = o(document.location.href)
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
-        var n = Object.assign || function(t) {
+        var n = Object.assign || function (t) {
             for (var e = 1; e < arguments.length; e++) {
                 var i = arguments[e];
                 for (var n in i)
@@ -17780,20 +18131,20 @@
             }
         t.exports = s
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(403)
             , o = i(406)
             , r = i(407);
-        e.createStrategyFactory = function(t) {
+        e.createStrategyFactory = function (t) {
             var e = t.isIntersectionObserverSupported;
-            return function(t) {
+            return function (t) {
                 return t.element ? e && t.allowIntersectionObserver ? new r.IntersectionObserverStrategy(t) : new n.DisplayObserverStrategy(t) : new o.DummyStrategy
             }
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(210)
@@ -17801,43 +18152,48 @@
             , r = i(213);
         e.DisplayObserverStrategy = n.combineStrategies(r.DocumentVisibilityStrategy, o.DisplayStrategy)
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(164)
             , o = i(211)
             , r = i(212)
             , a = i(251).isInViewport;
-        e.DisplayStrategy = o.defineIntervalStrategy(function(t) {
+        e.DisplayStrategy = o.defineIntervalStrategy(function (t) {
             var e = t.element
                 , i = t.portion
                 , o = t.overlappedPoints;
             return n.hasDimensions(e) && a(e, i) && !r.isOverlapped(e, o)
         })
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n = i(4).isOperaMini;
         t.exports = {
             isOperaMini: n
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
-        var n = function() {
-            function t() {}
-            return t.prototype.init = function() {}
+        var n = function () {
+            function t() {
+            }
+
+            return t.prototype.init = function () {
+            }
                 ,
-                t.prototype.start = function() {}
+                t.prototype.start = function () {
+                }
                 ,
-                t.prototype.stop = function() {}
+                t.prototype.stop = function () {
+                }
                 ,
                 t
         }();
         e.DummyStrategy = n
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(210)
@@ -17846,31 +18202,32 @@
             , a = i(212);
         e.IntersectionObserverStrategy = n.combineStrategies(o.DocumentVisibilityStrategy, r.IntersectionStrategy, a.OverlayStrategy)
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = Math.pow(2, -149)
-            , o = function() {
+            , o = function () {
             function t(t) {
                 var e = this;
                 this.args = t,
-                    this.callback = function(t) {
+                    this.callback = function (t) {
                         var i = t[0].intersectionRatio >= e.observer.thresholds[0];
                         e.args.callback(i)
                     }
             }
-            return t.prototype.init = function() {
+
+            return t.prototype.init = function () {
                 var t = Math.max(n, this.args.portion);
-                this.observer = new IntersectionObserver(this.callback,{
+                this.observer = new IntersectionObserver(this.callback, {
                     threshold: t
                 })
             }
                 ,
-                t.prototype.start = function() {
+                t.prototype.start = function () {
                     this.observer.observe(this.args.element)
                 }
                 ,
-                t.prototype.stop = function() {
+                t.prototype.stop = function () {
                     this.observer.disconnect()
                 }
                 ,
@@ -17878,7 +18235,7 @@
         }();
         e.IntersectionStrategy = o
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(410)
@@ -17890,8 +18247,8 @@
             , p = i(416)
             , c = i(417)
             , d = "16253073784998848292";
-        e["default"] = function(t, e) {
-            var i = function(t) {
+        e["default"] = function (t, e) {
+            var i = function (t) {
                 return {
                     domain: t.domain ? t.domain : "",
                     text: (e = t.text,
@@ -17929,7 +18286,7 @@
             }
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(7)
@@ -17937,8 +18294,8 @@
             , r = i(86)
             , a = i(40)
             , s = i(60);
-        e["default"] = function(t, e) {
-            var i = function(t, e) {
+        e["default"] = function (t, e) {
+            var i = function (t, e) {
                 var i = [];
                 if (t.price.current) {
                     var r = n["default"]("SMART_MARKET_BODY", e, {
@@ -17963,14 +18320,14 @@
                 }
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0,
-            e["default"] = function(t) {
+            e["default"] = function (t) {
                 return t.charAt(0).toUpperCase() + t.substring(1, t.length)
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0,
             e.HTML_TO_UTF8_MAPPINGS = {
@@ -17981,21 +18338,21 @@
                 "&ndash;": "\u2013",
                 "&mdash;": "\u2014"
             },
-            e.htmlToUtf = function(t) {
+            e.htmlToUtf = function (t) {
                 return void 0 === t && (t = ""),
-                    t.replace(/&\w+;/g, function(t) {
+                    t.replace(/&\w+;/g, function (t) {
                         return t in e.HTML_TO_UTF8_MAPPINGS ? e.HTML_TO_UTF8_MAPPINGS[t] : t
                     })
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(7)
             , o = i(29)
             , r = i(60);
-        e["default"] = function(t, e) {
-            var i = function(t) {
+        e["default"] = function (t, e) {
+            var i = function (t) {
                 var e = t.text.property_type ? t.text.property_type : "";
                 if (!t.text.name)
                     return {
@@ -18015,14 +18372,14 @@
                 , s = i.locationInTitle;
             return {
                 title: a,
-                domain: function(t, e) {
+                domain: function (t, e) {
                     var i = parseInt(t.text["class"]);
                     if (isNaN(i))
                         return "";
                     var o = new Array(i + 1).join("\u2605");
                     return n["default"]("SMART_HOTELS_DOMAIN", e) + " " + o
                 }(t, e),
-                body: function(t, e, i) {
+                body: function (t, e, i) {
                     var r = parseInt(t.text["class"])
                         , a = n["default"]("SMART_BOOKING", e)
                         , s = [];
@@ -18044,12 +18401,12 @@
             }
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(7)
             , o = i(29);
-        e["default"] = function(t, e) {
+        e["default"] = function (t, e) {
             var i = "";
             return t.text.from && t.text.to && (i = t.text.from + " \u2013 " + t.text.to),
                 {
@@ -18057,7 +18414,7 @@
                     domain: n["default"]("SMART_FLIGHTS_DOMAIN", e, {
                         domain: t.domain
                     }),
-                    body: function(t, e) {
+                    body: function (t, e) {
                         var i = n["default"]("SMART_BOOKING", e)
                             , r = [];
                         return t.price.current && r.push(n["default"]("SMART_FLIGHTS_BODY", e, {
@@ -18070,7 +18427,7 @@
                 }
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(7)
@@ -18078,8 +18435,8 @@
             , r = i(86)
             , a = i(40)
             , s = i(60);
-        e["default"] = function(t, e) {
-            var i = function(t, e) {
+        e["default"] = function (t, e) {
+            var i = function (t, e) {
                 var i = [];
                 if (void 0 !== t.price.current) {
                     var r = n["default"]("SMART_RETAIL_BODY", e, {
@@ -18104,13 +18461,13 @@
                 }
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(7)
             , o = i(29)
             , r = i(86);
-        e["default"] = function(t, e) {
+        e["default"] = function (t, e) {
             var i = ""
                 , a = t.text.facilities.split(";");
             void 0 !== t.price.current && (i = n["default"]("SMART_AUTO_BODY", e, {
@@ -18127,7 +18484,7 @@
             }
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(7)
@@ -18135,17 +18492,20 @@
             , r = i(86)
             , a = i(60)
             , s = i(48);
+
         function l(t) {
             return t ? s.isArray(t) ? t.join(", ") : t : ""
         }
+
         function p(t, e) {
             return e ? t + " " + e.split(";").join(", ") : ""
         }
-        e["default"] = function(t, e) {
+
+        e["default"] = function (t, e) {
             return {
                 title: t.text.name,
                 domain: t.domain ? t.domain : "",
-                body: function(t, e) {
+                body: function (t, e) {
                     var i = "";
                     void 0 !== t.price.current && (i = n["default"]("SMART_RETAIL_BODY", e, {
                         price: o.preparePriceText(t.price)
@@ -18162,7 +18522,7 @@
             }
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(11)
@@ -18170,18 +18530,18 @@
             , r = i(59).encode
             , a = i(28);
         e.BANNER_TEST_TAG_KEY = ["ban", "ner-te", "st-tags"].join(""),
-            e.createLinkTailUrl = function(t, e) {
+            e.createLinkTailUrl = function (t, e) {
                 var i = "";
-                return n.forEach(e, function(t) {
+                return n.forEach(e, function (t) {
                     i += t.linkTail
                 }),
                 t + i
             }
             ,
-            e.buildBannerTesttags = function(t, e) {
+            e.buildBannerTesttags = function (t, e) {
                 void 0 === e && (e = {});
                 var i = {};
-                return n.forEach(t, function(t) {
+                return n.forEach(t, function (t) {
                     var n = t.bannerTesttag ? t.bannerTesttag.clone() : new o.BannerTesttag;
                     n.setProps(e),
                         i[t.adId] = n.toString()
@@ -18189,22 +18549,22 @@
                     r(a.getNativeJSON(window).stringify(i))
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(420);
         e.trackClick = n.trackClick
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(137)
             , o = i(421);
-        e.createTrackClick = function(t) {
-            return function(e) {
-                t(!1, 3e4, function(i) {
+        e.createTrackClick = function (t) {
+            return function (e) {
+                t(!1, 3e4, function (i) {
                     e(n.ClickPixel.TRANSITION, i),
-                        t(!0, 24e4, function(t) {
+                        t(!0, 24e4, function (t) {
                             e(n.ClickPixel.RETURN, t)
                         })
                 })
@@ -18213,22 +18573,22 @@
             ,
             e.trackClick = e.createTrackClick(o.waitVisibility)
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(129)
             , o = i(41)
             , r = o.on
             , a = o.un;
-        e.createWaitVisibility = function(t) {
-            return function(e, i, n) {
+        e.createWaitVisibility = function (t) {
+            return function (e, i, n) {
                 var o = new Date
-                    , s = r(document, t.changeEventName, function() {
+                    , s = r(document, t.changeEventName, function () {
                     t.isHidden() !== e && (a(s),
                         clearTimeout(l),
                         n(Number(new Date) - Number(o)))
                 })
-                    , l = setTimeout(function() {
+                    , l = setTimeout(function () {
                     a(s)
                 }, i)
             }
@@ -18236,9 +18596,9 @@
             ,
             e.waitVisibility = e.createWaitVisibility(n)
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
-        var n = Object.assign || function(t) {
+        var n = Object.assign || function (t) {
                 for (var e, i = 1, n = arguments.length; i < n; i++)
                     for (var o in e = arguments[i])
                         Object.prototype.hasOwnProperty.call(e, o) && (t[o] = e[o]);
@@ -18250,20 +18610,21 @@
             a.push(1);
         var l = parseInt(a.join(""), 2)
             , p = {
-            sitelinks: !0,
-            callouts: !0,
-            callToActionButton: !0,
-            addressAndTelephone: !0,
-            customDesign: !0,
-            forcedImageDisplay: !0,
-            animation: !0,
-            multipleBannersInSingle: !0
-        }
-            , c = ["sitelinks", "callouts", "callToActionButton", "addressAndTelephone", "customDesign", "forcedImageDisplay", "animation", "multipleBannersInSingle"];
-        e.getHitFeatures = function(t) {
+                sitelinks: !0,
+                callouts: !0,
+                callToActionButton: !0,
+                addressAndTelephone: !0,
+                customDesign: !0,
+                forcedImageDisplay: !0,
+                animation: !0,
+                multipleBannersInSingle: !0
+            }
+            ,
+            c = ["sitelinks", "callouts", "callToActionButton", "addressAndTelephone", "customDesign", "forcedImageDisplay", "animation", "multipleBannersInSingle"];
+        e.getHitFeatures = function (t) {
             var e;
             e = null == t ? l : parseInt(t || "", 10);
-            for (var i = parseInt("" + e).toString(2).split("").reverse(); i.length < 53; )
+            for (var i = parseInt("" + e).toString(2).split("").reverse(); i.length < 53;)
                 i.push("0");
             for (var o = n({}, p), r = Math.max(i.length, c.length), a = 0; a < r; a++) {
                 var s = c[a];
@@ -18277,18 +18638,18 @@
             ,
             e.isHitFeaturesEnabled = o.isLongExperiment(r.experimentIds.hitFeatures.ENABLED)
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n, o;
         e.__esModule = !0,
-            function(t) {
+            function (t) {
                 t[t["UNKNOWN"] = 0] = "UNKNOWN",
                     t[t["ETHERNET"] = 1] = "ETHERNET",
                     t[t["WIFI"] = 2] = "WIFI",
                     t[t["CELL_2G"] = 3] = "CELL_2G",
                     t[t["CELL_3G"] = 4] = "CELL_3G"
             }(n || (n = {})),
-            function(t) {
+            function (t) {
                 t["BLUETOOTH"] = "bluetooth",
                     t["CELLULAR"] = "cellular",
                     t["ETHERNET"] = "ethernet",
@@ -18299,7 +18660,7 @@
                     t["WIFI"] = "wifi",
                     t["WIMAX"] = "wimax"
             }(o || (o = {})),
-            e.getDownlink = function() {
+            e.getDownlink = function () {
                 var t = navigator.connection
                     , e = void 0 === t ? {} : t;
                 if ("number" == typeof e.downlink)
@@ -18332,23 +18693,25 @@
                 return -1
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n, o = i(214), r = (n = o) && n.__esModule ? n : {
             default: n
         }, a = i(66);
+
         function s() {
             this._confirmed = {},
                 this._abused = {}
         }
+
         s.prototype = {
-            isNotConfirmed: function(t) {
+            isNotConfirmed: function (t) {
                 return !this._confirmed[t]
             },
-            confirm: function(t) {
+            confirm: function (t) {
                 this._confirmed[t] = !0
             },
-            confirmRtb: function(t, e) {
+            confirmRtb: function (t, e) {
                 this._rtbVisibilityManager || (this._rtbVisibilityManager = new r["default"]({
                     linkTail: t.linkTail
                 }),
@@ -18356,16 +18719,16 @@
                         a.getFormatByName)(t.name).index,
                     this._rtbVisibilityManager.confirm(e))
             },
-            abuse: function(t) {
+            abuse: function (t) {
                 this._abused[t] = !0
             },
-            isAbused: function(t) {
+            isAbused: function (t) {
                 return Boolean(this._abused[t])
             }
         },
             t.exports = s
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(8).logger
@@ -18373,9 +18736,11 @@
             , r = i(426)
             , a = i(48)
             , s = i(69)
-            , l = function() {
-            function t() {}
-            return t.prototype.confirm = function(e) {
+            , l = function () {
+            function t() {
+            }
+
+            return t.prototype.confirm = function (e) {
                 a.isArray(e) || (e = [e]);
                 var i = document.createElement("div");
                 document.body.appendChild(i),
@@ -18390,20 +18755,20 @@
                     id: s.generateHexString(10)
                 }
                     , l = window
-                    , p = function() {
+                    , p = function () {
                     return o.nukeSafeframe(l, r.id)
                 };
                 o.initSafeframe(l, n, r, p, p, t.onAction)
             }
                 ,
-                t.onAction = function(t, e) {
+                t.onAction = function (t, e) {
                     "error" === t && n.error({
                         name: t,
                         message: e
                     }, "confirm.html")
                 }
                 ,
-                t.getScriptHtml = function(t) {
+                t.getScriptHtml = function (t) {
                     return ["<scr", 'ipt>"use strict";(', r.confirmVisibility, ')(["', t.join('","'), '"])</scr', "ipt>"].join("")
                 }
                 ,
@@ -18411,15 +18776,15 @@
         }();
         e.RtbExternalUrlManager = l
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0,
-            e.confirmVisibility = function(t) {
+            e.confirmVisibility = function (t) {
                 for (var e = 0; e < t.length; e++)
                     (new Image).src = t[e]
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n = i(11)
             , o = i(26)
@@ -18497,38 +18862,40 @@
         };
         (0,
             n.forEach)((0,
-            o.getObjectKeys)(T), function(t) {
+            o.getObjectKeys)(T), function (t) {
             t in r.adaptive0418Blocks && delete T[t]
         });
-        var R = new a(T,s);
+        var R = new a(T, s);
         R.register("interstitial", i(585)),
             t.exports = R
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n = i(8)
             , o = i(34);
+
         function r(t, e) {
             this._blocks = t,
                 this._formatManager = e,
                 this._methods = {}
         }
+
         r.prototype = {
-            getClass: function(t) {
+            getClass: function (t) {
                 return this._blocks[o.capitalize(t)]
             },
-            createFormatObject: function(t, e) {
+            createFormatObject: function (t, e) {
                 var i = this._formatManager.getFormatByName(t)
                     , o = i ? this.getClass(i.className) : null
                     , r = o || {}
                     , a = r.async
                     , s = r.module;
-                o ? s && a ? s(function(t) {
+                o ? s && a ? s(function (t) {
                     return e({
                         constructor: t,
                         format: i
                     })
-                }, function(e) {
+                }, function (e) {
                     return n.logger.error(e, "Bundle " + t + " loading error")
                 }) : e(s ? {
                     constructor: s,
@@ -18538,37 +18905,41 @@
                     format: i
                 }) : e(null)
             },
-            build: function(t, e, i) {
+            build: function (t, e, i) {
                 this._methods[t] ? this._methods[t].apply(this, [e, t, i]) : this.createFormatObject(t, i)
             },
-            register: function(t, e) {
+            register: function (t, e) {
                 this._methods[t] = e
             }
         },
             t.exports = r
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
-        var n, o = function(t) {
-            if (t && t.__esModule)
-                return t;
-            var e = {};
-            if (null != t)
-                for (var i in t)
-                    Object.prototype.hasOwnProperty.call(t, i) && (e[i] = t[i]);
-            return e["default"] = t,
-                e
-        }(i(4)), r = i(216), a = i(217), s = i(430), l = i(431), p = i(67), c = i(253), d = i(432), u = i(583), m = i(584), f = i(218), h = i(134), g = (n = h) && n.__esModule ? n : {
-            default: n
-        }, _ = i(84), y = i(14), b = i(26), v = i(104);
+        var n, o = function (t) {
+                if (t && t.__esModule)
+                    return t;
+                var e = {};
+                if (null != t)
+                    for (var i in t)
+                        Object.prototype.hasOwnProperty.call(t, i) && (e[i] = t[i]);
+                return e["default"] = t,
+                    e
+            }(i(4)), r = i(216), a = i(217), s = i(430), l = i(431), p = i(67), c = i(253), d = i(432), u = i(583),
+            m = i(584), f = i(218), h = i(134), g = (n = h) && n.__esModule ? n : {
+                default: n
+            }, _ = i(84), y = i(14), b = i(26), v = i(104);
+
         function x(t, e) {
             var i = {};
             for (var n in t)
                 e.indexOf(n) >= 0 || Object.prototype.hasOwnProperty.call(t, n) && (i[n] = t[n]);
             return i
         }
+
         var w = i(2)
             , k = i(0);
+
         function C(t) {
             return "motion" === t ? [xt, {
                 limit: 1
@@ -18576,6 +18947,7 @@
                 linksUnderline: !1
             }]
         }
+
         var I = i(85)
             , S = I.SINGLE_VERTICAL
             , A = I.SINGLE_HORIZONTAL
@@ -18863,7 +19235,7 @@
             b.getObjectKeys)(_.adaptive0418Blocks)
             , St = Array.isArray(It)
             , At = 0;
-        for (It = St ? It : It[Symbol.iterator](); ; ) {
+        for (It = St ? It : It[Symbol.iterator](); ;) {
             var Ot;
             if (St) {
                 if (At >= It.length)
@@ -18883,7 +19255,7 @@
             Ct[Et] = [Rt, Mt]
         }
         var Bt = w.augment(Object, {
-            constructor: function(t, e, i, n, p, c) {
+            constructor: function (t, e, i, n, p, c) {
                 var h = arguments.length > 6 && void 0 !== arguments[6] ? arguments[6] : {}
                     , b = e.format.name
                     , x = Ct[b][1]
@@ -18964,7 +19336,7 @@
                 var T = A ? s.AsyncBlock : O;
                 this._isAsync = A,
                     this.isOldBlock = E,
-                    this.block = this.isOldBlock && !A ? new T(t,e,i,n,p,c,h) : new T({
+                    this.block = this.isOldBlock && !A ? new T(t, e, i, n, p, c, h) : new T({
                         blockLoader: S,
                         blockId: n,
                         blockName: b,
@@ -18978,53 +19350,53 @@
                         encodeStyles: !0
                     })
             },
-            getRealBlock: function(t) {
-                this._isAsync ? this.block.getRealBlock(function(e) {
+            getRealBlock: function (t) {
+                this._isAsync ? this.block.getRealBlock(function (e) {
                     return t(e)
                 }) : t(this.block)
             },
-            createVisibilityConfirmer: function() {
+            createVisibilityConfirmer: function () {
                 this.block.initVisibilityChecker()
             },
-            destructor: function() {
+            destructor: function () {
                 this.block.destroy ? this.block.destroy() : this.block.destructor()
             },
-            render: function(t) {
+            render: function (t) {
                 this._isAsync ? this.block.renderTo(this._renderToNode, t) : (this.isOldBlock ? this.block.render() : this._renderToNode && k.renderToNode(this._renderToNode, this.block),
                     t())
             },
-            getMainCont: function() {
+            getMainCont: function () {
                 return this._renderToNode
             },
-            getDataSource: function() {
+            getDataSource: function () {
                 return this.dataSource
             },
-            getUsedAdvs: function() {
+            getUsedAdvs: function () {
                 return this.block.getUsedAdvs()
             },
-            isInViewport: function() {
+            isInViewport: function () {
                 return this.block.isInViewport()
             },
-            isVisibilityConfirmed: function() {
+            isVisibilityConfirmed: function () {
                 return this.block.isVisibilityConfirmed()
             },
-            slideUp: function() {
+            slideUp: function () {
                 var t;
                 return (t = this.block).slideUp.apply(t, arguments)
             },
-            getTesttag: function() {
+            getTesttag: function () {
                 return this.dataSource.getTesttag()
             }
         });
         t.exports = Bt
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(33)
             , o = i(0)
             , r = i(8)
-            , a = function() {
+            , a = function () {
             function t(t) {
                 var e = this
                     , i = t.blockLoader
@@ -19032,7 +19404,8 @@
                     , a = o.isOld
                     , s = void 0 !== a && a
                     , l = o.module
-                    , p = void 0 === l ? function(t) {}
+                    , p = void 0 === l ? function (t) {
+                    }
                     : l
                     , c = t.dataSource
                     , d = t.settings
@@ -19045,83 +19418,84 @@
                     this.settings = d,
                     this.isOldBlock = s;
                 var _ = this.getAdsByLimit(c.getFreeAds());
-                n(_, function(t) {
+                n(_, function (t) {
                     return c.captureAd(t.adId)
                 }),
                     this.ads = _,
-                    p(function(i) {
-                        n(_, function(t) {
+                    p(function (i) {
+                        n(_, function (t) {
                             return c.releaseAd(t.adId)
                         }),
-                            e.block = e.isOldBlock ? new i(c,d,u,m,f,h,g) : new i(t),
+                            e.block = e.isOldBlock ? new i(c, d, u, m, f, h, g) : new i(t),
                             e.layout = e.block.layout,
-                            n(e.callbacks, function(t) {
+                            n(e.callbacks, function (t) {
                                 return t()
                             }),
                             e.callbacks = []
-                    }, function(t) {
+                    }, function (t) {
                         return r.logger.error(t, "Bundle loading error")
                     })
             }
-            return t.prototype.getAdsByLimit = function(t) {
+
+            return t.prototype.getAdsByLimit = function (t) {
                 return t.slice(0, this.settings.limit)
             }
                 ,
-                t.prototype.getRealBlock = function(t) {
+                t.prototype.getRealBlock = function (t) {
                     var e = this;
-                    this.block ? t(this.block) : this.callbacks.push(function() {
+                    this.block ? t(this.block) : this.callbacks.push(function () {
                         return t(e.block)
                     })
                 }
                 ,
-                t.prototype.renderTo = function(t, e) {
+                t.prototype.renderTo = function (t, e) {
                     var i = this;
-                    this.block ? this.renderBlock(t, e) : this.callbacks.push(function() {
+                    this.block ? this.renderBlock(t, e) : this.callbacks.push(function () {
                         i.renderBlock(t, e)
                     })
                 }
                 ,
-                t.prototype.renderBlock = function(t, e) {
+                t.prototype.renderBlock = function (t, e) {
                     this.isOldBlock && this.block && this.block.render ? this.block.render() : o.renderToNode(t, this.block),
                         e()
                 }
                 ,
-                t.prototype.initVisibilityChecker = function() {
+                t.prototype.initVisibilityChecker = function () {
                     var t = this;
-                    this.block ? this.block.initVisibilityChecker() : this.callbacks.push(function() {
+                    this.block ? this.block.initVisibilityChecker() : this.callbacks.push(function () {
                         return t.block && t.block.initVisibilityChecker()
                     })
                 }
                 ,
-                t.prototype.destructor = function() {
+                t.prototype.destructor = function () {
                     this.destroy()
                 }
                 ,
-                t.prototype.slideUp = function(t) {
+                t.prototype.slideUp = function (t) {
                     this.block.slideUp(t)
                 }
                 ,
-                t.prototype.destroy = function() {
+                t.prototype.destroy = function () {
                     var t = this;
-                    this.block ? this.destroyBlock(this.block) : this.callbacks.push(function() {
+                    this.block ? this.destroyBlock(this.block) : this.callbacks.push(function () {
                         return t.destroyBlock(t.block)
                     })
                 }
                 ,
-                t.prototype.destroyBlock = function(t) {
+                t.prototype.destroyBlock = function (t) {
                     t.destroy ? t.destroy() : t.destructor && t.destructor(),
                         delete this.block
                 }
                 ,
-                t.prototype.getUsedAdvs = function() {
+                t.prototype.getUsedAdvs = function () {
                     return this.block ? this.block.getUsedAdvs() : this.ads || []
                 }
                 ,
-                t.prototype.isInViewport = function() {
+                t.prototype.isInViewport = function () {
                     return !!this.block && this.block.isInViewport()
                 }
                 ,
-                t.prototype.isVisibilityConfirmed = function() {
+                t.prototype.isVisibilityConfirmed = function () {
                     return !!this.block && this.block.isVisibilityConfirmed()
                 }
                 ,
@@ -19129,14 +19503,14 @@
         }();
         e.AsyncBlock = a
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(19)
             , o = i(20)
             , r = i(82)
             , a = i(25).isLongExperiment(n.experimentIds.vertical.VERTICAL_DESKTOP_ENABLED);
-        e.isNewVertical = function(t, e) {
+        e.isNewVertical = function (t, e) {
             var i = "newVertical" === t
                 , n = o.isHostIgnored({
                 host: e
@@ -19144,7 +19518,7 @@
             return !r.isInIframe(window) && (i || a && !n)
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(124)
@@ -19152,53 +19526,54 @@
             , r = i(85)
             , a = r.PICTURE_SEARCH_FIXED
             , s = r.OLD_300x250
-            , l = [/avito\.dev/i, /avito\.ru/i, /ok\.ru/i, /vk\.com/i, /mail\.ru/i, /\S+\.devmail\.ru/i, /gismeteo\.ru/i, /rbc\.ru/i, /rg\.ru/i];
-        e.selectBlock300x250 = function(t, e) {
+            ,
+            l = [/avito\.dev/i, /avito\.ru/i, /ok\.ru/i, /vk\.com/i, /mail\.ru/i, /\S+\.devmail\.ru/i, /gismeteo\.ru/i, /rbc\.ru/i, /rg\.ru/i];
+        e.selectBlock300x250 = function (t, e) {
             var i = e.getFreeAds()[0]
-                , r = !(!i || !i.images) && i.images.some(function(t) {
+                , r = !(!i || !i.images) && i.images.some(function (t) {
                 return "" !== t[0]
             })
-                , p = n(l, function(e) {
+                , p = n(l, function (e) {
                 return e.test(t)
             }).length > 0;
             return o(!p && r ? a : s)
         }
     }
-    , function(t, e, i) {
-        t.exports = function(t, e) {
-            i.e(0).then(function() {
+    , function (t, e, i) {
+        t.exports = function (t, e) {
+            i.e(0).then(function () {
                 t(i(611))
             }
-                .bind(null, i)).catch(function() {
+                .bind(null, i)).catch(function () {
                 e && e.apply(this, arguments)
             })
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0,
-            e.getParents = function(t) {
+            e.getParents = function (t) {
                 var e = [];
                 if (!t)
                     return e;
-                for (var i = t.parentNode; i; )
+                for (var i = t.parentNode; i;)
                     e.push(i),
                         i = i.parentNode;
                 return e
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0,
-            e.preventClicks = function(t, e) {
-                for (var i = ["click", "mousedown", "mouseup", "touchstart", "touchend"], n = Date.now(), o = function(t) {
+            e.preventClicks = function (t, e) {
+                for (var i = ["click", "mousedown", "mouseup", "touchstart", "touchend"], n = Date.now(), o = function (t) {
                     Date.now() - n < e && (t.stopPropagation(),
                         t.preventDefault())
                 }, r = 0, a = i; r < a.length; r++) {
                     var s = a[r];
                     t.addEventListener(s, o, !0)
                 }
-                setTimeout(function() {
+                setTimeout(function () {
                     for (var e = 0, n = i; e < n.length; e++) {
                         var r = n[e];
                         t.removeEventListener(r, o, !0)
@@ -19206,7 +19581,7 @@
                 }, e)
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n = i(107)
             , o = i(33)
@@ -19215,16 +19590,16 @@
             , s = 300
             , l = null
             , p = n(Object, {
-            constructor: function(t) {
+            constructor: function (t) {
                 this.handler = t
             },
-            observe: function(t) {
+            observe: function (t) {
                 return this.disconnect(),
                     this.element = t,
-                    function(t) {
+                    function (t) {
                         var e = t.element
                             , i = d(e);
-                        i || (i = new function(t) {
+                        i || (i = new function (t) {
                             this.element = t,
                                 this.observers = []
                         }
@@ -19236,7 +19611,7 @@
                     }(this),
                     this
             },
-            disconnect: function() {
+            disconnect: function () {
                 var t, e;
                 return (e = d((t = this).element)) && (h(e.observers, t),
                 e.observers.length || h(c, e),
@@ -19245,6 +19620,7 @@
             }
         });
         var c = [];
+
         function d(t) {
             for (var e = 0; e < c.length; e++) {
                 var i = c[e];
@@ -19253,65 +19629,72 @@
             }
             return null
         }
+
         function u(t) {
             var e = t.element
                 , i = a(e);
-            o(t.observers.concat(), function(t) {
+            o(t.observers.concat(), function (t) {
                 t.handler(i, e)
             })
         }
+
         function m() {
             window.clearInterval(l),
                 l = null
         }
+
         function f() {
             o(c.concat(), u)
         }
+
         function h(t, e) {
             var i = r(t, e);
             i > -1 && t.splice(i, 1)
         }
+
         t.exports = p
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         t.exports = i(164).hasDimensions
     }
-    , function(t, e) {
-        t.exports = function(t) {
+    , function (t, e) {
+        t.exports = function (t) {
             var e = [];
             return e.push(".", t.id, " .taae1c6a1{position:fixed !important;left:-1000px !important;top:-1000px !important;width:1px !important;height:1px !important;display:block !important}"),
                 e.join("")
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n, o = (n = Object.setPrototypeOf || {
                     __proto__: []
-                }instanceof Array && function(t, e) {
+                } instanceof Array && function (t, e) {
                     t.__proto__ = e
                 }
-                || function(t, e) {
+                || function (t, e) {
                     for (var i in e)
                         e.hasOwnProperty(i) && (t[i] = e[i])
                 }
                 ,
-                function(t, e) {
+                function (t, e) {
                     function i() {
                         this.constructor = t
                     }
+
                     n(t, e),
                         t.prototype = null === e ? Object.create(e) : (i.prototype = e.prototype,
                             new i)
                 }
         );
         e.__esModule = !0;
-        var r = function(t) {
+        var r = function (t) {
             function e() {
                 return null !== t && t.apply(this, arguments) || this
             }
+
             return o(e, t),
-                e.prototype.onMount = function() {
+                e.prototype.onMount = function () {
                     this.ready()
                 }
                 ,
@@ -19319,22 +19702,23 @@
         }(i(219).Detector);
         e.CompositeDetector = r
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n, o = (n = Object.setPrototypeOf || {
                     __proto__: []
-                }instanceof Array && function(t, e) {
+                } instanceof Array && function (t, e) {
                     t.__proto__ = e
                 }
-                || function(t, e) {
+                || function (t, e) {
                     for (var i in e)
                         e.hasOwnProperty(i) && (t[i] = e[i])
                 }
                 ,
-                function(t, e) {
+                function (t, e) {
                     function i() {
                         this.constructor = t
                     }
+
                     n(t, e),
                         t.prototype = null === e ? Object.create(e) : (i.prototype = e.prototype,
                             new i)
@@ -19343,73 +19727,80 @@
         e.__esModule = !0;
         var r = i(0)
             , a = i(13)
-            , s = function(t) {
+            , s = function (t) {
             function e() {
                 return null !== t && t.apply(this, arguments) || this
             }
+
             return o(e, t),
-                e.prototype.onInit = function() {
+                e.prototype.onInit = function () {
                     this.context = this.props.value || this.getDefaultContext()
                 }
                 ,
-                e.prototype.getContext = function() {
+                e.prototype.getContext = function () {
                     return this.context
                 }
                 ,
                 e
         }(r.AbstractComponent);
         e.AbstractContextProvider = s;
-        var l = function(t) {
+        var l = function (t) {
             function e() {
                 return null !== t && t.apply(this, arguments) || this
             }
+
             return o(e, t),
-                e.prototype.onInit = function() {
+                e.prototype.onInit = function () {
                     this.context = this.getDefaultContext(),
                         this.providerClass = this.getProviderClass()
                 }
                 ,
-                e.prototype.beforeRender = function() {
+                e.prototype.beforeRender = function () {
                     this.context = p(this, this.providerClass, this.getDefaultContext())
                 }
                 ,
-                e.prototype.render = function() {
+                e.prototype.render = function () {
                     var t = this.getChildren()[0];
                     return a.isFunction(t) ? t(this.context) : null
                 }
                 ,
                 e
         }(r.AbstractComponent);
+
         function p(t, e, i) {
             var n = t.getParentComponent()
                 , o = null;
             do {
                 n instanceof e ? o = n.getContext() : n && (n = n.getParentComponent())
-            } while (null === o && n);return o || i
+            } while (null === o && n);
+            return o || i
         }
+
         e.AbstractContextConsumer = l,
-            e.createContext = function(t) {
-                var e = function(e) {
+            e.createContext = function (t) {
+                var e = function (e) {
                     function i() {
                         return null !== e && e.apply(this, arguments) || this
                     }
+
                     return o(i, e),
-                        i.prototype.getDefaultContext = function() {
+                        i.prototype.getDefaultContext = function () {
                             return t
                         }
                         ,
                         i
                 }(s)
-                    , i = function(i) {
+                    , i = function (i) {
                     function n() {
                         return null !== i && i.apply(this, arguments) || this
                     }
+
                     return o(n, i),
-                        n.prototype.getProviderClass = function() {
+                        n.prototype.getProviderClass = function () {
                             return e
                         }
                         ,
-                        n.prototype.getDefaultContext = function() {
+                        n.prototype.getDefaultContext = function () {
                             return t
                         }
                         ,
@@ -19418,13 +19809,13 @@
                 return {
                     Provider: e,
                     Consumer: i,
-                    getClosestProvider: function(i) {
+                    getClosestProvider: function (i) {
                         return p(i, e, t)
                     }
                 }
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n = i(107)
             , o = i(15)
@@ -19434,12 +19825,12 @@
             delay: 0
         }
             , l = n(Object, {
-            constructor: function(t, e, i) {
+            constructor: function (t, e, i) {
                 this._element = t,
                     this._callback = e,
                     this._confirmTimeoutId = null,
                     this._options = i = o({}, s, i),
-                    this._visibilityChecker = new this._options.VisibilityChecker(t,r(this._check, this),{
+                    this._visibilityChecker = new this._options.VisibilityChecker(t, r(this._check, this), {
                         allowIntersectionObserver: i.allowIntersectionObserver,
                         disableAutoStart: !0,
                         portion: i.portion,
@@ -19447,24 +19838,24 @@
                     }),
                 !0 !== i.disableAutoStart && this.start()
             },
-            start: function() {
+            start: function () {
                 this._visibilityChecker.start()
             },
-            stop: function() {
+            stop: function () {
                 this._cancelConfirmSchedule(),
                     this._visibilityChecker.stop()
             },
-            _check: function(t) {
+            _check: function (t) {
                 t ? this._scheduleConfirm() : this._cancelConfirmSchedule()
             },
-            _scheduleConfirm: function() {
+            _scheduleConfirm: function () {
                 0 !== this._options.delay ? null === this._confirmTimeoutId && (this._confirmTimeoutId = setTimeout(a("VisibilityConfirmer#confirm", this.confirm, this), this._options.delay)) : this.confirm()
             },
-            _cancelConfirmSchedule: function() {
+            _cancelConfirmSchedule: function () {
                 null !== this._confirmTimeoutId && (clearTimeout(this._confirmTimeoutId),
                     this._confirmTimeoutId = null)
             },
-            confirm: function() {
+            confirm: function () {
                 this._confirmed || (this._confirmed = !0,
                     this.stop(),
                     this._callback())
@@ -19472,7 +19863,7 @@
         });
         t.exports = l
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n = i(0)
             , o = i(1)
@@ -19481,20 +19872,20 @@
         var a = i(443)
             , s = n.createComponent(o, {
             name: "yap-layout",
-            beforeRender: function() {
+            beforeRender: function () {
                 var t = this.props.visibility;
                 this.pushStyles(r, {
                     visibility: t
                 }),
                     this.pushStyles(a)
             },
-            getRoot: function() {
+            getRoot: function () {
                 return this.getResourceById("root")
             },
-            getLayoutContainer: function() {
+            getLayoutContainer: function () {
                 return this.getResourceById("main")
             },
-            _render: function(t, e) {
+            _render: function (t, e) {
                 var i = this.props
                     , o = i.id
                     , r = i.lang
@@ -19512,22 +19903,22 @@
         });
         t.exports = s
     }
-    , function(t, e) {
-        t.exports = function(t) {
+    , function (t, e) {
+        t.exports = function (t) {
             var e = [];
             return e.push(".", t.id, "{position:relative !important;z-index:1 !important;-webkit-font-smoothing:antialiased !important;-webkit-text-size-adjust:none !important}.", t.id, " .ga679cbc9,.", t.id, " .ga679cbc9:hover,.", t.id, " .ga679cbc9:hover b,.", t.id, " .ga679cbc9 b{display:inline !important;color:", t.settings.urlColor || "#0000CC", " !important;text-decoration:none !important;border-bottom-color:", new t.utils.Color(t.settings.urlColor || "#0000CC").setAlpha(.4), " !important;border-bottom-width:", t.settings.linksUnderline ? 1 : 0, "px !important;border-bottom-style:", t.utils.browser.isSafari ? "inset" : "solid", " !important}.", t.id, " .ga679cbc9:hover,.", t.id, " .ga679cbc9:hover b{color:", t.settings.hoverColor || "#0088CC", " !important;border-bottom-color:", new t.utils.Color(t.settings.hoverColor || "#0088CC").setAlpha(.4), " !important}.", t.id, " a:focus{-webkit-user-select:none !important;-moz-user-select:none !important;-ms-user-select:none !important;user-select:none !important}"),
                 e.join("")
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = 0
             , o = "__" + Number(new Date)
-            , r = function(t) {
+            , r = function (t) {
             return "" + t + ++n
         };
-        e.identify = function(t) {
+        e.identify = function (t) {
             var e = void 0 === t ? {} : t
                 , i = e.obj
                 , n = e.onlyGet
@@ -19536,33 +19927,34 @@
                 , l = void 0 === s ? "uniq" : s;
             if (!i)
                 return r(l);
-            var p = "uniqueID"in i ? "uniqueID" : o;
+            var p = "uniqueID" in i ? "uniqueID" : o;
             return a || p in i ? i[p] : i[p] = r(l)
         }
     }
-    , function(t, e) {
-        t.exports = function(t) {
+    , function (t, e) {
+        t.exports = function (t) {
             var e = [];
             return e.push(".", t.id, " .b30181382{display:inline-block !important;overflow:hidden !important;text-align:center !important;font-size:11px !important;opacity:.7 !important;filter:alpha(opacity=70) !important;cursor:pointer !important}.", t.id, " .caab3995f{display:inline-block !important;line-height:14px !important;color:", t.settings.textColor || "#000", " !important;vertical-align:top !important;border-bottom-color:transparent !important;border-bottom-width:", t.settings.linksUnderline ? 1 : 0, "px !important;border-bottom-style:", t.utils.browser.isSafari ? "inset" : "solid", " !important}.", t.id, " .caab3995f em{font-style:normal !important}.", t.id, " .b30181382:hover{opacity:1 !important;filter:alpha(opacity=100) !important}.", t.id, " .b30181382:hover .caab3995f{text-decoration:none !important;border-bottom-color:", new t.utils.Color(t.settings.textColor || "#0000").setAlpha(.4), " !important;border-bottom-width:", t.settings.linksUnderline ? 1 : 0, "px !important;border-bottom-style:", t.utils.browser.isSafari ? "inset" : "solid", " !important}.", t.id, " .o4b91aca2{opacity:.8 !important;filter:alpha(opacity=80) !important;font-size:1em !important;line-height:1.3em !important;height:1.3em !important}.", t.id, " .o4b91aca2 .caab3995f{color:#fff !important;font-size:inherit !important;line-height:inherit !important;height:inherit !important;padding:0 2px !important}"),
                 e.join("")
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n, o = (n = Object.setPrototypeOf || {
                     __proto__: []
-                }instanceof Array && function(t, e) {
+                } instanceof Array && function (t, e) {
                     t.__proto__ = e
                 }
-                || function(t, e) {
+                || function (t, e) {
                     for (var i in e)
                         e.hasOwnProperty(i) && (t[i] = e[i])
                 }
                 ,
-                function(t, e) {
+                function (t, e) {
                     function i() {
                         this.constructor = t
                     }
+
                     n(t, e),
                         t.prototype = null === e ? Object.create(e) : (i.prototype = e.prototype,
                             new i)
@@ -19573,59 +19965,60 @@
             , a = i(1)
             , s = i(447)
             , l = i(13)
-            , p = function(t) {
+            , p = function (t) {
             function e() {
                 return null !== t && t.apply(this, arguments) || this
             }
+
             return o(e, t),
-                e.prototype.onInit = function() {
+                e.prototype.onInit = function () {
                     this.name = "yap-feedback-menu",
                         this.isFeedbackVisible = Boolean(this.props.isVisible),
                         t.prototype.onInit.call(this)
                 }
                 ,
-                e.prototype.afterRender = function() {
+                e.prototype.afterRender = function () {
                     this.feedbackComponent = this.getResourceById("feedback")
                 }
                 ,
-                e.prototype.onMount = function() {
+                e.prototype.onMount = function () {
                     this.setVisibility(this.isFeedbackVisible)
                 }
                 ,
-                e.prototype.onReceivedFeedback = function(t) {
+                e.prototype.onReceivedFeedback = function (t) {
                     this.rootComponent.addClass(this.b_("_received")),
                     l.isFunction(this.props.onReceivedFeedback) && this.props.onReceivedFeedback(t)
                 }
                 ,
-                e.prototype.setVisibility = function(t) {
+                e.prototype.setVisibility = function (t) {
                     var e = this.b_("_visible")
                         , i = this.rootComponent;
                     this.isFeedbackVisible = t,
                         t ? i.addClass(e) : i.removeClass(e)
                 }
                 ,
-                e.catchEvent = function(t) {
+                e.catchEvent = function (t) {
                     t.stopPropagation(),
                         t.preventDefault()
                 }
                 ,
-                e.prototype.show = function() {
+                e.prototype.show = function () {
                     this.setVisibility(!0)
                 }
                 ,
-                e.prototype.hide = function() {
+                e.prototype.hide = function () {
                     this.setVisibility(!1)
                 }
                 ,
-                e.prototype.isVisible = function() {
+                e.prototype.isVisible = function () {
                     return this.isFeedbackVisible
                 }
                 ,
-                e.prototype.fitSize = function() {
+                e.prototype.fitSize = function () {
                     this.feedbackComponent.updateForSize(this.isFeedbackVisible)
                 }
                 ,
-                e.prototype._render = function() {
+                e.prototype._render = function () {
                     var t = this.b_
                         , i = this.props;
                     return r.create("yatag", {
@@ -19648,22 +20041,23 @@
         }(a);
         e.FeedbackMenu = p
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n, o = (n = Object.setPrototypeOf || {
                     __proto__: []
-                }instanceof Array && function(t, e) {
+                } instanceof Array && function (t, e) {
                     t.__proto__ = e
                 }
-                || function(t, e) {
+                || function (t, e) {
                     for (var i in e)
                         e.hasOwnProperty(i) && (t[i] = e[i])
                 }
                 ,
-                function(t, e) {
+                function (t, e) {
                     function i() {
                         this.constructor = t
                     }
+
                     n(t, e),
                         t.prototype = null === e ? Object.create(e) : (i.prototype = e.prototype,
                             new i)
@@ -19671,12 +20065,12 @@
         );
         e.__esModule = !0;
         var r, a, s, l = i(0), p = i(1), c = i(448), d = i(101), u = i(96), m = i(5), f = i(16), h = i(98);
-        !function(t) {
+        !function (t) {
             t[t["horizontal"] = 0] = "horizontal",
                 t[t["vertical"] = 1] = "vertical",
                 t[t["row"] = 2] = "row"
         }(r || (r = {})),
-            function(t) {
+            function (t) {
                 t["vertical"] = "__layout-vertical",
                     t["vertical_condensed"] = "__layout-vertical_condensed",
                     t["vertical_small"] = "__layout-vertical_small",
@@ -19690,7 +20084,7 @@
                     t["horizontal_row_stripe"] = "__layout-row_stripe",
                     t["minimal"] = "__layout-minimal"
             }(a || (a = {})),
-            function(t) {
+            function (t) {
                 t["small"] = "small",
                     t["large"] = "large"
             }(s || (s = {}));
@@ -19750,12 +20144,13 @@
             row: [g.horizontal_row, g.horizontal_row_middle, g.horizontal_row_small, g.horizontal_row_tiny, g.horizontal_row_stripe, g.minimal],
             default: [g.vertical, g.vertical_small, g.vertical_2x2, g.vertical_2x2_small, g.horizontal_row, g.horizontal_row_middle, g.horizontal_row_small, g.horizontal_row_tiny, g.minimal]
         }
-            , y = function(t) {
+            , y = function (t) {
             function e() {
                 return null !== t && t.apply(this, arguments) || this
             }
+
             return o(e, t),
-                e.prototype.onInit = function() {
+                e.prototype.onInit = function () {
                     var e;
                     this.initState(),
                         this.selectedLayout = {
@@ -19770,14 +20165,14 @@
                         t.prototype.onInit.call(this)
                 }
                 ,
-                e.prototype.initState = function() {
+                e.prototype.initState = function () {
                     this.state = {
                         wasOpenedFeedback: !1,
                         orientation: r.vertical
                     }
                 }
                 ,
-                e.prototype.onMount = function() {
+                e.prototype.onMount = function () {
                     (this.abuse = this.getResourceById("abuse"),
                         this.abuseElement = this.abuse && this.abuse.getElement(),
                         this.container = this.getResourceById("container"),
@@ -19786,18 +20181,18 @@
                         this.selectLayout())
                 }
                 ,
-                e.prototype.updateForSize = function(t) {
+                e.prototype.updateForSize = function (t) {
                     t || (this.state.wasOpenedFeedback = !0,
                         this.update())
                 }
                 ,
-                e.prototype.setOrientation = function() {
+                e.prototype.setOrientation = function () {
                     var t = this.getParentComponent()
                         , i = t && t.getElement();
                     i && (this.state.orientation = e.getOrientation(i))
                 }
                 ,
-                e.getOrientation = function(t) {
+                e.getOrientation = function (t) {
                     var e = t.clientWidth
                         , i = t.clientHeight
                         , n = r.vertical;
@@ -19806,7 +20201,7 @@
                         n
                 }
                 ,
-                e.prototype.selectLayout = function() {
+                e.prototype.selectLayout = function () {
                     var t = [];
                     switch (this.state.orientation) {
                         case r.vertical:
@@ -19824,7 +20219,7 @@
                     this.tryLayouts(t)
                 }
                 ,
-                e.prototype.tryLayouts = function(t) {
+                e.prototype.tryLayouts = function (t) {
                     for (var e = 0; e < t.length; e++) {
                         var i = t[e]
                             , n = t[e - 1]
@@ -19845,58 +20240,58 @@
                     }
                 }
                 ,
-                e.prototype.isLayoutOverflows = function(t) {
+                e.prototype.isLayoutOverflows = function (t) {
                     return u.hasScrollInParentElement(this.abuseElement) || u.hasScrollInParentElement(this.containerElement) || e.hasHorizontalScroll(this.containerElement) || this.hasScrollInOptions(t)
                 }
                 ,
-                e.hasHorizontalScroll = function(t) {
+                e.hasHorizontalScroll = function (t) {
                     return t.scrollWidth - t.clientWidth > 2
                 }
                 ,
-                e.prototype.hasScrollInOptions = function(t) {
+                e.prototype.hasScrollInOptions = function (t) {
                     var e = this.renderedOptions[t];
-                    return f.some(e, function(t) {
+                    return f.some(e, function (t) {
                         return u.hasScrollInElement(t.getElement())
                     })
                 }
                 ,
-                e.prototype.getOptions = function(t) {
+                e.prototype.getOptions = function (t) {
                     return h.options(this.props.language)[t]
                 }
                 ,
-                e.prototype.chooseOptionImp = function(t, e) {
+                e.prototype.chooseOptionImp = function (t, e) {
                     var i = this
                         , n = t.target
                         , o = n && n.getAttribute("data-option-id");
-                    o && d.chooseOption(o, this.props.abuseUrl, e, function() {
+                    o && d.chooseOption(o, this.props.abuseUrl, e, function () {
                         return i.getOptions(e)
-                    }, function() {
+                    }, function () {
                         i.hide(),
                             i.fireEvent("received:feedback", o)
                     })
                 }
                 ,
-                e.prototype.show = function() {
+                e.prototype.show = function () {
                     this.rootComponent.addClass(this.visibilityClass)
                 }
                 ,
-                e.prototype.hide = function() {
+                e.prototype.hide = function () {
                     this.rootComponent.removeClass(this.visibilityClass)
                 }
                 ,
-                e.prototype.isVisible = function() {
+                e.prototype.isVisible = function () {
                     return this.rootComponent.hasClass(this.visibilityClass)
                 }
                 ,
-                e.prototype.renderOptions = function(t) {
+                e.prototype.renderOptions = function (t) {
                     var e = this;
                     return this.renderedOptions[t] = [],
-                        m.map(this.getOptions(t), function(i, n) {
+                        m.map(this.getOptions(t), function (i, n) {
                             var o = l.create("a", {
                                 resourceId: "",
                                 class: e.b_("__complaint-link"),
                                 "data-option-id": i.id,
-                                onClick: function(i) {
+                                onClick: function (i) {
                                     return e.chooseOptionImp(i, t)
                                 }
                             }, i.text);
@@ -19907,7 +20302,7 @@
                         }, this)
                 }
                 ,
-                e.prototype.renderHide = function() {
+                e.prototype.renderHide = function () {
                     var t = h.titles(this.props.language);
                     return l.create("yatag", {
                         class: this.b_("__logo-wrapper")
@@ -19918,7 +20313,7 @@
                     }, t.large))
                 }
                 ,
-                e.prototype._render = function() {
+                e.prototype._render = function () {
                     return this.state.wasOpenedFeedback ? l.create("yatag", {
                         resourceId: "abuse",
                         class: this.b_()
@@ -19939,22 +20334,23 @@
         }(p);
         e.AbuseMessage = y
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n, o = (n = Object.setPrototypeOf || {
                     __proto__: []
-                }instanceof Array && function(t, e) {
+                } instanceof Array && function (t, e) {
                     t.__proto__ = e
                 }
-                || function(t, e) {
+                || function (t, e) {
                     for (var i in e)
                         e.hasOwnProperty(i) && (t[i] = e[i])
                 }
                 ,
-                function(t, e) {
+                function (t, e) {
                     function i() {
                         this.constructor = t
                     }
+
                     n(t, e),
                         t.prototype = null === e ? Object.create(e) : (i.prototype = e.prototype,
                             new i)
@@ -19965,17 +20361,18 @@
             , a = i(1)
             , s = i(7)
             , l = i(201)
-            , p = function(t) {
+            , p = function (t) {
             function e() {
                 return null !== t && t.apply(this, arguments) || this
             }
+
             return o(e, t),
-                e.prototype.onInit = function() {
+                e.prototype.onInit = function () {
                     this.name = "yap-adtune-message",
                         t.prototype.onInit.call(this)
                 }
                 ,
-                e.prototype._render = function() {
+                e.prototype._render = function () {
                     var t = this.b_
                         , e = this.props
                         , i = e.isBig ? "_big" : "";
@@ -19994,66 +20391,66 @@
         }(a);
         e.AdtuneMessage = p
     }
-    , function(t, e) {
-        t.exports = function(t) {
+    , function (t, e) {
+        t.exports = function (t) {
             var e = [];
             return e.push(".", t.id, " .p291e1855{position:absolute !important;z-index:11 !important;right:0 !important;top:0 !important}.", t.id, " .wc7b9b093{position:absolute !important;left:-101% !important;top:0 !important;width:100% !important;height:100% !important;display:block !important}#", t.id, " .b2637ef68 .a1e92531,#", t.id, " .b2637ef68 .o6aba2690{display:none !important}#", t.id, " .b2637ef68 .wc7b9b093{left:0 !important;transition:left .4s ease-out !important}"),
                 e.join("")
         }
     }
-    , function(t, e) {
-        t.exports = function(t) {
+    , function (t, e) {
+        t.exports = function (t) {
             var e = [];
             return e.push(".", t.id, " .u3c7175d7{display:inline !important}.", t.id, " .c40e0f31f{display:none !important}.", t.id, " .r87545d64{padding:2px 5px !important;margin:0 !important;border-radius:2px !important;background-color:", t.utils.browser.isIEQuirks ? "#000" : "rgba(0, 0, 0, 0.7)", " !important;color:#fff !important;text-align:center !important;line-height:1.3em !important}.", t.id, " .b548a34fc{top:-1px !important;color:", new t.utils.Color(t.settings.bgColor || t.settings.siteBgColor || "#FFFFFF").readable().setAlpha(.3), " !important;font-weight:700 !important;vertical-align:middle !important}.", t.id, " .b548a34fc,.", t.id, " .af5d6d6f2{position:relative !important;display:inline !important;text-transform:uppercase !important}.", t.id, " .af5d6d6f2{vertical-align:top !important}.", t.id, " .af5d6d6f2 .u3c7175d7{display:inline-block !important;vertical-align:top !important;font-size:70% !important;padding:.1em .2em .05em !important;text-align:center !important;line-height:1.4 !important;border-radius:4px !important;border:1px solid ", t.utils.warning.getBorderColor(t.settings.bgColor || t.settings.siteBgColor || "#FFFFFF", t.settings.textColor), " !important;background-color:", t.utils.warning.getBgColor(t.settings.bgColor || t.settings.siteBgColor || "#FFFFFF"), " !important}.", t.id, " .o518765fc{font-size:.9em !important}.", t.id, " .r744db83c{padding:2px 5px !important;height:13px !important;border-radius:0 !important;color:#fff !important;font-size:9px !important;line-height:13px !important;opacity:.6 !important;background-color:#000 !important}.", t.id, " .add3b438a{border-radius:0 !important;font-size:10px !important;line-height:13px !important;color:#fff !important;background-color:rgba(0,0,0,.3) !important;padding:0 3px !important}"),
                 e.join("")
         }
     }
-    , function(t, e) {
-        t.exports = function(t) {
+    , function (t, e) {
+        t.exports = function (t) {
             var e = [];
             return e.push(".", t.id, " .ie1353e4e{display:inline-block !important;overflow:hidden !important;border-radius:3px !important}.", t.id, " .q375463d{border-radius:8px !important;box-shadow:0 0 0 2px #fff !important}"),
                 e.join("")
         }
     }
-    , function(t, e) {
-        t.exports = function(t) {
+    , function (t, e) {
+        t.exports = function (t) {
             var e = [];
             return e.push(".", t.id, " .wa6f3481{display:inline !important}.", t.id, " .q28a796ef{overflow-wrap:break-word !important;word-wrap:break-word !important;-webkit-hyphens:auto !important;-ms-hyphens:auto !important;hyphens:auto !important}"),
                 e.join("")
         }
     }
-    , function(t, e) {
-        t.exports = function(t) {
+    , function (t, e) {
+        t.exports = function (t) {
             var e = [];
             return e.push(".", t.id, " .vca872f61,.", t.id, " .rb0413e59 b{font-weight:700 !important}.", t.id, " .vca872f61{white-space:nowrap !important;max-width:100% !important;display:inline-block !important}"),
                 e.join("")
         }
     }
-    , function(t, e) {
-        t.exports = function(t) {
+    , function (t, e) {
+        t.exports = function (t) {
             var e = [];
             return e.push(".", t.id, " .d2d302cbf{z-index:0 !important;margin:0 !important;padding:0 !important;border:0 !important;text-align:center !important;font-size:1em !important;line-height:1.9em !important;background:", t.settings.titleColor || "#0000CC", " !important;border-radius:3px !important;-webkit-user-select:none !important;-moz-user-select:none !important;-ms-user-select:none !important;user-select:none !important;-webkit-tap-highlight-color:rgba(0,0,0,0) !important}.", t.id, " .d2d302cbf,.", t.id, " .k809e8c22{position:relative !important;display:inline-block !important}.", t.id, " .k809e8c22{z-index:2 !important;margin:0 auto !important;padding:0 1em !important;color:", new t.utils.Color(t.settings.titleColor || "#0000CC").readable(), " !important;font-weight:400 !important;zoom:0 !important}.", t.id, " .n678c01f4,.", t.id, " .k809e8c22{vertical-align:middle !important}.", t.id, " .d2d302cbf:hover{background:", t.settings.hoverColor || "#0088CC", " !important}.", t.id, " .d2d302cbf:hover .k809e8c22{color:", new t.utils.Color(t.settings.hoverColor || "#0088CC").readable(), " !important;text-decoration:none !important}.", t.id, " .gb531cb35,.", t.id, " .gb531cb35:hover{color:#fff !important;background:#689f38 !important;border-radius:3px !important;font:normal .9em/1 Tahoma,sans-serif !important;text-transform:uppercase !important;letter-spacing:1px !important;text-decoration:none !important;line-height:1.2em !important}.", t.id, " .gb531cb35 .k809e8c22,.", t.id, " .gb531cb35:hover .k809e8c22{padding:.9em 1.2em .8em !important}.", t.id, " .l77b92e60,.", t.id, " .l77b92e60:hover{color:#fff !important;background:#689f38 !important;border-radius:3px !important;font:normal .9em/1 sans-serif !important;text-transform:uppercase !important;letter-spacing:1px !important;text-decoration:none !important;line-height:1.2em !important}.", t.id, " .l77b92e60 .k809e8c22,.", t.id, " .l77b92e60:hover .k809e8c22{padding:.5em 1.2em !important}.", t.id, " .ia25f217b,.", t.id, " .ia25f217b:hover{border:1px solid #1f66b1 !important;color:#1f66b1 !important;fill:#1f66b1 !important;background:transparent !important;font-family:Helvetica,Arial,sans-serif !important;text-transform:uppercase !important;letter-spacing:1px !important}.", t.id, " .ia25f217b .k809e8c22,.", t.id, " .ia25f217b:hover .k809e8c22{top:0 !important;padding-left:.8em !important;padding-right:.8em !important;color:inherit !important;vertical-align:top !important}.", t.id, " .r94ace72e,.", t.id, " .r94ace72e:hover{border:1px solid #007aff !important;border-radius:5px !important;color:#007aff !important;fill:#007aff !important;stroke:#007aff !important;background:transparent !important;font-family:system,-apple-system,BlinkMacSystemFont,Helvetica Neue,Lucida Grande,Arial,sans-serif !important;text-transform:uppercase !important}.", t.id, " .r94ace72e .k809e8c22,.", t.id, " .r94ace72e:hover .k809e8c22{top:0 !important;padding-left:.7em !important;padding-right:.7em !important;color:inherit !important;vertical-align:top !important;font-weight:600 !important}.", t.id, " .l33471319,.", t.id, " .l33471319:hover{height:34px !important;line-height:34px !important;color:#fff !important;background-color:#109d57 !important;border-radius:3px !important;font-family:Tahoma,sans-serif !important;text-transform:uppercase !important;letter-spacing:1px !important;text-decoration:none !important}.", t.id, " .l33471319 .k809e8c22,.", t.id, " .l33471319:hover .k809e8c22{font-size:14px !important;padding:0 14px !important}.", t.id, " .l33471319.s505f91df,.", t.id, " .l33471319:hover.s505f91df{height:28px !important;line-height:28px !important}.", t.id, " .l33471319.s505f91df .k809e8c22,.", t.id, " .l33471319:hover.s505f91df .k809e8c22{font-size:12px !important}.", t.id, " .a316f8f57,.", t.id, " .a316f8f57:hover{border:1px solid #158fff !important;height:21px !important;line-height:20px !important;border-radius:12px !important;color:#fff !important;fill:#fff !important;background:#158fff !important;font-family:Helvetica,Arial,sans-serif !important;text-transform:uppercase !important;letter-spacing:1px !important}.", t.id, " .a316f8f57 .k809e8c22,.", t.id, " .a316f8f57:hover .k809e8c22{top:0 !important;padding-left:.8em !important;padding-right:.8em !important;color:inherit !important;vertical-align:top !important}.", t.id, " .q62938b93{border:2px solid !important;border-color:", new t.utils.Color(t.settings.bgColor || "#FFF").readable(), " !important;background:", t.settings.bgColor || "#FFF", " !important}.", t.id, " .q62938b93 .k809e8c22{color:", new t.utils.Color(t.settings.bgColor || "#FFF").readable(), " !important;font-size:1.15em !important;font-weight:700 !important;vertical-align:top !important}.", t.id, " .q62938b93 .n678c01f4{border-radius:0 !important}.", t.id, " .q62938b93:hover{background:", t.settings.hoverColor || "#0088CC", " !important}.", t.id, " .q62938b93:hover .k809e8c22{color:", new t.utils.Color(t.settings.hoverColor || "#0088CC").readable(), " !important}.", t.id, " .f34b9742a .k809e8c22,.", t.id, " .f34b9742a:hover .k809e8c22{color:", t.textColor || "#fff", " !important}.", t.id, " .p73dd045f,.", t.id, " .p73dd045f:hover{font-size:1.2em !important;line-height:1em !important;padding:.3em .9em !important}.", t.id, " .p73dd045f .k809e8c22,.", t.id, " .p73dd045f:hover .k809e8c22{font-weight:700 !important;padding:0 !important;color:#000 !important}.", t.id, " .f34b9742a,.", t.id, " .f34b9742a:hover{font-size:13px !important;line-height:1em !important;background:transparent !important;box-shadow:inset 0 0 0 2px #fc0 !important}.", t.id, " .f34b9742a .k809e8c22,.", t.id, " .f34b9742a:hover .k809e8c22{font-weight:700 !important;padding:.5em .7em !important;color:", t.textColor || "#fff", " !important}.", t.id, " .dc052fb49,.", t.id, " .dc052fb49:hover{font-size:1em !important;line-height:1em !important;background:#fff !important;box-shadow:0 2px 5px 0 rgba(0,0,0,.3) !important}.", t.id, " .dc052fb49 .k809e8c22,.", t.id, " .dc052fb49:hover .k809e8c22{font-weight:700 !important;padding:.5em .7em !important;color:#000 !important}"),
                 e.join("")
         }
     }
-    , function(t, e) {
-        t.exports = function(t) {
+    , function (t, e) {
+        t.exports = function (t) {
             var e = [];
             return e.push(".", t.id, " .pfc096f76{overflow:hidden !important;margin-top:.2em !important;color:", new t.utils.Color(t.settings.textColor || "#000").setAlpha(.55), " !important}.", t.id, " .nf6db9563{position:relative !important;margin-top:.1em !important}.", t.id, ' .nf6db9563:before{position:absolute !important;left:0 !important;top:0 !important;content:"\u2022" !important}.', t.id, " .o2a3486b{display:table-cell !important;padding-left:.7em !important}"),
                 e.join("")
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n = i(0)
             , o = i(1)
             , r = n.createComponent(o, {
             name: "yap-contacts",
-            shouldRender: function() {
+            shouldRender: function () {
                 var t = this.props.adv;
                 return t.domain || t.vcardUrl || t.region || t.metro || t.geoDistance
             },
-            _render: function(t, e, i) {
+            _render: function (t, e, i) {
                 var o = e.adv
                     , r = e.language
                     , a = e.showAddress
@@ -20084,38 +20481,38 @@
         });
         t.exports = r
     }
-    , function(t, e) {
-        t.exports = function(t) {
+    , function (t, e) {
+        t.exports = function (t) {
             var e = [];
             return e.push(".", t.id, " .x100e4e5f{display:inline !important}.", t.id, " .l528d2691 .oa5ec3a69{border:none !important;color:#fff !important;font-weight:700 !important;font-size:16px !important;text-shadow:#333 0 0 50px !important}.", t.id, " .m1b9d9a04{display:inline !important;font-weight:700 !important}.", t.id, " .i6b610469{font-size:10px !important;line-height:13px !important;height:13px !important;display:inline-block !important;padding:0 8px !important;background-color:#feda5b !important;white-space:nowrap !important}.", t.id, " .i6b610469 .oa5ec3a69{color:#000 !important;font-weight:700 !important;border:none !important}"),
                 e.join("")
         }
     }
-    , function(t, e) {
-        t.exports = function(t) {
+    , function (t, e) {
+        t.exports = function (t) {
             var e = [];
             return e.push(".", t.id, " img.r60b1a833{position:relative !important;margin-top:", t.utils.browser.isIEQuirks ? "0" : "-0.2em", " !important;margin-right:.3em !important;width:1em !important;height:1em !important;min-width:8px !important;max-width:16px !important;min-height:8px !important;max-height:16px !important;display:inline-block !important;vertical-align:middle !important}.", t.id, " img.af39f9b85{width:16px !important;height:16px !important}"),
                 e.join("")
         }
     }
-    , function(t, e) {
-        t.exports = function(t) {
+    , function (t, e) {
+        t.exports = function (t) {
             var e = [];
             return e.push(".", t.id, " .oeac84bdc{display:inline-block !important}"),
                 e.join("")
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n = i(0)
             , o = i(2)
             , r = n.createComponent({
-            render: function() {
+            render: function () {
                 var t = this.props.separator
                     , e = this.getChildren()
                     , i = e.length - 1
                     , n = [];
-                return o.each(e, function(e, o) {
+                return o.each(e, function (e, o) {
                     n.push(e),
                     o < i && n.push(t)
                 }),
@@ -20124,7 +20521,7 @@
         });
         t.exports = r
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n, o = i(7), r = (n = o) && n.__esModule ? n : {
             default: n
@@ -20134,13 +20531,13 @@
             , l = i(462)
             , p = a.createComponent(s, {
             name: "yap-geo",
-            shouldRender: function() {
+            shouldRender: function () {
                 return this.props.adv.geoDistance
             },
-            afterRender: function() {
+            afterRender: function () {
                 this.pushStyles(l)
             },
-            _render: function(t, e, i) {
+            _render: function (t, e, i) {
                 return a.create("yatag", {
                     class: t(e["class"], t(), this.mod)
                 }, a.create("yatag", {
@@ -20160,24 +20557,24 @@
         });
         t.exports = p
     }
-    , function(t, e) {
-        t.exports = function(t) {
+    , function (t, e) {
+        t.exports = function (t) {
             var e = [];
             return e.push(".", t.id, " .s7b788219{margin-right:3px !important;display:inline-block !important}.", t.id, " .f34850faa{position:relative !important;margin:0 !important;border:1px solid !important;padding:1px !important;width:1em !important;line-height:1.2 !important;display:inline-block !important;font-size:70% !important;text-align:center !important;vertical-align:top !important;border-radius:3px !important;color:", t.utils.warning.getBorderColor(t.settings.bgColor || "#FFF", t.settings.textColor || "#000", .1), " !important;border-color:", t.utils.warning.getBorderColor(t.settings.bgColor || "#FFF", t.settings.textColor || "#000", .7), " !important}"),
                 e.join("")
         }
     }
-    , function(t, e) {
-        t.exports = function(t) {
+    , function (t, e) {
+        t.exports = function (t) {
             var e = [];
             return e.push(".", t.id, " .uaca5b656{max-width:100% !important}.", t.id, " .w828f8880{max-width:100% !important;box-sizing:border-box !important;white-space:nowrap !important}.", t.id, " .kea8eb6bb{display:inline-block !important}.", t.id, " .b83e558b7 .n678c01f4,.", t.id, " .b1da1c5d1 .kea8eb6bb{display:none !important}.", t.id, " .h8d3853ed .w828f8880 .k809e8c22{padding-left:.6em !important}.", t.id, " .leec452ff .k809e8c22{font-size:.9em !important}.", t.id, " .a9af6eefc .k809e8c22{font-size:.8em !important}.", t.id, " .g1dd31cfd .k809e8c22{font-size:.7em !important}.", t.id, " .q205b114c{position:absolute !important;left:1px !important;top:1px !important;stroke-width:.7 !important}"),
                 e.join("")
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
-        e["default"] = function(t) {
+        e["default"] = function (t) {
             var e = void 0 === t ? {} : t
                 , i = e.width
                 , n = e.height
@@ -20192,7 +20589,7 @@
             return {
                 width: s ? l : c,
                 height: s ? d : p,
-                box: function(t) {
+                box: function (t) {
                     var e = void 0 === t ? {} : t
                         , i = e.isWidthOriental
                         , n = e.viewportWidth
@@ -20221,27 +20618,27 @@
             }
         }
     }
-    , function(t, e) {
-        t.exports = function(t) {
+    , function (t, e) {
+        t.exports = function (t) {
             var e = [];
             return e.push(".", t.id, " .df2798165{position:relative !important;display:block !important;overflow:hidden !important}.", t.id, " .u61696a02{position:absolute !important;left:50% !important;tap-highlight-color:none !important;-webkit-user-select:none !important;-moz-user-select:none !important;-ms-user-select:none !important;user-select:none !important}.", t.id, " .i4be7aec6{display:block !important;opacity:1 !important;will-change:opacity !important;transition:opacity .2s ease !important}.", t.id, " .rb2dee5fd .i4be7aec6:hover{opacity:.8 !important}"),
                 e.join("")
         }
     }
-    , function(t, e) {
-        t.exports = function(t) {
+    , function (t, e) {
+        t.exports = function (t) {
             var e = [];
             return e.push(".", t.id, " .tec1e2542{display:inline-block !important;vertical-align:top !important;cursor:help !important}.", t.id, " .kc3cadf37{display:block !important;margin-top:1px !important}.", t.id, " .b862ab121{text-align:center !important}.", t.id, " .i3b724434{display:inline-block !important;vertical-align:middle !important;margin:.2em 0 0 .5em !important;font-size:.8em !important;color:", t.textColor || t.settings.textColor || "#000", " !important;opacity:.8 !important}.", t.id, " .tec1e2542 .f5a8e7b28{overflow:hidden !important;position:relative !important;display:inline-block !important;vertical-align:middle !important;height:1em !important;width:5em !important;white-space:nowrap !important}.", t.id, " .ke5aed5cc{position:absolute !important;left:0 !important;top:0 !important;overflow:hidden !important}.", t.id, " .tec1e2542 .mcd24721b{display:inline-block !important;vertical-align:top !important;fill:", t.textColor || t.settings.textColor || "#000", " !important;opacity:.4 !important}.", t.id, " .ke5aed5cc .mcd24721b{opacity:1 !important;fill:", t.starColor || "#fc0", " !important}.", t.id, " .mcd24721b .ne4961fe{display:block !important;height:1em !important;width:1em !important}"),
                 e.join("")
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         var n = i(2)
             , o = (i(6),
             i(3),
             i(7)["default"],
             {
-                mobileApp: function(t) {
+                mobileApp: function (t) {
                     var e = [];
                     e.push('<yatag class="yap-mobile-app ', t.plainLink ? "yap-mobile-app_inline" : "", '">');
                     var i = t.ad.addInfo.price ? "&nbsp;&ndash; " + t.ad.addInfo.price + "&nbsp;" + t.ad.addInfo.priceCurrencySymbol : null;
@@ -20262,7 +20659,7 @@
                         e.push("</yatag>"),
                         e.join("")
                 },
-                mobileApp__rating: function(t) {
+                mobileApp__rating: function (t) {
                     var e = [];
                     e.push("");
                     var i = "";
@@ -20289,7 +20686,7 @@
                         e.push("</yatag>"),
                         e.join("")
                 },
-                mobileApp__star: function(t) {
+                mobileApp__star: function (t) {
                     var e = [];
                     return e.push('<svg class="yap-mobile-app__star-svg" height="12px" version="1.1" viewBox="0 0 32 32" width="12px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><polygon points="22.137,19.625 32,12 20,12 16,0 12,12 0,12 9.875,19.594 6,32 16.016,24.32 26.008,32"/></svg>'),
                         e.join("")
@@ -20297,147 +20694,148 @@
             });
         t.exports = o
     }
-    , function(t, e) {
-        t.exports = function(t) {
+    , function (t, e) {
+        t.exports = function (t) {
             var e = [];
             return e.push(".", t.id, " .j84df3ff1{color:", t.settings.sitelinksColor || t.settings.titleColor || "#0000CC", " !important;text-decoration:none !important;border-bottom-color:", new t.utils.Color(t.settings.sitelinksColor || t.settings.titleColor || "#0000CC").setAlpha(.4), " !important;border-bottom-width:", t.settings.linksUnderline ? 1 : 0, "px !important;border-bottom-style:", t.utils.browser.isSafari ? "inset" : "solid", " !important}"),
                 e.join("")
         }
     }
-    , function(t, e) {
-        t.exports = function(t) {
+    , function (t, e) {
+        t.exports = function (t) {
             var e = [];
             return e.push(".", t.id, " .k42c6cf09,.", t.id, " .k42c6cf09 b{line-height:inherit !important;text-decoration:none !important;word-break:break-word !important;color:", t.settings.titleColor || "#0000CC", " !important;border-bottom-color:", new t.utils.Color(t.settings.titleColor || "#0000CC").setAlpha(.4), " !important;border-bottom-width:", t.settings.linksUnderline ? 1 : 0, "px !important;border-bottom-style:", t.utils.browser.isSafari ? "inset" : "solid", " !important}.", t.id, " .k42c6cf09 b{border-bottom:none !important;font-weight:700 !important}.", t.id, " .vb8bad17f{display:inline !important}"),
                 e.join("")
         }
     }
-    , function(t, e) {
-        t.exports = function(t) {
+    , function (t, e) {
+        t.exports = function (t) {
             var e = [];
             return e.push(".", t.id, " .b91cb4cd9{z-index:100 !important}.", t.id, " .w98a80363{font-size:9px !important;line-height:1.2 !important;border:1px solid ", t.settings.bgColor || t.settings.siteBgColor ? new t.utils.Color(t.settings.bgColor || t.settings.siteBgColor).readable().setAlpha(.3) : new t.utils.Color("#ddd").setAlpha(1), " !important;border-radius:0 !important}.", t.id, " .w98a80363,.", t.id, " .j86b874c3{color:", t.settings.bgColor || t.settings.siteBgColor ? new t.utils.Color(t.settings.bgColor || t.settings.siteBgColor).readable().setAlpha(.6) : new t.utils.Color("#666").setAlpha(1), " !important;font-family:verdana !important;background:transparent !important;height:17px !important}.", t.id, " .a43b5611e{text-align:center !important}.", t.id, " .j86b874c3{text-decoration:underline !important;white-space:pre !important}.", t.id, " .j86b874c3:hover{color:", new t.utils.Color(t.settings.bgColor || t.settings.siteBgColor || "#FFFFFF").readable().setAlpha(.5), " !important}.", t.id, " .f6e8bd17{display:table !important}.", t.id, " .f6e8bd17 .a43b5611e{display:table-cell !important;vertical-align:middle !important;padding-left:5px !important;padding-right:5px !important}.", t.id, " .p793eddf6{overflow:hidden !important;position:relative !important;z-index:1 !important;max-width:400px !important;width:100% !important;border:none !important}.", t.id, " .p793eddf6 .a43b5611e{padding-top:3px !important;z-index:-1 !important;white-space:nowrap !important;display:inline-block !important;position:relative !important;left:0 !important;text-align:left !important;margin-bottom:0 !important;margin-top:0 !important}.", t.id, " .rc1d03b70{color:", t.settings.sitelinksColor || t.settings.titleColor || "#0000cc", " !important;opacity:.5 !important;line-height:1em !important;font-size:14px !important}.", t.id, " .rc1d03b70.g310913d1{font-size:0 !important}.", t.id, " .s7c3e0804{display:-webkit-flex !important;display:-ms-flexbox !important;display:flex !important;-webkit-flex-flow:row nowrap !important;-ms-flex-flow:row nowrap !important;flex-flow:row nowrap !important;width:100% !important}.", t.id, " .g87403dc9{-webkit-flex:1 !important;-ms-flex:1 !important;flex:1 !important}.", t.id, " .g92c36e0f .p793eddf6{z-index:0 !important}.", t.id, " .k9abe8e9a{-webkit-mask-image:linear-gradient(-90deg,hsla(0,0%,100%,0),#fff 25%) !important;mask-image:linear-gradient(-90deg,hsla(0,0%,100%,0),#fff 25%) !important;-webkit-flex:1 !important;-ms-flex:1 !important;flex:1 !important}.", t.id, " .u27c43034{width:100% !important;max-width:400px !important;overflow:hidden !important;position:relative !important}.", t.id, " .h715209c1{-webkit-mask-image:linear-gradient(-90deg,#fff 85%,hsla(0,0%,100%,0)) !important;mask-image:linear-gradient(-90deg,#fff 85%,hsla(0,0%,100%,0)) !important}.", t.id, " .h715209c1.k9abe8e9a{-webkit-mask-image:linear-gradient(-90deg,hsla(0,0%,100%,0),#fff 15%,#fff 85%,hsla(0,0%,100%,0)) !important;mask-image:linear-gradient(-90deg,hsla(0,0%,100%,0),#fff 15%,#fff 85%,hsla(0,0%,100%,0)) !important}.", t.id, " .k9abe8e9a:after{position:absolute !important;right:0 !important;top:0 !important;bottom:0 !important;line-height:1.7em !important;padding-right:2px !important;text-align:right !important;width:60px !important}.", t.id, " .e2d62993 .s1aa15592{display:inline !important;text-decoration:underline !important;vertical-align:middle !important}.", t.id, " .e2d62993 .s1aa15592:hover{color:", t.settings.hoverColor || "#0088CC", " !important}.", t.id, " .efac67ec3{color:#fff !important;font-size:1em !important;line-height:1.3em !important;height:13px !important;width:100% !important;max-width:420px !important}.", t.id, " .efac67ec3 .a43b5611e{padding:0 4px !important;font-size:inherit !important;line-height:inherit !important;height:inherit !important}.", t.id, " .efac67ec3.f6e8bd17{line-height:6px !important;background-color:rgba(0,0,0,.3) !important;color:#fff !important;border:0 !important;font-size:.8em !important;padding:0 0 1px !important}.", t.id, " .s8fc70475{width:100% !important;border:none !important}.", t.id, " .s8fc70475 .a43b5611e{line-height:17px !important;font-size:8px !important;padding:0 !important;color:#fff !important;text-indent:4px !important}.", t.id, " .s8fc70475 .f6e8bd17 .a43b5611e{padding-top:1px !important;line-height:7px !important;vertical-align:top !important}"),
                 e.join("")
         }
     }
-    , function(t, e, i) {
-        t.exports = function(t, e) {
-            i.e(0).then(function() {
+    , function (t, e, i) {
+        t.exports = function (t, e) {
+            i.e(0).then(function () {
                 t(i(612))
             }
-                .bind(null, i)).catch(function() {
+                .bind(null, i)).catch(function () {
                 e && e.apply(this, arguments)
             })
         }
     }
-    , function(t, e, i) {
-        t.exports = function(t, e) {
-            i.e(0).then(function() {
+    , function (t, e, i) {
+        t.exports = function (t, e) {
+            i.e(0).then(function () {
                 t(i(601))
             }
-                .bind(null, i)).catch(function() {
+                .bind(null, i)).catch(function () {
                 e && e.apply(this, arguments)
             })
         }
     }
-    , function(t, e) {
-        t.exports = function(t) {
+    , function (t, e) {
+        t.exports = function (t) {
             var e = [];
             return e.push(".", t.id, " .v5a26352d{z-index:1 !important;top:0 !important;left:0 !important;width:100% !important;overflow:hidden !important;text-align:center !important}.", t.id, " .v5a26352d,.", t.id, " .s3d877ae1{position:relative !important;margin:0 auto !important;display:block !important}.", t.id, " .s3d877ae1{z-index:3 !important}.", t.id, " .v5a26352d .i4be7aec6{position:relative !important}.", t.id, " .qf98d4624{display:inline-block !important}.", t.id, " .c98b9f34d{position:absolute !important;z-index:3 !important;top:0 !important;left:0 !important;width:200px !important;height:200px !important;overflow:hidden !important;text-indent:-4000px !important}"),
                 e.join("")
         }
     }
-    , function(t, e) {
-        t.exports = function(t) {
+    , function (t, e) {
+        t.exports = function (t) {
             var e = [];
             return e.push(".", t.id, " .jee671d2c{position:relative !important;top:0 !important;left:0 !important;margin:0 auto !important;display:block !important;width:100% !important;overflow:hidden !important;background-color:", t.settings.bgColor || "#fff", " !important}.", t.id, " .e80e7f7e9,.", t.id, " .b9dd4e40e{position:absolute !important;top:0 !important;left:0 !important;width:100% !important;height:100% !important;opacity:.3 !important}.", t.id, " .b9dd4e40e svg{position:absolute !important;width:200% !important;height:200% !important;left:-50% !important;top:-50% !important}.", t.id, " .e80e7f7e9{background-position:50% 50% !important;background-size:cover !important;background-repeat:no-repeat !important;-webkit-transform:scale(2) !important;transform:scale(2) !important;-webkit-transform-origin:center 30% !important;transform-origin:center 30% !important;-webkit-filter:blur(", t.blurSize, "px) !important;filter:blur(", t.blurSize, "px) !important}"),
                 e.join("")
         }
     }
-    , function(t, e, i) {
-        t.exports = function(t, e) {
-            i.e(0).then(function() {
+    , function (t, e, i) {
+        t.exports = function (t, e) {
+            i.e(0).then(function () {
                 t(i(613))
             }
-                .bind(null, i)).catch(function() {
+                .bind(null, i)).catch(function () {
                 e && e.apply(this, arguments)
             })
         }
     }
-    , function(t, e, i) {
-        t.exports = function(t, e) {
-            i.e(0).then(function() {
+    , function (t, e, i) {
+        t.exports = function (t, e) {
+            i.e(0).then(function () {
                 t(i(604))
             }
-                .bind(null, i)).catch(function() {
+                .bind(null, i)).catch(function () {
                 e && e.apply(this, arguments)
             })
         }
     }
-    , function(t, e, i) {
-        t.exports = function(t, e) {
-            i.e(0).then(function() {
+    , function (t, e, i) {
+        t.exports = function (t, e) {
+            i.e(0).then(function () {
                 t(i(614))
             }
-                .bind(null, i)).catch(function() {
+                .bind(null, i)).catch(function () {
                 e && e.apply(this, arguments)
             })
         }
     }
-    , function(t, e, i) {
-        t.exports = function(t, e) {
-            i.e(0).then(function() {
+    , function (t, e, i) {
+        t.exports = function (t, e) {
+            i.e(0).then(function () {
                 t(i(615))
             }
-                .bind(null, i)).catch(function() {
+                .bind(null, i)).catch(function () {
                 e && e.apply(this, arguments)
             })
         }
     }
-    , function(t, e, i) {
-        t.exports = function(t, e) {
-            i.e(0).then(function() {
+    , function (t, e, i) {
+        t.exports = function (t, e) {
+            i.e(0).then(function () {
                 t(i(616))
             }
-                .bind(null, i)).catch(function() {
+                .bind(null, i)).catch(function () {
                 e && e.apply(this, arguments)
             })
         }
     }
-    , function(t, e, i) {
-        t.exports = function(t, e) {
-            i.e(0).then(function() {
+    , function (t, e, i) {
+        t.exports = function (t, e) {
+            i.e(0).then(function () {
                 t(i(599))
             }
-                .bind(null, i)).catch(function() {
+                .bind(null, i)).catch(function () {
                 e && e.apply(this, arguments)
             })
         }
     }
-    , function(t, e, i) {
-        t.exports = function(t, e) {
-            i.e(0).then(function() {
+    , function (t, e, i) {
+        t.exports = function (t, e) {
+            i.e(0).then(function () {
                 t(i(617))
             }
-                .bind(null, i)).catch(function() {
+                .bind(null, i)).catch(function () {
                 e && e.apply(this, arguments)
             })
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n, o = (n = Object.setPrototypeOf || {
                     __proto__: []
-                }instanceof Array && function(t, e) {
+                } instanceof Array && function (t, e) {
                     t.__proto__ = e
                 }
-                || function(t, e) {
+                || function (t, e) {
                     for (var i in e)
                         e.hasOwnProperty(i) && (t[i] = e[i])
                 }
                 ,
-                function(t, e) {
+                function (t, e) {
                     function i() {
                         this.constructor = t
                     }
+
                     n(t, e),
                         t.prototype = null === e ? Object.create(e) : (i.prototype = e.prototype,
                             new i)
@@ -20446,29 +20844,30 @@
         e.__esModule = !0;
         var r = i(0)
             , a = i(139)
-            , s = function(t) {
+            , s = function (t) {
             function e() {
                 var e = null !== t && t.apply(this, arguments) || this;
-                return e.onChangeBlockState = function(t, i) {
+                return e.onChangeBlockState = function (t, i) {
                     null !== i && i.status === t.status || e.props.callback(t.status) && e.context.unChangeState(e.onChangeBlockState)
                 }
                     ,
                     e
             }
+
             return o(e, t),
-                e.prototype.render = function() {
+                e.prototype.render = function () {
                     var t = this;
-                    return r.create(a.BlockContext.Consumer, null, function(e) {
+                    return r.create(a.BlockContext.Consumer, null, function (e) {
                         return t.context = e,
                             null
                     })
                 }
                 ,
-                e.prototype.onMount = function() {
+                e.prototype.onMount = function () {
                     this.context.onChangeState(this.onChangeBlockState)
                 }
                 ,
-                e.prototype.onUnmount = function() {
+                e.prototype.onUnmount = function () {
                     this.context.unChangeState(this.onChangeBlockState)
                 }
                 ,
@@ -20476,314 +20875,315 @@
         }(r.AbstractComponent);
         e.OnChangeBlockStatus = s
     }
-    , function(t, e) {
-        t.exports = function(t) {
+    , function (t, e) {
+        t.exports = function (t) {
             var e = [];
             return e.push(".", t.id, " .dfba83641{overflow:visible !important;-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 2em) !important;mask-image:linear-gradient(90deg,transparent 0,#000 2em) !important;-webkit-mask-position:-2em !important;mask-position:-2em !important}.", t.id, " .dfba83641,.", t.id, " .od7c1eec6{position:relative !important;-webkit-mask-size:calc(100% + 2em) !important;mask-size:calc(100% + 2em) !important;transition:-webkit-mask-position .3s ease !important;transition:mask-position .3s ease !important;transition:mask-position .3s ease,-webkit-mask-position .3s ease !important}.", t.id, " .od7c1eec6{overflow:hidden !important;-webkit-mask-image:linear-gradient(270deg,transparent 0,#000 2em) !important;mask-image:linear-gradient(270deg,transparent 0,#000 2em) !important;-webkit-mask-position:calc(100% + 2em) !important;mask-position:calc(100% + 2em) !important}.", t.id, " .jf07599bd.dfba83641 .od7c1eec6{-webkit-mask-position:100% !important;mask-position:100% !important}.", t.id, " .m98093846.dfba83641{-webkit-mask-position:0 !important;mask-position:0 !important}"),
                 e.join("")
         }
     }
-    , function(t, e, i) {
-        t.exports = function(t, e) {
-            i.e(0).then(function() {
+    , function (t, e, i) {
+        t.exports = function (t, e) {
+            i.e(0).then(function () {
                 t(i(618))
             }
-                .bind(null, i)).catch(function() {
+                .bind(null, i)).catch(function () {
                 e && e.apply(this, arguments)
             })
         }
     }
-    , function(t, e, i) {
-        t.exports = function(t, e) {
-            i.e(0).then(function() {
+    , function (t, e, i) {
+        t.exports = function (t, e) {
+            i.e(0).then(function () {
                 t(i(619))
             }
-                .bind(null, i)).catch(function() {
+                .bind(null, i)).catch(function () {
                 e && e.apply(this, arguments)
             })
         }
     }
-    , function(t, e, i) {
-        t.exports = function(t, e) {
-            i.e(0).then(function() {
+    , function (t, e, i) {
+        t.exports = function (t, e) {
+            i.e(0).then(function () {
                 t(i(620))
             }
-                .bind(null, i)).catch(function() {
+                .bind(null, i)).catch(function () {
                 e && e.apply(this, arguments)
             })
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0,
-            e.every = function(t, e) {
+            e.every = function (t, e) {
                 for (var i = 0; i < t.length; i++)
                     if (!e(t[i], i, t))
                         return !1;
                 return !0
             }
     }
-    , function(t, e, i) {
-        t.exports = function(t, e) {
-            i.e(0).then(function() {
+    , function (t, e, i) {
+        t.exports = function (t, e) {
+            i.e(0).then(function () {
                 t(i(621))
             }
-                .bind(null, i)).catch(function() {
+                .bind(null, i)).catch(function () {
                 e && e.apply(this, arguments)
             })
         }
     }
-    , function(t, e, i) {
-        t.exports = function(t, e) {
-            i.e(0).then(function() {
+    , function (t, e, i) {
+        t.exports = function (t, e) {
+            i.e(0).then(function () {
                 t(i(622))
             }
-                .bind(null, i)).catch(function() {
+                .bind(null, i)).catch(function () {
                 e && e.apply(this, arguments)
             })
         }
     }
-    , function(t, e, i) {
-        t.exports = function(t, e) {
-            i.e(0).then(function() {
+    , function (t, e, i) {
+        t.exports = function (t, e) {
+            i.e(0).then(function () {
                 t(i(623))
             }
-                .bind(null, i)).catch(function() {
+                .bind(null, i)).catch(function () {
                 e && e.apply(this, arguments)
             })
         }
     }
-    , function(t, e, i) {
-        t.exports = function(t, e) {
-            i.e(0).then(function() {
+    , function (t, e, i) {
+        t.exports = function (t, e) {
+            i.e(0).then(function () {
                 t(i(624))
             }
-                .bind(null, i)).catch(function() {
+                .bind(null, i)).catch(function () {
                 e && e.apply(this, arguments)
             })
         }
     }
-    , function(t, e, i) {
-        t.exports = function(t, e) {
-            i.e(0).then(function() {
+    , function (t, e, i) {
+        t.exports = function (t, e) {
+            i.e(0).then(function () {
                 t(i(625))
             }
-                .bind(null, i)).catch(function() {
+                .bind(null, i)).catch(function () {
                 e && e.apply(this, arguments)
             })
         }
     }
-    , function(t, e, i) {
-        t.exports = function(t, e) {
-            i.e(0).then(function() {
+    , function (t, e, i) {
+        t.exports = function (t, e) {
+            i.e(0).then(function () {
                 t(i(605))
             }
-                .bind(null, i)).catch(function() {
+                .bind(null, i)).catch(function () {
                 e && e.apply(this, arguments)
             })
         }
     }
-    , function(t, e, i) {
-        t.exports = function(t, e) {
-            i.e(0).then(function() {
+    , function (t, e, i) {
+        t.exports = function (t, e) {
+            i.e(0).then(function () {
                 t(i(626))
             }
-                .bind(null, i)).catch(function() {
+                .bind(null, i)).catch(function () {
                 e && e.apply(this, arguments)
             })
         }
     }
-    , function(t, e, i) {
-        t.exports = function(t, e) {
-            i.e(0).then(function() {
+    , function (t, e, i) {
+        t.exports = function (t, e) {
+            i.e(0).then(function () {
                 t(i(627))
             }
-                .bind(null, i)).catch(function() {
+                .bind(null, i)).catch(function () {
                 e && e.apply(this, arguments)
             })
         }
     }
-    , function(t, e, i) {
-        t.exports = function(t, e) {
-            i.e(0).then(function() {
+    , function (t, e, i) {
+        t.exports = function (t, e) {
+            i.e(0).then(function () {
                 t(i(628))
             }
-                .bind(null, i)).catch(function() {
+                .bind(null, i)).catch(function () {
                 e && e.apply(this, arguments)
             })
         }
     }
-    , function(t, e, i) {
-        t.exports = function(t, e) {
-            i.e(0).then(function() {
+    , function (t, e, i) {
+        t.exports = function (t, e) {
+            i.e(0).then(function () {
                 t(i(629))
             }
-                .bind(null, i)).catch(function() {
+                .bind(null, i)).catch(function () {
                 e && e.apply(this, arguments)
             })
         }
     }
-    , function(t, e, i) {
-        t.exports = function(t, e) {
-            i.e(0).then(function() {
+    , function (t, e, i) {
+        t.exports = function (t, e) {
+            i.e(0).then(function () {
                 t(i(606))
             }
-                .bind(null, i)).catch(function() {
+                .bind(null, i)).catch(function () {
                 e && e.apply(this, arguments)
             })
         }
     }
-    , function(t, e, i) {
-        t.exports = function(t, e) {
-            i.e(0).then(function() {
+    , function (t, e, i) {
+        t.exports = function (t, e) {
+            i.e(0).then(function () {
                 t(i(630))
             }
-                .bind(null, i)).catch(function() {
+                .bind(null, i)).catch(function () {
                 e && e.apply(this, arguments)
             })
         }
     }
-    , function(t, e, i) {
-        t.exports = function(t, e) {
-            i.e(0).then(function() {
+    , function (t, e, i) {
+        t.exports = function (t, e) {
+            i.e(0).then(function () {
                 t(i(631))
             }
-                .bind(null, i)).catch(function() {
+                .bind(null, i)).catch(function () {
                 e && e.apply(this, arguments)
             })
         }
     }
-    , function(t, e, i) {
-        t.exports = function(t, e) {
-            i.e(0).then(function() {
+    , function (t, e, i) {
+        t.exports = function (t, e) {
+            i.e(0).then(function () {
                 t(i(632))
             }
-                .bind(null, i)).catch(function() {
+                .bind(null, i)).catch(function () {
                 e && e.apply(this, arguments)
             })
         }
     }
-    , function(t, e, i) {
-        t.exports = function(t, e) {
-            i.e(0).then(function() {
+    , function (t, e, i) {
+        t.exports = function (t, e) {
+            i.e(0).then(function () {
                 t(i(633))
             }
-                .bind(null, i)).catch(function() {
+                .bind(null, i)).catch(function () {
                 e && e.apply(this, arguments)
             })
         }
     }
-    , function(t, e, i) {
-        t.exports = function(t, e) {
-            i.e(0).then(function() {
+    , function (t, e, i) {
+        t.exports = function (t, e) {
+            i.e(0).then(function () {
                 t(i(634))
             }
-                .bind(null, i)).catch(function() {
+                .bind(null, i)).catch(function () {
                 e && e.apply(this, arguments)
             })
         }
     }
-    , function(t, e, i) {
-        t.exports = function(t, e) {
-            i.e(0).then(function() {
+    , function (t, e, i) {
+        t.exports = function (t, e) {
+            i.e(0).then(function () {
                 t(i(635))
             }
-                .bind(null, i)).catch(function() {
+                .bind(null, i)).catch(function () {
                 e && e.apply(this, arguments)
             })
         }
     }
-    , function(t, e, i) {
-        t.exports = function(t, e) {
-            i.e(0).then(function() {
+    , function (t, e, i) {
+        t.exports = function (t, e) {
+            i.e(0).then(function () {
                 t(i(636))
             }
-                .bind(null, i)).catch(function() {
+                .bind(null, i)).catch(function () {
                 e && e.apply(this, arguments)
             })
         }
     }
-    , function(t, e, i) {
-        t.exports = function(t, e) {
-            i.e(0).then(function() {
+    , function (t, e, i) {
+        t.exports = function (t, e) {
+            i.e(0).then(function () {
                 t(i(637))
             }
-                .bind(null, i)).catch(function() {
+                .bind(null, i)).catch(function () {
                 e && e.apply(this, arguments)
             })
         }
     }
-    , function(t, e, i) {
-        t.exports = function(t, e) {
-            i.e(0).then(function() {
+    , function (t, e, i) {
+        t.exports = function (t, e) {
+            i.e(0).then(function () {
                 t(i(638))
             }
-                .bind(null, i)).catch(function() {
+                .bind(null, i)).catch(function () {
                 e && e.apply(this, arguments)
             })
         }
     }
-    , function(t, e, i) {
-        t.exports = function(t, e) {
-            i.e(0).then(function() {
+    , function (t, e, i) {
+        t.exports = function (t, e) {
+            i.e(0).then(function () {
                 t(i(639))
             }
-                .bind(null, i)).catch(function() {
+                .bind(null, i)).catch(function () {
                 e && e.apply(this, arguments)
             })
         }
     }
-    , function(t, e, i) {
-        t.exports = function(t, e) {
-            i.e(0).then(function() {
+    , function (t, e, i) {
+        t.exports = function (t, e) {
+            i.e(0).then(function () {
                 t(i(640))
             }
-                .bind(null, i)).catch(function() {
+                .bind(null, i)).catch(function () {
                 e && e.apply(this, arguments)
             })
         }
     }
-    , function(t, e, i) {
-        t.exports = function(t, e) {
-            i.e(0).then(function() {
+    , function (t, e, i) {
+        t.exports = function (t, e) {
+            i.e(0).then(function () {
                 t(i(641))
             }
-                .bind(null, i)).catch(function() {
+                .bind(null, i)).catch(function () {
                 e && e.apply(this, arguments)
             })
         }
     }
-    , function(t, e, i) {
-        t.exports = function(t, e) {
-            i.e(0).then(function() {
+    , function (t, e, i) {
+        t.exports = function (t, e) {
+            i.e(0).then(function () {
                 t(i(642))
             }
-                .bind(null, i)).catch(function() {
+                .bind(null, i)).catch(function () {
                 e && e.apply(this, arguments)
             })
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n = i(513);
         t.exports = n.BlockZen
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n, o = (n = Object.setPrototypeOf || {
                     __proto__: []
-                }instanceof Array && function(t, e) {
+                } instanceof Array && function (t, e) {
                     t.__proto__ = e
                 }
-                || function(t, e) {
+                || function (t, e) {
                     for (var i in e)
                         e.hasOwnProperty(i) && (t[i] = e[i])
                 }
                 ,
-                function(t, e) {
+                function (t, e) {
                     function i() {
                         this.constructor = t
                     }
+
                     n(t, e),
                         t.prototype = null === e ? Object.create(e) : (i.prototype = e.prototype,
                             new i)
@@ -20796,24 +21196,25 @@
             , l = i(141)
             , p = i(518)
             , c = i(56)
-            , d = function(t) {
+            , d = function (t) {
             function e() {
                 return null !== t && t.apply(this, arguments) || this
             }
+
             return o(e, t),
-                e.prototype.beforeRender = function() {
+                e.prototype.beforeRender = function () {
                     t.prototype.beforeRender.call(this),
                         this.computeSize()
                 }
                 ,
-                e.prototype.computeSize = function() {
+                e.prototype.computeSize = function () {
                     var t = Number(this.settings.height)
                         , e = c.getElementInnerSize(this._renderToNode);
                     isFinite(t) && t > 120 ? this.height = Number(this.settings.height) : e.height > 120 ? this.height = e.height : this.height = 320,
                         this.settings.width > 0 ? this.width = this.settings.width : this.width = e.width
                 }
                 ,
-                e.prototype.getBody = function() {
+                e.prototype.getBody = function () {
                     var t = this.advList[0]
                         , e = this.getAppropriateAdvComponent();
                     return r.create(e, {
@@ -20826,15 +21227,15 @@
                     })
                 }
                 ,
-                e.prototype.renderLogo = function() {
+                e.prototype.renderLogo = function () {
                     return null
                 }
                 ,
-                e.prototype.getAppropriateAdvComponent = function() {
+                e.prototype.getAppropriateAdvComponent = function () {
                     return this.height <= 200 ? s.AdvZenCompact : a.AdvZenNarrow
                 }
                 ,
-                e.prototype.pushCss = function() {
+                e.prototype.pushCss = function () {
                     this.pushStyles(p)
                 }
                 ,
@@ -20842,22 +21243,23 @@
         }(l);
         e.BlockZen = d
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n, o = (n = Object.setPrototypeOf || {
                     __proto__: []
-                }instanceof Array && function(t, e) {
+                } instanceof Array && function (t, e) {
                     t.__proto__ = e
                 }
-                || function(t, e) {
+                || function (t, e) {
                     for (var i in e)
                         e.hasOwnProperty(i) && (t[i] = e[i])
                 }
                 ,
-                function(t, e) {
+                function (t, e) {
                     function i() {
                         this.constructor = t
                     }
+
                     n(t, e),
                         t.prototype = null === e ? Object.create(e) : (i.prototype = e.prototype,
                             new i)
@@ -20883,24 +21285,25 @@
             , x = i(222)
             , w = i(515)
             , k = 300
-            , C = function(t) {
+            , C = function (t) {
             function e() {
                 var e = null !== t && t.apply(this, arguments) || this;
                 return e.contentHeight = 0,
-                    e.resizeHandler = function() {
+                    e.resizeHandler = function () {
                         e.updateGradientHeight()
                     }
                     ,
                     e.debouncedResizeHandler = c.debounce(e.resizeHandler, k),
                     e
             }
+
             return o(e, t),
-                e.prototype.beforeRender = function() {
+                e.prototype.beforeRender = function () {
                     this.palette = a.getCssVariables(this.props.settings),
                         t.prototype.beforeRender.call(this)
                 }
                 ,
-                e.prototype._render = function(t, e, i) {
+                e.prototype._render = function (t, e, i) {
                     var n = e.adv
                         , o = e.settings
                         , a = e.width
@@ -20927,13 +21330,13 @@
                     }), this.renderFeedback())
                 }
                 ,
-                e.prototype.renderAd = function(t, e, i) {
+                e.prototype.renderAd = function (t, e, i) {
                     return r.create("yatag", {
                         class: t("__container")
                     }, this.renderImage(t, e, i), this.renderContent(t, e, i))
                 }
                 ,
-                e.prototype.renderImage = function(t, e, i) {
+                e.prototype.renderImage = function (t, e, i) {
                     var n = e.adv.images
                         , o = e.height;
                     if (n && n.length && null !== s.fitImage(e.adv.images, {
@@ -20967,7 +21370,7 @@
                     }))
                 }
                 ,
-                e.prototype.renderContent = function(t, i, n) {
+                e.prototype.renderContent = function (t, i, n) {
                     var o = i.adv
                         , a = i.height
                         , s = o.domain;
@@ -21010,7 +21413,7 @@
                     }), e.renderWarning(t, i, n)))
                 }
                 ,
-                e.renderWarning = function(t, e, i) {
+                e.renderWarning = function (t, e, i) {
                     var n = h.isImportantWarning(e.adv) ? "__warning-row__important" : "__warning-row__common"
                         , o = u.isIE || u.isEdge ? "__warning-ie" : "";
                     return r.create("yatag", {
@@ -21021,7 +21424,7 @@
                     }))
                 }
                 ,
-                e.prototype.afterRender = function() {
+                e.prototype.afterRender = function () {
                     this.titleContainer = this.getResourceById("title-container"),
                         this.section = this.getResourceById("section"),
                         this.content = this.getResourceById("content"),
@@ -21029,13 +21432,13 @@
                         t.prototype.afterRender.call(this)
                 }
                 ,
-                e.prototype.pushCss = function() {
+                e.prototype.pushCss = function () {
                     t.prototype.pushCss.call(this),
                         this.pushStyles(x, this.palette),
                         this.pushStyles(w, this.palette)
                 }
                 ,
-                e.prototype.onMount = function() {
+                e.prototype.onMount = function () {
                     t.prototype.onMount.call(this),
                         a.fitSizeTitle(this.titleContainer, 36, 18),
                         this.removeOverflow(),
@@ -21044,33 +21447,33 @@
                         this.addHoverListener()
                 }
                 ,
-                e.prototype.addHoverListener = function() {
+                e.prototype.addHoverListener = function () {
                     var t = this
                         , e = this.content.getElement();
                     if (e) {
                         var i = this.b_("_hovered");
-                        this.bind(e, "mouseenter", function() {
+                        this.bind(e, "mouseenter", function () {
                             return t.content.addClass(i)
                         }),
-                            this.bind(e, "mouseleave", function() {
+                            this.bind(e, "mouseleave", function () {
                                 return t.content.removeClass(i)
                             })
                     }
                 }
                 ,
-                e.prototype.onUnmount = function() {
+                e.prototype.onUnmount = function () {
                     t.prototype.onUnmount.call(this),
                         v(this.resizeListener)
                 }
                 ,
-                e.prototype.updateGradientHeight = function() {
+                e.prototype.updateGradientHeight = function () {
                     var t = this.section && this.section.getElement();
                     t && this.gradient && this.gradient.setStyle({
                         height: t.offsetHeight + 55
                     })
                 }
                 ,
-                e.prototype.removeOverflow = function() {
+                e.prototype.removeOverflow = function () {
                     var t = this.b_;
                     g(this.section, [t("_scale_1")]);
                     var e = this.section.getElement();
@@ -21084,29 +21487,30 @@
         }(f);
         e.AdvZenNarrow = C
     }
-    , function(t, e) {
-        t.exports = function(t) {
+    , function (t, e) {
+        t.exports = function (t) {
             var e = [];
             return e.push(".", t.id, " .w7be6531a{max-width:460px !important}.", t.id, " .rcdc4d693{z-index:1 !important;height:100% !important;overflow:hidden !important;-webkit-flex-direction:column !important;-ms-flex-direction:column !important;flex-direction:column !important;box-sizing:border-box !important;background-color:#fff !important}.", t.id, " .f57058f7d,.", t.id, " .rcdc4d693{position:relative !important;display:-webkit-flex !important;display:-ms-flexbox !important;display:flex !important}.", t.id, " .f57058f7d{-webkit-flex:1 0 auto !important;-ms-flex:1 0 auto !important;flex:1 0 auto !important}.", t.id, " .g15e70d4c{-webkit-flex-shrink:0 !important;-ms-flex-negative:0 !important;flex-shrink:0 !important;display:block !important;width:100% !important;height:40px !important;background-color:#fff !important;z-index:1 !important}.", t.id, " .i769e7e97,.", t.id, " .o61aaf7a0{position:absolute !important;width:100% !important;overflow:hidden !important}.", t.id, " .o61aaf7a0{margin-top:-5px !important}.", t.id, " .wdb3c7eb1{display:-webkit-flex !important;display:-ms-flexbox !important;display:flex !important;width:100% !important;-webkit-flex-direction:column !important;-ms-flex-direction:column !important;flex-direction:column !important;-webkit-align-self:flex-end !important;-ms-flex-item-align:end !important;align-self:flex-end !important;margin-bottom:12px !important}.", t.id, " .x9709ecf2{position:absolute !important;background-image:linear-gradient(hsla(0,0%,100%,0),hsla(0,0%,100%,.8) 50%,#fff 90%) !important;pointer-events:none !important;width:100% !important;bottom:-5px !important}.", t.id, " .rc8aba673{box-sizing:border-box !important;position:relative !important;padding:10px 23px 5px 24px !important;-webkit-flex:1 0 auto!important;-ms-flex:1 0 auto!important;flex:1 0 auto!important;width:100% !important}.", t.id, " .c33575590{position:relative !important;font-size:26px !important}.", t.id, " .c33575590 .n518a0d79{font-size:.75em !important}.", t.id, " .cf1ad74f7{-webkit-flex-shrink:0 !important;-ms-flex-negative:0 !important;flex-shrink:0 !important}.", t.id, " .ic0a09791{margin:-10px -20px 0 !important}.", t.id, " .v489ed35a{margin:10px 0 0 -30px !important}.", t.id, " .k560dfa10{margin:0 20px !important;border-radius:2px !important;font-size:11px !important;color:", t.warningTextColor, " !important;-webkit-flex-grow:0 !important;-ms-flex-positive:0 !important;flex-grow:0 !important;-webkit-flex-shrink:1 !important;-ms-flex-negative:1 !important;flex-shrink:1 !important}.", t.id, " .k560dfa10 .a43b5611e{padding:0 30px 0 10px !important}.", t.id, " .k560dfa10.f6e8bd17{background-color:", t.warningBgColor, " !important;border-width:0 !important}.", t.id, " .v489ed35a.ye3877c71 .k560dfa10{margin-left:30px !important}.", t.id, " .v489ed35a.ye3877c71 .a43b5611e{padding:0 30px 0 0 !important}.", t.id, " .w7be6531a,.", t.id, " .g15e70d4c,.", t.id, " .a4b004a9c{transition:background-color .3s ease !important}.", t.id, " .a6e70116a{margin-bottom:10px !important;line-height:20px !important}.", t.id, " .aac8235fa{font-weight:700 !important}.", t.id, " .q28e45eb3 .c33575590{font-size:20px !important}.", t.id, " .d8c523cb0 .a6e70116a{font-size:12px !important}.", t.id, " .d8c523cb0 .k560dfa10{font-size:10px !important}"),
                 e.join("")
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n, o = (n = Object.setPrototypeOf || {
                     __proto__: []
-                }instanceof Array && function(t, e) {
+                } instanceof Array && function (t, e) {
                     t.__proto__ = e
                 }
-                || function(t, e) {
+                || function (t, e) {
                     for (var i in e)
                         e.hasOwnProperty(i) && (t[i] = e[i])
                 }
                 ,
-                function(t, e) {
+                function (t, e) {
                     function i() {
                         this.constructor = t
                     }
+
                     n(t, e),
                         t.prototype = null === e ? Object.create(e) : (i.prototype = e.prototype,
                             new i)
@@ -21124,17 +21528,18 @@
             , m = i(227)
             , f = i(222)
             , h = i(517)
-            , g = function(t) {
+            , g = function (t) {
             function e() {
                 return null !== t && t.apply(this, arguments) || this
             }
+
             return o(e, t),
-                e.prototype.beforeRender = function() {
+                e.prototype.beforeRender = function () {
                     this.palette = a.getCssVariables(this.props.settings),
                         t.prototype.beforeRender.call(this)
                 }
                 ,
-                e.prototype._render = function(t, e, i) {
+                e.prototype._render = function (t, e, i) {
                     var n = e.adv
                         , o = e.settings
                         , a = e.width
@@ -21302,46 +21707,46 @@
                         }), this.renderFeedback())
                 }
                 ,
-                e.prototype.getImageSize = function() {
+                e.prototype.getImageSize = function () {
                     return {
                         width: 90,
                         height: 1 / 0
                     }
                 }
                 ,
-                e.prototype.afterRender = function() {
+                e.prototype.afterRender = function () {
                     this.content = this.getResourceById("content"),
                         this.advComponent = this.getResourceById("advComponent"),
                         t.prototype.afterRender.call(this)
                 }
                 ,
-                e.prototype.pushCss = function() {
+                e.prototype.pushCss = function () {
                     t.prototype.pushCss.call(this),
                         this.pushStyles(f, this.palette),
                         this.pushStyles(h, this.palette)
                 }
                 ,
-                e.prototype.onMount = function() {
+                e.prototype.onMount = function () {
                     t.prototype.onMount.call(this),
                         this.removeOverflow(),
                         this.addHoverListener()
                 }
                 ,
-                e.prototype.addHoverListener = function() {
+                e.prototype.addHoverListener = function () {
                     var t = this
                         , e = this.advComponent.getElement();
                     if (e) {
                         var i = this.b_("_hovered");
-                        this.bind(e, "mouseenter", function() {
+                        this.bind(e, "mouseenter", function () {
                             return t.advComponent.addClass(i)
                         }),
-                            this.bind(e, "mouseleave", function() {
+                            this.bind(e, "mouseleave", function () {
                                 return t.advComponent.removeClass(i)
                             })
                     }
                 }
                 ,
-                e.prototype.removeOverflow = function() {
+                e.prototype.removeOverflow = function () {
                     var t = this.b_
                         , e = [t("_scale_1"), t("_scale_2"), t("_scale_3"), t("_scale_4"), t("_scale_5")]
                         , i = this.props.height;
@@ -21354,348 +21759,352 @@
         }(s);
         e.AdvZenCompact = g
     }
-    , function(t, e) {
-        t.exports = function(t) {
+    , function (t, e) {
+        t.exports = function (t) {
             var e = [];
             return e.push(".", t.id, " .b9dbb7f91{left:15px !important;height:18px !important}.", t.id, " .b9dbb7f91 .caab3995f{line-height:18px !important}.", t.id, " .p291e1855{padding:5px !important}.", t.id, " .s4162e33f{position:absolute !important;bottom:0 !important}.", t.id, " .s4162e33f .e80e7f7e9{opacity:.47 !important}.", t.id, " .w5f53455{position:absolute !important;top:0 !important;left:0 !important;bottom:0 !important;right:0 !important;opacity:.8 !important}.", t.id, " .vc9c5f1f2{overflow:hidden !important}.", t.id, " .f98321b56{margin:10px 10px 10px 15px !important;float:right !important}.", t.id, " .rcdc4d693{position:absolute !important;height:100% !important;width:100% !important;display:-webkit-flex !important;display:-ms-flexbox !important;display:flex !important;-webkit-flex-direction:column !important;-ms-flex-direction:column !important;flex-direction:column !important}.", t.id, " .p310cab94{-webkit-flex:1 0 auto !important;-ms-flex:1 0 auto !important;flex:1 0 auto !important}.", t.id, " .cf1ad74f7{margin:5px 15px !important;-webkit-flex-shrink:0 !important;-ms-flex-negative:0 !important;flex-shrink:0 !important}.", t.id, " .rc8aba673{margin:0 15px !important;padding-top:20px !important;box-sizing:border-box !important}.", t.id, " .p1240f99a{font-size:18px !important}.", t.id, " .a23e7493d{margin-top:7px !important;font-size:.78em !important}.", t.id, " .a6e70116a{margin-top:7px !important}.", t.id, " .k560dfa10{box-sizing:border-box !important;width:100% !important}.", t.id, " .q28e45eb3 .p1240f99a{font-size:15px !important}.", t.id, " .d8c523cb0{font-size:13px !important}.", t.id, " .h6921a31{font-size:12px !important}.", t.id, " .o4233e436{font-size:11px !important}.", t.id, " .j119c62b7 .a6e70116a{overflow:hidden !important;text-overflow:ellipsis !important;white-space:nowrap !important}.", t.id, " .v750a40b4 .a6e70116a{white-space:normal !important}.", t.id, " .vef4a1e35 .a6e70116a{clear:right !important}"),
                 e.join("")
         }
     }
-    , function(t, e) {
-        t.exports = function(t) {
+    , function (t, e) {
+        t.exports = function (t) {
             var e = [];
             return e.push(".", t.id, " .faacc0e20{position:relative !important}.", t.id, " .o5ee038eb{display:none !important}"),
                 e.join("")
         }
     }
-    , function(t, e, i) {
-        t.exports = function(t, e) {
-            i.e(0).then(function() {
+    , function (t, e, i) {
+        t.exports = function (t, e) {
+            i.e(0).then(function () {
                 t(i(643))
             }
-                .bind(null, i)).catch(function() {
+                .bind(null, i)).catch(function () {
                 e && e.apply(this, arguments)
             })
         }
     }
-    , function(t, e, i) {
-        t.exports = function(t, e) {
-            i.e(0).then(function() {
+    , function (t, e, i) {
+        t.exports = function (t, e) {
+            i.e(0).then(function () {
                 t(i(644))
             }
-                .bind(null, i)).catch(function() {
+                .bind(null, i)).catch(function () {
                 e && e.apply(this, arguments)
             })
         }
     }
-    , function(t, e, i) {
-        t.exports = function(t, e) {
-            i.e(0).then(function() {
+    , function (t, e, i) {
+        t.exports = function (t, e) {
+            i.e(0).then(function () {
                 t(i(645))
             }
-                .bind(null, i)).catch(function() {
+                .bind(null, i)).catch(function () {
                 e && e.apply(this, arguments)
             })
         }
     }
-    , function(t, e, i) {
-        t.exports = function(t, e) {
-            i.e(0).then(function() {
+    , function (t, e, i) {
+        t.exports = function (t, e) {
+            i.e(0).then(function () {
                 t(i(646))
             }
-                .bind(null, i)).catch(function() {
+                .bind(null, i)).catch(function () {
                 e && e.apply(this, arguments)
             })
         }
     }
-    , function(t, e, i) {
-        t.exports = function(t, e) {
-            i.e(0).then(function() {
+    , function (t, e, i) {
+        t.exports = function (t, e) {
+            i.e(0).then(function () {
                 t(i(647))
             }
-                .bind(null, i)).catch(function() {
+                .bind(null, i)).catch(function () {
                 e && e.apply(this, arguments)
             })
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n, o = (n = Object.setPrototypeOf || {
                     __proto__: []
-                }instanceof Array && function(t, e) {
+                } instanceof Array && function (t, e) {
                     t.__proto__ = e
                 }
-                || function(t, e) {
+                || function (t, e) {
                     for (var i in e)
                         e.hasOwnProperty(i) && (t[i] = e[i])
                 }
-                ,
-                function(t, e) {
-                    function i() {
-                        this.constructor = t
+                    ,
+                    function (t, e) {
+                        function i() {
+                            this.constructor = t
+                        }
+
+                        n(t, e),
+                            t.prototype = null === e ? Object.create(e) : (i.prototype = e.prototype,
+                                new i)
                     }
-                    n(t, e),
-                        t.prototype = null === e ? Object.create(e) : (i.prototype = e.prototype,
-                            new i)
-                }
-        ), r = i(0), a = i(141), s = i(22), l = i(246), p = i(5), c = i(7), d = i(525), u = i(31), m = i(51), f = i(115), h = i(11), g = i(265), _ = i(528), y = i(30), b = i(78).BorderTypes, v = i(553), x = function(t) {
-            function e() {
-                var e = null !== t && t.apply(this, arguments) || this;
-                return e.usedAdvs = [],
-                    e.onResize = l.rafDebounce(function(t, i) {
-                        var n = e.getRoot();
-                        n.setStyle({
-                            display: "none"
-                        }),
-                            e.sizeMeter.attach();
-                        var o = e.sizeMeter.getSize();
-                        if (i.width !== o.width || i.height !== o.height)
-                            return e.wasDisplayed = !1,
-                                e.isReady = !1,
-                                void e.update();
-                        e.sizeMeter.detach(),
+            ), r = i(0), a = i(141), s = i(22), l = i(246), p = i(5), c = i(7), d = i(525), u = i(31), m = i(51),
+            f = i(115), h = i(11), g = i(265), _ = i(528), y = i(30), b = i(78).BorderTypes, v = i(553),
+            x = function (t) {
+                function e() {
+                    var e = null !== t && t.apply(this, arguments) || this;
+                    return e.usedAdvs = [],
+                        e.onResize = l.rafDebounce(function (t, i) {
+                            var n = e.getRoot();
                             n.setStyle({
-                                display: ""
-                            })
-                    }),
-                    e
-            }
-            return o(e, t),
-                e.prototype.doOnReady = function(t) {
-                    this.readyEventActions.push(t)
-                }
-                ,
-                e.prototype.doOnUnmount = function(t) {
-                    this.unmountEventActions.push(t)
-                }
-                ,
-                e.prototype.getTheme = function() {
-                    var t = this.settings;
-                    return {
-                        margin: t.horizontalAlign ? "auto" : "0",
-                        borderWidth: "1px",
-                        borderColor: new u.Color(t.borderColor || "#ebebeb"),
-                        borderRadius: t.borderRadius ? "4px" : "0"
-                    }
-                }
-                ,
-                e.prototype.onInit = function() {
-                    this.name = "yap-adaptive",
-                        t.prototype.onInit.call(this);
-                    var e = this.settings.borderType || b.AD
-                        , i = e === b.NONE ? 0 : 1;
-                    this.borderType = e,
-                        this.borderWidth = i,
-                        this.advSpacing = this.getAdvSpacing(e, i),
-                        this.advMinSquare = Number(this.settings.advMinSquare) || 35e3,
-                        this.logo = this.getLogo();
-                    var n = this.settings.skin || "row leaderboard square tower";
-                    this.advRenderers = (n + " no-image").split(/[\s,;]+/)
-                }
-                ,
-                e.prototype.getAdvSpacing = function(t, e) {
-                    return (t === b.COLLAPSE ? -1 : this.settings.advSpacing || 5) - 2 * (t === b.BLOCK ? e : 0)
-                }
-                ,
-                e.prototype.beforeRender = function(e) {
-                    var i = this;
-                    t.prototype.beforeRender.call(this, e),
-                    this.sizeMeter && this.sizeMeter.detach(),
-                        this.sizeMeter = g.createSizeMeter(this.props.renderToNode, this.settings, function(t, e) {
-                            return i.cutBlock(i.advList, t, e)
-                        }),
-                        this.sizeMeter.attach(),
-                        this.readyEventActions = [],
-                        this.unmountEventActions = [],
-                        this.doOnReady(function() {
-                            return i.sizeMeter.detach()
-                        })
-                }
-                ,
-                e.prototype.getBody = function() {
-                    var t = this
-                        , e = this.sizeMeter.getSize()
-                        , i = e.width
-                        , n = e.height;
-                    if (!this.isReady && 0 === i) {
-                        var o = this.getDataSource()
-                            , a = this.advList;
-                        return h.forEach(a, function(t) {
-                            return o.captureAd(t.adId)
-                        }),
-                            this.doOnReady(function() {
-                                return h.forEach(a, function(t) {
-                                    return o.releaseAd(t.adId)
+                                display: "none"
+                            }),
+                                e.sizeMeter.attach();
+                            var o = e.sizeMeter.getSize();
+                            if (i.width !== o.width || i.height !== o.height)
+                                return e.wasDisplayed = !1,
+                                    e.isReady = !1,
+                                    void e.update();
+                            e.sizeMeter.detach(),
+                                n.setStyle({
+                                    display: ""
                                 })
-                            }),
-                            this.doOnReady(function() {
-                                return t.update()
-                            }),
-                            null
-                    }
-                    this.doOnReady(function() {
-                        var i = t.getResourceById("body");
-                        i && i.setStyle("display", "");
-                        var n = function() {
-                            return t.onResize(e)
-                        };
-                        if (t.bind(window, "resize", n),
-                        "undefined" != typeof ResizeObserver) {
-                            var o = new ResizeObserver(n);
-                            t.doOnUnmount(function() {
-                                return o.disconnect()
-                            }),
-                                o.observe(t.props.renderToNode)
-                        }
-                    });
-                    var l, c = this.advList, u = this.settings, m = [1 / 0], f = function(e) {
-                        var i = t.sizeMeter.getSize();
-                        return i.height = (i.height + t.advSpacing) / e - t.advSpacing,
-                            i
-                    };
-                    switch (u.layout) {
-                        case "horizontal":
-                            l = !0;
-                            break;
-                        case "vertical":
-                            l = !1;
-                            break;
-                        case "grid":
-                            l = !0,
-                                m = _.calcGrid(c.length, this.cutBlock(c, !1, function() {
-                                    return f(1)
-                                }).length);
-                            break;
-                        default:
-                            l = i > n
-                    }
-                    for (var g = [], b = 0, v = m; b < v.length; b++) {
-                        var x = v[b]
-                            , w = g.length
-                            , k = c.slice(w, w + x);
-                        g.push.apply(g, this.cutBlock(k, l, function() {
-                            return f(m.length)
-                        }))
-                    }
-                    this.usedAdvs = p.map(g, function(t) {
-                        return t.adv
-                    });
-                    var C = new d.AdvContextProvider(this,l,u)
-                        , I = p.map(g, function(e) {
-                        var i = e.adv
-                            , n = e.getAdvSize
-                            , o = function() {
-                            var e = n();
-                            return e.width -= 2 * t.borderWidth,
-                                e.height -= 2 * t.borderWidth,
-                                e
-                        }
-                            , r = {
-                            adv: i,
-                            getSize: o,
-                            logo: c[0] === i ? t.logo : void 0,
-                            context: C.createAdvContext()
-                        }
-                            , a = t.advRenderers.map(function(t) {
-                            return y.getAdvRenderer(t, r)
-                        });
-                        return (0,
-                            s.selectMostFit(o(), a).render)()
-                    })
-                        , S = this.b_
-                        , A = {
-                        display: "none",
-                        "min-height": n,
-                        "min-width": i,
-                        "max-width": i
-                    };
-                    return r.create("yatag", {
-                        resourceId: "body",
-                        class: S("__body", "__body_rendering", "__body_" + (l ? "row" : "column"), "__body_border-" + this.borderType),
-                        style: A
-                    }, I)
-                }
-                ,
-                e.prototype.afterRender = function() {
-                    var e = this;
-                    t.prototype.afterRender.call(this),
-                        this.doOnReady(function() {
-                            var t = e.getResourceById("body");
-                            t && t.removeClass(e.b_("__body_rendering"))
-                        })
-                }
-                ,
-                e.prototype.renderLogo = function() {
-                    return null
-                }
-                ,
-                e.prototype.pushCss = function() {
-                    t.prototype.pushCss.call(this),
-                        this.pushStyles(v, this.getTheme())
-                }
-                ,
-                e.prototype.onReady = function() {
-                    t.prototype.onReady.call(this),
-                        m.flushQueue(this.readyEventActions, function(t) {
-                            return t()
-                        })
-                }
-                ,
-                e.prototype.onUnmount = function() {
-                    t.prototype.onUnmount.call(this),
-                        m.flushQueue(this.unmountEventActions, function(t) {
-                            return t()
-                        })
-                }
-                ,
-                e.prototype.createAdvList = function() {
-                    var e = t.prototype.createAdvList.call(this);
-                    return this.getDataSource().doSortByImages() && e.sort(function(t, e) {
-                        return Number(!t.image) - Number(!e.image)
-                    }),
+                        }),
                         e
                 }
-                ,
-                e.prototype.getLogo = function() {
-                    var t = this.getDataSource()
-                        , e = t.getLanguage()
-                        , i = t.getTitle() || {}
-                        , n = c["default"]("ADVERTISMENT", e)
-                        , o = f.isAvailable() ? n : i.title || n;
-                    return {
-                        url: i.url,
-                        title: o
+
+                return o(e, t),
+                    e.prototype.doOnReady = function (t) {
+                        this.readyEventActions.push(t)
                     }
-                }
-                ,
-                e.prototype.getUsedAdvs = function() {
-                    return this.usedAdvs
-                }
-                ,
-                e.prototype.cutBlock = function(t, e, i) {
-                    return _.cutBlock({
-                        advList: t,
-                        getBlockSize: i,
-                        isHorizontal: e,
-                        advMinSquare: this.advMinSquare,
-                        advMinWidth: 160,
-                        advMinHeight: 50,
-                        advSpacing: this.advSpacing,
-                        grows: "horizontal" === this.settings.measurer ? p.map(t, function() {
-                            return 1
-                        }) : p.map(t, function(t) {
-                            return t.image ? 3 : 2
+                    ,
+                    e.prototype.doOnUnmount = function (t) {
+                        this.unmountEventActions.push(t)
+                    }
+                    ,
+                    e.prototype.getTheme = function () {
+                        var t = this.settings;
+                        return {
+                            margin: t.horizontalAlign ? "auto" : "0",
+                            borderWidth: "1px",
+                            borderColor: new u.Color(t.borderColor || "#ebebeb"),
+                            borderRadius: t.borderRadius ? "4px" : "0"
+                        }
+                    }
+                    ,
+                    e.prototype.onInit = function () {
+                        this.name = "yap-adaptive",
+                            t.prototype.onInit.call(this);
+                        var e = this.settings.borderType || b.AD
+                            , i = e === b.NONE ? 0 : 1;
+                        this.borderType = e,
+                            this.borderWidth = i,
+                            this.advSpacing = this.getAdvSpacing(e, i),
+                            this.advMinSquare = Number(this.settings.advMinSquare) || 35e3,
+                            this.logo = this.getLogo();
+                        var n = this.settings.skin || "row leaderboard square tower";
+                        this.advRenderers = (n + " no-image").split(/[\s,;]+/)
+                    }
+                    ,
+                    e.prototype.getAdvSpacing = function (t, e) {
+                        return (t === b.COLLAPSE ? -1 : this.settings.advSpacing || 5) - 2 * (t === b.BLOCK ? e : 0)
+                    }
+                    ,
+                    e.prototype.beforeRender = function (e) {
+                        var i = this;
+                        t.prototype.beforeRender.call(this, e),
+                        this.sizeMeter && this.sizeMeter.detach(),
+                            this.sizeMeter = g.createSizeMeter(this.props.renderToNode, this.settings, function (t, e) {
+                                return i.cutBlock(i.advList, t, e)
+                            }),
+                            this.sizeMeter.attach(),
+                            this.readyEventActions = [],
+                            this.unmountEventActions = [],
+                            this.doOnReady(function () {
+                                return i.sizeMeter.detach()
+                            })
+                    }
+                    ,
+                    e.prototype.getBody = function () {
+                        var t = this
+                            , e = this.sizeMeter.getSize()
+                            , i = e.width
+                            , n = e.height;
+                        if (!this.isReady && 0 === i) {
+                            var o = this.getDataSource()
+                                , a = this.advList;
+                            return h.forEach(a, function (t) {
+                                return o.captureAd(t.adId)
+                            }),
+                                this.doOnReady(function () {
+                                    return h.forEach(a, function (t) {
+                                        return o.releaseAd(t.adId)
+                                    })
+                                }),
+                                this.doOnReady(function () {
+                                    return t.update()
+                                }),
+                                null
+                        }
+                        this.doOnReady(function () {
+                            var i = t.getResourceById("body");
+                            i && i.setStyle("display", "");
+                            var n = function () {
+                                return t.onResize(e)
+                            };
+                            if (t.bind(window, "resize", n),
+                            "undefined" != typeof ResizeObserver) {
+                                var o = new ResizeObserver(n);
+                                t.doOnUnmount(function () {
+                                    return o.disconnect()
+                                }),
+                                    o.observe(t.props.renderToNode)
+                            }
+                        });
+                        var l, c = this.advList, u = this.settings, m = [1 / 0], f = function (e) {
+                            var i = t.sizeMeter.getSize();
+                            return i.height = (i.height + t.advSpacing) / e - t.advSpacing,
+                                i
+                        };
+                        switch (u.layout) {
+                            case "horizontal":
+                                l = !0;
+                                break;
+                            case "vertical":
+                                l = !1;
+                                break;
+                            case "grid":
+                                l = !0,
+                                    m = _.calcGrid(c.length, this.cutBlock(c, !1, function () {
+                                        return f(1)
+                                    }).length);
+                                break;
+                            default:
+                                l = i > n
+                        }
+                        for (var g = [], b = 0, v = m; b < v.length; b++) {
+                            var x = v[b]
+                                , w = g.length
+                                , k = c.slice(w, w + x);
+                            g.push.apply(g, this.cutBlock(k, l, function () {
+                                return f(m.length)
+                            }))
+                        }
+                        this.usedAdvs = p.map(g, function (t) {
+                            return t.adv
+                        });
+                        var C = new d.AdvContextProvider(this, l, u)
+                            , I = p.map(g, function (e) {
+                            var i = e.adv
+                                , n = e.getAdvSize
+                                , o = function () {
+                                var e = n();
+                                return e.width -= 2 * t.borderWidth,
+                                    e.height -= 2 * t.borderWidth,
+                                    e
+                            }
+                                , r = {
+                                adv: i,
+                                getSize: o,
+                                logo: c[0] === i ? t.logo : void 0,
+                                context: C.createAdvContext()
+                            }
+                                , a = t.advRenderers.map(function (t) {
+                                return y.getAdvRenderer(t, r)
+                            });
+                            return (0,
+                                s.selectMostFit(o(), a).render)()
                         })
-                    })
-                }
-                ,
-                e
-        }(a);
+                            , S = this.b_
+                            , A = {
+                            display: "none",
+                            "min-height": n,
+                            "min-width": i,
+                            "max-width": i
+                        };
+                        return r.create("yatag", {
+                            resourceId: "body",
+                            class: S("__body", "__body_rendering", "__body_" + (l ? "row" : "column"), "__body_border-" + this.borderType),
+                            style: A
+                        }, I)
+                    }
+                    ,
+                    e.prototype.afterRender = function () {
+                        var e = this;
+                        t.prototype.afterRender.call(this),
+                            this.doOnReady(function () {
+                                var t = e.getResourceById("body");
+                                t && t.removeClass(e.b_("__body_rendering"))
+                            })
+                    }
+                    ,
+                    e.prototype.renderLogo = function () {
+                        return null
+                    }
+                    ,
+                    e.prototype.pushCss = function () {
+                        t.prototype.pushCss.call(this),
+                            this.pushStyles(v, this.getTheme())
+                    }
+                    ,
+                    e.prototype.onReady = function () {
+                        t.prototype.onReady.call(this),
+                            m.flushQueue(this.readyEventActions, function (t) {
+                                return t()
+                            })
+                    }
+                    ,
+                    e.prototype.onUnmount = function () {
+                        t.prototype.onUnmount.call(this),
+                            m.flushQueue(this.unmountEventActions, function (t) {
+                                return t()
+                            })
+                    }
+                    ,
+                    e.prototype.createAdvList = function () {
+                        var e = t.prototype.createAdvList.call(this);
+                        return this.getDataSource().doSortByImages() && e.sort(function (t, e) {
+                            return Number(!t.image) - Number(!e.image)
+                        }),
+                            e
+                    }
+                    ,
+                    e.prototype.getLogo = function () {
+                        var t = this.getDataSource()
+                            , e = t.getLanguage()
+                            , i = t.getTitle() || {}
+                            , n = c["default"]("ADVERTISMENT", e)
+                            , o = f.isAvailable() ? n : i.title || n;
+                        return {
+                            url: i.url,
+                            title: o
+                        }
+                    }
+                    ,
+                    e.prototype.getUsedAdvs = function () {
+                        return this.usedAdvs
+                    }
+                    ,
+                    e.prototype.cutBlock = function (t, e, i) {
+                        return _.cutBlock({
+                            advList: t,
+                            getBlockSize: i,
+                            isHorizontal: e,
+                            advMinSquare: this.advMinSquare,
+                            advMinWidth: 160,
+                            advMinHeight: 50,
+                            advSpacing: this.advSpacing,
+                            grows: "horizontal" === this.settings.measurer ? p.map(t, function () {
+                                return 1
+                            }) : p.map(t, function (t) {
+                                return t.image ? 3 : 2
+                            })
+                        })
+                    }
+                    ,
+                    e
+            }(a);
         t.exports = x
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
-        var n = Object.assign || function(t) {
+        var n = Object.assign || function (t) {
                 for (var e = 1; e < arguments.length; e++) {
                     var i = arguments[e];
                     for (var n in i)
@@ -21703,7 +22112,7 @@
                 }
                 return t
             }
-            , o = Object.assign || function(t) {
+            , o = Object.assign || function (t) {
                 for (var e, i = 1, n = arguments.length; i < n; i++)
                     for (var o in e = arguments[i])
                         Object.prototype.hasOwnProperty.call(e, o) && (t[o] = e[o]);
@@ -21712,14 +22121,14 @@
         ;
         e.__esModule = !0;
         var r, a = i(37), s = i(31), l = i(526), p = i(51), c = i(9), d = i(5), u = i(527);
-        !function(t) {
+        !function (t) {
             t[t["INIT"] = 0] = "INIT",
                 t[t["READY"] = 1] = "READY"
         }(r || (r = {}));
-        var m = function(t) {
+        var m = function (t) {
             0
         }
-            , f = function() {
+            , f = function () {
             function t(t, e, i) {
                 this.block = t,
                     this.isHorizontal = e,
@@ -21728,52 +22137,54 @@
                     this.state = r.INIT,
                     this.getTheme = a.once(this.getTheme)
             }
-            return t.prototype.doOnReady = function(t) {
+
+            return t.prototype.doOnReady = function (t) {
                 this.block.doOnReady(t)
             }
                 ,
-                t.prototype.getAdvContextList = function() {
+                t.prototype.getAdvContextList = function () {
                     return this.contextList
                 }
                 ,
-                t.prototype.getState = function() {
+                t.prototype.getState = function () {
                     return this.state
                 }
                 ,
-                t.prototype.createAdvContext = function() {
+                t.prototype.createAdvContext = function () {
                     m();
                     var t = new h(this);
                     return this.contextList.push(t),
                         t
                 }
                 ,
-                t.prototype.getTheme = function() {
+                t.prototype.getTheme = function () {
                     this.state = r.READY;
                     var t = this.settings
                         , e = this.isHorizontal
                         , i = this.contextList
                         , n = this.block.getTheme().borderColor
-                        , o = function(t) {
-                        return c.filter(function(t) {
-                            return d.map(i, function(e) {
-                                return t(e.params)
+                        , o = function (t) {
+                            return c.filter(function (t) {
+                                return d.map(i, function (e) {
+                                    return t(e.params)
+                                })
+                            }(t), function (t) {
+                                return !isNaN(t)
                             })
-                        }(t), function(t) {
-                            return !isNaN(t)
-                        })
-                    }
+                        }
                         , a = i.length > 1
                         , u = t.fontFamily ? t.fontFamily + ", " : ""
                         , m = Number(t.fontSize) || 1
-                        , f = p.calcAvg.apply(void 0, o(function(t) {
-                        return t.fontSize
-                    }) || [0]) * m
-                        , h = new s.Color(t.bgColor || t.siteBgColor || "#f5f5f5").setAlpha(Number(t.bgColor || !t.siteBgColor))
+                        , f = p.calcAvg.apply(void 0, o(function (t) {
+                            return t.fontSize
+                        }) || [0]) * m
+                        ,
+                        h = new s.Color(t.bgColor || t.siteBgColor || "#f5f5f5").setAlpha(Number(t.bgColor || !t.siteBgColor))
                         , g = new s.Color(t.textColor || h.readable())
                         , _ = new s.Color(t.hoverColor || g)
-                        , y = Math.max.apply(Math, [0].concat(o(function(t) {
-                        return t.warningHeight
-                    })))
+                        , y = Math.max.apply(Math, [0].concat(o(function (t) {
+                            return t.warningHeight
+                        })))
                         , b = h.readable(200).readable()
                         , v = b.readable().lighten(.6).setAlpha(.7)
                         , x = t.headerBgColor ? new s.Color(t.headerBgColor) : new s.Color("#000").setAlpha(.25)
@@ -21798,18 +22209,18 @@
                         , H = Number(t.imageWidth) || 0
                         , V = Number(t.imageHeight) || 0
                         , j = t.imagePaddingLeft || "1em"
-                        , U = o(function(t) {
-                        return t.imageMinWidth
-                    })
-                        , W = U.length > 1 ? U : o(function(t) {
-                        return t.imageMaxWidth
-                    })
-                        , G = o(function(t) {
-                        return t.imageMinHeight
-                    })
-                        , K = G.length > 1 ? G : o(function(t) {
-                        return t.imageMaxHeight
-                    })
+                        , U = o(function (t) {
+                            return t.imageMinWidth
+                        })
+                        , W = U.length > 1 ? U : o(function (t) {
+                            return t.imageMaxWidth
+                        })
+                        , G = o(function (t) {
+                            return t.imageMinHeight
+                        })
+                        , K = G.length > 1 ? G : o(function (t) {
+                            return t.imageMaxHeight
+                        })
                         , q = Math.max.apply(Math, [0].concat(U))
                         , Y = Math.max.apply(Math, [0].concat(W))
                         , X = Math.max.apply(Math, [0].concat(G))
@@ -21846,7 +22257,7 @@
                         buttonAltColor: z,
                         buttonAltBorderColor: F,
                         imagePaddingLeft: j,
-                        getImageSize: function(t) {
+                        getImageSize: function (t) {
                             var e = t.width
                                 , i = t.height
                                 , n = (H > 1 ? H : H * e) || q || Y || e
@@ -21865,22 +22276,23 @@
                 t
         }();
         e.AdvContextProvider = f;
-        var h = function() {
+        var h = function () {
             function t(t) {
                 this.provider = t,
                     this.params = {},
                     this.getTheme = a.once(this.getTheme)
             }
-            return t.prototype.doOnReady = function(t) {
+
+            return t.prototype.doOnReady = function (t) {
                 this.provider.doOnReady(t)
             }
                 ,
-                t.prototype.setParams = function(t) {
+                t.prototype.setParams = function (t) {
                     m(this.provider),
                         n(this.params, t)
                 }
                 ,
-                t.prototype.getTheme = function() {
+                t.prototype.getTheme = function () {
                     var t = this.provider
                         , e = this.params
                         , i = t.getTheme()
@@ -21899,7 +22311,7 @@
                         maxHeight: l
                     });
                     return o({}, i, {
-                        getImageSize: function(t) {
+                        getImageSize: function (t) {
                             return o({}, i.getImageSize(t), d)
                         }
                     }, n ? {} : {
@@ -21910,16 +22322,18 @@
                 t
         }()
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(31);
-        e.getPIThemeFields = function(t) {
+        e.getPIThemeFields = function (t) {
             var e = t.piSettings || {};
+
             function i(t) {
                 var i = n.normalizeColorHash(e[t]);
                 return null !== i ? n.createColor(i).toString() : "INVALID"
             }
+
             var o = i("addition_bg_color")
                 , r = i("extra_bg_color")
                 , a = i("title_bg_color")
@@ -21940,23 +22354,23 @@
             }
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0,
-            e.deleteUndefinedProperties = function(t) {
+            e.deleteUndefinedProperties = function (t) {
                 var e = {};
                 for (var i in t)
                     t.hasOwnProperty(i) && void 0 !== t[i] && (e[i] = t[i]);
                 return e
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(51)
             , o = i(81)
             , r = i(5);
-        e.cutBlock = function(t) {
+        e.cutBlock = function (t) {
             var e = t.advList
                 , i = t.getBlockSize
                 , a = t.isHorizontal
@@ -21969,19 +22383,20 @@
                 , m = u.width
                 , f = u.height
                 , h = Math.max(s, Math.max(m, p) * Math.max(f, c))
-                , g = Math.floor(Math.max(1, Math.min(h / s, a ? n.getSectionLimit(d, m + l, p + l) : n.getSectionLimit(d, f + l, c + l))))
+                ,
+                g = Math.floor(Math.max(1, Math.min(h / s, a ? n.getSectionLimit(d, m + l, p + l) : n.getSectionLimit(d, f + l, c + l))))
                 , _ = (d = d.slice(0, g)).length
-                , y = o.reduce(d, function(t, e) {
-                return t + e
-            }, 0);
-            return r.map(d, function(t, n) {
+                , y = o.reduce(d, function (t, e) {
+                    return t + e
+                }, 0);
+            return r.map(d, function (t, n) {
                 return {
                     adv: e[n],
-                    getAdvSize: function() {
+                    getAdvSize: function () {
                         var e = i()
                             , n = e.width
                             , o = e.height
-                            , r = function(e) {
+                            , r = function (e) {
                             return e * t / y - l * (_ - 1) / _
                         };
                         return a ? n = r(n) : o = r(o),
@@ -21994,13 +22409,13 @@
             })
         }
             ,
-            e.calcGrid = function(t, e) {
+            e.calcGrid = function (t, e) {
                 for (var i = Math.ceil(Math.min(Math.sqrt(t), e)), n = t % i, o = (t - n) / i, r = [], a = 0; a < i; a++)
                     r.push(o + (a < n ? 1 : 0));
                 return r
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         var n = {
             "./AdvAdaptive.tsx": 39,
             "./AdvLeaderboard.tsx": 541,
@@ -22011,16 +22426,19 @@
             "./AdvTower.tsx": 223,
             "./AdvTowerAvito.tsx": 551
         };
+
         function o(t) {
             return i(r(t))
         }
+
         function r(t) {
             var e = n[t];
             if (!(e + 1))
                 throw new Error("Cannot find module '" + t + "'.");
             return e
         }
-        o.keys = function() {
+
+        o.keys = function () {
             return Object.keys(n)
         }
             ,
@@ -22028,22 +22446,23 @@
             t.exports = o,
             o.id = 529
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n, o = (n = Object.setPrototypeOf || {
                     __proto__: []
-                }instanceof Array && function(t, e) {
+                } instanceof Array && function (t, e) {
                     t.__proto__ = e
                 }
-                || function(t, e) {
+                || function (t, e) {
                     for (var i in e)
                         e.hasOwnProperty(i) && (t[i] = e[i])
                 }
                 ,
-                function(t, e) {
+                function (t, e) {
                     function i() {
                         this.constructor = t
                     }
+
                     n(t, e),
                         t.prototype = null === e ? Object.create(e) : (i.prototype = e.prototype,
                             new i)
@@ -22056,23 +22475,24 @@
             , l = i(55)
             , p = i(531)
             , c = i(532)
-            , d = function(t) {
+            , d = function (t) {
             function e() {
                 return null !== t && t.apply(this, arguments) || this
             }
+
             return o(e, t),
-                e.prototype.onInit = function() {
+                e.prototype.onInit = function () {
                     this.name = "publishers-stars",
                         t.prototype.onInit.call(this)
                 }
                 ,
-                e.prototype.render = function() {
+                e.prototype.render = function () {
                     var t = this.b_
                         , e = this.props
                         , i = e.value
                         , n = e.total
                         , o = void 0 === n ? 5 : n
-                        , a = s.map(Array(o), function() {
+                        , a = s.map(Array(o), function () {
                         return r.create(l.Html, {
                             text: c
                         })
@@ -22089,7 +22509,7 @@
                     }, a))
                 }
                 ,
-                e.prototype.afterRender = function() {
+                e.prototype.afterRender = function () {
                     this.pushStyles(p)
                 }
                 ,
@@ -22097,32 +22517,33 @@
         }(a);
         e.Stars = d
     }
-    , function(t, e) {
-        t.exports = function(t) {
+    , function (t, e) {
+        t.exports = function (t) {
             var e = [];
             return e.push(".", t.id, " .p389e8f7b{display:inline-block !important;position:relative !important;height:1em !important}.", t.id, " .yff457d55{fill:hsla(0,0%,84%,.8) !important;white-space:nowrap !important;overflow:hidden !important}.", t.id, " .yff457d55 svg{height:1em !important;width:1em !important;margin:0 .1em !important}.", t.id, " .sf4218f44{position:absolute !important;fill:#fc0 !important}"),
                 e.join("")
         }
     }
-    , function(t, e) {
+    , function (t, e) {
         t.exports = '<svg height="1em" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg"><path d="M12.135 14.167l-1.23-5.242L15 5.398l-5.393-.462L7.5 0 5.393 4.936 0 5.398l4.088 3.527-1.223 5.242L7.5 11.386z"/></svg>'
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n, o = (n = Object.setPrototypeOf || {
                     __proto__: []
-                }instanceof Array && function(t, e) {
+                } instanceof Array && function (t, e) {
                     t.__proto__ = e
                 }
-                || function(t, e) {
+                || function (t, e) {
                     for (var i in e)
                         e.hasOwnProperty(i) && (t[i] = e[i])
                 }
                 ,
-                function(t, e) {
+                function (t, e) {
                     function i() {
                         this.constructor = t
                     }
+
                     n(t, e),
                         t.prototype = null === e ? Object.create(e) : (i.prototype = e.prototype,
                             new i)
@@ -22134,17 +22555,18 @@
             , s = i(55)
             , l = i(534)
             , p = i(535)
-            , c = function(t) {
+            , c = function (t) {
             function e() {
                 return null !== t && t.apply(this, arguments) || this
             }
+
             return o(e, t),
-                e.prototype.onInit = function() {
+                e.prototype.onInit = function () {
                     this.name = "publishers-ruble",
                         t.prototype.onInit.call(this)
                 }
                 ,
-                e.prototype.render = function() {
+                e.prototype.render = function () {
                     var t = this.b_;
                     return r.create("yatag", {
                         class: t()
@@ -22153,7 +22575,7 @@
                     }))
                 }
                 ,
-                e.prototype.afterRender = function() {
+                e.prototype.afterRender = function () {
                     this.pushStyles(l)
                 }
                 ,
@@ -22161,19 +22583,19 @@
         }(a);
         e.Ruble = c
     }
-    , function(t, e) {
-        t.exports = function(t) {
+    , function (t, e) {
+        t.exports = function (t) {
             var e = [];
             return e.push(".", t.id, " .e641e7930{display:inline-block !important;height:.72em !important}.", t.id, " .e641e7930 svg{height:inherit !important;width:.6em !important}"),
                 e.join("")
         }
     }
-    , function(t, e) {
+    , function (t, e) {
         t.exports = '<svg height="1em" viewBox="0 0 72.5 100" xmlns="http://www.w3.org/2000/svg"><path d="M5 0h40a27.5 27.5 0 0 1 0 55H15v6h38v10H15v29H5V71H0V61h5v-6H0V45h5zm10 10h30a17.5 17.5 0 0 1 0 35H15z" fill-rule="evenodd"/></svg>'
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
-        var n, o = Object.assign || function(t) {
+        var n, o = Object.assign || function (t) {
             for (var e = 1; e < arguments.length; e++) {
                 var i = arguments[e];
                 for (var n in i)
@@ -22183,18 +22605,19 @@
         }
             , r = (n = Object.setPrototypeOf || {
                     __proto__: []
-                }instanceof Array && function(t, e) {
+                } instanceof Array && function (t, e) {
                     t.__proto__ = e
                 }
-                || function(t, e) {
+                || function (t, e) {
                     for (var i in e)
                         e.hasOwnProperty(i) && (t[i] = e[i])
                 }
                 ,
-                function(t, e) {
+                function (t, e) {
                     function i() {
                         this.constructor = t
                     }
+
                     n(t, e),
                         t.prototype = null === e ? Object.create(e) : (i.prototype = e.prototype,
                             new i)
@@ -22207,27 +22630,29 @@
             , p = i(26)
             , c = i(5)
             , d = i(105)
-            , u = function() {
+            , u = function () {
             function t(t, e) {
                 this.context = t,
                     this.id = e
             }
-            return t.prototype.getLength = function() {
+
+            return t.prototype.getLength = function () {
                 return this.context.isAvailable(this.id) ? this.context.getLength(this.id) : 0
             }
                 ,
                 t
         }();
         e.ResourceSegment = u;
-        var m = function() {
+        var m = function () {
             function t(t) {
                 this.context = t
             }
-            return t.prototype.isAvailable = function(t) {
+
+            return t.prototype.isAvailable = function (t) {
                 return !0
             }
                 ,
-                t.prototype.getSize = function(t) {
+                t.prototype.getSize = function (t) {
                     var e = this.context.getResourceById(t);
                     if (e) {
                         var i = e.getElement();
@@ -22240,21 +22665,21 @@
                     }
                 }
                 ,
-                t.prototype.createNode = function(t, e, i) {
+                t.prototype.createNode = function (t, e, i) {
                     var n = this;
                     return {
-                        segments: c.map(t, function(t) {
-                            return new u(n,t)
+                        segments: c.map(t, function (t) {
+                            return new u(n, t)
                         }),
                         weight: e,
                         children: i
                     }
                 }
                 ,
-                t.prototype.getTotalLength = function(t) {
+                t.prototype.getTotalLength = function (t) {
                     var e = .01
                         , i = {};
-                    l.traverseBreadth(t, function(t) {
+                    l.traverseBreadth(t, function (t) {
                         for (var e = t.segments, n = t.children, o = 0, r = e; o < r.length; o++) {
                             var a = r[o];
                             i[a.id] = !0
@@ -22268,13 +22693,13 @@
                     return e
                 }
                 ,
-                t.prototype.getExcessResources = function(t, e, i, n) {
+                t.prototype.getExcessResources = function (t, e, i, n) {
                     for (var o = this.getLength(t) - this.getTotalLength(n), r = {}, a = 0, c = s.selectFittingSegments(n, e - o, i - o); a < c.length; a++) {
                         var d = c[a].id;
                         r[d] = !0
                     }
                     var u = {};
-                    return l.traverseBreadth(n, function(t) {
+                    return l.traverseBreadth(n, function (t) {
                         for (var e = t.segments, i = t.children, n = 0, o = e; n < o.length; n++) {
                             var a = o[n].id;
                             r[a] || (u[a] = !0)
@@ -22287,19 +22712,20 @@
                 t
         }();
         e.ResourceTreeContextBase = m;
-        var f = function(t) {
+        var f = function (t) {
             function e() {
                 return null !== t && t.apply(this, arguments) || this
             }
+
             return r(e, t),
-                e.prototype.getLength = function(t) {
+                e.prototype.getLength = function (t) {
                     return this.getSize(t).height
                 }
                 ,
                 e
         }(m);
         e.ResourceHeightTreeContext = f,
-            e.memoizeResourceTreeContext = function(t) {
+            e.memoizeResourceTreeContext = function (t) {
                 return o(Object.create(t), {
                     getLength: d.memoize(t.getLength),
                     isAvailable: d.memoize(t.isAvailable),
@@ -22307,17 +22733,17 @@
                 })
             }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(51)
             , o = i(5)
             , r = i(118);
-        e.selectFittingSegments = function(t, e, i) {
-            var a = function(t) {
+        e.selectFittingSegments = function (t, e, i) {
+            var a = function (t) {
                 return t >= e ? [1, 1 / t] : [0, t]
             }
-                , s = o.map(t, function(t) {
+                , s = o.map(t, function (t) {
                 return {
                     node: t,
                     path: {
@@ -22332,7 +22758,7 @@
                 weight: [],
                 length: 0
             };
-            return r.traverseBreadth(s, function(t) {
+            return r.traverseBreadth(s, function (t) {
                 for (var r = t.node, s = t.path, p = r.segments, c = r.children, d = r.weight, u = 0, m = p; u < m.length; u++) {
                     var f = m[u]
                         , h = f.getLength();
@@ -22345,7 +22771,7 @@
                 var g = n.compareArrays(s.weight, l.weight);
                 return 0 === g && (g = n.compareArrays(a(s.length), a(l.length))),
                 g > 0 && (l = s),
-                    s.length >= e ? [] : o.map(c, function(t) {
+                    s.length >= e ? [] : o.map(c, function (t) {
                         return {
                             node: t,
                             path: {
@@ -22359,14 +22785,14 @@
                 l.segments
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(266);
-        e.calcBackgroundPosition = function(t, e, i) {
+        e.calcBackgroundPosition = function (t, e, i) {
             var o = t.x
                 , r = t.y
-                , a = function(t, e) {
+                , a = function (t, e) {
                 return n.getLimitedLinearFunction(.5, 0, e - .5, 1)(t * e)
             };
             return e > i ? r = a(r, e / i) : e < i && (o = a(o, i / e)),
@@ -22376,41 +22802,42 @@
                 }
         }
     }
-    , function(t, e) {
-        t.exports = function(t) {
+    , function (t, e) {
+        t.exports = function (t) {
             var e = [];
             return e.push(".", t.id, " .w7be6531a{display:-webkit-flex !important;display:-ms-flexbox !important;display:flex !important;-webkit-flex-flow:column nowrap !important;-ms-flex-flow:column nowrap !important;flex-flow:column nowrap !important;font-family:", t.fontFamily, " Helvetica,Arial,sans-serif !important;background:", t.bgColor, " !important;border:inherit !important;border-radius:inherit !important;position:relative !important;overflow:hidden !important;text-decoration:none !important;color:", t.textColor, " !important;font-weight:400 !important;line-height:1.25em !important}.", t.id, " .p291e1855{stroke:", t.textColor, " !important}.", t.id, " .ge45828fa{text-decoration:inherit !important;color:inherit !important;font-weight:inherit !important;line-height:inherit !important}.", t.id, " .ye1d35305:hover{color:", t.titleHoverColor, " !important}.", t.id, " .of5baa3f5:hover{color:", t.hoverColor, " !important}.", t.id, " .v695586e3:hover{color:", t.siteLinksHoverColor, " !important;-webkit-text-decoration-color:", t.siteLinksUnderlineHoverColor, " !important;text-decoration-color:", t.siteLinksUnderlineHoverColor, " !important}.", t.id, " .w9d730140:hover{border-color:", t.buttonBorderHoverColor, " !important;color:", t.buttonHoverColor, " !important;fill:", t.buttonHoverColor, " !important}.", t.id, " .w9d730140:hover .x720f4f0a{border-color:", t.buttonHoverColor, " !important}.", t.id, " .scd7c6544:hover{color:", t.buttonExtraHoverColor, " !important}.", t.id, " .ge45828fa{line-height:normal !important;letter-spacing:normal !important}.", t.id, " .n518a0d79,.", t.id, " .b9dbb7f91{display:inline-block !important;white-space:nowrap !important;font-size:10px !important;line-height:10px !important;height:10px !important;font-family:Verdana,sans-serif !important;color:inherit !important}.", t.id, " .kb859cb45{display:block !important;background:", t.logoBgColor, " !important;color:", t.logoTextColor, " !important;border-radius:0 0 4px 4px !important;font-size:10px !important;line-height:19px !important;height:19px !important;padding:0 6px !important;position:absolute !important;top:0 !important;z-index:2 !important}.", t.id, " .y319bbe2d{display:block !important;color:", t.warningTextColor, " !important;position:absolute !important;bottom:3px !important;right:3px !important}.", t.id, " .n172a326c{height:19px !important;width:0 !important}.", t.id, " .k560dfa10{display:-webkit-flex !important;display:-ms-flexbox !important;display:flex !important;-webkit-align-items:center !important;-ms-flex-align:center !important;align-items:center !important;-webkit-justify-content:flex-start !important;-ms-flex-pack:start !important;justify-content:flex-start !important;box-sizing:border-box !important;padding:1px 0 !important}.", t.id, " .k560dfa10 .dfba83641{width:100% !important}.", t.id, " .ia8475e00{font-family:Verdana,sans-serif !important;line-height:1.2em !important;padding:0 .4em !important}.", t.id, " .ga26f21dc .ia8475e00{font-size:10px !important;white-space:nowrap !important}.", t.id, " .ce6793869 .ia8475e00{font-size:.8em !important}.", t.id, " .p1240f99a{color:", t.titleColor, " !important;font-size:1.3em !important;font-weight:700 !important;padding-bottom:.6em !important;line-height:1.25em !important}.", t.id, " .c3fc49289{font-size:1.7em !important}.", t.id, " .a6e70116a{padding-bottom:.8em !important}.", t.id, " .g15e70d4c{padding-bottom:1em !important;padding-top:.2em !important}.", t.id, " .p2d94863f{max-width:300px !important}.", t.id, " .ea47bfb2e{-webkit-flex-flow:row wrap !important;-ms-flex-flow:row wrap !important;flex-flow:row wrap !important;-webkit-align-items:center !important;-ms-flex-align:center !important;align-items:center !important}.", t.id, " .ea47bfb2e,.", t.id, " .u5f6ab1ac{display:-webkit-flex !important;display:-ms-flexbox !important;display:flex !important;-webkit-justify-content:flex-start !important;-ms-flex-pack:start !important;justify-content:flex-start !important}.", t.id, " .pdd06b7f,.", t.id, " .u5f6ab1ac{-webkit-flex-flow:row nowrap !important;-ms-flex-flow:row nowrap !important;flex-flow:row nowrap !important}.", t.id, " .pdd06b7f{display:block !important;overflow:hidden !important;border:1px solid ", t.buttonBorderColor, " !important;background:", t.buttonBgColor, " !important;padding:.4em .8em !important;color:", t.buttonColor, " !important;border-radius:3px !important;text-align:center !important;fill:", t.buttonColor, " !important}.", t.id, " .u83c804c8{overflow:hidden !important;height:1.4em !important;text-overflow:ellipsis !important}.", t.id, " .i747acb5c{white-space:nowrap !important;line-height:1.4em !important;height:1.4em !important}.", t.id, " .x720f4f0a,.", t.id, " .i747acb5c{display:inline-block !important}.", t.id, " .x720f4f0a{box-sizing:border-box !important;line-height:.45em !important;height:.45em !important;width:.45em !important;border:solid ", t.buttonColor, " !important;border-width:1px 1px 0 0 !important;-webkit-transform:translateX(-50%) rotate(45deg) !important;transform:translateX(-50%) rotate(45deg) !important;-webkit-transform-origin:100% 100% !important;transform-origin:100% 100% !important}.", t.id, " .u5f6ab1ac .pdd06b7f{display:-webkit-flex !important;display:-ms-flexbox !important;display:flex !important;font-family:Verdana,sans-serif !important;font-size:.9em !important;border-radius:4px !important}.", t.id, " .f1c6c99fb{font-family:Verdana,sans-serif !important;display:block !important;color:", t.buttonExtraColor, " !important;text-align:center !important;line-height:0 !important}.", t.id, " .r73d78be4{font-size:.7em !important}.", t.id, " .p2d94863f .f1c6c99fb{padding-top:.5em !important}.", t.id, " .p2d94863f .r73d78be4{padding-top:.8em !important}.", t.id, " .ea47bfb2e .f1c6c99fb{padding-left:.8em !important;padding-right:.6em !important}.", t.id, " .ea47bfb2e .r73d78be4{padding-left:1.5em !important;padding-right:1em !important}.", t.id, " .ee60b4c2f{padding-bottom:.8em !important}.", t.id, " .b7d11ef37{display:block !important;color:", t.siteLinksColor, " !important;line-height:1.7em !important;text-decoration:underline !important;-webkit-text-decoration-color:", t.siteLinksUnderlineColor, " !important;text-decoration-color:", t.siteLinksUnderlineColor, " !important}.", t.id, " .m75a48125{padding-bottom:.8em !important;opacity:.5 !important}.", t.id, " .b2d81c43d{line-height:1.6em !important}.", t.id, " .j6c679b5d{position:absolute !important;background:rgba(0,0,0,.1) !important;background-size:cover !important;box-shadow:0 1px 2px rgba(0,0,0,.5) !important;border-radius:.5em !important}"),
                 e.join("")
         }
     }
-    , function(t, e) {
-        t.exports = function(t) {
+    , function (t, e) {
+        t.exports = function (t) {
             var e = [];
             return e.push(".", t.id, " .a6e70116a .ge45828fa{background-color:", t.piTheme.additionBgColor, " !important}.", t.id, " .of5baa3f5{color:", t.piTheme.bodyTextColor, " !important}.", t.id, " .ye1d35305{background:", t.piTheme.titleBgColor, " !important;color:", t.piTheme.titleTextColor, '"" !important}.', t.id, " .scd7c6544{background:", t.piTheme.extraBgColor, " !important;color:", t.piTheme.extraTextColor, " !important}.", t.id, " .v695586e3{background:", t.piTheme.siteLinkBgColor, " !important;color:", t.piTheme.sitelinksColor, " !important}.", t.id, " .ee60b4c2f{background:", t.piTheme.siteLinkBgColor, " !important}.", t.id, " .f1c6c99fb{background:", t.piTheme.extraBgColor, " !important}.", t.id, " .pdd06b7f{background-color:", t.piTheme.buttonInsideBgColor, " !important}.", t.id, " .s4cba39a4.w7be6531a .of5baa3f5{color:", t.piTheme.bodyTextColor, " !important}.", t.id, " .s4cba39a4.w7be6531a .scd7c6544{color:", t.piTheme.extraTextColor, " !important}.", t.id, " .s4cba39a4.w7be6531a .ye1d35305{color:", t.piTheme.titleTextColor, " !important}.", t.id, " .s4cba39a4.w7be6531a .pdd06b7f{background-color:", t.piTheme.buttonInsideBgColor, " !important}.", t.id, " .x1a21bbde.w7be6531a .ye1d35305{color:", t.piTheme.titleTextColor, " !important}"),
                 e.join("")
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n, o = (n = Object.setPrototypeOf || {
                     __proto__: []
-                }instanceof Array && function(t, e) {
+                } instanceof Array && function (t, e) {
                     t.__proto__ = e
                 }
-                || function(t, e) {
+                || function (t, e) {
                     for (var i in e)
                         e.hasOwnProperty(i) && (t[i] = e[i])
                 }
                     ,
-                    function(t, e) {
+                    function (t, e) {
                         function i() {
                             this.constructor = t
                         }
+
                         n(t, e),
                             t.prototype = null === e ? Object.create(e) : (i.prototype = e.prototype,
                                 new i)
                     }
-            ), r = Object.assign || function(t) {
+            ), r = Object.assign || function (t) {
                 for (var e, i = 1, n = arguments.length; i < n; i++)
                     for (var o in e = arguments[i])
                         Object.prototype.hasOwnProperty.call(e, o) && (t[o] = e[o]);
@@ -22427,12 +22854,13 @@
             , u = i(12)
             , m = i(30)
             , f = i(542)
-            , h = function(t) {
+            , h = function (t) {
             function e() {
                 return null !== t && t.apply(this, arguments) || this
             }
+
             return o(e, t),
-                e.prototype.onInit = function() {
+                e.prototype.onInit = function () {
                     this.mod = "leaderboard",
                         this.coerceSize = e.coerceSize,
                         t.prototype.onInit.call(this),
@@ -22440,14 +22868,14 @@
                         this.warningWidth = this.width / 2
                 }
                 ,
-                e.prototype.getStyles = function() {
+                e.prototype.getStyles = function () {
                     return [f]
                 }
                 ,
-                e.prototype.initImage = function() {
+                e.prototype.initImage = function () {
                     var t = this.width
                         , e = this.minHeight;
-                    this.getImageSize = function() {
+                    this.getImageSize = function () {
                         return {
                             width: e * p.MAX_IMAGE_RATIO,
                             height: e
@@ -22466,23 +22894,24 @@
                     }
                 }
                 ,
-                e.prototype.calcFontSize = function(t) {
+                e.prototype.calcFontSize = function (t) {
                     var e = t.width
                         , i = t.height;
                     return s.getLimitedLinearFunction(4e4, 12, 24e4, 20)(e * i)
                 }
                 ,
-                e.prototype.createResourceTree = function(t) {
-                    var e, i = this.props.context.getTheme().multiple, n = this.getDataSource().isApp(), o = (e = [t(["body"], 1, [t(["site-links"], 1, [t(["callouts"], 1)])])],
-                        c.map([[["button-big"], 1], [["button-medium"], 1], [["button-small"], i && !n ? 2 : 1]], function(i) {
-                            var n = i[0]
-                                , o = i[1];
-                            return t(n, o, e)
-                        }));
+                e.prototype.createResourceTree = function (t) {
+                    var e, i = this.props.context.getTheme().multiple, n = this.getDataSource().isApp(),
+                        o = (e = [t(["body"], 1, [t(["site-links"], 1, [t(["callouts"], 1)])])],
+                            c.map([[["button-big"], 1], [["button-medium"], 1], [["button-small"], i && !n ? 2 : 1]], function (i) {
+                                var n = i[0]
+                                    , o = i[1];
+                                return t(n, o, e)
+                            }));
                     return [t(["title"], 1, o), t(["title-big"], 1, o)]
                 }
                 ,
-                e.prototype.renderContent = function(t) {
+                e.prototype.renderContent = function (t) {
                     var e = this.b_;
                     return this.registerImageViewport("image"),
                         a.create("yatag", {
@@ -22493,7 +22922,7 @@
                         }, this.renderLogoStub(), this.renderTitle(), this.renderTitleBig(), this.renderBody(), this.renderSiteLinks(), this.renderCallouts(), this.renderButtons(), this.renderAge()))
                 }
                 ,
-                e.prototype.renderImage = function() {
+                e.prototype.renderImage = function () {
                     var t = this.b_
                         , e = this.image;
                     if (!e)
@@ -22511,11 +22940,11 @@
                     }, this.renderAppIcon(), this.renderWarning())
                 }
                 ,
-                e.prototype.renderLogoStub = function() {
+                e.prototype.renderLogoStub = function () {
                     return this.image ? null : t.prototype.renderLogoStub.call(this)
                 }
                 ,
-                e.prototype.renderButtons = function() {
+                e.prototype.renderButtons = function () {
                     return a.create(d, null, this.renderButtonBig(), this.renderButtonMedium(), this.renderButtonSmall())
                 }
                 ,
@@ -22536,49 +22965,50 @@
                 e
         }(l.AdvAdaptive);
         e.AdvLeaderboard = h,
-            m.registerAdvRenderer("leaderboard", function(t) {
+            m.registerAdvRenderer("leaderboard", function (t) {
                 return {
-                    coerceSize: t.adv.image ? h.coerceSize : function() {
+                    coerceSize: t.adv.image ? h.coerceSize : function () {
                         return {
                             width: 0,
                             height: 0
                         }
                     }
                     ,
-                    render: function() {
+                    render: function () {
                         return a.create(h, r({}, t))
                     }
                 }
             })
     }
-    , function(t, e) {
-        t.exports = function(t) {
+    , function (t, e) {
+        t.exports = function (t) {
             var e = [];
             return e.push(".", t.id, " .w99178404 .rc8aba673{-webkit-flex:1 0 auto !important;-ms-flex:1 0 auto !important;flex:1 0 auto !important;display:-webkit-flex !important;display:-ms-flexbox !important;display:flex !important;-webkit-flex-flow:row nowrap !important;-ms-flex-flow:row nowrap !important;flex-flow:row nowrap !important;min-height:inherit !important;position:relative !important}.", t.id, " .w99178404 .b9dbb7f91{left:1em !important}.", t.id, " .w99178404 .k560dfa10{background:rgba(0,0,0,.25) !important;color:#fff !important;position:absolute !important;bottom:0 !important;left:0 !important;right:0 !important}.", t.id, " .w99178404 .ia8475e00{padding:0 1em !important}.", t.id, " .w99178404 .uf0786d38{-webkit-flex:1 0 !important;-ms-flex:1 0 !important;flex:1 0 !important;display:-webkit-flex !important;display:-ms-flexbox !important;display:flex !important;-webkit-flex-flow:column nowrap !important;-ms-flex-flow:column nowrap !important;flex-flow:column nowrap !important;padding:.8em 1em 0 ", t.imagePaddingLeft, " !important;overflow:hidden !important}.", t.id, " .w99178404 .sb894909d{-webkit-flex:1 0 !important;-ms-flex:1 0 !important;flex:1 0 !important;display:block !important;background:rgba(0,0,0,.1) top !important;background-size:cover !important;position:relative !important;overflow:hidden !important}.", t.id, " .w99178404 .g15e70d4c{margin-top:auto !important}.", t.id, " .w99178404 .j6c679b5d{top:2em !important;left:1em !important}"),
                 e.join("")
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n, o = (n = Object.setPrototypeOf || {
                     __proto__: []
-                }instanceof Array && function(t, e) {
+                } instanceof Array && function (t, e) {
                     t.__proto__ = e
                 }
-                || function(t, e) {
+                || function (t, e) {
                     for (var i in e)
                         e.hasOwnProperty(i) && (t[i] = e[i])
                 }
                     ,
-                    function(t, e) {
+                    function (t, e) {
                         function i() {
                             this.constructor = t
                         }
+
                         n(t, e),
                             t.prototype = null === e ? Object.create(e) : (i.prototype = e.prototype,
                                 new i)
                     }
-            ), r = Object.assign || function(t) {
+            ), r = Object.assign || function (t) {
                 for (var e, i = 1, n = arguments.length; i < n; i++)
                     for (var o in e = arguments[i])
                         Object.prototype.hasOwnProperty.call(e, o) && (t[o] = e[o]);
@@ -22594,12 +23024,13 @@
             , d = i(12)
             , u = i(30)
             , m = i(544)
-            , f = function(t) {
+            , f = function (t) {
             function e() {
                 return null !== t && t.apply(this, arguments) || this
             }
+
             return o(e, t),
-                e.prototype.onInit = function() {
+                e.prototype.onInit = function () {
                     this.mod = "leaderboard-avito",
                         this.coerceSize = e.coerceSize,
                         t.prototype.onInit.call(this),
@@ -22607,33 +23038,33 @@
                         this.warningWidth = this.width / 2
                 }
                 ,
-                e.prototype.getStyles = function() {
+                e.prototype.getStyles = function () {
                     return [m]
                 }
                 ,
-                e.prototype.initImage = function() {
+                e.prototype.initImage = function () {
                     this.props.context.setParams({
                         imageMinWidth: this.width / 2
                     })
                 }
                 ,
-                e.prototype.calcFontSize = function(t) {
+                e.prototype.calcFontSize = function (t) {
                     var e = t.width
                         , i = t.height;
                     return s.getLimitedLinearFunction(2e4, 11, 24e4, 18)(e * i)
                 }
                 ,
-                e.prototype.createResourceTree = function(t) {
+                e.prototype.createResourceTree = function (t) {
                     var e;
                     return [t(["title"], 1, (e = [t(["body"], 1)],
-                        c.map([[["button-medium"], 2], [["button-small"], 1]], function(i) {
+                        c.map([[["button-medium"], 2], [["button-small"], 1]], function (i) {
                             var n = i[0]
                                 , o = i[1];
                             return t(n, o, e)
                         })))]
                 }
                 ,
-                e.prototype.renderContent = function(t) {
+                e.prototype.renderContent = function (t) {
                     var e = this.b_;
                     return this.registerImageViewport("image"),
                         a.create("yatag", {
@@ -22644,7 +23075,7 @@
                         }, this.renderTitle(), this.renderBody(), this.renderButtonMedium(), this.renderButtonSmall(), this.renderAge()))
                 }
                 ,
-                e.prototype.renderImage = function() {
+                e.prototype.renderImage = function () {
                     var t = this.b_
                         , e = this.image
                         , i = {
@@ -22676,49 +23107,50 @@
                 e
         }(l.AdvAdaptive);
         e.AdvLeaderboardAvito = f,
-            u.registerAdvRenderer("leaderboard-avito", function(t) {
+            u.registerAdvRenderer("leaderboard-avito", function (t) {
                 return {
-                    coerceSize: t.adv.image ? f.coerceSize : function() {
+                    coerceSize: t.adv.image ? f.coerceSize : function () {
                         return {
                             width: 0,
                             height: 0
                         }
                     }
                     ,
-                    render: function() {
+                    render: function () {
                         return a.create(f, r({}, t))
                     }
                 }
             })
     }
-    , function(t, e) {
-        t.exports = function(t) {
+    , function (t, e) {
+        t.exports = function (t) {
             var e = [];
             return e.push(".", t.id, " .me18912ac .rc8aba673{-webkit-flex:1 0 auto !important;-ms-flex:1 0 auto !important;flex:1 0 auto !important;display:-webkit-flex !important;display:-ms-flexbox !important;display:flex !important;-webkit-flex-flow:row nowrap !important;-ms-flex-flow:row nowrap !important;flex-flow:row nowrap !important;min-height:inherit !important;position:relative !important}.", t.id, " .me18912ac .b9dbb7f91{left:1em !important}.", t.id, " .me18912ac .k560dfa10{background:rgba(0,0,0,.25) !important;color:#fff !important;position:absolute !important;bottom:0 !important;left:0 !important;right:0 !important}.", t.id, " .me18912ac .ia8475e00{padding:.4em 1em !important}.", t.id, " .me18912ac .uf0786d38{-webkit-flex:1 0 !important;-ms-flex:1 0 !important;flex:1 0 !important;display:-webkit-flex !important;display:-ms-flexbox !important;display:flex !important;-webkit-flex-flow:column nowrap !important;-ms-flex-flow:column nowrap !important;flex-flow:column nowrap !important;padding:.8em 1em 0 ", t.imagePaddingLeft, " !important;overflow:hidden !important}.", t.id, " .me18912ac .sb894909d{display:block !important;background:rgba(0,0,0,.1) top !important;background-size:cover !important;position:relative !important;overflow:hidden !important}.", t.id, " .me18912ac .p1240f99a{padding-bottom:.3em !important}.", t.id, " .me18912ac .a6e70116a{padding-bottom:0 !important}.", t.id, " .me18912ac .g15e70d4c{margin-top:auto !important}.", t.id, " .me18912ac .j6c679b5d{top:2em !important;left:1em !important}"),
                 e.join("")
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n, o = (n = Object.setPrototypeOf || {
                     __proto__: []
-                }instanceof Array && function(t, e) {
+                } instanceof Array && function (t, e) {
                     t.__proto__ = e
                 }
-                || function(t, e) {
+                || function (t, e) {
                     for (var i in e)
                         e.hasOwnProperty(i) && (t[i] = e[i])
                 }
                     ,
-                    function(t, e) {
+                    function (t, e) {
                         function i() {
                             this.constructor = t
                         }
+
                         n(t, e),
                             t.prototype = null === e ? Object.create(e) : (i.prototype = e.prototype,
                                 new i)
                     }
-            ), r = Object.assign || function(t) {
+            ), r = Object.assign || function (t) {
                 for (var e, i = 1, n = arguments.length; i < n; i++)
                     for (var o in e = arguments[i])
                         Object.prototype.hasOwnProperty.call(e, o) && (t[o] = e[o]);
@@ -22731,21 +23163,24 @@
             , l = i(22)
             , p = i(17)
             , c = i(30)
-            , d = function(t) {
+            , d = function (t) {
             function e() {
                 return null !== t && t.apply(this, arguments) || this
             }
+
             return o(e, t),
-                e.prototype.onInit = function() {
+                e.prototype.onInit = function () {
                     this.coerceSize = e.coerceSize,
                         t.prototype.onInit.call(this)
                 }
                 ,
-                e.prototype.initImage = function() {}
+                e.prototype.initImage = function () {
+                }
                 ,
-                e.prototype.prepareImage = function() {}
+                e.prototype.prepareImage = function () {
+                }
                 ,
-                e.prototype.calcFontSize = function(t) {
+                e.prototype.calcFontSize = function (t) {
                     var e = t.width
                         , i = t.height;
                     return p.getLimitedLinearFunction(3e4, 12, 35e4, 28)(e * i)
@@ -22768,43 +23203,44 @@
                 e
         }(s.AdvTower);
         e.AdvNoImage = d,
-            c.registerAdvRenderer("no-image", function(t) {
+            c.registerAdvRenderer("no-image", function (t) {
                 return {
                     coerceSize: d.coerceSize,
-                    render: function() {
+                    render: function () {
                         return a.create(d, r({}, t))
                     }
                 }
             })
     }
-    , function(t, e) {
-        t.exports = function(t) {
+    , function (t, e) {
+        t.exports = function (t) {
             var e = [];
             return e.push(".", t.id, " .x1a21bbde .rc8aba673{-webkit-flex:1 0 auto !important;-ms-flex:1 0 auto !important;flex:1 0 auto !important;display:-webkit-flex !important;display:-ms-flexbox !important;display:flex !important;-webkit-flex-flow:column nowrap !important;-ms-flex-flow:column nowrap !important;flex-flow:column nowrap !important;min-height:inherit !important;position:relative !important}.", t.id, " .x1a21bbde .b9dbb7f91{left:5% !important}.", t.id, " .x1a21bbde .k560dfa10{background:", t.warningBgColor, " !important;color:", t.warningTextColor, " !important;border-top:1px solid ", t.borderColor, " !important}.", t.id, " .x1a21bbde .ia8475e00{padding:0 5% !important}.", t.id, " .x1a21bbde .uf0786d38{-webkit-flex:1 0 auto !important;-ms-flex:1 0 auto !important;flex:1 0 auto !important;display:-webkit-flex !important;display:-ms-flexbox !important;display:flex !important;-webkit-flex-flow:column nowrap !important;-ms-flex-flow:column nowrap !important;flex-flow:column nowrap !important;padding:.8em 5% 0 !important;position:relative !important}.", t.id, " .x1a21bbde .g15e70d4c{margin-top:auto !important}.", t.id, " .x1a21bbde .sb894909d{-webkit-flex:3 0 auto !important;-ms-flex:3 0 auto !important;flex:3 0 auto !important;display:block !important;background:rgba(0,0,0,.1) top !important;background-size:cover !important;position:relative !important;overflow:hidden !important}.", t.id, " .x1a21bbde .y3b55b955{display:none !important;position:absolute !important;-webkit-transform:translateY(-100%) !important;transform:translateY(-100%) !important;color:#fff !important;text-shadow:0 1px 2px rgba(0,0,0,.5) !important;background:linear-gradient(transparent,rgba(0,0,0,.1) 20%,rgba(0,0,0,.3) 50%,rgba(0,0,0,.7)) !important;left:0 !important;right:0 !important;top:0 !important;padding-left:5% !important;padding-right:5% !important;padding-top:.8em !important;pointer-events:none !important}.", t.id, " .x1a21bbde .y3b55b955:first-child{display:block !important}.", t.id, " .x1a21bbde .y3b55b955 .ge45828fa{color:inherit !important}.", t.id, " .x1a21bbde .j6c679b5d{top:1.8em !important;left:5% !important}"),
                 e.join("")
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n, o = (n = Object.setPrototypeOf || {
                     __proto__: []
-                }instanceof Array && function(t, e) {
+                } instanceof Array && function (t, e) {
                     t.__proto__ = e
                 }
-                || function(t, e) {
+                || function (t, e) {
                     for (var i in e)
                         e.hasOwnProperty(i) && (t[i] = e[i])
                 }
                     ,
-                    function(t, e) {
+                    function (t, e) {
                         function i() {
                             this.constructor = t
                         }
+
                         n(t, e),
                             t.prototype = null === e ? Object.create(e) : (i.prototype = e.prototype,
                                 new i)
                     }
-            ), r = Object.assign || function(t) {
+            ), r = Object.assign || function (t) {
                 for (var e, i = 1, n = arguments.length; i < n; i++)
                     for (var o in e = arguments[i])
                         Object.prototype.hasOwnProperty.call(e, o) && (t[o] = e[o]);
@@ -22819,26 +23255,27 @@
             , c = i(12)
             , d = i(30)
             , u = i(548)
-            , m = function(t) {
+            , m = function (t) {
             function e() {
                 return null !== t && t.apply(this, arguments) || this
             }
+
             return o(e, t),
-                e.prototype.onInit = function() {
+                e.prototype.onInit = function () {
                     this.mod = "row",
                         this.coerceSize = e.coerceSize,
                         t.prototype.onInit.call(this),
                         this.initImage()
                 }
                 ,
-                e.prototype.getStyles = function() {
+                e.prototype.getStyles = function () {
                     return [u]
                 }
                 ,
-                e.prototype.initImage = function() {
+                e.prototype.initImage = function () {
                     var t = this.width
                         , e = this.minHeight - this.getWarningMinHeight();
-                    this.getImageSize = function() {
+                    this.getImageSize = function () {
                         return {
                             width: e * p.MAX_IMAGE_RATIO,
                             height: e
@@ -22856,17 +23293,17 @@
                     }
                 }
                 ,
-                e.prototype.calcFontSize = function(t) {
+                e.prototype.calcFontSize = function (t) {
                     var e = t.width
                         , i = t.height;
                     return s.getLimitedLinearFunction(11e3, 9, 12e4, 20)(e * (i - 20))
                 }
                 ,
-                e.prototype.createResourceTree = function(t) {
+                e.prototype.createResourceTree = function (t) {
                     return [t(["details-l"], 4), t(["details-m"], 3), t(["details-s"], 2), t(["details-xs"], 1)]
                 }
                 ,
-                e.prototype.renderContent = function(t) {
+                e.prototype.renderContent = function (t) {
                     var e = this.b_
                         , i = {
                         "padding-bottom": this.getWarningMinHeight()
@@ -22896,7 +23333,7 @@
                         }, this.renderTitle(), this.renderButton()), this.renderFooter())
                 }
                 ,
-                e.prototype.renderImage = function() {
+                e.prototype.renderImage = function () {
                     var t = this.b_
                         , e = this.image;
                     if (!e)
@@ -22913,11 +23350,11 @@
                     })
                 }
                 ,
-                e.prototype.renderButton = function() {
+                e.prototype.renderButton = function () {
                     return 6 * this.fontSize > this.minHeight ? this.renderButtonSmall() : this.renderButtonBig() || this.renderButtonSmall()
                 }
                 ,
-                e.prototype.renderFooter = function() {
+                e.prototype.renderFooter = function () {
                     var t = this.b_
                         , e = this.warning;
                     return a.create("yatag", {
@@ -22942,43 +23379,44 @@
                 e
         }(l.AdvAdaptive);
         e.AdvRow = m,
-            d.registerAdvRenderer("row", function(t) {
+            d.registerAdvRenderer("row", function (t) {
                 return {
                     coerceSize: m.coerceSize,
-                    render: function() {
+                    render: function () {
                         return a.create(m, r({}, t))
                     }
                 }
             })
     }
-    , function(t, e) {
-        t.exports = function(t) {
+    , function (t, e) {
+        t.exports = function (t) {
             var e = [];
             return e.push(".", t.id, " .n7d881a6f .rc8aba673{-webkit-flex:1 0 auto !important;-ms-flex:1 0 auto !important;flex:1 0 auto !important;-webkit-flex-flow:column nowrap !important;-ms-flex-flow:column nowrap !important;flex-flow:column nowrap !important;min-height:inherit !important;position:relative !important}.", t.id, " .n7d881a6f .rc8aba673,.", t.id, " .n7d881a6f .ud8f31fff{display:-webkit-flex !important;display:-ms-flexbox !important;display:flex !important}.", t.id, " .n7d881a6f .ud8f31fff{-webkit-flex-flow:row nowrap !important;-ms-flex-flow:row nowrap !important;flex-flow:row nowrap !important;-webkit-align-items:center !important;-ms-flex-align:center !important;align-items:center !important;position:absolute !important;bottom:0 !important;left:0 !important;right:0 !important;color:", t.warningTextColor, " !important}.", t.id, " .n7d881a6f .ydf08451d{border-top:1px solid ", t.borderColor, " !important;background:", t.warningBgColor, " !important}.", t.id, " .n7d881a6f .j4455e926{left:auto !important;bottom:3px !important}.", t.id, " .n7d881a6f .vc65254ac,.", t.id, " .n7d881a6f .bc400ea24{padding:0 3px !important}.", t.id, " .n7d881a6f .k560dfa10{-webkit-flex:1 0 !important;-ms-flex:1 0 !important;flex:1 0 !important;overflow:hidden !important;border-top:1px solid transparent !important;margin-top:-1px !important}.", t.id, " .n7d881a6f .ia8475e00{padding:0 1em !important;white-space:nowrap !important}.", t.id, " .n7d881a6f .uf0786d38{-webkit-flex:1 0 auto !important;-ms-flex:1 0 auto !important;flex:1 0 auto !important;display:-webkit-flex !important;display:-ms-flexbox !important;display:flex !important;-webkit-flex-flow:row nowrap !important;-ms-flex-flow:row nowrap !important;flex-flow:row nowrap !important;overflow:hidden !important;min-height:inherit !important;box-sizing:border-box !important;-webkit-justify-content:flex-start !important;-ms-flex-pack:start !important;justify-content:flex-start !important;-webkit-align-items:center !important;-ms-flex-align:center !important;align-items:center !important;padding-right:15px !important;padding-left:1em !important}.", t.id, " .n7d881a6f .sb894909d{display:block !important;background:rgba(0,0,0,.1) top !important;background-size:cover !important;margin-right:", t.imagePaddingLeft, " !important;margin-left:-1em !important;-webkit-align-self:stretch !important;-ms-flex-item-align:stretch !important;-ms-grid-row-align:stretch !important;align-self:stretch !important}.", t.id, " .n7d881a6f .lcbf9249e,.", t.id, " .n7d881a6f .p1240f99a{-webkit-flex:1 0 !important;-ms-flex:1 0 !important;flex:1 0 !important}.", t.id, " .n7d881a6f .p1240f99a{padding:.1em 1em .1em 0 !important}.", t.id, " .n7d881a6f .a6e70116a{-webkit-flex:1 0 !important;-ms-flex:1 0 !important;flex:1 0 !important;padding:.3em 1em .1em 0 !important}.", t.id, " .n7d881a6f .g15e70d4c{padding:.3em 1em .3em 0 !important;margin-left:auto !important;min-width:15% !important;max-width:30% !important}"),
                 e.join("")
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n, o = (n = Object.setPrototypeOf || {
                     __proto__: []
-                }instanceof Array && function(t, e) {
+                } instanceof Array && function (t, e) {
                     t.__proto__ = e
                 }
-                || function(t, e) {
+                || function (t, e) {
                     for (var i in e)
                         e.hasOwnProperty(i) && (t[i] = e[i])
                 }
                     ,
-                    function(t, e) {
+                    function (t, e) {
                         function i() {
                             this.constructor = t
                         }
+
                         n(t, e),
                             t.prototype = null === e ? Object.create(e) : (i.prototype = e.prototype,
                                 new i)
                     }
-            ), r = Object.assign || function(t) {
+            ), r = Object.assign || function (t) {
                 for (var e, i = 1, n = arguments.length; i < n; i++)
                     for (var o in e = arguments[i])
                         Object.prototype.hasOwnProperty.call(e, o) && (t[o] = e[o]);
@@ -22996,12 +23434,13 @@
             , m = i(63)
             , f = i(550)
             , h = i(140)
-            , g = function(t) {
+            , g = function (t) {
             function e() {
                 return null !== t && t.apply(this, arguments) || this
             }
+
             return o(e, t),
-                e.prototype.onInit = function() {
+                e.prototype.onInit = function () {
                     this.mod = "square",
                         this.coerceSize = e.coerceSize,
                         t.prototype.onInit.call(this),
@@ -23010,27 +23449,27 @@
                         })
                 }
                 ,
-                e.prototype.getStyles = function() {
+                e.prototype.getStyles = function () {
                     return [f].concat(this.image ? [h] : [])
                 }
                 ,
-                e.prototype.calcFontSize = function(t) {
+                e.prototype.calcFontSize = function (t) {
                     var e = t.width
                         , i = t.height;
                     return s.getLimitedLinearFunction(3e4, 13, 35e4, 28)(e * i)
                 }
                 ,
-                e.prototype.createResourceTree = function(t) {
+                e.prototype.createResourceTree = function (t) {
                     var e, i = this.props.context.getTheme().multiple, n = this.getDataSource().isApp();
                     return [t(["warning"], 1, [t(["logo-stub"], 1, [t(["title"], 1, (e = [t(["body"], 1)],
-                        c.map([[["button-medium"], 1], [["button-small"], i && !n ? 2 : 1]], function(i) {
+                        c.map([[["button-medium"], 1], [["button-small"], i && !n ? 2 : 1]], function (i) {
                             var n = i[0]
                                 , o = i[1];
                             return t(n, o, e)
                         })).slice())])])]
                 }
                 ,
-                e.prototype.renderContent = function(t) {
+                e.prototype.renderContent = function (t) {
                     var e = this.b_
                         , i = this.image
                         , n = {
@@ -23047,7 +23486,7 @@
                         }, this.renderTitle(), this.renderBody(), this.renderButtons(), this.renderAge()), this.renderWarning())
                 }
                 ,
-                e.prototype.renderButtons = function() {
+                e.prototype.renderButtons = function () {
                     return a.create(m, null, this.renderButtonMedium(), this.renderButtonSmall())
                 }
                 ,
@@ -23068,49 +23507,50 @@
                 e
         }(l.AdvAdaptive);
         e.AdvSquare = g,
-            u.registerAdvRenderer("square", function(t) {
+            u.registerAdvRenderer("square", function (t) {
                 return {
-                    coerceSize: t.adv.image ? g.coerceSize : function() {
+                    coerceSize: t.adv.image ? g.coerceSize : function () {
                         return {
                             width: 0,
                             height: 0
                         }
                     }
                     ,
-                    render: function() {
+                    render: function () {
                         return a.create(g, r({}, t))
                     }
                 }
             })
     }
-    , function(t, e) {
-        t.exports = function(t) {
+    , function (t, e) {
+        t.exports = function (t) {
             var e = [];
             return e.push(".", t.id, " .s4cba39a4.w7be6531a .rc8aba673{-webkit-flex:1 0 auto !important;-ms-flex:1 0 auto !important;flex:1 0 auto !important;display:-webkit-flex !important;display:-ms-flexbox !important;display:flex !important;-webkit-flex-flow:column nowrap !important;-ms-flex-flow:column nowrap !important;flex-flow:column nowrap !important;-webkit-justify-content:flex-end !important;-ms-flex-pack:end !important;justify-content:flex-end !important;background-size:cover !important;background-position:top !important;min-height:inherit !important;color:#fff !important}.", t.id, " .s4cba39a4.w7be6531a .of5baa3f5,.", t.id, " .s4cba39a4.w7be6531a .scd7c6544,.", t.id, " .s4cba39a4.w7be6531a .ye1d35305{color:inherit !important}.", t.id, " .s4cba39a4.w7be6531a .b9dbb7f91{left:5% !important}.", t.id, " .s4cba39a4.w7be6531a .n518a0d79{color:inherit !important}.", t.id, " .s4cba39a4.w7be6531a .k560dfa10{background:rgba(0,0,0,.25) !important;color:#e0e0e0 !important}.", t.id, " .s4cba39a4.w7be6531a .ia8475e00{padding:0 5% !important}.", t.id, " .s4cba39a4.w7be6531a .uf0786d38{display:-webkit-flex !important;display:-ms-flexbox !important;display:flex !important;position:relative !important;-webkit-flex-flow:column nowrap !important;-ms-flex-flow:column nowrap !important;flex-flow:column nowrap !important;padding:.8em 5% 0 !important}.", t.id, " .s4cba39a4.w7be6531a .a6e70116a,.", t.id, " .s4cba39a4.w7be6531a .p1240f99a{color:inherit !important;text-shadow:0 1px 2px rgba(0,0,0,.5) !important}.", t.id, " .s4cba39a4.w7be6531a .pdd06b7f{background:", t.buttonAltBgColor, " !important;border-color:", t.buttonAltBorderColor, " !important;color:", t.buttonAltColor, " !important;fill:", t.buttonAltColor, " !important}.", t.id, " .s4cba39a4.w7be6531a .x720f4f0a{border-color:", t.buttonAltColor, " !important}.", t.id, " .s4cba39a4.w7be6531a .f1c6c99fb{color:inherit !important}.", t.id, " .s4cba39a4.w7be6531a .j6c679b5d{top:1.8em !important;left:5% !important}"),
                 e.join("")
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n, o = (n = Object.setPrototypeOf || {
                     __proto__: []
-                }instanceof Array && function(t, e) {
+                } instanceof Array && function (t, e) {
                     t.__proto__ = e
                 }
-                || function(t, e) {
+                || function (t, e) {
                     for (var i in e)
                         e.hasOwnProperty(i) && (t[i] = e[i])
                 }
                     ,
-                    function(t, e) {
+                    function (t, e) {
                         function i() {
                             this.constructor = t
                         }
+
                         n(t, e),
                             t.prototype = null === e ? Object.create(e) : (i.prototype = e.prototype,
                                 new i)
                     }
-            ), r = Object.assign || function(t) {
+            ), r = Object.assign || function (t) {
                 for (var e, i = 1, n = arguments.length; i < n; i++)
                     for (var o in e = arguments[i])
                         Object.prototype.hasOwnProperty.call(e, o) && (t[o] = e[o]);
@@ -23127,45 +23567,46 @@
             , u = i(30)
             , m = i(552)
             , f = i(140)
-            , h = function(t) {
+            , h = function (t) {
             function e() {
                 return null !== t && t.apply(this, arguments) || this
             }
+
             return o(e, t),
-                e.prototype.onInit = function() {
+                e.prototype.onInit = function () {
                     this.mod = "tower-avito",
                         this.coerceSize = e.coerceSize,
                         t.prototype.onInit.call(this),
                         this.initImage()
                 }
                 ,
-                e.prototype.getStyles = function() {
+                e.prototype.getStyles = function () {
                     return [m, f]
                 }
                 ,
-                e.prototype.initImage = function() {
+                e.prototype.initImage = function () {
                     this.props.context.setParams({
                         imageMinHeight: this.minHeight / 2
                     })
                 }
                 ,
-                e.prototype.calcFontSize = function(t) {
+                e.prototype.calcFontSize = function (t) {
                     var e = t.width
                         , i = t.height;
                     return s.getLimitedLinearFunction(2e4, 11, 24e4, 18)(e * i)
                 }
                 ,
-                e.prototype.createResourceTree = function(t) {
+                e.prototype.createResourceTree = function (t) {
                     var e;
                     return [t(["title"], 1, (e = [t(["body"], 1)],
-                        c.map([[["button-medium"], 2], [["button-small"], 1]], function(i) {
+                        c.map([[["button-medium"], 2], [["button-small"], 1]], function (i) {
                             var n = i[0]
                                 , o = i[1];
                             return t(n, o, e)
                         })))]
                 }
                 ,
-                e.prototype.renderContent = function(t) {
+                e.prototype.renderContent = function (t) {
                     var e = this.b_;
                     return this.registerImageViewport("image"),
                         a.create("yatag", {
@@ -23176,7 +23617,7 @@
                         }, this.renderTitle(), this.renderBody(), this.renderButtonMedium(), this.renderButtonSmall(), this.renderAge()))
                 }
                 ,
-                e.prototype.renderImage = function() {
+                e.prototype.renderImage = function () {
                     var t = this.b_
                         , e = this.image
                         , i = {
@@ -23208,334 +23649,335 @@
                 e
         }(l.AdvAdaptive);
         e.AdvTowerAvito = h,
-            u.registerAdvRenderer("tower-avito", function(t) {
+            u.registerAdvRenderer("tower-avito", function (t) {
                 return {
-                    coerceSize: t.adv.image ? h.coerceSize : function() {
+                    coerceSize: t.adv.image ? h.coerceSize : function () {
                         return {
                             width: 0,
                             height: 0
                         }
                     }
                     ,
-                    render: function() {
+                    render: function () {
                         return a.create(h, r({}, t))
                     }
                 }
             })
     }
-    , function(t, e) {
-        t.exports = function(t) {
+    , function (t, e) {
+        t.exports = function (t) {
             var e = [];
             return e.push(".", t.id, " .i7f0d0f76 .rc8aba673{-webkit-flex:1 0 auto !important;-ms-flex:1 0 auto !important;flex:1 0 auto !important;display:-webkit-flex !important;display:-ms-flexbox !important;display:flex !important;-webkit-flex-flow:column nowrap !important;-ms-flex-flow:column nowrap !important;flex-flow:column nowrap !important;min-height:inherit !important;position:relative !important}.", t.id, " .i7f0d0f76 .b9dbb7f91{left:1em !important}.", t.id, " .i7f0d0f76 .k560dfa10{background:rgba(0,0,0,.25) !important;color:#fff !important;position:absolute !important;bottom:0 !important;left:0 !important;right:0 !important}.", t.id, " .i7f0d0f76 .ia8475e00{padding:.4em 1em !important}.", t.id, " .i7f0d0f76 .uf0786d38{-webkit-flex:1 0 auto !important;-ms-flex:1 0 auto !important;flex:1 0 auto !important;display:-webkit-flex !important;display:-ms-flexbox !important;display:flex !important;-webkit-flex-flow:column nowrap !important;-ms-flex-flow:column nowrap !important;flex-flow:column nowrap !important;-webkit-justify-content:space-between !important;-ms-flex-pack:justify !important;justify-content:space-between !important;padding:.8em 1em 0 !important;position:relative !important}.", t.id, " .i7f0d0f76 .a6e70116a,.", t.id, " .i7f0d0f76 .p1240f99a{padding:0 !important}.", t.id, " .i7f0d0f76 .u5f6ab1ac{font-size:1.1em !important}.", t.id, " .i7f0d0f76 .r73d78be4{font-size:.9em !important}.", t.id, " .i7f0d0f76 .sb894909d{display:block !important;background:rgba(0,0,0,.1) top !important;background-size:cover !important;position:relative !important;overflow:hidden !important}.", t.id, " .i7f0d0f76 .j6c679b5d{top:2em !important;left:1em !important}"),
                 e.join("")
         }
     }
-    , function(t, e) {
-        t.exports = function(t) {
+    , function (t, e) {
+        t.exports = function (t) {
             var e = [];
             return e.push(".", t.id, " .tfa7c6a13{-webkit-flex-flow:row nowrap !important;-ms-flex-flow:row nowrap !important;flex-flow:row nowrap !important;min-width:1px !important;min-height:1px !important}.", t.id, " .tfa7c6a13,.", t.id, " .raa7f4123{display:-webkit-flex !important;display:-ms-flexbox !important;display:flex !important}.", t.id, " .raa7f4123{overflow:hidden !important;-webkit-justify-content:space-between !important;-ms-flex-pack:justify !important;justify-content:space-between !important;-webkit-align-content:space-between !important;-ms-flex-line-pack:justify !important;align-content:space-between !important;-webkit-flex-wrap:wrap !important;-ms-flex-wrap:wrap !important;flex-wrap:wrap !important;margin:", t.margin, " !important;border:solid ", t.borderColor, " !important;border-width:", t.borderWidth, " !important;border-radius:", t.borderRadius, " !important;box-sizing:border-box !important}.", t.id, " .sbea9e3b6{-webkit-align-items:flex-start !important;-ms-flex-align:start !important;align-items:flex-start !important}.", t.id, " .rc3dc5976{-webkit-flex-direction:row !important;-ms-flex-direction:row !important;flex-direction:row !important}.", t.id, " .a6a4d4a8a{-webkit-flex-direction:column !important;-ms-flex-direction:column !important;flex-direction:column !important}.", t.id, " .w96ffea58,.", t.id, " .vd4b521d7{border-width:0 !important}.", t.id, " .w96ffea58 .w7be6531a{border-width:", t.borderWidth, " !important}.", t.id, " .dea785ff4 .w7be6531a{border-width:0 !important;border-radius:0 !important}.", t.id, " .maf1cea96 .w7be6531a{margin:-", t.borderWidth, " !important;border-radius:0 !important}"),
                 e.join("")
         }
     }
-    , function(t, e, i) {
-        t.exports = function(t, e) {
-            i.e(0).then(function() {
+    , function (t, e, i) {
+        t.exports = function (t, e) {
+            i.e(0).then(function () {
                 t(i(649))
             }
-                .bind(null, i)).catch(function() {
+                .bind(null, i)).catch(function () {
                 e && e.apply(this, arguments)
             })
         }
     }
-    , function(t, e, i) {
-        t.exports = function(t, e) {
-            i.e(0).then(function() {
+    , function (t, e, i) {
+        t.exports = function (t, e) {
+            i.e(0).then(function () {
                 t(i(650))
             }
-                .bind(null, i)).catch(function() {
+                .bind(null, i)).catch(function () {
                 e && e.apply(this, arguments)
             })
         }
     }
-    , function(t, e) {
-        t.exports = function(t) {
+    , function (t, e) {
+        t.exports = function (t) {
             var e = [];
             return e.push(".", t.id, " .yap-adtune{position:relative !important;cursor:pointer !important}.", t.id, " .yap-feedback-menu{z-index:-1 !important;transition:z-index 0s linear .4s !important;cursor:default !important}.", t.id, " .yap-feedback-menu,.", t.id, " .yap-feedback-menu__slide{position:absolute !important;top:0 !important;left:0 !important;width:100% !important;height:100% !important;overflow:hidden !important}.", t.id, " .yap-feedback-menu__slide{margin-left:100% !important;transition:margin-left .4s ease-out !important}.", t.id, " .yap-feedback-menu__form{position:absolute !important;display:-webkit-flex !important;display:-ms-flexbox !important;display:flex !important;margin-left:0 !important;width:100% !important;height:100% !important;background:#fff !important;background:hsla(0,0%,100%,.98) !important;transition:margin-left .4s ease-out !important}.", t.id, " .yap-feedback-menu_visible{z-index:10 !important;transition:z-index 0s !important}.", t.id, " .yap-feedback-menu_visible .yap-feedback-menu__slide{margin-left:0 !important}.", t.id, " .yap-adtune-icon__container{padding:4px !important;position:relative !important}.", t.id, " .yap-adtune-icon__image svg{display:block !important}.", t.id, " .yap-adtune-icon__image polygon{fill:", t.settings.textColor || "#000", " !important}.", t.id, " .yap-adtune-icon__image-fallback{margin:-3px !important;width:1em !important;height:1em !important;line-height:1em !important;text-align:center !important;font-size:18px !important}.", t.id, " .yap-adtune-icon__tooltip{position:absolute !important;top:50% !important;right:100% !important;margin-top:-9px !important;margin-right:6px !important;padding:0 4px !important;max-width:120px !important;height:18px !important;line-height:18px !important;color:#fff !important;background:#333 !important;background-color:rgba(0,0,0,.8) !important;border-radius:1px !important;visibility:hidden !important;font-size:11px !important;white-space:nowrap !important}.", t.id, " .yap-adtune-icon__tooltip-arrow{position:absolute !important;top:3px !important;right:-6px !important;display:block !important;overflow:hidden !important;width:0 !important;height:0 !important;border-style:solid !important;border-width:6px 0 6px 6px !important;border-color:transparent transparent transparent #333 !important;border-color:transparent transparent transparent rgba(0,0,0,.8) !important}.", t.id, " .yap-adtune-icon__tooltip-text{position:relative !important;color:#fff !important;letter-spacing:.04em !important}.", t.id, " .yap-adtune-icon:hover .yap-adtune-icon__tooltip{visibility:visible !important}.", t.id, " .yap-adtune-icon_open:hover .yap-adtune-icon__tooltip{display:none !important}.", t.id, " .yap-adtune-icon_touch_true{visibility:visible !important}.", t.id, " .yap-adtune-icon_touch_true .yap-adtune-icon__tooltip{display:none !important}.", t.id, " .yap-adtune-icon_oldie_true .yap-adtune-icon__tooltip{height:19px !important;line-height:19px !important}.", t.id, " .yap-adtune-icon_oldie_true .yap-adtune-icon__tooltip-arrow{top:2px !important}.", t.id, " .yap-adtune-icon_size_l .yap-adtune-icon__container{padding:5px !important}.", t.id, " .yap-adtune-icon_size_l .yap-adtune-icon__image-fallback{margin:-5px !important;font-size:25px !important}.", t.id, " .yap-adtune-icon_size_l .yap-adtune-icon__tooltip{margin-right:9px !important;margin-top:-12px !important;max-width:160px !important;height:22px !important;line-height:22px !important;font-size:13px !important}.", t.id, " .yap-adtune-icon_size_l .yap-adtune-icon__tooltip-arrow{right:-7px !important;top:4px !important;border-width:7px 0 7px 7px !important}.", t.id, " .yap-adtune__is-ie .yap-adtune-icon_size_l .yap-adtune-icon__tooltip-arrow{right:-6px !important}.", t.id, " .yap-adtune-icon_round{padding:5px !important}.", t.id, " .yap-adtune-icon_round .yap-adtune-icon__container{border-radius:50% !important;background:", t.settings.bgColor && t.settings.borderType != t.Const.BorderTypes.AD ? t.settings.bgColor : "#fff", " !important;box-shadow:0 1px 0 0 rgba(0,0,0,.2) !important}.", t.id, " .yap-adtune-icon_round.yap-adtune-icon_size_l{padding:5px !important}.", t.id, " .yap-adtune-icon_round-flat .yap-adtune-icon__container{border-radius:50% !important;background:", new t.util.Color(t.settings.bgColor && t.settings.borderType != t.Const.BorderTypes.AD ? t.settings.bgColor : "#fff").setAlpha(.8), " !important}.", t.id, " .yap-adtune-icon_round-square{padding:4px !important}.", t.id, " .yap-adtune-icon_round-square .yap-adtune-icon__tooltip{margin-right:8px !important}.", t.id, " .yap-adtune-icon_round-square .yap-adtune-icon__container{border-radius:20% !important}.", t.id, " .yap-adtune-icon_black-white .yap-adtune-icon__container{background-color:rgba(0,0,0,.25) !important}.", t.id, " .yap-adtune-icon_black-white .yap-adtune-icon__image polygon{fill:#fff !important}.", t.id, " .yap-adtune-icon.yap-adtune-icon_open .yap-adtune-icon__tooltip{display:none !important}.", t.id, " .yap-adtune-message{position:absolute !important;top:0 !important;right:0 !important;left:0 !important;bottom:0 !important;width:100% !important;height:100% !important;-webkit-justify-content:center !important;-ms-flex-pack:center !important;justify-content:center !important;color:#000 !important;font-size:13px !important;z-index:-1 !important;opacity:0 !important;transition:opacity .3s !important}.", t.id, " .yap-adtune-message,.", t.id, " .yap-adtune-message__container{display:-webkit-flex !important;display:-ms-flexbox !important;display:flex !important;-webkit-align-items:center !important;-ms-flex-align:center !important;align-items:center !important}.", t.id, " .yap-adtune-message__text{margin-left:10px !important}.", t.id, " .yap-adtune-message__icon svg{fill:#000 !important}.", t.id, " .yap-adtune-message_big{font-size:15px !important}.", t.id, " .yap-feedback-menu_received .yap-adtune-message{opacity:1 !important;z-index:10 !important}.", t.id, " .yap-abuse-message{-webkit-align-items:center !important;-ms-flex-align:center !important;align-items:center !important;-webkit-justify-content:center !important;-ms-flex-pack:center !important;justify-content:center !important;min-width:100% !important;min-height:100% !important;font-size:13px !important}.", t.id, " .yap-abuse-message,.", t.id, " .yap-abuse-message__container{display:-webkit-flex !important;display:-ms-flexbox !important;display:flex !important;box-sizing:border-box !important}.", t.id, " .yap-abuse-message__container{width:100% !important;-webkit-flex-direction:column !important;-ms-flex-direction:column !important;flex-direction:column !important;padding:10px !important}.", t.id, " .yap-abuse-message__logo{font-weight:700 !important}.", t.id, " .yap-abuse-message__logo_small{display:none !important;font-weight:700 !important}.", t.id, " .yap-abuse-message__logo-wrapper,.", t.id, " .yap-abuse-message__logo_small{-webkit-align-items:center !important;-ms-flex-align:center !important;align-items:center !important}.", t.id, " .yap-abuse-message__logo-wrapper{overflow:hidden !important}.", t.id, " .yap-abuse-message__complaint,.", t.id, " .yap-abuse-message__logo-wrapper{display:-webkit-flex !important;display:-ms-flexbox !important;display:flex !important;-webkit-justify-content:center !important;-ms-flex-pack:center !important;justify-content:center !important;-webkit-flex-shrink:0 !important;-ms-flex-negative:0 !important;flex-shrink:0 !important;box-sizing:border-box !important}.", t.id, " .yap-abuse-message__complaint{-webkit-align-content:center !important;-ms-flex-line-pack:center !important;align-content:center !important;-webkit-align-items:center !important;-ms-flex-align:center !important;align-items:center !important;padding:0 !important;margin:0 !important;position:relative !important}.", t.id, " .yap-abuse-message__complaint-item{display:-webkit-flex !important;display:-ms-flexbox !important;display:flex !important;-webkit-justify-content:center !important;-ms-flex-pack:center !important;justify-content:center !important;box-sizing:border-box !important;margin:5px 0 !important}.", t.id, " .yap-abuse-message__complaint-item_small{display:none !important}.", t.id, " .yap-abuse-message__complaint-item .yap-abuse-message__complaint-link{width:100% !important;max-width:250px !important}.", t.id, " .yap-abuse-message__complaint-item_small .yap-abuse-message__complaint-link{width:100% !important;max-width:180px !important}.", t.id, " .yap-abuse-message__complaint-link{display:block !important;padding:5px !important;background-color:#fff !important;border:1px solid #c8c8c8 !important;border-radius:4px !important;text-align:center !important;color:#555 !important;white-space:nowrap !important;transition-property:border,color !important;transition-duration:.2s !important;cursor:pointer !important;box-sizing:border-box !important}.", t.id, " .yap-abuse-message__complaint-link:hover{color:#333 !important;border-color:#333 !important}.", t.id, " .yap-abuse-message.yap-abuse-message__layout-vertical .yap-abuse-message__logo-wrapper{padding-bottom:15px !important}.", t.id, " .yap-abuse-message.yap-abuse-message__layout-vertical .yap-abuse-message__complaint,.", t.id, " .yap-abuse-message.yap-abuse-message__layout-vertical .yap-abuse-message__container{-webkit-flex-direction:column !important;-ms-flex-direction:column !important;flex-direction:column !important}.", t.id, " .yap-abuse-message.yap-abuse-message__layout-vertical .yap-abuse-message__complaint{display:-webkit-flex !important;display:-ms-flexbox !important;display:flex !important;-webkit-align-items:stretch !important;-ms-flex-align:stretch !important;align-items:stretch !important}.", t.id, " .yap-abuse-message.yap-abuse-message__layout-vertical_condensed .yap-abuse-message__logo-wrapper{padding-bottom:5px !important}.", t.id, " .yap-abuse-message.yap-abuse-message__layout-vertical_condensed .yap-abuse-message__container{-webkit-flex-direction:column !important;-ms-flex-direction:column !important;flex-direction:column !important}.", t.id, " .yap-abuse-message.yap-abuse-message__layout-vertical_condensed .yap-abuse-message__complaint{display:-webkit-flex !important;display:-ms-flexbox !important;display:flex !important;-webkit-flex-direction:column !important;-ms-flex-direction:column !important;flex-direction:column !important;-webkit-align-items:stretch !important;-ms-flex-align:stretch !important;align-items:stretch !important}.", t.id, " .yap-abuse-message.yap-abuse-message__layout-vertical_condensed .yap-abuse-message__complaint-item{margin:2px 0 !important}.", t.id, " .yap-abuse-message.yap-abuse-message__layout-vertical_condensed .yap-abuse-message__complaint-link{padding:3px !important}.", t.id, " .yap-abuse-message.yap-abuse-message__layout-vertical_small .yap-abuse-message__logo-wrapper{padding-bottom:15px !important}.", t.id, " .yap-abuse-message.yap-abuse-message__layout-vertical_small .yap-abuse-message__complaint,.", t.id, " .yap-abuse-message.yap-abuse-message__layout-vertical_small .yap-abuse-message__container{-webkit-flex-direction:column !important;-ms-flex-direction:column !important;flex-direction:column !important}.", t.id, " .yap-abuse-message.yap-abuse-message__layout-vertical_small .yap-abuse-message__complaint{display:-webkit-flex !important;display:-ms-flexbox !important;display:flex !important;-webkit-align-items:stretch !important;-ms-flex-align:stretch !important;align-items:stretch !important}.", t.id, " .yap-abuse-message.yap-abuse-message__layout-vertical_small .yap-abuse-message__complaint-item_small{display:-webkit-flex !important;display:-ms-flexbox !important;display:flex !important}.", t.id, " .yap-abuse-message.yap-abuse-message__layout-vertical_small .yap-abuse-message__complaint-item_large{display:none !important}.", t.id, " .yap-abuse-message.yap-abuse-message__layout-vertical_small-condensed .yap-abuse-message__logo-wrapper{padding-bottom:5px !important}.", t.id, " .yap-abuse-message.yap-abuse-message__layout-vertical_small-condensed .yap-abuse-message__container{-webkit-flex-direction:column !important;-ms-flex-direction:column !important;flex-direction:column !important}.", t.id, " .yap-abuse-message.yap-abuse-message__layout-vertical_small-condensed .yap-abuse-message__complaint{display:-webkit-flex !important;display:-ms-flexbox !important;display:flex !important;-webkit-flex-direction:column !important;-ms-flex-direction:column !important;flex-direction:column !important;-webkit-align-items:stretch !important;-ms-flex-align:stretch !important;align-items:stretch !important}.", t.id, " .yap-abuse-message.yap-abuse-message__layout-vertical_small-condensed .yap-abuse-message__complaint-item{margin:2px 0 !important}.", t.id, " .yap-abuse-message.yap-abuse-message__layout-vertical_small-condensed .yap-abuse-message__complaint-item_small{display:-webkit-flex !important;display:-ms-flexbox !important;display:flex !important}.", t.id, " .yap-abuse-message.yap-abuse-message__layout-vertical_small-condensed .yap-abuse-message__complaint-item_large{display:none !important}.", t.id, " .yap-abuse-message.yap-abuse-message__layout-vertical_small-condensed .yap-abuse-message__complaint-link{padding:3px !important}.", t.id, " .yap-abuse-message.yap-abuse-message__layout-vertical-2x2 .yap-abuse-message__logo-wrapper{padding-bottom:10px !important}.", t.id, " .yap-abuse-message.yap-abuse-message__layout-vertical-2x2 .yap-abuse-message__container{-webkit-flex-direction:column !important;-ms-flex-direction:column !important;flex-direction:column !important;-webkit-align-items:center !important;-ms-flex-align:center !important;align-items:center !important}.", t.id, " .yap-abuse-message.yap-abuse-message__layout-vertical-2x2 .yap-abuse-message__complaint{display:-webkit-flex !important;display:-ms-flexbox !important;display:flex !important;-webkit-flex-wrap:wrap !important;-ms-flex-wrap:wrap !important;flex-wrap:wrap !important;max-width:540px !important}.", t.id, " .yap-abuse-message.yap-abuse-message__layout-vertical-2x2 .yap-abuse-message__complaint-item{width:50% !important;margin:0 !important;padding:5px !important}.", t.id, " .yap-abuse-message.yap-abuse-message__layout-vertical-2x2_small .yap-abuse-message__logo-wrapper{padding-bottom:10px !important}.", t.id, " .yap-abuse-message.yap-abuse-message__layout-vertical-2x2_small .yap-abuse-message__container{-webkit-flex-direction:column !important;-ms-flex-direction:column !important;flex-direction:column !important;-webkit-align-items:center !important;-ms-flex-align:center !important;align-items:center !important}.", t.id, " .yap-abuse-message.yap-abuse-message__layout-vertical-2x2_small .yap-abuse-message__complaint{display:-webkit-flex !important;display:-ms-flexbox !important;display:flex !important;-webkit-flex-wrap:wrap !important;-ms-flex-wrap:wrap !important;flex-wrap:wrap !important;max-width:340px !important}.", t.id, " .yap-abuse-message.yap-abuse-message__layout-vertical-2x2_small .yap-abuse-message__complaint-item{width:50% !important;margin:0 !important;padding:5px !important}.", t.id, " .yap-abuse-message.yap-abuse-message__layout-vertical-2x2_small .yap-abuse-message__complaint-item_small{display:-webkit-flex !important;display:-ms-flexbox !important;display:flex !important}.", t.id, " .yap-abuse-message.yap-abuse-message__layout-vertical-2x2_small .yap-abuse-message__complaint-item_large{display:none !important}.", t.id, " .yap-abuse-message.yap-abuse-message__layout-row .yap-abuse-message__container{-webkit-flex-direction:row !important;-ms-flex-direction:row !important;flex-direction:row !important;-webkit-justify-content:center !important;-ms-flex-pack:center !important;justify-content:center !important}.", t.id, " .yap-abuse-message.yap-abuse-message__layout-row .yap-abuse-message__complaint{display:-webkit-flex !important;display:-ms-flexbox !important;display:flex !important;-webkit-flex-shrink:1 !important;-ms-flex-negative:1 !important;flex-shrink:1 !important;padding-left:20px !important}.", t.id, " .yap-abuse-message.yap-abuse-message__layout-row .yap-abuse-message__complaint-item{-webkit-flex-grow:1 !important;-ms-flex-positive:1 !important;flex-grow:1 !important;margin:0 5px !important}.", t.id, " .yap-abuse-message.yap-abuse-message__layout-row .yap-abuse-message__complaint-link{display:-webkit-flex !important;display:-ms-flexbox !important;display:flex !important;-webkit-align-items:center !important;-ms-flex-align:center !important;align-items:center !important;-webkit-justify-content:center !important;-ms-flex-pack:center !important;justify-content:center !important}.", t.id, " .yap-abuse-message.yap-abuse-message__layout-row_middle .yap-abuse-message__container{-webkit-flex-direction:row !important;-ms-flex-direction:row !important;flex-direction:row !important;-webkit-justify-content:center !important;-ms-flex-pack:center !important;justify-content:center !important}.", t.id, " .yap-abuse-message.yap-abuse-message__layout-row_middle .yap-abuse-message__complaint{display:-webkit-flex !important;display:-ms-flexbox !important;display:flex !important;-webkit-flex-shrink:1 !important;-ms-flex-negative:1 !important;flex-shrink:1 !important;padding-left:15px !important}.", t.id, " .yap-abuse-message.yap-abuse-message__layout-row_middle .yap-abuse-message__complaint-item{-webkit-flex-grow:1 !important;-ms-flex-positive:1 !important;flex-grow:1 !important;margin:0 5px !important}.", t.id, " .yap-abuse-message.yap-abuse-message__layout-row_middle .yap-abuse-message__complaint-item_small{display:-webkit-flex !important;display:-ms-flexbox !important;display:flex !important}.", t.id, " .yap-abuse-message.yap-abuse-message__layout-row_middle .yap-abuse-message__complaint-item_large{display:none !important}.", t.id, " .yap-abuse-message.yap-abuse-message__layout-row_middle .yap-abuse-message__complaint-link{display:-webkit-flex !important;display:-ms-flexbox !important;display:flex !important;-webkit-align-items:center !important;-ms-flex-align:center !important;align-items:center !important;-webkit-justify-content:center !important;-ms-flex-pack:center !important;justify-content:center !important}.", t.id, " .yap-abuse-message.yap-abuse-message__layout-row_small .yap-abuse-message__container{-webkit-flex-direction:row !important;-ms-flex-direction:row !important;flex-direction:row !important;-webkit-justify-content:center !important;-ms-flex-pack:center !important;justify-content:center !important}.", t.id, " .yap-abuse-message.yap-abuse-message__layout-row_small .yap-abuse-message__logo{display:none !important}.", t.id, " .yap-abuse-message.yap-abuse-message__layout-row_small .yap-abuse-message__logo_small{display:-webkit-flex !important;display:-ms-flexbox !important;display:flex !important}.", t.id, " .yap-abuse-message.yap-abuse-message__layout-row_small .yap-abuse-message__complaint{display:-webkit-flex !important;display:-ms-flexbox !important;display:flex !important;-webkit-flex-shrink:1 !important;-ms-flex-negative:1 !important;flex-shrink:1 !important;padding-left:15px !important}.", t.id, " .yap-abuse-message.yap-abuse-message__layout-row_small .yap-abuse-message__complaint-item{-webkit-flex-grow:1 !important;-ms-flex-positive:1 !important;flex-grow:1 !important;margin:0 5px !important}.", t.id, " .yap-abuse-message.yap-abuse-message__layout-row_small .yap-abuse-message__complaint-item_small{display:-webkit-flex !important;display:-ms-flexbox !important;display:flex !important}.", t.id, " .yap-abuse-message.yap-abuse-message__layout-row_small .yap-abuse-message__complaint-item_large{display:none !important}.", t.id, " .yap-abuse-message.yap-abuse-message__layout-row_small .yap-abuse-message__complaint-link{display:-webkit-flex !important;display:-ms-flexbox !important;display:flex !important;-webkit-align-items:center !important;-ms-flex-align:center !important;align-items:center !important;-webkit-justify-content:center !important;-ms-flex-pack:center !important;justify-content:center !important}.", t.id, " .yap-abuse-message.yap-abuse-message__layout-row_tiny{font-size:11px !important}.", t.id, " .yap-abuse-message.yap-abuse-message__layout-row_tiny .yap-abuse-message__container{-webkit-flex-direction:row !important;-ms-flex-direction:row !important;flex-direction:row !important;-webkit-justify-content:center !important;-ms-flex-pack:center !important;justify-content:center !important;padding:4px !important}.", t.id, " .yap-abuse-message.yap-abuse-message__layout-row_tiny .yap-abuse-message__logo{display:none !important}.", t.id, " .yap-abuse-message.yap-abuse-message__layout-row_tiny .yap-abuse-message__logo_small{display:-webkit-flex !important;display:-ms-flexbox !important;display:flex !important}.", t.id, " .yap-abuse-message.yap-abuse-message__layout-row_tiny .yap-abuse-message__complaint{display:-webkit-flex !important;display:-ms-flexbox !important;display:flex !important;-webkit-flex-shrink:1 !important;-ms-flex-negative:1 !important;flex-shrink:1 !important;padding-left:10px !important}.", t.id, " .yap-abuse-message.yap-abuse-message__layout-row_tiny .yap-abuse-message__complaint-item{-webkit-flex-grow:1 !important;-ms-flex-positive:1 !important;flex-grow:1 !important;margin:0 1px !important}.", t.id, " .yap-abuse-message.yap-abuse-message__layout-row_tiny .yap-abuse-message__complaint-item_small{display:-webkit-flex !important;display:-ms-flexbox !important;display:flex !important}.", t.id, " .yap-abuse-message.yap-abuse-message__layout-row_tiny .yap-abuse-message__complaint-item_large{display:none !important}.", t.id, " .yap-abuse-message.yap-abuse-message__layout-row_tiny .yap-abuse-message__complaint-link{display:-webkit-flex !important;display:-ms-flexbox !important;display:flex !important;-webkit-align-items:center !important;-ms-flex-align:center !important;align-items:center !important;-webkit-justify-content:center !important;-ms-flex-pack:center !important;justify-content:center !important}.", t.id, " .yap-abuse-message.yap-abuse-message__layout-row_stripe{font-size:11px !important}.", t.id, " .yap-abuse-message.yap-abuse-message__layout-row_stripe .yap-abuse-message__container{-webkit-flex-direction:row !important;-ms-flex-direction:row !important;flex-direction:row !important;-webkit-justify-content:center !important;-ms-flex-pack:center !important;justify-content:center !important;padding:0 !important}.", t.id, " .yap-abuse-message.yap-abuse-message__layout-row_stripe .yap-abuse-message__logo{display:none !important}.", t.id, " .yap-abuse-message.yap-abuse-message__layout-row_stripe .yap-abuse-message__logo_small{display:-webkit-flex !important;display:-ms-flexbox !important;display:flex !important}.", t.id, " .yap-abuse-message.yap-abuse-message__layout-row_stripe .yap-abuse-message__complaint{display:-webkit-flex !important;display:-ms-flexbox !important;display:flex !important;-webkit-flex-shrink:1 !important;-ms-flex-negative:1 !important;flex-shrink:1 !important;padding-left:10px !important}.", t.id, " .yap-abuse-message.yap-abuse-message__layout-row_stripe .yap-abuse-message__complaint-item{-webkit-flex-grow:1 !important;-ms-flex-positive:1 !important;flex-grow:1 !important;margin:0 2px !important}.", t.id, " .yap-abuse-message.yap-abuse-message__layout-row_stripe .yap-abuse-message__complaint-item_small{display:-webkit-flex !important;display:-ms-flexbox !important;display:flex !important}.", t.id, " .yap-abuse-message.yap-abuse-message__layout-row_stripe .yap-abuse-message__complaint-item_large{display:none !important}.", t.id, " .yap-abuse-message.yap-abuse-message__layout-row_stripe .yap-abuse-message__complaint-link{padding:0 5px !important;display:-webkit-flex !important;display:-ms-flexbox !important;display:flex !important;-webkit-align-items:center !important;-ms-flex-align:center !important;align-items:center !important;-webkit-justify-content:center !important;-ms-flex-pack:center !important;justify-content:center !important}.", t.id, " .yap-abuse-message.yap-abuse-message__layout-minimal{font-size:12px !important}.", t.id, " .yap-abuse-message.yap-abuse-message__layout-minimal .yap-abuse-message__container{-webkit-flex-direction:column !important;-ms-flex-direction:column !important;flex-direction:column !important;padding:4px !important}.", t.id, " .yap-abuse-message.yap-abuse-message__layout-minimal .yap-abuse-message__logo{padding:2px 5px !important}.", t.id, " .yap-abuse-message.yap-abuse-message__layout-minimal .yap-abuse-message__logo_small{display:none !important}.", t.id, " .yap-abuse-message.yap-abuse-message__layout-minimal .yap-abuse-message__logo-wrapper{display:-webkit-flex !important;display:-ms-flexbox !important;display:flex !important;-webkit-align-items:center !important;-ms-flex-align:center !important;align-items:center !important}.", t.id, " .yap-abuse-message.yap-abuse-message__layout-minimal .yap-abuse-message__complaint{display:-webkit-flex !important;display:-ms-flexbox !important;display:flex !important;-webkit-flex-wrap:wrap !important;-ms-flex-wrap:wrap !important;flex-wrap:wrap !important;-webkit-flex-shrink:1 !important;-ms-flex-negative:1 !important;flex-shrink:1 !important}.", t.id, " .yap-abuse-message.yap-abuse-message__layout-minimal .yap-abuse-message__complaint-item{-webkit-flex-grow:1 !important;-ms-flex-positive:1 !important;flex-grow:1 !important;margin:1px !important}.", t.id, " .yap-abuse-message.yap-abuse-message__layout-minimal .yap-abuse-message__complaint-item_small{display:-webkit-flex !important;display:-ms-flexbox !important;display:flex !important}.", t.id, " .yap-abuse-message.yap-abuse-message__layout-minimal .yap-abuse-message__complaint-item_large{display:none !important}.", t.id, " .yap-abuse-message.yap-abuse-message__layout-minimal .yap-abuse-message__complaint-link{display:-webkit-flex !important;display:-ms-flexbox !important;display:flex !important;-webkit-align-items:center !important;-ms-flex-align:center !important;align-items:center !important;-webkit-justify-content:center !important;-ms-flex-pack:center !important;justify-content:center !important;padding:2px !important}.", t.id, " .yap-feedback-menu_received .yap-abuse-message__complaint-item{opacity:0 !important}"),
                 e.join("")
         }
     }
-    , function(t, e) {
-        t.exports = function(t) {
+    , function (t, e) {
+        t.exports = function (t) {
             var e = [];
             return e.push(".", t.id, " .yap-layout__warning{z-index:100 !important}.", t.id, " .yap-warning{font-size:9px !important;line-height:1.2 !important;border:1px solid ", t.settings.bgColor || t.settings.siteBgColor ? new t.utils.Color(t.settings.bgColor || t.settings.siteBgColor).readable().setAlpha(.3) : new t.utils.Color("#ddd").setAlpha(1), " !important;border-radius:0 !important}.", t.id, " .yap-warning,.", t.id, " .yap-warning__link{color:", t.settings.bgColor || t.settings.siteBgColor ? new t.utils.Color(t.settings.bgColor || t.settings.siteBgColor).readable().setAlpha(.6) : new t.utils.Color("#666").setAlpha(1), " !important;font-family:verdana !important;background:transparent !important;height:17px !important}.", t.id, " .yap-warning__text{text-align:center !important}.", t.id, " .yap-warning__link{text-decoration:underline !important;white-space:pre !important}.", t.id, " .yap-warning__link:hover{color:", new t.utils.Color(t.settings.bgColor || t.settings.siteBgColor || "#FFFFFF").readable().setAlpha(.5), " !important}.", t.id, " .yap-warning_medical{display:table !important}.", t.id, " .yap-warning_medical .yap-warning__text{display:table-cell !important;vertical-align:middle !important;padding-left:5px !important;padding-right:5px !important}.", t.id, " .yap-warning_long{overflow:hidden !important;position:relative !important;z-index:1 !important;max-width:400px !important;width:100% !important;border:none !important}.", t.id, " .yap-warning_long .yap-warning__text{padding-top:3px !important;z-index:-1 !important;white-space:nowrap !important;display:inline-block !important;position:relative !important;left:0 !important;text-align:left !important;margin-bottom:0 !important;margin-top:0 !important}.", t.id, " .yap-warning_dots{color:", t.settings.sitelinksColor || t.settings.titleColor || "#0000cc", " !important;opacity:.5 !important;line-height:1em !important;font-size:14px !important}.", t.id, " .yap-warning_dots.yap-warning_mouse-on{font-size:0 !important}.", t.id, " .yap-warning__container{display:-webkit-flex !important;display:-ms-flexbox !important;display:flex !important;-webkit-flex-flow:row nowrap !important;-ms-flex-flow:row nowrap !important;flex-flow:row nowrap !important;width:100% !important}.", t.id, " .yap-warning_ellipsis{-webkit-flex:1 !important;-ms-flex:1 !important;flex:1 !important}.", t.id, " .yap-layout__warning_invisible .yap-warning_long{z-index:0 !important}.", t.id, " .yap-warning_gradient__right{-webkit-mask-image:linear-gradient(-90deg,hsla(0,0%,100%,0),#fff 25%) !important;mask-image:linear-gradient(-90deg,hsla(0,0%,100%,0),#fff 25%) !important;-webkit-flex:1 !important;-ms-flex:1 !important;flex:1 !important}.", t.id, " .yap-warning__style{width:100% !important;max-width:400px !important;overflow:hidden !important;position:relative !important}.", t.id, " .yap-warning_gradient__left{-webkit-mask-image:linear-gradient(-90deg,#fff 85%,hsla(0,0%,100%,0)) !important;mask-image:linear-gradient(-90deg,#fff 85%,hsla(0,0%,100%,0)) !important}.", t.id, " .yap-warning_gradient__left.yap-warning_gradient__right{-webkit-mask-image:linear-gradient(-90deg,hsla(0,0%,100%,0),#fff 15%,#fff 85%,hsla(0,0%,100%,0)) !important;mask-image:linear-gradient(-90deg,hsla(0,0%,100%,0),#fff 15%,#fff 85%,hsla(0,0%,100%,0)) !important}.", t.id, " .yap-warning_gradient__right:after{position:absolute !important;right:0 !important;top:0 !important;bottom:0 !important;line-height:1.7em !important;padding-right:2px !important;text-align:right !important;width:60px !important}.", t.id, " .yap-layout .yap-layout__warning-button-text{display:inline !important;text-decoration:underline !important;vertical-align:middle !important}.", t.id, " .yap-layout .yap-layout__warning-button-text:hover{color:", t.settings.hoverColor || "#0088CC", " !important}.", t.id, " .yap-warning_theme_responsive-mobile{color:#fff !important;font-size:1em !important;line-height:1.3em !important;height:13px !important;width:100% !important;max-width:420px !important}.", t.id, " .yap-warning_theme_responsive-mobile .yap-warning__text{padding:0 4px !important;font-size:inherit !important;line-height:inherit !important;height:inherit !important}.", t.id, " .yap-warning_theme_responsive-mobile.yap-warning_medical{line-height:6px !important;background-color:rgba(0,0,0,.3) !important;color:#fff !important;border:0 !important;font-size:.8em !important;padding:0 0 1px !important}.", t.id, " .yap-warning_theme_ghost{width:100% !important;border:none !important}.", t.id, " .yap-warning_theme_ghost .yap-warning__text{line-height:17px !important;font-size:8px !important;padding:0 !important;color:#fff !important;text-indent:4px !important}.", t.id, " .yap-warning_theme_ghost .yap-warning_medical .yap-warning__text{padding-top:1px !important;line-height:7px !important;vertical-align:top !important}"),
                 e.join("")
         }
     }
-    , function(t, e) {
-        t.exports = function(t) {
+    , function (t, e) {
+        t.exports = function (t) {
             var e = [];
             return e.push(".", t.id, " .yap-picture{position:relative !important;display:block !important;overflow:hidden !important}.", t.id, " .yap-picture__container{position:absolute !important;left:50% !important;tap-highlight-color:none !important;-webkit-user-select:none !important;-moz-user-select:none !important;-ms-user-select:none !important;user-select:none !important}.", t.id, " .yap-picture__img{display:block !important;opacity:1 !important;will-change:opacity !important;transition:opacity .2s ease !important}.", t.id, " .yap-picture_touch_false .yap-picture__img:hover{opacity:.8 !important}"),
                 e.join("")
         }
     }
-    , function(t, e) {
-        t.exports = function(t) {
+    , function (t, e) {
+        t.exports = function (t) {
             var e = [];
             return e.push(".", t.id, " .yap-picture-stub{position:relative !important;display:block !important;overflow:hidden !important;background:", t.utils.warning.getBorderColor(t.settings.bgColor || "#FFFFFF", t.settings.titleColor || "#0000CC", .5), " !important;font-size:10px !important;font-weight:700 !important;letter-spacing:.07em !important;text-align:center !important;color:", new t.utils.Color(t.settings.titleColor || "#0000CC").readable(), " !important}.", t.id, " .yap-picture-stub__wall{position:absolute !important;top:-50% !important;left:-50% !important;width:200% !important;height:200% !important;text-align:center !important;opacity:.4 !important;-webkit-transform:rotate(-30deg) !important;transform:rotate(-30deg) !important;-webkit-user-select:none !important;-moz-user-select:none !important;-ms-user-select:none !important;user-select:none !important}.", t.id, " .yap-picture-stub__row{padding:10px 0 !important;overflow:hidden !important;display:block !important;white-space:nowrap !important;text-align:center !important}.", t.id, " .yap-picture-stub__column{display:inline-block !important}.", t.id, " .yap-picture-stub__text{float:left !important;padding:0 15px !important}.", t.id, " .yap-picture-stub__row_even .yap-picture-stub__text{margin-left:-50% !important}"),
                 e.join("")
         }
     }
-    , function(t, e) {
-        t.exports = function(t) {
+    , function (t, e) {
+        t.exports = function (t) {
             var e = [];
             return e.push(".", t.id, " .yap-bg{position:relative !important;top:0 !important;left:0 !important;margin:0 auto !important;display:block !important;width:100% !important;overflow:hidden !important;background-color:", t.settings.bgColor || "#fff", " !important}.", t.id, " .yap-bg__bg,.", t.id, " .yap-bg__svg{position:absolute !important;top:0 !important;left:0 !important;width:100% !important;height:100% !important;opacity:.3 !important}.", t.id, " .yap-bg__svg svg{position:absolute !important;width:200% !important;height:200% !important;left:-50% !important;top:-50% !important}.", t.id, " .yap-bg__bg{background-position:50% 50% !important;background-size:cover !important;background-repeat:no-repeat !important;-webkit-transform:scale(2) !important;transform:scale(2) !important;-webkit-transform-origin:center 30% !important;transform-origin:center 30% !important;-webkit-filter:blur(", t.blurSize, "px) !important;filter:blur(", t.blurSize, "px) !important}"),
                 e.join("")
         }
     }
-    , function(t, e) {
-        t.exports = function(t) {
+    , function (t, e) {
+        t.exports = function (t) {
             var e = [];
             return e.push(".", t.id, " .yap-button{z-index:0 !important;margin:0 !important;padding:0 !important;border:0 !important;text-align:center !important;font-size:1em !important;line-height:1.9em !important;background:", t.settings.titleColor || "#0000CC", " !important;border-radius:3px !important;-webkit-user-select:none !important;-moz-user-select:none !important;-ms-user-select:none !important;user-select:none !important;-webkit-tap-highlight-color:rgba(0,0,0,0) !important}.", t.id, " .yap-button,.", t.id, " .yap-button__text{position:relative !important;display:inline-block !important}.", t.id, " .yap-button__text{z-index:2 !important;margin:0 auto !important;padding:0 1em !important;color:", new t.utils.Color(t.settings.titleColor || "#0000CC").readable(), " !important;font-weight:400 !important;zoom:0 !important}.", t.id, " .yap-button__icon,.", t.id, " .yap-button__text{vertical-align:middle !important}.", t.id, " .yap-button:hover{background:", t.settings.hoverColor || "#0088CC", " !important}.", t.id, " .yap-button:hover .yap-button__text{color:", new t.utils.Color(t.settings.hoverColor || "#0088CC").readable(), " !important;text-decoration:none !important}.", t.id, " .yap-button_theme_android,.", t.id, " .yap-button_theme_android:hover{color:#fff !important;background:#689f38 !important;border-radius:3px !important;font:normal .9em/1 Tahoma,sans-serif !important;text-transform:uppercase !important;letter-spacing:1px !important;text-decoration:none !important;line-height:1.2em !important}.", t.id, " .yap-button_theme_android .yap-button__text,.", t.id, " .yap-button_theme_android:hover .yap-button__text{padding:.9em 1.2em .8em !important}.", t.id, " .yap-button_theme_android-x,.", t.id, " .yap-button_theme_android-x:hover{color:#fff !important;background:#689f38 !important;border-radius:3px !important;font:normal .9em/1 sans-serif !important;text-transform:uppercase !important;letter-spacing:1px !important;text-decoration:none !important;line-height:1.2em !important}.", t.id, " .yap-button_theme_android-x .yap-button__text,.", t.id, " .yap-button_theme_android-x:hover .yap-button__text{padding:.5em 1.2em !important}.", t.id, " .yap-button_theme_ios,.", t.id, " .yap-button_theme_ios:hover{border:1px solid #1f66b1 !important;color:#1f66b1 !important;fill:#1f66b1 !important;background:transparent !important;font-family:Helvetica,Arial,sans-serif !important;text-transform:uppercase !important;letter-spacing:1px !important}.", t.id, " .yap-button_theme_ios .yap-button__text,.", t.id, " .yap-button_theme_ios:hover .yap-button__text{top:0 !important;padding-left:.8em !important;padding-right:.8em !important;color:inherit !important;vertical-align:top !important}.", t.id, " .yap-button_theme_ios-x,.", t.id, " .yap-button_theme_ios-x:hover{border:1px solid #007aff !important;border-radius:5px !important;color:#007aff !important;fill:#007aff !important;stroke:#007aff !important;background:transparent !important;font-family:system,-apple-system,BlinkMacSystemFont,Helvetica Neue,Lucida Grande,Arial,sans-serif !important;text-transform:uppercase !important}.", t.id, " .yap-button_theme_ios-x .yap-button__text,.", t.id, " .yap-button_theme_ios-x:hover .yap-button__text{top:0 !important;padding-left:.7em !important;padding-right:.7em !important;color:inherit !important;vertical-align:top !important;font-weight:600 !important}.", t.id, " .yap-button_theme_android-app,.", t.id, " .yap-button_theme_android-app:hover{height:34px !important;line-height:34px !important;color:#fff !important;background-color:#109d57 !important;border-radius:3px !important;font-family:Tahoma,sans-serif !important;text-transform:uppercase !important;letter-spacing:1px !important;text-decoration:none !important}.", t.id, " .yap-button_theme_android-app .yap-button__text,.", t.id, " .yap-button_theme_android-app:hover .yap-button__text{font-size:14px !important;padding:0 14px !important}.", t.id, " .yap-button_theme_android-app.yap-button_small,.", t.id, " .yap-button_theme_android-app:hover.yap-button_small{height:28px !important;line-height:28px !important}.", t.id, " .yap-button_theme_android-app.yap-button_small .yap-button__text,.", t.id, " .yap-button_theme_android-app:hover.yap-button_small .yap-button__text{font-size:12px !important}.", t.id, " .yap-button_theme_ios-app,.", t.id, " .yap-button_theme_ios-app:hover{border:1px solid #158fff !important;height:21px !important;line-height:20px !important;border-radius:12px !important;color:#fff !important;fill:#fff !important;background:#158fff !important;font-family:Helvetica,Arial,sans-serif !important;text-transform:uppercase !important;letter-spacing:1px !important}.", t.id, " .yap-button_theme_ios-app .yap-button__text,.", t.id, " .yap-button_theme_ios-app:hover .yap-button__text{top:0 !important;padding-left:.8em !important;padding-right:.8em !important;color:inherit !important;vertical-align:top !important}.", t.id, " .yap-button_theme_constant-colors{border:2px solid !important;border-color:", new t.utils.Color(t.settings.bgColor || "#FFF").readable(), " !important;background:", t.settings.bgColor || "#FFF", " !important}.", t.id, " .yap-button_theme_constant-colors .yap-button__text{color:", new t.utils.Color(t.settings.bgColor || "#FFF").readable(), " !important;font-size:1.15em !important;font-weight:700 !important;vertical-align:top !important}.", t.id, " .yap-button_theme_constant-colors .yap-button__icon{border-radius:0 !important}.", t.id, " .yap-button_theme_constant-colors:hover{background:", t.settings.hoverColor || "#0088CC", " !important}.", t.id, " .yap-button_theme_constant-colors:hover .yap-button__text{color:", new t.utils.Color(t.settings.hoverColor || "#0088CC").readable(), " !important}.", t.id, " .yap-button_theme_yellow .yap-button__text,.", t.id, " .yap-button_theme_yellow:hover .yap-button__text{color:", t.textColor || "#fff", " !important}.", t.id, " .yap-button_theme_responsive-mobile,.", t.id, " .yap-button_theme_responsive-mobile:hover{font-size:1.2em !important;line-height:1em !important;padding:.3em .9em !important}.", t.id, " .yap-button_theme_responsive-mobile .yap-button__text,.", t.id, " .yap-button_theme_responsive-mobile:hover .yap-button__text{font-weight:700 !important;padding:0 !important;color:#000 !important}.", t.id, " .yap-button_theme_yellow,.", t.id, " .yap-button_theme_yellow:hover{font-size:13px !important;line-height:1em !important;background:transparent !important;box-shadow:inset 0 0 0 2px #fc0 !important}.", t.id, " .yap-button_theme_yellow .yap-button__text,.", t.id, " .yap-button_theme_yellow:hover .yap-button__text{font-weight:700 !important;padding:.5em .7em !important;color:", t.textColor || "#fff", " !important}.", t.id, " .yap-button_theme_white,.", t.id, " .yap-button_theme_white:hover{font-size:1em !important;line-height:1em !important;background:#fff !important;box-shadow:0 2px 5px 0 rgba(0,0,0,.3) !important}.", t.id, " .yap-button_theme_white .yap-button__text,.", t.id, " .yap-button_theme_white:hover .yap-button__text{font-weight:700 !important;padding:.5em .7em !important;color:#000 !important}"),
                 e.join("")
         }
     }
-    , function(t, e) {
-        t.exports = function(t) {
+    , function (t, e) {
+        t.exports = function (t) {
             var e = [];
             return e.push(".", t.id, " .yap-switch{display:inline-block !important}"),
                 e.join("")
         }
     }
-    , function(t, e) {
-        t.exports = function(t) {
+    , function (t, e) {
+        t.exports = function (t) {
             var e = [];
             return e.push(".", t.id, " .yap-interview{background:#fc0 !important;width:100% !important;opacity:0 !important;color:#000 !important;cursor:default !important;font-size:13px !important}.", t.id, " .yap-interview_show{opacity:1 !important}.", t.id, " .yap-interview__legal{position:absolute !important;bottom:0 !important;left:0 !important;z-index:2 !important;box-sizing:border-box !important}.", t.id, " .yap-interview__legal-icon{width:14px !important;height:14px !important;font-weight:700 !important;border:1px solid #000 !important;font-size:11px !important;text-align:center !important;line-height:14px !important;position:absolute !important;bottom:2px !important;left:2px !important;border-radius:50% !important}.", t.id, " .yap-interview__legal-viewport{display:none !important;position:absolute !important;box-sizing:border-box !important;overflow:hidden !important;padding:1em !important;max-width:95% !important;max-height:95% !important;color:#fff !important;font-size:12px !important}.", t.id, " .yap-interview__legal:hover,.", t.id, " .yap-interview__legal_show{top:0 !important;right:0 !important;background:#000 !important;background:rgba(0,0,0,.8) !important}.", t.id, " .yap-interview__legal:hover .yap-interview__legal-viewport,.", t.id, " .yap-interview__legal_show .yap-interview__legal-viewport{display:block !important}.", t.id, " .yap-interview__legal:hover .yap-interview__legal-icon,.", t.id, " .yap-interview__legal_show .yap-interview__legal-icon{display:none !important}.", t.id, " .yap-interview__viewport{display:-webkit-flex !important;display:-ms-flexbox !important;display:flex !important;-webkit-flex-direction:column !important;-ms-flex-direction:column !important;flex-direction:column !important;-webkit-justify-content:space-around !important;-ms-flex-pack:distribute !important;justify-content:space-around !important;-webkit-align-items:left !important;-ms-flex-align:left !important;align-items:left !important;width:100% !important;height:100% !important;padding:1.2em 1.2em 1.5em !important;box-sizing:border-box !important;position:relative !important}.", t.id, " .yap-interview__description{position:relative !important;z-index:1 !important;font-size:1.3em !important}.", t.id, " .yap-interview .yap-button_theme_interview{background:#fff !important;transition:background .3s !important;font-size:1.2em !important;line-height:1.2em !important;padding:.6em 1em !important;width:100% !important;opacity:.5 !important;box-sizing:border-box !important;max-width:300px !important;display:block !important;position:relative !important;z-index:1 !important;border-radius:3px !important;cursor:default !important}.", t.id, " .yap-interview .yap-button_theme_interview:before{display:none !important}.", t.id, " .yap-interview .yap-button_theme_interview .yap-button__text{padding:0 !important;margin:0 !important;color:#000 !important;line-height:1.2em !important}.", t.id, " .yap-interview .yap-button_theme_interview.yap-button_active-link{opacity:1 !important;cursor:pointer !important}.", t.id, " .yap-interview .yap-switch{position:relative !important;z-index:1 !important;color:#000 !important;font-size:1.2em !important;margin:.5em 0 !important;display:-webkit-flex !important;display:-ms-flexbox !important;display:flex !important}.", t.id, " .yap-interview .yap-switch__viewport{max-width:100% !important}.", t.id, " .yap-interview .yap-switch__item{margin:.1em 1.2em .1em 0 !important;display:inline-block !important;cursor:pointer !important}.", t.id, " .yap-interview .yap-switch__item:first-child{margin-top:0 !important}.", t.id, " .yap-interview .yap-switch__marker{position:relative !important;width:18px !important;height:18px !important;display:inline-block !important;vertical-align:middle !important;margin-right:.5em !important}.", t.id, " .yap-interview .yap-switch__text{display:inline-block !important;vertical-align:middle !important;opacity:.8 !important;line-height:1em !important}.", t.id, " .yap-interview .yap-switch .yap-switch__svg-active,.", t.id, " .yap-interview .yap-switch .yap-switch__svg-inactive{position:absolute !important;top:0 !important;left:0 !important}.", t.id, " .yap-interview .yap-switch_active{color:#000 !important}.", t.id, " .yap-interview .yap-switch .yap-switch__svg-active,.", t.id, " .yap-interview .yap-switch_active .yap-switch__svg-inactive{display:none !important}.", t.id, " .yap-interview .yap-switch_active .yap-switch__svg-active{display:block !important}.", t.id, " .yap-interview .yap-switch__marker-viewport,.", t.id, " .yap-interview .yap-switch__text-viewport{display:table-cell !important}.", t.id, " .yap-interview_theme-horizontal .yap-interview__viewport{-webkit-flex-direction:row !important;-ms-flex-direction:row !important;flex-direction:row !important;vertical-align:middle !important;font-size:1.1em !important;-webkit-align-items:center !important;-ms-flex-align:center !important;align-items:center !important}.", t.id, " .yap-interview_theme-horizontal .yap-button,.", t.id, " .yap-interview_theme-horizontal .yap-interview__description,.", t.id, " .yap-interview_theme-horizontal .yap-switch{display:inline-block !important;vertical-align:middle !important}.", t.id, " .yap-interview_theme-horizontal .yap-interview__description{max-width:300px !important;max-height:60px !important;font-size:1.2em !important}.", t.id, " .yap-interview_theme-horizontal .yap-switch{font-size:1.2em !important;margin:.3em 0 0 1em !important}.", t.id, " .yap-interview_theme-horizontal .yap-button{max-width:140px !important}.", t.id, " .yap-interview_format-728x90 .yap-interview__viewport,.", t.id, " .yap-interview_format-970x90 .yap-interview__viewport{max-height:88px !important}.", t.id, " .yap-interview_format-240x400 .yap-switch__item{display:block !important;margin:1em 0 !important}"),
                 e.join("")
         }
     }
-    , function(t, e) {
-        t.exports = function(t) {
+    , function (t, e) {
+        t.exports = function (t) {
             var e = [];
             return e.push("#", t.id, " .yap-layout_block_vertical .yap-title-block{display:block !important}#", t.id, " .yap-layout_block_poster .yap-title-block,#", t.id, " .yap-layout_block_mailru .yap-title-block{display:inline !important}#", t.id, " .yap-type-vertical .yap-logo{position:static !important}#", t.id, " .yap-layout_block_row .yap-logo{top:1 !important}.", t.id, "{overflow:visible !important;white-space:normal !important;width:100% !important;font-size:", t.settings.fontSize ? 100 * t.settings.fontSize + "%" : "", " !important;color:", t.settings.textColor || "#000000", " !important;font-family:", t.settings.fontFamily || "inherit", " !important}.", t.id, ",.", t.id, " .yap-layout{position:relative !important;z-index:1 !important}.", t.id, " .yap-layout{overflow:hidden !important}.", t.id, " .yap-contacts__item-link:hover,.", t.id, " .yap-domain__text,.", t.id, " .yap-domain__text:hover,.", t.id, " .yap-sitelinks__link .yap-title-block__text_inner,.", t.id, " .yap-title-block__text .yap-title-block__text_inner{text-decoration:", t.settings.linksUnderline && t.util.browser.isQuirks ? "underline" : "none", " !important;border-bottom-style:", t.settings.linksUnderline && t.util.browser.isQuirks ? "none" : t.util.browser.isSafari ? "inset" : "solid", " !important}.", t.id, " .yap-layout__items{width:100% !important;border-collapse:", t.settings.borderType == t.Const.BorderTypes.AD ? "separate" : "collapse", " !important}.", t.id, " .yap-layout__outer{position:relative !important;z-index:1 !important;zoom:1 !important;overflow:hidden !important}.", t.id, " .yap-layout_block_1000x120 .yap-layout__outer,.", t.id, " .yap-layout_block_grid .yap-layout__outer,.", t.id, " .yap-layout_block_horizontal .yap-layout__outer{overflow:hidden !important}.", t.id, " .yap-layout__inner{position:relative !important;overflow:hidden !important;width:", t.util.browser.isIEQuirks ? "100%" : "auto", " !important;padding:.7em !important}.", t.id, " .yap-layout_type_medium .yap-layout__inner{padding:.6em .1em .6em .6em !important}.", t.id, " .yap-layout_type_medium .yap-layout__warning{margin-right:.4em !important}.", t.id, " .yap-layout__body{margin-top:", t.settings.linksUnderline ? "0.38em" : "0.23em", " !important}.", t.id, " .yap-layout__bd-rating{margin:.4em 0 !important}.", t.id, " .yap-layout__schedule,.", t.id, " .yap-layout__sitelinks,.", t.id, " .yap-layout__warning{margin-top:.23em !important}.", t.id, " .yap-layout__adtune{display:none !important;position:absolute !important;right:0 !important;top:0 !important;cursor:pointer !important;z-index:11 !important}.", t.id, " .yap-layout__item:hover .yap-layout__adtune,.", t.id, " .yap-layout_adtune-always-visible .yap-layout__adtune{display:block !important}.", t.id, " .yap-layout__adtune-message{left:-101% !important;top:0 !important;width:100% !important;height:100% !important;display:block !important;position:absolute !important}.", t.id, " .yap-layout__item_abused .yap-layout__inner,.", t.id, " .yap-layout__item_abused .yap-layout__inner *{visibility:hidden !important}.", t.id, " .yap-layout__item_abused .yap-layout__adtune-message{left:0 !important;transition:left .4s ease-out !important}.", t.id, " .yap-layout__picture-rating{margin-top:.23em !important}.", t.id, " .yap-layout__app{margin-top:.6em !important}.", t.id, " .yap-layout_block_fixed .yap-layout__app{margin-top:.4em !important}.", t.id, " .yap-layout_block_320x50 .yap-layout__app{margin-top:0 !important;padding-bottom:.2em !important}.", t.id, " .yap-layout_hide_app .yap-layout__app{display:none !important}.", t.id, " .yap-layout_block_fixed.yap-layout_type_narrow .yap-layout__app{padding-right:", t.settings.borderType == t.Const.BorderTypes.NONE ? 5 : 4, "px !important;text-align:center !important}.", t.id, " .yap-layout_block_320x50 .yap-layout__item_adtune .yap-layout__title{margin-right:14px !important}.", t.id, " .yap-layout_block_320x100 .yap-layout__body{margin-top:0 !important}.", t.id, " .yap-layout__app_style_android,.", t.id, " .yap-layout__app_style_ios{padding-top:.3em !important}.", t.id, " .yap-layout__wrapper{background:", t.settings.bgColor && t.settings.borderType != t.Const.BorderTypes.AD ? t.settings.bgColor : "transparent", " !important;border:", t.settings.borderType == t.Const.BorderTypes.BLOCK || t.settings.borderType == t.Const.BorderTypes.COLLAPSE ? "1px" : 0, " solid ", t.settings.borderColor || "#FEEBC8", " !important;border-radius:", t.settings.borderRadius ? "4px" : 0, " !important;position:relative !important;z-index:1 !important}.", t.id, " .yap-layout_block_horizontal .yap-layout__wrapper{margin-right:", t.settings.borderType == t.Const.BorderTypes.AD ? "-10px" : "", " !important}.", t.id, " .yap-layout_block_grid .yap-layout__wrapper{margin-right:", t.settings.borderType == t.Const.BorderTypes.AD ? "-10px" : "", " !important}.", t.id, " .yap-layout_block_fixed-vertical .yap-layout__wrapper{height:", t.block.height - (t.settings.borderType == t.Const.BorderTypes.NONE ? 0 : 2) - 16, "px !important}.", t.id, " .yap-layout_block_fixed-horizontal .yap-layout__wrapper{margin-left:17px !important;width:", t.block.width - (t.settings.borderType == t.Const.BorderTypes.NONE ? 0 : 2) - 17, "px !important;height:", t.block.height - (t.settings.borderType == t.Const.BorderTypes.NONE ? 0 : 2), "px !important}.", t.id, " .yap-layout_block_320x100.yap-layout_block_fixed-horizontal .yap-layout__wrapper{margin-left:15px !important;width:", t.block.width - (t.settings.borderType == t.Const.BorderTypes.NONE ? 0 : 2) - 15, "px !important}.", t.id, " .yap-layout__logo{display:inline-block !important;padding-left:.7em !important;box-sizing:border-box !important;background:", t.settings.headerBgColor || "transparent", " !important}.", t.id, " .yap-layout_type_medium .yap-layout__logo{padding-left:.6em !important}.", t.id, " .yap-layout_block_fixed-vertical .yap-layout__logo{padding-left:5px !important}.", t.id, " .yap-layout_block_fixed-horizontal .yap-layout__logo{overflow:hidden !important;position:absolute !important;left:0 !important;top:0 !important;width:17px !important;height:100% !important;padding:0 !important}.", t.id, " .yap-layout_block_mailru .yap-layout__logo{padding:.4em .8em !important;font-size:120% !important;color:#666 !important;background:none !important}#", t.id, "{margin:", t.settings.horizontalAlign ? "auto" : "0", " !important}.", t.id, " .yap-layout__item{vertical-align:top !important;border:", t.settings.borderType == t.Const.BorderTypes.AD ? "1px" : 0, " solid ", t.settings.borderColor || "#FEEBC8", " !important;border-radius:", t.settings.borderRadius && t.settings.borderType == t.Const.BorderTypes.AD ? "4px" : 0, " !important;background:", t.settings.bgColor && t.settings.borderType == t.Const.BorderTypes.AD ? t.settings.bgColor : "transparent", " !important}.", t.id, " .yap-layout__item_abused{background:#fff !important}.", t.id, " .yap-layout_block_vertical .yap-layout__item{border-bottom-width:", t.settings.borderType == t.Const.BorderTypes.COLLAPSE || t.settings.borderType == t.Const.BorderTypes.AD ? "1px" : "", " !important}.", t.id, " .yap-layout_block_vertical tr:last-child .yap-layout__item{border-bottom-width:", t.settings.borderType == t.Const.BorderTypes.COLLAPSE ? 0 : "", " !important}.", t.id, " .yap-layout_block_horizontal .yap-layout__item{width:", (100 / t.block.advs.length).toFixed(2), "% !important;border-right-width:", t.settings.borderType == t.Const.BorderTypes.COLLAPSE || t.settings.borderType == t.Const.BorderTypes.AD ? "1px" : 0, " !important}.", t.id, " .yap-layout_block_horizontal .yap-layout__item:last-child{border-right-width:", t.settings.borderType == t.Const.BorderTypes.COLLAPSE ? 0 : "", " !important}.", t.id, " .yap-layout_block_grid .yap-layout__item{width:", (200 / t.block.advs.length).toFixed(2), "% !important}.", t.id, " .yap-layout_block_grid .yap-layout__item_nth_1,.", t.id, " .yap-layout_block_grid .yap-layout__item_nth_2{border-bottom-width:", t.settings.borderType == t.Const.BorderTypes.COLLAPSE ? "1px" : "", " !important}.", t.id, " .yap-layout_block_grid .yap-layout__item_nth_1,.", t.id, " .yap-layout_block_grid .yap-layout__item_nth_3{border-right-width:", t.settings.borderType == t.Const.BorderTypes.COLLAPSE ? "1px" : "", " !important}.", t.id, " .yap-layout_block_fixed-vertical .yap-layout__item{vertical-align:middle !important}.", t.id, " .yap-layout_type_compatible .yap-layout__picture,.", t.id, " .yap-layout_type_medium .yap-layout__picture,.", t.id, " .yap-layout_type_wide .yap-layout__picture{float:left !important;padding-right:.7em !important}.", t.id, " .yap-layout_type_medium .yap-layout__picture{padding-right:.6em !important}.", t.id, " .yap-layout_type_narrow .yap-layout__picture{padding-bottom:.7em !important;margin:0 auto !important}.", t.id, " .yap-layout_block_fixed.yap-layout_type_compatible .yap-layout__picture,.", t.id, " .yap-layout_block_fixed.yap-layout_type_medium .yap-layout__picture,.", t.id, " .yap-layout_block_fixed.yap-layout_type_wide .yap-layout__picture{padding-right:5px !important}.", t.id, " .yap-layout_block_fixed.yap-layout_block_adaptive .yap-layout__picture{padding-right:6px !important}.", t.id, " .yap-layout_block_fixed.yap-layout_type_narrow .yap-layout__picture{padding-bottom:5px !important;position:relative !important;left:-2px !important}.", t.id, " .yap-layout_block_fixed.yap-layout_block_adaptive.yap-layout_type_narrow .yap-layout__picture{padding:0 0 7px !important;left:0 !important}.", t.id, " .yap-layout_block_fixed.yap-layout_block_320x50 .yap-layout__picture{padding:0 !important;overflow:hidden !important;border-radius:", t.settings.borderRadius ? "3px 0 0 3px" : 0, " !important}.", t.id, " .yap-layout_block_poster .yap-layout__picture{float:none !important;display:block !important;padding:0 !important;margin-bottom:0 !important;margin-right:0 !important;background-position:50% !important;background-repeat:no-repeat !important;background-size:contain !important;box-shadow:inset 0 0 0 1px rgba(0,0,0,.1) !important;border:", t.util.browser.isIEQuirks ? "1px solid #ddd" : "none", " !important;position:absolute !important;z-index:2 !important;left:50% !important;top:50% !important}.", t.id, " .yap-layout_block_poster .yap-layout__picture_plain{border:none !important;box-shadow:none !important}.", t.id, " .yap-layout_block_mailru .yap-layout__picture{padding-right:.6em !important}.", t.id, " .yap-layout__icon{display:block !important}.", t.id, " .yap-layout__icon-img{display:block !important;width:100% !important;height:auto !important}.", t.id, " .yap-layout_type_medium .yap-layout__content,.", t.id, " .yap-layout_type_wide .yap-layout__content{overflow:hidden !important}.", t.id, " .yap-layout__item_picture_false .yap-layout__content{overflow:visible !important}.", t.id, " .yap-layout_type_medium .yap-layout__item_age .yap-layout__content,.", t.id, " .yap-layout_type_wide .yap-layout__item_age .yap-layout__content{padding-bottom:1px !important}.", t.id, " .yap-layout_block_adaptive .yap-layout__content{zoom:1 !important}.", t.id, " .yap-layout_block_320x50 .yap-layout__content{padding:2px 1px 1px 5px !important}.", t.id, " .yap-layout_block_320x50.yap-layout_block_fixed-small .yap-layout__content{line-height:11px !important}.", t.id, " .yap-layout__contacts{margin-top:.23em !important}.", t.id, " .yap-layout_hide_contacts.yap-layout_hide_domain .yap-layout__contacts{display:none !important}.", t.id, " .yap-layout_block_320x50 .yap-layout__contacts{margin-top:0 !important}.", t.id, " .yap-layout_block_poster .yap-layout__contacts{margin-top:.63em !important}.", t.id, " .yap-layout_block_mailru .yap-layout__contacts{padding-top:.6em !important;margin-top:0 !important;overflow:hidden !important}.", t.id, " .yap-layout_block_mailru-vertical .yap-layout__contacts{clear:both !important;zoom:1 !important}.", t.id, " .yap-layout__age{vertical-align:top !important;display:inline-block !important}.", t.id, " .yap-layout__address{zoom:1 !important;overflow:hidden !important;width:100% !important;margin-top:.23em !important}.", t.id, " .yap-layout_hide_address .yap-layout__address{display:none !important}.", t.id, " .yap-layout_block_mailru .yap-layout__address{width:auto !important}.", t.id, " .yap-layout_block_vertical .yap-layout__items{border-spacing:", t.settings.borderType == t.Const.BorderTypes.AD ? "0 5px" : "0 0", " !important;margin-top:", t.settings.borderType == t.Const.BorderTypes.AD ? "-5px" : 0, " !important;margin-bottom:", t.settings.borderType == t.Const.BorderTypes.AD ? "-5px" : 0, " !important}.", t.id, " .yap-layout_block_horizontal .yap-layout__items{border-spacing:", t.settings.borderType == t.Const.BorderTypes.AD ? "5px 0" : "", " !important;margin-left:", t.settings.borderType == t.Const.BorderTypes.AD ? "-5px" : "", " !important}.", t.id, " .yap-layout_block_grid .yap-layout__items{border-spacing:", t.settings.borderType == t.Const.BorderTypes.AD ? "5px 5px" : "", " !important;margin:", t.settings.borderType == t.Const.BorderTypes.AD ? "-5px" : "", " !important}.", t.id, "{width:", t.block.width ? t.block.width + "px" : "", " !important;height:", t.block.height ? t.block.height + "px" : "", " !important}.", t.id, " .yap-layout_block_fixed{font-size:13px !important;width:", t.block.width, "px !important;height:", t.block.height, "px !important}.", t.id, " .yap-layout_block_fixed.yap-layout_block_fixed-medium{font-size:11px !important}.", t.id, " .yap-layout_block_fixed.yap-layout_block_fixed-small{font-size:10px !important}.", t.id, " .yap-layout_block_fixed.yap-layout_invisible,.", t.id, " .yap-layout_block_fixed.yap-layout_invisible *{visibility:hidden !important}.", t.id, " .yap-layout_block_fixed .yap-layout__items{height:100% !important}.", t.id, " .yap-layout_block_fixed .yap-layout__inner{padding:5px 1px 5px 5px !important}.", t.id, " .yap-layout_block_fixed.yap-layout_block_adaptive .yap-layout__inner{padding:5px 6px !important}.", t.id, " .yap-layout_block_fixed .yap-layout__warning{margin-right:4px !important}.", t.id, " .yap-layout_block_fixed.yap-layout_block_fixed-small .yap-layout__warning{margin-top:0 !important}.", t.id, " .yap-layout_hide_schedule .yap-layout__schedule,.", t.id, " .yap-layout_hide_sitelinks .yap-layout__sitelinks,.", t.id, " .yap-layout_hide_title_second .yap-title .yap-adv__title_second{display:none !important}.", t.id, " .yap-layout_block_fixed-horizontal.yap-layout_text-inline .yap-layout__body,.", t.id, " .yap-layout_block_fixed-horizontal.yap-layout_text-inline .yap-layout__title{display:inline !important}.", t.id, " .yap-layout_block_fixed-horizontal.yap-layout_text-inline .yap-layout__title{margin-right:5px !important}.", t.id, " .yap-layout_block_fixed-horizontal.yap-layout_text-inline .yap-layout__body{margin-top:0 !important}.", t.id, " .yap-layout_block_320x100 .yap-layout__inner{padding:", t.settings.borderType == t.Const.BorderTypes.NONE ? 5 : 4, "px !important;padding-right:1px !important}.", t.id, " .yap-layout_block_160x600 .yap-layout__inner{padding-right:0 !important}.", t.id, " .yap-layout_block_320x50 .yap-layout__inner{padding:0 !important}.", t.id, " .yap-layout_block_320x50 .yap-layout__body,.", t.id, " .yap-layout_block_320x50 .yap-layout__schedule,.", t.id, " .yap-layout_block_320x50 .yap-layout__sitelinks,.", t.id, " .yap-layout_block_320x50 .yap-layout__warning{margin-top:0 !important}.", t.id, " .yap-layout_block_300x250 .yap-layout__wrapper{position:relative !important;margin:0 !important;width:auto !important;height:", t.settings.borderType === t.Const.BorderTypes.NONE ? "250px" : "248px", " !important;overflow:hidden !important}.", t.id, " .yap-layout_block_300x250 .yap-layout__item{position:relative !important;min-height:100% !important;vertical-align:top !important}.", t.id, " .yap-layout_block_300x250 .yap-layout__outer{padding:14px 14px 17px !important}.", t.id, " .yap-layout_block_300x250 .yap-layout__inner{padding:0 !important}#", t.id, " .yap-layout_block_300x250 .yap-layout__title{padding-bottom:", t.settings.linksUnderline ? "0.49em" : "0.38em", " !important;display:block !important;line-height:1.1 !important;font-size:27px !important;box-sizing:border-box !important}#", t.id, " .yap-layout_block_300x250 .yap-layout__content{width:100% !important;overflow:hidden !important;font-size:15px !important;box-sizing:border-box !important}#", t.id, " .yap-layout_block_300x250 .yap-layout__warning{margin:0 !important;padding-top:5px !important;clear:both !important}#", t.id, " .yap-layout_block_300x250 .yap-layout__picture{position:relative !important;float:right !important;padding:0 !important;margin-left:14px !important;margin-bottom:2px !important;padding-bottom:1px !important;overflow:hidden !important;text-align:right !important}#", t.id, " .yap-layout_block_300x250 .yap-layout__picture img{position:relative !important;height:100% !important}#", t.id, " .yap-layout_block_300x250 .yap-layout__body{margin-top:0 !important;overflow:hidden !important;line-height:1.1 !important;word-wrap:break-word !important}#", t.id, " .yap-layout_block_300x250 .yap-layout__age{margin-bottom:1px !important;font-size:14px !important;vertical-align:middle !important}#", t.id, " .yap-layout_block_300x250 .yap-layout__app{margin-top:11px !important;overflow:hidden !important}#", t.id, " .yap-layout_block_300x250.yap-layout_two-ads .yap-layout__item{min-height:auto !important;vertical-align:middle !important}#", t.id, " .yap-layout_block_300x250.yap-layout_two-ads .yap-layout__item_nth_2{padding-bottom:12px !important}#", t.id, " .yap-layout_block_300x250.yap-layout_two-ads .yap-layout__outer{padding:7px 14px !important}#", t.id, " .yap-layout_block_300x250.yap-layout_two-ads .yap-layout__title{padding-bottom:5px !important;font-size:22px !important}#", t.id, " .yap-layout_block_300x250.yap-layout_two-ads .yap-layout__content{font-size:14px !important}#", t.id, " .yap-layout_block_300x250.yap-layout_two-ads .yap-layout__warning{padding-top:3px !important}.", t.id, " .yap-layout_block_mobile .yap-layout__outer{font-size:19px !important}.", t.id, " .yap-layout_block_mobile .yap-layout__wrapper{height:100% !important;box-sizing:border-box !important}.", t.id, " .yap-layout_block_mobile .yap-layout__inner{padding:19px 19px 22px !important}.", t.id, " .yap-layout_block_mobile .yap-layout__content{margin-bottom:14px !important}.", t.id, " .yap-layout_block_fixed.yap-layout_block_mobile .yap-layout__picture{width:100% !important;margin-bottom:17px !important;padding:0 !important;overflow:hidden !important}.", t.id, " .yap-layout_block_mobile .yap-layout__warning{margin:0 !important}.", t.id, " .yap-layout_block_mobile .yap-layout__title{margin:0 !important}.", t.id, " .yap-layout_block_mobile .yap-layout__body{font-size:inherit !important}.", t.id, " .yap-layout_block_mobile .yap-layout__app,.", t.id, " .yap-layout_block_mobile .yap-layout__contacts{margin-top:17px !important}.", t.id, " .yap-layout_block_480x320 .yap-layout__item{vertical-align:middle !important}.", t.id, " .yap-layout_block_480x320 .yap-layout__picture{float:right !important;margin-left:11px !important}.", t.id, " .yap-layout_block_mobile .yap-layout__title-wrap{display:table !important;border-collapse:collapse !important;margin-bottom:", t.settings.linksUnderline ? "17px" : "14px", " !important}.", t.id, " .yap-layout_block_mobile .yap-layout__title,.", t.id, " .yap-layout_block_mobile .yap-layout__title-icon{display:table-cell !important;vertical-align:middle !important}.", t.id, " .yap-layout_block_mobile .yap-layout__title-icon{height:82px !important;padding-right:.5em !important}.", t.id, " .yap-layout_block_mobile .yap-layout__title-icon-link{display:block !important;height:82px !important}.", t.id, " .yap-layout_block_mobile .yap-layout__title-icon-image{display:block !important;height:100% !important}.", t.id, " .yap-layout_block_mobile .yap-layout__adtune{z-index:4 !important;position:absolute !important;right:10px !important;top:10px !important}.", t.id, " .yap-layout_block_mobile .yap-logo_stamp{right:5px !important;text-align:right !important}.", t.id, " .yap-layout_block_mobile .yap-logo_stamp .yap-logo_stamp__text{border-bottom:none !important}.", t.id, " .yap-layout_block_mobile .yap-logo_stamp .yap-layout__adtune{display:inline-block !important;vertical-align:top !important;margin-left:10px !important;position:static !important}.", t.id, " .yap-layout_block_mobile .yap-logo_stamp .yap-adtune__label{border-bottom:1px solid rgba(0,0,0,.3) !important;font-size:11px !important;color:#000 !important;line-height:13px !important}.", t.id, " .yap-vk-block-element.yap-vk-block-element-invisible .yap-vk-main{opacity:", t.settings.enableAnimation ? 0 : 1, " !important;transition:.4s ease-in-out !important}.", t.id, " .yap-vk-block-element .yap-vk-main{opacity:1 !important;transition:.4s ease-in-out !important}.", t.id, " .yap-vk-main{font-family:Tahoma,Arial,Verdana,Lucida Sans,sans-serif !important;font-style:normal !important;font-weight:400 !important;width:118px !important;padding:0 !important;margin:0 !important}.", t.id, " .yap-vk-main,.", t.id, " .yap-vk-main yatag{display:block !important}.", t.id, " .yap-vk-main img{border:0 !important;display:inline-block !important}.", t.id, " .yap-vk-logo,.", t.id, " .yap-vk-logo *{color:#777 !important;font-size:.91em !important;line-height:11px !important;font-weight:400 !important;font-style:normal !important}.", t.id, " .yap-vk-logo{padding:3px 0 4px !important;text-align:center !important}.", t.id, " .yap-vk-main a.yap-vk-item,.", t.id, " .yap-vk-main a.yap-vk-item:hover,.", t.id, " .yap-vk-main a.yap-vk-item:visited{position:relative !important;display:block !important;padding:8px 3px 11px !important;text-decoration:none !important;color:#000 !important;text-align:center !important;border-bottom:1px solid #dce3e9 !important}.", t.id, " .yap-vk-main a.yap-vk-item.yap-vk-item-1{border-top:1px solid #dce3e9 !important}.", t.id, " .yap-vk-title{color:", t.settings.titleColor, " !important;font-weight:700 !important;word-wrap:break-word !important}.", t.id, " .yap-vk-domain{color:#777 !important;font-size:.91em !important;padding-top:3px !important;word-wrap:break-word !important}.", t.id, " .yap-vk-image{padding-top:9px !important}.", t.id, " .yap-vk-body{padding-top:10px !important;word-wrap:break-word !important}.", t.id, " .yap-vk-age,.", t.id, " .yap-vk-warning{color:#777 !important;font-size:.82em !important;line-height:130% !important;padding-top:10px !important}.", t.id, " .yap-vk-app{margin-top:9px !important}.", t.id, " .yap-vk-block-element.yap-vk-block-element-invisible .yap-vk-new-main{opacity:", t.settings.enableAnimation ? 0 : 1, " !important;transition:.4s ease-in-out !important}.", t.id, " .yap-vk-block-element .yap-vk-new-main{opacity:1 !important;transition:.4s ease-in-out !important}.", t.id, " .yap-vk-new-main{width:145px !important;font-size:12px !important}.", t.id, " .yap-vk-new-main *{font-size:inherit !important;line-height:inherit !important}.", t.id, " .yap-vk-new-logo,.", t.id, " .yap-vk-new-logo *{color:#939699 !important;font-weight:400 !important;font-style:normal !important}.", t.id, " .yap-vk-new-logo{padding:3px 0 4px !important}.", t.id, " .yap-vk-new-main a.yap-vk-new-item,.", t.id, " .yap-vk-new-main a.yap-vk-new-item:hover,.", t.id, " .yap-vk-new-main a.yap-vk-new-item:visited{position:relative !important;border-bottom:1px solid #e2e6ed !important;padding:15px 0 13px !important;display:block !important;text-align:left !important}.", t.id, " .yap-vk-new-picture{position:relative !important;margin:0 0 7px !important}.", t.id, " .yap-vk-new-picture-border{position:absolute !important;top:0 !important;right:0 !important;bottom:0 !important;left:0 !important;border-radius:2px !important;border:1px solid rgba(0,0,0,.04) !important;pointer-events:none !important}.", t.id, " .yap-vk-new-image{display:block !important;border-radius:2px !important}.", t.id, " .yap-vk-new-title{color:", t.settings.titleColor, " !important;font-weight:700 !important;font-size:12px !important;line-height:15px !important;-webkit-font-smoothing:antialiased !important}.", t.id, " .yap-vk-new-domain{padding-top:1px !important;color:#939699 !important;word-wrap:break-word !important;font-size:12px !important;line-height:15px !important}.", t.id, " .yap-vk-new-body{padding-top:3px !important;color:", t.settings.textColor, " !important;font-size:12px !important;line-height:15px !important}.", t.id, " .yap-vk-new-warning{padding-top:3px !important;color:#939699 !important;font-size:.82em !important;line-height:1.3em !important}.", t.id, " .yap-vk-new-main .yap-vk-new-age{position:absolute !important;bottom:6px !important;right:6px !important;padding:0 !important;margin:0 !important;width:24px !important;height:15px !important;border-radius:40px !important;background-color:rgba(0,0,0,.7) !important;color:#fff !important;text-align:center !important;line-height:15px !important;font-size:9px !important}.", t.id, " .yap-vk-new-app{margin-top:5px !important}.", t.id, " .yap-layout_block_mailru{font-size:10px !important}.", t.id, " .yap-layout_block_mailru .yap-layout__inner{padding:.4em .8em 1.2em !important;overflow:hidden !important}.", t.id, " .yap-layout_block_mailru .yap-layout__title{margin-bottom:.5em !important}.", t.id, " .yap-layout_block_mailru .yap-layout__body{margin-top:0 !important;overflow:hidden !important}.", t.id, " .yap-layout_block_mailru .yap-layout__warning{padding-top:.6em !important;margin-top:0 !important;overflow:hidden !important;clear:both !important;zoom:1 !important}.", t.id, " .yap-layout_block_mailru .yap-layout__adtune{right:3px !important}.", t.id, " .yap-layout_block_mailru .yap-layout__app{display:table-cell !important;margin:0 !important;padding-top:.4em !important}.", t.id, " .yap-layout_block_mailru .yap-body-text,.", t.id, " .yap-layout_block_mailru .yap-layout__app{font-size:120% !important}.", t.id, " .yap-layout_block_mailru .yap-domain{font-size:110% !important}.", t.id, " .yap-layout_block_mailru .yap-warning{border-radius:0 !important;font-size:100% !important}.", t.id, " .yap-layout_block_mailru .yap-domain:hover{color:", t.settings.urlColor || "#0000CC", " !important}.", t.id, " .yap-logo-block{position:relative !important;z-index:1 !important}.", t.id, " .yap-layout_block_fixed .yap-logo-block{height:16px !important}.", t.id, " .yap-logo-block__text{font-family:Arial,sans-serif !important;font-size:87% !important;padding-right:4px !important;line-height:1.4 !important;font-weight:400 !important;color:", new t.util.Color(t.settings.headerBgColor || t.settings.siteBgColor || "#ffffff").readable(), " !important;text-decoration:", t.settings.borderType != t.Const.BorderTypes.NONE || t.settings.headerBgColor ? "none" : "underline", " !important}.", t.id, " .yap-logo-block__text em{font-weight:400 !important;font-style:normal !important;vertical-align:baseline !important}.", t.id, " .yap-logo-block__arrow{position:absolute !important;z-index:1 !important;right:-9px !important;top:0 !important;width:9px !important;height:100% !important;background-image:", t.settings.headerBgColor ? 'url("data:image/gif,GIF89a%C8%00)%00%80%01%00%' + new t.util.Color(t.settings.headerBgColor).toHexArray().join("%") + "%FF%FF%FF!%F9%04%01%00%00%01%00%2C%00%00%00%00%C8%00)%00%00%02%AB%84%8F%A9%CB%ED%0F%A3%9C%B4%DA%1B%B2%DE%B7%FB%0F%86%E2%E8lf%40%A6%EA%CA%B6%D2%A9%B9%F2L%D7%14%9C%D9%FA%CE%CBx%0F%0C%0A-%BF%A1%F1%884%C0%92%CC%E6n%E9%8CJY%A7%A9%F5%0A%AAb%B7%DC%17%A7%0B%0E'L%E2%B2%F8kNc%D1%EA%B64%E6%8E%3B%E1%F2%3A2g%CF%0F%F1%FA~%0F%E5%17%A8%03(XhxhF%88%B8(%A2%C8%F8%88%E1%089%E9Ei%E9%25y%A9%89%40%B7%E9%A9%D4%F9%B9%C9%26zIV%3AJ%8A%0A%A9%B5J%D9%EA%FA%08%15%2B%0BK%7BXt%8B%98%AB%5B%88%93%D9%AB%F7%1B%EC%3BL%1C%F8%1BP%00%00%3B\")" : "none", " !important;background-position:100% !important;background-repeat:no-repeat !important;margin-top:", t.util.browser.isIEQuirks ? "-1px" : "", " !important}.", t.id, " .yap-logo-fallback{display:none !important}.", t.id, " .yap-logo-block.yap-logo-block_type_vertical{display:", t.util.browser.support.cssTransform ? "block" : "none", " !important;position:absolute !important;z-index:1 !important;left:0 !important;bottom:6px !important;width:0 !important;height:0 !important}.", t.id, " .yap-logo-block_type_vertical .yap-logo-block__text{display:inline-block !important;-webkit-transform:rotate(270deg) !important;transform:rotate(270deg) !important;-webkit-transform-origin:left top !important;transform-origin:left top !important;font-size:10px !important;line-height:17px !important;padding:0 !important}.", t.id, " .yap-layout_block_320x100 .yap-logo-block_type_vertical{left:-1px !important}.", t.id, " .yap-layout_block_320x100 .yap-logo-block_type_vertical .yap-logo-block__text{line-height:16px !important}.", t.id, " .yap-logo-block_type_vertical .yap-logo-block__arrow{display:none !important}.", t.id, " .yap-logo-fallback{display:block !important;width:100% !important;height:100% !important;position:absolute !important;z-index:1 !important;bottom:6px !important;left:0 !important;background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAABFCAMAAABE4oc2AAAAeFBMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAVyEiIAAAAJ3RSTlMAByQoEAMKZBIN39RsQR8Zp3otFelUm42AX006tTLyxL1YzK6UiJ9zbzQkAAABa0lEQVQoz3WRWZLDIAxExR4bY/AW79kmGd3/hgMiTuVn+sN+pWqpEQAAr+CQeHXee0KOUaVM2DYfg3fpo8lQeqj6gsr77dEwom4wOMyasDJ3U2VDYea1I9J2CkOp81y1QThRcCgCuxLChIhHonD1m6pYHXLtWoC3kjD5Ag3zOC0vNCYFm9nMMTqiOiXlNsQH9pLY0ags1lw5QV1uAS+Saq0QXKgIPKk+Y4j9pL7WwK1KrvMJvlGg3UbDf2RsEzVfG7w4caRU5+bIG4ujqExG3sLcEXXo4P6+nYrm5pN5xW32DojRQ9VZ6WKkPv14rlipPHS5cPg84bExS8rl3Y5mJZK9+217mdPU9kkTQZQ5baG0LFUoR40ck4aUIiYmddyY8Ou8PU5WQ5Z2eBvSf9/b3dUyGbaAv7GNxMLnKeSNsX+P7qfx1Yzjs4hZl+VeLsvCovMGbAOSuCpm35tZ3eL7Rp6Ia2fzQj6db5bwB7VAGypfQp1XAAAAAElFTkSuQmCC) !important;background-position:bottom !important;background-repeat:no-repeat !important}.", t.id, " .yap-layout_block_fixed .yap-logo-block__text{font-size:11px !important}.", t.id, " .yap-layout_block_300x250 .yap-logo-block__text{padding:0 !important}.", t.id, " .yap-logo_stamp{position:absolute !important;bottom:0 !important;right:0 !important;z-index:3 !important;overflow:hidden !important;opacity:.7 !important;filter:alpha(opacity=50) !important;text-align:center !important;cursor:pointer !important}.", t.id, " .yap-logo_stamp__text{display:inline-block !important;line-height:1.2em !important;color:", t.settings.textColor || "#000", " !important;vertical-align:top !important;font-size:10px !important}.", t.id, " .yap-logo_stamp__text em{font-style:normal !important}.", t.id, " .yap-logo_stamp:hover{opacity:1 !important;filter:alpha(opacity=100) !important}.", t.id, " .yap-logo_stamp:hover .yap-logo_stamp__text{text-decoration:underline !important}.", t.id, " .yap-layout_block_300x250 .yap-logo_stamp{right:14px !important}.", t.id, " .yap-layout_block_mobile .yap-logo_stamp{opacity:1 !important;padding:0 3px !important;bottom:", t.settings.linksUnderline ? 5 : 3, "px !important;right:3px !important}.", t.id, " .yap-layout_block_mobile .yap-logo_stamp__text{font-size:11px !important;text-decoration:none !important;border-bottom-color:", new t.util.Color(t.settings.textColor || "#000").setAlpha(.3), " !important;border-bottom-width:", t.settings.linksUnderline ? 1 : 0, "px !important;border-bottom-style:", t.util.browser.isSafari ? "inset" : "solid", " !important}.", t.id, " .yap-layout_block_mobile .yap-logo_stamp:hover .yap-logo_stamp__text{text-decoration:none !important}.", t.id, " .yap-picture-block{overflow:hidden !important}.", t.id, " .yap-picture-block__image,.", t.id, " .yap-picture-block__link{display:block !important}.", t.id, " .yap-picture-block__link{position:relative !important;left:50% !important;opacity:1 !important;will-change:opacity !important;transition:opacity .2s ease !important}.", t.id, " .yap-picture-block__link:hover{opacity:.8 !important}.", t.id, " .yap-favicon{position:relative !important;margin-top:", t.util.browser.isIEQuirks ? "0" : "-0.2em", " !important;margin-right:.3em !important;width:1em !important;height:1em !important;min-width:8px !important;max-width:16px !important;min-height:8px !important;max-height:16px !important;display:inline-block !important;vertical-align:middle !important}.", t.id, " .yap-title-block{display:inline !important}.", t.id, " .yap-title-block_hyphens{overflow-wrap:break-word !important;word-wrap:break-word !important;-webkit-hyphens:auto !important;-ms-hyphens:auto !important;hyphens:auto !important}.", t.id, " .yap-title-block__text{color:", t.settings.titleColor || "#0000CC", " !important}.", t.id, " .yap-title-block__text .yap-title-block__text_inner{border-bottom-color:", new t.util.Color(t.settings.titleColor || "#0000CC").setAlpha(.4), " !important;border-bottom-style:", t.settings.linksUnderline && t.util.browser.isQuirks ? "none" : t.util.browser.isSafari ? "inset" : "solid", " !important;border-bottom-width:", t.settings.linksUnderline ? 1 : 0, "px !important;font-weight:", 1 == t.settings.titleFontSize ? "bold" : "normal", " !important;display:inline !important}.", t.id, " .yap-title-block__text b{color:", t.settings.titleColor || "#0000CC", " !important;text-decoration:", t.settings.linksUnderline && t.util.browser.isQuirks ? "underline" : "none", " !important;vertical-align:baseline !important;font-weight:700 !important}.", t.id, " .yap-title-block__text:hover .yap-title-block__text_inner,.", t.id, " .yap-title-block__text:hover b{color:", t.settings.hoverColor || "#0088CC", " !important;border-bottom-color:", new t.util.Color(t.settings.hoverColor || "#0088CC").setAlpha(.4), " !important}.", t.id, " .yap-title-block__text{display:inline !important;line-height:1.1 !important;vertical-align:baseline !important}#", t.id, " .yap-title-block__text{font-size:", t.settings.titleFontSizePercent || "", " !important}#", t.id, " .yap-layout_block_fixed .yap-title-block__text{font-size:", t.isYandexPage && 3 == t.settings.titleFontSize ? "17px" : "", " !important}#", t.id, " .yap-layout_block_fixed.yap-layout_block_fixed-medium .yap-title-block__text{font-size:16px !important}#", t.id, " .yap-layout_block_fixed.yap-layout_block_fixed-small .yap-title-block__text{font-size:13px !important}#", t.id, " .yap-layout_block_320x50.yap-layout_block_fixed.yap-layout_block_fixed-small .yap-title-block__text .yap-title-block__text_inner,#", t.id, " .yap-layout_block_adaptive.yap-layout_block_fixed.yap-layout_block_fixed-small .yap-title-block__text .yap-title-block__text_inner{font-size:12px !important;font-weight:700 !important}.", t.id, " #", t.id, " .yap-layout_block_320x50_adaptive .yap-layout__title{margin-bottom:3px !important}.", t.id, " #", t.id, " .yap-layout_hide_title_second .yap-layout__title .yap-adv__title_second{display:none !important}#", t.id, " .yap-layout_block_mailru .yap-title-block__text{font-size:150% !important}#", t.id, " .yap-layout_block_mailru .yap-title-block__text .yap-title-block__text_inner{text-decoration:underline !important;border-bottom-style:none !important}#", t.id, " .yap-layout_block_320x50.yap-layout_block_fixed-small .yap-title-block__text{line-height:11px !important}#", t.id, " .yap-layout_block_300x250 .yap-title-block__text{display:inline !important;font-size:100% !important;line-height:inherit !important}#", t.id, " .yap-layout_block_mobile .yap-title-block__text .yap-title-block__text_inner{font-size:26px !important;line-height:1.1 !important;text-decoration:none !important;border-bottom-color:", new t.util.Color(t.settings.titleColor || "#0000CC").setAlpha(.3), " !important;border-bottom-width:", t.settings.linksUnderline ? 1 : 0, "px !important;border-bottom-style:", t.util.browser.isSafari ? "inset" : "solid", " !important}#", t.id, " .yap-layout_block_mobile .yap-title-block__text b{text-decoration:none !important}#", t.id, " .yap-layout_block_mobile .yap-title-block__text:hover .yap-title-block__text_inner{border-bottom-color:", new t.util.Color(t.settings.hoverColor || "#0088CC").setAlpha(.3), " !important}#", t.id, " .yap-layout_block_300x250 .yap-title-block__text .yap-title-block__text_inner,#", t.id, " .yap-layout_block_300x250 .yap-title-block__text b,#", t.id, " .yap-layout_block_mobile .yap-title-block__text .yap-title-block__text_inner,#", t.id, " .yap-layout_block_mobile .yap-title-block__text b{font-weight:700 !important}#", t.id, " .yap-layout_block_320x100 .yap-layout__title{margin-right:0 !important;padding-bottom:3px !important;display:block !important}.", t.id, " .yap-layout_block_320x100 .yap-title-block{display:inline-block !important;padding-right:10px !important}.", t.id, " .yap-body-text,.", t.id, " .yap-body-text b{display:inline !important;font-weight:400 !important;line-height:1.2 !important;text-decoration:none !important;color:", t.settings.textColor || "#000", " !important}.", t.id, " .yap-body-text_hyphens{overflow-wrap:break-word !important;word-wrap:break-word !important;-webkit-hyphens:auto !important;-ms-hyphens:auto !important;hyphens:auto !important}.", t.id, " .yap-body-text b{font-weight:700 !important}.", t.id, " .yap-layout_block_300x250 .yap-body-text{line-height:1.1 !important}.", t.id, " .yap-layout_block_320x50.yap-layout_block_fixed-small .yap-body-text{line-height:11px !important}.", t.id, " .yap-layout_block_320x100.yap-layout_block_fixed-small .yap-body-text{font-size:", t.util.browser.isQuirks ? "9px" : "100%", " !important}.", t.id, " .price{white-space:nowrap !important;font-weight:700 !important;max-width:100% !important;display:inline-block !important}.", t.id, " .yap-contacts__item{display:inline-block !important;vertical-align:baseline !important;padding-right:1em !important;font-size:100% !important;line-height:1.1 !important}.", t.id, " .yap-contacts__item:last-child{padding-right:0 !important}#", t.id, " .yap-layout_hide_contacts .yap-contacts__item{display:none !important}#", t.id, " .yap-layout_hide_contacts .yap-contacts__item_domain{display:inline-block !important}#", t.id, " .yap-layout_hide_domain .yap-contacts__item_domain{display:none !important}.", t.id, " .yap-contacts__phone{white-space:nowrap !important}.", t.id, " .yap-contacts__item-link,.", t.id, " .yap-contacts__item-text{display:inline !important;text-decoration:none !important;color:", t.settings.urlColor || "#0000CC", " !important}.", t.id, " .yap-contacts__item-link:hover{color:", t.settings.hoverColor || "#0088CC", " !important;border-bottom-color:", new t.util.Color(t.settings.hoverColor || "#0088CC").setAlpha(.4), " !important;border-bottom-width:", t.settings.linksUnderline ? 1 : 0, "px !important}.", t.id, " .yap-contacts__info-icon{margin:0 !important;border:1px solid !important;padding:1px !important;width:1em !important;line-height:1.2 !important;display:inline-block !important;font-size:70% !important;text-align:center !important;vertical-align:top !important;border-radius:3px !important;color:", t.util.warning.getBorderColor(t.settings.bgColor || "#FFF", t.settings.urlColor || "#0000CC", .1), " !important;border-color:", t.util.warning.getBorderColor(t.settings.bgColor || "#FFF", t.settings.urlColor || "#0000CC", .7), " !important}.", t.id, " .yap-layout_block_poster .yap-contacts__domain{display:none !important}.", t.id, " .yap-layout_block_mailru .yap-contacts__item-link,.", t.id, " .yap-layout_block_mailru .yap-contacts__item-text{font-size:110% !important}.", t.id, " .yap-layout_block_mailru .yap-contacts__item-link:hover{color:", t.settings.urlColor || "#0000CC", " !important;text-decoration:underline !important;border-bottom:none !important}.", t.id, " .yap-layout_block_300x250 .yap-contacts{margin-top:7px !important}.", t.id, " .yap-layout_block_300x250 .yap-contacts__item{margin-bottom:3px !important;line-height:1.3 !important;vertical-align:middle !important}.", t.id, " .yap-layout_block_300x250 .yap-contacts__item_domain{display:inline-block !important;overflow:hidden !important;word-wrap:break-word !important}.", t.id, " .yap-layout_block_300x250 .yap-item-has-picture .yap-contacts__item{padding-right:0 !important;display:block !important;overflow:hidden !important;word-wrap:break-word !important}.", t.id, " .yap-layout_block_300x250.yap-layout_hide_domain.yap-layout_hide_contacts .yap-contacts{display:none !important}.", t.id, " .yap-layout_block_mobile .yap-contacts{margin-top:", t.settings.linksUnderline ? "8px" : "10px", " !important;font-size:inherit !important;line-height:", t.settings.linksUnderline ? "1.4" : "1", " !important}.", t.id, " .yap-layout_block_mobile .yap-contacts__item{vertical-align:middle !important}.", t.id, " .yap-layout_block_mobile.yap-layout_hide_domain.yap-layout_hide_contacts .yap-contacts{display:none !important}.", t.id, " .yap-layout_block_mobile .yap-contacts__item-text{color:", t.settings.textColor ? t.settings.textColor : "#000", " !important}.", t.id, " .yap-layout_block_mobile .yap-contacts__item-link,.", t.id, " .yap-layout_block_mobile .yap-contacts__item-link:hover{border-bottom-color:", new t.util.Color(t.settings.urlColor || "#0000CC").setAlpha(.3), " !important;border-bottom-width:", t.settings.linksUnderline ? 1 : 0, "px !important;border-bottom-style:", t.util.browser.isSafari ? "inset" : "solid", " !important}.", t.id, " .yap-layout_block_mobile .yap-contacts__item-link:hover{border-bottom-color:", new t.util.Color(t.settings.hoverColor || "#0088CC").setAlpha(.3), " !important}.", t.id, " .yap-address{float:left !important;width:", t.util.browser.isFirefox ? "100%" : "auto", " !important;max-width:100% !important}.", t.id, " .yap-address__text{overflow:hidden !important}.", t.id, " .yap-address__text-wrap{overflow:hidden !important;white-space:nowrap !important;text-overflow:ellipsis !important;color:", t.settings.urlColor || "#0000CC", " !important;line-height:16px !important}.", t.id, " .yap-address__text-wrap:hover{color:", t.settings.hoverColor || "#0088CC", " !important}.", t.id, " .yap-address__geo{float:right !important;text-align:right !important;padding:0 1px 0 1em !important}.", t.id, " .yap-address__geo .yap-contacts__item-text{margin-right:.4em !important}.", t.id, " .yap-layout_type_compatible .yap-address__geo,.", t.id, " .yap-layout_type_medium .yap-address__geo,.", t.id, " .yap-layout_type_narrow .yap-address__geo{float:none !important;padding:0 !important;text-align:left !important}.", t.id, " .yap-layout_block_fixed.yap-layout_type_wide .yap-address__geo{padding-right:5px !important}.", t.id, " .yap-layout_block_mobile .yap-address{float:none !important}.", t.id, " .yap-layout_block_mobile .yap-address__geo{float:none !important;padding-left:0 !important;display:inline-block !important;color:", t.settings.textColor || "#000", " !important}.", t.id, " .yap-layout_block_mobile .yap-contacts__info-icon{color:", t.util.warning.getBorderColor(t.settings.bgColor || "#FFF", t.settings.textColor || "#000", .1), " !important;border-color:", t.util.warning.getBorderColor(t.settings.bgColor || "#FFF", t.settings.textColor || "#000", .7), " !important}.", t.id, " .yap-layout_hide-geo .yap-address__geo{display:none !important}.", t.id, " .yap-button{position:relative !important;margin:0 !important;padding:0 !important;display:inline-block !important;border:0 !important;border-radius:3px !important;outline:0 !important;text-align:center !important;font-size:1em !important;line-height:1.9em !important;background:", t.util.warning.getBorderColor(t.settings.bgColor || "#FFF", new t.util.Color(t.settings.bgColor || "#FFF").readable(), .8), " !important;-webkit-user-select:none !important;-moz-user-select:none !important;-ms-user-select:none !important;user-select:none !important;-webkit-tap-highlight-color:rgba(0,0,0,0) !important}.", t.id, " .yap-button_mobile{overflow:hidden !important;font-size:inherit !important;height:1.7em !important;line-height:1.7em !important}.", t.id, " .yap-button_mobile.yap-button_icon_true{position:relative !important;padding-left:2em !important;height:2em !important;line-height:2em !important}.", t.id, ' .yap-button:before{position:absolute !important;top:1px !important;right:1px !important;bottom:1px !important;left:1px !important;content:"" !important;border-radius:2px !important;background:', t.settings.bgColor || "#FFF", " !important}.", t.id, " .yap-button:hover{background:", t.settings.hoverColor || "#0088CC", " !important}.", t.id, " .yap-button:hover:before{background:", t.settings.hoverColor || "#0088CC", " !important}.", t.id, " .yap-button_mobile.yap-button_icon_true:hover{background:", t.settings.hoverColor || "#0088CC", " !important}.", t.id, " .yap-button.yap-button_icon_true:hover:before{background:", t.settings.hoverColor || "#0088CC", " !important}.", t.id, " .yap-button__text{position:relative !important;margin:0 1em !important;display:inline-block !important;zoom:1 !important;vertical-align:top !important;color:", new t.util.Color(t.settings.bgColor || "#FFF").readable(), " !important}.", t.id, " .yap-button:hover .yap-button__text{color:", new t.util.Color(t.settings.hoverColor || "#0088CC").readable(), " !important;text-decoration:none !important}.", t.id, " .yap-button_mobile.yap-button_icon_true .yap-button__text{margin-left:.3em !important;margin-right:1em !important}.", t.id, " .yap-button__text_extra,.", t.id, " .yap-button_mobile.yap-button_icon_true .yap-button__text_extra{margin:0 !important}.", t.id, " .yap-button_mobile .yap-button__icon{position:absolute !important;left:0 !important;top:0 !important;padding:2px !important;height:100% !important;box-sizing:border-box !important}.", t.id, " .yap-button_mobile .yap-button__icon-image{width:auto !important;height:100% !important}.", t.id, " .yap-button_size_s{font-size:1.1em !important}.", t.id, " .yap-button_size_m{font-size:1.2em !important}.", t.id, " .yap-button_style_android,.", t.id, " .yap-button_style_android:hover{display:inline-block !important;height:auto !important;margin-top:-.4em !important;padding:.8em 1.2em .75em !important;color:#fff !important;background:#689f38 !important;text-transform:uppercase !important;letter-spacing:1px !important;font:normal .9em/1 Tahoma,sans-serif !important;text-decoration:none !important;border-radius:3px !important}.", t.id, " .yap-button_style_android:before{display:none !important}.", t.id, " .yap-button_style_android .yap-button__text{display:inline !important;margin:0 !important;color:#fff !important}.", t.id, " .yap-layout__app_style_ios .yap-mobile-app{position:relative !important}.", t.id, " .yap-button_style_ios,.", t.id, " .yap-button_style_ios:hover{position:relative !important;margin-top:-.5em !important;padding:.5em .9em .3em !important;border:1px solid #0080fc !important;color:#fff !important;background:#0080fc !important;font-family:Helvetica,Arial,sans-serif !important;font-size:12px !important;text-transform:uppercase !important;letter-spacing:1px !important}.", t.id, " .yap-button.yap-button_style_ios:before{display:none !important}.", t.id, ' .yap-button_style_ios:after{content:"+" !important;position:absolute !important;left:2px !important;top:-.5em !important;font-size:12px !important}.', t.id, " .yap-button_style_ios .yap-button__text{display:inline-block !important;color:#fff !important}.", t.id, " .yap-button_style_ios .yap-button__text_extra{margin:0 !important}.", t.id, " .yap-domain{display:inline !important;color:", t.settings.urlColor || "#0000CC", " !important}.", t.id, " .yap-domain__text{display:inline !important;text-decoration:none !important;border-bottom-color:transparent !important;border-bottom-width:", t.settings.linksUnderline ? 1 : 0, "px !important;border-bottom-style:", t.util.browser.isSafari ? "inset" : "solid", " !important;line-height:1.3 !important}.", t.id, " .yap-domain__text:hover{color:", t.settings.hoverColor || "#0088CC", " !important;border-bottom-color:", new t.util.Color(t.settings.hoverColor || "#0088CC").setAlpha(.4), " !important}.", t.id, " .yap-layout_block_mobile .yap-domain__text,.", t.id, " .yap-layout_block_mobile .yap-domain__text:hover{border-bottom-style:", t.util.browser.isSafari ? "inset" : "solid", " !important}.", t.id, " .yap-layout_block_mobile .yap-domain__text{border-bottom-color:", new t.util.Color(t.settings.urlColor || "#0000CC").setAlpha(.3), " !important}.", t.id, " .yap-layout_block_mobile .yap-domain__text:hover{border-bottom-color:", new t.util.Color(t.settings.hoverColor || "#0088CC").setAlpha(.3), " !important}.", t.id, " .yap-layout_block_mailru .yap-domain__text:hover{color:", t.settings.urlColor || "#0000CC", " !important;text-decoration:underline !important;border-bottom:none !important}.", t.id, " .yap-age{display:inline-block !important;vertical-align:top !important;font-size:70% !important;border:1px solid #dddcda !important;border-radius:4px !important;padding:.1em .2em .05em !important;text-align:center !important;line-height:1.4 !important;border-color:", t.util.warning.getBorderColor(t.settings.bgColor || t.settings.siteBgColor || "#FFFFFF", t.settings.textColor), " !important;background-color:", t.util.warning.getBgColor(t.settings.bgColor || t.settings.siteBgColor || "#FFFFFF"), " !important}.", t.id, " .yap-layout_block_320x50 .yap-age,.", t.id, " .yap-layout_block_320x100 .yap-age{line-height:1.2 !important}.", t.id, " .yap-layout_block_mailru .yap-age{margin:0 !important;padding:0 .2em !important;line-height:1.4 !important;font-size:105% !important;border-radius:0 !important}.", t.id, " .yap-sitelinks__link{vertical-align:middle !important;display:inline-block !important;margin-right:1em !important;font-weight:400 !important}.", t.id, " .yap-sitelinks__link .yap-sitelinks__inner{color:", t.settings.sitelinksColor || t.settings.titleColor || "#0000CC", " !important;border-bottom-color:", new t.util.Color(t.settings.sitelinksColor || t.settings.titleColor || "#0000CC").setAlpha(.4), " !important;border-bottom-width:", t.settings.linksUnderline ? 1 : 0, "px !important;border-bottom-style:", t.settings.linksUnderline && t.util.browser.isQuirks ? "none" : t.util.browser.isSafari ? "inset" : "solid", " !important;display:inline !important}.", t.id, " .yap-sitelinks__link:hover .yap-sitelinks__inner{color:", t.settings.hoverColor || "#0088CC", " !important;border-bottom-color:", new t.util.Color(t.settings.hoverColor || "#0088CC").setAlpha(.4), " !important}.", t.id, " .yap-sitelinks__link:last-child{margin-right:0 !important}.", t.id, " .yap-mobile-app_inline{display:inline !important;margin-left:.8em !important}.", t.id, " .yap-layout_block_320x50 .yap-mobile-app_inline{margin-left:0 !important}.", t.id, " .yap-mobile-app_inline.yap-mobile-app_invisible{display:none !important}.", t.id, " .yap-mobile-app__button{display:inline-block !important;margin-right:.8em !important}.", t.id, " .yap-layout_type_narrow .yap-mobile-app__button,.", t.id, " .yap-vk-main .yap-mobile-app__button{margin-right:0 !important}.", t.id, " .yap-mobile-app__link{color:", t.settings.urlColor || "#0000CC", " !important;text-decoration:", t.settings.linksUnderline ? "underline" : "none", " !important}.", t.id, " .yap-mobile-app__link:hover{color:", t.settings.hoverColor || "#0088CC", " !important}.", t.id, " .yap-layout_hide_rating .yap-mobile-app__rating{display:none !important}.", t.id, " .yap-mobile-app__rating{display:inline-block !important;vertical-align:top !important;cursor:help !important}.", t.id, " .yap-mobile-app__rating_width_full{display:block !important;margin-top:1px !important}.", t.id, " .yap-mobile-app__rating_content_centered{text-align:center !important}.", t.id, " .yap-mobile-app__rating-votes{display:inline-block !important;vertical-align:middle !important;margin:.2em 0 0 .5em !important;font-size:.8em !important;color:", t.textColor || t.settings.textColor || "#000", " !important;opacity:.8 !important}.", t.id, " .yap-mobile-app__rating .yap-mobile-app__rating-stars{overflow:hidden !important;position:relative !important;display:inline-block !important;vertical-align:middle !important;height:1em !important;width:5em !important;white-space:nowrap !important}.", t.id, " .yap-mobile-app__rating-stars-scale_filled{position:absolute !important;left:0 !important;top:0 !important;overflow:hidden !important}.", t.id, " .yap-mobile-app__rating .yap-mobile-app__rating-star{display:inline-block !important;vertical-align:top !important;fill:", t.textColor || t.settings.textColor || "#000", " !important;opacity:.4 !important}.", t.id, " .yap-mobile-app__rating-stars-scale_filled .yap-mobile-app__rating-star{opacity:1 !important;fill:", t.starColor || "#fc0", " !important}.", t.id, " .yap-mobile-app__rating-star .yap-mobile-app__star-svg{display:block !important;height:1em !important;width:1em !important}"),
                 e.join("")
         }
     }
-    , function(t, e) {
-        t.exports = function(t) {
+    , function (t, e) {
+        t.exports = function (t) {
             var e = [];
             return e.push(".", t.id, " .yap-rtb__wrapper{overflow:hidden !important;font:normal 13px Arial,sans-serif !important}.", t.id, " .yap-rtb__iframe,.", t.id, " .yap-rtb__wrapper{position:relative !important;width:", t.width, "px !important;height:", t.height, "px !important;margin:", t.horizontalAlign ? "auto" : "0", " !important}.", t.id, " .yap-rtb__iframe{z-index:2 !important}.", t.id, " .yap-rtb__adtune-button{position:absolute !important;z-index:11 !important;right:0 !important;top:0 !important}.", t.id, " .yap-rtb__feedback{border:1px solid #ccc !important;box-sizing:border-box !important}"),
                 e.join("")
         }
     }
-    , function(t, e, i) {
-        t.exports = function(t, e) {
-            i.e(0).then(function() {
+    , function (t, e, i) {
+        t.exports = function (t, e) {
+            i.e(0).then(function () {
                 t(i(651))
             }
-                .bind(null, i)).catch(function() {
+                .bind(null, i)).catch(function () {
                 e && e.apply(this, arguments)
             })
         }
     }
-    , function(t, e, i) {
-        t.exports = function(t, e) {
-            i.e(0).then(function() {
+    , function (t, e, i) {
+        t.exports = function (t, e) {
+            i.e(0).then(function () {
                 t(i(607))
             }
-                .bind(null, i)).catch(function() {
+                .bind(null, i)).catch(function () {
                 e && e.apply(this, arguments)
             })
         }
     }
-    , function(t, e, i) {
-        t.exports = function(t, e) {
-            i.e(0).then(function() {
+    , function (t, e, i) {
+        t.exports = function (t, e) {
+            i.e(0).then(function () {
                 t(i(652))
             }
-                .bind(null, i)).catch(function() {
+                .bind(null, i)).catch(function () {
                 e && e.apply(this, arguments)
             })
         }
     }
-    , function(t, e, i) {
-        t.exports = function(t, e) {
-            i.e(0).then(function() {
+    , function (t, e, i) {
+        t.exports = function (t, e) {
+            i.e(0).then(function () {
                 t(i(608))
             }
-                .bind(null, i)).catch(function() {
+                .bind(null, i)).catch(function () {
                 e && e.apply(this, arguments)
             })
         }
     }
-    , function(t, e, i) {
-        t.exports = function(t, e) {
-            i.e(0).then(function() {
+    , function (t, e, i) {
+        t.exports = function (t, e) {
+            i.e(0).then(function () {
                 t(i(653))
             }
-                .bind(null, i)).catch(function() {
+                .bind(null, i)).catch(function () {
                 e && e.apply(this, arguments)
             })
         }
     }
-    , function(t, e, i) {
-        t.exports = function(t, e) {
-            i.e(0).then(function() {
+    , function (t, e, i) {
+        t.exports = function (t, e) {
+            i.e(0).then(function () {
                 t(i(654))
             }
-                .bind(null, i)).catch(function() {
+                .bind(null, i)).catch(function () {
                 e && e.apply(this, arguments)
             })
         }
     }
-    , function(t, e, i) {
-        t.exports = function(t, e) {
-            i.e(0).then(function() {
+    , function (t, e, i) {
+        t.exports = function (t, e) {
+            i.e(0).then(function () {
                 t(i(655))
             }
-                .bind(null, i)).catch(function() {
+                .bind(null, i)).catch(function () {
                 e && e.apply(this, arguments)
             })
         }
     }
-    , function(t, e, i) {
-        t.exports = function(t, e) {
-            i.e(0).then(function() {
+    , function (t, e, i) {
+        t.exports = function (t, e) {
+            i.e(0).then(function () {
                 t(i(609))
             }
-                .bind(null, i)).catch(function() {
+                .bind(null, i)).catch(function () {
                 e && e.apply(this, arguments)
             })
         }
     }
-    , function(t, e, i) {
-        t.exports = function(t, e) {
-            i.e(0).then(function() {
+    , function (t, e, i) {
+        t.exports = function (t, e) {
+            i.e(0).then(function () {
                 t(i(610))
             }
-                .bind(null, i)).catch(function() {
+                .bind(null, i)).catch(function () {
                 e && e.apply(this, arguments)
             })
         }
     }
-    , function(t, e, i) {
-        t.exports = function(t, e) {
-            i.e(0).then(function() {
+    , function (t, e, i) {
+        t.exports = function (t, e) {
+            i.e(0).then(function () {
                 t(i(656))
             }
-                .bind(null, i)).catch(function() {
+                .bind(null, i)).catch(function () {
                 e && e.apply(this, arguments)
             })
         }
     }
-    , function(t, e, i) {
-        t.exports = function(t, e) {
-            i.e(0).then(function() {
+    , function (t, e, i) {
+        t.exports = function (t, e) {
+            i.e(0).then(function () {
                 t(i(657))
             }
-                .bind(null, i)).catch(function() {
+                .bind(null, i)).catch(function () {
                 e && e.apply(this, arguments)
             })
         }
     }
-    , function(t, e, i) {
-        t.exports = function(t, e) {
-            i.e(0).then(function() {
+    , function (t, e, i) {
+        t.exports = function (t, e) {
+            i.e(0).then(function () {
                 t(i(658))
             }
-                .bind(null, i)).catch(function() {
+                .bind(null, i)).catch(function () {
                 e && e.apply(this, arguments)
             })
         }
     }
-    , function(t, e, i) {
-        t.exports = function(t, e) {
-            i.e(0).then(function() {
+    , function (t, e, i) {
+        t.exports = function (t, e) {
+            i.e(0).then(function () {
                 t(i(659))
             }
-                .bind(null, i)).catch(function() {
+                .bind(null, i)).catch(function () {
                 e && e.apply(this, arguments)
             })
         }
     }
-    , function(t, e, i) {
-        t.exports = function(t, e) {
-            i.e(0).then(function() {
+    , function (t, e, i) {
+        t.exports = function (t, e) {
+            i.e(0).then(function () {
                 t(i(660))
             }
-                .bind(null, i)).catch(function() {
+                .bind(null, i)).catch(function () {
                 e && e.apply(this, arguments)
             })
         }
     }
-    , function(t, e, i) {
-        t.exports = function(t, e) {
-            i.e(0).then(function() {
+    , function (t, e, i) {
+        t.exports = function (t, e) {
+            i.e(0).then(function () {
                 t(i(661))
             }
-                .bind(null, i)).catch(function() {
+                .bind(null, i)).catch(function () {
                 e && e.apply(this, arguments)
             })
         }
     }
-    , function(t, e, i) {
-        t.exports = function(t, e) {
-            i.e(0).then(function() {
+    , function (t, e, i) {
+        t.exports = function (t, e) {
+            i.e(0).then(function () {
                 t(i(662))
             }
-                .bind(null, i)).catch(function() {
+                .bind(null, i)).catch(function () {
                 e && e.apply(this, arguments)
             })
         }
     }
-    , function(t, e, i) {
-        t.exports = function(t, e) {
-            i.e(0).then(function() {
+    , function (t, e, i) {
+        t.exports = function (t, e) {
+            i.e(0).then(function () {
                 t(i(663))
             }
-                .bind(null, i)).catch(function() {
+                .bind(null, i)).catch(function () {
                 e && e.apply(this, arguments)
             })
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(20)
             , o = i(16);
-        e.isNewPoster = function(t) {
+        e.isNewPoster = function (t) {
             var e = {
-                host: t
-            }
-                , i = o.some([/smi2\.ru/i, /drive\.ru/i, /drive2\.ru/i, /mail\.yandex\.ru/i, /politfox\.ru/i], function(e) {
-                return e.test(t)
-            });
-            return !!o.some([/^mail\.rambler\.ru/i, /^tv\.yandex\.ru/i], function(e) {
+                    host: t
+                }
+                ,
+                i = o.some([/smi2\.ru/i, /drive\.ru/i, /drive2\.ru/i, /mail\.yandex\.ru/i, /politfox\.ru/i], function (e) {
+                    return e.test(t)
+                });
+            return !!o.some([/^mail\.rambler\.ru/i, /^tv\.yandex\.ru/i], function (e) {
                 return e.test(t)
             }) || !i && !n.isHostIgnored(e)
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         var n = i(20);
-        e.isPosterExperiment = function(t, e) {
+        e.isPosterExperiment = function (t, e) {
             return !n.isHostIgnored({
                 host: e
             }) && 71 === t
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n = {
             "1024x768": "480x320",
             "768x1024": "320x480"
         };
-        t.exports = function(t, e, i) {
+        t.exports = function (t, e, i) {
             var o = t.width + "x" + t.height;
             this.createFormatObject(n[o] || o, i)
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n = d(i(209))
             , o = d(i(24))
@@ -23545,67 +23987,69 @@
             , l = i(59)
             , p = i(191)
             , c = i(163);
+
         function d(t) {
             return t && t.__esModule ? t : {
                 default: t
             }
         }
-        t.exports = function(t, e, i) {
+
+        t.exports = function (t, e, i) {
             var d;
-            this.getSettings = function() {
+            this.getSettings = function () {
                 return e || {}
             }
                 ,
                 this._onAdAbused = null,
-                this.setAbuseHandler = function(t) {
+                this.setAbuseHandler = function (t) {
                     this._onAdAbused = t
                 }
                 ,
-                this.abuseAd = function(t) {
+                this.abuseAd = function (t) {
                     this._onAdAbused && (0,
                         s.isFunction)(this._onAdAbused) && this._onAdAbused(t)
                 }
                 ,
-                this.hasSearchText = function() {
+                this.hasSearchText = function () {
                     return i.searchText
                 }
                 ,
-                this.getSize = function() {
+                this.getSize = function () {
                     var e = t.rtb
                         , i = e.width
                         , n = e.height;
                     return [0 == i ? "100%" : i, n]
                 }
                 ,
-                this.getUrl = function() {
+                this.getUrl = function () {
                     return t.rtb.url
                 }
                 ,
-                this.getHtml = function() {
+                this.getHtml = function () {
                     return !d && t && t.rtb && t.rtb.html && (d = (0,
                         l.decode)(t.rtb.html)),
                         d
                 }
                 ,
-                this.isApp = function() {
+                this.isApp = function () {
                     return t.common && "1" == t.common.isMobileSdk
                 }
                 ,
-                this.getLinkTail = function() {
+                this.getLinkTail = function () {
                     return this.getSettings().linkTail
                 }
                 ,
-                this.hasIntersectionVisibility = function() {
+                this.hasIntersectionVisibility = function () {
                     return Boolean(Number(this.getSettings().intersectionVisibility))
                 }
                 ,
-                this.getViewNotices = function() {
+                this.getViewNotices = function () {
                     var t = []
                         , e = this.getSettings();
                     return e.viewNotices && e.viewNotices.length && (t = t.concat(e.viewNotices)),
                     "string" == typeof e.viewNotice && "" !== e.viewNotice && t.push(e.viewNotice),
                         t = (0,
-                            r.map)(t, function(t) {
+                            r.map)(t, function (t) {
                             return new o["default"]({
                                 host: t
                             }).getUrl()
@@ -23614,18 +24058,18 @@
                             p.unique)(t)
                 }
                 ,
-                this.getWinNotice = function() {
+                this.getWinNotice = function () {
                     var t = this.getSettings().winNotice;
                     return new o["default"]({
                         host: t
                     }).getUrl()
                 }
                 ,
-                this.getLanguage = function() {
+                this.getLanguage = function () {
                     return t.common && t.common.pageLang || "1"
                 }
                 ,
-                this.isSSP = function() {
+                this.isSSP = function () {
                     var e = t.common && t.common.sspId;
                     return null != e && 0 != e
                 }
@@ -23633,27 +24077,27 @@
             i.clickMacro && (0,
                 a.isString)(i.clickMacro) && !e.clickMacro && ((0,
                 n["default"])(window) || this.isSSP()) && (e.clickMacro = i.clickMacro),
-                this.getAbuseUrl = function() {
+                this.getAbuseUrl = function () {
                     return i.isInOverlay ? null : t.rtb.abuseLink
                 }
                 ,
-                this.getUniqueId = function() {
+                this.getUniqueId = function () {
                     return i.uniqueId
                 }
                 ,
                 this._visibilityTime = (0,
                     c.calcVisibilityTime)(this.getSettings()),
-                this.getVisibilityTime = function() {
+                this.getVisibilityTime = function () {
                     return this._visibilityTime
                 }
                 ,
-                this.getBlockOpacity = function() {
+                this.getBlockOpacity = function () {
                     var e = t.visibilitySettings || {};
                     return 1 === Number(e.expShow) ? 0 : 1
                 }
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n = i(14)
             , o = i(28)
@@ -23686,6 +24130,7 @@
             , E = v.VISIBLE_PORTION_BLOCK
             , T = v.VISIBLE_PORTION_BIG_BLOCK
             , R = i(590).rtb;
+
         function L(t) {
             this._isContainingSafeFrame = !1,
                 this._data = t.data || {},
@@ -23709,8 +24154,9 @@
                     isApp: this.dataSource.isApp()
                 })
         }
+
         L.prototype = {
-            render: function(t) {
+            render: function (t) {
                 (0,
                     n.logRenderLabel)(this.dataSource.getUniqueId(), n.BlockRenderSteps.RtbBlockRenderInit);
                 var e = this.dataSource.getSettings();
@@ -23723,10 +24169,10 @@
                         n.stopLoggingTime)(this.dataSource.getUniqueId()),
                         this._renderOnVisible(this._container)) : this._render(this._container)
             },
-            _isAdtuneBig: function() {
+            _isAdtuneBig: function () {
                 return this._size[0] * this._size[1] >= 75e3
             },
-            _createWrapper: function(t) {
+            _createWrapper: function (t) {
                 var e = this.dataSource.getLanguage()
                     , i = (0,
                     l.getLangCode)(e)
@@ -23743,7 +24189,7 @@
                 A.innerHTML(this._container, n),
                     this._styleElement = this._appendStyles(this._isAdtuneBig())
             },
-            destructor: function() {
+            destructor: function () {
                 this._clearComponents(),
                 this._styleElement && (y.dom.remove(this._styleElement),
                     this._styleElement = null),
@@ -23754,13 +24200,13 @@
                 this._container && (0,
                     _.clearHTML)(this._container)
             },
-            _clearComponents: function() {
-                y.each(this._innerComponents, function(t) {
+            _clearComponents: function () {
+                y.each(this._innerComponents, function (t) {
                     t.destructor ? t.destructor() : t.destroy && t.destroy()
                 }),
                     this._innerComponents = []
             },
-            _initAdtune: function() {
+            _initAdtune: function () {
                 if (Boolean(this.dataSource.getAbuseUrl()) && !this.dataSource.isApp()) {
                     var t = y.dom.querySelector(".yap-rtb__adtune-button", this._container)[0];
                     if (t) {
@@ -23778,14 +24224,14 @@
                     }
                 }
             },
-            _onClickAdtune: function() {
+            _onClickAdtune: function () {
                 this._feedbackComponent ? this._feedbackComponent.isVisible() ? (this._feedbackComponent.hide(),
                     this._adtuneComponent.enableTooltip()) : (this._feedbackComponent.show(),
                     this._adtuneComponent.disableTooltip()) : (this._initFeedbackMenu(),
                     this._feedbackComponent.show(),
                     this._adtuneComponent.disableTooltip())
             },
-            _initFeedbackMenu: function() {
+            _initFeedbackMenu: function () {
                 var t = y.dom.querySelector(".yap-rtb__wrapper", this._container)[0]
                     , e = new C({
                     class: "yap-rtb__feedback",
@@ -23798,16 +24244,16 @@
                     this._innerComponents.push(e),
                     this._feedbackComponent = e
             },
-            _onReceivedFeedback: function(t) {
+            _onReceivedFeedback: function (t) {
                 this._adtuneComponent.destroy(),
                     this.dataSource.abuseAd(t)
             },
-            _appendStyles: function(t) {
+            _appendStyles: function (t) {
                 var e = g.reset
                     , i = g.rtb
                     , n = g.adtune
                     , o = "";
-                return y.each([e, i, n], function(e) {
+                return y.each([e, i, n], function (e) {
                     o += e({
                         id: this._mainContId,
                         settings: {
@@ -23830,7 +24276,7 @@
                 head: '<base href="${baseURL}" target="_blank"/>',
                 body: "${html}"
             }),
-            _render: function(t) {
+            _render: function (t) {
                 if ((0,
                     n.logRenderLabel)(this.dataSource.getUniqueId(), n.BlockRenderSteps.RtbBlockRenderStart),
                     this._isInPage())
@@ -23848,23 +24294,23 @@
                             n.logRenderLabel)(this.dataSource.getUniqueId(), n.BlockRenderSteps.RtbBlockAfterRender)
                 }
             },
-            _createTemplate: function() {
+            _createTemplate: function () {
                 var t = this.dataSource.getHtml();
                 this._createWrapper(!t || this._isAlternativeCode && !(0,
                     r.isTurboPage)(window) ? v.RtbIframe.TAG : "")
             },
-            _renderAd: function(t) {
+            _renderAd: function (t) {
                 var e = this.dataSource.getHtml();
                 e && this._isAlternativeCode && !(0,
                     r.isTurboPage)(window) ? this._renderAlternativeCode(t) : e ? this._renderSafeframe(t) : this._renderFromUrl(t)
             },
-            _afterRender: function(t) {
+            _afterRender: function (t) {
                 this._initAdtune(),
                 this._confirmByHandler || this._createVisibilityConfirmation(t),
                     this._createVisibilityChecker(t),
                     this._visibilityManager.sendWinNotice()
             },
-            _renderFromUrl: function(t) {
+            _renderFromUrl: function (t) {
                 var e = {}
                     , i = this.dataSource.getUrl()
                     , n = this._IFRAME_REDIRECT_TPL;
@@ -23881,7 +24327,7 @@
                     , r = t.getElementsByTagName("iframe")[0];
                 y.dom.setIframeHTML(r, y.format(n, o))
             },
-            _renderAlternativeCode: function(t) {
+            _renderAlternativeCode: function (t) {
                 var e = {}
                     , i = this._IFRAME_HTML_TPL
                     , n = new w({
@@ -23898,7 +24344,7 @@
                     , r = t.getElementsByTagName("iframe")[0];
                 y.dom.setIframeHTML(r, y.format(i, o))
             },
-            _renderSafeframe: function(t) {
+            _renderSafeframe: function (t) {
                 var e = this
                     , i = "" + (0,
                     u.getPreventMissClicksScript)() + this.dataSource.getHtml()
@@ -23914,12 +24360,12 @@
                     id: this._mainContId,
                     protected: this._protected,
                     basePath: a
-                }, void 0, void 0, function(t, i) {
+                }, void 0, void 0, function (t, i) {
                     return e._handleSafeFrameErrors(t, i)
                 }),
                     this._isContainingSafeFrame = !0
             },
-            _getSafeframeBasePath: function() {
+            _getSafeframeBasePath: function () {
                 var t = {
                     click_macro: this.dataSource.getSettings().clickMacro
                 };
@@ -23929,7 +24375,7 @@
                         params: t
                     }).getUrl()
             },
-            _handleSafeFrameErrors: function(t, e) {
+            _handleSafeFrameErrors: function (t, e) {
                 if ("error" === t) {
                     try {
                         var i = JSON.parse(e);
@@ -23940,19 +24386,19 @@
                     this._contentVisibilityChecker && this._contentVisibilityChecker.stop()
                 }
             },
-            _destroySafeFrame: function() {
+            _destroySafeFrame: function () {
                 (0,
                     d.nukeSafeframe)(window, this._mainContId),
                     this._isContainingSafeFrame = !1
             },
-            renderInPage: function(t) {
+            renderInPage: function (t) {
                 var e = this
                     , i = this._data.rtb
                     , n = i.vastBase64
                     , o = i.vast
                     , r = i.width
                     , a = i.height;
-                S(function(i) {
+                S(function (i) {
                     e._rtbInPage = new i({
                         vastBase64: n,
                         vast: o,
@@ -23968,27 +24414,27 @@
                         e._initAdtune(),
                     e._confirmByHandler || e._createVisibilityConfirmation(t),
                         e._createVisibilityCheckerInPage(t)
-                }, function(t) {
+                }, function (t) {
                     return p.logger.error(t, "InPage bundle loading error")
                 })
             },
-            _renderOnVisible: function(t) {
+            _renderOnVisible: function (t) {
                 var e = this
                     , i = this.dataSource.hasIntersectionVisibility()
-                    , n = b.protect("RTB container visible", function() {
+                    , n = b.protect("RTB container visible", function () {
                     e._render(t)
                 });
-                this._containerVisibilityChecker = new x(t,n,{
+                this._containerVisibilityChecker = new x(t, n, {
                     allowIntersectionObserver: i,
                     delay: 0
                 })
             },
-            _createVisibilityConfirmation: function(t) {
+            _createVisibilityConfirmation: function (t) {
                 var e = (0,
                     s.getVisibilityContainer)(t)
                     , i = this.dataSource.hasIntersectionVisibility()
                     , n = b.protect("visibility confirmer: rtb", this.confirmVisibility, this);
-                this._visibilityConfirmer = new x(e,n,{
+                this._visibilityConfirmer = new x(e, n, {
                     allowIntersectionObserver: i,
                     portion: this.getVisiblePortion(e),
                     delay: this.dataSource.getVisibilityTime()
@@ -23996,33 +24442,33 @@
                 this._confirmAtOnce && (this._visibilityConfirmed = !0,
                     this._visibilityConfirmer.confirm())
             },
-            confirmVisibility: function() {
+            confirmVisibility: function () {
                 this._visibilityConfirmed = !0,
                     this._visibilityManager.confirm({
                         testtagProps: this._testtag.getProps(),
                         renderSize: this.getBlockSize()
                     })
             },
-            isVisibilityConfirmed: function() {
+            isVisibilityConfirmed: function () {
                 return this._visibilityConfirmed
             },
-            _createVisibilityCheckerInPage: function(t) {
+            _createVisibilityCheckerInPage: function (t) {
                 var e = this
                     , i = this.dataSource.hasIntersectionVisibility();
-                this._contentVisibilityChecker = new m.VisibilityChecker(t,function(t) {
+                this._contentVisibilityChecker = new m.VisibilityChecker(t, function (t) {
                         return e._rtbInPage.onVisible(t)
                     }
-                    ,{
+                    , {
                         allowIntersectionObserver: i,
                         portion: this.getVisiblePortion(t)
                     })
             },
-            _createVisibilityChecker: function(t) {
+            _createVisibilityChecker: function (t) {
                 var e = !1
                     , i = (0,
                     o.getNativeJSON)(window)
                     , n = this.dataSource.hasIntersectionVisibility()
-                    , r = function(n) {
+                    , r = function (n) {
                     e = n;
                     try {
                         var o = y.dom.querySelector("iframe", t);
@@ -24036,92 +24482,93 @@
                         0
                     }
                 };
-                this._contentVisibilityChecker = new m.VisibilityChecker(t,r,{
+                this._contentVisibilityChecker = new m.VisibilityChecker(t, r, {
                     allowIntersectionObserver: n,
                     portion: this.getVisiblePortion(t)
                 });
-                var a = setInterval(function() {
+                var a = setInterval(function () {
                     return r(e)
                 }, m.DEFAULT_INTERVAL)
                     , s = this._contentVisibilityChecker.stop;
-                this._contentVisibilityChecker.stop = function() {
+                this._contentVisibilityChecker.stop = function () {
                     return clearInterval(a),
                         s.apply(this, arguments)
                 }
             },
-            getVisiblePortion: function(t) {
+            getVisiblePortion: function (t) {
                 return (t && t.clientWidth || 0) * (t && t.clientHeight || 0) >= O ? T : E
             },
-            isInViewport: function() {
+            isInViewport: function () {
                 return !!y.dom.querySelector("#" + this._mainContId) && y.dom.isInViewport(this._container, v.REFRESH_VIEWPORT_VISIBLE_PART)
             },
-            _isInPage: function() {
+            _isInPage: function () {
                 var t = this._data.rtb
                     , e = (t = void 0 === t ? {} : t).vastBase64
                     , i = t.vast;
                 return Boolean(e || i)
             },
-            getRtbData: function() {
+            getRtbData: function () {
                 return this._data.rtb
             },
-            slideUp: function(t) {
+            slideUp: function (t) {
                 (0,
                     c.slideUp)(this._container, t)
             },
-            getBlockSize: function() {
+            getBlockSize: function () {
                 return (0,
                     f.getElementRectSize)(this._container)
             },
-            getTesttag: function() {
+            getTesttag: function () {
                 return this._testtag.toString()
             }
         },
             t.exports = L
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         i(83);
-        e.getCalcValue = function(t) {
+        e.getCalcValue = function (t) {
             return t
         }
     }
-    , function(t, e, i) {
-        t.exports = function(t, e) {
-            i.e(0).then(function() {
+    , function (t, e, i) {
+        t.exports = function (t, e) {
+            i.e(0).then(function () {
                 t(i(602))
             }
-                .bind(null, i)).catch(function() {
+                .bind(null, i)).catch(function () {
                 e && e.apply(this, arguments)
             })
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         i(2),
             i(6),
             i(3),
             i(7)["default"];
         t.exports = {
-            rtb: function(t) {
+            rtb: function (t) {
                 var e = [];
                 return e.push('<yatag class="yap-reset ', t.id, '"><yatag class="yap-rtb__wrapper"><yatag class="yap-rtb__iframe">', t.html, '</yatag><yatag class="yap-rtb__adtune-button"></yatag></yatag></yatag>'),
                     e.join("")
             }
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n = i(38)
             , o = i(8)
             , r = i(2)
             , a = i(3);
-        t.exports = function(t, e, i) {
-            var s, l, p = r.genRnd(), c = a.protect("JSONP onLoadError", function() {
+        t.exports = function (t, e, i) {
+            var s, l, p = r.genRnd(), c = a.protect("JSONP onLoadError", function () {
                 Ya[p] && (Ya[p]("{}"),
-                        Ya[p] = function() {}
+                        Ya[p] = function () {
+                        }
                 )
             }), d = a.setProtectedTimeout(c, 15e3);
-            Ya[p] = function(t) {
+            Ya[p] = function (t) {
                 l = !0,
                     window.clearTimeout(d);
                 var e = {
@@ -24133,7 +24580,7 @@
                 } catch (e) {
                     o.logger.error(new Error("JSONP parse::" + e.message + "::" + t), "JSONPParse_" + e.name)
                 }
-                a.protect("JSONP callback", function() {
+                a.protect("JSONP callback", function () {
                     i(e),
                         (0,
                             n.sendResourceInfo)(),
@@ -24143,23 +24590,23 @@
                 ,
                 t.appendParams("callback=Ya[" + p + "]"),
             (s = r.dom.addScript(t.getUrl(), !Ya.Context._asyncModeOn)) && (s.onerror = c,
-                    s.onload = function() {
+                    s.onload = function () {
                         l || (window.clearTimeout(d),
                             d = a.setProtectedTimeout(c, 1e3))
                     }
             )
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         e.__esModule = !0;
         i(130),
             i(133).config.extuidCookies;
-        e.getCookieId = function() {
+        e.getCookieId = function () {
             return ""
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         "use strict";
         var n = h(i(203))
             , o = i(53)
@@ -24173,11 +24620,13 @@
             , u = i(8)
             , m = i(14)
             , f = i(47);
+
         function h(t) {
             return t && t.__esModule ? t : {
                 default: t
             }
         }
+
         i(3);
         var g = i(6)
             , _ = i(155)
@@ -24188,14 +24637,16 @@
             , w = i(167)
             , k = i(36)
             , C = i(18);
+
         function I(t) {
             this._advManager = t,
                 this._managers = {},
                 this._settingsCache = {},
                 this._refresh = !1
         }
+
         I.prototype = {
-            render: function(t, e, i, n) {
+            render: function (t, e, i, n) {
                 (0,
                     m.logRenderLabel)(t.uniqueId, m.BlockRenderSteps.DirectRender),
                 n && (this._refresh = n);
@@ -24205,38 +24656,38 @@
                 !Ya.Context._asyncModeOn || t.forcedSyncMode || p.isSsSkipToken ? this._renderSync(a, t, e, i) : this._renderAsync(a, t, e, i),
                     w.hitOnce(t.pageId, t.bundle)
             },
-            _getManager: function(t, e, i) {
+            _getManager: function (t, e, i) {
                 var n = t + "#" + (e || "") + ":" + i;
-                return n in this._managers || (this._managers[n] = new y(!0,{
+                return n in this._managers || (this._managers[n] = new y(!0, {
                     onAdAbused: this._handleAdAbused.bind(this)
                 })),
                     this._managers[n]
             },
-            getBlocksToRerender: function() {
+            getBlocksToRerender: function () {
                 var t = [];
-                return x.forOwn(this._managers, function(e) {
+                return x.forOwn(this._managers, function (e) {
                     var i = e.getBlocksToRerender();
                     i.length > 0 && (t = t.concat(i),
                         e.resetTimeout())
                 }),
                     t
             },
-            _renderAsync: function(t, e, i, n) {
+            _renderAsync: function (t, e, i, n) {
                 var o = this;
                 e.isInQueue = !0,
-                    this._advManager.queue.add(function(r) {
+                    this._advManager.queue.add(function (r) {
                         o._loadData(t, e, i, n, r)
                     })
             },
-            _renderSync: function(t, e, i, n) {
+            _renderSync: function (t, e, i, n) {
                 window.yandex_ad_is_displayed = !0,
                     e.isInQueue = !1,
-                    this._loadData(t, e, i, function() {
+                    this._loadData(t, e, i, function () {
                         window.yandex_ad_is_displayed = !1,
                             n()
                     }, f.noop)
             },
-            _loadData: function(t, e, i, n, c) {
+            _loadData: function (t, e, i, n, c) {
                 if (e.data)
                     return (0,
                         a.saveBundleType)(e.data),
@@ -24279,7 +24730,7 @@
                         experimentId: (0,
                             s["default"])() || p.ssSkipTokenExpId,
                         refresh: this._refresh
-                    }, function(o) {
+                    }, function (o) {
                         (0,
                             m.logRenderLabel)(e.uniqueId, m.BlockRenderSteps.LoadDone),
                             u.logger.log({
@@ -24292,19 +24743,19 @@
                             d._parseData(o, t, e, i, n, c)
                     })
             },
-            _parseData: function(t, e, i, n, o, r) {
+            _parseData: function (t, e, i, n, o, r) {
                 "stripe" === i.product ? r() : (e.setData(t),
                 n || (n = t.settings && t.settings[i.blockImpId] ? t.settings[i.blockImpId] : {},
                     this._settingsCache[i.blockId] = n),
                     this._render(e, i, n, o, r))
             },
-            _render: function(t, e, i, n, o) {
-                this._getSettings(e, i, function(i) {
+            _render: function (t, e, i, n, o) {
+                this._getSettings(e, i, function (i) {
                     t.render(e, i, n, {}),
                         o()
                 })
             },
-            _getSettings: function(t, e, i) {
+            _getSettings: function (t, e, i) {
                 if (e)
                     i(e);
                 else if (this._settingsCache[t.blockId])
@@ -24314,14 +24765,14 @@
                     _.loadDirectSettings({
                         pageId: t.pageId,
                         blockImpId: t.blockImpId
-                    }, function(e) {
+                    }, function (e) {
                         var o = e[t.blockImpId];
                         n._settingsCache[t.blockId] = o,
                             i(o)
                     })
                 }
             },
-            _getLayoutConfig: function(t, e) {
+            _getLayoutConfig: function (t, e) {
                 var i = new n["default"](x.dom.querySelector("#" + t.renderTo));
                 if (i.set("ad_no", (0,
                     o.getAdUsageStorage)(t).getCapturedCount()),
@@ -24343,15 +24794,15 @@
                 }
                 return i
             },
-            _handleAdAbused: function(t, e, i) {
+            _handleAdAbused: function (t, e, i) {
                 var n = this;
                 if ((0,
                     c.shouldSlideUp)(e, i)) {
                     var o = k.getRenderId(e);
-                    t.slideUp(o, function() {
+                    t.slideUp(o, function () {
                         var i = e.renderTo
                             , o = e.onHide;
-                        0 === t.getBlocks().length && x.forOwn(n._managers, function(e, i) {
+                        0 === t.getBlocks().length && x.forOwn(n._managers, function (e, i) {
                             e === t && (delete n._managers[i],
                                 e.destructor())
                         });
@@ -24365,66 +24816,69 @@
         },
             t.exports = I
     }
-    , function(t, e, i) {
-        t.exports = function(t, e) {
-            i.e(0).then(function() {
+    , function (t, e, i) {
+        t.exports = function (t, e) {
+            i.e(0).then(function () {
                 t(i(664))
             }
-                .bind(null, i)).catch(function() {
+                .bind(null, i)).catch(function () {
                 e && e.apply(this, arguments)
             })
         }
     }
-    , function(t, e, i) {
-        t.exports = function(t, e) {
-            i.e(0).then(function() {
+    , function (t, e, i) {
+        t.exports = function (t, e) {
+            i.e(0).then(function () {
                 t(i(665))
             }
-                .bind(null, i)).catch(function() {
+                .bind(null, i)).catch(function () {
                 e && e.apply(this, arguments)
             })
         }
     }
-    , function(t, e, i) {
-        t.exports = function(t, e) {
-            i.e(0).then(function() {
+    , function (t, e, i) {
+        t.exports = function (t, e) {
+            i.e(0).then(function () {
                 t(i(666))
             }
-                .bind(null, i)).catch(function() {
+                .bind(null, i)).catch(function () {
                 e && e.apply(this, arguments)
             })
         }
     }
-    , function(t, e, i) {
-        t.exports = function(t, e) {
-            i.e(0).then(function() {
+    , function (t, e, i) {
+        t.exports = function (t, e) {
+            i.e(0).then(function () {
                 t(i(667))
             }
-                .bind(null, i)).catch(function() {
+                .bind(null, i)).catch(function () {
                 e && e.apply(this, arguments)
             })
         }
     }
-    , function(t, e, i) {
+    , function (t, e, i) {
         var n, o, r = !1;
+
         function a() {
             n = [],
-                i.e(1).then(function() {
+                i.e(1).then(function () {
                     o = i(668);
                     for (var t = 0, e = n.length; t < e; t++)
                         n[t].success(o);
                     r = !1,
                         n = null
                 }
-                    .bind(null, i)).catch(function() {
+                    .bind(null, i)).catch(function () {
                     for (var t = 0, e = n.length; t < e; t++)
                         n[t].error.apply(this, arguments);
                     r = !0,
                         n = null
                 })
         }
-        t.exports = function(t, e) {
-            e = e || function() {}
+
+        t.exports = function (t, e) {
+            e = e || function () {
+            }
                 ,
                 o ? t(o) : (r && a(),
                     n.push({
@@ -24437,25 +24891,9 @@
     }
 ]);
 
-
-
 const output = document.querySelector('.modal__value');
-const rangeSLider = document.querySelector('.adjust-bar.adjust-bar_theme_temp');
 
-// rangeSLider.oninput = function() {
-//     output.innerHTML = this.value > 0 ? '+' + this.value : this.value;
-// }
-
-const arrowLeftDevs = document.querySelector('.devices__paginator .paginator__arrow_left');
-const arrowRightDevs = document.querySelector('.devices__paginator .paginator__arrow_right');
-const panelCountDevs = document.querySelectorAll('.devices__panel').length;
-const devices = document.querySelector('.devices');
-const pagiantorDevs = document.querySelector('.devices__paginator');
-let currentPageDevs = 1;
-
-// pagiantorDevs.classList.toggle('paginator_hide', panelCountDevs < 7);
-
-$('.card').each(function(e) {
+$('.card').each(function (e) {
     if ($(this).hasClass('card_size_s')) {
         $(this).css({'border-radius': '22px'})
     } else {
@@ -24463,117 +24901,8 @@ $('.card').each(function(e) {
     }
 });
 
-
-let curValue;
-let curRotate;
-let maxRotate = 0.42; // 150 градусов
-let minRotate = -0.42; // -150 градусов
-
-const MIN_VALUE = 26;
-const MAX_VALUE = 35;
-const INDICATOR_OFFSET = 265;
-
-const rotateToValue = function(rotate) {
-    return Math.floor((Math.abs(rotate * 360 * 1.73 + INDICATOR_OFFSET) / 53) + MIN_VALUE);
-}
-
-
-/**
- * @param {Number} rotate Количество оборотов от нейтриального положения.
- */
-function setRotate(rotate) {
-    if (rotate > maxRotate) {
-        rotate = maxRotate;
-    } else if (rotate < minRotate) {
-        rotate = minRotate;
-    }
-
-    curRotate = rotate;
-    curValue = rotateToValue(rotate);
-
-    document.querySelector('.modal_knob .modal__value').innerHTML = '+' + curValue;
-    document.querySelector('.knob__value').innerHTML = '+' + curValue;
-    document.querySelector('.knob__indicator').style.strokeDasharray = curRotate * 360 * 1.73 + INDICATOR_OFFSET + ' 629';
-    document.querySelector('.knob__arrow').style.transform = 'rotate(' + (curRotate * 360) + 'deg)';
-}
-
-function getPosition(elem) {
-    const rect = elem.getBoundingClientRect();
-
-    return [
-        rect.left + (rect.right - rect.left) / 2,
-        rect.top + (rect.bottom - rect.top) / 2
-    ];
-}
-
-function getMouseAngle(event, centerElem) {
-    const pos = getPosition(centerElem);
-    let cursor = [event.clientX, event.clientY];
-    let rad;
-
-    if (event.targetTouches && event.targetTouches[0]) {
-        cursor = [event.targetTouches[0].clientX, event.targetTouches[0].clientY];
-    }
-
-    rad = Math.atan2(cursor[1] - pos[1], cursor[0] - pos[0]);
-    rad += Math.PI / 2;
-
-    return rad;
-}
-
-let knobDragged;
-let prevAngleRad = null;
-let prevRotate = null;
-
-function startDragging(e) {
-    e.preventDefault();
-    e.stopPropagation();
-    const rad = getMouseAngle(e, document.querySelector('.knob_center'));
-
-    knobDragged = true;
-    prevAngleRad = rad;
-    prevRotate = curRotate;
-}
-
-function stopDragging(e) {
-    knobDragged = false;
-}
-
-function dragRotate(e) {
-    if (!knobDragged) {
-        return;
-    }
-
-    const old = prevAngleRad;
-    let rad = getMouseAngle(e, document.querySelector('.knob_center'));
-    let delta = rad - old;
-
-    prevAngleRad = rad;
-
-    if (delta < 0) {
-        delta += Math.PI * 2;
-    }
-    if (delta > Math.PI) {
-        delta -= Math.PI * 2;
-    }
-
-    const deltaRotate = delta / Math.PI / 2;
-    const rotate = prevRotate + deltaRotate;
-
-    prevRotate = rotate;
-    setRotate(rotate);
-}
-
-function setEvtListeners() {
-    const elem = document.querySelector('.knob-container');
-
-}
-
-setEvtListeners();
-
-
 document.querySelectorAll('.modal_close').forEach(b => {
-    b.onclick = function() {
+    b.onclick = function () {
         document.querySelectorAll('.modal').forEach(m => {
             m.classList.toggle('modal_open', false);
             document.querySelector('body').style.overflow = 'auto';
@@ -24589,32 +24918,31 @@ const TEMPS = {
 }
 
 document.querySelectorAll('.modal__filter-item_temp').forEach(l => {
-    l.onclick = function() {
+    l.onclick = function () {
         document.querySelector('.adjust-bar_theme_temp').value = TEMPS[this.id];
         document.querySelector('.modal_temp .modal__value').innerHTML = TEMPS[this.id] > 0 ? '+' + TEMPS[this.id] : TEMPS[this.id];
     }
 });
 
-const showModal = function(selector) {
+const showModal = function (selector) {
     document.querySelector(selector).classList.toggle('modal_open', true);
     document.querySelector('body').style.overflow = 'hidden';
 }
 
-
 document.querySelectorAll('.panel_lamp').forEach(p => {
-    p.onclick = function() {
+    p.onclick = function () {
         showModal('.modal_light');
     }
 });
 
 document.querySelectorAll('.panel_floor').forEach(p => {
-    p.onclick = function() {
+    p.onclick = function () {
         showModal('.modal_knob');
     }
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-    $('.card').each(function(e) {
+    $('.card').each(function (e) {
         if ($(this).hasClass('card_size_s')) {
             $(this).css({'border-radius': '22px'})
         } else {
@@ -24624,46 +24952,31 @@ document.addEventListener("DOMContentLoaded", function () {
     var waterContainer = document.querySelector('.card.card_size_s:last-child');
 
     waterContainer.innerHTML =
-                '<div class="card-heading">' +
-                    '<div class="card-icon-wrap">' +
-                        '<img class="card-icon" src="img/kettle.svg">' +
-                    '</div>' +
-                    '<h3 class="card-title">Вода вскипела</h3>' +
-               ' </div>' +
-                '<div class="card-specs">' +
-                    '<p class="card-source">Чайник</p>' +
-                    '<p class="card-time card-time_block">16:20, Сегодня</p>' +
-                '</div>'
+        '<div class="card-heading">' +
+        '<div class="card-icon-wrap">' +
+        '<img class="card-icon" src="img/kettle.svg">' +
+        '</div>' +
+        '<h3 class="card-title">Вода вскипела</h3>' +
+        ' </div>' +
+        '<div class="card-specs">' +
+        '<p class="card-source">Чайник</p>' +
+        '<p class="card-time card-time_block">16:20, Сегодня</p>' +
+        '</div>'
 
 });
 
-
-const arrowLeftScens = document.querySelector('.scenarios__paginator .paginator__arrow_left');
-const arrowRightScens = document.querySelector('.scenarios__paginator .paginator__arrow_right');
-const panelCountScens = document.querySelectorAll('.scenarios__panel').length;
-const pageCountScens = document.querySelectorAll('.scenarios__page').length;
-const scenarios = document.querySelector('.scenarios');
-const pagiantorScens = document.querySelector('.scenarios__paginator');
-let currentPage = 1;
-
-
-
-
-const selectButton = document.querySelector('.filter__select-button');
 const selectButtonText = document.querySelector('.filter__select-button .button__text');
 const selectOptions = document.querySelectorAll('.filter__select-item');
 const popup = document.querySelector('.filter__select-popup');
 
-
-
 let widths = '';
-window.addEventListener('scroll', function() {
+window.addEventListener('scroll', function () {
     widths += document.querySelectorAll('body')[0].offsetWidth;
 
 });
 
 selectOptions.forEach(o => {
-    o.addEventListener('click', function(e) {
+    o.addEventListener('click', function (e) {
         document.querySelector('#' + e.target.dataset.group).checked = true;
 
         selectOptions.forEach(opt => opt.classList.toggle('filter__select-item_checked', false));
@@ -24674,8 +24987,7 @@ selectOptions.forEach(o => {
 });
 
 
-
-var storage, initCriticalCam = function () {
+var initCriticalCam = function () {
     var u, m, p, v, h, y = new Array, g = document.querySelector(".critical-cam"), f = 0, S = 100, q = 100;
     g.style.backgroundPosition = "0px 0px", g.style.backgroundSize = "100%", g.style.filter = "brightness(100%)";
     var x = function (e, t) {
@@ -24716,7 +25028,7 @@ function json(e) {
 document.addEventListener("DOMContentLoaded", function () {
     const buttonsContainer = document.querySelector(".buttons-wrap");
     const fridgeInfoContainer = document.querySelector(".card_size_m:nth-child(8) .card-description");
-    setTimeout(function() {
+    setTimeout(function () {
         const confirmPurchaseButton = document.querySelector(".buttons-wrap .button_yellow");
         const purchaseListContainer = document.createElement('div');
         const purchaseListTitle = document.createElement('p');
@@ -24749,56 +25061,4 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementsByClassName("header-menu")[0].classList.toggle("header-menu_active")
     })
 }, !1);
-var initVideoObs = function () {
-    var t = 100, n = 100;
 
-    function e(e, t) {
-        if (Hls.isSupported()) {
-            var n = new Hls;
-            n.loadSource(t), n.attachMedia(e), n.on(Hls.Events.MANIFEST_PARSED, function () {
-                e.play()
-            })
-        } else e.canPlayType("application/vnd.apple.mpegurl") && (e.src = t, e.addEventListener("loadedmetadata", function () {
-            e.play()
-        }))
-    }
-
-    e(document.getElementById("video-1"), "http://localhost:9191/master?url=http%3A%2F%2Flocalhost%3A3102%2Fstreams%2Fsosed%2Fmaster.m3u8"), e(document.getElementById("video-2"), "http://localhost:9191/master?url=http%3A%2F%2Flocalhost%3A3102%2Fstreams%2Fcat%2Fmaster.m3u8"), e(document.getElementById("video-3"), "http://localhost:9191/master?url=http%3A%2F%2Flocalhost%3A3102%2Fstreams%2Fdog%2Fmaster.m3u8"), e(document.getElementById("video-4"), "http://localhost:9191/master?url=http%3A%2F%2Flocalhost%3A3102%2Fstreams%2Fhall%2Fmaster.m3u8");
-    for (var r = function (e, t, n) {
-        null == t && (t = e.getBoundingClientRect().left), null == n && (n = e.getBoundingClientRect().top), e.style.top = -n + "px", e.style.left = -t + "px"
-    }, o = function (e) {
-        var t = e.target, n = document.querySelector(".video-controls"), o = t.parentNode.querySelector(".analyser");
-        t.classList.contains("video_active") ? (n.classList.remove("video-controls_active"), o.classList.remove("analyser_active"), t.style.width = "100%", t.style.height = "300px", r(t, 0, 0), setTimeout(function () {
-            t.classList.remove("video_active"), document.querySelector("html").style.overflow = "scroll"
-        }, 500)) : ("" == t.style.filter ? c(100, 100) : c(/brightness\(([^)]+)%\)/.exec(t.style.filter)[1], /contrast\(([^)]+)%\)/.exec(t.style.filter)[1]), document.querySelector("html").style.overflow = "hidden", n.classList.add("video-controls_active"), t.classList.add("video_active"), o.classList.add("analyser_active"), t.style.width = window.innerWidth + "px", t.style.height = window.innerHeight + "px", r(t))
-    }, i = function (e) {
-        document.querySelector(".video_active").style.filter = "brightness(" + t + "%) contrast(" + n + "%)"
-    }, c = function (e, t) {
-        document.querySelector(".video-control_brightness").value = e, document.querySelector(".video-control_contrast").value = t
-    }, a = function (e) {
-        t = e.target.value, i()
-    }, l = function (e) {
-        n = e.target.value, i()
-    }, s = function (e) {
-        var t = e.target;
-        t.classList.contains("video-control_brightness") && document.addEventListener("pointermove", a), t.classList.contains("video-control_contrast") && document.addEventListener("pointermove", l)
-    }, d = function (e) {
-        var t = document.getElementById(e.target.dataset.video);
-        t.muted = !t.muted, e.target.classList.toggle("video-volume_unmuted")
-    }, u = function (n) {
-        var e = new (window.AudioContext || window.webkitAudioContext), t = e.createMediaElementSource(n),
-            o = e.createAnalyser();
-        o.smoothingTimeConstant = .1, o.fftSize = 32;
-        var r = new Uint8Array(o.frequencyBinCount);
-        setInterval(function () {
-            o.getByteFrequencyData(r);
-            for (var e = 0, t = 0; t < r.length; t++) r[t] > e && (e = r[t]);
-            n.parentNode.querySelector(".analyser").style.height = e + "px"
-        }, 100), t.connect(o), o.connect(e.destination)
-    }, m = document.getElementsByClassName("video"), p = 0; p < m.length; p++) m[p].addEventListener("pointerdown", o), u(m[p]);
-    for (var v = document.getElementsByClassName("video-control"), h = 0; h < v.length; h++) v[h].addEventListener("pointerdown", s);
-    for (var y = document.getElementsByClassName("video-volume"), g = 0; g < y.length; g++) y[g].addEventListener("pointerdown", d);
-    document.addEventListener("pointerup", function (e) {
-        document.removeEventListener("pointermove", a), document.removeEventListener("pointermove", l)
-    })
-};
