@@ -18,6 +18,8 @@
   "homepage": "https://github.com/mpoliakov/shri2020-performance#readme",
   "dependencies": {
     "gulp": "^4.0.2",
+    "gulp-csso": "4.0.1",
+    "gulp-rename": "2.0.0",
     "gulp-svgmin": "2.2.0",
     "svgmin": "0.1.0"
   }
