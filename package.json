@@ -1,0 +1,24 @@
+{
+  "name": "shri2020-performance",
+  "version": "1.0.0",
+  "description": "## Задание Оптимизировать страницу, выложить результат на [Github-Pages](https://help.github.com/en/articles/creating-a-github-pages-site) и проверить его на [shri-perf.ru](https://shri-perf.ru), отправив адрес вашей страницы.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mpoliakov/shri2020-performance.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mpoliakov/shri2020-performance/issues"
+  },
+  "homepage": "https://github.com/mpoliakov/shri2020-performance#readme",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-svgmin": "2.2.0",
+    "svgmin": "0.1.0"
+  }
+}
