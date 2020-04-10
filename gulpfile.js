@@ -3,6 +3,7 @@ const svgmin = require("gulp-svgmin");
 const csso = require("gulp-csso");
 const rename = require("gulp-rename");
 const uglify = require("gulp-uglify");
+const imagemin = require("gulp-imagemin");
 
 gulp.task('svgmin', function () {
     return gulp.src('img/*.svg')
@@ -26,4 +27,13 @@ gulp.task('uglify', function () {
         .pipe(uglify())
         .pipe(rename({ suffix: '.min' }))
         .pipe(gulp.dest('js'));
+});
+
+gulp.task("images", function () {
+    return gulp.src("img/*.{png,jpg}")
+        .pipe(imagemin([
+            imagemin.optipng({optimizationLevel: 3}),
+            imagemin.mozjpeg ({progressive: true})
+        ]))
+        .pipe(gulp.dest("img"));
 });
