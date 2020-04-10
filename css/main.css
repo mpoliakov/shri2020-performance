@@ -13,13 +13,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 @font-face {
     font-family: OpenSansReg;
-    src: url("../assets/OpenSans-Regular.ttf");
+    src: url("/shri2020-performance/assets/OpenSans-Regular.ttf");
     font-weight: bold;
 }
 
 @font-face {
     font-family: OpenSansLight;
-    src: url("../assets/OpenSans-Light.ttf");
+    src: url("/shri2020-performance/assets/OpenSans-Light.ttf");
 }
 
 body {
@@ -743,7 +743,7 @@ html {
     width: 100%;
     margin-top: 40px;
     display: block;
-    background: url(../img/cam2.jpg);
+    background: url(/shri2020-performance/img/cam2.jpg);
     border-radius: 20px;
     background-size: cover;
     background-position: 0 0;
@@ -935,7 +935,7 @@ html {
 }
 
 .video-volume {
-    background: url(../img/sound_n.png);
+    background: url(/shri2020-performance/img/sound_n.png);
     background-size: cover;
     height: 40px;
     width: 40px;
@@ -945,7 +945,7 @@ html {
 
 .video-volume_unmuted {
     background: green;
-    background: url(../img/sound.png);
+    background: url(/shri2020-performance/img/sound.png);
     background-size: cover
 }
 
